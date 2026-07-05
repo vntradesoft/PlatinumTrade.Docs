@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CalcIndBase | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CalcIndBase | Pt.Okx.Sdk API ">
+      
+      <meta name="description" content="Base class for indicator calculators. It manages indicator identity, configuration, and buffers.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_CalcIndBase.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.CalcIndBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase" class="text-break">
+Class CalcIndBase  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.Base.html">Base</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base class for indicator calculators. It manages indicator identity, configuration, and buffers.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CalcIndBase : IIndicator, IIndicatorMethodCommon</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CalcIndBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html">IIndicator</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon.html">IIndicatorMethodCommon</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase__ctor_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.#ctor*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase__ctor_Pt_Okx_Sdk_Indicators_Services_IIndicatorFactory_Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_System_Action_Pt_Okx_Sdk_Indicators_Models_IndicatorProperty__" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.#ctor(Pt.Okx.Sdk.Indicators.Services.IIndicatorFactory,Pt.Okx.Sdk.Indicators.Services.IIndicatorManager,Pt.Okx.Sdk.Indicators.Models.IndicatorConfig,System.Action{Pt.Okx.Sdk.Indicators.Models.IndicatorProperty})">
+  CalcIndBase(IIndicatorFactory, IIndicatorManager, IndicatorConfig, Action&lt;IndicatorProperty&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the base calculator with manager, configuration, and optional property customization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CalcIndBase(IIndicatorFactory factory, IIndicatorManager manager, IndicatorConfig config, Action&lt;IndicatorProperty&gt;? propertyOptions = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factory</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Services.IIndicatorFactory.html">IIndicatorFactory</a></dt>
+    <dd><p>Factory used to create child indicators.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.html">IIndicatorManager</a></dt>
+    <dd><p>Manager responsible for indicator buffers and registration.</p>
+</dd>
+    <dt><code>config</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a></dt>
+    <dd><p>Input configuration for the indicator.</p>
+</dd>
+    <dt><code>propertyOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html">IndicatorProperty</a>&gt;</dt>
+    <dd><p>Optional customization applied after default properties are created.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase__factory" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase._factory">
+  _factory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Factory used to create child indicators during calculation.
+This keeps calculators decoupled from concrete manager implementations and helps unit tests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IIndicatorFactory _factory</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Services.IIndicatorFactory.html">IIndicatorFactory</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase__manager" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase._manager">
+  _manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manager that provides buffers and registers indicator identities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IIndicatorManager _manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.html">IIndicatorManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_Config_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.Config*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_Config" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.Config">
+  Config
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the configuration for the indicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IndicatorConfig Config { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_Identity_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.Identity*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_Identity" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.Identity">
+  Identity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the unique identity of the indicator instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IndicatorIdentity Identity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.html">IndicatorIdentity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_IsInitialized_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.IsInitialized*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_IsInitialized" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.IsInitialized">
+  IsInitialized
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the indicator has been initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_Property_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.Property*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_Property" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.Property">
+  Property
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the indicator properties, such as display name and buffer metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IndicatorProperty Property { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html">IndicatorProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_CreateDefaultProperty_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.CreateDefaultProperty*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_CreateDefaultProperty" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.CreateDefaultProperty">
+  CreateDefaultProperty()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates default display metadata for the indicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IndicatorProperty CreateDefaultProperty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html">IndicatorProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetAt_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetAt*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetAt_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetAt(System.Int32)">
+  GetAt(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the indicator value at the specified index from the default buffer (buffer index 0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IndicatorValue GetAt(int index = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the value to retrieve. Default is <code>0</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd><p>The indicator value at the specified index from the default buffer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetAt_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetAt*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetAt_System_Int32_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetAt(System.Int32,System.Int32)">
+  GetAt(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the indicator value at the specified index from a specific buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IndicatorValue GetAt(int index, int bufferIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the value to retrieve.</p>
+</dd>
+    <dt><code>bufferIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the buffer to retrieve the value from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd><p>The indicator value at the specified index and buffer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetBuffer_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetBuffer*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetBuffer_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetBuffer(System.Int32)">
+  GetBuffer(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an indicator buffer by its index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IIndicatorBuffer GetBuffer(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the buffer to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html">IIndicatorBuffer</a></dt>
+    <dd><p>The indicator buffer at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetDisplayName_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetDisplayName*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetDisplayName" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetDisplayName">
+  GetDisplayName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the display name for the indicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDisplayName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The display name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetIndicatorId_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetIndicatorId*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetIndicatorId" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetIndicatorId">
+  GetIndicatorId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the unique identifier for the indicator instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetIndicatorId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The indicator ID.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetParameter_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetParameter*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetParameter__1_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetParameter``1(System.String)">
+  GetParameter&lt;TValue&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a typed indicator parameter by key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TValue? GetParameter&lt;TValue&gt;(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Parameter key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TValue</span></dt>
+    <dd><p>The parameter value, or the type default when it is not present.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TValue</code></dt>
+    <dd><p>Parameter value type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetParentBuffer_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetParentBuffer*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetParentBuffer_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetParentBuffer(System.Int32)">
+  GetParentBuffer(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the parent indicator buffer configured at the requested source index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IIndicatorBuffer? GetParentBuffer(int sourceIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html">IIndicatorBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetRange_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetRange*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetRange_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetRange(System.Int32)">
+  GetRange(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a sequence of indicator values from the default buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;IndicatorValue&gt; GetRange(int count = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of values to retrieve. Default is <code>1</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd><p>A sequence of indicator values starting from the latest position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetRange_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetRange*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetRange_System_Int32_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetRange(System.Int32,System.Int32)">
+  GetRange(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a sequence of indicator values from a specific buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;IndicatorValue&gt; GetRange(int count, int bufferIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of values to retrieve.</p>
+</dd>
+    <dt><code>bufferIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the buffer to retrieve values from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd><p>A sequence of indicator values from the specified buffer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetSourceData_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetSourceData*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetSourceData_System_Int32__System_Double____System_Double____System_Double____System_Double____System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetSourceData(System.Int32@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Int32)">
+  GetSourceData(in int, in double[], in double[], in double[], in double[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets source data from the configured candle price source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double[]? GetSourceData(in int ratesTotal, in double[] opens, in double[] highs, in double[] lows, in double[] closes, int sourceIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ratesTotal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>opens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>highs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>lows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>closes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>sourceIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetSourceValue_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetSourceValue*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_GetSourceValue_System_Int32_System_Int32_System_DateTime_System_Double___System_Double___System_Double___System_Double___" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.GetSourceValue(System.Int32,System.Int32,System.DateTime,System.Double[],System.Double[],System.Double[],System.Double[])">
+  GetSourceValue(int, int, DateTime, double[], double[], double[], double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resolves an indicator source as an <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a> while preserving empty/missing state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IndicatorValue GetSourceValue(int sourceIndex, int dataIndex, DateTime timestamp, double[] opens, double[] highs, double[] lows, double[] closes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dataIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>opens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>highs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>lows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>closes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_OnCalculate_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.OnCalculate*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_OnCalculate_System_Int32__System_Int32__System_DateTime____System_Double____System_Double____System_Double____System_Double____System_Double____System_Double__" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.OnCalculate(System.Int32@,System.Int32@,System.DateTime[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double[]@,System.Double@)">
+  OnCalculate(in int, in int, in DateTime[], in double[], in double[], in double[], in double[], in double[], in double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the indicator values for a complete OHLCV data set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int OnCalculate(in int ratesTotal, in int prevCalculated, in DateTime[] datetime, in double[] opens, in double[] highs, in double[] lows, in double[] closes, in double[] volumes, in double spreads)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ratesTotal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The total number of price data points.</p>
+</dd>
+    <dt><code>prevCalculated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of points calculated in the previous call.</p>
+</dd>
+    <dt><code>datetime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>[]</dt>
+    <dd><p>The timestamps for each data point.</p>
+</dd>
+    <dt><code>opens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The opening prices.</p>
+</dd>
+    <dt><code>highs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The high prices.</p>
+</dd>
+    <dt><code>lows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The low prices.</p>
+</dd>
+    <dt><code>closes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The closing prices.</p>
+</dd>
+    <dt><code>volumes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The trading volumes.</p>
+</dd>
+    <dt><code>spreads</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The spreads (if available).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of calculated elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_OnCalculate_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.OnCalculate*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_OnCalculate_System_Int32__System_Int32__System_Int32__System_Double____" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.OnCalculate(System.Int32@,System.Int32@,System.Int32@,System.Double[]@)">
+  OnCalculate(in int, in int, in int, in double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the indicator values for a single price series.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int OnCalculate(in int ratesTotal, in int prevCalculated, in int begin, in double[] prices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ratesTotal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The total number of price data points.</p>
+</dd>
+    <dt><code>prevCalculated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of points calculated in the previous call.</p>
+</dd>
+    <dt><code>begin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting index in the price series.</p>
+</dd>
+    <dt><code>prices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>The price data series.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of calculated elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_OnInit_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.OnInit*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_OnInit" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.OnInit">
+  OnInit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the indicator. Called once before the first calculation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool OnInit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if initialization was successful; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_SetBuffer_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.SetBuffer*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_SetBuffer_System_Int32_Pt_Okx_Sdk_Indicators_Enums_IndicatorBufferType_System_Boolean_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.SetBuffer(System.Int32,Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType,System.Boolean)">
+  SetBuffer(int, IndicatorBufferType, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Declares an indicator buffer at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetBuffer(int index, IndicatorBufferType type = IndicatorBufferType.Data, bool allowEmptySlots = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Buffer index.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType.html">IndicatorBufferType</a></dt>
+    <dd><p>Buffer type.</p>
+</dd>
+    <dt><code>allowEmptySlots</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether the buffer may contain empty slots.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_SetBufferValue_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.SetBufferValue*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_SetBufferValue_System_Int32_System_Int32_System_DateTime_System_Double_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.SetBufferValue(System.Int32,System.Int32,System.DateTime,System.Double)">
+  SetBufferValue(int, int, DateTime, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a value into an indicator buffer at a data index and timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetBufferValue(int bufferIndex, int dataIndex, DateTime timestamp, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dataIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_SetParameter_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.SetParameter*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_SetParameter__1_System_String___0___0_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.SetParameter``1(System.String,``0,``0)">
+  SetParameter&lt;TValue&gt;(string, TValue?, TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets an indicator parameter with a fallback default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetParameter&lt;TValue&gt;(string key, TValue? value, TValue defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Parameter key.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>Requested value.</p>
+</dd>
+    <dt><code>defaultValue</code> <span class="xref">TValue</span></dt>
+    <dd><p>Default value used when <code class="paramref">value</code> is null.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TValue</code></dt>
+    <dd><p>Parameter value type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_SetUniqueId_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.SetUniqueId*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_SetUniqueId_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.SetUniqueId(System.String)">
+  SetUniqueId(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the unique ID manually. This is intended for special integration scenarios.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniqueId(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Unique indicator ID.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_TryGetSourceValue_" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.TryGetSourceValue*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_CalcIndBase_TryGetSourceValue_System_Int32_System_Int32_System_DateTime_System_Double___System_Double___System_Double___System_Double___Pt_Okx_Sdk_Indicators_Models_IndicatorValue__" data-uid="Pt.Okx.Sdk.Indicators.Base.CalcIndBase.TryGetSourceValue(System.Int32,System.Int32,System.DateTime,System.Double[],System.Double[],System.Double[],System.Double[],Pt.Okx.Sdk.Indicators.Models.IndicatorValue@)">
+  TryGetSourceValue(int, int, DateTime, double[], double[], double[], double[], out IndicatorValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/CalcIndBase.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to resolve an indicator source from candle data or a parent indicator buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryGetSourceValue(int sourceIndex, int dataIndex, DateTime timestamp, double[] opens, double[] highs, double[] lows, double[] closes, out IndicatorValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>dataIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>opens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>highs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>lows</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>closes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

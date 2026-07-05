@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ApiResult&lt;T&gt; | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ApiResult&lt;T&gt; | Pt.Okx.Sdk API ">
+      
+      <meta name="description" content="Represents the result of an API operation that returns data.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Common_ApiResult_1.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Common.ApiResult%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Pt.Okx.Sdk.Common.ApiResult`1">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Common_ApiResult_1" data-uid="Pt.Okx.Sdk.Common.ApiResult`1" class="text-break">
+Class ApiResult&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Common.html">Common</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents the result of an API operation that returns data.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ApiResult&lt;T&gt; : ApiResult</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of the returned data.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Common.ApiResult.html">ApiResult</a></div>
+      <div><span class="xref">ApiResult&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult.html#Pt_Okx_Sdk_Common_ApiResult_Success">ApiResult.Success</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult.html#Pt_Okx_Sdk_Common_ApiResult_Error">ApiResult.Error</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult.html#Pt_Okx_Sdk_Common_ApiResult_ToBoolean">ApiResult.ToBoolean()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Pt_Okx_Sdk_Common_ApiResult_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>When <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult.html#Pt_Okx_Sdk_Common_ApiResult_Success">Success</a> is <code>true</code>, <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html#Pt_Okx_Sdk_Common_ApiResult_1_Data">Data</a> contains the result.
+Otherwise, <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult.html#Pt_Okx_Sdk_Common_ApiResult_Error">Error</a> provides failure details.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_Data_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.Data*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_Data" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.Data">
+  Data
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the data returned by the operation.
+Only valid when <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult.html#Pt_Okx_Sdk_Common_ApiResult_Success">Success</a> is <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Data { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_AsData_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.AsData*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_AsData__1___0_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.AsData``1(``0)">
+  AsData&lt;TValue&gt;(TValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a successful result with new data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResult&lt;TValue&gt; AsData&lt;TValue&gt;(TValue newData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newData</code> <span class="xref">TValue</span></dt>
+    <dd><p>The new data.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;TValue&gt;</dt>
+    <dd><p>A successful <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult&lt;T&gt;</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TValue</code></dt>
+    <dd><p>The new data type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_AsError_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.AsError*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_AsError__1" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.AsError``1">
+  AsError&lt;TValue&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts this result into a failed result of another type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResult&lt;TValue&gt; AsError&lt;TValue&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;TValue&gt;</dt>
+    <dd><p>A failed <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult&lt;T&gt;</a> with the same error.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TValue</code></dt>
+    <dd><p>The target type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_Deconstruct_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.Deconstruct*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_Deconstruct_System_Boolean___0__Pt_Okx_Sdk_Common_ApiError__" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.Deconstruct(System.Boolean@,`0@,Pt.Okx.Sdk.Common.ApiError@)">
+  Deconstruct(out bool, out T?, out ApiError?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deconstructs the result into its components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deconstruct(out bool success, out T? data, out ApiError? error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>success</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether the operation succeeded.</p>
+</dd>
+    <dt><code>data</code> <span class="xref">T</span></dt>
+    <dd><p>The returned data if successful; otherwise default.</p>
+</dd>
+    <dt><code>error</code> <a class="xref" href="Pt.Okx.Sdk.Common.ApiError.html">ApiError</a></dt>
+    <dd><p>The error if failed; otherwise <code>null</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Pt_Okx_Sdk_Common_ApiResult_1_Deconstruct_System_Boolean___0__Pt_Okx_Sdk_Common_ApiError___examples">Examples</h4>
+  <pre><code class="lang-csharp">var (ok, data, error) = result;</code></pre>
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_GetResultOrError_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.GetResultOrError*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_GetResultOrError__0__Pt_Okx_Sdk_Common_ApiError__" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.GetResultOrError(`0@,Pt.Okx.Sdk.Common.ApiError@)">
+  GetResultOrError(out T, out ApiError?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to extract the result data or error in a null-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetResultOrError(out T data, out ApiError? error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <span class="xref">T</span></dt>
+    <dd><p>Receives the data if successful; otherwise default.</p>
+</dd>
+    <dt><code>error</code> <a class="xref" href="Pt.Okx.Sdk.Common.ApiError.html">ApiError</a></dt>
+    <dd><p>Receives the error if failed; otherwise <code>null</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the operation succeeded; otherwise <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_IsSuccess_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.IsSuccess*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_IsSuccess" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.IsSuccess">
+  IsSuccess()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSuccess()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_Map_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.Map*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_Map__1_System_Func__0___0__" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.Map``1(System.Func{`0,``0})">
+  Map&lt;TValue&gt;(Func&lt;T, TValue&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maps the data to a new type if successful, preserving the error otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiResult&lt;TValue&gt; Map&lt;TValue&gt;(Func&lt;T, TValue&gt; mapper)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mapper</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, TValue&gt;</dt>
+    <dd><p>The mapping function.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;TValue&gt;</dt>
+    <dd><p>A mapped <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult&lt;T&gt;</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TValue</code></dt>
+    <dd><p>The target type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_ToString_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.ToString*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_ToString" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string representation of the result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Common_ApiResult_1_op_Implicit_" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.op_Implicit*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Common_ApiResult_1_op_Implicit_Pt_Okx_Sdk_Common_ApiResult__0___System_Boolean" data-uid="Pt.Okx.Sdk.Common.ApiResult`1.op_Implicit(Pt.Okx.Sdk.Common.ApiResult{`0})~System.Boolean">
+  implicit operator bool(ApiResult&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Common/ApiResult.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables implicit conversion of <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult&lt;T&gt;</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator bool(ApiResult&lt;T&gt; result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IStrategyLogger | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IStrategyLogger | Pt.Okx.Sdk API ">
+      
+      <meta name="description" content="Interface for logging strategy events, state changes, signals, and notifications in trading systems.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_IStrategyLogger.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.IStrategyLogger%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Strategy_IStrategyLogger" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger" class="text-break">
+Interface IStrategyLogger  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Strategy.html">Strategy</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Interface for logging strategy events, state changes, signals, and notifications in trading systems.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IStrategyLogger</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParamLoggingExtensions.html#Pt_Okx_Sdk_Strategy_Parameters_InputParamLoggingExtensions_LogInputParams__1_Pt_Okx_Sdk_Strategy_IStrategyLogger___0_System_String_">InputParamLoggingExtensions.LogInputParams&lt;TSchema&gt;(IStrategyLogger, TSchema, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogConfig_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogConfig*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogConfig_System_String_System_ValueTuple_System_String_System_String____" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogConfig(System.String,System.ValueTuple{System.String,System.String}[])">
+  LogConfig(string, params (string key, string value)[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs configuration key-value pairs with a title.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogConfig(string title, params (string key, string value)[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The configuration section title.</p>
+</dd>
+    <dt><code>data</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.key">key</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.value">value</a>)[]</dt>
+    <dd><p>The key-value pairs to log.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogConsole_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogConsole*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogConsole_Pt_Okx_Sdk_Enums_PtLogLevel_System_Exception_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogConsole(Pt.Okx.Sdk.Enums.PtLogLevel,System.Exception,System.String,System.Object[])">
+  LogConsole(PtLogLevel, Exception?, string, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a message to the console at a specific log level, with an optional exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogConsole(PtLogLevel level, Exception? exception, string message, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>level</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PtLogLevel.html">PtLogLevel</a></dt>
+    <dd><p>The log level.</p>
+</dd>
+    <dt><code>exception</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>The exception to log (optional).</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message to log.</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogConsole_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogConsole*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogConsole_Pt_Okx_Sdk_Enums_PtLogLevel_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogConsole(Pt.Okx.Sdk.Enums.PtLogLevel,System.String,System.Object[])">
+  LogConsole(PtLogLevel, string, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a message to the console at a specific log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogConsole(PtLogLevel level, string message, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>level</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PtLogLevel.html">PtLogLevel</a></dt>
+    <dd><p>The log level.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message to log.</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogCritical_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogCritical_System_Exception_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical(System.Exception,System.String,System.String,System.Object[])">
+  LogCritical(Exception, string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a critical error with an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogCritical(Exception ex, string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>The exception to log.</p>
+</dd>
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogCritical_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogCritical_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical(System.String,System.String,System.Object[])">
+  LogCritical(string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a critical error message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogCritical(string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogDebug_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogDebug*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogDebug_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogDebug(System.String,System.String,System.Object[])">
+  LogDebug(string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a debug-level message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogDebug(string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogEntry_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogEntry*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogEntry_System_String_Pt_Okx_Sdk_Enums_OrderSide_System_Decimal_System_Decimal_System_Decimal_System_Decimal_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogEntry(System.String,Pt.Okx.Sdk.Enums.OrderSide,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+  LogEntry(string, OrderSide, decimal, decimal, decimal, decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs an entry order event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogEntry(string symbol, OrderSide side, decimal quantity, decimal price, decimal sl, decimal tp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The trading symbol.</p>
+</dd>
+    <dt><code>side</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderSide.html">OrderSide</a></dt>
+    <dd><p>The order side (buy/sell).</p>
+</dd>
+    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The order quantity.</p>
+</dd>
+    <dt><code>price</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The entry price.</p>
+</dd>
+    <dt><code>sl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The stop-loss price.</p>
+</dd>
+    <dt><code>tp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The take-profit price.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogError_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogError*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogError_System_Exception_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogError(System.Exception,System.String,System.String,System.Object[])">
+  LogError(Exception, string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs an error with an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogError(Exception ex, string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>The exception to log.</p>
+</dd>
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogExit_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogExit*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogExit_System_String_System_String_Pt_Okx_Sdk_Enums_OrderSide_System_Decimal_System_Decimal_System_Decimal_System_Decimal_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogExit(System.String,System.String,Pt.Okx.Sdk.Enums.OrderSide,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+  LogExit(string, string, OrderSide, decimal, decimal, decimal, decimal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs an exit order event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogExit(string symbol, string reason, OrderSide side, decimal qtyFill, decimal entryPrice, decimal exitPrice, decimal pnl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The trading symbol.</p>
+</dd>
+    <dt><code>reason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The reason for exit.</p>
+</dd>
+    <dt><code>side</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderSide.html">OrderSide</a></dt>
+    <dd><p>The order side (buy/sell).</p>
+</dd>
+    <dt><code>qtyFill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The filled quantity.</p>
+</dd>
+    <dt><code>entryPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The entry price.</p>
+</dd>
+    <dt><code>exitPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The exit price.</p>
+</dd>
+    <dt><code>pnl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The profit or loss.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogInformation_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogInformation*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogInformation_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogInformation(System.String,System.String,System.Object[])">
+  LogInformation(string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs an informational message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogInformation(string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogKeyValues_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogKeyValues*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogKeyValues_System_String_System_String_System_ValueTuple_System_String_System_String____" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogKeyValues(System.String,System.String,System.ValueTuple{System.String,System.String}[])">
+  LogKeyValues(string, string, params (string key, string value)[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a set of key-value pairs with a title and message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogKeyValues(string title, string message, params (string key, string value)[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log section title.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message to log.</p>
+</dd>
+    <dt><code>data</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.key">key</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.value">value</a>)[]</dt>
+    <dd><p>The key-value pairs to log.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogRecovery_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogRecovery*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogRecovery_System_String_Pt_Okx_Sdk_Enums_PtLogLevel_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogRecovery(System.String,Pt.Okx.Sdk.Enums.PtLogLevel)">
+  LogRecovery(string, PtLogLevel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a recovery event with a message and log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogRecovery(string message, PtLogLevel level = PtLogLevel.Warning)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The recovery message.</p>
+</dd>
+    <dt><code>level</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PtLogLevel.html">PtLogLevel</a></dt>
+    <dd><p>The log level (default: Warning).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogSignal_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogSignal*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogSignal_System_String_System_String_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogSignal(System.String,System.String)">
+  LogSignal(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a trading signal event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogSignal(string signalType, string details = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>signalType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The type of signal.</p>
+</dd>
+    <dt><code>details</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Additional details about the signal.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogSmart_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogSmart*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogSmart_Pt_Okx_Sdk_Enums_PtLogLevel_System_Exception_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogSmart(Pt.Okx.Sdk.Enums.PtLogLevel,System.Exception,System.String,System.String,System.Object[])">
+  LogSmart(PtLogLevel, Exception, string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a smart message with an exception at a specific log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogSmart(PtLogLevel level, Exception ex, string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>level</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PtLogLevel.html">PtLogLevel</a></dt>
+    <dd><p>The log level.</p>
+</dd>
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>The exception to log.</p>
+</dd>
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogSmart_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogSmart*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogSmart_Pt_Okx_Sdk_Enums_PtLogLevel_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogSmart(Pt.Okx.Sdk.Enums.PtLogLevel,System.String,System.String,System.Object[])">
+  LogSmart(PtLogLevel, string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a smart message at a specific log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogSmart(PtLogLevel level, string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>level</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PtLogLevel.html">PtLogLevel</a></dt>
+    <dd><p>The log level.</p>
+</dd>
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogStateChange_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogStateChange*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogStateChange_System_String_System_String_System_String_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogStateChange(System.String,System.String,System.String)">
+  LogStateChange(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a state change event with automatic emoji based on the state keyword.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogStateChange(string fromState, string toState, string reason = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The previous state (e.g., &quot;idle&quot;, &quot;position_open&quot;).</p>
+</dd>
+    <dt><code>toState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new state (use keywords from remarks above for emoji).</p>
+</dd>
+    <dt><code>reason</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The reason for the state change (optional, max ~100 chars recommended).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogStateChange_System_String_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+<strong>GREEN emoji (🟢) - Active/Running states:</strong>
+<ul><li><span class="term">"active"</span>Bot is active</li><li><span class="term">"idle"</span>Bot is idle and ready</li><li><span class="term">"open"</span>Position is open</li><li><span class="term">"started"</span>Bot/process started</li><li><span class="term">"running"</span>Bot is running</li><li><span class="term">"position_open"</span>Position opened</li></ul>
+
+<p>
+<strong>RED emoji (🔴) - Inactive/Error states:</strong>
+<ul><li><span class="term">"closed"</span>Position/session closed</li><li><span class="term">"stopped"</span>Bot stopped</li><li><span class="term">"ended"</span>Process ended</li><li><span class="term">"error"</span>Error occurred</li><li><span class="term">"failed"</span>Action failed</li><li><span class="term">"blocked"</span>Bot blocked/paused</li></ul>
+
+<p>
+<strong>YELLOW/SPINNER emoji (🔄) - Pending/Transitional states:</strong>
+<ul><li><span class="term">"pending"</span>State pending</li><li><span class="term">"waiting"</span>Waiting for something</li><li><span class="term">"init"</span>Initialization</li><li><span class="term">"recovery"</span>Recovery process</li><li><span class="term">"entry_pending"</span>Waiting for entry order fill</li><li><span class="term">"reversing_pending"</span>Reversing position pending</li></ul>
+
+<p>
+<strong>DEFAULT emoji (➡️)</strong> - Unknown/other states (not in list above)
+</p>
+<p>
+<strong>Note:</strong> Use lowercase state names for consistent emoji mapping.
+</p>
+</div>
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogSuccess_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogSuccess*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogSuccess_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogSuccess(System.String,System.String,System.Object[])">
+  LogSuccess(string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a success message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogSuccess(string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogWarning_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogWarning*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_LogWarning_System_String_System_String_System_Object___" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.LogWarning(System.String,System.String,System.Object[])">
+  LogWarning(string, string?, params object?[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Logs a warning message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogWarning(string title, string? detailsTemplate = null, params object?[] detailsArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The log entry title.</p>
+</dd>
+    <dt><code>detailsTemplate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The message template (optional).</p>
+</dd>
+    <dt><code>detailsArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>Arguments for the message template.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_NotifyDocument_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.NotifyDocument*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_NotifyDocument_System_String_System_String_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.NotifyDocument(System.String,System.String)">
+  NotifyDocument(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a notification with a document attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyDocument(string title, string filePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The notification title.</p>
+</dd>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the document file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_NotifyError_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.NotifyError*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_NotifyError_System_String_System_Exception_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.NotifyError(System.String,System.Exception)">
+  NotifyError(string, Exception)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a notification for an error event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyError(string title, Exception ex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The notification title.</p>
+</dd>
+    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>The exception to notify about.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_NotifyKeyValue_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.NotifyKeyValue*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_NotifyKeyValue_System_String_System_ValueTuple_System_String_System_String____" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.NotifyKeyValue(System.String,System.ValueTuple{System.String,System.String}[])">
+  NotifyKeyValue(string, params (string key, string value)[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a notification with key-value pairs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyKeyValue(string title, params (string key, string value)[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The notification title.</p>
+</dd>
+    <dt><code>data</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.key">key</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.value">value</a>)[]</dt>
+    <dd><p>The key-value pairs to notify.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_IStrategyLogger_NotifyTrace_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.NotifyTrace*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_IStrategyLogger_NotifyTrace_System_String_System_String_Pt_Okx_Sdk_Enums_PtLogLevel_" data-uid="Pt.Okx.Sdk.Strategy.IStrategyLogger.NotifyTrace(System.String,System.String,Pt.Okx.Sdk.Enums.PtLogLevel)">
+  NotifyTrace(string, string, PtLogLevel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/IStrategyLogger.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a trace notification with a message and log level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyTrace(string title, string message, PtLogLevel level = PtLogLevel.Information)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The notification title.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The trace message.</p>
+</dd>
+    <dt><code>level</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PtLogLevel.html">PtLogLevel</a></dt>
+    <dd><p>The log level (default: Information).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

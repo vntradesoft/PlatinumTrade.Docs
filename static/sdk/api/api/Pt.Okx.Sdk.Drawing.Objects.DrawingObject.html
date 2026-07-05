@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DrawingObject | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DrawingObject | Pt.Okx.Sdk API ">
+      
+      <meta name="description" content="Abstract base class for all drawing objects (lines, shapes, text, etc.) on a chart.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Drawing_Objects_DrawingObject.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Drawing.Objects.DrawingObject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject" class="text-break">
+Class DrawingObject  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Drawing.html">Drawing</a>.<a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.html">Objects</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Abstract base class for all drawing objects (lines, shapes, text, etc.) on a chart.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DrawingObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DrawingObject</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.EmojiObject.html">EmojiObject</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.FibRetracementObject.html">FibRetracementObject</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.HorizontalLineObject.html">HorizontalLineObject</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.MeasurementObject.html">MeasurementObject</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.RectangleObject.html">RectangleObject</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.TextObject.html">TextObject</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.TrendLineObject.html">TrendLineObject</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Drawing.Objects.VerticalLineObject.html">VerticalLineObject</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Description_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Description*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Description" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a description for the drawing object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Id_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Id*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Id" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the unique identifier of the drawing object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_IsLocked_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.IsLocked*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_IsLocked" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.IsLocked">
+  IsLocked
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the drawing object is locked from editing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLocked { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_IsVisible_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.IsVisible*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_IsVisible" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.IsVisible">
+  IsVisible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the drawing object is visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Name_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Name*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Name" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the display name of the drawing object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Source_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Source*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Source" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Source">
+  Source
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the source of the drawing (e.g., User or Strategy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawingSource Source { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Drawing.Enums.DrawingSource.html">DrawingSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Style_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Style*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Style" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Style">
+  Style
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the visual style of the drawing object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawingStyle Style { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Drawing.Models.DrawingStyle.html">DrawingStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Symbol_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Symbol*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Symbol" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Symbol">
+  Symbol
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the symbol associated with the drawing object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Symbol { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_TargetIndicatorId_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.TargetIndicatorId*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_TargetIndicatorId" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.TargetIndicatorId">
+  TargetIndicatorId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the indicator this drawing is associated with, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? TargetIndicatorId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Timeframe_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Timeframe*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Timeframe" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Timeframe">
+  Timeframe
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the timeframe for which the drawing object is visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Timeframe Timeframe { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Type_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Type*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Type" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Type">
+  Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type of the drawing object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DrawingObjectType Type { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Drawing.Enums.DrawingObjectType.html">DrawingObjectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_VisibleTimeframes_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.VisibleTimeframes*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_VisibleTimeframes" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.VisibleTimeframes">
+  VisibleTimeframes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the timeframes during which this object is visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeFrameOptions VisibleTimeframes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.TimeFrameOptions.html">TimeFrameOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_GetTypeName_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.GetTypeName*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_GetTypeName" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.GetTypeName">
+  GetTypeName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the string representation of the drawing object type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetTypeName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Move_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Move*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_Move_System_Decimal_System_TimeSpan_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.Move(System.Decimal,System.TimeSpan)">
+  Move(decimal, TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the drawing object by the specified price and time deltas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Move(decimal priceDelta, TimeSpan timeDelta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>priceDelta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd><p>The amount to change the price by.</p>
+</dd>
+    <dt><code>timeDelta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><p>The amount of time to shift the object by.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_MoveAnchor_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.MoveAnchor*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Drawing_Objects_DrawingObject_MoveAnchor_Pt_Okx_Sdk_Drawing_Models_DrawingAnchor_System_Decimal_System_TimeSpan_" data-uid="Pt.Okx.Sdk.Drawing.Objects.DrawingObject.MoveAnchor(Pt.Okx.Sdk.Drawing.Models.DrawingAnchor,System.Decimal,System.TimeSpan)">
+  MoveAnchor(DrawingAnchor, decimal, TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Drawing/Objects/DrawingObject.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Helper method to move an anchor point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DrawingAnchor MoveAnchor(DrawingAnchor anchor, decimal priceDelta, TimeSpan timeDelta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anchor</code> <a class="xref" href="Pt.Okx.Sdk.Drawing.Models.DrawingAnchor.html">DrawingAnchor</a></dt>
+    <dd></dd>
+    <dt><code>priceDelta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+    <dt><code>timeDelta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Drawing.Models.DrawingAnchor.html">DrawingAnchor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

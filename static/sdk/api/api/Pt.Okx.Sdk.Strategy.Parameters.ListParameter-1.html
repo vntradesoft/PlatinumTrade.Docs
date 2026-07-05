@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ListParameter&lt;T&gt; | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ListParameter&lt;T&gt; | Pt.Okx.Sdk API ">
+      
+      <meta name="description" content="A generic list/collection parameter for storing multiple values of the same primitive type. Values are stored as a comma-separated (or custom-separated) string in JSON.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Parameters.ListParameter%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1" class="text-break">
+Class ListParameter&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Parameters/InputParameter.cs/#L777"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Strategy.html">Strategy</a>.<a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.html">Parameters</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A generic list/collection parameter for storing multiple values of the same primitive type.
+Values are stored as a comma-separated (or custom-separated) string in JSON.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ListParameter&lt;T&gt; : InputParameter, INotifyPropertyChanged where T : notnull</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The element type: string, int, decimal, double, bool, etc.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html">InputParameter</a></div>
+      <div><span class="xref">ListParameter&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html#Pt_Okx_Sdk_Strategy_Parameters_InputParameter__options">InputParameter._options</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html#Pt_Okx_Sdk_Strategy_Parameters_InputParameter_Type">InputParameter.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html#Pt_Okx_Sdk_Strategy_Parameters_InputParameter_Range">InputParameter.Range</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html#Pt_Okx_Sdk_Strategy_Parameters_InputParameter_Description">InputParameter.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html#Pt_Okx_Sdk_Strategy_Parameters_InputParameter_Options">InputParameter.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html#Pt_Okx_Sdk_Strategy_Parameters_InputParameter_PropertyChanged">InputParameter.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html#Pt_Okx_Sdk_Strategy_Parameters_InputParameter_OnPropertyChanged_System_String_">InputParameter.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1__ctor_" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.#ctor*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1__ctor" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.#ctor">
+  ListParameter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Parameters/InputParameter.cs/#L782"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Pt.Okx.Sdk.Strategy.Parameters.ListParameter-1.html">ListParameter&lt;T&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListParameter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_Separator_" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.Separator*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_Separator" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.Separator">
+  Separator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Parameters/InputParameter.cs/#L791"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the separator used to delimit values in the display/serialized form (default: comma).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Separator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_Value_" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.Value*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_Value" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.Value">
+  Value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Parameters/InputParameter.cs/#L799"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the list of values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SuppressMessage(&quot;Design&quot;, &quot;CA2227:Collection properties should be read only&quot;)]
+public List&lt;T&gt; Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_Value_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Setter is necessary for binding and JSON deserialization, even though the property is a List{T}.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_GetDisplayValue_" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.GetDisplayValue*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_GetDisplayValue" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.GetDisplayValue">
+  GetDisplayValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Parameters/InputParameter.cs/#L847"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a display-friendly string representation of the current value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetDisplayValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_GetRawValue_" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.GetRawValue*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_GetRawValue" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.GetRawValue">
+  GetRawValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Parameters/InputParameter.cs/#L812"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the current value of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetRawValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_SetValue_" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.SetValue*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_SetValue_System_Object_" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.SetValue(System.Object)">
+  SetValue(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Parameters/InputParameter.cs/#L815"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the current value of the parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetValue(object value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_ValidateValue_" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.ValidateValue*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Strategy_Parameters_ListParameter_1_ValidateValue_System_Object_System_String__" data-uid="Pt.Okx.Sdk.Strategy.Parameters.ListParameter`1.ValidateValue(System.Object,System.String@)">
+  ValidateValue(object, out string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Parameters/InputParameter.cs/#L856"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates the provided value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ValidateValue(object value, out string errorMessage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The value to validate.</p>
+</dd>
+    <dt><code>errorMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>When this method returns, contains an error message if validation fails.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the value is valid; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

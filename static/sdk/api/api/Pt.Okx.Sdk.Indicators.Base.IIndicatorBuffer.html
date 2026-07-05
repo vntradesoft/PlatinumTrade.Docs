@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IIndicatorBuffer | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IIndicatorBuffer | Pt.Okx.Sdk API ">
+      
+      <meta name="description" content="Represents a buffer for storing indicator values over time.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer" class="text-break">
+Interface IIndicatorBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.Base.html">Base</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a buffer for storing indicator values over time.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IIndicatorBuffer</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Capacity_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Capacity*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Capacity" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Capacity">
+  Capacity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The buffer's maximum capacity.
+When the number of elements exceeds, the buffer may need to resize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Capacity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Count_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Count*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Count" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Actual number of elements with data in the buffer.
+(does not include empty parts)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_CurrentTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.CurrentTime*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_CurrentTime" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.CurrentTime">
+  CurrentTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicator's current time based on the period (only applicable for backtest).
+This value will be updated every time new data is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime CurrentTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FullCount_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FullCount*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FullCount" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FullCount">
+  FullCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Total number of elements from the beginning to the end of the buffer that have been filled with data.
+Different from Count: Count only calculates the current number of elements,
+while FullCount includes the offset (_startIndex + Count).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FullCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_InternalValues_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.InternalValues*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_InternalValues" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.InternalValues">
+  InternalValues
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns all indicator values (original array)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;IndicatorValue&gt; InternalValues { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Item_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Item*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Item_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Accesses elements by index.
+Equivalent to calling <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html#Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_At_System_Int32_">At(int)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue this[int index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Version_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Version*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Version" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Version">
+  Version
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the version of the buffer, which increments whenever data is added or modified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Add_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Add*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Add_System_Int32_Pt_Okx_Sdk_Indicators_Models_IndicatorValue_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Add(System.Int32,Pt.Okx.Sdk.Indicators.Models.IndicatorValue)">
+  Add(int, IndicatorValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new value to the buffer at a specified position.
+Requires data to be added in ascending chronological order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Add(int index, IndicatorValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Add_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Add*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Add_System_Int32_System_DateTime_System_Double_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Add(System.Int32,System.DateTime,System.Double)">
+  Add(int, DateTime, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new value to the buffer at a specified position, with timestamp and numeric value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Add(int index, DateTime timestamp, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_At_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.At*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_At_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.At(System.Int32)">
+  At(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the value at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue At(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Index out of range</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Clear_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Clear*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Clear" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears all data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_CountUpToCurrent_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.CountUpToCurrent*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_CountUpToCurrent" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.CountUpToCurrent">
+  CountUpToCurrent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the number of elements with data up to CurrentTime.
+Used instead of Count when counting in backtest context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int CountUpToCurrent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Find_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Find*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Find_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Find(System.DateTime)">
+  Find(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds and returns the value at the exact specified time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue Find(DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindAfter_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindAfter*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindAfter_System_DateTime_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindAfter(System.DateTime,System.Int32)">
+  FindAfter(DateTime, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds and returns a collection of n elements immediately after a given time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IndicatorValue&gt; FindAfter(DateTime dateTime, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindAtOrBefore_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindAtOrBefore*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindAtOrBefore_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindAtOrBefore(System.DateTime)">
+  FindAtOrBefore(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the value at or immediately before dateTime.
+If not found, returns the default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue FindAtOrBefore(DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindAtOrBeforeCurrent_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindAtOrBeforeCurrent*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindAtOrBeforeCurrent_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindAtOrBeforeCurrent(System.Int32)">
+  FindAtOrBeforeCurrent(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the indicator value at or before the time <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html#Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_CurrentTime">CurrentTime</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue FindAtOrBeforeCurrent(int offset = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of steps back from the found position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindBefore_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindBefore*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindBefore_System_DateTime_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindBefore(System.DateTime,System.Int32)">
+  FindBefore(DateTime, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds and returns n elements before (or at) a given time.
+(Usually used to retrieve historical data before a time point in trading)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IndicatorValue&gt; FindBefore(DateTime dateTime, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindBefore_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindBefore*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindBefore_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindBefore(System.Int32)">
+  FindBefore(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds and returns n elements before (or at) the current time.
+(Usually used to retrieve the most recent historical data compared to the current time in trading)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IndicatorValue&gt; FindBefore(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindClosest_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindClosest*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindClosest_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindClosest(System.DateTime)">
+  FindClosest(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds and returns the value closest to the time passed in dateTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue FindClosest(DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindCurrent_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindCurrent*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindCurrent" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindCurrent">
+  FindCurrent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds and returns the value corresponding to <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html#Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_CurrentTime">CurrentTime</a>.
+(Usually used to get data at the current time in trading)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue FindCurrent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindExactAtCurrent_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindExactAtCurrent*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindExactAtCurrent" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindExactAtCurrent">
+  FindExactAtCurrent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the value at CurrentTime, including IsEmpty (no walk-back).
+Used to check the exact state at the current bar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue FindExactAtCurrent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindIndex_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindIndex*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindIndex_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindIndex(System.DateTime)">
+  FindIndex(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Searches for the index of the element with a time exactly equal to dateTime.
+Uses BinarySearch with O(log n) complexity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FindIndex(DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindIndexAtOrAfter_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindIndexAtOrAfter*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindIndexAtOrAfter_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindIndexAtOrAfter(System.DateTime)">
+  FindIndexAtOrAfter(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the index of the element with a time greater than or equal to the specified time dateTime.
+Uses BinarySearch for fast O(log n) searching.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FindIndexAtOrAfter(DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindIndexAtOrBefore_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindIndexAtOrBefore*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindIndexAtOrBefore_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindIndexAtOrBefore(System.DateTime)">
+  FindIndexAtOrBefore(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the index of the element with a time less than or equal to dateTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FindIndexAtOrBefore(DateTime dateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindRange_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindRange*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindRange_System_DateTime_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindRange(System.DateTime,System.DateTime)">
+  FindRange(DateTime, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds and returns all elements within a specified time range.
+Complexity: O(log n + k), where n is the number of elements and k is the number of satisfied elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IndicatorValue&gt; FindRange(DateTime startTime, DateTime endTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>endTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindRangeUpToCurrent_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindRangeUpToCurrent*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindRangeUpToCurrent_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindRangeUpToCurrent(System.DateTime)">
+  FindRangeUpToCurrent(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the range [startTime, CurrentTime] — never exceeds CurrentTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IndicatorValue&gt; FindRangeUpToCurrent(DateTime startTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindWithTolerance_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindWithTolerance*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindWithTolerance_System_DateTime_System_TimeSpan_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindWithTolerance(System.DateTime,System.TimeSpan)">
+  FindWithTolerance(DateTime, TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the value closest to a given time, but only returns it if the time difference does not exceed tolerance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue FindWithTolerance(DateTime dateTime, TimeSpan tolerance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>tolerance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_ForceAdd_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.ForceAdd*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_ForceAdd_System_Int32_System_DateTime_System_Double_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.ForceAdd(System.Int32,System.DateTime,System.Double)">
+  ForceAdd(int, DateTime, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Overwrites the value at the index regardless of whether the slot already has data or not.
+Used for multi-buffer indicators (SAR, etc.) when 2 buffers track the same index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ForceAdd(int index, DateTime timestamp, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCurrentEndIndexDebug_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCurrentEndIndexDebug*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCurrentEndIndexDebug" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCurrentEndIndexDebug">
+  GetCurrentEndIndexDebug()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the current end index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetCurrentEndIndexDebug()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetLatest_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetLatest*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetLatest_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetLatest(System.Int32)">
+  GetLatest(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the last n elements (latest values) in the buffer.
+Returns as Span{T} for fast access without copying data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Span&lt;IndicatorValue&gt; GetLatest(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetSlice_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetSlice*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetSlice_System_Int32_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetSlice(System.Int32,System.Int32)">
+  GetSlice(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span&lt;T&gt;</a> representing a slice in the buffer.
+This function is very fast because it only creates a view on the original array, not copying data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Span&lt;IndicatorValue&gt; GetSlice(int startIndex, int length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetStats_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetStats*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetStats" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetStats">
+  GetStats()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns basic buffer statistics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BufferStats GetStats()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.BufferStats.html">BufferStats</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetValues_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetValues*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetValues" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetValues">
+  GetValues()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns all indicator values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue[] GetValues()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_HasDataAtCurrent_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.HasDataAtCurrent*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_HasDataAtCurrent" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.HasDataAtCurrent">
+  HasDataAtCurrent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the buffer has data at or before CurrentTime.
+Used to guard before querying.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasDataAtCurrent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_MarkEmpty_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.MarkEmpty*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_MarkEmpty_System_Int32_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.MarkEmpty(System.Int32,System.DateTime)">
+  MarkEmpty(int, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Records an index position as processed but without a value (used for multi-buffer indicators like SAR).
+Does not increase Count, only updates FullCount so At()/TryAt() knows the index has been visited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MarkEmpty(int index, DateTime timestamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Resize_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Resize*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Resize_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Resize(System.Int32)">
+  Resize(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes the buffer size. Only performed when newSize is greater than current Capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Resize(int newSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_TryAt_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.TryAt*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_TryAt_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.TryAt(System.Int32)">
+  TryAt(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the value at the specified index, or null if the index is invalid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue TryAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

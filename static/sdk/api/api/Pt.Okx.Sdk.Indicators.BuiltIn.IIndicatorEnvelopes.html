@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IIndicatorEnvelopes | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IIndicatorEnvelopes | Pt.Okx.Sdk API ">
+      
+      <meta name="description" content="Defines the contract for envelope-based technical indicators (e.g., Moving Average Envelopes).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes" class="text-break">
+Interface IIndicatorEnvelopes  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/BuiltIn/IndicatorTrend.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.BuiltIn.html">BuiltIn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Defines the contract for envelope-based technical indicators (e.g., Moving Average Envelopes).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IIndicatorEnvelopes : IIndicator, IIndicatorMethodCommon</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_Config">IIndicator.Config</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_Identity">IIndicator.Identity</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_Property">IIndicator.Property</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_IsInitialized">IIndicator.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_OnInit">IIndicator.OnInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_OnCalculate_System_Int32__System_Int32__System_Int32__System_Double____">IIndicator.OnCalculate(in int, in int, in int, in double[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_OnCalculate_System_Int32__System_Int32__System_DateTime____System_Double____System_Double____System_Double____System_Double____System_Double____System_Double__">IIndicator.OnCalculate(in int, in int, in DateTime[], in double[], in double[], in double[], in double[], in double[], in double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_GetIndicatorId">IIndicator.GetIndicatorId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_GetDisplayName">IIndicator.GetDisplayName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html#Pt_Okx_Sdk_Indicators_Base_IIndicator_GetBuffer_System_Int32_">IIndicator.GetBuffer(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon.html#Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorMethodCommon_GetAt_System_Int32_">IIndicatorMethodCommon.GetAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon.html#Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorMethodCommon_GetAt_System_Int32_System_Int32_">IIndicatorMethodCommon.GetAt(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon.html#Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorMethodCommon_GetRange_System_Int32_">IIndicatorMethodCommon.GetRange(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon.html#Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorMethodCommon_GetRange_System_Int32_System_Int32_">IIndicatorMethodCommon.GetRange(int, int)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_GetLower_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.GetLower*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_GetLower_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.GetLower(System.Int32)">
+  GetLower(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/BuiltIn/IndicatorTrend.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the lower band value at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue GetLower(int index = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the value to retrieve. Default is 0.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd><p>The lower band value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_GetLowerRange_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.GetLowerRange*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_GetLowerRange_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.GetLowerRange(System.Int32)">
+  GetLowerRange(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/BuiltIn/IndicatorTrend.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a range of lower band values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IndicatorValue&gt; GetLowerRange(int count = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of values to retrieve. Default is 1.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd><p>A collection of lower band values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_GetUpper_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.GetUpper*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_GetUpper_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.GetUpper(System.Int32)">
+  GetUpper(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/BuiltIn/IndicatorTrend.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the upper band value at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IndicatorValue GetUpper(int index = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the value to retrieve. Default is 0.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
+    <dd><p>The upper band value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_GetUpperRange_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.GetUpperRange*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_GetUpperRange_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.GetUpperRange(System.Int32)">
+  GetUpperRange(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/BuiltIn/IndicatorTrend.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a range of upper band values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IndicatorValue&gt; GetUpperRange(int count = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of values to retrieve. Default is 1.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a>&gt;</dt>
+    <dd><p>A collection of upper band values.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_IsPriceAboveUpper_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.IsPriceAboveUpper*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_IsPriceAboveUpper_System_Double_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.IsPriceAboveUpper(System.Double)">
+  IsPriceAboveUpper(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/BuiltIn/IndicatorTrend.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified price exceeds the upper limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPriceAboveUpper(double price)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>price</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The price to evaluate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the price is above the upper limit; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_IsPriceBelowLower_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.IsPriceBelowLower*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorEnvelopes_IsPriceBelowLower_System_Double_" data-uid="Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.IsPriceBelowLower(System.Double)">
+  IsPriceBelowLower(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/BuiltIn/IndicatorTrend.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified price is below the lower threshold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPriceBelowLower(double price)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>price</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The price to evaluate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the price is below the lower threshold; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

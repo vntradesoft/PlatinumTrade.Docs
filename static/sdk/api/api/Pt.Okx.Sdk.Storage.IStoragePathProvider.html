@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IStoragePathProvider | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IStoragePathProvider | Pt.Okx.Sdk API ">
+      
+      <meta name="description" content="Provides runtime storage directories for history, logs, state and cache. End-users can implement this interface and register it in DI to customize storage layout.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Storage_IStoragePathProvider.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Storage.IStoragePathProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Storage_IStoragePathProvider" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider" class="text-break">
+Interface IStoragePathProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Storage.html">Storage</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides runtime storage directories for history, logs, state and cache.
+End-users can implement this interface and register it in DI to customize storage layout.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IStoragePathProvider</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetBacktestLogsRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetBacktestLogsRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetBacktestLogsRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetBacktestLogsRoot">
+  GetBacktestLogsRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the backtest logs storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetBacktestLogsRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetBacktestLogsRoot_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Intended for backtest-specific logs/artifacts (for example exported trade logs),
+separate from runtime Serilog files in <a class="xref" href="Pt.Okx.Sdk.Storage.IStoragePathProvider.html#Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLogsRoot">GetLogsRoot()</a>.</p>
+</div>
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetBacktestRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetBacktestRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetBacktestRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetBacktestRoot">
+  GetBacktestRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the backtest storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetBacktestRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetCacheRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetCacheRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetCacheRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetCacheRoot">
+  GetCacheRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the cache storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCacheRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetExportsRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetExportsRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetExportsRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetExportsRoot">
+  GetExportsRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the export artifacts storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetExportsRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetHistoryRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetHistoryRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetHistoryRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetHistoryRoot">
+  GetHistoryRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the history storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetHistoryRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetIndicatorPluginsRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetIndicatorPluginsRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetIndicatorPluginsRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetIndicatorPluginsRoot">
+  GetIndicatorPluginsRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the folder containing custom technical indicators plugins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetIndicatorPluginsRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLiveLogsRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetLiveLogsRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLiveLogsRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetLiveLogsRoot">
+  GetLiveLogsRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the live logs storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetLiveLogsRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLiveLogsRoot_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Intended for live-mode logs/artifacts, separate from runtime Serilog files
+in <a class="xref" href="Pt.Okx.Sdk.Storage.IStoragePathProvider.html#Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLogsRoot">GetLogsRoot()</a>.</p>
+</div>
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLiveRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetLiveRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLiveRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetLiveRoot">
+  GetLiveRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the live storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetLiveRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLogsRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetLogsRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLogsRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetLogsRoot">
+  GetLogsRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the logs storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetLogsRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetLogsRoot_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This path is for runtime application logs (for example Serilog all-/error- rolling files).
+It is not intended for mode-specific trade/export logs.</p>
+</div>
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetPath_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetPath*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetPath_Pt_Okx_Sdk_Storage_Enums_StoragePathScope_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetPath(Pt.Okx.Sdk.Storage.Enums.StoragePathScope)">
+  GetPath(StoragePathScope)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a storage path by logical scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetPath(StoragePathScope scope = StoragePathScope.RuntimeDataRoot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scope</code> <a class="xref" href="Pt.Okx.Sdk.Storage.Enums.StoragePathScope.html">StoragePathScope</a></dt>
+    <dd><p>Target scope. If omitted, returns the highest runtime data root.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetRuntimeDataRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetRuntimeDataRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetRuntimeDataRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetRuntimeDataRoot">
+  GetRuntimeDataRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the root directory used for runtime data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRuntimeDataRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetStateRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetStateRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetStateRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetStateRoot">
+  GetStateRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the state storage root.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetStateRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetStrategyPluginsRoot_" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetStrategyPluginsRoot*"></a>
+
+  <h3 id="Pt_Okx_Sdk_Storage_IStoragePathProvider_GetStrategyPluginsRoot" data-uid="Pt.Okx.Sdk.Storage.IStoragePathProvider.GetStrategyPluginsRoot">
+  GetStrategyPluginsRoot()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Storage/IStoragePathProvider.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the folder containing custom trading strategies plugins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetStrategyPluginsRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

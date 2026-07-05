@@ -1,0 +1,38 @@
+- name: Welcome
+  href: intro.md
+- name: Architecture
+  href: architecture.md
+- name: Getting Started
+  href: getting-started.md
+- name: ApiResult Pattern
+  href: api-result.md
+- name: Using the Trading Client
+  href: trading-client.md
+- name: Market Data & Indicators
+  href: market-data.md
+- name: Drawing API
+  href: drawing-api.md
+- name: Custom Indicator Plugin
+  href: indicator-plugin.md
+- name: Strategy Plugin
+  items:
+    - name: Overview & Lifecycle
+      href: strategy/overview.md
+    - name: Strategy Settings
+      href: strategy/settings.md
+    - name: Input Parameters
+      href: strategy/input-parameters.md
+    - name: Using Indicators
+      href: strategy/indicators.md
+    - name: Events & State
+      href: strategy/events.md
+    - name: Trading API
+      href: strategy/trading-api.md
+    - name: Logging & Notifications
+      href: strategy/logger-notify.md
+    - name: Telegram Commands
+      href: strategy/telegram-commands.md
+    - name: State Management
+      href: strategy/state-management.md
+- name: Document History
+  href: document-history.md

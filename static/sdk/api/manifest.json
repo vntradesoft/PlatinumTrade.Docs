@@ -1,0 +1,3543 @@
+{
+  "source_base_path": "D:/CryptoProject/PlatinumTrade.App/Pt.Okx.Sdk/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Account.Enums.FeeVipLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Account.Enums.FeeVipLevel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Account.Enums.FeeVipLevel",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Account.Enums.FeeVipLevel.yml\" sourcestartlinenumber=\"1\">OKX fee VIP level.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Account.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Account.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Account.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Account.IAccountClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Account.IAccountClient",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Account.IAccountClient.yml\" sourcestartlinenumber=\"1\">Interface for account clients, providing methods to query trading account information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Account.Model.AccountBalance",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.yml\" sourcestartlinenumber=\"1\">Represents the total trading account balance information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalanceDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalanceDetail.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Account.Model.AccountBalanceDetail",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalanceDetail.yml\" sourcestartlinenumber=\"1\">Represents detailed information for a specific asset within the trading account.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Account.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Account.Model.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Account.Model",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Account.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Account",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.IOkxClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.IOkxClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.IOkxClient",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.IOkxClient.yml\" sourcestartlinenumber=\"1\">Interface aggregating the main OKX platform services for clients.\nProvides restricted access compared to IOkx, exposing only safe functions for client use.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.yml\" sourcestartlinenumber=\"1\">Interface for instrument clients, providing methods to query trading instrument information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Instruments.Models.LimitPrice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Instruments.Models.LimitPrice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Instruments.Models.LimitPrice",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Instruments.Models.LimitPrice.yml\" sourcestartlinenumber=\"1\">Represents the limit price information for a specific trading instrument.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Instruments.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Instruments.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Instruments.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Instruments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Instruments.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Instruments",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.Enums.OhlcPattern.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.Enums.OhlcPattern.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market.Enums.OhlcPattern",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Market.Enums.OhlcPattern.yml\" sourcestartlinenumber=\"1\">Intrabar OHLC path used when replaying candle data as ticks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.Enums.TickType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.Enums.TickType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market.Enums.TickType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Market.Enums.TickType.yml\" sourcestartlinenumber=\"1\">Represents the role of a tick within a candle during replay or real-time streaming.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.yml\" sourcestartlinenumber=\"1\">Client interface providing methods for querying time series (OHLCV) data and initializing technical indicators.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.Models.CandleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.Models.CandleData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market.Models.CandleData",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Market.Models.CandleData.yml\" sourcestartlinenumber=\"1\">Represents OHLCV data for a specific trading candle.\nThis record struct is designed for memory efficiency and cache locality in high-frequency scenarios.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.Models.TickData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.Models.TickData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market.Models.TickData",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Market.Models.TickData.yml\" sourcestartlinenumber=\"1\">Represents the smallest data unit in the simulation system.\nIn backtest, this is generated synthetically from 1m OHLCV data.\nIn real-time trading, this is sourced directly from the exchange's WebSocket tickers channel.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.Models.TickSourceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.Models.TickSourceConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market.Models.TickSourceConfig",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Market.Models.TickSourceConfig.yml\" sourcestartlinenumber=\"1\">Configuration for synthetic tick generation during backtests.\nThis does not affect real-time tick sources.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Market.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Market.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Market",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoActualSide.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoActualSide.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.AlgoActualSide",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoActualSide.yml\" sourcestartlinenumber=\"1\">Actual side of an algorithmic trigger.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderState",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderState.yml\" sourcestartlinenumber=\"1\">OKX algorithmic order lifecycle states.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType.yml\" sourcestartlinenumber=\"1\">OKX algorithmic order types exposed by the SDK mapper layer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType.yml\" sourcestartlinenumber=\"1\">Price sources used by OKX algorithmic orders.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.CheckUnitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.CheckUnitType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.CheckUnitType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.CheckUnitType.yml\" sourcestartlinenumber=\"1\">Currency unit transitions returned by OKX order checks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType.yml\" sourcestartlinenumber=\"1\">Reasons or styles for closing a position.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode.yml\" sourcestartlinenumber=\"1\">Margin modes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.OrderFlowType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.OrderFlowType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.OrderFlowType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.OrderFlowType.yml\" sourcestartlinenumber=\"1\">Order liquidity role.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.yml\" sourcestartlinenumber=\"1\">OKX order states.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.PositionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.PositionMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.PositionMode",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.PositionMode.yml\" sourcestartlinenumber=\"1\">Account position mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset.yml\" sourcestartlinenumber=\"1\">Quantity asset type for order placement.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.QuickMarginType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.QuickMarginType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.QuickMarginType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.QuickMarginType.yml\" sourcestartlinenumber=\"1\">Quick margin behavior for margin orders.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.TransactionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.TransactionType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.TransactionType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.TransactionType.yml\" sourcestartlinenumber=\"1\">OKX transaction types used by fills and account history mappers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.TriggerOrderKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.TriggerOrderKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.TriggerOrderKind",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.TriggerOrderKind.yml\" sourcestartlinenumber=\"1\">Order kind for trigger order legs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.yml\" sourcestartlinenumber=\"1\">Trigger price source for conditional orders.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.ITradeClient",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.yml\" sourcestartlinenumber=\"1\">Interface for trading operations, including order placement, management, position handling, and trade history retrieval.\nProvides methods for interacting with trading endpoints, managing orders, positions, and retrieving trade-related data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder.yml\" sourcestartlinenumber=\"1\">Represents an algorithmic order in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderAmendResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderAmendResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderAmendResponse",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderAmendResponse.yml\" sourcestartlinenumber=\"1\">Order amend response</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest.yml\" sourcestartlinenumber=\"1\">Algo order request</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderResponse",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderResponse.yml\" sourcestartlinenumber=\"1\">Represents the response after placing an algorithmic order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderUpdate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderUpdate",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderUpdate.yml\" sourcestartlinenumber=\"1\">Represents an update to an algorithmic order in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder.yml\" sourcestartlinenumber=\"1\">Algo order attached to an order</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.CheckOrderResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.CheckOrderResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.CheckOrderResponse",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.CheckOrderResponse.yml\" sourcestartlinenumber=\"1\">Check order info</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.ClosePositionResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.ClosePositionResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.ClosePositionResponse",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.ClosePositionResponse.yml\" sourcestartlinenumber=\"1\">Represents the response received after attempting to close a position in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.ClosingPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.ClosingPosition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.ClosingPosition",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.ClosingPosition.yml\" sourcestartlinenumber=\"1\">Represents a closed position in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.Order.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.Order.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.Order",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.Order.yml\" sourcestartlinenumber=\"1\">Represents an order in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderAmendResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderAmendResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.OrderAmendResponse",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.OrderAmendResponse.yml\" sourcestartlinenumber=\"1\">Order amend response</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest.yml\" sourcestartlinenumber=\"1\">Cancel request</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelResponse",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelResponse.yml\" sourcestartlinenumber=\"1\">Cancel response</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceRequest",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceRequest.yml\" sourcestartlinenumber=\"1\">Order place request</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceResponse",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceResponse.yml\" sourcestartlinenumber=\"1\">Represents the response after placing an order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.yml\" sourcestartlinenumber=\"1\">Represents an update to an order in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.Position.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.Position",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.Position.yml\" sourcestartlinenumber=\"1\">Represents a position in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.PositionCloseOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.PositionCloseOrder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.PositionCloseOrder",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.PositionCloseOrder.yml\" sourcestartlinenumber=\"1\">Represents an algorithmic order to close a position.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.SelfTradePreventionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.SelfTradePreventionMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.SelfTradePreventionMode",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.SelfTradePreventionMode.yml\" sourcestartlinenumber=\"1\">Self-trade prevention modes supported by OKX.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.Transaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.Transaction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models.Transaction",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.Models.Transaction.yml\" sourcestartlinenumber=\"1\">Represents a transaction in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.Trading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.Trading.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients.Trading",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Clients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Clients.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Clients",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Common.ApiError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Common.ApiError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Common.ApiError",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Common.ApiError.yml\" sourcestartlinenumber=\"1\">Represents an error returned by the OKX API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Common.ApiResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Common.ApiResult-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Common.ApiResult<T>",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Common.ApiResult-1.yml\" sourcestartlinenumber=\"1\">Represents the result of an API operation that returns data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Common.ApiResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Common.ApiResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Common.ApiResult",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Common.ApiResult.yml\" sourcestartlinenumber=\"1\">Represents the result of an API operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Common.ApiResultFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Common.ApiResultFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Common.ApiResultFactory",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Common.ApiResultFactory.yml\" sourcestartlinenumber=\"1\">Provides factory methods for creating <xref href=\"Pt.Okx.Sdk.Common.ApiResult\" data-throw-if-not-resolved=\"false\"></xref> instances.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Common.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Common",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.DrawingChangeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.DrawingChangeType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Enums.DrawingChangeType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Enums.DrawingChangeType.yml\" sourcestartlinenumber=\"1\">Specifies the type of change applied to a drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.DrawingLineStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.DrawingLineStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Enums.DrawingLineStyle",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Enums.DrawingLineStyle.yml\" sourcestartlinenumber=\"1\">Defines the visual style of a drawing line.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.DrawingObjectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.DrawingObjectType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Enums.DrawingObjectType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Enums.DrawingObjectType.yml\" sourcestartlinenumber=\"1\">Defines the types of drawing objects that can be placed on a chart.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.DrawingSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.DrawingSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Enums.DrawingSource",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Enums.DrawingSource.yml\" sourcestartlinenumber=\"1\">Specifies the origin source of a drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Events.DrawingChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Events.DrawingChangeEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Events.DrawingChangeEventArgs",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Events.DrawingChangeEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for drawing change events,\ndescribing what changed and the affected object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Events.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Events",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Extensions.DrawingEnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Extensions.DrawingEnumExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Extensions.DrawingEnumExtensions",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Extensions.DrawingEnumExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for working with enum values,\nincluding retrieving <xref href=\"System.ComponentModel.DescriptionAttribute\" data-throw-if-not-resolved=\"false\"></xref> metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.IDrawingManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.IDrawingManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.IDrawingManager",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.IDrawingManager.yml\" sourcestartlinenumber=\"1\">Defines the contract for managing drawing objects (lines, shapes, text, etc.) within the trading workspace.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Models.DrawingAnchor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Models.DrawingAnchor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Models.DrawingAnchor",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Models.DrawingAnchor.yml\" sourcestartlinenumber=\"1\">Represents an anchor point for a drawing object, defined by time and price coordinates.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Models.DrawingStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Models.DrawingStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Models.DrawingStyle",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Models.DrawingStyle.yml\" sourcestartlinenumber=\"1\">Defines the styling properties for a drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.NullDrawingManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.NullDrawingManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.NullDrawingManager",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.NullDrawingManager.yml\" sourcestartlinenumber=\"1\">A null implementation of <xref href=\"Pt.Okx.Sdk.Drawing.IDrawingManager\" data-throw-if-not-resolved=\"false\"></xref> for CLI use where drawing functionality is not required (no-op).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.DrawingObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.DrawingObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.DrawingObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.DrawingObject.yml\" sourcestartlinenumber=\"1\">Abstract base class for all drawing objects (lines, shapes, text, etc.) on a chart.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.EmojiObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.EmojiObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.EmojiObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.EmojiObject.yml\" sourcestartlinenumber=\"1\">Represents an emoji drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.FibRetracementObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.FibRetracementObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.FibRetracementObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.FibRetracementObject.yml\" sourcestartlinenumber=\"1\">Represents a Fibonacci retracement drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.HorizontalLineObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.HorizontalLineObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.HorizontalLineObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.HorizontalLineObject.yml\" sourcestartlinenumber=\"1\">Represents a horizontal line drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.MeasurementObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.MeasurementObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.MeasurementObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.MeasurementObject.yml\" sourcestartlinenumber=\"1\">Represents a measurement drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.RectangleObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.RectangleObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.RectangleObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.RectangleObject.yml\" sourcestartlinenumber=\"1\">Represents a rectangle drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.TextObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.TextObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.TextObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.TextObject.yml\" sourcestartlinenumber=\"1\">Represents a text drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.TrendLineObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.TrendLineObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.TrendLineObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.TrendLineObject.yml\" sourcestartlinenumber=\"1\">Represents a trend line drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.VerticalLineObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.VerticalLineObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects.VerticalLineObject",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Drawing.Objects.VerticalLineObject.yml\" sourcestartlinenumber=\"1\">Represents a vertical line drawing object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.Objects.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing.Objects",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Drawing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Drawing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Drawing",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.ApiErrorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.ApiErrorType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.ApiErrorType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.ApiErrorType.yml\" sourcestartlinenumber=\"1\">SDK error classification used by API result wrappers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.ApiName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.ApiName.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.ApiName",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.ApiName.yml\" sourcestartlinenumber=\"1\">OKX API operation names used for logging and error context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.InstrumentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.InstrumentType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.InstrumentType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.InstrumentType.yml\" sourcestartlinenumber=\"1\">OKX instrument types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.OrderSide.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.OrderSide.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.OrderSide",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.OrderSide.yml\" sourcestartlinenumber=\"1\">Order direction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.OrderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.OrderType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.OrderType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.OrderType.yml\" sourcestartlinenumber=\"1\">OKX order types used by trading requests.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.PositionSide.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.PositionSide.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.PositionSide",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.PositionSide.yml\" sourcestartlinenumber=\"1\">Position side in long/short or net position mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.PtLogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.PtLogLevel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.PtLogLevel",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.PtLogLevel.yml\" sourcestartlinenumber=\"1\">Log severity used by OKX strategy and SDK components.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.Timeframe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.Timeframe.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.Timeframe",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.Timeframe.yml\" sourcestartlinenumber=\"1\">Represents supported candlestick timeframes in seconds.\nThe underlying integer value corresponds to the duration in seconds.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.TradeMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.TradeMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums.TradeMode",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Enums.TradeMode.yml\" sourcestartlinenumber=\"1\">OKX trade modes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Base.BufferStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Base.BufferStats.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Base.BufferStats",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Base.BufferStats.yml\" sourcestartlinenumber=\"1\">Represents statistics of a buffer, including capacity, usage,\nmemory footprint, and the time range of stored data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Base.CalcIndBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Base.CalcIndBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Base.CalcIndBase",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Base.CalcIndBase.yml\" sourcestartlinenumber=\"1\">Base class for indicator calculators. It manages indicator identity, configuration, and buffers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Base.IIndicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Base.IIndicator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Base.IIndicator",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Base.IIndicator.yml\" sourcestartlinenumber=\"1\">Represents a technical indicator that can be calculated over a series of price data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.yml\" sourcestartlinenumber=\"1\">Represents a buffer for storing indicator values over time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Base.IndicatorCreator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Base.IndicatorCreator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Base.IndicatorCreator",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Base.IndicatorCreator.yml\" sourcestartlinenumber=\"1\">Delegate for creating an indicator instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Base.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Base",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAC.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAC",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAC.yml\" sourcestartlinenumber=\"1\">Defines the contract for an Accelerator Oscillator (AC) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAD.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAD",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAD.yml\" sourcestartlinenumber=\"1\">Defines the contract for an Accumulation/Distribution (AD) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorADX.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorADX.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorADX",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorADX.yml\" sourcestartlinenumber=\"1\">Defines the contract for an Average Directional Index (ADX) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorADXW.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorADXW.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorADXW",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorADXW.yml\" sourcestartlinenumber=\"1\">Defines the contract for an ADX indicator with Wilder's smoothing (ADXW).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAMA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAMA.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAMA",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAMA.yml\" sourcestartlinenumber=\"1\">Defines the interface for an Adaptive Moving Average (AMA) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAO",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAO.yml\" sourcestartlinenumber=\"1\">Defines the contract for an Awesome Oscillator (AO) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorATR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorATR.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorATR",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorATR.yml\" sourcestartlinenumber=\"1\">Defines the contract for an Average True Range (ATR) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAlligator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAlligator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAlligator",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorAlligator.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Williams Alligator indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBWMFI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBWMFI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBWMFI",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBWMFI.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Bill Williams Market Facilitation Index (BWMFI) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBears.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBears.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBears",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBears.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Bears Power indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerBandWidth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerBandWidth.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerBandWidth",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerBandWidth.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Bollinger Band Width indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerBands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerBands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerBands",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerBands.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Bollinger Bands indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerPercentB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerPercentB.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerPercentB",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBollingerPercentB.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Bollinger Bands %B indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBulls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBulls.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBulls",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorBulls.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Bulls Power indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorCCI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorCCI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorCCI",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorCCI.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Commodity Channel Index (CCI) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorChaikin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorChaikin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorChaikin",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorChaikin.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Chaikin Oscillator indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDEMA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDEMA.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDEMA",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDEMA.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Double Exponential Moving Average (DEMA) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDeMarker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDeMarker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDeMarker",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDeMarker.yml\" sourcestartlinenumber=\"1\">Defines the contract for a DeMarker indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDiff.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDiff.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDiff",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorDiff.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Difference indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorEnvelopes.yml\" sourcestartlinenumber=\"1\">Defines the contract for envelope-based technical indicators (e.g., Moving Average Envelopes).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorForce.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorForce.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorForce",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorForce.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Force Index indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorFractals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorFractals.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorFractals",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorFractals.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Williams Fractals indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorGator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorGator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorGator",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorGator.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Gator Oscillator indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorIchimoku.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorIchimoku.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorIchimoku",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorIchimoku.yml\" sourcestartlinenumber=\"1\">Defines the contract for an Ichimoku Kinko Hyo indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMA.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMA",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMA.yml\" sourcestartlinenumber=\"1\">Defines the contract for a moving average indicator that provides trend analysis and crossover detection\nfunctionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMACD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMACD.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMACD",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMACD.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Moving Average Convergence Divergence (MACD) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMFI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMFI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMFI",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMFI.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Money Flow Index (MFI) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMethodCommon.yml\" sourcestartlinenumber=\"1\">Provides common access methods for retrieving indicator values\nfrom one or more internal buffers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMomentum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMomentum.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMomentum",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorMomentum.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Momentum indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorOBV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorOBV.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorOBV",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorOBV.yml\" sourcestartlinenumber=\"1\">Defines the contract for an On-Balance Volume (OBV) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorOsMA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorOsMA.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorOsMA",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorOsMA.yml\" sourcestartlinenumber=\"1\">Defines the contract for an Moving Average of Oscillator (OsMA) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorRSI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorRSI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorRSI",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorRSI.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Relative Strength Index (RSI) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorRVI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorRVI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorRVI",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorRVI.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Relative Vigor Index (RVI) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorSAR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorSAR.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorSAR",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorSAR.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Parabolic SAR (Stop and Reverse) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorStdDev.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorStdDev.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorStdDev",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorStdDev.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Standard Deviation indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorStochastic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorStochastic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorStochastic",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorStochastic.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Stochastic Oscillator indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorSuperTrend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorSuperTrend.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorSuperTrend",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorSuperTrend.yml\" sourcestartlinenumber=\"1\">Defines the contract for a SuperTrend indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorTEMA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorTEMA.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorTEMA",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorTEMA.yml\" sourcestartlinenumber=\"1\">Represents a Triple Exponential Moving Average (TEMA) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorTRIX.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorTRIX.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorTRIX",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorTRIX.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Triple Exponential Average (TRIX) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVWAP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVWAP.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVWAP",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVWAP.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Volume Weighted Average Price (VWAP) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumeSpike.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumeSpike.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumeSpike",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumeSpike.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Volume Spike indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorWPR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorWPR.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorWPR",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorWPR.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Williams' Percent Range (WPR) indicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.BuiltIn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.BuiltIn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.AppliedPrice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.AppliedPrice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.AppliedPrice",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.AppliedPrice.yml\" sourcestartlinenumber=\"1\">Price field used as indicator input.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType.yml\" sourcestartlinenumber=\"1\">Type of data stored by an indicator buffer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.IndicatorColor",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.yml\" sourcestartlinenumber=\"1\">Named colors available to indicator plot metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorDrawType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorDrawType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.IndicatorDrawType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.IndicatorDrawType.yml\" sourcestartlinenumber=\"1\">Drawing primitives supported by indicator outputs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorFillColorMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorFillColorMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.IndicatorFillColorMode",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.IndicatorFillColorMode.yml\" sourcestartlinenumber=\"1\">Specifies how the fill color of an <xref href=\"Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion\" data-throw-if-not-resolved=\"false\"></xref> is determined.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.IndicatorGroup",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.IndicatorGroup.yml\" sourcestartlinenumber=\"1\">Indicator category used for grouping in UI and registration metadata.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.IndicatorStyle",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.IndicatorStyle.yml\" sourcestartlinenumber=\"1\">Line style for indicator plots.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.IndicatorType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.IndicatorType.yml\" sourcestartlinenumber=\"1\">Built-in and custom indicator identifiers used by the indicator factory.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.IndicatorWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.IndicatorWindow",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.IndicatorWindow.yml\" sourcestartlinenumber=\"1\">Chart window where an indicator should be displayed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.MACrossoverType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.MACrossoverType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.MACrossoverType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.MACrossoverType.yml\" sourcestartlinenumber=\"1\">Type of moving-average crossover detected by helper methods.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.MATrendDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.MATrendDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.MATrendDirection",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.MATrendDirection.yml\" sourcestartlinenumber=\"1\">Direction classification returned by moving-average helper methods.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.MaMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.MaMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.MaMethod",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.MaMethod.yml\" sourcestartlinenumber=\"1\">Moving average calculation method.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.TimeFrameOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.TimeFrameOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums.TimeFrameOptions",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Enums.TimeFrameOptions.yml\" sourcestartlinenumber=\"1\">Bit flags for the timeframes where an indicator is available.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorConfig",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.yml\" sourcestartlinenumber=\"1\">Represents the runtime configuration used to create and identify an indicator instance.\nThis includes the trading symbol, timeframe, indicator type, parameters,\nand optional input sources for chained indicators.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.yml\" sourcestartlinenumber=\"1\">Defines a shaded region drawn between two indicator buffers (e.g. Ichimoku Kumo cloud).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.yml\" sourcestartlinenumber=\"1\">Represents the logical identity of an indicator instance.\nCombines symbol, timeframe, type, and parameter values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorItem",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorItem.yml\" sourcestartlinenumber=\"1\">Snapshot container for indicator values at a specific timestamp.\nHolds identity, rendering property metadata, and per-buffer values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorLabel",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.yml\" sourcestartlinenumber=\"1\">Rendering metadata for a single indicator plot (line, histogram, dots, …).\nEach visible buffer should have a corresponding <xref href=\"Pt.Okx.Sdk.Indicators.Models.IndicatorLabel\" data-throw-if-not-resolved=\"false\"></xref> entry\nin <xref href=\"Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.Labels\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorParameters",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.yml\" sourcestartlinenumber=\"1\">Mutable parameter bag for indicator configuration.\nProvides typed set/get helpers and a deterministic hash for identity/fingerprints.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorProperty",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.yml\" sourcestartlinenumber=\"1\">Display and buffer metadata for an indicator.\nPassed to the chart engine to control how the indicator is rendered, which\ntimeframes it appears on, and which additional UI elements (bounds, fills, …) are shown.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorSource",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorSource.yml\" sourcestartlinenumber=\"1\">Describes one data source used by an indicator instance.\nThe source can be either candle price data or another indicator buffer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.yml\" sourcestartlinenumber=\"1\">Optional display features for specific indicator families.\nThese settings add extra chart elements such as bound lines, a zero line,\nhistogram coloring, and fill regions between buffers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models.IndicatorValue",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Models.IndicatorValue.yml\" sourcestartlinenumber=\"1\">Represents a single indicator value with its associated timestamp,\nincluding support for empty-value semantics.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPlugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPlugin",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPlugin.yml\" sourcestartlinenumber=\"1\">Contract implemented by custom indicator plugin assemblies.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginLoader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginLoader",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginLoader.yml\" sourcestartlinenumber=\"1\">Loads custom indicator plugins from external assemblies.\nStrategy and GUI components use this interface instead of implementing plugin loading themselves.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.yml\" sourcestartlinenumber=\"1\">Metadata exposed by an indicator plugin assembly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorRegistrationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorRegistrationContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Plugin.IIndicatorRegistrationContext",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorRegistrationContext.yml\" sourcestartlinenumber=\"1\">Registration context passed to indicator plugins.\nPlugins register indicators through this context instead of calling the factory directly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IndicatorLoadedPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IndicatorLoadedPlugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Plugin.IndicatorLoadedPlugin",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Plugin.IndicatorLoadedPlugin.yml\" sourcestartlinenumber=\"1\">Represents a loaded plugin in the OKX trading system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IndicatorParameterInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.IndicatorParameterInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Plugin.IndicatorParameterInfo",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Plugin.IndicatorParameterInfo.yml\" sourcestartlinenumber=\"1\">Describes a parameter exposed by a custom indicator plugin.\nThe GUI can use this metadata to generate an input dialog.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Plugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Plugin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Services.IIndicatorFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Services.IIndicatorFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Services.IIndicatorFactory",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Services.IIndicatorFactory.yml\" sourcestartlinenumber=\"1\">Provides registration, discovery, and creation of indicator instances.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Services.IIndicatorManager",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.yml\" sourcestartlinenumber=\"1\">Manages the lifecycle, registration, and data access for technical indicators.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Indicators.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Indicators.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Indicators.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Notifier.Enums.TradeAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Notifier.Enums.TradeAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Notifier.Enums.TradeAction",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Notifier.Enums.TradeAction.yml\" sourcestartlinenumber=\"1\">Commands that can be sent to a strategy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Notifier.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Notifier.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Notifier.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Notifier.ITelegramCommandExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Notifier.ITelegramCommandExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Notifier.ITelegramCommandExtension",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Notifier.ITelegramCommandExtension.yml\" sourcestartlinenumber=\"1\">Interface for Telegram command extension plugins.\nImplement this interface to register custom Telegram commands.\nTelegramCommandHandler will automatically discover implementations via dependency injection (IEnumerable&lt;T&gt;).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Notifier.Models.TelegramBotConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Notifier.Models.TelegramBotConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Notifier.Models.TelegramBotConfig",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Notifier.Models.TelegramBotConfig.yml\" sourcestartlinenumber=\"1\">Configuration details for an individual Telegram Bot channel.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Notifier.Models.TradeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Notifier.Models.TradeCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Notifier.Models.TradeCommand",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Notifier.Models.TradeCommand.yml\" sourcestartlinenumber=\"1\">Represents a command sent to a trading strategy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Notifier.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Notifier.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Notifier.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Notifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Notifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Notifier",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Storage.Enums.StoragePathScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Storage.Enums.StoragePathScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Storage.Enums.StoragePathScope",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Storage.Enums.StoragePathScope.yml\" sourcestartlinenumber=\"1\">Defines logical storage path categories used by the system\nto organize different types of runtime and persistent data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Storage.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Storage.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Storage.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Storage.IStoragePathProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Storage.IStoragePathProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Storage.IStoragePathProvider",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Storage.IStoragePathProvider.yml\" sourcestartlinenumber=\"1\">Provides runtime storage directories for history, logs, state and cache.\nEnd-users can implement this interface and register it in DI to customize storage layout.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Storage.StoragePathProviderBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Storage.StoragePathProviderBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Storage.StoragePathProviderBase",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Storage.StoragePathProviderBase.yml\" sourcestartlinenumber=\"1\">Provides a base implementation for resolving storage paths used by the system.\nThis class defines logical path mappings for different runtime data scopes\nsuch as history, logs, cache, backtest, and live environments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Storage.StoragePathProviderServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Storage.StoragePathProviderServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Storage.StoragePathProviderServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Storage.StoragePathProviderServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">Provides extension methods for registering <xref href=\"Pt.Okx.Sdk.Storage.IStoragePathProvider\" data-throw-if-not-resolved=\"false\"></xref>\nimplementations in the dependency injection container.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Storage.StoragePathScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Storage.StoragePathScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Storage.StoragePathScope",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Storage.StoragePathScope.yml\" sourcestartlinenumber=\"1\">Represents logical storage path scopes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Storage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Storage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Storage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.AlgoOrderEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.AlgoOrderEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.AlgoOrderEvent",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.AlgoOrderEvent.yml\" sourcestartlinenumber=\"1\">Represents an algorithmic order update event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.BalanceEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.BalanceEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.BalanceEvent",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.BalanceEvent.yml\" sourcestartlinenumber=\"1\">Represents a balance update event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.KlineEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.KlineEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.KlineEvent",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.KlineEvent.yml\" sourcestartlinenumber=\"1\">Represents a kline data update event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.OrderEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.OrderEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.OrderEvent",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.OrderEvent.yml\" sourcestartlinenumber=\"1\">Represents an order event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.PositionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.PositionEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.PositionEvent",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.PositionEvent.yml\" sourcestartlinenumber=\"1\">Represents a position update event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.StrategyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.StrategyEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.StrategyEvent",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.StrategyEvent.yml\" sourcestartlinenumber=\"1\">Represents an event emitted by a trading strategy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.StrategyEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.StrategyEventType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.StrategyEventType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.StrategyEventType.yml\" sourcestartlinenumber=\"1\">Event types published to strategies.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.TradeCommandTelegramEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.TradeCommandTelegramEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.TradeCommandTelegramEvent",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.TradeCommandTelegramEvent.yml\" sourcestartlinenumber=\"1\">Represents a trade command event from Telegram.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.TransactionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.TransactionEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.TransactionEvent",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.TransactionEvent.yml\" sourcestartlinenumber=\"1\">Represents a transaction event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.IStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.IStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.IStrategy",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.IStrategy.yml\" sourcestartlinenumber=\"1\">Defines the lifecycle and execution contract for a trading strategy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.IStrategyLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.IStrategyLogger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.IStrategyLogger",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.IStrategyLogger.yml\" sourcestartlinenumber=\"1\">Interface for logging strategy events, state changes, signals, and notifications in trading systems.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.IStrategyStateStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.IStrategyStateStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.IStrategyStateStore",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.IStrategyStateStore.yml\" sourcestartlinenumber=\"1\">Represents a state container for a trading strategy,\nproviding access to orders, positions, balances, and market data,\nas well as methods to apply updates from events.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.BoolParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.BoolParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.BoolParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.BoolParameter.yml\" sourcestartlinenumber=\"1\">A boolean parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.DateTimeParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.DateTimeParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.DateTimeParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.DateTimeParameter.yml\" sourcestartlinenumber=\"1\">A date/time parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.DecimalParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.DecimalParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.DecimalParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.DecimalParameter.yml\" sourcestartlinenumber=\"1\">A decimal parameter for precise financial values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.DoubleParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.DoubleParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.DoubleParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.DoubleParameter.yml\" sourcestartlinenumber=\"1\">A double-precision floating-point parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.EnumParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.EnumParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.EnumParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.EnumParameter.yml\" sourcestartlinenumber=\"1\">An enum-style parameter, backed by a string.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.FilePathParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.FilePathParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.FilePathParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.FilePathParameter.yml\" sourcestartlinenumber=\"1\">A file path parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.HeaderParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.HeaderParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.HeaderParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.HeaderParameter.yml\" sourcestartlinenumber=\"1\">A parameter representing a section header/separator in the configuration.\nIt does not carry a functional value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.yml\" sourcestartlinenumber=\"1\">Manages input parameters for a strategy or component,\nincluding loading, validation, and change notification.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputParamAttribute",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputParamAttribute.yml\" sourcestartlinenumber=\"1\">Declares metadata for a property that should be exposed as an input parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamBindingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamBindingExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputParamBindingExtensions",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputParamBindingExtensions.yml\" sourcestartlinenumber=\"1\">Binds an annotated schema object from values currently stored in <xref href=\"Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamDataType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputParamDataType",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputParamDataType.yml\" sourcestartlinenumber=\"1\">Specifies a specialized data type for parameters when property type alone is insufficient.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamIgnoreAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamIgnoreAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputParamIgnoreAttribute",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputParamIgnoreAttribute.yml\" sourcestartlinenumber=\"1\">Marks properties that should not be treated as persisted input parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamLoggingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamLoggingExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputParamLoggingExtensions",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputParamLoggingExtensions.yml\" sourcestartlinenumber=\"1\">Provides helper methods for logging typed input schema objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParamMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputParamMetadata",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputParamMetadata.yml\" sourcestartlinenumber=\"1\">Metadata describing a schema property annotated with <xref href=\"Pt.Okx.Sdk.Strategy.Parameters.InputParamAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputParameter.yml\" sourcestartlinenumber=\"1\">Base class for parameter value types, providing notification, metadata, and validation support.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputSchemaBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputSchemaBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputSchemaBuilder",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputSchemaBuilder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Pt.Okx.Sdk.Strategy.Parameters.InputParameter\" data-throw-if-not-resolved=\"false\"></xref> dictionary from an annotated schema type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputSchemaMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.InputSchemaMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.InputSchemaMetadata",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.InputSchemaMetadata.yml\" sourcestartlinenumber=\"1\">Provides typed access to schema metadata without requiring string keys.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.IntParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.IntParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.IntParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.IntParameter.yml\" sourcestartlinenumber=\"1\">An integer parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.ListParameter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.ListParameter-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.ListParameter<T>",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.ListParameter-1.yml\" sourcestartlinenumber=\"1\">A generic list/collection parameter for storing multiple values of the same primitive type.\nValues are stored as a comma-separated (or custom-separated) string in JSON.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.ParameterChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.ParameterChangedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.ParameterChangedEventArgs",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.ParameterChangedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the parameter changed event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.StringParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.StringParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.StringParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.StringParameter.yml\" sourcestartlinenumber=\"1\">A string parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.TimeSpanParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.TimeSpanParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.TimeSpanParameter",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.TimeSpanParameter.yml\" sourcestartlinenumber=\"1\">A timespan parameter for durations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.ValueRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.ValueRange.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters.ValueRange",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Parameters.ValueRange.yml\" sourcestartlinenumber=\"1\">Represents the allowed range for a parameter value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Parameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Parameters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPlugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Plugin.IStrategyPlugin",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPlugin.yml\" sourcestartlinenumber=\"1\">Defines a plugin that can register services into the dependency injection container\nfor extending strategy functionality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginInputSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginInputSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginInputSchema",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginInputSchema.yml\" sourcestartlinenumber=\"1\">Declares the input schema type for a strategy plugin.\nThe schema type is parsed by the platform to build InputParameter defaults.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.yml\" sourcestartlinenumber=\"1\">Provides metadata information for a strategy plugin.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.yml\" sourcestartlinenumber=\"1\">Optional interface for strategy plugins that wish to declare their input parameters\nvia code (code-first) instead of manually maintaining a JSON file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Plugin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.Enums.DateOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.Enums.DateOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Settings.Enums.DateOption",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Settings.Enums.DateOption.yml\" sourcestartlinenumber=\"1\">Preset date ranges used by backtests and data queries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.Enums.PriceDataOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.Enums.PriceDataOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Settings.Enums.PriceDataOption",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Settings.Enums.PriceDataOption.yml\" sourcestartlinenumber=\"1\">Price data granularity used by simulation and replay.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Settings.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.StrategySettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.StrategySettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Settings.StrategySettings",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Settings.StrategySettings.yml\" sourcestartlinenumber=\"1\">Encapsulates the configuration settings required for running a trading strategy,\nsupporting both live trading and backtesting environments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Settings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Settings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "migration.md",
+      "output": {
+        ".html": {
+          "relative_path": "migration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "quickstart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

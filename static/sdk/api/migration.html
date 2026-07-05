@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Migration Guide | Pt.Okx.Sdk API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Migration Guide | Pt.Okx.Sdk API ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/docs/migration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Pt.Okx.Sdk">
+            Pt.Okx.Sdk
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="migration-guide">Migration Guide</h1>
+
+<p>This guide assists in migrating from standard OKX REST/WebSocket API wrappers (or legacy integrations) to the structured <strong>Pt.Okx.Sdk</strong>.</p>
+<hr>
+<h2 id="1-key-platform-rules">1. Key Platform Rules</h2>
+<p>Unlike generic exchange wrappers, <strong>Pt.Okx.Sdk</strong> enforces strict constraints to ensure production safety and compatibility with the <strong>Platinum Trade</strong> desktop host:</p>
+<ul>
+<li><strong>Single Asset Mode:</strong> You must set your OKX Account Settings to &quot;Single-currency margin mode&quot; (or &quot;Multi-currency margin mode&quot; if qualified), but the SDK is optimized primarily for single margin configurations.</li>
+<li><strong>Isolated Margin Only:</strong> All swap position and trading commands are constrained to <strong>Isolated Margin</strong> (<code>instType=SWAP</code>, <code>mgnMode=isolated</code>). Cross-margin or portfolio-margin modes are currently not supported via the standard strategy wrappers.</li>
+<li><strong>Decimal Precision:</strong> All prices, sizes, and volumes use the <code>decimal</code> type rather than <code>double</code> or <code>float</code> to prevent floating-point rounding errors during order execution.</li>
+</ul>
+<hr>
+<h2 id="2-api-structural-map">2. API Structural Map</h2>
+<p>Below is the mapping from raw OKX REST API endpoints to the corresponding unified SDK service calls:</p>
+<table>
+<thead>
+<tr>
+<th>Raw OKX API Endpoint</th>
+<th>Legacy Method</th>
+<th>Pt.Okx.Sdk Service Call</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/api/v5/market/candles</code></td>
+<td><code>GetCandles(...)</code></td>
+<td><code>client.MarketData.GetCandlesAsync(...)</code></td>
+</tr>
+<tr>
+<td><code>/api/v5/trade/order</code></td>
+<td><code>PlaceOrder(...)</code></td>
+<td><code>client.Trade.PlaceOrderAsync(...)</code></td>
+</tr>
+<tr>
+<td><code>/api/v5/account/balance</code></td>
+<td><code>GetBalance(...)</code></td>
+<td><code>client.Account.GetBalanceAsync(...)</code></td>
+</tr>
+<tr>
+<td><code>/api/v5/account/positions</code></td>
+<td><code>GetPositions(...)</code></td>
+<td><code>client.Account.GetPositionsAsync(...)</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-code-migration-example">3. Code Migration Example</h2>
+<h3 id="before-raw-api-wrapper--manual-request">Before (Raw API Wrapper / Manual Request)</h3>
+<pre><code class="lang-csharp">var client = new LegacyOkxRestClient();
+var response = await client.PlaceOrderAsync(
+    instId: &quot;BTC-USDT-SWAP&quot;, 
+    tdMode: &quot;isolated&quot;, 
+    side: &quot;buy&quot;, 
+    ordType: &quot;market&quot;, 
+    sz: &quot;0.01&quot;
+);
+</code></pre>
+<h3 id="after-ptokxsdk-structured-request">After (Pt.Okx.Sdk Structured Request)</h3>
+<pre><code class="lang-csharp">var client = new OkxClient(botConfig);
+var response = await client.Trade.PlaceOrderAsync(new PlaceOrderRequest 
+{
+    InstrumentId = &quot;BTC-USDT-SWAP&quot;,
+    TradeMode = TradeMode.Isolated,
+    Side = OrderSide.Buy,
+    OrderType = OrderType.Market,
+    Quantity = 0.01m
+});
+</code></pre>
+
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
