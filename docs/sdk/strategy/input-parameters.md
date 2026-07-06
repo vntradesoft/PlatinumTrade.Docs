@@ -140,7 +140,7 @@ Example parsing for `List<decimal>`:
 ### Reading in Strategy
 
 ```csharp
-public class MyStrategy : IStrategy
+public class MyStrategy : StrategyBase
 {
     private readonly MyStrategyInput _input;
 
@@ -238,7 +238,7 @@ public class MyStrategyPlugin : IStrategyPlugin, IStrategyPluginMetadata, IStrat
 Inject the typed schema class directly into your strategy:
 
 ```csharp
-public class MyStrategy : IStrategy
+public class MyStrategy : StrategyBase
 {
     private readonly MyStrategyInput _input;
 

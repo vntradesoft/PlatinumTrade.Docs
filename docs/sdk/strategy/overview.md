@@ -13,7 +13,7 @@ This guide explains the foundation of creating a trading strategy plugin for the
 
 ## IStrategy — The Core Lifecycle
 
-Every strategy must implement the `IStrategy` interface. This interface defines three core lifecycle methods:
+Every strategy follows the `IStrategy` lifecycle. For most cases, inherit from `StrategyBase` and override only the handlers you need.
 
 ```csharp
 public interface IStrategy
@@ -21,13 +21,24 @@ public interface IStrategy
     // ① Initialization — called once when the bot starts
     Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken ct);
 
-    // ② Main loop — called whenever a market or system event occurs
-    Task RunAsync(StrategyEventType eventType, IStrategyStateStore state, CancellationToken ct);
+    // ② Market cadence callback — called on each market update
+    Task OnTickAsync(TickPhase tickPhase, CancellationToken ct);
 
     // ③ Cleanup — called once when the bot stops
     Task<bool> StopAsync(CancellationToken ct);
 }
 ```
+
+The recommended base class also exposes optional event handlers:
+
+- `OnOrderAsync(...)`
+- `OnAlgoOrderAsync(...)`
+- `OnPositionAsync(...)`
+- `OnTransactionAsync(...)`
+- `OnBalanceAsync(...)`
+- `OnTradeCommandAsync(...)`
+
+The host engine dispatches internal events to these handlers.
 
 ### Lifecycle Flow
 
@@ -38,18 +49,24 @@ Bot Start
   │
   ├── InitializeAsync()     ← Setup indicators, load configuration, recover state
   │
-  ├── RunAsync(Kline)       ← Fired on each new candle
-  ├── RunAsync(Tick)         ← Fired on each price tick update
-  ├── RunAsync(Order)        ← Order status update (filled, cancelled, etc.)
-  ├── RunAsync(Position)     ← Position update
-  ├── RunAsync(Balance)      ← Account balance change
-  ├── RunAsync(AlgoOrder)    ← Algo order triggered or cancelled
-  ├── RunAsync(Transaction)  ← Trade fill event
-  ├── RunAsync(TradeCommand) ← Telegram command received
+    ├── OnTickAsync(Tick)           ← Intra-bar update
+    ├── OnTickAsync(BarClose)       ← Candle close update
+    ├── OnOrderAsync(...)           ← Order status update
+    ├── OnPositionAsync(...)        ← Position update
+    ├── OnBalanceAsync(...)         ← Account balance change
+    ├── OnAlgoOrderAsync(...)       ← Algo order update
+    ├── OnTransactionAsync(...)     ← Trade fill event
+    ├── OnTradeCommandAsync(...)    ← Telegram/UI command
   │   ... (repeats) ...
   │
   └── StopAsync()            ← Cleanup, cancel pending orders, close positions (optional)
 ```
+
+## State Ownership
+
+- Runtime state is maintained internally by the host engine.
+- Strategies should treat state as infrastructure concern, not as the primary public callback input.
+- Use `TickPhase` to distinguish intra-bar vs bar-close logic in `OnTickAsync`.
 
 ## IStrategyPlugin — DI Registration
 

@@ -7,18 +7,18 @@ visibility: internal
 publish: false
 ---
 
-# Events and State
+# Events and Dispatch
 
-Your strategy is entirely event-driven. The core logic executes inside the `RunAsync` method, which is invoked by the platform whenever a market or account event occurs.
+Your strategy is entirely event-driven. The host engine receives raw events and dispatches them to strategy callbacks.
 
-## StrategyEventType
+## Internal Event Types
 
-The `eventType` parameter tells you exactly *why* the strategy woke up.
+`StrategyEventType` is used internally by the engine dispatch layer.
 
 | Event Type | When is it called? |
 |---|---|
-| `Kline` | When a new candle closes. This is the most common place to check entry/exit indicators. |
-| `Tick` | When the ticker price updates (real-time stream). Very frequent. |
+| `Kline` | Candle close update. Dispatched to `OnTickAsync(TickPhase.BarClose, ...)`. |
+| `Tick` | Intra-bar price update. Dispatched to `OnTickAsync(TickPhase.Tick, ...)`. |
 | `Order` | When an order state changes (e.g., submitted, partially filled, cancelled, fully filled). |
 | `AlgoOrder` | When an algorithmic order (TP/SL) is triggered or cancelled. |
 | `Position` | When a position is opened, closed, or its PnL/Margin updates. |
@@ -26,38 +26,37 @@ The `eventType` parameter tells you exactly *why* the strategy woke up.
 | `Transaction` | When a trade match (fill) occurs. |
 | `TradeCommand` | When the user sends a command via Telegram or the UI. |
 
-## The `RunAsync` Method
+## Strategy Callbacks
+
+You implement one required market callback and optional typed handlers.
 
 ```csharp
-public async Task RunAsync(
-    StrategyEventType eventType,
-    IStrategyStateStore state,
-    CancellationToken ct)
+public sealed class MyStrategy : StrategyBase
 {
-    // Filter events to only run logic on new candles
-    if (eventType == StrategyEventType.Kline)
+    public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
     {
-        if (state.HasOpenPosition)
+        if (tickPhase == TickPhase.BarClose)
         {
-            // Manage TP/SL for the existing position
-            ManagePosition(state);
-            return;
+            await EvaluateEntryExitAsync(ct);
         }
 
-        // No open position — look for entry signals
-        await FindEntrySignal(state, ct);
+        if (tickPhase == TickPhase.Tick)
+        {
+            await UpdateIntrabarProtectionAsync(ct);
+        }
     }
-    
-    if (eventType == StrategyEventType.Order)
+
+    public override Task OnOrderAsync(IReadOnlyList<Order> orders, CancellationToken ct)
     {
-        // Handle order updates (e.g., verify if our entry filled)
+        // Handle order updates (optional)
+        return Task.CompletedTask;
     }
 }
 ```
 
 ## IStrategyStateStore — State Access
 
-The `IStrategyStateStore` interface provides a unified, synchronous snapshot of the current account and market state. The platform maintains this state in the background via WebSockets, so reading from `state` is extremely fast and doesn't require API calls.
+`IStrategyStateStore` is the internal runtime state container owned by the host. The platform updates it via WebSockets and snapshots.
 
 ```csharp
 public interface IStrategyStateStore
@@ -84,29 +83,25 @@ public interface IStrategyStateStore
 
 ### When to query the API directly vs using `IStrategyStateStore`?
 
-- **Use `IStrategyStateStore`** for the majority of your logic within `RunAsync`. Because this data is streamed via WebSockets, it avoids rate-limiting and is zero-latency during event loops.
-- **Use `IOkxClient` APIs directly** during the `InitializeAsync` phase to recover state (e.g., reading positions and pending orders on bot startup) because WebSockets might not have pushed the full initial state yet.
+- **Use `IOkxClient` APIs directly** in `InitializeAsync` for recovery and bootstrap checks.
+- **Use optional typed handlers** for event-driven workflows (`OnOrderAsync`, `OnPositionAsync`, etc.).
+- Keep `OnTickAsync(TickPhase, ...)` focused on market cadence decisions.
 
 ## Event Handlers in Practice
 
-A common pattern is to dispatch events to specific methods to keep your code clean:
+A common pattern is to keep `OnTickAsync` minimal and delegate work by phase:
 
 ```csharp
-public async Task RunAsync(StrategyEventType eventType, IStrategyStateStore state, CancellationToken ct)
+public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
 {
-    switch (eventType)
+    switch (tickPhase)
     {
-        case StrategyEventType.Kline:
-            await OnNewCandleAsync(state.LastKline);
+        case TickPhase.BarClose:
+            await OnBarCloseAsync(ct);
             break;
-            
-        case StrategyEventType.Order:
-            foreach (var order in state.Orders)
-                await OnOrderUpdateAsync(order);
-            break;
-            
-        case StrategyEventType.Position:
-            await OnPositionUpdateAsync(state.Positions);
+
+        case TickPhase.Tick:
+            await OnIntrabarTickAsync(ct);
             break;
     }
 }

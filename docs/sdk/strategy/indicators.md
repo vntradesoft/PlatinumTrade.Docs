@@ -20,7 +20,7 @@ When you create an indicator this way, the platform automatically registers it. 
 ### Initialization Example
 
 ```csharp
-public class MyStrategy : IStrategy
+public class MyStrategy : StrategyBase
 {
     private readonly IOkxClient _client;
     
@@ -59,14 +59,14 @@ public class MyStrategy : IStrategy
 }
 ```
 
-### Reading Values in RunAsync
+### Reading Values in OnTickAsync
 
 Once initialized, the indicators automatically stay up-to-date. You simply read their properties when a new candle closes.
 
 ```csharp
-public async Task RunAsync(StrategyEventType eventType, IStrategyStateStore state, CancellationToken ct)
+public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
 {
-    if (eventType == StrategyEventType.Kline)
+    if (tickPhase == TickPhase.BarClose)
     {
         // Read the latest calculated value
         var currentTrend = _superTrend.Trend;
@@ -89,7 +89,7 @@ If you have developed custom indicators compiled into an external `.dll` (as exp
 To load plugins, your strategy needs `IIndicatorPluginLoader` and `IIndicatorFactory`. Inject them via the constructor.
 
 ```csharp
-public class MyStrategy : IStrategy
+public class MyStrategy : StrategyBase
 {
     private readonly IOkxClient _client;
     private readonly IIndicatorPluginLoader _indicatorPluginLoader;

@@ -16,7 +16,7 @@ The `IOkxClient.Trade` service provides all the capabilities required to manage 
 You can access the API client by injecting `IOkxClient` into your strategy constructor.
 
 ```csharp
-public class MyStrategy : IStrategy
+public class MyStrategy : StrategyBase
 {
     private readonly IOkxClient _client;
     
@@ -98,7 +98,7 @@ var amendResult = await _client.Trade.AmendAlgoOrderAsync(
 
 ## Fetching Live Data
 
-While the `IStrategyStateStore` is the fastest way to get data during `RunAsync`, you often need to fetch live data directly from the exchange during the `InitializeAsync` phase to recover the state if the bot restarts.
+While the host state store is the fastest source during strategy callbacks, you often need to fetch live data directly from the exchange during `InitializeAsync` to recover state after restarts.
 
 ```csharp
 // 1. Get live positions

@@ -23,7 +23,7 @@ The flow of a Telegram command from the user's phone to the strategy is as follo
 2. **Core Parsing:** The `TelegramCommandHandler` in `Pt.Okx.Core` receives the message, validates the sender's Chat ID against configuration permissions, and parses the command string.
 3. **Command Object Generation:** If the command matches a built-in command or is recognized by a registered extension, a `TradeCommand` object is created.
 4. **Host Dispatch:** The host application (GUI or CLI) captures the parsed `TradeCommand` and broadcasts it to the active strategy instance.
-5. **Strategy Execution:** The strategy's `IStrategy.RunAsync` method is invoked with `StrategyEventType.TradeCommand`. The strategy reads the command details from `state.TradeCommand` and executes the corresponding action.
+5. **Strategy Execution:** The host dispatches the command to the strategy via `OnTradeCommandAsync(TradeCommand, CancellationToken)`.
 6. **User Feedback:** The strategy uses `IStrategyLogger` (e.g. `NotifyTrace`, `NotifyKeyValue`) to send status updates and execution success/failure notifications back to the Telegram chat.
 
 ### Multi-Bot Command Routing
@@ -62,7 +62,7 @@ Strategy plugins can declare custom commands to allow users to interact with str
 To add custom commands, you must:
 1. Implement the `ITelegramCommandExtension` interface in your plugin.
 2. Register the extension in your plugin's dependency injection container.
-3. Handle the `TradeAction.Custom` command in your strategy's `RunAsync` method.
+3. Handle the `TradeAction.Custom` command in your strategy's `OnTradeCommandAsync` method.
 
 ### The `ITelegramCommandExtension` Interface
 
@@ -190,17 +190,16 @@ namespace MyCustomStrategy
 
 ### Step 3: Handle the Commands in the Strategy
 
-Inside your strategy's `RunAsync` implementation, check if the incoming event is a `TradeCommand`. Access the command using `state.TradeCommand`, check the action, and process it:
+Inside your strategy, override `OnTradeCommandAsync` and process `TradeCommand` directly:
 
 ```csharp
 using Pt.Okx.Sdk.Notifier.Enums;
 using Pt.Okx.Sdk.Notifier.Models;
 using Pt.Okx.Sdk.Strategy;
-using Pt.Okx.Sdk.Strategy.Events;
 
 namespace MyCustomStrategy
 {
-    public class MyStrategy : IStrategy
+    public class MyStrategy : StrategyBase
     {
         private readonly IStrategyLogger _logger;
         private decimal _riskPercent = 1.0m;
@@ -211,21 +210,21 @@ namespace MyCustomStrategy
             _logger = logger;
         }
 
-        public Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken cancellationToken)
+        public override Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken cancellationToken)
         {
             return Task.FromResult(true);
         }
 
-        public async Task RunAsync(StrategyEventType eventType, IStrategyStateStore state, CancellationToken ct)
+        public override Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
         {
-            // Check if the event is a Telegram/UI command
-            if (eventType == StrategyEventType.TradeCommand)
-            {
-                var command = state.TradeCommand;
-                await ProcessTelegramCommandAsync(command);
-            }
-            
-            // ... handle other events like Ticks, Candles, or Orders ...
+            // Market logic here
+            return Task.CompletedTask;
+        }
+
+        public override async Task OnTradeCommandAsync(TradeCommand command, CancellationToken ct)
+        {
+            _ = ct;
+            await ProcessTelegramCommandAsync(command);
         }
 
         private async Task ProcessTelegramCommandAsync(TradeCommand command)
@@ -296,7 +295,7 @@ namespace MyCustomStrategy
             await Task.CompletedTask;
         }
 
-        public Task<bool> StopAsync(CancellationToken cancellationToken)
+        public override Task<bool> StopAsync(CancellationToken cancellationToken)
         {
             return Task.FromResult(true);
         }

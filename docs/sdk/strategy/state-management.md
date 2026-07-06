@@ -91,6 +91,6 @@ Backtests must be deterministic. This means running the exact same parameters ov
 
 ## 5. Custom Telegram Commands
 
-You can allow users to interact with your strategy state remotely via Telegram. This is done by implementing the `ITelegramCommandExtension` interface and handling `StrategyEventType.TradeCommand` inside your strategy's `RunAsync` lifecycle method.
+You can allow users to interact with your strategy remotely via Telegram. This is done by implementing `ITelegramCommandExtension` and handling `TradeAction.Custom` inside your strategy's `OnTradeCommandAsync` handler.
 
 For a comprehensive guide, detailed explanations of built-in commands, and a step-by-step custom implementation example, please refer to the dedicated [Telegram Commands & Extensions](telegram-commands.md) article.

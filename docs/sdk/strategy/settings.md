@@ -44,7 +44,7 @@ public class StrategySettings
 ## How to use in your Strategy
 
 ```csharp
-public class MyStrategy : IStrategy
+public class MyStrategy : StrategyBase
 {
     private readonly StrategySettings _settings;
 
