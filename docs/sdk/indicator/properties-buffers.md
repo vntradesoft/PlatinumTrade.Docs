@@ -117,7 +117,8 @@ public override bool OnInit()
 | Type | Description |
 |---|---|
 | `IndicatorBufferType.Data` | The buffer contains data intended to be drawn on the chart. Its index must correspond to an `IndicatorLabel` definition in your properties. |
-| `IndicatorBufferType.Calculation` | A temporary array used for storing intermediate math. It will never be rendered. |
+| `IndicatorBufferType.ColorIndex` | The buffer stores color indexes, allowing you to dynamically change the color of individual points or bars on the chart. |
+| `IndicatorBufferType.Calculations` | A temporary array used for storing intermediate math. It will never be rendered. |
 
 > [!TIP]
 > Always store your `IIndicatorBuffer` instances in class-level fields during `OnInit()` to avoid the overhead of retrieving them during high-frequency calculations.
