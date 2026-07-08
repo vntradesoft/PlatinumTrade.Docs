@@ -11,24 +11,22 @@ publish: false
 
 Your strategy is entirely event-driven. The host engine receives raw events and dispatches them to strategy callbacks.
 
-## Internal Event Types
 
-`StrategyEventType` is used internally by the engine dispatch layer.
-
-| Event Type | When is it called? |
-|---|---|
-| `Kline` | Candle close update. Dispatched to `OnTickAsync(TickPhase.BarClose, ...)`. |
-| `Tick` | Intra-bar price update. Dispatched to `OnTickAsync(TickPhase.Tick, ...)`. |
-| `Order` | When an order state changes (e.g., submitted, partially filled, cancelled, fully filled). |
-| `AlgoOrder` | When an algorithmic order (TP/SL) is triggered or cancelled. |
-| `Position` | When a position is opened, closed, or its PnL/Margin updates. |
-| `Balance` | When the account balance changes (deposits, fees, realized PnL). |
-| `Transaction` | When a trade match (fill) occurs. |
-| `TradeCommand` | When the user sends a command via Telegram or the UI. |
 
 ## Strategy Callbacks
 
-You implement one required market callback and optional typed handlers.
+You implement one required market callback and optional typed handlers to respond to market events.
+
+| Handler | When is it called? |
+|---|---|
+| `OnTickAsync(TickPhase.BarClose, ...)` | When a candle closes. This is where most indicator-based logic runs. |
+| `OnTickAsync(TickPhase.Tick, ...)` | On every intra-bar price update. Used for trailing stops or high-frequency checks. |
+| `OnOrderAsync(...)` | When an order state changes (e.g., submitted, partially filled, cancelled, fully filled). |
+| `OnAlgoOrderAsync(...)` | When an algorithmic order (TP/SL) is triggered or cancelled. |
+| `OnPositionAsync(...)` | When a position is opened, closed, or its PnL/Margin updates. |
+| `OnBalanceAsync(...)` | When the account balance changes (deposits, fees, realized PnL). |
+| `OnTransactionAsync(...)` | When a trade match (fill) occurs. |
+| `OnTradeCommandAsync(...)` | When the user sends a command via Telegram or the UI. |
 
 ```csharp
 public sealed class MyStrategy : StrategyBase
