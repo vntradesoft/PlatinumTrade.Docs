@@ -22,6 +22,8 @@
       href: indicator/properties-buffers.md
     - name: Calculation Flow
       href: indicator/calculation.md
+    - name: Using Indicators
+      href: indicator/using-indicators.md
 - name: Strategy Plugin
   items:
     - name: Overview & Lifecycle
