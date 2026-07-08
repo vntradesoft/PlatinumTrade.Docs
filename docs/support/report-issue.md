@@ -1,20 +1,24 @@
-﻿---
+---
 id: support-report-issue
-title: Report Issue
-description: TBD
-status: tbd
+title: Report an Issue
+description: How to report bugs and suggest features
 ---
 
-# Report Issue
+# Report an Issue
 
-## Status: TBD
+We track bugs, issues, and feature requests using GitHub Issues.
 
-- This page is a placeholder and will be filled in a later phase.
-- Source validation should reference implementation code and/or legacy docs in docs/temp.
+## SDK Issues
 
-## Open Questions
+If you find a bug in the Pt.Okx.Sdk or want to request a new feature for the plugin system:
+?? **[Open an SDK Issue on GitHub](https://github.com/vntradesoft/PlatinumTrade.Sdk/issues)**
 
-- [ ] What exact user/developer problem does this page solve?
-- [ ] Which code modules and symbols are authoritative references?
-- [ ] Which parts are stable vs pending design decisions?
+## App Issues
 
+If you find a bug in the Platinum Trade Desktop App, please check the community Discord or the main App repository (if you have access).
+
+When reporting a bug, please include:
+- A clear description of the problem.
+- Steps to reproduce the issue.
+- The version of the App and SDK you are using.
+- Relevant logs from your application's Logs directory.

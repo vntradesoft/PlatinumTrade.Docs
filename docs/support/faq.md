@@ -1,20 +1,23 @@
-﻿---
+---
 id: support-faq
-title: Faq
-description: TBD
-status: tbd
+title: Frequently Asked Questions
+description: Common questions about Platinum Trade
 ---
 
-# Faq
+# Frequently Asked Questions (FAQ)
 
-## Status: TBD
+## General
 
-- This page is a placeholder and will be filled in a later phase.
-- Source validation should reference implementation code and/or legacy docs in docs/temp.
+**What is Platinum Trade?**
+Platinum Trade is a desktop algorithmic trading platform focused on OKX perpetual swaps, featuring an extensible strategy and indicator SDK.
 
-## Open Questions
+**Is it free?**
+The SDK is completely open-source and free to use. The desktop application may have different licensing tiers.
 
-- [ ] What exact user/developer problem does this page solve?
-- [ ] Which code modules and symbols are authoritative references?
-- [ ] Which parts are stable vs pending design decisions?
+## SDK & Plugins
 
+**Can I write my own indicators?**
+Yes. You can create a .NET class library using our Pt.Okx.Sdk and implement CalcIndBase. See the [SDK Documentation](../sdk/intro.md) for details.
+
+**Can I run my strategy locally?**
+Yes. Strategies can be loaded into the Platinum Trade App for local backtesting or live execution.

@@ -1,20 +1,17 @@
-﻿---
+---
 id: support-system-status
 title: System Status
-description: TBD
-status: tbd
+description: Real-time status of Platinum Trade services
 ---
 
 # System Status
 
-## Status: TBD
+Platinum Trade is a desktop application that runs locally on your machine and connects directly to the OKX API.
 
-- This page is a placeholder and will be filled in a later phase.
-- Source validation should reference implementation code and/or legacy docs in docs/temp.
+## Core Services
 
-## Open Questions
+- **Platinum Trade App**: Runs locally. Performance and connectivity depend on your local machine and internet connection.
+- **OKX Exchange API**: Please check the official [OKX System Status page](https://www.okx.com/status) for exchange connectivity or maintenance updates.
+- **Licensing Server**: Operational. Used only for license verification on application startup.
 
-- [ ] What exact user/developer problem does this page solve?
-- [ ] Which code modules and symbols are authoritative references?
-- [ ] Which parts are stable vs pending design decisions?
-
+If you are experiencing connection issues, please ensure your OKX API keys are correct and your network does not block OKX API endpoints.
