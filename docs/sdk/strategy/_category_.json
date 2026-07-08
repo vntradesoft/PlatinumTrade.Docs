@@ -1,3 +1,8 @@
 {
-  "label": "Strategy"
+  "label": "Strategy Plugin",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Developing custom strategy plugins"
+  }
 }
