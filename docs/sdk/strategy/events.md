@@ -7,7 +7,7 @@ visibility: internal
 publish: false
 ---
 
-# Events and Dispatch
+# Event Handlers
 
 Your strategy is entirely event-driven. The host engine receives raw events and dispatches them to strategy callbacks.
 

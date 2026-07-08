@@ -26,23 +26,23 @@
       href: indicator/using-indicators.md
 - name: Strategy Plugin
   items:
-    - name: Overview & Lifecycle
+    - name: Overview & Setup
       href: strategy/overview.md
-    - name: Strategy Settings
-      href: strategy/settings.md
     - name: Input Parameters
       href: strategy/input-parameters.md
+    - name: Strategy Settings
+      href: strategy/settings.md
     - name: Using Indicators
       href: strategy/indicators.md
-    - name: Events & State
+    - name: Event Handlers
       href: strategy/events.md
     - name: Trading API
       href: strategy/trading-api.md
+    - name: State Management
+      href: strategy/state-management.md
     - name: Logging & Notifications
       href: strategy/logger-notify.md
     - name: Telegram Commands
       href: strategy/telegram-commands.md
-    - name: State Management
-      href: strategy/state-management.md
 - name: Document History
   href: document-history.md

@@ -7,9 +7,33 @@ visibility: internal
 publish: false
 ---
 
-# Strategy Plugin: Overview & Lifecycle
+# Strategy Plugin: Overview & Setup
 
 This guide explains the foundation of creating a trading strategy plugin for the Platinum Trading Platform. The plugin system is designed to allow the exact same strategy code to run seamlessly in both **Backtest** (GUI) and **Live Trading** (Bot) environments without modification.
+
+## Step 1: Create the Project
+
+A custom strategy is compiled as a standalone `.dll` file using a standard .NET 10 Class Library.
+
+1. Open your terminal and create a new class library:
+   ```bash
+   dotnet new classlib -n MyStrategy -f net10.0
+   ```
+2. Add a project reference to the SDK (`Pt.Okx.Sdk.csproj`) or install the NuGet package if you are developing outside the main repository.
+3. Your `.csproj` should look like this:
+   ```xml
+   <Project Sdk="Microsoft.NET.Sdk">
+     <PropertyGroup>
+       <TargetFramework>net10.0</TargetFramework>
+       <ImplicitUsings>enable</ImplicitUsings>
+       <Nullable>enable</Nullable>
+     </PropertyGroup>
+
+     <ItemGroup>
+       <ProjectReference Include="..\Pt.Okx.Sdk\Pt.Okx.Sdk.csproj" />
+     </ItemGroup>
+   </Project>
+   ```
 
 ## IStrategy — The Core Lifecycle
 
