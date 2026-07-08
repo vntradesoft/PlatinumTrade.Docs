@@ -9,6 +9,13 @@ sidebar_position: 99
 
 ## Changelog
 
+### [0.9.0-beta.4] - 2026-07-08
+
+#### Features
+- **docs:** Update terms and conditions.
+- **gui:** Add third-party notices link in About dialog.
+- **gui:** Show full semantic version and replace private commit hash with architecture in About Dialog.
+
 ### [0.9.0-beta.3] - 2026-07-08
 
 #### Features
