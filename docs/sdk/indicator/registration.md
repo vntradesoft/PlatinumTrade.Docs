@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 id: sdk-indicator-registration
 title: Registration & Parameters
 description: Registering indicators and managing input parameters

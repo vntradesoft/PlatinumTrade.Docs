@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 id: sdk-strategy-settings
 title: Strategy Settings
 description: Configuring trading mode, leverage, and settings

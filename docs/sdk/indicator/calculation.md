@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 id: sdk-indicator-calculation
 title: Calculation Flow
 description: Handling incremental indicator calculation

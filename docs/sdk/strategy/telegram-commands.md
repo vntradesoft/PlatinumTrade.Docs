@@ -1,4 +1,5 @@
 ---
+sidebar_position: 8
 id: sdk-strategy-telegram-commands
 title: Telegram Commands
 description: Extending strategies with custom Telegram commands

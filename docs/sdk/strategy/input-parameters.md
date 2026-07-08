@@ -1,4 +1,5 @@
 ---
+sidebar_position: 4
 id: sdk-strategy-input-parameters
 title: Input Parameters
 description: Defining customizable inputs and schema attributes

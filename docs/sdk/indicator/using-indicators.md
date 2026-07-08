@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 id: sdk-indicator-using-indicators
 title: Using Indicators
 description: Leveraging built-in or other custom indicators inside your indicator without recalculating

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 id: sdk-indicator-overview
 title: Overview & Setup
 description: Developing custom indicator plugins

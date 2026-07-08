@@ -1,4 +1,5 @@
 ---
+sidebar_position: 4
 id: sdk-indicator-properties-buffers
 title: Properties & Buffers
 description: Configuring visual properties and data arrays

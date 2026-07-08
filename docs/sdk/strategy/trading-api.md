@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 id: sdk-strategy-trading-api
 title: Trading API
 description: Placing and managing orders from strategy logic
