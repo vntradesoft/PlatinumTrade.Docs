@@ -50,7 +50,7 @@ All trading and strategy decisions remain solely the responsibility of the User.
 
 To avoid confusion about responsibility when issues arise, the Software's components and the responsible party for each are described below:
 
-    - Core application, charting (Pt.Okx.Core, Pt.Okx.Gui, Pt.Okx.Cli) — closed-source
+    - Core application, charting (Core Engine, Pt.Okx.Gui, Pt.Okx.Cli) — closed-source
       Provided by: Platinum Trade developer ("we", "us")
       Responsibility: Software functionality only — not strategy outcomes
 
@@ -129,7 +129,7 @@ Platinum Trade is an independent software product developed by an individual dev
 
 The Software's SDK (Pt.Okx.Sdk) is open-source and publicly available, and is distributed under the MIT License. This means anyone may view, copy, modify, and redistribute the SDK's source code, including for commercial purposes, subject only to the conditions of the MIT License (principally, retaining the copyright notice and license text). The MIT License text accompanying the SDK's source repository is authoritative; in case of any conflict between this Section and that license text, the MIT License text prevails for matters concerning the SDK's source code.
 
-Unlike the SDK, the closed-source application components of the Software (including Pt.Okx.Core, Pt.Okx.Gui, and Pt.Okx.Cli) are NOT open-source and remain subject in full to these Terms and the [Limitation of Liability](liability.md).
+Unlike the SDK, the closed-source application components of the Software (including Core Engine, Pt.Okx.Gui, and Pt.Okx.Cli) are NOT open-source and remain subject in full to these Terms and the [Limitation of Liability](liability.md).
 
 >> 6.2 No Additional Warranty from Open-Sourcing
 

@@ -11,7 +11,7 @@ visibility: internal
 ## Rule
 
 Pt.Okx.SDK defines the public contracts.
-Pt.Okx.Core implements them.
+Core Engine implements them.
 
 ## SDK Surface (public contract)
 

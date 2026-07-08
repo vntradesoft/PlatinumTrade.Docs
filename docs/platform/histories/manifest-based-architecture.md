@@ -449,6 +449,6 @@ await downloader.SmartSyncAsync(symbol, start, end);
 
 ## References
 
-- **Implementation**: `Pt.Okx.Core.HistoryData/` (new classes: HistoryManifestStore, BinaryHistoryStore, HistoryDownloaderService)
-- **Consumer**: `Pt.Okx.Core/TimeSeriesView.cs`, `Pt.Okx.Gui/Services/CandleSyncService.cs`
-- **Tests**: `Pt.Okx.Core.Tests/CandleHistoryTests.cs`
+- **Implementation**: `Core Engine.HistoryData/` (new classes: HistoryManifestStore, BinaryHistoryStore, HistoryDownloaderService)
+- **Consumer**: `Core Engine/TimeSeriesView.cs`, `Pt.Okx.Gui/Services/CandleSyncService.cs`
+- **Tests**: `Core Engine.Tests/CandleHistoryTests.cs`

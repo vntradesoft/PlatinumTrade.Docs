@@ -9,7 +9,7 @@ publish: false
 
 # Telegram Commands & Extensions
 
-The OKX Trading platform supports remote interaction, monitoring, and control via a Telegram Bot. When a user sends a command to the Telegram Bot, it is processed by the core `TelegramCommandHandler` service in `Pt.Okx.Core` and dispatched to the active strategy.
+The OKX Trading platform supports remote interaction, monitoring, and control via a Telegram Bot. When a user sends a command to the Telegram Bot, it is processed by the core `TelegramCommandHandler` service in `Core Engine` and dispatched to the active strategy.
 
 This guide explains how the Telegram Command system works, lists the built-in commands available out of the box, and demonstrates how to extend the bot with custom commands specific to your strategy plugin.
 
@@ -20,7 +20,7 @@ This guide explains how the Telegram Command system works, lists the built-in co
 The flow of a Telegram command from the user's phone to the strategy is as follows:
 
 1. **User Input:** The user sends a command (e.g., `/status` or a custom command like `/setrisk 2.5`) to the Telegram Bot.
-2. **Core Parsing:** The `TelegramCommandHandler` in `Pt.Okx.Core` receives the message, validates the sender's Chat ID against configuration permissions, and parses the command string.
+2. **Core Parsing:** The `TelegramCommandHandler` in `Core Engine` receives the message, validates the sender's Chat ID against configuration permissions, and parses the command string.
 3. **Command Object Generation:** If the command matches a built-in command or is recognized by a registered extension, a `TradeCommand` object is created.
 4. **Host Dispatch:** The host application (GUI or CLI) captures the parsed `TradeCommand` and broadcasts it to the active strategy instance.
 5. **Strategy Execution:** The host dispatches the command to the strategy via `OnTradeCommandAsync(TradeCommand, CancellationToken)`.
