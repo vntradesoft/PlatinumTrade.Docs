@@ -1,6 +1,8 @@
 ---
+id: changelog
 title: App Changelog
 description: Release notes and downloads for Platinum Trade App
+sidebar_position: 99
 ---
 
 # Okx
