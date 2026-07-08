@@ -1,1319 +1,1889 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Interface ITradeClient | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface ITradeClient | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Interface for trading operations, including order placement, management, position handling, and trade history retrieval. Provides methods for interacting with trading endpoints, managing orders, positions, and retrieving trade-related data.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface ITradeClient | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface ITradeClient | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Interface for trading operations, including order placement, management, position handling, and trade history retrieval. Provides methods for interacting with trading endpoints, managing orders, positions, and retrieving trade-related data.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient">
 
-        <article data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient">
 
 
-
-  <h1 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient" class="text-break">
-Interface ITradeClient  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L12"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.html">Trading</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Interface for trading operations, including order placement, management, position handling, and trade history retrieval.
+  <h1 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient" class="text-break">Interface ITradeClient</h1>
+  <div class="markdown level0 summary"><p>Interface for trading operations, including order placement, management, position handling, and trade history retrieval.
 Provides methods for interacting with trading endpoints, managing orders, positions, and retrieving trade-related data.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.html">Trading</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ITradeClient</code></pre>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendAlgoOrderAsync_System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendAlgoOrderAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L166">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendAlgoOrderAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendAlgoOrderAsync_System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendAlgoOrderAsync(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Threading.CancellationToken)">
-  AmendAlgoOrderAsync(string, string?, string?, string?, bool?, decimal?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L166"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendAlgoOrderAsync_System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendAlgoOrderAsync(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Threading.CancellationToken)">AmendAlgoOrderAsync(string, string?, string?, string?, bool?, decimal?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Amends a pending Algo order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;AlgoOrderAmendResponse&gt;&gt; AmendAlgoOrderAsync(string symbol, string? algoId = null, string? clientAlgoId = null, string? requestId = null, bool? cancelOnFail = null, decimal? newQuantity = null, decimal? newTakeProfitTriggerPrice = null, decimal? newStopLossTriggerPrice = null, decimal? newTakeProfitOrderPrice = null, decimal? newStopLossOrderPrice = null, TriggerPriceType? newTakeProfitPriceTriggerType = null, TriggerPriceType? newStopLossPriceTriggerType = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Trading symbol.</p>
-</dd>
-    <dt><code>algoId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Algo order ID (optional).</p>
-</dd>
-    <dt><code>clientAlgoId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Client Algo order ID (optional).</p>
-</dd>
-    <dt><code>requestId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Request ID (optional).</p>
-</dd>
-    <dt><code>cancelOnFail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>Cancel on fail flag (optional).</p>
-</dd>
-    <dt><code>newQuantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New quantity (optional).</p>
-</dd>
-    <dt><code>newTakeProfitTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New take profit trigger price (optional).</p>
-</dd>
-    <dt><code>newStopLossTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New stop loss trigger price (optional).</p>
-</dd>
-    <dt><code>newTakeProfitOrderPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New take profit order price (optional).</p>
-</dd>
-    <dt><code>newStopLossOrderPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New stop loss order price (optional).</p>
-</dd>
-    <dt><code>newTakeProfitPriceTriggerType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</dt>
-    <dd><p>New take profit price trigger type (optional).</p>
-</dd>
-    <dt><code>newStopLossPriceTriggerType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</dt>
-    <dd><p>New stop loss price trigger type (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderAmendResponse.html">AlgoOrderAmendResponse</a>&gt;&gt;</dt>
-    <dd><p>The result of the amend operation.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>Trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">algoId</span></td>
+        <td><p>Algo order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">clientAlgoId</span></td>
+        <td><p>Client Algo order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">requestId</span></td>
+        <td><p>Request ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">cancelOnFail</span></td>
+        <td><p>Cancel on fail flag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newQuantity</span></td>
+        <td><p>New quantity (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newTakeProfitTriggerPrice</span></td>
+        <td><p>New take profit trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newStopLossTriggerPrice</span></td>
+        <td><p>New stop loss trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newTakeProfitOrderPrice</span></td>
+        <td><p>New take profit order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newStopLossOrderPrice</span></td>
+        <td><p>New stop loss order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</td>
+        <td><span class="parametername">newTakeProfitPriceTriggerType</span></td>
+        <td><p>New take profit price trigger type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</td>
+        <td><span class="parametername">newStopLossPriceTriggerType</span></td>
+        <td><p>New stop loss price trigger type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderAmendResponse.html">AlgoOrderAmendResponse</a>&gt;&gt;</td>
+        <td><p>The result of the amend operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendOrderAsync(System.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L147">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendOrderAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Threading.CancellationToken)">
-  AmendOrderAsync(string, long?, string?, string?, bool?, decimal?, decimal?, decimal?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L147"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Threading.CancellationToken)">AmendOrderAsync(string, long?, string?, string?, bool?, decimal?, decimal?, decimal?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Amends an open order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;OrderAmendResponse&gt;&gt; AmendOrderAsync(string symbol, long? orderId = null, string? clientOrderId = null, string? requestId = null, bool? cancelOnFail = null, decimal? newQuantity = null, decimal? newPrice = null, decimal? newTriggerPrice = null, decimal? newTakeProfitTriggerPrice = null, decimal? newStopLossTriggerPrice = null, decimal? newTakeProfitOrderPrice = null, decimal? newStopLossOrderPrice = null, TriggerPriceType? newTakeProfitPriceTriggerType = null, TriggerPriceType? newStopLossPriceTriggerType = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Trading symbol.</p>
-</dd>
-    <dt><code>orderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
-    <dd><p>Order ID (optional).</p>
-</dd>
-    <dt><code>clientOrderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Client order ID (optional).</p>
-</dd>
-    <dt><code>requestId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Request ID (optional).</p>
-</dd>
-    <dt><code>cancelOnFail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>Cancel on fail flag (optional).</p>
-</dd>
-    <dt><code>newQuantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New quantity (optional).</p>
-</dd>
-    <dt><code>newPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New price (optional).</p>
-</dd>
-    <dt><code>newTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New trigger price (optional).</p>
-</dd>
-    <dt><code>newTakeProfitTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New take profit trigger price (optional).</p>
-</dd>
-    <dt><code>newStopLossTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New stop loss trigger price (optional).</p>
-</dd>
-    <dt><code>newTakeProfitOrderPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New take profit order price (optional).</p>
-</dd>
-    <dt><code>newStopLossOrderPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>New stop loss order price (optional).</p>
-</dd>
-    <dt><code>newTakeProfitPriceTriggerType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</dt>
-    <dd><p>New take profit price trigger type (optional).</p>
-</dd>
-    <dt><code>newStopLossPriceTriggerType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</dt>
-    <dd><p>New stop loss price trigger type (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderAmendResponse.html">OrderAmendResponse</a>&gt;&gt;</dt>
-    <dd><p>The result of the amend operation.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>Trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">orderId</span></td>
+        <td><p>Order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">clientOrderId</span></td>
+        <td><p>Client order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">requestId</span></td>
+        <td><p>Request ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">cancelOnFail</span></td>
+        <td><p>Cancel on fail flag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newQuantity</span></td>
+        <td><p>New quantity (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newPrice</span></td>
+        <td><p>New price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newTriggerPrice</span></td>
+        <td><p>New trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newTakeProfitTriggerPrice</span></td>
+        <td><p>New take profit trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newStopLossTriggerPrice</span></td>
+        <td><p>New stop loss trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newTakeProfitOrderPrice</span></td>
+        <td><p>New take profit order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">newStopLossOrderPrice</span></td>
+        <td><p>New stop loss order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</td>
+        <td><span class="parametername">newTakeProfitPriceTriggerType</span></td>
+        <td><p>New take profit price trigger type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</td>
+        <td><span class="parametername">newStopLossPriceTriggerType</span></td>
+        <td><p>New stop loss price trigger type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderAmendResponse.html">OrderAmendResponse</a>&gt;&gt;</td>
+        <td><p>The result of the amend operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelAlgoOrderAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_AlgoOrderRequest__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelAlgoOrderAsync(System.Collections.Generic.IEnumerable%7BPt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L192">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelAlgoOrderAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelAlgoOrderAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_AlgoOrderRequest__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelAlgoOrderAsync(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest},System.Threading.CancellationToken)">
-  CancelAlgoOrderAsync(IEnumerable&lt;AlgoOrderRequest&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L192"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelAlgoOrderAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_AlgoOrderRequest__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelAlgoOrderAsync(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest},System.Threading.CancellationToken)">CancelAlgoOrderAsync(IEnumerable&lt;AlgoOrderRequest&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Cancels one or more Algo orders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;AlgoOrderResponse&gt;&gt; CancelAlgoOrderAsync(IEnumerable&lt;AlgoOrderRequest&gt; orders, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>orders</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest.html">AlgoOrderRequest</a>&gt;</dt>
-    <dd><p>The Algo orders to cancel.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderResponse.html">AlgoOrderResponse</a>&gt;&gt;</dt>
-    <dd><p>The result of the cancel operation.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest.html">AlgoOrderRequest</a>&gt;</td>
+        <td><span class="parametername">orders</span></td>
+        <td><p>The Algo orders to cancel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderResponse.html">AlgoOrderResponse</a>&gt;&gt;</td>
+        <td><p>The result of the cancel operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelMultipleOrdersAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_OrderCancelRequest__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelMultipleOrdersAsync(System.Collections.Generic.IEnumerable%7BPt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L184">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelMultipleOrdersAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelMultipleOrdersAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelMultipleOrdersAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_OrderCancelRequest__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelMultipleOrdersAsync(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest},System.Threading.CancellationToken)">
-  CancelMultipleOrdersAsync(IEnumerable&lt;OrderCancelRequest&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L184"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelMultipleOrdersAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_OrderCancelRequest__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelMultipleOrdersAsync(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest},System.Threading.CancellationToken)">CancelMultipleOrdersAsync(IEnumerable&lt;OrderCancelRequest&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Cancels multiple open orders at once.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;OrderCancelResponse[]&gt;&gt; CancelMultipleOrdersAsync(IEnumerable&lt;OrderCancelRequest&gt; orders, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>orders</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest.html">OrderCancelRequest</a>&gt;</dt>
-    <dd><p>The orders to cancel.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelResponse.html">OrderCancelResponse</a>[]&gt;&gt;</dt>
-    <dd><p>The result of the cancel operation for each order.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest.html">OrderCancelRequest</a>&gt;</td>
+        <td><span class="parametername">orders</span></td>
+        <td><p>The orders to cancel.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelResponse.html">OrderCancelResponse</a>[]&gt;&gt;</td>
+        <td><p>The result of the cancel operation for each order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelOrderAsync(System.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L176">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelOrderAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.Threading.CancellationToken)">
-  CancelOrderAsync(string, long?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L176"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.Threading.CancellationToken)">CancelOrderAsync(string, long?, string?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Cancels an open order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;OrderCancelResponse&gt;&gt; CancelOrderAsync(string symbol, long? orderId = null, string? origClientOrderId = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Trading symbol.</p>
-</dd>
-    <dt><code>orderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
-    <dd><p>Order ID (optional).</p>
-</dd>
-    <dt><code>origClientOrderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Original client order ID (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelResponse.html">OrderCancelResponse</a>&gt;&gt;</dt>
-    <dd><p>The result of the cancel operation.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>Trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">orderId</span></td>
+        <td><p>Order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">origClientOrderId</span></td>
+        <td><p>Original client order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelResponse.html">OrderCancelResponse</a>&gt;&gt;</td>
+        <td><p>The result of the cancel operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_ClosePositionAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.ClosePositionAsync(System.String%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.PositionSide%7D%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L61">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_ClosePositionAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.ClosePositionAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_ClosePositionAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.ClosePositionAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.String,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
-  ClosePositionAsync(string, PositionSide?, string?, bool?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L61"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_ClosePositionAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.ClosePositionAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.String,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">ClosePositionAsync(string, PositionSide?, string?, bool?, string?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Closes an open position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;ClosePositionResponse&gt;&gt; ClosePositionAsync(string symbol, PositionSide? positionSide = null, string? asset = null, bool? autoCancel = null, string? clientOrderId = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>positionSide</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PositionSide.html">PositionSide</a>?</dt>
-    <dd><p>Position side (optional).</p>
-</dd>
-    <dt><code>asset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Asset (optional).</p>
-</dd>
-    <dt><code>autoCancel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>Auto-cancel flag (optional).</p>
-</dd>
-    <dt><code>clientOrderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Client order ID (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.ClosePositionResponse.html">ClosePositionResponse</a>&gt;&gt;</dt>
-    <dd><p>The result of the close position operation.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.PositionSide.html">PositionSide</a>?</td>
+        <td><span class="parametername">positionSide</span></td>
+        <td><p>Position side (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td><p>Asset (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">autoCancel</span></td>
+        <td><p>Auto-cancel flag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">clientOrderId</span></td>
+        <td><p>Client order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.ClosePositionResponse.html">ClosePositionResponse</a>&gt;&gt;</td>
+        <td><p>The result of the close position operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_DisableLogApiEndPoint_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Enums_ApiName__.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.DisableLogApiEndPoint(System.Collections.Generic.IEnumerable%7BPt.Okx.Sdk.Enums.ApiName%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L280">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_DisableLogApiEndPoint_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.DisableLogApiEndPoint*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_DisableLogApiEndPoint_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Enums_ApiName__" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.DisableLogApiEndPoint(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Enums.ApiName})">
-  DisableLogApiEndPoint(IEnumerable&lt;ApiName&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L280"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_DisableLogApiEndPoint_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Enums_ApiName__" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.DisableLogApiEndPoint(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Enums.ApiName})">DisableLogApiEndPoint(IEnumerable&lt;ApiName&gt;)</h4>
   <div class="markdown level1 summary"><p>Disables logging for specified API endpoints.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void DisableLogApiEndPoint(IEnumerable&lt;ApiName&gt; apiNames)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>apiNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Enums.ApiName.html">ApiName</a>&gt;</dt>
-    <dd><p>The API endpoints to disable logging for.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Enums.ApiName.html">ApiName</a>&gt;</td>
+        <td><span class="parametername">apiNames</span></td>
+        <td><p>The API endpoints to disable logging for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrderAsync_System_String_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrderAsync(System.String%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L201">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrderAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrderAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrderAsync(System.String,System.String,System.Threading.CancellationToken)">
-  GetAlgoOrderAsync(string?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L201"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrderAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrderAsync(System.String,System.String,System.Threading.CancellationToken)">GetAlgoOrderAsync(string?, string?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets detailed information for an Algo order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;AlgoOrder&gt;&gt; GetAlgoOrderAsync(string? algoId = null, string? clientAlgoId = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>algoId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Algo order ID (optional).</p>
-</dd>
-    <dt><code>clientAlgoId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Client Algo order ID (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder.html">AlgoOrder</a>&gt;&gt;</dt>
-    <dd><p>The Algo order details.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">algoId</span></td>
+        <td><p>Algo order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">clientAlgoId</span></td>
+        <td><p>Client Algo order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder.html">AlgoOrder</a>&gt;&gt;</td>
+        <td><p>The Algo order details.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrdersAsync_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrdersAsync(Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L117">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrdersAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrdersAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrdersAsync_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrdersAsync(Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
-  GetAlgoOrdersAsync(AlgoOrderType, string?, string?, DateTime?, DateTime?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L117"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrdersAsync_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrdersAsync(Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetAlgoOrdersAsync(AlgoOrderType, string?, string?, DateTime?, DateTime?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets a list of pending Algo orders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;AlgoOrder[]&gt;&gt; GetAlgoOrdersAsync(AlgoOrderType algoOrderType, string? algoId = null, string? symbol = null, DateTime? startTime = null, DateTime? endTime = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>algoOrderType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType.html">AlgoOrderType</a></dt>
-    <dd><p>Algo order type.</p>
-</dd>
-    <dt><code>algoId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Algo order ID (optional).</p>
-</dd>
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Trading symbol (optional).</p>
-</dd>
-    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>Start time (optional).</p>
-</dd>
-    <dt><code>endTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>End time (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder.html">AlgoOrder</a>[]&gt;&gt;</dt>
-    <dd><p>The list of pending Algo orders.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType.html">AlgoOrderType</a></td>
+        <td><span class="parametername">algoOrderType</span></td>
+        <td><p>Algo order type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">algoId</span></td>
+        <td><p>Algo order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>Trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>Start time (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>End time (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder.html">AlgoOrder</a>[]&gt;&gt;</td>
+        <td><p>The list of pending Algo orders.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetClosePositionsAsync_System_String_System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_MarginMode__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_ClosingPositionType__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetClosePositionsAsync(System.String%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.MarginMode%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType%7D%2CSystem.String%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L243">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetClosePositionsAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetClosePositionsAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetClosePositionsAsync_System_String_System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_MarginMode__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_ClosingPositionType__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetClosePositionsAsync(System.String,System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
-  GetClosePositionsAsync(string?, MarginMode?, ClosingPositionType?, string?, DateTime?, DateTime?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L243"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetClosePositionsAsync_System_String_System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_MarginMode__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_ClosingPositionType__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetClosePositionsAsync(System.String,System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetClosePositionsAsync(string?, MarginMode?, ClosingPositionType?, string?, DateTime?, DateTime?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the history of closed positions.
 Retrieves up to 3 months of data. For longer history, use the GetPositionArchiveAsync endpoint for archived data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;ClosingPosition[]&gt;&gt; GetClosePositionsAsync(string? symbol = null, MarginMode? marginMode = null, ClosingPositionType? type = null, string? positionId = null, DateTime? endTime = null, DateTime? startTime = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol (optional).</p>
-</dd>
-    <dt><code>marginMode</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode.html">MarginMode</a>?</dt>
-    <dd><p>The margin mode (optional).</p>
-</dd>
-    <dt><code>type</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType.html">ClosingPositionType</a>?</dt>
-    <dd><p>The closing position type (optional).</p>
-</dd>
-    <dt><code>positionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The position ID (optional).</p>
-</dd>
-    <dt><code>endTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The end time for the query (optional).</p>
-</dd>
-    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The start time for the query (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.ClosingPosition.html">ClosingPosition</a>[]&gt;&gt;</dt>
-    <dd><p>The list of closed positions.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode.html">MarginMode</a>?</td>
+        <td><span class="parametername">marginMode</span></td>
+        <td><p>The margin mode (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType.html">ClosingPositionType</a>?</td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The closing position type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">positionId</span></td>
+        <td><p>The position ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>The end time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>The start time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.ClosingPosition.html">ClosingPosition</a>[]&gt;&gt;</td>
+        <td><p>The list of closed positions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetHistoryOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetHistoryOrdersAsync(System.String%2CSystem.String%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.OrderType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.OrderStatus%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L216">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetHistoryOrdersAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetHistoryOrdersAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetHistoryOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetHistoryOrdersAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
-  GetHistoryOrdersAsync(string?, string?, OrderType?, OrderStatus?, DateTime?, DateTime?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L216"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetHistoryOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetHistoryOrdersAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetHistoryOrdersAsync(string?, string?, OrderType?, OrderStatus?, DateTime?, DateTime?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the history of closed or canceled orders.
 Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArchiveAsync endpoint for archived data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Order[]&gt;&gt; GetHistoryOrdersAsync(string? symbol = null, string? underlying = null, OrderType? orderType = null, OrderStatus? state = null, DateTime? startTime = null, DateTime? endTime = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol (optional).</p>
-</dd>
-    <dt><code>underlying</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The underlying asset (optional).</p>
-</dd>
-    <dt><code>orderType</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a>?</dt>
-    <dd><p>The order type (optional).</p>
-</dd>
-    <dt><code>state</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.html">OrderStatus</a>?</dt>
-    <dd><p>The order status (optional).</p>
-</dd>
-    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The start time for the query (optional).</p>
-</dd>
-    <dt><code>endTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The end time for the query (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>[]&gt;&gt;</dt>
-    <dd><p>The list of closed or canceled orders.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">underlying</span></td>
+        <td><p>The underlying asset (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a>?</td>
+        <td><span class="parametername">orderType</span></td>
+        <td><p>The order type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.html">OrderStatus</a>?</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The order status (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>The start time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>The end time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>[]&gt;&gt;</td>
+        <td><p>The list of closed or canceled orders.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrderAsync(System.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L93">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrderAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.Threading.CancellationToken)">
-  GetOrderAsync(string, long?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L93"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.Threading.CancellationToken)">GetOrderAsync(string, long?, string?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets detailed information for a single order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Order&gt;&gt; GetOrderAsync(string symbol, long? orderId = null, string? origClientOrderId = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>orderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
-    <dd><p>Order ID (optional).</p>
-</dd>
-    <dt><code>origClientOrderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Original client order ID (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>&gt;&gt;</dt>
-    <dd><p>The order details.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">orderId</span></td>
+        <td><p>Order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">origClientOrderId</span></td>
+        <td><p>Original client order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>&gt;&gt;</td>
+        <td><p>The order details.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersArchiveAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersArchiveAsync(System.String%2CSystem.String%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.OrderType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.OrderStatus%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L229">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersArchiveAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersArchiveAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersArchiveAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersArchiveAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
-  GetOrdersArchiveAsync(string?, string?, OrderType?, OrderStatus?, DateTime?, DateTime?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L229"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersArchiveAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersArchiveAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetOrdersArchiveAsync(string?, string?, OrderType?, OrderStatus?, DateTime?, DateTime?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the history of closed or canceled orders from archived data. Use when more than 3 months of data is needed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Order[]&gt;&gt; GetOrdersArchiveAsync(string? symbol = null, string? underlying = null, OrderType? orderType = null, OrderStatus? state = null, DateTime? startTime = null, DateTime? endTime = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol (optional).</p>
-</dd>
-    <dt><code>underlying</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The underlying asset (optional).</p>
-</dd>
-    <dt><code>orderType</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a>?</dt>
-    <dd><p>The order type (optional).</p>
-</dd>
-    <dt><code>state</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.html">OrderStatus</a>?</dt>
-    <dd><p>The order status (optional).</p>
-</dd>
-    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The start time for the query (optional).</p>
-</dd>
-    <dt><code>endTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The end time for the query (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>[]&gt;&gt;</dt>
-    <dd><p>The list of closed or canceled orders from archive.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">underlying</span></td>
+        <td><p>The underlying asset (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a>?</td>
+        <td><span class="parametername">orderType</span></td>
+        <td><p>The order type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.html">OrderStatus</a>?</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The order status (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>The start time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>The end time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>[]&gt;&gt;</td>
+        <td><p>The list of closed or canceled orders from archive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersAsync(System.String%2CSystem.String%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.OrderType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.OrderStatus%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L105">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.String,System.Threading.CancellationToken)">
-  GetOrdersAsync(string?, string?, OrderType?, OrderStatus?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L105"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.String,System.Threading.CancellationToken)">GetOrdersAsync(string?, string?, OrderType?, OrderStatus?, string?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets a list of all open (live/partially filled) orders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Order[]&gt;&gt; GetOrdersAsync(string? symbol = null, string? underlying = null, OrderType? orderType = null, OrderStatus? state = null, string? instrumentFamily = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol (optional).</p>
-</dd>
-    <dt><code>underlying</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Underlying asset (optional).</p>
-</dd>
-    <dt><code>orderType</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a>?</dt>
-    <dd><p>Order type (optional).</p>
-</dd>
-    <dt><code>state</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.html">OrderStatus</a>?</dt>
-    <dd><p>Order status (optional).</p>
-</dd>
-    <dt><code>instrumentFamily</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Instrument family (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>[]&gt;&gt;</dt>
-    <dd><p>The list of open orders.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">underlying</span></td>
+        <td><p>Underlying asset (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a>?</td>
+        <td><span class="parametername">orderType</span></td>
+        <td><p>Order type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus.html">OrderStatus</a>?</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>Order status (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instrumentFamily</span></td>
+        <td><p>Instrument family (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>[]&gt;&gt;</td>
+        <td><p>The list of open orders.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetPositionsAsync_System_String_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetPositionsAsync(System.String%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L126">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetPositionsAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetPositionsAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetPositionsAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetPositionsAsync(System.String,System.String,System.Threading.CancellationToken)">
-  GetPositionsAsync(string?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L126"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetPositionsAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetPositionsAsync(System.String,System.String,System.Threading.CancellationToken)">GetPositionsAsync(string?, string?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets a list of open positions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Position[]&gt;&gt; GetPositionsAsync(string? symbol = null, string? positionId = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Trading symbol (optional).</p>
-</dd>
-    <dt><code>positionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Position ID (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Position.html">Position</a>[]&gt;&gt;</dt>
-    <dd><p>The list of open positions.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>Trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">positionId</span></td>
+        <td><p>Position ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Position.html">Position</a>[]&gt;&gt;</td>
+        <td><p>The list of open positions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L255">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
-  GetUserTradeAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L255"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetUserTradeAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the history of matched trades (fills).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Transaction[]&gt;&gt; GetUserTradeAsync(string? symbol = null, string? underlying = null, long? orderId = null, DateTime? startTime = null, DateTime? endTime = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol (optional).</p>
-</dd>
-    <dt><code>underlying</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The underlying asset (optional).</p>
-</dd>
-    <dt><code>orderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
-    <dd><p>The order ID (optional).</p>
-</dd>
-    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The start time for the query (optional).</p>
-</dd>
-    <dt><code>endTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The end time for the query (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Transaction.html">Transaction</a>[]&gt;&gt;</dt>
-    <dd><p>The list of matched trades (fills).</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">underlying</span></td>
+        <td><p>The underlying asset (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">orderId</span></td>
+        <td><p>The order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>The start time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>The end time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Transaction.html">Transaction</a>[]&gt;&gt;</td>
+        <td><p>The list of matched trades (fills).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesArchiveAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L267">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesArchiveAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesArchiveAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">
-  GetUserTradesArchiveAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L267"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesArchiveAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetUserTradesArchiveAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the history of matched trades (fills) from archived data. Use when more than 3 months of data is needed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Transaction[]&gt;&gt; GetUserTradesArchiveAsync(string? symbol = null, string? underlying = null, long? orderId = null, DateTime? startTime = null, DateTime? endTime = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol (optional).</p>
-</dd>
-    <dt><code>underlying</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The underlying asset (optional).</p>
-</dd>
-    <dt><code>orderId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
-    <dd><p>The order ID (optional).</p>
-</dd>
-    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The start time for the query (optional).</p>
-</dd>
-    <dt><code>endTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd><p>The end time for the query (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Transaction.html">Transaction</a>[]&gt;&gt;</dt>
-    <dd><p>The list of matched trades (fills) from archive.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">underlying</span></td>
+        <td><p>The underlying asset (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">orderId</span></td>
+        <td><p>The order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>The start time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>The end time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Transaction.html">Transaction</a>[]&gt;&gt;</td>
+        <td><p>The list of matched trades (fills) from archive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_OrderCheckAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Enums_TradeMode__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_QuantityAsset__System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.OrderCheckAsync(System.String%2CPt.Okx.Sdk.Enums.OrderSide%2CPt.Okx.Sdk.Enums.OrderType%2CSystem.Decimal%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.PositionSide%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.TradeMode%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L83">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_OrderCheckAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.OrderCheckAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_OrderCheckAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Enums_TradeMode__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_QuantityAsset__System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.OrderCheckAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Enums.OrderType,System.Decimal,System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.Nullable{Pt.Okx.Sdk.Enums.TradeMode},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset},System.Nullable{System.Boolean},System.Threading.CancellationToken)">
-  OrderCheckAsync(string, OrderSide, OrderType, decimal, decimal?, PositionSide?, TradeMode?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, QuantityAsset?, bool?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L83"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_OrderCheckAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Enums_TradeMode__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_QuantityAsset__System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.OrderCheckAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Enums.OrderType,System.Decimal,System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.Nullable{Pt.Okx.Sdk.Enums.TradeMode},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset},System.Nullable{System.Boolean},System.Threading.CancellationToken)">OrderCheckAsync(string, OrderSide, OrderType, decimal, decimal?, PositionSide?, TradeMode?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, QuantityAsset?, bool?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Checks a potential order (pre-trade check) without actually placing it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;CheckOrderResponse&gt;&gt; OrderCheckAsync(string symbol, OrderSide side, OrderType type, decimal quantity, decimal? price = null, PositionSide? positionSide = null, TradeMode? tradeMode = null, decimal? takeProfitTriggerPrice = null, decimal? stopLossTriggerPrice = null, decimal? takeProfitOrderPrice = null, decimal? stopLossOrderPrice = null, TriggerPriceType? takeProfitTriggerPriceType = null, TriggerPriceType? stopLossTriggerPriceType = null, QuantityAsset? quantityAsset = null, bool? reduceOnly = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>side</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderSide.html">OrderSide</a></dt>
-    <dd><p>Order side.</p>
-</dd>
-    <dt><code>type</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a></dt>
-    <dd><p>Order type.</p>
-</dd>
-    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>Order quantity.</p>
-</dd>
-    <dt><code>price</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Order price (optional).</p>
-</dd>
-    <dt><code>positionSide</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PositionSide.html">PositionSide</a>?</dt>
-    <dd><p>Position side (optional).</p>
-</dd>
-    <dt><code>tradeMode</code> <a class="xref" href="Pt.Okx.Sdk.Enums.TradeMode.html">TradeMode</a>?</dt>
-    <dd><p>Trade mode (optional).</p>
-</dd>
-    <dt><code>takeProfitTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Take profit trigger price (optional).</p>
-</dd>
-    <dt><code>stopLossTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Stop loss trigger price (optional).</p>
-</dd>
-    <dt><code>takeProfitOrderPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Take profit order price (optional).</p>
-</dd>
-    <dt><code>stopLossOrderPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Stop loss order price (optional).</p>
-</dd>
-    <dt><code>takeProfitTriggerPriceType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</dt>
-    <dd><p>Take profit trigger price type (optional).</p>
-</dd>
-    <dt><code>stopLossTriggerPriceType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</dt>
-    <dd><p>Stop loss price trigger type (optional).</p>
-</dd>
-    <dt><code>quantityAsset</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset.html">QuantityAsset</a>?</dt>
-    <dd><p>Quantity asset (optional).</p>
-</dd>
-    <dt><code>reduceOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>Reduce-only flag (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.CheckOrderResponse.html">CheckOrderResponse</a>&gt;&gt;</dt>
-    <dd><p>The result of the order check.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.OrderSide.html">OrderSide</a></td>
+        <td><span class="parametername">side</span></td>
+        <td><p>Order side.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Order type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">quantity</span></td>
+        <td><p>Order quantity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">price</span></td>
+        <td><p>Order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.PositionSide.html">PositionSide</a>?</td>
+        <td><span class="parametername">positionSide</span></td>
+        <td><p>Position side (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.TradeMode.html">TradeMode</a>?</td>
+        <td><span class="parametername">tradeMode</span></td>
+        <td><p>Trade mode (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">takeProfitTriggerPrice</span></td>
+        <td><p>Take profit trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">stopLossTriggerPrice</span></td>
+        <td><p>Stop loss trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">takeProfitOrderPrice</span></td>
+        <td><p>Take profit order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">stopLossOrderPrice</span></td>
+        <td><p>Stop loss order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</td>
+        <td><span class="parametername">takeProfitTriggerPriceType</span></td>
+        <td><p>Take profit trigger price type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType.html">TriggerPriceType</a>?</td>
+        <td><span class="parametername">stopLossTriggerPriceType</span></td>
+        <td><p>Stop loss price trigger type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset.html">QuantityAsset</a>?</td>
+        <td><span class="parametername">quantityAsset</span></td>
+        <td><p>Quantity asset (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">reduceOnly</span></td>
+        <td><p>Reduce-only flag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.CheckOrderResponse.html">CheckOrderResponse</a>&gt;&gt;</td>
+        <td><p>The result of the order check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceAlgoOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceAlgoOrderAsync(System.String%2CPt.Okx.Sdk.Enums.OrderSide%2CPt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.PositionSide%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L49">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceAlgoOrderAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceAlgoOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceAlgoOrderAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType,System.Nullable{System.Decimal},System.Nullable{System.Boolean},System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
-  PlaceAlgoOrderAsync(string, OrderSide, AlgoOrderType, decimal?, bool?, PositionSide?, AlgoPriceType?, decimal?, decimal?, AlgoPriceType?, decimal?, decimal?, decimal?, bool?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L49"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceAlgoOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceAlgoOrderAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType,System.Nullable{System.Decimal},System.Nullable{System.Boolean},System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">PlaceAlgoOrderAsync(string, OrderSide, AlgoOrderType, decimal?, bool?, PositionSide?, AlgoPriceType?, decimal?, decimal?, AlgoPriceType?, decimal?, decimal?, decimal?, bool?, string?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Places an Algo order (Take Profit/Stop Loss, Trailing Stop, Trigger Order, etc.).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;AlgoOrderResponse&gt;&gt; PlaceAlgoOrderAsync(string symbol, OrderSide orderSide, AlgoOrderType algoOrderType, decimal? quantity = null, bool? reduceOnly = null, PositionSide? positionSide = null, AlgoPriceType? tpTriggerPxType = null, decimal? tpTriggerPrice = null, decimal? tpOrderPrice = null, AlgoPriceType? slTriggerPxType = null, decimal? slTriggerPrice = null, decimal? slOrderPrice = null, decimal? closeFraction = null, bool? cancelOnClose = null, string? tag = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>orderSide</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderSide.html">OrderSide</a></dt>
-    <dd><p>The order side.</p>
-</dd>
-    <dt><code>algoOrderType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType.html">AlgoOrderType</a></dt>
-    <dd><p>The algo order type.</p>
-</dd>
-    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Order quantity (optional).</p>
-</dd>
-    <dt><code>reduceOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>Reduce-only flag (optional).</p>
-</dd>
-    <dt><code>positionSide</code> <a class="xref" href="Pt.Okx.Sdk.Enums.PositionSide.html">PositionSide</a>?</dt>
-    <dd><p>Position side (optional).</p>
-</dd>
-    <dt><code>tpTriggerPxType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType.html">AlgoPriceType</a>?</dt>
-    <dd><p>Take profit trigger price type (optional).</p>
-</dd>
-    <dt><code>tpTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Take profit trigger price (optional).</p>
-</dd>
-    <dt><code>tpOrderPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Take profit order price (optional).</p>
-</dd>
-    <dt><code>slTriggerPxType</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType.html">AlgoPriceType</a>?</dt>
-    <dd><p>Stop loss trigger price type (optional).</p>
-</dd>
-    <dt><code>slTriggerPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Stop loss trigger price (optional).</p>
-</dd>
-    <dt><code>slOrderPrice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Stop loss order price (optional).</p>
-</dd>
-    <dt><code>closeFraction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>Close fraction (optional).</p>
-</dd>
-    <dt><code>cancelOnClose</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>Cancel on close flag (optional).</p>
-</dd>
-    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Order tag (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderResponse.html">AlgoOrderResponse</a>&gt;&gt;</dt>
-    <dd><p>The result of the algo order placement.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.OrderSide.html">OrderSide</a></td>
+        <td><span class="parametername">orderSide</span></td>
+        <td><p>The order side.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType.html">AlgoOrderType</a></td>
+        <td><span class="parametername">algoOrderType</span></td>
+        <td><p>The algo order type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">quantity</span></td>
+        <td><p>Order quantity (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">reduceOnly</span></td>
+        <td><p>Reduce-only flag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.PositionSide.html">PositionSide</a>?</td>
+        <td><span class="parametername">positionSide</span></td>
+        <td><p>Position side (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType.html">AlgoPriceType</a>?</td>
+        <td><span class="parametername">tpTriggerPxType</span></td>
+        <td><p>Take profit trigger price type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">tpTriggerPrice</span></td>
+        <td><p>Take profit trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">tpOrderPrice</span></td>
+        <td><p>Take profit order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType.html">AlgoPriceType</a>?</td>
+        <td><span class="parametername">slTriggerPxType</span></td>
+        <td><p>Stop loss trigger price type (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">slTriggerPrice</span></td>
+        <td><p>Stop loss trigger price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">slOrderPrice</span></td>
+        <td><p>Stop loss order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">closeFraction</span></td>
+        <td><p>Close fraction (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">cancelOnClose</span></td>
+        <td><p>Cancel on close flag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Order tag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderResponse.html">AlgoOrderResponse</a>&gt;&gt;</td>
+        <td><p>The result of the algo order placement.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__Pt_Okx_Sdk_Clients_Trading_Models_AttachedAlgoOrder_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceOrderAsync(System.String%2CPt.Okx.Sdk.Enums.OrderSide%2CPt.Okx.Sdk.Enums.OrderType%2CSystem.Decimal%2CSystem.Nullable%7BSystem.Decimal%7D%2CPt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L27">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceOrderAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__Pt_Okx_Sdk_Clients_Trading_Models_AttachedAlgoOrder_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceOrderAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Enums.OrderType,System.Decimal,System.Nullable{System.Decimal},Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">
-  PlaceOrderAsync(string, OrderSide, OrderType, decimal, decimal?, AttachedAlgoOrder?, bool?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L27"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__Pt_Okx_Sdk_Clients_Trading_Models_AttachedAlgoOrder_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceOrderAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Enums.OrderType,System.Decimal,System.Nullable{System.Decimal},Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">PlaceOrderAsync(string, OrderSide, OrderType, decimal, decimal?, AttachedAlgoOrder?, bool?, string?, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Places a new trading order (Limit/Market, etc.).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;OrderPlaceResponse&gt;&gt; PlaceOrderAsync(string symbol, OrderSide side, OrderType type, decimal quantity, decimal? price = null, AttachedAlgoOrder? attachedAlgoOrder = null, bool? reduceOnly = null, string? tag = null, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>side</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderSide.html">OrderSide</a></dt>
-    <dd><p>The order side (buy/sell).</p>
-</dd>
-    <dt><code>type</code> <a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a></dt>
-    <dd><p>The order type (limit, market, etc.).</p>
-</dd>
-    <dt><code>quantity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The order quantity.</p>
-</dd>
-    <dt><code>price</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd><p>The order price (optional).</p>
-</dd>
-    <dt><code>attachedAlgoOrder</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder.html">AttachedAlgoOrder</a></dt>
-    <dd><p>Optional attached algo order.</p>
-</dd>
-    <dt><code>reduceOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p>Reduce-only flag (optional).</p>
-</dd>
-    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Order tag (optional).</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token (optional).</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceResponse.html">OrderPlaceResponse</a>&gt;&gt;</dt>
-    <dd><p>The result of the order placement.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.OrderSide.html">OrderSide</a></td>
+        <td><span class="parametername">side</span></td>
+        <td><p>The order side (buy/sell).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.OrderType.html">OrderType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The order type (limit, market, etc.).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">quantity</span></td>
+        <td><p>The order quantity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td><span class="parametername">price</span></td>
+        <td><p>The order price (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder.html">AttachedAlgoOrder</a></td>
+        <td><span class="parametername">attachedAlgoOrder</span></td>
+        <td><p>Optional attached algo order.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">reduceOnly</span></td>
+        <td><p>Reduce-only flag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>Order tag (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderPlaceResponse.html">OrderPlaceResponse</a>&gt;&gt;</td>
+        <td><p>The result of the order placement.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L274">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_System_String_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(System.String)">
-  SetMagicNumber(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L274"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_System_String_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(System.String)">SetMagicNumber(string)</h4>
   <div class="markdown level1 summary"><p>Sets the Magic Number to identify the order source (e.g., from Bot A, Bot B).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">(bool Success, string ErrorMsg) SetMagicNumber(string magicNumber)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>magicNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The magic number string.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.success">Success</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.errormsg">ErrorMsg</a>)</dt>
-    <dd><p>A tuple indicating success and an error message if any.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">magicNumber</span></td>
+        <td><p>The magic number string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.success">Success</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.errormsg">ErrorMsg</a>)</td>
+        <td><p>A tuple indicating success and an error message if any.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

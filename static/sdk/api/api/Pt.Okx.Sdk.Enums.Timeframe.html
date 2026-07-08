@@ -1,229 +1,247 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Enum Timeframe | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum Timeframe | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Represents supported candlestick timeframes in seconds. The underlying integer value corresponds to the duration in seconds.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Enums_Timeframe.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Enums.Timeframe%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Enum Timeframe | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Enum Timeframe | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Represents supported candlestick timeframes in seconds. The underlying integer value corresponds to the duration in seconds.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Enums.Timeframe">
 
-        <article data-uid="Pt.Okx.Sdk.Enums.Timeframe">
 
 
 
-
-  <h1 id="Pt_Okx_Sdk_Enums_Timeframe" data-uid="Pt.Okx.Sdk.Enums.Timeframe" class="text-break">
-Enum Timeframe  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Enums/Timeframe.cs/#L16"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Enums.html">Enums</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Represents supported candlestick timeframes in seconds.
+  <h1 id="Pt_Okx_Sdk_Enums_Timeframe" data-uid="Pt.Okx.Sdk.Enums.Timeframe" class="text-break">Enum Timeframe</h1>
+  <div class="markdown level0 summary"><p>Represents supported candlestick timeframes in seconds.
 The underlying integer value corresponds to the duration in seconds.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Enums.html">Enums</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Enums_Timeframe_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum Timeframe</code></pre>
   </div>
-
-
-
-
-
-
-
-
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
-  <div>
-      <a class="xref" href="Pt.Okx.Sdk.Drawing.Extensions.DrawingEnumExtensions.html#Pt_Okx_Sdk_Drawing_Extensions_DrawingEnumExtensions_GetDescription__1___0_">DrawingEnumExtensions.GetDescription&lt;TEnum&gt;(TEnum)</a>
-  </div>
-  </dd></dl>
-
-  <h2 id="fields">Fields
-</h2>
-  <dl class="parameters">
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_FifteenMinutes"><code>FifteenMinutes = 900</code></dt>
-  
-  <dd><p>Fifteen minutes (900 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_FiveMinutes"><code>FiveMinutes = 300</code></dt>
-  
-  <dd><p>Five minutes (300 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_FourHours"><code>FourHours = 14400</code></dt>
-  
-  <dd><p>Four hours (14400 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_OneDay"><code>OneDay = 86400</code></dt>
-  
-  <dd><p>One day (86400 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_OneHour"><code>OneHour = 3600</code></dt>
-  
-  <dd><p>One hour (3600 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_OneMinute"><code>OneMinute = 60</code></dt>
-  
-  <dd><p>One minute (60 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_OneMonth"><code>OneMonth = 2592000</code></dt>
-  
-  <dd><p>One month (approximated as 30 days = 2592000 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_OneSecond"><code>OneSecond = 1</code></dt>
-  
-  <dd><p>One second (1 second).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_OneWeek"><code>OneWeek = 604800</code></dt>
-  
-  <dd><p>One week (604800 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_OneYear"><code>OneYear = 31536000</code></dt>
-  
-  <dd><p>One year (approximated as 365 days).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_SixHours"><code>SixHours = 21600</code></dt>
-  
-  <dd><p>Six hours (21600 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_SixMonths"><code>SixMonths = 15552000</code></dt>
-  
-  <dd><p>Six months (approximated as 180 days).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_ThirtyMinutes"><code>ThirtyMinutes = 1800</code></dt>
-  
-  <dd><p>Thirty minutes (1800 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_ThreeMinutes"><code>ThreeMinutes = 180</code></dt>
-  
-  <dd><p>Three minutes (180 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_ThreeMonths"><code>ThreeMonths = 7776000</code></dt>
-  
-  <dd><p>Three months (approximated as 90 days).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_TwelveHours"><code>TwelveHours = 43200</code></dt>
-  
-  <dd><p>Twelve hours (43200 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_TwoHours"><code>TwoHours = 7200</code></dt>
-  
-  <dd><p>Two hours (7200 seconds).</p>
-</dd>
-    <dt id="Pt_Okx_Sdk_Enums_Timeframe_Unknown"><code>Unknown = 0</code></dt>
-  
-  <dd><p>Unknown or unspecified timeframe.</p>
-</dd>
-  </dl>
-
-
-  <h2 id="Pt_Okx_Sdk_Enums_Timeframe_remarks">Remarks</h2>
+  <h5 id="Pt_Okx_Sdk_Enums_Timeframe_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This enum is designed for both:</p>
 <ul><li>Time-based calculations (using numeric seconds).</li><li>External API mapping (via <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.descriptionattribute">DescriptionAttribute</a> values such as "1m", "1h").</li></ul>
 </div>
-
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    </thead></thead><tbody>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_FifteenMinutes">FifteenMinutes</td>
+        <td><p>Fifteen minutes (900 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_FiveMinutes">FiveMinutes</td>
+        <td><p>Five minutes (300 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_FourHours">FourHours</td>
+        <td><p>Four hours (14400 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_OneDay">OneDay</td>
+        <td><p>One day (86400 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_OneHour">OneHour</td>
+        <td><p>One hour (3600 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_OneMinute">OneMinute</td>
+        <td><p>One minute (60 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_OneMonth">OneMonth</td>
+        <td><p>One month (approximated as 30 days = 2592000 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_OneSecond">OneSecond</td>
+        <td><p>One second (1 second).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_OneWeek">OneWeek</td>
+        <td><p>One week (604800 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_OneYear">OneYear</td>
+        <td><p>One year (approximated as 365 days).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_SixHours">SixHours</td>
+        <td><p>Six hours (21600 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_SixMonths">SixMonths</td>
+        <td><p>Six months (approximated as 180 days).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_ThirtyMinutes">ThirtyMinutes</td>
+        <td><p>Thirty minutes (1800 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_ThreeMinutes">ThreeMinutes</td>
+        <td><p>Three minutes (180 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_ThreeMonths">ThreeMonths</td>
+        <td><p>Three months (approximated as 90 days).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_TwelveHours">TwelveHours</td>
+        <td><p>Twelve hours (43200 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_TwoHours">TwoHours</td>
+        <td><p>Two hours (7200 seconds).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_Timeframe_Unknown">Unknown</td>
+        <td><p>Unknown or unspecified timeframe.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Pt.Okx.Sdk.Drawing.Extensions.DrawingEnumExtensions.html#Pt_Okx_Sdk_Drawing_Extensions_DrawingEnumExtensions_GetDescription__1___0_">DrawingEnumExtensions.GetDescription&lt;Timeframe&gt;(Timeframe)</a>
+  </div>
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Enums_Timeframe.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Enums.Timeframe%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Enums/Timeframe.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

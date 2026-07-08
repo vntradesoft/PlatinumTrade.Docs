@@ -3,14 +3,6 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "type": "Resource",
-      "output": {
-        "resource": {
-          "relative_path": "index.json"
-        }
-      }
-    },
-    {
       "type": "ManagedReference",
       "source_relative_path": "api/Pt.Okx.Sdk.Clients.Account.Enums.FeeVipLevel.yml",
       "output": {
@@ -2770,20 +2762,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Pt.Okx.Sdk.Storage.StoragePathScope.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Pt.Okx.Sdk.Storage.StoragePathScope.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Pt.Okx.Sdk.Storage.StoragePathScope",
-      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Storage.StoragePathScope.yml\" sourcestartlinenumber=\"1\">Represents logical storage path scopes.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Pt.Okx.Sdk.Storage.yml",
       "output": {
         ".html": {
@@ -2892,7 +2870,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Pt.Okx.Sdk.Strategy.Events.StrategyEventType",
-      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.StrategyEventType.yml\" sourcestartlinenumber=\"1\">Event types published to strategies.</p>\n"
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.StrategyEventType.yml\" sourcestartlinenumber=\"1\">Event types used internally by engines for dispatch.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Events.TickPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.Events.TickPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.Events.TickPhase",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.TickPhase.yml\" sourcestartlinenumber=\"1\">Indicates whether <code>OnTickAsync</code> was triggered by an intra-bar tick or a closed bar.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3358,20 +3350,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters",
-      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.yml\" sourcestartlinenumber=\"1\">Optional interface for strategy plugins that wish to declare their input parameters\nvia code (code-first) instead of manually maintaining a JSON file.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Pt.Okx.Sdk.Strategy.Plugin.yml",
       "output": {
         ".html": {
@@ -3456,6 +3434,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Pt.Okx.Sdk.Strategy.StrategyBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pt.Okx.Sdk.Strategy.StrategyBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pt.Okx.Sdk.Strategy.StrategyBase",
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.StrategyBase.yml\" sourcestartlinenumber=\"1\">Base class for all trading strategies.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Pt.Okx.Sdk.Strategy.yml",
       "output": {
         ".html": {
@@ -3469,16 +3461,6 @@
       "Summary": null
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "api/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
@@ -3487,6 +3469,46 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/backtest.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/backtest.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/backtest1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/backtest1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dashboard.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/livetrade.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/livetrade.png"
         }
       },
       "version": ""

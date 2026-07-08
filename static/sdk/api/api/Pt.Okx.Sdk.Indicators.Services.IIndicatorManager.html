@@ -1,509 +1,606 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Interface IIndicatorManager | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IIndicatorManager | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Manages the lifecycle, registration, and data access for technical indicators.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IIndicatorManager | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IIndicatorManager | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Manages the lifecycle, registration, and data access for technical indicators.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager">
 
-        <article data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager">
 
 
-
-  <h1 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager" class="text-break">
-Interface IIndicatorManager  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L10"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.Services.html">Services</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Manages the lifecycle, registration, and data access for technical indicators.</p>
+  <h1 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager" class="text-break">Interface IIndicatorManager</h1>
+  <div class="markdown level0 summary"><p>Manages the lifecycle, registration, and data access for technical indicators.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IIndicatorManager</code></pre>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L74">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator(System.String)">
-  GetIndicator(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L74"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator(System.String)">GetIndicator(string)</h4>
   <div class="markdown level1 summary"><p>Retrieves an indicator instance by its unique identifier.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IIndicator? GetIndicator(string indicatorId)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>indicatorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the indicator.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html">IIndicator</a></dt>
-    <dd><p>The indicator instance if found; otherwise, <code>null</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indicatorId</span></td>
+        <td><p>The unique identifier of the indicator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html">IIndicator</a></td>
+        <td><p>The indicator instance if found; otherwise, <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorBuffer_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorBuffer(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L25">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorBuffer_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorBuffer*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorBuffer_System_String_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorBuffer(System.String,System.Int32)">
-  GetIndicatorBuffer(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L25"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorBuffer_System_String_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorBuffer(System.String,System.Int32)">GetIndicatorBuffer(string, int)</h4>
   <div class="markdown level1 summary"><p>Retrieves a specific buffer for a registered indicator.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IIndicatorBuffer? GetIndicatorBuffer(string indicatorId, int index)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>indicatorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the indicator.</p>
-</dd>
-    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The zero-based index of the buffer to retrieve.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html">IIndicatorBuffer</a></dt>
-    <dd><p>The indicator buffer if found; otherwise, <code>null</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indicatorId</span></td>
+        <td><p>The unique identifier of the indicator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the buffer to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html">IIndicatorBuffer</a></td>
+        <td><p>The indicator buffer if found; otherwise, <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorBufferValueAtTime_System_String_System_Int32_System_DateTime_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorBufferValueAtTime(System.String%2CSystem.Int32%2CSystem.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L34">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorBufferValueAtTime_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorBufferValueAtTime*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorBufferValueAtTime_System_String_System_Int32_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorBufferValueAtTime(System.String,System.Int32,System.DateTime)">
-  GetIndicatorBufferValueAtTime(string, int, DateTime)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L34"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorBufferValueAtTime_System_String_System_Int32_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorBufferValueAtTime(System.String,System.Int32,System.DateTime)">GetIndicatorBufferValueAtTime(string, int, DateTime)</h4>
   <div class="markdown level1 summary"><p>Retrieves an indicator's buffer value at a specific timestamp.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IndicatorValue GetIndicatorBufferValueAtTime(string indicatorId, int index, DateTime timestamp)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>indicatorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the indicator.</p>
-</dd>
-    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The zero-based index of the buffer.</p>
-</dd>
-    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
-    <dd><p>The timestamp for which to retrieve the value.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></dt>
-    <dd><p>The indicator value at the specified time.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indicatorId</span></td>
+        <td><p>The unique identifier of the indicator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>The timestamp for which to retrieve the value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorValue.html">IndicatorValue</a></td>
+        <td><p>The indicator value at the specified time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorByAlias__1_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorByAlias%60%601(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L52">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorByAlias_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorByAlias*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorByAlias__1_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorByAlias``1(System.String)">
-  GetIndicatorByAlias&lt;TIndicator&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L52"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicatorByAlias__1_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicatorByAlias``1(System.String)">GetIndicatorByAlias&lt;TIndicator&gt;(string)</h4>
   <div class="markdown level1 summary"><p>Retrieves a typed indicator instance by its alias.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">TIndicator? GetIndicatorByAlias&lt;TIndicator&gt;(string alias) where TIndicator : class, IIndicator</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>alias</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The alias assigned to the indicator.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">TIndicator</span></dt>
-    <dd><p>The typed indicator instance if found; otherwise, <code>null</code>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TIndicator</code></dt>
-    <dd><p>The type of the indicator.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">alias</span></td>
+        <td><p>The alias assigned to the indicator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TIndicator</span></td>
+        <td><p>The typed indicator instance if found; otherwise, <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TIndicator</span></td>
+        <td><p>The type of the indicator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator__1_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator%60%601(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L67">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator__1_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator``1(System.String)">
-  GetIndicator&lt;TIndicator&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator__1_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator``1(System.String)">GetIndicator&lt;TIndicator&gt;(string)</h4>
   <div class="markdown level1 summary"><p>Retrieves a typed indicator instance by its unique identifier.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">TIndicator? GetIndicator&lt;TIndicator&gt;(string indicatorId) where TIndicator : class, IIndicator</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>indicatorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the indicator.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">TIndicator</span></dt>
-    <dd><p>The typed indicator instance if found; otherwise, <code>null</code>.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TIndicator</code></dt>
-    <dd><p>The type of the indicator.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indicatorId</span></td>
+        <td><p>The unique identifier of the indicator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TIndicator</span></td>
+        <td><p>The typed indicator instance if found; otherwise, <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TIndicator</span></td>
+        <td><p>The type of the indicator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicators.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicators%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L59">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicators_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicators*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicators" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicators">
-  GetIndicators()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L59"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicators" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicators">GetIndicators()</h4>
   <div class="markdown level1 summary"><p>Gets a list of all registered indicators.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IReadOnlyList&lt;IIndicator&gt; GetIndicators()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html">IIndicator</a>&gt;</dt>
-    <dd><p>A list of registered indicators.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html">IIndicator</a>&gt;</td>
+        <td><p>A list of registered indicators.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_RegisterIndicator_Pt_Okx_Sdk_Indicators_Base_IIndicator_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.RegisterIndicator(Pt.Okx.Sdk.Indicators.Base.IIndicator)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L17">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_RegisterIndicator_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.RegisterIndicator*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_RegisterIndicator_Pt_Okx_Sdk_Indicators_Base_IIndicator_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.RegisterIndicator(Pt.Okx.Sdk.Indicators.Base.IIndicator)">
-  RegisterIndicator(IIndicator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_RegisterIndicator_Pt_Okx_Sdk_Indicators_Base_IIndicator_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.RegisterIndicator(Pt.Okx.Sdk.Indicators.Base.IIndicator)">RegisterIndicator(IIndicator)</h4>
   <div class="markdown level1 summary"><p>Registers an indicator instance and assigns it a unique identifier.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">string RegisterIndicator(IIndicator indicator)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>indicator</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html">IIndicator</a></dt>
-    <dd><p>The indicator instance to register.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier assigned to the indicator.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Base.IIndicator.html">IIndicator</a></td>
+        <td><span class="parametername">indicator</span></td>
+        <td><p>The indicator instance to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The unique identifier assigned to the indicator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_SetIndexBuffer_System_String_System_Int32_Pt_Okx_Sdk_Indicators_Enums_IndicatorBufferType_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.SetIndexBuffer(System.String%2CSystem.Int32%2CPt.Okx.Sdk.Indicators.Enums.IndicatorBufferType%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L43">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_SetIndexBuffer_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.SetIndexBuffer*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_SetIndexBuffer_System_String_System_Int32_Pt_Okx_Sdk_Indicators_Enums_IndicatorBufferType_System_Boolean_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.SetIndexBuffer(System.String,System.Int32,Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType,System.Boolean)">
-  SetIndexBuffer(string, int, IndicatorBufferType, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_SetIndexBuffer_System_String_System_Int32_Pt_Okx_Sdk_Indicators_Enums_IndicatorBufferType_System_Boolean_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.SetIndexBuffer(System.String,System.Int32,Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType,System.Boolean)">SetIndexBuffer(string, int, IndicatorBufferType, bool)</h4>
   <div class="markdown level1 summary"><p>Configures a buffer for a registered indicator.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void SetIndexBuffer(string indicatorId, int index, IndicatorBufferType type, bool allowEmptySlots = false)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>indicatorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the indicator.</p>
-</dd>
-    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The zero-based index of the buffer to configure.</p>
-</dd>
-    <dt><code>type</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType.html">IndicatorBufferType</a></dt>
-    <dd><p>The type of the buffer (e.g., Data, Calculations).</p>
-</dd>
-    <dt><code>allowEmptySlots</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Whether the buffer allows empty slots. Default is <code>false</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indicatorId</span></td>
+        <td><p>The unique identifier of the indicator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the buffer to configure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType.html">IndicatorBufferType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the buffer (e.g., Data, Calculations).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowEmptySlots</span></td>
+        <td><p>Whether the buffer allows empty slots. Default is <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_UnregisterIndicator_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.UnregisterIndicator(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L80">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_UnregisterIndicator_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.UnregisterIndicator*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_UnregisterIndicator_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.UnregisterIndicator(System.String)">
-  UnregisterIndicator(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L80"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_UnregisterIndicator_System_String_" data-uid="Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.UnregisterIndicator(System.String)">UnregisterIndicator(string)</h4>
   <div class="markdown level1 summary"><p>Unregisters an indicator and cleans up its associated resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void UnregisterIndicator(string uniqueId)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>uniqueId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the indicator to unregister.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">uniqueId</span></td>
+        <td><p>The unique identifier of the indicator to unregister.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Services_IIndicatorManager.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Services.IIndicatorManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Services/IIndicatorManager.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

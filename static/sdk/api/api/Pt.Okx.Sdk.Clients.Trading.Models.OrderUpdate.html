@@ -1,134 +1,102 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Class OrderUpdate | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class OrderUpdate | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Represents an update to an order in the OKX trading system.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class OrderUpdate | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class OrderUpdate | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Represents an update to an order in the OKX trading system.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate">
 
-        <article data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate">
 
 
-
-  <h1 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate" class="text-break">
-Class OrderUpdate  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L6"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.html">Trading</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.html">Models</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Represents an update to an order in the OKX trading system.</p>
+  <h1 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate" class="text-break">Class OrderUpdate</h1>
+  <div class="markdown level0 summary"><p>Represents an update to an order in the OKX trading system.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public record OrderUpdate : Order, IEquatable&lt;Order&gt;, IEquatable&lt;OrderUpdate&gt;</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a></div>
+    <div class="level2"><span class="xref">OrderUpdate</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a></div>
-      <div><span class="xref">OrderUpdate</span></div>
-    </dd>
-  </dl>
-
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>&gt;</div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.html">OrderUpdate</a>&gt;</div>
-    </dd>
-  </dl>
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.html">OrderUpdate</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html#Pt_Okx_Sdk_Clients_Trading_Models_Order_InstrumentType">Order.InstrumentType</a>
     </div>
@@ -270,516 +238,515 @@ Class OrderUpdate  <a class="header-action link-secondary" title="View source" h
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.html">Trading</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.html">Models</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public record OrderUpdate : Order, IEquatable&lt;Order&gt;, IEquatable&lt;OrderUpdate&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate__ctor.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L38">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate__ctor_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.#ctor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate__ctor" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.#ctor">
-  OrderUpdate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L38"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate__ctor" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.#ctor">OrderUpdate()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.html">OrderUpdate</a> record.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public OrderUpdate()</code></pre>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_AmendResult.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.AmendResult%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L9">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_AmendResult_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.AmendResult*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_AmendResult" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.AmendResult">
-  AmendResult
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L9"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_AmendResult" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.AmendResult">AmendResult</h4>
   <div class="markdown level1 summary"><p>The result of the amendment.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string? AmendResult { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_AmendSource.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.AmendSource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L11">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_AmendSource_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.AmendSource*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_AmendSource" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.AmendSource">
-  AmendSource
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L11"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_AmendSource" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.AmendSource">AmendSource</h4>
   <div class="markdown level1 summary"><p>The source of the amendment.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string? AmendSource { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_ExecutionType.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.ExecutionType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L13">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_ExecutionType_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.ExecutionType*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_ExecutionType" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.ExecutionType">
-  ExecutionType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L13"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_ExecutionType" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.ExecutionType">ExecutionType</h4>
   <div class="markdown level1 summary"><p>The execution type of the order.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string? ExecutionType { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillFee.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillFee%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L15">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillFee_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillFee*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillFee" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillFee">
-  FillFee
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L15"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillFee" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillFee">FillFee</h4>
   <div class="markdown level1 summary"><p>The fee incurred for the fill.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal FillFee { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillFeeAsset.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillFeeAsset%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L17">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillFeeAsset_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillFeeAsset*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillFeeAsset" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillFeeAsset">
-  FillFeeAsset
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L17"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillFeeAsset" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillFeeAsset">FillFeeAsset</h4>
   <div class="markdown level1 summary"><p>The asset used for the fill fee.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string FillFeeAsset { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillNotionalUsd.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillNotionalUsd%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L19">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillNotionalUsd_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillNotionalUsd*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillNotionalUsd" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillNotionalUsd">
-  FillNotionalUsd
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L19"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillNotionalUsd" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillNotionalUsd">FillNotionalUsd</h4>
   <div class="markdown level1 summary"><p>The notional value of the fill in USD.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal? FillNotionalUsd { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillPnl.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillPnl%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L21">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillPnl_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillPnl*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillPnl" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillPnl">
-  FillPnl
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L21"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_FillPnl" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.FillPnl">FillPnl</h4>
   <div class="markdown level1 summary"><p>The profit and loss from the fill.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal FillPnl { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeForwardPrice.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeForwardPrice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L33">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeForwardPrice_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeForwardPrice*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeForwardPrice" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeForwardPrice">
-  LastTradeForwardPrice
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L33"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeForwardPrice" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeForwardPrice">LastTradeForwardPrice</h4>
   <div class="markdown level1 summary"><p>The forward price of the last trade.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal? LastTradeForwardPrice { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeImpliedVolatility.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeImpliedVolatility%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L27">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeImpliedVolatility_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeImpliedVolatility*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeImpliedVolatility" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeImpliedVolatility">
-  LastTradeImpliedVolatility
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L27"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeImpliedVolatility" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeImpliedVolatility">LastTradeImpliedVolatility</h4>
   <div class="markdown level1 summary"><p>The implied volatility of the last trade.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal? LastTradeImpliedVolatility { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeMarkPrice.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeMarkPrice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L35">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeMarkPrice_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeMarkPrice*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeMarkPrice" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeMarkPrice">
-  LastTradeMarkPrice
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L35"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeMarkPrice" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeMarkPrice">LastTradeMarkPrice</h4>
   <div class="markdown level1 summary"><p>The mark price of the last trade.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal? LastTradeMarkPrice { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeMarkVolatility.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeMarkVolatility%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L31">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeMarkVolatility_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeMarkVolatility*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeMarkVolatility" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeMarkVolatility">
-  LastTradeMarkVolatility
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L31"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeMarkVolatility" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeMarkVolatility">LastTradeMarkVolatility</h4>
   <div class="markdown level1 summary"><p>The mark volatility of the last trade.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal? LastTradeMarkVolatility { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeUsdPrice.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeUsdPrice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L29">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeUsdPrice_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeUsdPrice*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeUsdPrice" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeUsdPrice">
-  LastTradeUsdPrice
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L29"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_LastTradeUsdPrice" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.LastTradeUsdPrice">LastTradeUsdPrice</h4>
   <div class="markdown level1 summary"><p>The USD price of the last trade.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal? LastTradeUsdPrice { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_NotionalUsd.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.NotionalUsd%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L23">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_NotionalUsd_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.NotionalUsd*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_NotionalUsd" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.NotionalUsd">
-  NotionalUsd
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L23"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_NotionalUsd" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.NotionalUsd">NotionalUsd</h4>
   <div class="markdown level1 summary"><p>The notional value of the update in USD.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal? NotionalUsd { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_RequestId.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.RequestId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L25">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_RequestId_" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.RequestId*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_RequestId" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.RequestId">
-  RequestId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L25"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate_RequestId" data-uid="Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate.RequestId">RequestId</h4>
   <div class="markdown level1 summary"><p>The request identifier associated with the update.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string? RequestId { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Models_OrderUpdate.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Models.OrderUpdate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/Models/OrderUpdate.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

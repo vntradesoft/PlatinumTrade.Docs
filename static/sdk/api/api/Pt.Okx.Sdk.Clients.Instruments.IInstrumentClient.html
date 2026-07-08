@@ -1,1353 +1,1691 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Interface IInstrumentClient | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IInstrumentClient | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Interface for instrument clients, providing methods to query trading instrument information.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IInstrumentClient | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IInstrumentClient | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Interface for instrument clients, providing methods to query trading instrument information.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient">
 
-        <article data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient">
 
 
-
-  <h1 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient" class="text-break">
-Interface IInstrumentClient  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L10"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Instruments.html">Instruments</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Interface for instrument clients, providing methods to query trading instrument information.</p>
+  <h1 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient" class="text-break">Interface IInstrumentClient</h1>
+  <div class="markdown level0 summary"><p>Interface for instrument clients, providing methods to query trading instrument information.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Instruments.html">Instruments</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IInstrumentClient</code></pre>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_InstrumentType.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.InstrumentType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L17">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_InstrumentType_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.InstrumentType*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_InstrumentType" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.InstrumentType">
-  InstrumentType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L17"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_InstrumentType" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.InstrumentType">InstrumentType</h4>
   <div class="markdown level1 summary"><p>Gets the type of trading instrument handled by this client (e.g., Futures, Spot).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">InstrumentType InstrumentType { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Enums.InstrumentType.html">InstrumentType</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.InstrumentType.html">InstrumentType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_BaseAsset_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.BaseAsset(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L44">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_BaseAsset_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.BaseAsset*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_BaseAsset_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.BaseAsset(System.String)">
-  BaseAsset(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L44"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_BaseAsset_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.BaseAsset(System.String)">BaseAsset(string)</h4>
   <div class="markdown level1 summary"><p>Gets the base asset for the specified symbol (e.g., &quot;BTC&quot;).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">string BaseAsset(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The base asset string.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The base asset string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractMultiplier_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractMultiplier(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L228">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractMultiplier_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractMultiplier*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractMultiplier_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractMultiplier(System.String)">
-  ContractMultiplier(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L228"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractMultiplier_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractMultiplier(System.String)">ContractMultiplier(string)</h4>
   <div class="markdown level1 summary"><p>Gets the contract multiplier for the specified symbol (for Options).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">decimal ContractMultiplier(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The contract multiplier value.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The contract multiplier value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractSize_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractSize(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L221">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractSize_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractSize*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractSize_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractSize(System.String)">
-  ContractSize(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L221"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractSize_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractSize(System.String)">ContractSize(string)</h4>
   <div class="markdown level1 summary"><p>Gets the contract size for the specified symbol (for Futures/Swap).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">decimal ContractSize(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The contract size value.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The contract size value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetAskAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetAskAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L87">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetAskAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetAskAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetAskAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetAskAsync(System.String,System.Threading.CancellationToken)">
-  GetAskAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L87"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetAskAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetAskAsync(System.String,System.Threading.CancellationToken)">GetAskAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the current ask price for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;decimal&gt;&gt; GetAskAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</dt>
-    <dd><p>The ask price wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
+        <td><p>The ask price wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAskSpreadAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAskSpreadAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L103">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAskSpreadAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAskSpreadAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAskSpreadAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAskSpreadAsync(System.String,System.Threading.CancellationToken)">
-  GetBidAskSpreadAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L103"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAskSpreadAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAskSpreadAsync(System.String,System.Threading.CancellationToken)">GetBidAskSpreadAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the bid price, ask price, and spread for the specified symbol in a single call.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;(decimal Bid, decimal Ask, decimal Spread)&gt;&gt; GetBidAskSpreadAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.bid">Bid</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.ask">Ask</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.spread">Spread</a>)&gt;&gt;</dt>
-    <dd><p>A tuple containing bid, ask, and spread values wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.bid">Bid</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.ask">Ask</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.spread">Spread</a>)&gt;&gt;</td>
+        <td><p>A tuple containing bid, ask, and spread values wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L79">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAsync(System.String,System.Threading.CancellationToken)">
-  GetBidAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L79"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAsync(System.String,System.Threading.CancellationToken)">GetBidAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the current bid price for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;decimal&gt;&gt; GetBidAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</dt>
-    <dd><p>The bid price wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
+        <td><p>The bid price wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetCurrentTime.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetCurrentTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L238">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetCurrentTime_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetCurrentTime*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetCurrentTime" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetCurrentTime">
-  GetCurrentTime()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L238"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetCurrentTime" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetCurrentTime">GetCurrentTime()</h4>
   <div class="markdown level1 summary"><p>Gets the current system time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">DateTime GetCurrentTime()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
-    <dd><p>The current system time as a DateTime object.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td><p>The current system time as a DateTime object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeMaker_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeMaker(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L205">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeMaker_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeMaker*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeMaker_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeMaker(System.String)">
-  GetFeeMaker(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L205"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeMaker_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeMaker(System.String)">GetFeeMaker(string)</h4>
   <div class="markdown level1 summary"><p>Gets the maker trading fee for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">decimal GetFeeMaker(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The maker fee value.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The maker fee value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeTaker_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeTaker(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L198">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeTaker_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeTaker*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeTaker_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeTaker(System.String)">
-  GetFeeTaker(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L198"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeTaker_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeTaker(System.String)">GetFeeTaker(string)</h4>
   <div class="markdown level1 summary"><p>Gets the taker trading fee for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">decimal GetFeeTaker(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The taker fee value.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The taker fee value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetHighPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetHighPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L111">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetHighPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetHighPriceAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetHighPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetHighPriceAsync(System.String,System.Threading.CancellationToken)">
-  GetHighPriceAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L111"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetHighPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetHighPriceAsync(System.String,System.Threading.CancellationToken)">GetHighPriceAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the highest price within a recent time frame for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;decimal&gt;&gt; GetHighPriceAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</dt>
-    <dd><p>The high price wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
+        <td><p>The high price wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLastPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLastPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L63">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLastPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLastPriceAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLastPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLastPriceAsync(System.String,System.Threading.CancellationToken)">
-  GetLastPriceAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L63"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLastPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLastPriceAsync(System.String,System.Threading.CancellationToken)">GetLastPriceAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the last traded price for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;decimal&gt;&gt; GetLastPriceAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</dt>
-    <dd><p>The last price wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
+        <td><p>The last price wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitLotSize_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitLotSize(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L160">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitLotSize_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitLotSize*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitLotSize_System_String_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitLotSize(System.String,System.Boolean)">
-  GetLimitLotSize(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L160"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitLotSize_System_String_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitLotSize(System.String,System.Boolean)">GetLimitLotSize(string, bool)</h4>
   <div class="markdown level1 summary"><p>Gets the minimum, maximum, and step size for lot orders for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">(decimal MinQuantity, decimal MaxQuantity, decimal StepSize) GetLimitLotSize(string symbol, bool isMarket)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>isMarket</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True for market orders; otherwise, false for limit orders.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.minquantity">MinQuantity</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.maxquantity">MaxQuantity</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.stepsize">StepSize</a>)</dt>
-    <dd><p>A tuple containing min, max, and step size values.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isMarket</span></td>
+        <td><p>True for market orders; otherwise, false for limit orders.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.minquantity">MinQuantity</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.maxquantity">MaxQuantity</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.stepsize">StepSize</a>)</td>
+        <td><p>A tuple containing min, max, and step size values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitMaxCost_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitMaxCost(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L168">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitMaxCost_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitMaxCost*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitMaxCost_System_String_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitMaxCost(System.String,System.Boolean)">
-  GetLimitMaxCost(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L168"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitMaxCost_System_String_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitMaxCost(System.String,System.Boolean)">GetLimitMaxCost(string, bool)</h4>
   <div class="markdown level1 summary"><p>Gets the maximum allowed cost for an order for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">decimal GetLimitMaxCost(string symbol, bool isMarket)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>isMarket</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True for market orders; otherwise, false for limit orders.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The maximum cost value.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isMarket</span></td>
+        <td><p>True for market orders; otherwise, false for limit orders.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The maximum cost value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L127">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitPriceAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitPriceAsync(System.String,System.Threading.CancellationToken)">
-  GetLimitPriceAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L127"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitPriceAsync(System.String,System.Threading.CancellationToken)">GetLimitPriceAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the limit price for the specified symbol (for limit orders).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;LimitPrice&gt;&gt; GetLimitPriceAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Instruments.Models.LimitPrice.html">LimitPrice</a>&gt;&gt;</dt>
-    <dd><p>The limit price wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Instruments.Models.LimitPrice.html">LimitPrice</a>&gt;&gt;</td>
+        <td><p>The limit price wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLowPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLowPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L119">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLowPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLowPriceAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLowPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLowPriceAsync(System.String,System.Threading.CancellationToken)">
-  GetLowPriceAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L119"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLowPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLowPriceAsync(System.String,System.Threading.CancellationToken)">GetLowPriceAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the lowest price within a recent time frame for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;decimal&gt;&gt; GetLowPriceAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</dt>
-    <dd><p>The low price wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
+        <td><p>The low price wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMaintMarginRateAsync_System_String_System_Decimal_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMaintMarginRateAsync(System.String%2CSystem.Decimal%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L214">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMaintMarginRateAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMaintMarginRateAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMaintMarginRateAsync_System_String_System_Decimal_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMaintMarginRateAsync(System.String,System.Decimal,System.Threading.CancellationToken)">
-  GetMaintMarginRateAsync(string, decimal, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L214"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMaintMarginRateAsync_System_String_System_Decimal_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMaintMarginRateAsync(System.String,System.Decimal,System.Threading.CancellationToken)">GetMaintMarginRateAsync(string, decimal, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the maintenance margin rate for the specified symbol and position notional.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;decimal&gt; GetMaintMarginRateAsync(string symbol, decimal positionNotional, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>positionNotional</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The notional value of the position.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>A cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</dt>
-    <dd><p>The maintenance margin rate.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">positionNotional</span></td>
+        <td><p>The notional value of the position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;</td>
+        <td><p>The maintenance margin rate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMarkPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMarkPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L71">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMarkPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMarkPriceAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMarkPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMarkPriceAsync(System.String,System.Threading.CancellationToken)">
-  GetMarkPriceAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L71"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMarkPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMarkPriceAsync(System.String,System.Threading.CancellationToken)">GetMarkPriceAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the mark price for the specified symbol (important for Futures/Swap).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;decimal&gt;&gt; GetMarkPriceAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</dt>
-    <dd><p>The mark price wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
+        <td><p>The mark price wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionLot_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionLot(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L145">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionLot_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionLot*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionLot_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionLot(System.String)">
-  GetPrecisionLot(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L145"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionLot_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionLot(System.String)">GetPrecisionLot(string)</h4>
   <div class="markdown level1 summary"><p>Gets the lot size precision (number of decimal places) for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">int GetPrecisionLot(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The lot size precision.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The lot size precision.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionPrice_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionPrice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L138">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionPrice_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionPrice*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionPrice_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionPrice(System.String)">
-  GetPrecisionPrice(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L138"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionPrice_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionPrice(System.String)">GetPrecisionPrice(string)</h4>
   <div class="markdown level1 summary"><p>Gets the price precision (number of decimal places) for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">int GetPrecisionPrice(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The price precision.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The price precision.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetSpreadAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetSpreadAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L95">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetSpreadAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetSpreadAsync*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetSpreadAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetSpreadAsync(System.String,System.Threading.CancellationToken)">
-  GetSpreadAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L95"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetSpreadAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetSpreadAsync(System.String,System.Threading.CancellationToken)">GetSpreadAsync(string, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Gets the spread (difference between ask and bid prices) for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;decimal&gt;&gt; GetSpreadAsync(string symbol, CancellationToken ct = default)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>Cancellation token.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</dt>
-    <dd><p>The spread value wrapped in a WebCallResult.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
+        <td><p>The spread value wrapped in a WebCallResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetTickPrice_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetTickPrice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L152">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetTickPrice_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetTickPrice*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetTickPrice_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetTickPrice(System.String)">
-  GetTickPrice(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L152"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetTickPrice_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetTickPrice(System.String)">GetTickPrice(string)</h4>
   <div class="markdown level1 summary"><p>Gets the tick size (minimum price increment) for the specified symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">decimal GetTickPrice(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The tick size value.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The tick size value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_IsSymbol_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.IsSymbol(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L24">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_IsSymbol_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.IsSymbol*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_IsSymbol_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.IsSymbol(System.String)">
-  IsSymbol(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L24"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_IsSymbol_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.IsSymbol(System.String)">IsSymbol(string)</h4>
   <div class="markdown level1 summary"><p>Checks if the specified symbol is a valid and tracked trading symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">bool IsSymbol(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol to check.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the symbol is valid and tracked; otherwise, false.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the symbol is valid and tracked; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizeLot_System_String_System_Decimal_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizeLot(System.String%2CSystem.Decimal%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L178">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizeLot_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizeLot*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizeLot_System_String_System_Decimal_System_Boolean_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizeLot(System.String,System.Decimal,System.Boolean,System.Boolean)">
-  NormalizeLot(string, decimal, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L178"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizeLot_System_String_System_Decimal_System_Boolean_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizeLot(System.String,System.Decimal,System.Boolean,System.Boolean)">NormalizeLot(string, decimal, bool, bool)</h4>
   <div class="markdown level1 summary"><p>Normalizes the lot size according to exchange rules.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">decimal NormalizeLot(string symbol, decimal lot, bool isMarket, bool roundUp = false)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>lot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The lot size to normalize.</p>
-</dd>
-    <dt><code>isMarket</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True for market orders (may have different rules than limit orders).</p>
-</dd>
-    <dt><code>roundUp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True to round up; false to round down.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The normalized lot size.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">lot</span></td>
+        <td><p>The lot size to normalize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isMarket</span></td>
+        <td><p>True for market orders (may have different rules than limit orders).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">roundUp</span></td>
+        <td><p>True to round up; false to round down.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The normalized lot size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizePrice_System_String_System_Decimal_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizePrice(System.String%2CSystem.Decimal%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L187">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizePrice_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizePrice*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizePrice_System_String_System_Decimal_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizePrice(System.String,System.Decimal,System.Boolean)">
-  NormalizePrice(string, decimal, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L187"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizePrice_System_String_System_Decimal_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizePrice(System.String,System.Decimal,System.Boolean)">NormalizePrice(string, decimal, bool)</h4>
   <div class="markdown level1 summary"><p>Normalizes the price according to exchange rules (rounded by price precision).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">decimal NormalizePrice(string symbol, decimal price, bool roundUp = false)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-    <dt><code>price</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The price to normalize.</p>
-</dd>
-    <dt><code>roundUp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True to round up; false to round down.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd><p>The normalized price.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><span class="parametername">price</span></td>
+        <td><p>The price to normalize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">roundUp</span></td>
+        <td><p>True to round up; false to round down.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td><p>The normalized price.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_QuoteAsset_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.QuoteAsset(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L37">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_QuoteAsset_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.QuoteAsset*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_QuoteAsset_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.QuoteAsset(System.String)">
-  QuoteAsset(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L37"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_QuoteAsset_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.QuoteAsset(System.String)">QuoteAsset(string)</h4>
   <div class="markdown level1 summary"><p>Gets the quote asset for the specified symbol (e.g., &quot;USDT&quot;).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">string QuoteAsset(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The quote asset string.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The quote asset string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Symbol_System_Int64_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Symbol(System.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L252">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Symbol_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Symbol*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Symbol_System_Int64_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Symbol(System.Int64)">
-  Symbol(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L252"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Symbol_System_Int64_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Symbol(System.Int64)">Symbol(long)</h4>
   <div class="markdown level1 summary"><p>Gets the trading symbol string for the specified unique symbol code (long integer).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">string Symbol(long symbolCode)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbolCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd><p>The unique symbol code.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol string.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">symbolCode</span></td>
+        <td><p>The unique symbol code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The trading symbol string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_SymbolCode_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.SymbolCode(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L245">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_SymbolCode_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.SymbolCode*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_SymbolCode_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.SymbolCode(System.String)">
-  SymbolCode(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L245"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_SymbolCode_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.SymbolCode(System.String)">SymbolCode(string)</h4>
   <div class="markdown level1 summary"><p>Gets the unique symbol code (long integer) for the specified trading symbol, and vice versa.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">long SymbolCode(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_TotalSymbols.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.TotalSymbols%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L30">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_TotalSymbols_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.TotalSymbols*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_TotalSymbols" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.TotalSymbols">
-  TotalSymbols()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L30"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_TotalSymbols" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.TotalSymbols">TotalSymbols()</h4>
   <div class="markdown level1 summary"><p>Gets the total number of trading symbols currently tracked.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">int TotalSymbols()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The total count of tracked symbols.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The total count of tracked symbols.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Underlying_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Underlying(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L51">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Underlying_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Underlying*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Underlying_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Underlying(System.String)">
-  Underlying(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L51"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Underlying_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Underlying(System.String)">Underlying(string)</h4>
   <div class="markdown level1 summary"><p>Gets the underlying asset for the specified symbol (for derivatives).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">string Underlying(string symbol)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The underlying asset string.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The underlying asset string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

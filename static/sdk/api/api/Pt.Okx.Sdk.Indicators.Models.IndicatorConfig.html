@@ -1,128 +1,98 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Class IndicatorConfig | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class IndicatorConfig | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Represents the runtime configuration used to create and identify an indicator instance. This includes the trading symbol, timeframe, indicator type, parameters, and optional input sources for chained indicators.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class IndicatorConfig | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class IndicatorConfig | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Represents the runtime configuration used to create and identify an indicator instance. This includes the trading symbol, timeframe, indicator type, parameters, and optional input sources for chained indicators.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig">
 
-        <article data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig">
 
 
-
-  <h1 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig" class="text-break">
-Class IndicatorConfig  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L50"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.html">Models</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Represents the runtime configuration used to create and identify an indicator instance.
+  <h1 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig" class="text-break">Class IndicatorConfig</h1>
+  <div class="markdown level0 summary"><p>Represents the runtime configuration used to create and identify an indicator instance.
 This includes the trading symbol, timeframe, indicator type, parameters,
 and optional input sources for chained indicators.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IndicatorConfig</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">IndicatorConfig</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">IndicatorConfig</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -144,477 +114,536 @@ and optional input sources for chained indicators.</p>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.html">Models</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class IndicatorConfig</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig__ctor_System_String_Pt_Okx_Sdk_Enums_Timeframe_Pt_Okx_Sdk_Indicators_Enums_IndicatorType_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.%23ctor(System.String%2CPt.Okx.Sdk.Enums.Timeframe%2CPt.Okx.Sdk.Indicators.Enums.IndicatorType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L97">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig__ctor_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.#ctor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig__ctor_System_String_Pt_Okx_Sdk_Enums_Timeframe_Pt_Okx_Sdk_Indicators_Enums_IndicatorType_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.#ctor(System.String,Pt.Okx.Sdk.Enums.Timeframe,Pt.Okx.Sdk.Indicators.Enums.IndicatorType)">
-  IndicatorConfig(string, Timeframe, IndicatorType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L97"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig__ctor_System_String_Pt_Okx_Sdk_Enums_Timeframe_Pt_Okx_Sdk_Indicators_Enums_IndicatorType_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.#ctor(System.String,Pt.Okx.Sdk.Enums.Timeframe,Pt.Okx.Sdk.Indicators.Enums.IndicatorType)">IndicatorConfig(string, Timeframe, IndicatorType)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorConfig(string symbol, Timeframe timeFrame, IndicatorType indicatorType)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>symbol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The trading symbol (e.g. <code>BTCUSDT</code>).</p>
-</dd>
-    <dt><code>timeFrame</code> <a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a></dt>
-    <dd><p>The timeframe for calculation.</p>
-</dd>
-    <dt><code>indicatorType</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorType.html">IndicatorType</a></dt>
-    <dd><p>The indicator type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol (e.g. <code>BTCUSDT</code>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a></td>
+        <td><span class="parametername">timeFrame</span></td>
+        <td><p>The timeframe for calculation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorType.html">IndicatorType</a></td>
+        <td><span class="parametername">indicatorType</span></td>
+        <td><p>The indicator type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_CustomName.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.CustomName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L89">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_CustomName_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.CustomName*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_CustomName" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.CustomName">
-  CustomName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L89"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_CustomName" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.CustomName">CustomName</h4>
   <div class="markdown level1 summary"><p>Gets or sets the custom indicator name.
 <code>null</code> indicates a built-in indicator.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string? CustomName { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_IndicatorType.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.IndicatorType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L72">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_IndicatorType_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.IndicatorType*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_IndicatorType" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.IndicatorType">
-  IndicatorType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L72"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_IndicatorType" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.IndicatorType">IndicatorType</h4>
   <div class="markdown level1 summary"><p>Gets the indicator type.
 For custom indicators, this is typically <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorType.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorType_CUSTOM">CUSTOM</a>,
 and <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html#Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_CustomName">CustomName</a> is used to distinguish the implementation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorType IndicatorType { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorType.html">IndicatorType</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorType.html">IndicatorType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Parameters.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Parameters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L77">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Parameters_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Parameters*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Parameters" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Parameters">
-  Parameters
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L77"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Parameters" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Parameters">Parameters</h4>
   <div class="markdown level1 summary"><p>Gets or sets the parameter collection used by the indicator.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorParameters Parameters { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.html">IndicatorParameters</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.html">IndicatorParameters</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Source.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Source%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L151">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Source_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Source*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Source" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Source">
-  Source
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L151"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Source" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Source">Source</h4>
   <div class="markdown level1 summary"><p>Gets the first source for backward compatibility with single-source usage.
 If no sources are defined, a default source instance is returned.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorSource Source { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSource.html">IndicatorSource</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSource.html">IndicatorSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Sources.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Sources%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L83">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Sources_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Sources*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Sources" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Sources">
-  Sources
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L83"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Sources" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Sources">Sources</h4>
   <div class="markdown level1 summary"><p>Gets or sets the list of input sources consumed by the indicator.
 Each source may represent either a candle price or another indicator buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;IndicatorSource&gt; Sources { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSource.html">IndicatorSource</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSource.html">IndicatorSource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Symbol.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Symbol%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L60">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Symbol_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Symbol*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Symbol" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Symbol">
-  Symbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L60"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_Symbol" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.Symbol">Symbol</h4>
   <div class="markdown level1 summary"><p>Gets the trading symbol this indicator is associated with.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Symbol { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_TimeFrame.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.TimeFrame%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L65">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_TimeFrame_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.TimeFrame*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_TimeFrame" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.TimeFrame">
-  TimeFrame
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L65"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_TimeFrame" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.TimeFrame">TimeFrame</h4>
   <div class="markdown level1 summary"><p>Gets the timeframe in which the indicator is calculated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Timeframe TimeFrame { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_Pt_Okx_Sdk_Indicators_Enums_AppliedPrice_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L141">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_Pt_Okx_Sdk_Indicators_Enums_AppliedPrice_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice)">
-  AddSource(AppliedPrice)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L141"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_Pt_Okx_Sdk_Indicators_Enums_AppliedPrice_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice)">AddSource(AppliedPrice)</h4>
   <div class="markdown level1 summary"><p>Adds a source that reads directly from a candle price.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorConfig AddSource(AppliedPrice price)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>price</code> <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.AppliedPrice.html">AppliedPrice</a></dt>
-    <dd><p>The applied price field.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a></dt>
-    <dd><p>The current configuration instance.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.AppliedPrice.html">AppliedPrice</a></td>
+        <td><span class="parametername">price</span></td>
+        <td><p>The applied price field.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a></td>
+        <td><p>The current configuration instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_System_String_System_Int32_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(System.String%2CSystem.Int32%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.Timeframe%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L125">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_System_String_System_Int32_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(System.String,System.Int32,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe})">
-  AddSource(string, int, Timeframe?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L125"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_System_String_System_Int32_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(System.String,System.Int32,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe})">AddSource(string, int, Timeframe?)</h4>
   <div class="markdown level1 summary"><p>Adds an indicator source that reads from another indicator buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorConfig AddSource(string indicatorId, int bufferIndex = 0, Timeframe? timeframe = null)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>indicatorId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The source indicator identifier.</p>
-</dd>
-    <dt><code>bufferIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The buffer index to read from. Default is <code>0</code>.</p>
-</dd>
-    <dt><code>timeframe</code> <a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a>?</dt>
-    <dd><p>Optional timeframe override for the source.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a></dt>
-    <dd><p>The current configuration instance.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">indicatorId</span></td>
+        <td><p>The source indicator identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bufferIndex</span></td>
+        <td><p>The buffer index to read from. Default is <code>0</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a>?</td>
+        <td><span class="parametername">timeframe</span></td>
+        <td><p>Optional timeframe override for the source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a></td>
+        <td><p>The current configuration instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_GetFingerprint.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.GetFingerprint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L161">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_GetFingerprint_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.GetFingerprint*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_GetFingerprint" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.GetFingerprint">
-  GetFingerprint()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L161"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_GetFingerprint" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.GetFingerprint">GetFingerprint()</h4>
   <div class="markdown level1 summary"><p>Builds a deterministic fingerprint string used for caching and identity comparison.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string GetFingerprint()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A stable key composed of symbol, timeframe, indicator type,
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A stable key composed of symbol, timeframe, indicator type,
 custom name (if any), sources, and parameter hash.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_SetParam_System_String_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.SetParam(System.String%2CSystem.Object%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L112">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_SetParam_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.SetParam*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_SetParam_System_String_System_Object_System_Object_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.SetParam(System.String,System.Object,System.Object)">
-  SetParam(string, object?, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L112"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_SetParam_System_String_System_Object_System_Object_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.SetParam(System.String,System.Object,System.Object)">SetParam(string, object?, object)</h4>
   <div class="markdown level1 summary"><p>Sets or overrides a parameter value.
 If <code class="paramref">value</code> is <code>null</code>, <code class="paramref">defaultValue</code> is used.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorConfig SetParam(string key, object? value, object defaultValue)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Parameter key.</p>
-</dd>
-    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>Runtime value (nullable).</p>
-</dd>
-    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>Fallback value if <code class="paramref">value</code> is null.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a></dt>
-    <dd><p>The current configuration instance.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Parameter key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Runtime value (nullable).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>Fallback value if <code class="paramref">value</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html">IndicatorConfig</a></td>
+        <td><p>The current configuration instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorConfig.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorConfig.cs/#L50" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

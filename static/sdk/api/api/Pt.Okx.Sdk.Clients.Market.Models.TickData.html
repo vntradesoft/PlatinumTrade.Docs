@@ -1,127 +1,97 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Struct TickData | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Struct TickData | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Represents the smallest data unit in the simulation system. In backtest, this is generated synthetically from 1m OHLCV data. In real-time trading, this is sourced directly from the exchange&#39;s WebSocket tickers channel.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct TickData | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct TickData | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Represents the smallest data unit in the simulation system. In backtest, this is generated synthetically from 1m OHLCV data. In real-time trading, this is sourced directly from the exchange&#39;s WebSocket tickers channel.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData">
 
-        <article data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData">
 
 
-
-  <h1 id="Pt_Okx_Sdk_Clients_Market_Models_TickData" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData" class="text-break">
-Struct TickData  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L11"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Market.html">Market</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.html">Models</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Represents the smallest data unit in the simulation system.
+  <h1 id="Pt_Okx_Sdk_Clients_Market_Models_TickData" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData" class="text-break">Struct TickData</h1>
+  <div class="markdown level0 summary"><p>Represents the smallest data unit in the simulation system.
 In backtest, this is generated synthetically from 1m OHLCV data.
 In real-time trading, this is sourced directly from the exchange's WebSocket tickers channel.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly struct TickData : IEquatable&lt;TickData&gt;</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a>&gt;</div>
   </div>
-
-
-
-
-
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a>&gt;</div>
-    </dd>
-  </dl>
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
     </div>
@@ -134,544 +104,617 @@ In real-time trading, this is sourced directly from the exchange's WebSocket tic
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Market.html">Market</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.html">Models</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly struct TickData : IEquatable&lt;TickData&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData__ctor_System_Int64_System_Double_System_Single_System_Byte_Pt_Okx_Sdk_Clients_Market_Enums_TickType_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.%23ctor(System.Int64%2CSystem.Double%2CSystem.Single%2CSystem.Byte%2CPt.Okx.Sdk.Clients.Market.Enums.TickType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L44">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Market_Models_TickData__ctor_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.#ctor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData__ctor_System_Int64_System_Double_System_Single_System_Byte_Pt_Okx_Sdk_Clients_Market_Enums_TickType_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.#ctor(System.Int64,System.Double,System.Single,System.Byte,Pt.Okx.Sdk.Clients.Market.Enums.TickType)">
-  TickData(long, double, float, byte, TickType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L44"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData__ctor_System_Int64_System_Double_System_Single_System_Byte_Pt_Okx_Sdk_Clients_Market_Enums_TickType_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.#ctor(System.Int64,System.Double,System.Single,System.Byte,Pt.Okx.Sdk.Clients.Market.Enums.TickType)">TickData(long, double, float, byte, TickType)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TickData(long tsTicks, double price, float vol, byte idx, TickType type)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>tsTicks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd><p>The UTC timestamp in ticks.</p>
-</dd>
-    <dt><code>price</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd><p>The price.</p>
-</dd>
-    <dt><code>vol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p>The volume.</p>
-</dd>
-    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
-    <dd><p>The tick index.</p>
-</dd>
-    <dt><code>type</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Enums.TickType.html">TickType</a></dt>
-    <dd><p>The tick type.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Empty" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Empty">
-  Empty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L34"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">tsTicks</span></td>
+        <td><p>The UTC timestamp in ticks.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">price</span></td>
+        <td><p>The price.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">vol</span></td>
+        <td><p>The volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The tick index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Enums.TickType.html">TickType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The tick type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_Empty.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.Empty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L34">View Source</a>
+  </span>
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Empty" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Empty">Empty</h4>
   <div class="markdown level1 summary"><p>Gets a representative empty <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly TickData Empty</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Price" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Price">
-  Price
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L17"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_Price.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.Price%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Price" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Price">Price</h4>
   <div class="markdown level1 summary"><p>The price of the tick.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly double Price</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_TickIndex" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.TickIndex">
-  TickIndex
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L21"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_TickIndex.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.TickIndex%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_TickIndex" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.TickIndex">TickIndex</h4>
   <div class="markdown level1 summary"><p>The sequential index of this tick within its context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly byte TickIndex</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_TimestampTicks" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.TimestampTicks">
-  TimestampTicks
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L15"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_TimestampTicks.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.TimestampTicks%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L15">View Source</a>
+  </span>
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_TimestampTicks" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.TimestampTicks">TimestampTicks</h4>
   <div class="markdown level1 summary"><p>The UTC timestamp in ticks.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly long TimestampTicks</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Type" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Type">
-  Type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L23"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_Type.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.Type%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L23">View Source</a>
+  </span>
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Type" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Type">Type</h4>
   <div class="markdown level1 summary"><p>The type of the tick (e.g., trade, bid, ask).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly TickType Type</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Enums.TickType.html">TickType</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Volume" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Volume">
-  Volume
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L19"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Enums.TickType.html">TickType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_Volume.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.Volume%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Volume" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Volume">Volume</h4>
   <div class="markdown level1 summary"><p>The volume traded in this tick.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly float Volume</code></pre>
   </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_IsEmpty.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.IsEmpty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L31">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Market_Models_TickData_IsEmpty_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.IsEmpty*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_IsEmpty" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.IsEmpty">
-  IsEmpty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L31"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_IsEmpty" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.IsEmpty">IsEmpty</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether the tick data is empty (contains default values).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_Timestamp.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.Timestamp%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L26">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Timestamp_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Timestamp*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Timestamp" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Timestamp">
-  Timestamp
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L26"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Timestamp" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Timestamp">Timestamp</h4>
   <div class="markdown level1 summary"><p>Gets the UTC <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a> representation of the tick's timestamp.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DateTime Timestamp { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_Equals_Pt_Okx_Sdk_Clients_Market_Models_TickData_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.Equals(Pt.Okx.Sdk.Clients.Market.Models.TickData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L62">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Equals_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Equals*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Equals_Pt_Okx_Sdk_Clients_Market_Models_TickData_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Equals(Pt.Okx.Sdk.Clients.Market.Models.TickData)">
-  Equals(TickData)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L62"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Equals_Pt_Okx_Sdk_Clients_Market_Models_TickData_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Equals(Pt.Okx.Sdk.Clients.Market.Models.TickData)">Equals(TickData)</h4>
   <div class="markdown level1 summary"><p>Determines whether this instance is equal to another <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a>.
 Equality is defined by comparing all fields.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Equals(TickData other)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>other</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></dt>
-    <dd><p>The other tick data to compare with.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><code>true</code> if all fields are equal; otherwise <code>false</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The other tick data to compare with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if all fields are equal; otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.Equals(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L76">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Equals_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Equals*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Equals_System_Object_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Equals(System.Object)">
-  Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L76"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_Equals_System_Object_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.Equals(System.Object)">Equals(object?)</h4>
   <div class="markdown level1 summary"><p>Determines whether this instance is equal to the specified object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The object to compare with.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><code>true</code> if the object is a <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a> and is equal to this instance; otherwise <code>false</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the object is a <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a> and is equal to this instance; otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_GetHashCode.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.GetHashCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L83">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Market_Models_TickData_GetHashCode_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.GetHashCode*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_GetHashCode" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.GetHashCode">
-  GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L83"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_GetHashCode" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Returns a hash code for this instance based on all fields.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The computed hash code.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="operators">Operators
-</h2>
-
-
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The computed hash code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
+  <h3 id="operators">Operators
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_op_Equality_Pt_Okx_Sdk_Clients_Market_Models_TickData_Pt_Okx_Sdk_Clients_Market_Models_TickData_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.op_Equality(Pt.Okx.Sdk.Clients.Market.Models.TickData%2CPt.Okx.Sdk.Clients.Market.Models.TickData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L94">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Market_Models_TickData_op_Equality_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.op_Equality*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_op_Equality_Pt_Okx_Sdk_Clients_Market_Models_TickData_Pt_Okx_Sdk_Clients_Market_Models_TickData_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.op_Equality(Pt.Okx.Sdk.Clients.Market.Models.TickData,Pt.Okx.Sdk.Clients.Market.Models.TickData)">
-  operator ==(TickData, TickData)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L94"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_op_Equality_Pt_Okx_Sdk_Clients_Market_Models_TickData_Pt_Okx_Sdk_Clients_Market_Models_TickData_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.op_Equality(Pt.Okx.Sdk.Clients.Market.Models.TickData,Pt.Okx.Sdk.Clients.Market.Models.TickData)">operator ==(TickData, TickData)</h4>
   <div class="markdown level1 summary"><p>Determines whether two <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a> instances are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator ==(TickData left, TickData right)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>left</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></dt>
-    <dd><p>The first instance to compare.</p>
-</dd>
-    <dt><code>right</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></dt>
-    <dd><p>The second instance to compare.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><code>true</code> if both instances are equal; otherwise <code>false</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if both instances are equal; otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData_op_Inequality_Pt_Okx_Sdk_Clients_Market_Models_TickData_Pt_Okx_Sdk_Clients_Market_Models_TickData_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData.op_Inequality(Pt.Okx.Sdk.Clients.Market.Models.TickData%2CPt.Okx.Sdk.Clients.Market.Models.TickData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L105">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Clients_Market_Models_TickData_op_Inequality_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.op_Inequality*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_op_Inequality_Pt_Okx_Sdk_Clients_Market_Models_TickData_Pt_Okx_Sdk_Clients_Market_Models_TickData_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.op_Inequality(Pt.Okx.Sdk.Clients.Market.Models.TickData,Pt.Okx.Sdk.Clients.Market.Models.TickData)">
-  operator !=(TickData, TickData)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L105"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Clients_Market_Models_TickData_op_Inequality_Pt_Okx_Sdk_Clients_Market_Models_TickData_Pt_Okx_Sdk_Clients_Market_Models_TickData_" data-uid="Pt.Okx.Sdk.Clients.Market.Models.TickData.op_Inequality(Pt.Okx.Sdk.Clients.Market.Models.TickData,Pt.Okx.Sdk.Clients.Market.Models.TickData)">operator !=(TickData, TickData)</h4>
   <div class="markdown level1 summary"><p>Determines whether two <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a> instances are not equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator !=(TickData left, TickData right)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>left</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></dt>
-    <dd><p>The first instance to compare.</p>
-</dd>
-    <dt><code>right</code> <a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></dt>
-    <dd><p>The second instance to compare.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><code>true</code> if the instances are not equal; otherwise <code>false</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickData.html">TickData</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the instances are not equal; otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Market_Models_TickData.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Market.Models.TickData%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Market/Models/TickData.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

@@ -17635,72 +17635,6 @@ references:
   fullName.vb: Pt.Okx.Sdk.Storage.StoragePathProviderServiceCollectionExtensions.UseStoragePathProvider(Of TProvider)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   nameWithType: StoragePathProviderServiceCollectionExtensions.UseStoragePathProvider<TProvider>(IServiceCollection)
   nameWithType.vb: StoragePathProviderServiceCollectionExtensions.UseStoragePathProvider(Of TProvider)(IServiceCollection)
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope
-  name: StoragePathScope
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html
-  commentId: T:Pt.Okx.Sdk.Storage.StoragePathScope
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope
-  nameWithType: StoragePathScope
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.Backtest
-  name: Backtest
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_Backtest
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.Backtest
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.Backtest
-  nameWithType: StoragePathScope.Backtest
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.BacktestLogs
-  name: BacktestLogs
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_BacktestLogs
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.BacktestLogs
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.BacktestLogs
-  nameWithType: StoragePathScope.BacktestLogs
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.Cache
-  name: Cache
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_Cache
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.Cache
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.Cache
-  nameWithType: StoragePathScope.Cache
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.Exports
-  name: Exports
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_Exports
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.Exports
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.Exports
-  nameWithType: StoragePathScope.Exports
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.History
-  name: History
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_History
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.History
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.History
-  nameWithType: StoragePathScope.History
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.Live
-  name: Live
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_Live
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.Live
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.Live
-  nameWithType: StoragePathScope.Live
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.LiveLogs
-  name: LiveLogs
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_LiveLogs
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.LiveLogs
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.LiveLogs
-  nameWithType: StoragePathScope.LiveLogs
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.Logs
-  name: Logs
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_Logs
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.Logs
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.Logs
-  nameWithType: StoragePathScope.Logs
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.RuntimeDataRoot
-  name: RuntimeDataRoot
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_RuntimeDataRoot
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.RuntimeDataRoot
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.RuntimeDataRoot
-  nameWithType: StoragePathScope.RuntimeDataRoot
-- uid: Pt.Okx.Sdk.Storage.StoragePathScope.State
-  name: State
-  href: api/Pt.Okx.Sdk.Storage.StoragePathScope.html#Pt_Okx_Sdk_Storage_StoragePathScope_State
-  commentId: F:Pt.Okx.Sdk.Storage.StoragePathScope.State
-  fullName: Pt.Okx.Sdk.Storage.StoragePathScope.State
-  nameWithType: StoragePathScope.State
 - uid: Pt.Okx.Sdk.Strategy
   name: Pt.Okx.Sdk.Strategy
   href: api/Pt.Okx.Sdk.Strategy.html
@@ -17995,6 +17929,24 @@ references:
   commentId: F:Pt.Okx.Sdk.Strategy.Events.StrategyEventType.Transaction
   fullName: Pt.Okx.Sdk.Strategy.Events.StrategyEventType.Transaction
   nameWithType: StrategyEventType.Transaction
+- uid: Pt.Okx.Sdk.Strategy.Events.TickPhase
+  name: TickPhase
+  href: api/Pt.Okx.Sdk.Strategy.Events.TickPhase.html
+  commentId: T:Pt.Okx.Sdk.Strategy.Events.TickPhase
+  fullName: Pt.Okx.Sdk.Strategy.Events.TickPhase
+  nameWithType: TickPhase
+- uid: Pt.Okx.Sdk.Strategy.Events.TickPhase.BarClose
+  name: BarClose
+  href: api/Pt.Okx.Sdk.Strategy.Events.TickPhase.html#Pt_Okx_Sdk_Strategy_Events_TickPhase_BarClose
+  commentId: F:Pt.Okx.Sdk.Strategy.Events.TickPhase.BarClose
+  fullName: Pt.Okx.Sdk.Strategy.Events.TickPhase.BarClose
+  nameWithType: TickPhase.BarClose
+- uid: Pt.Okx.Sdk.Strategy.Events.TickPhase.Tick
+  name: Tick
+  href: api/Pt.Okx.Sdk.Strategy.Events.TickPhase.html#Pt_Okx_Sdk_Strategy_Events_TickPhase_Tick
+  commentId: F:Pt.Okx.Sdk.Strategy.Events.TickPhase.Tick
+  fullName: Pt.Okx.Sdk.Strategy.Events.TickPhase.Tick
+  nameWithType: TickPhase.Tick
 - uid: Pt.Okx.Sdk.Strategy.Events.TradeCommandTelegramEvent
   name: TradeCommandTelegramEvent
   href: api/Pt.Okx.Sdk.Strategy.Events.TradeCommandTelegramEvent.html
@@ -18077,45 +18029,45 @@ references:
   commentId: T:Pt.Okx.Sdk.Strategy.IStrategy
   fullName: Pt.Okx.Sdk.Strategy.IStrategy
   nameWithType: IStrategy
-- uid: Pt.Okx.Sdk.Strategy.IStrategy.InitializeAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)
-  name: InitializeAsync(IStrategyStateStore, CancellationToken)
-  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_InitializeAsync_Pt_Okx_Sdk_Strategy_IStrategyStateStore_System_Threading_CancellationToken_
-  commentId: M:Pt.Okx.Sdk.Strategy.IStrategy.InitializeAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)
-  fullName: Pt.Okx.Sdk.Strategy.IStrategy.InitializeAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore, System.Threading.CancellationToken)
-  nameWithType: IStrategy.InitializeAsync(IStrategyStateStore, CancellationToken)
-- uid: Pt.Okx.Sdk.Strategy.IStrategy.InitializeAsync*
-  name: InitializeAsync
-  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_InitializeAsync_
-  commentId: Overload:Pt.Okx.Sdk.Strategy.IStrategy.InitializeAsync
+- uid: Pt.Okx.Sdk.Strategy.IStrategy.OnInitAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)
+  name: OnInitAsync(IStrategyStateStore, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_OnInitAsync_Pt_Okx_Sdk_Strategy_IStrategyStateStore_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.IStrategy.OnInitAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.IStrategy.OnInitAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore, System.Threading.CancellationToken)
+  nameWithType: IStrategy.OnInitAsync(IStrategyStateStore, CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.IStrategy.OnInitAsync*
+  name: OnInitAsync
+  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_OnInitAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.IStrategy.OnInitAsync
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Strategy.IStrategy.InitializeAsync
-  nameWithType: IStrategy.InitializeAsync
-- uid: Pt.Okx.Sdk.Strategy.IStrategy.RunAsync(Pt.Okx.Sdk.Strategy.Events.StrategyEventType,Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)
-  name: RunAsync(StrategyEventType, IStrategyStateStore, CancellationToken)
-  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_RunAsync_Pt_Okx_Sdk_Strategy_Events_StrategyEventType_Pt_Okx_Sdk_Strategy_IStrategyStateStore_System_Threading_CancellationToken_
-  commentId: M:Pt.Okx.Sdk.Strategy.IStrategy.RunAsync(Pt.Okx.Sdk.Strategy.Events.StrategyEventType,Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)
-  fullName: Pt.Okx.Sdk.Strategy.IStrategy.RunAsync(Pt.Okx.Sdk.Strategy.Events.StrategyEventType, Pt.Okx.Sdk.Strategy.IStrategyStateStore, System.Threading.CancellationToken)
-  nameWithType: IStrategy.RunAsync(StrategyEventType, IStrategyStateStore, CancellationToken)
-- uid: Pt.Okx.Sdk.Strategy.IStrategy.RunAsync*
-  name: RunAsync
-  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_RunAsync_
-  commentId: Overload:Pt.Okx.Sdk.Strategy.IStrategy.RunAsync
+  fullName: Pt.Okx.Sdk.Strategy.IStrategy.OnInitAsync
+  nameWithType: IStrategy.OnInitAsync
+- uid: Pt.Okx.Sdk.Strategy.IStrategy.OnStopAsync(System.Threading.CancellationToken)
+  name: OnStopAsync(CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_OnStopAsync_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.IStrategy.OnStopAsync(System.Threading.CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.IStrategy.OnStopAsync(System.Threading.CancellationToken)
+  nameWithType: IStrategy.OnStopAsync(CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.IStrategy.OnStopAsync*
+  name: OnStopAsync
+  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_OnStopAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.IStrategy.OnStopAsync
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Strategy.IStrategy.RunAsync
-  nameWithType: IStrategy.RunAsync
-- uid: Pt.Okx.Sdk.Strategy.IStrategy.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_StopAsync_System_Threading_CancellationToken_
-  commentId: M:Pt.Okx.Sdk.Strategy.IStrategy.StopAsync(System.Threading.CancellationToken)
-  fullName: Pt.Okx.Sdk.Strategy.IStrategy.StopAsync(System.Threading.CancellationToken)
-  nameWithType: IStrategy.StopAsync(CancellationToken)
-- uid: Pt.Okx.Sdk.Strategy.IStrategy.StopAsync*
-  name: StopAsync
-  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_StopAsync_
-  commentId: Overload:Pt.Okx.Sdk.Strategy.IStrategy.StopAsync
+  fullName: Pt.Okx.Sdk.Strategy.IStrategy.OnStopAsync
+  nameWithType: IStrategy.OnStopAsync
+- uid: Pt.Okx.Sdk.Strategy.IStrategy.OnTickAsync(Pt.Okx.Sdk.Strategy.Events.TickPhase,System.Threading.CancellationToken)
+  name: OnTickAsync(TickPhase, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_OnTickAsync_Pt_Okx_Sdk_Strategy_Events_TickPhase_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.IStrategy.OnTickAsync(Pt.Okx.Sdk.Strategy.Events.TickPhase,System.Threading.CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.IStrategy.OnTickAsync(Pt.Okx.Sdk.Strategy.Events.TickPhase, System.Threading.CancellationToken)
+  nameWithType: IStrategy.OnTickAsync(TickPhase, CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.IStrategy.OnTickAsync*
+  name: OnTickAsync
+  href: api/Pt.Okx.Sdk.Strategy.IStrategy.html#Pt_Okx_Sdk_Strategy_IStrategy_OnTickAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.IStrategy.OnTickAsync
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Strategy.IStrategy.StopAsync
-  nameWithType: IStrategy.StopAsync
+  fullName: Pt.Okx.Sdk.Strategy.IStrategy.OnTickAsync
+  nameWithType: IStrategy.OnTickAsync
 - uid: Pt.Okx.Sdk.Strategy.IStrategyLogger
   name: IStrategyLogger
   href: api/Pt.Okx.Sdk.Strategy.IStrategyLogger.html
@@ -20645,25 +20597,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.RequiredSdkVersion
   nameWithType: IStrategyPluginMetadata.RequiredSdkVersion
-- uid: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters
-  name: IStrategyPluginParameters
-  href: api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.html
-  commentId: T:Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters
-  fullName: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters
-  nameWithType: IStrategyPluginParameters
-- uid: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.GetDefaultParameters
-  name: GetDefaultParameters()
-  href: api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.html#Pt_Okx_Sdk_Strategy_Plugin_IStrategyPluginParameters_GetDefaultParameters
-  commentId: M:Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.GetDefaultParameters
-  fullName: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.GetDefaultParameters()
-  nameWithType: IStrategyPluginParameters.GetDefaultParameters()
-- uid: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.GetDefaultParameters*
-  name: GetDefaultParameters
-  href: api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.html#Pt_Okx_Sdk_Strategy_Plugin_IStrategyPluginParameters_GetDefaultParameters_
-  commentId: Overload:Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.GetDefaultParameters
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginParameters.GetDefaultParameters
-  nameWithType: IStrategyPluginParameters.GetDefaultParameters
 - uid: Pt.Okx.Sdk.Strategy.Settings
   name: Pt.Okx.Sdk.Strategy.Settings
   href: api/Pt.Okx.Sdk.Strategy.Settings.html
@@ -21054,3 +20987,141 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Strategy.Settings.StrategySettings.WarmupBars
   nameWithType: StrategySettings.WarmupBars
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase
+  name: StrategyBase
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html
+  commentId: T:Pt.Okx.Sdk.Strategy.StrategyBase
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase
+  nameWithType: StrategyBase
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder},System.Threading.CancellationToken)
+  name: OnAlgoOrderAsync(IReadOnlyList<AlgoOrder>, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnAlgoOrderAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_AlgoOrder__System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder},System.Threading.CancellationToken)
+  name.vb: OnAlgoOrderAsync(IReadOnlyList(Of AlgoOrder), CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync(System.Collections.Generic.IReadOnlyList<Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder>, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync(System.Collections.Generic.IReadOnlyList(Of Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder), System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnAlgoOrderAsync(IReadOnlyList<AlgoOrder>, CancellationToken)
+  nameWithType.vb: StrategyBase.OnAlgoOrderAsync(IReadOnlyList(Of AlgoOrder), CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync*
+  name: OnAlgoOrderAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnAlgoOrderAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync
+  nameWithType: StrategyBase.OnAlgoOrderAsync
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Account.Model.AccountBalance},System.Threading.CancellationToken)
+  name: OnBalanceAsync(IReadOnlyList<AccountBalance>, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnBalanceAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Account_Model_AccountBalance__System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Account.Model.AccountBalance},System.Threading.CancellationToken)
+  name.vb: OnBalanceAsync(IReadOnlyList(Of AccountBalance), CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync(System.Collections.Generic.IReadOnlyList<Pt.Okx.Sdk.Clients.Account.Model.AccountBalance>, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync(System.Collections.Generic.IReadOnlyList(Of Pt.Okx.Sdk.Clients.Account.Model.AccountBalance), System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnBalanceAsync(IReadOnlyList<AccountBalance>, CancellationToken)
+  nameWithType.vb: StrategyBase.OnBalanceAsync(IReadOnlyList(Of AccountBalance), CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync*
+  name: OnBalanceAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnBalanceAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync
+  nameWithType: StrategyBase.OnBalanceAsync
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)
+  name: OnInitAsync(IStrategyStateStore, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnInitAsync_Pt_Okx_Sdk_Strategy_IStrategyStateStore_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore, System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnInitAsync(IStrategyStateStore, CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync*
+  name: OnInitAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnInitAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync
+  nameWithType: StrategyBase.OnInitAsync
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Order},System.Threading.CancellationToken)
+  name: OnOrderAsync(IReadOnlyList<Order>, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnOrderAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Order__System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Order},System.Threading.CancellationToken)
+  name.vb: OnOrderAsync(IReadOnlyList(Of Order), CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync(System.Collections.Generic.IReadOnlyList<Pt.Okx.Sdk.Clients.Trading.Models.Order>, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync(System.Collections.Generic.IReadOnlyList(Of Pt.Okx.Sdk.Clients.Trading.Models.Order), System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnOrderAsync(IReadOnlyList<Order>, CancellationToken)
+  nameWithType.vb: StrategyBase.OnOrderAsync(IReadOnlyList(Of Order), CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync*
+  name: OnOrderAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnOrderAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync
+  nameWithType: StrategyBase.OnOrderAsync
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Position},System.Threading.CancellationToken)
+  name: OnPositionAsync(IReadOnlyList<Position>, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnPositionAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Position__System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Position},System.Threading.CancellationToken)
+  name.vb: OnPositionAsync(IReadOnlyList(Of Position), CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync(System.Collections.Generic.IReadOnlyList<Pt.Okx.Sdk.Clients.Trading.Models.Position>, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync(System.Collections.Generic.IReadOnlyList(Of Pt.Okx.Sdk.Clients.Trading.Models.Position), System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnPositionAsync(IReadOnlyList<Position>, CancellationToken)
+  nameWithType.vb: StrategyBase.OnPositionAsync(IReadOnlyList(Of Position), CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync*
+  name: OnPositionAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnPositionAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync
+  nameWithType: StrategyBase.OnPositionAsync
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync(System.Threading.CancellationToken)
+  name: OnStopAsync(CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnStopAsync_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync(System.Threading.CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync(System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnStopAsync(CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync*
+  name: OnStopAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnStopAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync
+  nameWithType: StrategyBase.OnStopAsync
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync(Pt.Okx.Sdk.Strategy.Events.TickPhase,System.Threading.CancellationToken)
+  name: OnTickAsync(TickPhase, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnTickAsync_Pt_Okx_Sdk_Strategy_Events_TickPhase_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync(Pt.Okx.Sdk.Strategy.Events.TickPhase,System.Threading.CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync(Pt.Okx.Sdk.Strategy.Events.TickPhase, System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnTickAsync(TickPhase, CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync*
+  name: OnTickAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnTickAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync
+  nameWithType: StrategyBase.OnTickAsync
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync(Pt.Okx.Sdk.Notifier.Models.TradeCommand,System.Threading.CancellationToken)
+  name: OnTradeCommandAsync(TradeCommand, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnTradeCommandAsync_Pt_Okx_Sdk_Notifier_Models_TradeCommand_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync(Pt.Okx.Sdk.Notifier.Models.TradeCommand,System.Threading.CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync(Pt.Okx.Sdk.Notifier.Models.TradeCommand, System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnTradeCommandAsync(TradeCommand, CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync*
+  name: OnTradeCommandAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnTradeCommandAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync
+  nameWithType: StrategyBase.OnTradeCommandAsync
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Transaction},System.Threading.CancellationToken)
+  name: OnTransactionAsync(IReadOnlyList<Transaction>, CancellationToken)
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnTransactionAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Transaction__System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Transaction},System.Threading.CancellationToken)
+  name.vb: OnTransactionAsync(IReadOnlyList(Of Transaction), CancellationToken)
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync(System.Collections.Generic.IReadOnlyList<Pt.Okx.Sdk.Clients.Trading.Models.Transaction>, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync(System.Collections.Generic.IReadOnlyList(Of Pt.Okx.Sdk.Clients.Trading.Models.Transaction), System.Threading.CancellationToken)
+  nameWithType: StrategyBase.OnTransactionAsync(IReadOnlyList<Transaction>, CancellationToken)
+  nameWithType.vb: StrategyBase.OnTransactionAsync(IReadOnlyList(Of Transaction), CancellationToken)
+- uid: Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync*
+  name: OnTransactionAsync
+  href: api/Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnTransactionAsync_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync
+  nameWithType: StrategyBase.OnTransactionAsync

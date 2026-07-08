@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class StrategyBase | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class StrategyBase | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Base class for all trading strategies.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase">
+
+
+
+  <h1 id="Pt_Okx_Sdk_Strategy_StrategyBase" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase" class="text-break">Class StrategyBase</h1>
+  <div class="markdown level0 summary"><p>Base class for all trading strategies.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">StrategyBase</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Pt.Okx.Sdk.Strategy.IStrategy.html">IStrategy</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Strategy.html">Strategy</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Strategy_StrategyBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class StrategyBase : IStrategy</code></pre>
+  </div>
+  <h5 id="Pt_Okx_Sdk_Strategy_StrategyBase_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Inherit from <a class="xref" href="Pt.Okx.Sdk.Strategy.StrategyBase.html">StrategyBase</a> and override <a class="xref" href="Pt.Okx.Sdk.Strategy.StrategyBase.html#Pt_Okx_Sdk_Strategy_StrategyBase_OnTickAsync_Pt_Okx_Sdk_Strategy_Events_TickPhase_System_Threading_CancellationToken_">OnTickAsync(TickPhase, CancellationToken)</a> (required)
+plus any optional event handlers needed by your strategy.</p>
+<p>
+Event dispatch and state mutation are handled by the hosting engine.
+</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnAlgoOrderAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_AlgoOrder__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync(System.Collections.Generic.IReadOnlyList%7BPt.Okx.Sdk.Clients.Trading.Models.AlgoOrder%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L41">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnAlgoOrderAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_AlgoOrder__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnAlgoOrderAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder},System.Threading.CancellationToken)">OnAlgoOrderAsync(IReadOnlyList&lt;AlgoOrder&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Called when algorithmic order updates arrive (e.g., stop-loss, take-profit).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnAlgoOrderAsync(IReadOnlyList&lt;AlgoOrder&gt; algoOrders, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrder.html">AlgoOrder</a>&gt;</td>
+        <td><span class="parametername">algoOrders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnBalanceAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Account_Model_AccountBalance__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync(System.Collections.Generic.IReadOnlyList%7BPt.Okx.Sdk.Clients.Account.Model.AccountBalance%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L56">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnBalanceAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnBalanceAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Account_Model_AccountBalance__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnBalanceAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Account.Model.AccountBalance},System.Threading.CancellationToken)">OnBalanceAsync(IReadOnlyList&lt;AccountBalance&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Called when balance updates arrive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnBalanceAsync(IReadOnlyList&lt;AccountBalance&gt; balances, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html">AccountBalance</a>&gt;</td>
+        <td><span class="parametername">balances</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnInitAsync_Pt_Okx_Sdk_Strategy_IStrategyStateStore_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L21">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnInitAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnInitAsync_Pt_Okx_Sdk_Strategy_IStrategyStateStore_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnInitAsync(Pt.Okx.Sdk.Strategy.IStrategyStateStore,System.Threading.CancellationToken)">OnInitAsync(IStrategyStateStore, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Initializes the strategy with the provided state store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;bool&gt; OnInitAsync(IStrategyStateStore state, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Strategy.IStrategyStateStore.html">IStrategyStateStore</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The strategy state store used to persist and retrieve internal state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token used to cancel the initialization process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><p><code>true</code> if initialization succeeded; otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnOrderAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Order__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync(System.Collections.Generic.IReadOnlyList%7BPt.Okx.Sdk.Clients.Trading.Models.Order%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L36">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnOrderAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnOrderAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Order__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnOrderAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Order},System.Threading.CancellationToken)">OnOrderAsync(IReadOnlyList&lt;Order&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Called when order updates arrive. Override to react to order state changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnOrderAsync(IReadOnlyList&lt;Order&gt; orders, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Order.html">Order</a>&gt;</td>
+        <td><span class="parametername">orders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnPositionAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Position__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync(System.Collections.Generic.IReadOnlyList%7BPt.Okx.Sdk.Clients.Trading.Models.Position%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L46">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnPositionAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnPositionAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Position__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnPositionAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Position},System.Threading.CancellationToken)">OnPositionAsync(IReadOnlyList&lt;Position&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Called when position updates arrive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnPositionAsync(IReadOnlyList&lt;Position&gt; positions, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Position.html">Position</a>&gt;</td>
+        <td><span class="parametername">positions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnStopAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync(System.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L24">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnStopAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnStopAsync_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnStopAsync(System.Threading.CancellationToken)">OnStopAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Stops the strategy and performs any required cleanup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;bool&gt; OnStopAsync(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token used to cancel the stop process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><p><code>true</code> if the strategy stopped successfully; otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnTickAsync_Pt_Okx_Sdk_Strategy_Events_TickPhase_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync(Pt.Okx.Sdk.Strategy.Events.TickPhase%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L31">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnTickAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnTickAsync_Pt_Okx_Sdk_Strategy_Events_TickPhase_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnTickAsync(Pt.Okx.Sdk.Strategy.Events.TickPhase,System.Threading.CancellationToken)">OnTickAsync(TickPhase, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Called on each market cadence update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Strategy.Events.TickPhase.html">TickPhase</a></td>
+        <td><span class="parametername">tickPhase</span></td>
+        <td><p>Indicates whether this call is an intra-bar tick or a closed bar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnTradeCommandAsync_Pt_Okx_Sdk_Notifier_Models_TradeCommand_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync(Pt.Okx.Sdk.Notifier.Models.TradeCommand%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L61">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnTradeCommandAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnTradeCommandAsync_Pt_Okx_Sdk_Notifier_Models_TradeCommand_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnTradeCommandAsync(Pt.Okx.Sdk.Notifier.Models.TradeCommand,System.Threading.CancellationToken)">OnTradeCommandAsync(TradeCommand, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Called when a trade command arrives (e.g., from Telegram or an external source).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnTradeCommandAsync(TradeCommand tradeCommand, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Notifier.Models.TradeCommand.html">TradeCommand</a></td>
+        <td><span class="parametername">tradeCommand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase_OnTransactionAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Transaction__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync(System.Collections.Generic.IReadOnlyList%7BPt.Okx.Sdk.Clients.Trading.Models.Transaction%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L51">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Strategy_StrategyBase_OnTransactionAsync_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Strategy_StrategyBase_OnTransactionAsync_System_Collections_Generic_IReadOnlyList_Pt_Okx_Sdk_Clients_Trading_Models_Transaction__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Strategy.StrategyBase.OnTransactionAsync(System.Collections.Generic.IReadOnlyList{Pt.Okx.Sdk.Clients.Trading.Models.Transaction},System.Threading.CancellationToken)">OnTransactionAsync(IReadOnlyList&lt;Transaction&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Called when transaction updates arrive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task OnTransactionAsync(IReadOnlyList&lt;Transaction&gt; transactions, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Transaction.html">Transaction</a>&gt;</td>
+        <td><span class="parametername">transactions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Pt.Okx.Sdk.Strategy.IStrategy.html">IStrategy</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_StrategyBase.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.StrategyBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/StrategyBase.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

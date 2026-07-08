@@ -1,127 +1,97 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Class StrategySettings | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class StrategySettings | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Encapsulates the configuration settings required for running a trading strategy, supporting both live trading and backtesting environments.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class StrategySettings | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class StrategySettings | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Encapsulates the configuration settings required for running a trading strategy, supporting both live trading and backtesting environments.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings">
 
-        <article data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings">
 
 
-
-  <h1 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings" class="text-break">
-Class StrategySettings  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L13"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Strategy.html">Strategy</a>.<a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.html">Settings</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Encapsulates the configuration settings required for running a trading strategy,
+  <h1 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings" class="text-break">Class StrategySettings</h1>
+  <div class="markdown level0 summary"><p>Encapsulates the configuration settings required for running a trading strategy,
 supporting both live trading and backtesting environments.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StrategySettings</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">StrategySettings</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">StrategySettings</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -140,813 +110,808 @@ supporting both live trading and backtesting environments.</p>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Strategy.html">Strategy</a>.<a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.html">Settings</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StrategySettings</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Backtest.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Backtest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L19">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Backtest_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Backtest*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Backtest" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Backtest">
-  Backtest
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L19"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Backtest" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Backtest">Backtest</h4>
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the strategy is running in backtest mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Backtest { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_DateOption.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.DateOption%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L37">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_DateOption_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.DateOption*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_DateOption" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.DateOption">
-  DateOption
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L37"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_DateOption" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.DateOption">DateOption</h4>
   <div class="markdown level1 summary"><p>Gets or sets the date filtering option for backtesting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DateOption DateOption { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.Enums.DateOption.html">DateOption</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.Enums.DateOption.html">DateOption</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Delay.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Delay%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L22">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Delay_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Delay*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Delay" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Delay">
-  Delay
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L22"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Delay" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Delay">Delay</h4>
   <div class="markdown level1 summary"><p>Gets or sets the artificial delay in milliseconds (useful for debugging or rate-limiting).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Delay { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Deposite.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Deposite%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L46">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Deposite_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Deposite*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Deposite" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Deposite">
-  Deposite
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L46"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Deposite" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Deposite">Deposite</h4>
   <div class="markdown level1 summary"><p>Gets or sets the initial deposit amount for the simulation or trading account.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public decimal Deposite { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_EffectiveWarmupBars.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.EffectiveWarmupBars%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L85">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_EffectiveWarmupBars_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.EffectiveWarmupBars*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_EffectiveWarmupBars" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.EffectiveWarmupBars">
-  EffectiveWarmupBars
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L85"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_EffectiveWarmupBars" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.EffectiveWarmupBars">EffectiveWarmupBars</h4>
   <div class="markdown level1 summary"><p>Gets the effective number of bars used for warming up indicators.
 Falls back to <a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.html#Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MaxBars">MaxBars</a> if <a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.html#Pt_Okx_Sdk_Strategy_Settings_StrategySettings_WarmupBars">WarmupBars</a> is not set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int EffectiveWarmupBars { get; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_EndTime.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.EndTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L43">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_EndTime_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.EndTime*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_EndTime" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.EndTime">
-  EndTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L43"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_EndTime" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.EndTime">EndTime</h4>
   <div class="markdown level1 summary"><p>Gets or sets the end time for the strategy execution or backtest period.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DateTime? EndTime { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_IsAllowFundingFee.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.IsAllowFundingFee%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L64">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_IsAllowFundingFee_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.IsAllowFundingFee*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_IsAllowFundingFee" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.IsAllowFundingFee">
-  IsAllowFundingFee
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L64"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_IsAllowFundingFee" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.IsAllowFundingFee">IsAllowFundingFee</h4>
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to account for funding fees in simulations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsAllowFundingFee { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Leverage.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Leverage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L49">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Leverage_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Leverage*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Leverage" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Leverage">
-  Leverage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L49"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Leverage" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Leverage">Leverage</h4>
   <div class="markdown level1 summary"><p>Gets or sets the leverage to be used for the strategy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Leverage { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MarginMode.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.MarginMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L55">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MarginMode_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.MarginMode*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MarginMode" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.MarginMode">
-  MarginMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L55"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MarginMode" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.MarginMode">MarginMode</h4>
   <div class="markdown level1 summary"><p>Gets or sets the margin mode (e.g., Isolated, Cross).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public MarginMode MarginMode { get; init; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode.html">MarginMode</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode.html">MarginMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MaxBars.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.MaxBars%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L31">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MaxBars_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.MaxBars*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MaxBars" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.MaxBars">
-  MaxBars
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L31"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_MaxBars" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.MaxBars">MaxBars</h4>
   <div class="markdown level1 summary"><p>Gets or sets the maximum number of bars to process or store.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int MaxBars { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_OkxAccountAlias.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.OkxAccountAlias%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L73">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_OkxAccountAlias_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.OkxAccountAlias*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_OkxAccountAlias" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.OkxAccountAlias">
-  OkxAccountAlias
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L73"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_OkxAccountAlias" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.OkxAccountAlias">OkxAccountAlias</h4>
   <div class="markdown level1 summary"><p>Gets or sets the alias of the OKX Account configuration used by this strategy for Live Trade.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string OkxAccountAlias { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_PriceDataOptions.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.PriceDataOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L67">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_PriceDataOptions_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.PriceDataOptions*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_PriceDataOptions" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.PriceDataOptions">
-  PriceDataOptions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L67"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_PriceDataOptions" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.PriceDataOptions">PriceDataOptions</h4>
   <div class="markdown level1 summary"><p>Gets or sets the options for price data resolution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PriceDataOption PriceDataOptions { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.Enums.PriceDataOption.html">PriceDataOption</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.Enums.PriceDataOption.html">PriceDataOption</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_SandBox.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.SandBox%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L16">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_SandBox_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.SandBox*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_SandBox" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.SandBox">
-  SandBox
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L16"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_SandBox" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.SandBox">SandBox</h4>
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to use the Sandbox environment.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool SandBox { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_StartTime.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.StartTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L40">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_StartTime_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.StartTime*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_StartTime" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.StartTime">
-  StartTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L40"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_StartTime" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.StartTime">StartTime</h4>
   <div class="markdown level1 summary"><p>Gets or sets the start time for the strategy execution or backtest period.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DateTime? StartTime { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_StrategyFileExecute.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.StrategyFileExecute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L58">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_StrategyFileExecute_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.StrategyFileExecute*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_StrategyFileExecute" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.StrategyFileExecute">
-  StrategyFileExecute
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L58"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_StrategyFileExecute" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.StrategyFileExecute">StrategyFileExecute</h4>
   <div class="markdown level1 summary"><p>Gets or sets the path or name of the strategy file to execute.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string StrategyFileExecute { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Symbol.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Symbol%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L28">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Symbol_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Symbol*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Symbol" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Symbol">
-  Symbol
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L28"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Symbol" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Symbol">Symbol</h4>
   <div class="markdown level1 summary"><p>Gets or sets the trading symbol (e.g., &quot;BTC-USDT&quot;).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Symbol { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TelegramBotAlias.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TelegramBotAlias%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L70">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TelegramBotAlias_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TelegramBotAlias*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TelegramBotAlias" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TelegramBotAlias">
-  TelegramBotAlias
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L70"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TelegramBotAlias" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TelegramBotAlias">TelegramBotAlias</h4>
   <div class="markdown level1 summary"><p>Gets or sets the alias of the Telegram Bot configuration used by this strategy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string TelegramBotAlias { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TickConfig.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TickConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L79">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TickConfig_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TickConfig*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TickConfig" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TickConfig">
-  TickConfig
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L79"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TickConfig" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TickConfig">TickConfig</h4>
   <div class="markdown level1 summary"><p>Gets or sets the tick simulation configuration, used only in backtest mode.
 If null, a default configuration is used.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TickSourceConfig TickConfig { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickSourceConfig.html">TickSourceConfig</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Market.Models.TickSourceConfig.html">TickSourceConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Timeframe.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Timeframe%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L61">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Timeframe_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Timeframe*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Timeframe" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Timeframe">
-  Timeframe
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L61"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Timeframe" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Timeframe">Timeframe</h4>
   <div class="markdown level1 summary"><p>Gets or sets the timeframe for the strategy (e.g., 1m, 5m, 1h).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Timeframe Timeframe { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.Timeframe.html">Timeframe</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TradeMode.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TradeMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L52">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TradeMode_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TradeMode*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TradeMode" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TradeMode">
-  TradeMode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L52"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_TradeMode" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.TradeMode">TradeMode</h4>
   <div class="markdown level1 summary"><p>Gets or sets the trading mode (e.g., Isolated, Cross).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TradeMode TradeMode { get; init; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Enums.TradeMode.html">TradeMode</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Enums.TradeMode.html">TradeMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Underlying.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Underlying%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L25">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Underlying_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Underlying*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Underlying" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Underlying">
-  Underlying
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L25"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Underlying" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Underlying">Underlying</h4>
   <div class="markdown level1 summary"><p>Gets or sets the underlying asset (e.g., &quot;BTC&quot;).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Underlying { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_WarmupBars.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.WarmupBars%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L34">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_WarmupBars_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.WarmupBars*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_WarmupBars" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.WarmupBars">
-  WarmupBars
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L34"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_WarmupBars" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.WarmupBars">WarmupBars</h4>
   <div class="markdown level1 summary"><p>Gets or sets the number of bars used to warm up technical indicators before the strategy starts.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int WarmupBars { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Clone.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Clone%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L94">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Clone_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Clone*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Clone" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Clone">
-  Clone()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L94"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_Clone" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.Clone">Clone()</h4>
   <div class="markdown level1 summary"><p>Creates a deep copy of the current <a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.html">StrategySettings</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public StrategySettings Clone()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.html">StrategySettings</a></dt>
-    <dd><p>A new <a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.html">StrategySettings</a> object with the same property values.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.html">StrategySettings</a></td>
+        <td><p>A new <a class="xref" href="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.html">StrategySettings</a> object with the same property values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings_ToString.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L132">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_ToString_" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.ToString*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_ToString" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.ToString">
-  ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L132"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Strategy_Settings_StrategySettings_ToString" data-uid="Pt.Okx.Sdk.Strategy.Settings.StrategySettings.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A string that represents the current object.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Strategy_Settings_StrategySettings.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Strategy.Settings.StrategySettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Strategy/Settings/StrategySettings.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

@@ -1,128 +1,98 @@
 <!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+
   <head>
     <meta charset="utf-8">
-      <title>Class IndicatorSpecialFeatures | Pt.Okx.Sdk API </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class IndicatorSpecialFeatures | Pt.Okx.Sdk API ">
-      
-      <meta name="description" content="Optional display features for specific indicator families. These settings add extra chart elements such as bound lines, a zero line, histogram coloring, and fill regions between buffers.">
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/phanthanh157/PlatinumTrade/new/Okx_Sdk/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
-
-      <script type="module" src="./../public/docfx.min.js"></script>
-
-      <script>
-        const theme = localStorage.getItem('theme') || 'auto'
-        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-      </script>
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class IndicatorSpecialFeatures | PlatinumTrade SDK API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class IndicatorSpecialFeatures | PlatinumTrade SDK API Reference ">
+    
+    <meta name="description" content="Optional display features for specific indicator families. These settings add extra chart elements such as bound lines, a zero line, histogram coloring, and fill regions between buffers.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Pt.Okx.Sdk">
-            Pt.Okx.Sdk
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
 
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
         </div>
       </div>
+      <div role="main" class="container body-content hide-when-search">
 
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures">
 
-        <article data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures">
 
 
-
-  <h1 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures" class="text-break">
-Class IndicatorSpecialFeatures  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L54"><i class="bi bi-code-slash"></i></a>
-  </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.html">Models</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Pt.Okx.Sdk.dll</dd></dl>
-  </div>
-
-  <div class="markdown summary"><p>Optional display features for specific indicator families.
+  <h1 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures" class="text-break">Class IndicatorSpecialFeatures</h1>
+  <div class="markdown level0 summary"><p>Optional display features for specific indicator families.
 These settings add extra chart elements such as bound lines, a zero line,
 histogram coloring, and fill regions between buffers.</p>
 </div>
-  <div class="markdown conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IndicatorSpecialFeatures</code></pre>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">IndicatorSpecialFeatures</span></div>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">IndicatorSpecialFeatures</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -144,913 +114,905 @@ histogram coloring, and fill regions between buffers.</p>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.html">Indicators</a>.<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.html">Models</a></h6>
+  <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
+  <h5 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class IndicatorSpecialFeatures</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundFillColor.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundFillColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L122">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundFillColor_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundFillColor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundFillColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundFillColor">
-  BoundFillColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L122"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundFillColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundFillColor">BoundFillColor</h4>
   <div class="markdown level1 summary"><p>Gets or sets the fill color used between the upper and lower bound lines.
 Default is <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorColor_Gray">Gray</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorColor BoundFillColor { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundFillOpacity.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundFillOpacity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L128">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundFillOpacity_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundFillOpacity*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundFillOpacity" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundFillOpacity">
-  BoundFillOpacity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L128"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundFillOpacity" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundFillOpacity">BoundFillOpacity</h4>
   <div class="markdown level1 summary"><p>Gets or sets the fill transparency for the bound area (0 = fully transparent, 255 = fully opaque).
 Default is 30.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public byte BoundFillOpacity { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundLineStyle.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundLineStyle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L107">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundLineStyle_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundLineStyle*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundLineStyle" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundLineStyle">
-  BoundLineStyle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L107"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_BoundLineStyle" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.BoundLineStyle">BoundLineStyle</h4>
   <div class="markdown level1 summary"><p>Gets or sets the dash style shared by all bound lines. Default is <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorStyle.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorStyle_Dashed">Dashed</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorStyle BoundLineStyle { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorStyle.html">IndicatorStyle</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorStyle.html">IndicatorStyle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineColor.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L104">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineColor_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineColor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineColor">
-  CenterLineColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L104"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineColor">CenterLineColor</h4>
   <div class="markdown level1 summary"><p>Gets or sets the color of the center line. Default is <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorColor_Gray">Gray</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorColor CenterLineColor { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineValue.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L92">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineValue_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineValue*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineValue">
-  CenterLineValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L92"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineValue">CenterLineValue</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Y value of the center line. Default is 50.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double CenterLineValue { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineWidth.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineWidth%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L95">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineWidth_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineWidth*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineWidth" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineWidth">
-  CenterLineWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L95"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_CenterLineWidth" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineWidth">CenterLineWidth</h4>
   <div class="markdown level1 summary"><p>Gets or sets the stroke width of the center line. Default is 1.0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double CenterLineWidth { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_FillRegions.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.FillRegions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L159">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_FillRegions_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.FillRegions*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_FillRegions" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.FillRegions">
-  FillRegions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L159"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_FillRegions" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.FillRegions">FillRegions</h4>
   <div class="markdown level1 summary"><p>Gets the list of shaded regions drawn between pairs of buffers.
 Each entry is rendered independently and can use a different
 color mode and opacity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IEnumerable&lt;IndicatorFillRegion&gt; FillRegions { get; init; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.html">IndicatorFillRegion</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.html">IndicatorFillRegion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_HistogramNegativeColor.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.HistogramNegativeColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L139">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_HistogramNegativeColor_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.HistogramNegativeColor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_HistogramNegativeColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.HistogramNegativeColor">
-  HistogramNegativeColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L139"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_HistogramNegativeColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.HistogramNegativeColor">HistogramNegativeColor</h4>
   <div class="markdown level1 summary"><p>Gets or sets the color for histogram bars with negative values. Default is <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorColor_Red">Red</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorColor HistogramNegativeColor { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_HistogramPositiveColor.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.HistogramPositiveColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L136">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_HistogramPositiveColor_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.HistogramPositiveColor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_HistogramPositiveColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.HistogramPositiveColor">
-  HistogramPositiveColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L136"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_HistogramPositiveColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.HistogramPositiveColor">HistogramPositiveColor</h4>
   <div class="markdown level1 summary"><p>Gets or sets the color for histogram bars with positive values. Default is <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorColor_Green">Green</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorColor HistogramPositiveColor { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundColor.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L101">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundColor_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundColor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundColor">
-  LowerBoundColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L101"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundColor">LowerBoundColor</h4>
   <div class="markdown level1 summary"><p>Gets or sets the color of the lower-bound line. Default is <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorColor_Green">Green</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorColor LowerBoundColor { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundValue.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L86">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundValue_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundValue*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundValue">
-  LowerBoundValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L86"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundValue">LowerBoundValue</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Y value of the lower-bound line. Default is 30.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double LowerBoundValue { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundWidth.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundWidth%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L89">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundWidth_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundWidth*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundWidth" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundWidth">
-  LowerBoundWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L89"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_LowerBoundWidth" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.LowerBoundWidth">LowerBoundWidth</h4>
   <div class="markdown level1 summary"><p>Gets or sets the stroke width of the lower-bound line. Default is 1.0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double LowerBoundWidth { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MaxValue.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.MaxValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L66">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MaxValue_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.MaxValue*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MaxValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.MaxValue">
-  MaxValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L66"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MaxValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.MaxValue">MaxValue</h4>
   <div class="markdown level1 summary"><p>Gets or sets the fixed maximum Y value when <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UseRangeValue">UseRangeValue</a> is <code>true</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double MaxValue { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MinValue.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.MinValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L63">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MinValue_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.MinValue*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MinValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.MinValue">
-  MinValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L63"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MinValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.MinValue">MinValue</h4>
   <div class="markdown level1 summary"><p>Gets or sets the fixed minimum Y value when <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UseRangeValue">UseRangeValue</a> is <code>true</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double MinValue { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowBoundFill.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowBoundFill%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L116">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowBoundFill_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowBoundFill*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowBoundFill" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowBoundFill">
-  ShowBoundFill
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L116"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowBoundFill" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowBoundFill">ShowBoundFill</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to fill the area between the upper-bound line and the
 lower-bound line. Only rendered when both <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowUpperBound">ShowUpperBound</a> and
 <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowLowerBound">ShowLowerBound</a> are <code>true</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowBoundFill { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowCenterLine.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowCenterLine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L77">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowCenterLine_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowCenterLine*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowCenterLine" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowCenterLine">
-  ShowCenterLine
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L77"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowCenterLine" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowCenterLine">ShowCenterLine</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to draw a horizontal center line (e.g. RSI midpoint at 50).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowCenterLine { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowHistogram.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowHistogram%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L133">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowHistogram_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowHistogram*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowHistogram" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowHistogram">
-  ShowHistogram
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L133"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowHistogram" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowHistogram">ShowHistogram</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to render the primary buffer as a histogram.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowHistogram { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowLowerBound.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowLowerBound%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L74">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowLowerBound_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowLowerBound*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowLowerBound" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowLowerBound">
-  ShowLowerBound
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L74"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowLowerBound" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowLowerBound">ShowLowerBound</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to draw a horizontal lower-bound line (e.g. RSI oversold at 30).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowLowerBound { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowUpperBound.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowUpperBound%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L71">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowUpperBound_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowUpperBound*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowUpperBound" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowUpperBound">
-  ShowUpperBound
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L71"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowUpperBound" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowUpperBound">ShowUpperBound</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to draw a horizontal upper-bound line (e.g. RSI overbought at 70).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowUpperBound { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowZeroLine.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowZeroLine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L142">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowZeroLine_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowZeroLine*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowZeroLine" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowZeroLine">
-  ShowZeroLine
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L142"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ShowZeroLine" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ShowZeroLine">ShowZeroLine</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to draw a horizontal zero line across the panel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowZeroLine { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundColor.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L98">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundColor_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundColor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundColor">
-  UpperBoundColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L98"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundColor">UpperBoundColor</h4>
   <div class="markdown level1 summary"><p>Gets or sets the color of the upper-bound line. Default is <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorColor_Red">Red</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorColor UpperBoundColor { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundValue.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L80">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundValue_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundValue*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundValue">
-  UpperBoundValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L80"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundValue">UpperBoundValue</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Y value of the upper-bound line. Default is 70.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double UpperBoundValue { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundWidth.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundWidth%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L83">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundWidth_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundWidth*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundWidth" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundWidth">
-  UpperBoundWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L83"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UpperBoundWidth" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UpperBoundWidth">UpperBoundWidth</h4>
   <div class="markdown level1 summary"><p>Gets or sets the stroke width of the upper-bound line. Default is 1.0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double UpperBoundWidth { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UseRangeValue.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UseRangeValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L60">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UseRangeValue_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UseRangeValue*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UseRangeValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UseRangeValue">
-  UseRangeValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L60"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_UseRangeValue" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.UseRangeValue">UseRangeValue</h4>
   <div class="markdown level1 summary"><p>Gets or sets whether to lock the Y-axis range to <a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MinValue">MinValue</a>/<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_MaxValue">MaxValue</a>
 rather than auto-scaling to visible data (e.g. RSI 0–100).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool UseRangeValue { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ZeroLineColor.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ZeroLineColor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L148">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ZeroLineColor_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ZeroLineColor*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ZeroLineColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ZeroLineColor">
-  ZeroLineColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L148"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ZeroLineColor" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ZeroLineColor">ZeroLineColor</h4>
   <div class="markdown level1 summary"><p>Gets or sets the color of the zero line. Default is <a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorColor_Gray">Gray</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IndicatorColor ZeroLineColor { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html">IndicatorColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ZeroLineWidth.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ZeroLineWidth%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L145">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ZeroLineWidth_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ZeroLineWidth*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ZeroLineWidth" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ZeroLineWidth">
-  ZeroLineWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L145"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_ZeroLineWidth" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.ZeroLineWidth">ZeroLineWidth</h4>
   <div class="markdown level1 summary"><p>Gets or sets the stroke width of the zero line. Default is 1.0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double ZeroLineWidth { get; set; }</code></pre>
   </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_SetFillRegions_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Indicators_Models_IndicatorFillRegion__.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.SetFillRegions(System.Collections.Generic.IEnumerable%7BPt.Okx.Sdk.Indicators.Models.IndicatorFillRegion%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L177">View Source</a>
+  </span>
   <a id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_SetFillRegions_" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.SetFillRegions*"></a>
-
-  <h3 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_SetFillRegions_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Indicators_Models_IndicatorFillRegion__" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.SetFillRegions(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion})">
-  SetFillRegions(IEnumerable&lt;IndicatorFillRegion&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/phanthanh157/PlatinumTrade/blob/Okx_Sdk/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L177"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
+  <h4 id="Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_SetFillRegions_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Indicators_Models_IndicatorFillRegion__" data-uid="Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.SetFillRegions(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion})">SetFillRegions(IEnumerable&lt;IndicatorFillRegion&gt;)</h4>
   <div class="markdown level1 summary"><p>Sets the list of shaded regions drawn between pairs of buffers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-
+  <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetFillRegions(IEnumerable&lt;IndicatorFillRegion&gt; regions)</code></pre>
   </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>regions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.html">IndicatorFillRegion</a>&gt;</dt>
-    <dd><p>The list of shaded regions.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.html">IndicatorFillRegion</a>&gt;</td>
+        <td><span class="parametername">regions</span></td>
+        <td><p>The list of shaded regions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
+          </div>
 
-
-
-      </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          Pt.Okx.Sdk &mdash; Platinum Trading Platform Contracts &amp; Interfaces &copy; 2025-2026 Platinum Trade
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Models/IndicatorProperty.cs/#L54" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>
