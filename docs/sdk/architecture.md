@@ -25,7 +25,7 @@ CLI Bot     Platinum Trade App
   |
 Pt.Example.Stgy.UpTrend             ← Strategy plugin (example)
 
-Okx.IndicatorExample     → Pt.Okx.Sdk  ← Indicator plugin (example)
+Pt.Examples.Indicator     → Pt.Okx.Sdk  ← Indicator plugin (example)
 Unit Tests               → Core Engine + Pt.Okx.Sdk
 ```
 
@@ -38,7 +38,7 @@ Unit Tests               → Core Engine + Pt.Okx.Sdk
 | **CLI Bot** | `net10.0` | Console host for real / forward trading |
 | **Platinum Trade App** | `net10.0-windows` | WPF app — workspace, chart, market watch, strategy config, backtest UI |
 | `Pt.Example.Stgy.UpTrend` | `net10.0` | Example strategy plugin — trend-following strategy |
-| `Okx.IndicatorExample` | `net10.0` | Example indicator plugin — MA Crossover, Momentum, ExRSI |
+| `Pt.Examples.Indicator` | `net10.0` | Example indicator plugin — MA Crossover, Momentum, ExRSI |
 | **Unit Tests** | `net10.0` | NUnit tests for core, simulator, indicator, candle history |
 
 

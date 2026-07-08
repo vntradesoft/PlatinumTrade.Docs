@@ -27,7 +27,7 @@ publish: false
 ## Who uses this SDK?
 
 - **Strategy developers** — build trading strategy plugins (e.g., `Pt.Example.Stgy.UpTrend`)
-- **Indicator developers** — build custom technical indicators (e.g., `Okx.IndicatorExample`)
+- **Indicator developers** — build custom technical indicators (e.g., `Pt.Examples.Indicator`)
 - **Core Engine** — implements the interfaces defined in this SDK
 - **GUI / Bot** (**Platinum Trade App**, **CLI Bot**) — consume services via dependency injection
 
