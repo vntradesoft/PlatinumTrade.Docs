@@ -58,7 +58,7 @@ public class MyStrategy : StrategyBase
         }
     }
 
-    public async Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken ct)
+    public async Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct)
     {
         // Example: access the configured symbol and timeframe
         var symbol = _settings.Symbol;

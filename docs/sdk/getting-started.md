@@ -65,8 +65,7 @@ public class MyStrategy : IStrategy
         _logger = logger;
     }
 
-    public async Task<bool> InitializeAsync(
-        IStrategyStateStore state, CancellationToken ct)
+    public async Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct)
     {
         _logger.LogInformation("Init", "Strategy initialized");
         return true;
@@ -86,7 +85,7 @@ public class MyStrategy : IStrategy
         }
     }
 
-    public Task<bool> StopAsync(CancellationToken ct)
+    public Task<bool> OnStopAsync(CancellationToken ct)
     {
         _logger.LogInformation("Stop", "Strategy stopped");
         return Task.FromResult(true);

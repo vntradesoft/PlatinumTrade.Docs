@@ -33,7 +33,7 @@ public class MyStrategy : StrategyBase
         _client = client;
     }
 
-    public async Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken ct)
+    public async Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct)
     {
         // 1. Create a SuperTrend indicator
         _superTrend = _client.Timeseries.CreateIndicatorSuperTrend(
@@ -117,7 +117,7 @@ public class MyStrategy : StrategyBase
 During `InitializeAsync`, you first tell the `IIndicatorPluginLoader` to scan and load the DLL containing your custom indicators.
 
 ```csharp
-public async Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken ct)
+public async Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct)
 {
     // Path to the DLL (usually configured via InputParameters)
     string dllPath = @"C:\Trading\Plugins\MyCustomIndicators.dll";

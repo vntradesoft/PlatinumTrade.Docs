@@ -19,13 +19,13 @@ Every strategy follows the `IStrategy` lifecycle. For most cases, inherit from `
 public interface IStrategy
 {
     // ① Initialization — called once when the bot starts
-    Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken ct);
+    Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct);
 
     // ② Market cadence callback — called on each market update
     Task OnTickAsync(TickPhase tickPhase, CancellationToken ct);
 
     // ③ Cleanup — called once when the bot stops
-    Task<bool> StopAsync(CancellationToken ct);
+    Task<bool> OnStopAsync(CancellationToken ct);
 }
 ```
 

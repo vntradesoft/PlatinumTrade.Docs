@@ -237,7 +237,7 @@ public class TrendStrategy : IStrategy
 
     public TrendStrategy(IOkxClient client) => _client = client;
 
-    public Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken ct)
+    public Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct)
     {
         var ts = _client.Timeseries;
         _ma50 = ts.CreateIndicatorMA(period: 50, method: MaMethod.EMA);
@@ -268,7 +268,7 @@ public class TrendStrategy : IStrategy
         }
     }
 
-    public Task<bool> StopAsync(CancellationToken ct) => Task.FromResult(true);
+    public Task<bool> OnStopAsync(CancellationToken ct) => Task.FromResult(true);
 }
 ```
 

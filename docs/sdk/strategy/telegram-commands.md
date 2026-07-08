@@ -210,7 +210,7 @@ namespace MyCustomStrategy
             _logger = logger;
         }
 
-        public override Task<bool> InitializeAsync(IStrategyStateStore state, CancellationToken cancellationToken)
+        public override Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken cancellationToken)
         {
             return Task.FromResult(true);
         }
@@ -295,7 +295,7 @@ namespace MyCustomStrategy
             await Task.CompletedTask;
         }
 
-        public override Task<bool> StopAsync(CancellationToken cancellationToken)
+        public override Task<bool> OnStopAsync(CancellationToken cancellationToken)
         {
             return Task.FromResult(true);
         }
