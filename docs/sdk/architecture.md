@@ -65,21 +65,23 @@ Pt.Okx.Sdk
 │   └── ApiErrorType, PtLogLevel
 ├── Indicators
 │   ├── Base (IIndicator, CalcIndBase, IIndicatorBuffer)
-│   ├── BuiltIn (IIndicatorMA, IIndicatorRSI, ...)
-│   ├── Plugin (IIndicatorPlugin, IIndicatorRegistrationContext)
+│   ├── BuiltIn (IndicatorTrend, IndicatorOscillator, ...)
+│   ├── Enums (AppliedPrice, MaMethod, IndicatorStyle, ...)
+│   ├── Models (IndicatorConfig, IndicatorProperty, IndicatorValue, ...)
+│   ├── Plugin (IIndicatorPlugin, IndicatorLoadedPlugin)
 │   └── Services (IIndicatorFactory, IIndicatorManager)
 ├── Strategy
-│   ├── IStrategy, IStrategyStateStore, IStrategyLogger
-│   ├── Plugin (IStrategyPlugin, IStrategyPluginMetadata)
-│   ├── Settings (StrategySettings)
-│   ├── Parameters (InputParameter, IntParameter, ...)
-│   └── Events (StrategyEventType, StrategyEvent)
+│   ├── IStrategy, StrategyBase, IStrategyLogger, IStrategyStateStore
+│   ├── Events (TickPhase, StrategyEventType, StrategyEvent)
+│   ├── Parameters (InputParameter, IInputParamManager, InputSchema)
+│   ├── Plugin (IStrategyPlugin, IStrategyPluginMetadata, IStrategyPluginInputSchema)
+│   └── Settings (StrategySettings, DateOption, PriceDataOption)
 ├── Drawing
 │   └── IDrawingManager               ← Chart drawing objects
 ├── Notifier
 │   └── ITelegramCommandExtension     ← Telegram commands
 └── Storage
-    └── IStoragePathProvider           ← Runtime storage paths
+    └── IStoragePathProvider          ← Runtime storage paths
 ```
 
 ## Technology Stack
