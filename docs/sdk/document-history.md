@@ -12,7 +12,24 @@ publish: false
 
 This page tracks the significant changes and updates made to the Platinum Trading Platform (supporting OKX exchange futures & swaps) SDK documentation.
 
-| Change | Description | Date |
-|---|---|---|
-| Updated to .NET 10 | Target frameworks updated to .NET 10 (GUI/CLI) and .NET 8/9/10 (SDK) | 2026-06-24 |
-| Initial Draft | Initial SDK API documentation | 2025-01-01 |
+### [0.9.0-beta.4] - 2026-07-08
+
+#### Features
+- **sdk:** Sync with App version.
+
+### [0.9.0-beta.3] - 2026-07-08
+
+#### Features
+- **sdk:** Add dotnet project templates for strategy and indicator.
+
+### [0.9.0-beta.2] - 2026-07-06
+
+#### Features
+- **sdk:** Update abstractions for strategy engine, plugins, indicators, and backtest.
+
+### [0.9.0-beta.1] - 2026-07-05
+
+#### Features
+- **sdk:** Initial Beta Release.
+  - Public contract surface for plugin development.
+  - Initial `Pt.Okx.Sdk` NuGet package release.
