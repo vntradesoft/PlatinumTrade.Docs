@@ -1,20 +1,19 @@
-﻿---
+---
 id: support-contact
-title: Contact
-description: TBD
-status: tbd
+title: Contact Us
+description: Get help, ask questions, or report issues
 ---
 
-# Contact
+# Contact & Support
 
-## Status: TBD
+If you have questions, need assistance with the Platinum Trade Platform or the SDK, or want to report an issue, please reach out through the following channels:
 
-- This page is a placeholder and will be filled in a later phase.
-- Source validation should reference implementation code and/or legacy docs in docs/temp.
+## Community & Discussions
 
-## Open Questions
+- **Discord**: [Join the PlatinumTrade community](https://discord.gg/UBV8YnMJs) - Best for real-time chat, general questions, and community support.
+- **GitHub Discussions**: [vntradesoft/PlatinumTrade.App/discussions](https://github.com/vntradesoft/PlatinumTrade.App/discussions) - Best for long-form discussions, sharing ideas, and strategy development.
 
-- [ ] What exact user/developer problem does this page solve?
-- [ ] Which code modules and symbols are authoritative references?
-- [ ] Which parts are stable vs pending design decisions?
+## Bug Reports & Feature Requests
 
+- **SDK Issues**: [Report bugs or suggest features for Pt.Okx.Sdk](https://github.com/vntradesoft/PlatinumTrade.Sdk/issues)
+- **Platform Issues**: Please use the issue tracker in the relevant public repository or post in our Discord server if you don't have access to the main App repository.
