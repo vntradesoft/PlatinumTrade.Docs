@@ -12,8 +12,16 @@
   href: market-data.md
 - name: Drawing API
   href: drawing-api.md
-- name: Custom Indicator Plugin
-  href: indicator-plugin.md
+- name: Indicator Plugin
+  items:
+    - name: Overview & Setup
+      href: indicator/overview.md
+    - name: Registration & Parameters
+      href: indicator/registration.md
+    - name: Properties & Buffers
+      href: indicator/properties-buffers.md
+    - name: Calculation Flow
+      href: indicator/calculation.md
 - name: Strategy Plugin
   items:
     - name: Overview & Lifecycle

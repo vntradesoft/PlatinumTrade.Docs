@@ -1,0 +1,8 @@
+{
+  "label": "Indicator Plugin",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Developing custom indicator plugins"
+  }
+}
