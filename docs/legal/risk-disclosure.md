@@ -33,6 +33,6 @@ Trade only with capital you can afford to lose.
 This Risk Disclosure should be read together with the [Disclaimer](disclaimer.md) and [Limitation of Liability](liability.md), which further describe the basis on which the Software is provided and the limits of Platinum Trade's responsibility.
 
 ## 5. Contact
-Phan Thanh — Platinum Trade
+vntradesoft — Platinum Trade
 Email: vntradesoft@gmail.com
 

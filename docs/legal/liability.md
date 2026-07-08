@@ -53,6 +53,6 @@ The User is responsible for safeguarding:
 We recommend creating exchange API keys with trading permissions only (no withdrawal permission) and enabling IP-address restrictions where supported by the exchange. Losses resulting from improper security practices, leaked credentials, or compromised devices remain the sole responsibility of the User.
 
 ## 6. Contact
-Phan Thanh — Platinum Trade
+vntradesoft — Platinum Trade
 Email: vntradesoft@gmail.com
 

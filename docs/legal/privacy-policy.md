@@ -20,6 +20,6 @@ If the User resides in a jurisdiction with specific data protection requirements
 While the Software applies OS-level protections to sensitive local data, the User remains responsible for safeguarding their own device, API keys, passwords, license files, and backups. See the [Limitation of Liability](liability.md) for further detail.
 
 ## 5. Contact
-Phan Thanh — Platinum Trade
+vntradesoft — Platinum Trade
 Email: vntradesoft@gmail.com
 

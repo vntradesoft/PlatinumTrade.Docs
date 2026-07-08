@@ -73,6 +73,6 @@ SOFTWARE.
 Used by: `TelegramNotifier` (Platinum Trade notification module) for sending trade and system alerts to Telegram.
 
 # Contact
-Phan Thanh — Platinum Trade
+vntradesoft — Platinum Trade
 Email: vntradesoft@gmail.com
 

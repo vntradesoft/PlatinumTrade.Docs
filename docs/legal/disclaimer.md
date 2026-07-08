@@ -44,6 +44,6 @@ Platinum Trade is an independent software product developed by an individual dev
 This Disclaimer should be read together with the [Risk Disclosure](risk-disclosure.md) and [Limitation of Liability](liability.md).
 
 ## 6. Contact
-Phan Thanh — Platinum Trade
+vntradesoft — Platinum Trade
 Email: vntradesoft@gmail.com
 

@@ -22,6 +22,6 @@ Platinum Trade reserves the right to introduce paid features, tiers, or services
 The User acknowledges that, because the Software is provided without charge and remains in BETA, the level of assurance, support, and liability undertaken by Platinum Trade is necessarily limited, as further set out in the [Disclaimer](disclaimer.md) and [Limitation of Liability](liability.md).
 
 ## 5. Contact
-Phan Thanh — Platinum Trade
+vntradesoft — Platinum Trade
 Email: vntradesoft@gmail.com
 

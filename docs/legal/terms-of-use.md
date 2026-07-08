@@ -122,6 +122,6 @@ These Terms shall be governed by and construed in accordance with the laws of Vi
 If any provision of these Terms is found invalid or unenforceable by a competent court, that provision shall be removed or limited to the minimum extent necessary, and the remaining provisions shall continue in full force and effect.
 
 ## 11. Contact
-Phan Thanh — Platinum Trade
+vntradesoft — Platinum Trade
 Email: vntradesoft@gmail.com
 
