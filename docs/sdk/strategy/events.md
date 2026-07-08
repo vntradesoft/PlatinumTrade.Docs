@@ -81,7 +81,7 @@ public interface IStrategyStateStore
 
 ### When to query the API directly vs using `IStrategyStateStore`?
 
-- **Use `IOkxClient` APIs directly** in `InitializeAsync` for recovery and bootstrap checks.
+- **Use `IOkxClient` APIs directly** in `OnInitAsync` for recovery and bootstrap checks.
 - **Use optional typed handlers** for event-driven workflows (`OnOrderAsync`, `OnPositionAsync`, etc.).
 - Keep `OnTickAsync(TickPhase, ...)` focused on market cadence decisions.
 

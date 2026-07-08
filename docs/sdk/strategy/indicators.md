@@ -13,7 +13,7 @@ A robust strategy often relies on technical indicators. The `Pt.Okx.Sdk` provide
 
 ## 1. Using Built-in Indicators
 
-To use built-in indicators, you call the `CreateIndicator...` methods from `_client.Timeseries` during your strategy's `InitializeAsync` phase.
+To use built-in indicators, you call the `CreateIndicator...` methods from `_client.Timeseries` during your strategy's `OnInitAsync` phase.
 
 When you create an indicator this way, the platform automatically registers it. As new candles or ticks arrive, the platform automatically feeds the data into the indicator, updating its values. Furthermore, any indicators created here are **automatically rendered on the GUI Chart**.
 
@@ -114,7 +114,7 @@ public class MyStrategy : StrategyBase
 
 ### Loading the Plugin DLL
 
-During `InitializeAsync`, you first tell the `IIndicatorPluginLoader` to scan and load the DLL containing your custom indicators.
+During `OnInitAsync`, you first tell the `IIndicatorPluginLoader` to scan and load the DLL containing your custom indicators.
 
 ```csharp
 public async Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct)

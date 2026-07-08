@@ -98,7 +98,7 @@ var amendResult = await _client.Trade.AmendAlgoOrderAsync(
 
 ## Fetching Live Data
 
-While the host state store is the fastest source during strategy callbacks, you often need to fetch live data directly from the exchange during `InitializeAsync` to recover state after restarts.
+While the host state store is the fastest source during strategy callbacks, you often need to fetch live data directly from the exchange during `OnInitAsync` to recover state after restarts.
 
 ```csharp
 // 1. Get live positions

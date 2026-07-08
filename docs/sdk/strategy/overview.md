@@ -71,7 +71,7 @@ The execution flow of a strategy follows this pattern:
 ```text
 Bot Start
   │
-  ├── InitializeAsync()     ← Setup indicators, load configuration, recover state
+  ├── OnInitAsync()         ← Setup indicators, load configuration, recover state
   │
     ├── OnTickAsync(Tick)           ← Intra-bar update
     ├── OnTickAsync(BarClose)       ← Candle close update
@@ -83,7 +83,7 @@ Bot Start
     ├── OnTradeCommandAsync(...)    ← Telegram/UI command
   │   ... (repeats) ...
   │
-  └── StopAsync()            ← Cleanup, cancel pending orders, close positions (optional)
+  └── OnStopAsync()          ← Cleanup, cancel pending orders, close positions (optional)
 ```
 
 ## State Ownership
