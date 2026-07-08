@@ -127,26 +127,29 @@ To fetch chart data, historical candles, or current prices, use `IOkxClient.Time
 
 ### Fetching Candles (OHLCV)
 
-You can query candles using an index-based shift system:
-- `shift = 0` refers to the **currently forming candle** (not yet closed).
-- `shift = 1` refers to the **last fully closed candle**.
-- `shift = 2` refers to the candle before that, and so on.
+You can query candles using an index-based shift system.
+
+> [!IMPORTANT]
+> The system **does not support** querying the currently forming (unclosed) candle via `shift`. 
+> - `shift = 0` refers to the **latest fully closed candle**.
+> - `shift = 1` refers to the candle closed immediately before that, and so on.
+> - This rule also applies when accessing Indicator values (`GetValue(0)` gets the indicator value computed at the last closed candle).
 
 ```csharp
-// Get the currently forming candle (Shift 0)
-var currentFormingCandle = await _client.Timeseries.GetCurrentCandleAsync("BTC-USDT-SWAP", Timeframe.M15, ct);
+// Get the latest fully closed candle (Shift 0)
+var latestClosedCandle = await _client.Timeseries.GetOHCLVAsync("BTC-USDT-SWAP", Timeframe.M15, shift: 0, ct);
 
-// Get the last fully closed candle (Shift 1)
-var lastClosedCandle = await _client.Timeseries.GetOHCLVAsync("BTC-USDT-SWAP", Timeframe.M15, shift: 1, ct);
+// Get the previous closed candle (Shift 1)
+var previousClosedCandle = await _client.Timeseries.GetOHCLVAsync("BTC-USDT-SWAP", Timeframe.M15, shift: 1, ct);
 
 // Access OHLCV properties
-if (!lastClosedCandle.IsEmpty)
+if (!latestClosedCandle.IsEmpty)
 {
-    decimal open = lastClosedCandle.Open;
-    decimal high = lastClosedCandle.High;
-    decimal low = lastClosedCandle.Low;
-    decimal close = lastClosedCandle.Close;
-    decimal vol = lastClosedCandle.Volume;
+    decimal open = latestClosedCandle.Open;
+    decimal high = latestClosedCandle.High;
+    decimal low = latestClosedCandle.Low;
+    decimal close = latestClosedCandle.Close;
+    decimal vol = latestClosedCandle.Volume;
 }
 ```
 

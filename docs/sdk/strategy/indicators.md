@@ -63,6 +63,9 @@ public class MyStrategy : StrategyBase
 
 Once initialized, the indicators automatically stay up-to-date. You simply read their properties when a new candle closes.
 
+> [!IMPORTANT]
+> When reading indicator values (e.g. `_atr.Value` or `.FindValue(0)`), the system always returns the value computed at the **latest fully closed candle** (`shift: 0`). The system does not support retrieving indicator values for the currently forming (unclosed) candle.
+
 ```csharp
 public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
 {

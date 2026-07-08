@@ -36,18 +36,19 @@ int maxBars     = ts.MaxBars;              // Maximum bars in cache
 ### Current and Previous Candles
 
 ```csharp
-// Currently forming candle (shift = 0)
-var current = await ts.GetCurrentCandleAsync();
-
-// Most recent closed candle
+// The latest closed candle (shift = 0)
 var lastClosed = ts.GetLastClosedCandle();
 
-// Candle at a specific index (0 = current, 1 = previous, …)
+// Candle at a specific index (0 = latest closed, 1 = previous closed, …)
 var prev = await ts.GetOHCLVAsync(
     symbol: "BTC-USDT",
     timeframe: Timeframe.OneHour,
     shift: 1);
 ```
+
+> [!IMPORTANT]
+> The system **does not support** querying the currently forming (unclosed) candle. 
+> `shift = 0` always refers to the **latest fully closed candle**. This rule applies to both OHLCV data and Indicator values (`GetValue(0)` returns the value at the last closed candle).
 
 > [!NOTE]
 > The `symbol` and `timeframe` parameters are optional — when omitted, the defaults from the strategy settings are used.
@@ -193,7 +194,7 @@ Each built-in indicator returns a typed interface with convenience methods:
 ```csharp
 var rsi = ts.CreateIndicatorRSI(period: 14);
 
-IndicatorValue val = rsi.FindValue(0);   // 0 = current bar
+IndicatorValue val = rsi.FindValue(0);   // 0 = latest closed candle
 if (!val.IsEmpty)
 {
     decimal rsiValue = (decimal)val.Value;
@@ -228,7 +229,7 @@ ts.CopyBuffer(handle, bufferNumber: 2,
 ## Example: Strategy Using Indicators
 
 ```csharp
-public class TrendStrategy : IStrategy
+public class TrendStrategy : StrategyBase
 {
     private readonly IOkxClient _client;
     private IIndicatorMA? _ma50;
@@ -237,7 +238,7 @@ public class TrendStrategy : IStrategy
 
     public TrendStrategy(IOkxClient client) => _client = client;
 
-    public Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct)
+    public override Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken ct)
     {
         var ts = _client.Timeseries;
         _ma50 = ts.CreateIndicatorMA(period: 50, method: MaMethod.EMA);
@@ -246,29 +247,28 @@ public class TrendStrategy : IStrategy
         return Task.FromResult(true);
     }
 
-    public async Task RunAsync(
-        StrategyEventType eventType, IStrategyStateStore state, CancellationToken ct)
+    public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
     {
-        if (eventType != StrategyEventType.Kline) return;
+        if (tickPhase != TickPhase.BarClose) return;
 
         var candle = _client.Timeseries.GetLastClosedCandle();
-        var maVal  = _ma50!.FindValue(1);
-        var rsiVal = _rsi!.FindValue(1);
-        var atrVal = _atr!.FindValue(1);
+        var maVal  = _ma50!.FindValue(0); // 0 = latest closed candle
+        var rsiVal = _rsi!.FindValue(0);
+        var atrVal = _atr!.FindValue(0);
 
         if (maVal.IsEmpty || rsiVal.IsEmpty || atrVal.IsEmpty) return;
 
         bool aboveMa = candle.Close > (decimal)maVal.Value;
         bool rsiOk   = rsiVal.Value > 40 && rsiVal.Value < 70;
 
-        if (aboveMa && rsiOk && !state.HasOpenPosition)
+        if (aboveMa && rsiOk && !State.HasOpenPosition)
         {
             await _client.Trade.PlaceOrderAsync(
                 "BTC-USDT", OrderSide.Buy, OrderType.Market, 0.01m);
         }
     }
 
-    public Task<bool> OnStopAsync(CancellationToken ct) => Task.FromResult(true);
+    public override Task<bool> OnStopAsync(CancellationToken ct) => Task.FromResult(true);
 }
 ```
 
