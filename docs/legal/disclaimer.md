@@ -30,7 +30,7 @@ Platinum Trade does not:
 - act as a broker, exchange, custodian, asset manager, or financial institution;
 - create, review, audit, or certify any third-party strategy, indicator, or plugin;
 - verify the profitability, safety, or correctness of any strategy or plugin;
-- guarantee the trading outcomes of any strategy or plugin, including sample plugins distributed with the Software (e.g., Stgy.UpTrend).
+- guarantee the trading outcomes of any strategy or plugin, including sample plugins distributed with the Software (e.g., Pt.Example.Stgy.UpTrend).
 
 Any sample, example, or demonstration plugin distributed with the Software is provided strictly for illustrative and SDK-testing purposes. It is not intended, warranted, or recommended for live trading use, and we accept no responsibility for trading outcomes resulting from its use.
 

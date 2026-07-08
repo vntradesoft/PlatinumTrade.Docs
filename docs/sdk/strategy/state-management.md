@@ -22,7 +22,7 @@ State must be encapsulated within dedicated service/manager classes injected via
 
 ## 2. Using State Managers
 
-We recommend splitting your state into dedicated managers, as demonstrated in the `Stgy.UpTrend` example plugin.
+We recommend splitting your state into dedicated managers, as demonstrated in the `Pt.Example.Stgy.UpTrend` example plugin.
 
 - **`BotStateManager`**: Tracks the macro-state of the bot (`Idle`, `PositionOpen`, `Recovery`, `Blocked`).
 - **`RiskManager`**: Tracks historical performance (win/loss streaks, drawdowns) across the session to enforce global risk rules.
@@ -69,7 +69,7 @@ string logsDir    = storage.GetPath(StoragePathScope.BacktestLogs);
 
 ### Example: Persisting Risk State
 
-In `Stgy.UpTrend`, the `RiskManager` saves its state to a JSON file whenever a trade closes. 
+In `Pt.Example.Stgy.UpTrend`, the `RiskManager` saves its state to a JSON file whenever a trade closes. 
 
 ```csharp
 var stateFile = Path.Combine(storage.GetPath(StoragePathScope.State), "risk_state.json");

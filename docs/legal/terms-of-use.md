@@ -66,14 +66,14 @@ To avoid confusion about responsibility when issues arise, the Software's compon
       Provided by: OKX (the exchange)
       Responsibility: Outside our control entirely
 
-    - Trading strategies, indicators, automated logic, plugins (e.g., sample plugin Stgy.UpTrend, or any plugin built by independent developers using the SDK)
+    - Trading strategies, indicators, automated logic, plugins (e.g., sample plugin Pt.Example.Stgy.UpTrend, or any plugin built by independent developers using the SDK)
       Provided by: The User, or independent third-party developers
       Responsibility: Sole responsibility of the author/operator of the strategy or plugin
 
     - API keys, account security, exchange account
       Provided by / Responsibility: The User
 
-Any sample, example, or demonstration plugin distributed with the Software (including but not limited to Stgy.UpTrend) is provided strictly for illustrative and SDK-testing purposes. It is not intended, warranted, or recommended for live trading use.
+Any sample, example, or demonstration plugin distributed with the Software (including but not limited to Pt.Example.Stgy.UpTrend) is provided strictly for illustrative and SDK-testing purposes. It is not intended, warranted, or recommended for live trading use.
 
 >> 1.3 Open-Source Third-Party Components
 
