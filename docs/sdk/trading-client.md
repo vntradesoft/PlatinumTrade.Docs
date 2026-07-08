@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 id: sdk-trading-client
 title: Trading Client
 description: Placing orders, managing positions and balances

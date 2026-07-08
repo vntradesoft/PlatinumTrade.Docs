@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 id: sdk-architecture
 title: Architecture Overview
 description: SDK architecture design and component interactions

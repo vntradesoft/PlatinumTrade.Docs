@@ -1,4 +1,5 @@
 ---
+sidebar_position: 9
 id: sdk-drawing-api
 title: Drawing API
 description: Drawing indicators, lines, shapes, and texts on charts

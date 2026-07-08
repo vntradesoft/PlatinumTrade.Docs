@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 id: sdk-api-result
 title: ApiResult Pattern
 description: Unified error handling without exceptions
