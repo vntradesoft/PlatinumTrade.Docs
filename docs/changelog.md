@@ -9,6 +9,18 @@ sidebar_position: 99
 
 ## Changelog
 
+### [0.9.3-beta.2] - 2026-07-08
+
+#### Features
+- **gui:** Replace old terms with new EULA.
+- **gui:** Enable Velopack auto-check and configure GitHub feed url.
+
+#### Fixes
+- **app:** Fix Velopack auto-update channel configuration to support switching between stable and beta.
+
+#### Breaking Changes
+- **okx:** Upgrade JK.OKX.Net to 5.0.2.
+
 ### [0.9.0-beta.4] - 2026-07-08
 
 #### Features

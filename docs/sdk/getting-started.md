@@ -155,18 +155,12 @@ var result = await _client.Trade.PlaceOrderAsync(
     quantity: 0.01m);
 ```
 
-## Build and Run
+## Running your Strategy
 
-```bash
-# Build the entire solution
-dotnet build PlatinumTrade.sln
+To run or backtest your compiled strategy, load its `.dll` file directly into the **Platinum Trade App** GUI:
 
-# Run backtest via the Platinum Trade App
-# (Launch the Platinum Trade App executable or via Visual Studio)
-
-# Or run the console bot
-dotnet run --project CliBot\CliBot.csproj -- --help
-```
+1. Build your strategy project to output the compiled DLL assembly.
+2. Refer to the [GUI Strategy Configuration Guide](../products/gui/strategy-config.md) for step-by-step instructions on loading the DLL, adjusting custom parameters, and running it in Live/Backtest mode.
 
 ## Next steps
 
