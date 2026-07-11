@@ -2,6 +2,7 @@
 id: disclaimer
 title: Disclaimer
 sidebar_label: Disclaimer
+sidebar_position: 2
 ---
 
 # Platinum Trade — Disclaimer

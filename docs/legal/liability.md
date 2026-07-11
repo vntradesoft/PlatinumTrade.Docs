@@ -2,6 +2,7 @@
 id: liability
 title: Limitation of Liability
 sidebar_label: Limitation of Liability
+sidebar_position: 4
 ---
 
 # Platinum Trade — Limitation of Liability

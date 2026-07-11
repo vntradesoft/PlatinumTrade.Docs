@@ -2,6 +2,7 @@
 id: risk-disclosure
 title: Risk Disclosure
 sidebar_label: Risk Disclosure
+sidebar_position: 3
 ---
 
 # Platinum Trade — Risk Disclosure

@@ -2,6 +2,7 @@
 id: third-party-notices
 title: Third-Party Notices
 sidebar_label: Third-Party Notices
+sidebar_position: 7
 ---
 
 # Platinum Trade — Third-Party Notices

@@ -2,6 +2,7 @@
 id: privacy-policy
 title: Privacy Policy
 sidebar_label: Privacy Policy
+sidebar_position: 5
 ---
 
 # Platinum Trade — Privacy Policy

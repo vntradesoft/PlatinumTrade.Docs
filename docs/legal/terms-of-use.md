@@ -2,6 +2,7 @@
 id: terms-of-use
 title: Terms of Use
 sidebar_label: Terms of Use
+sidebar_position: 1
 ---
 
 # Platinum Trade — Terms of Use

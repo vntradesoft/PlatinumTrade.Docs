@@ -2,6 +2,7 @@
 id: payment-policy
 title: Payment Policy
 sidebar_label: Payment Policy
+sidebar_position: 6
 ---
 
 # Platinum Trade — Payment Policy
