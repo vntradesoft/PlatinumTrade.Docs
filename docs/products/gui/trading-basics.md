@@ -20,6 +20,18 @@ This section focuses on practical trading workflows and platform operation, rath
 4. Add desired technical indicators.
 5. Validate strategy behavior in paper trading before deploying to live production.
 
+### Migration Path: Paper to Live Trading
+
+```mermaid
+graph TD
+    A[Configure Demo API] --> B[Paper Trading Validation]
+    B --> C{Strategy Validated?}
+    C -- No --> D[Refine Strategy]
+    D --> B
+    C -- Yes --> E[Configure Live API]
+    E --> F[Live Production Trading]
+```
+
 ## Core Platform Concepts
 
 - **Trading View Tabs:** Manage chart workspaces, indicators, and active timeframes.
@@ -42,7 +54,3 @@ Trading financial instruments involves high risk and may result in the loss of a
 - [Market Watch](./market-watch.md)
 - [Drawing Tools](./drawing-tools.md)
 - [FAQ](./faq.md)
-
-## TBD Items
-
-- [ ] Interactive workflow diagram illustrating the migration path from paper to live trading.

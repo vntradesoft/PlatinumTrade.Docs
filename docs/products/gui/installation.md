@@ -112,3 +112,4 @@ After clicking **Finish** in the Setup Wizard:
 For complete, step-by-step instructions on setting up your credentials, please refer to the next guide:
 
 ➡️ **[API Key Setup](./settings/api-credentials.md)**
+➡️ **[Getting Started](./getting-started.md)**

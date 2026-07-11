@@ -30,7 +30,6 @@ The Platinum Trade GUI App provides a premium, desktop-native trading experience
 - [UI Overview](./ui-overview.md)
 - [History Manager](./history-manager.md)
 - [Strategy Configuration](./strategy-config.md)
-- [Toast Notifications](./toast-notifications.md)
 
 ## TBD Items
 

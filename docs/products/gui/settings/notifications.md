@@ -22,6 +22,8 @@ Integrate the trading bot with Telegram to receive real-time execution alerts, d
 - You can add multiple bots, and selectively enable or disable them.
 - Use the **Edit** or **Remove** buttons to manage your existing bots.
 
+For a detailed step-by-step walkthrough on how to create a bot and find your Chat ID, refer to the [Telegram Bot Setup Guide](./telegram-bot-setup.md).
+
 ## Microsoft Teams
 
 Send structured alert cards to a Microsoft Teams channel.

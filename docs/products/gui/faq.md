@@ -40,7 +40,6 @@ By default, toast notifications appear in the upper-right corner of the screen. 
 
 - [API Key Setup](./settings/api-credentials.md)
 - [Trading Basics](./trading-basics.md)
-- [Toast Notifications](./toast-notifications.md)
 
 ## TBD Items
 
