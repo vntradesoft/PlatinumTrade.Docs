@@ -26,6 +26,8 @@ Download the latest release package from [GitHub Releases](https://github.com/vn
    - Go to **API Settings** and enter your OKX API Key, Secret, Passphrase, and select the environment (**Production** or **Demo**).
    - Click **Test Connection** to verify connection status, then click **Save**.
 
+![API Configuration](/img/products/gui/settings/api-credentials-settings-2.png)
+
 ## 3. Trading View & Charting
 
 The main interface is designed to view real-time market data and perform technical analysis.
