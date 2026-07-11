@@ -24,7 +24,7 @@ This document describes the technical configuration of API credentials in the Pl
 - Module: API Credentials.
 - Supported Environments: Demo and Production.
 
-![Initial API Configuration](/img/products/gui/settings/api-cridentials-settings-1.png)
+![Initial API Configuration](/img/products/gui/settings/api-credentials-settings-1.png)
 
 ## Required Configuration Data
 
@@ -32,7 +32,7 @@ This document describes the technical configuration of API credentials in the Pl
 - Secret Key
 - Passphrase
 
-![Register OKX Account Dialog](/img/products/gui/settings/api-cridentials-settings-dilaog-okx-account-settings.png)
+![Register OKX Account Dialog](/img/products/gui/settings/api-credentials-settings-dialog-okx-account-settings.png)
 
 ## Environment Conventions
 
@@ -40,7 +40,7 @@ This document describes the technical configuration of API credentials in the Pl
 - Production: Uses endpoints for the live environment.
 - Each environment uses an independent set of credentials.
 
-![Registered Accounts List](/img/products/gui/settings/api-cridentials-settings-2.png)
+![Registered Accounts List](/img/products/gui/settings/api-credentials-settings-2.png)
 
 ## Connection Verification
 

@@ -12,7 +12,7 @@ publish: false
 
 This section describes how to configure the appearance of the application, including themes, accent colors, and layout options.
 
-![Appearance Settings](/img/products/gui/settings/apearance-settings.png)
+![Appearance Settings](/img/products/gui/settings/appearance-settings.png)
 
 ## General Display
 
