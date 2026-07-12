@@ -35,19 +35,19 @@ The indexing direction of a timeseries always goes from the newest data to the o
 
 | Function | Description |
 |---|---|
-| [Bars](./timeseries/bars.md) | Returns the number of bars for a specified symbol and timeframe. |
-| [BarsCalculated](./timeseries/bars-calculated.md) | Returns the number of calculated bars for a specified indicator. |
-| [CopyBuffer](./timeseries/copy-buffer.md) | Copies indicator buffer values by index or time range. |
-| [CopySeries](./timeseries/copy-series.md) | Copies an array of OHLCV candle data. |
-| [CopyTimes](./timeseries/copy-times.md) | Copies open timestamps of candles. |
-| [CopyOpens](./timeseries/copy-opens.md) | Copies open prices of candles. |
-| [CopyHighs](./timeseries/copy-highs.md) | Copies high prices of candles. |
-| [CopyLows](./timeseries/copy-lows.md) | Copies low prices of candles. |
-| [CopyCloses](./timeseries/copy-closes.md) | Copies close prices of candles. |
-| [CopyVolumes](./timeseries/copy-volumes.md) | Copies volume values of candles. |
-| [CopyPrices](./timeseries/copy-prices.md) | Copies prices by AppliedPrice type. |
-| [Candle Access](./timeseries/candle-access.md) | Directly queries specific candles (current, closed, open, etc.). |
-| [Creating Indicators](./timeseries/indicator-create.md) | Factory methods to create built-in indicators (MA, RSI, Stochastic, etc.). |
+| [Bars](./timeseries.md#bars) | Returns the number of bars for a specified symbol and timeframe. |
+| [BarsCalculated](./timeseries.md#barscalculated) | Returns the number of calculated bars for a specified indicator. |
+| [CopyBuffer](./timeseries.md#copybuffer) | Copies indicator buffer values by index or time range. |
+| [CopySeries](./timeseries.md#copyseries) | Copies an array of OHLCV candle data. |
+| [CopyTimes](./timeseries.md#copytimes) | Copies open timestamps of candles. |
+| [CopyOpens](./timeseries.md#copyopens) | Copies open prices of candles. |
+| [CopyHighs](./timeseries.md#copyhighs) | Copies high prices of candles. |
+| [CopyLows](./timeseries.md#copylows) | Copies low prices of candles. |
+| [CopyCloses](./timeseries.md#copycloses) | Copies close prices of candles. |
+| [CopyVolumes](./timeseries.md#copyvolumes) | Copies volume values of candles. |
+| [CopyPrices](./timeseries.md#copyprices) | Copies prices by AppliedPrice type. |
+| [Candle Access](./timeseries.md#candle-access) | Directly queries specific candles (current, closed, open, etc.). |
+| [Creating Indicators](./timeseries.md#creating-indicators) | Factory methods to create built-in indicators (MA, RSI, Stochastic, etc.). |
 
 ---
 
