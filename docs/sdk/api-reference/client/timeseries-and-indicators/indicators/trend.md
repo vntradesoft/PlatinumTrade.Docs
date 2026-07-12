@@ -67,7 +67,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Average Directional Index Wilder (ADXW)
 Wilder's smoothing version of the Average Directional Index (ADXW).
 Average Directional Index Wilder (ADXW)
@@ -132,7 +131,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Adaptive Moving Average (AMA)
 
 An adaptive moving average that dynamically adjusts its sensitivity based on market volatility.
@@ -196,7 +194,6 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 
 ## Bollinger Bands
 
@@ -263,7 +260,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Double Exponential Moving Average (DEMA)
 
 Provides a faster response with less lag than a standard EMA.
@@ -326,20 +322,14 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Envelopes
-
-Upper and lower bands that shift at a percentage deviation from a moving average.
-
----
+Upper and lower bands that shift at a percentage deviation from a moving average. ---
 
 **Syntax**
 
 ```csharp
-IIndicatorEnvelopes CreateIndicatorEnvelopes(string? symbol = null, Timeframe? timeframe = null, int? period = null, double? deviation = null, MaMethod? method = null, AppliedPrice? appliedPrice = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
+// TODO: Add syntax
 ```
-
----
 
 **Parameters**
 
@@ -354,18 +344,13 @@ IIndicatorEnvelopes CreateIndicatorEnvelopes(string? symbol = null, Timeframe? t
 | `indicatorAlias` | `string?` | Unique alias. |
 | `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
 
----
-
 **Return Value**
 
 Returns `IIndicatorEnvelopes` which inherits from `IIndicator` and `IIndicatorMethodCommon`.
 
----
-
 **Remarks**
-Provides `GetUpper()`, `GetLower()`, `IsPriceAboveUpper()`, and `IsPriceBelowLower()` to detect breakout signals.
 
----
+Provides `GetUpper()`, `GetLower()`, `IsPriceAboveUpper()`, and `IsPriceBelowLower()` to detect breakout signals.
 
 **Example**
 
@@ -373,16 +358,13 @@ Provides `GetUpper()`, `GetLower()`, `IsPriceAboveUpper()`, and `IsPriceBelowLow
 using Pt.Okx.Sdk.Clients;
 using Pt.Okx.Sdk.Enums;
 using Pt.Okx.Sdk.Indicators.BuiltIn;
-
 public class MyStrategy : StrategyBase
 {
     private IIndicatorEnvelopes _envelopes;
-
 public override async Task OnInitAsync()
 {
     _envelopes = Context.Timeseries.CreateIndicatorEnvelopes(period: 14, deviation: 0.1, method: MaMethod.SMA, indicatorAlias: "Envelopes");
 }
-
 public override async Task OnTickAsync()
 {
     if (Context.Timeseries.BarsCalculated("Envelopes") <= 0) return;
@@ -395,6 +377,7 @@ public override async Task OnTickAsync()
 }
 ```
 
+---
 
 ## Ichimoku Kinko Hyo
 
@@ -459,7 +442,6 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 
 ## Moving Average (MA)
 
@@ -531,7 +513,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Parabolic SAR
 
 Identifies trend reversal points and provides trailing stops.
@@ -597,20 +578,14 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## SuperTrend
-
-A trend-following indicator based on Average True Range (ATR) volatility and median price.
-
----
+A trend-following indicator based on Average True Range (ATR) volatility and median price. ---
 
 **Syntax**
 
 ```csharp
-IIndicatorSuperTrend CreateIndicatorSuperTrend(string? symbol = null, Timeframe? timeframe = null, int? period = null, double? multiplier = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
+// TODO: Add syntax
 ```
-
----
 
 **Parameters**
 
@@ -623,18 +598,13 @@ IIndicatorSuperTrend CreateIndicatorSuperTrend(string? symbol = null, Timeframe?
 | `indicatorAlias` | `string?` | Unique alias. |
 | `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
 
----
-
 **Return Value**
 
 Returns `IIndicatorSuperTrend` which inherits from `IIndicator` and `IIndicatorMethodCommon`.
 
----
-
 **Remarks**
-Contains specialized methods such as `IsBullish()`, `IsBearish()`, `HasBullishReversal()`, `HasBearishReversal()`, and `GetDistanceFromSuperTrend()`.
 
----
+Contains specialized methods such as `IsBullish()`, `IsBearish()`, `HasBullishReversal()`, `HasBearishReversal()`, and `GetDistanceFromSuperTrend()`.
 
 **Example**
 
@@ -642,16 +612,13 @@ Contains specialized methods such as `IsBullish()`, `IsBearish()`, `HasBullishRe
 using Pt.Okx.Sdk.Clients;
 using Pt.Okx.Sdk.Enums;
 using Pt.Okx.Sdk.Indicators.BuiltIn;
-
 public class MyStrategy : StrategyBase
 {
     private IIndicatorSuperTrend _st;
-
 public override async Task OnInitAsync()
 {
     _st = Context.Timeseries.CreateIndicatorSuperTrend(period: 10, multiplier: 3.0, indicatorAlias: "SuperTrend");
 }
-
 public override async Task OnTickAsync()
 {
     if (Context.Timeseries.BarsCalculated("SuperTrend") <= 0) return;
@@ -663,6 +630,7 @@ public override async Task OnTickAsync()
 }
 ```
 
+---
 
 ## Triple Exponential Moving Average (TEMA)
 
@@ -725,5 +693,4 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 

@@ -66,7 +66,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Bollinger Band Width (BBW)
 
 Measures the percentage width between upper and lower Bollinger Bands to evaluate volatility.
@@ -131,7 +130,6 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 
 ## Bollinger Bands %B (%B)
 
@@ -198,7 +196,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Commodity Channel Index (CCI)
 
 Measures the deviation of the asset price from its statistical average.
@@ -263,7 +260,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## DeMarker (DeM)
 
 Compares the most recent maximum and minimum prices to the previous period's equivalent prices to measure demand.
@@ -327,7 +323,6 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 
 ## Moving Average Convergence Divergence (MACD)
 
@@ -394,7 +389,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Money Flow Index (MFI)
 
 Measures the buying and selling pressure through integrating price and volume data.
@@ -459,20 +453,14 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Momentum
-
-Measures the rate of change of an asset's price.
-
----
+Measures the rate of change of an asset's price. ---
 
 **Syntax**
 
 ```csharp
-IIndicatorMomentum CreateIndicatorMomentum(string? symbol = null, Timeframe? timeframe = null, int? period = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
+// TODO: Add syntax
 ```
-
----
 
 **Parameters**
 
@@ -484,18 +472,13 @@ IIndicatorMomentum CreateIndicatorMomentum(string? symbol = null, Timeframe? tim
 | `indicatorAlias` | `string?` | Unique alias. |
 | `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
 
----
-
 **Return Value**
 
 Returns `IIndicatorMomentum` which inherits from `IIndicator` and `IIndicatorMethodCommon`.
 
----
-
 **Remarks**
-Includes a specialized helper method `FindMomentum(int index = 0)` to retrieve momentum values.
 
----
+Includes a specialized helper method `FindMomentum(int index = 0)` to retrieve momentum values.
 
 **Example**
 
@@ -503,16 +486,13 @@ Includes a specialized helper method `FindMomentum(int index = 0)` to retrieve m
 using Pt.Okx.Sdk.Clients;
 using Pt.Okx.Sdk.Enums;
 using Pt.Okx.Sdk.Indicators.BuiltIn;
-
 public class MyStrategy : StrategyBase
 {
     private IIndicatorMomentum _mom;
-
 public override async Task OnInitAsync()
 {
     _mom = Context.Timeseries.CreateIndicatorMomentum(period: 10, indicatorAlias: "MOM");
 }
-
 public override async Task OnTickAsync()
 {
     if (Context.Timeseries.BarsCalculated("MOM") <= 0) return;
@@ -522,6 +502,7 @@ public override async Task OnTickAsync()
 }
 ```
 
+---
 
 ## Oscillator of Moving Average (OsMA)
 
@@ -577,7 +558,6 @@ public override async Task OnInitAsync()
 }
 }
 ```
-
 
 ## Relative Strength Index (RSI)
 
@@ -643,7 +623,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Relative Vigor Index (RVI)
 
 Measures the relative energy of the current price trend.
@@ -699,7 +678,6 @@ public override async Task OnInitAsync()
 }
 ```
 
-
 ## Standard Deviation (StdDev)
 
 Measures market volatility using statistical standard deviation.
@@ -754,7 +732,6 @@ public override async Task OnInitAsync()
 }
 }
 ```
-
 
 ## Stochastic Oscillator
 
@@ -824,7 +801,6 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Triple Exponential Average (TRIX)
 
 A momentum oscillator that measures the rate of change of a triple exponentially smoothed moving average.
@@ -878,7 +854,6 @@ public override async Task OnInitAsync()
 }
 }
 ```
-
 
 ## Williams' Percent Range (WPR)
 
@@ -943,5 +918,4 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 

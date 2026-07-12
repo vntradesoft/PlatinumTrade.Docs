@@ -5,13 +5,12 @@ title: Timeseries
 # Timeseries
 
 ## Bars
-
 Returns the total number of bars available for a trading pair and timeframe.
 
 **Syntax**
 
 ```csharp
-int Bars(string? symbol, Timeframe? timeframe);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -25,6 +24,10 @@ int Bars(string? symbol, Timeframe? timeframe);
 
 Returns the total number of available bars as an `int`.
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
@@ -32,14 +35,15 @@ int totalBars = Market.Bars("BTC-USDT", Timeframe.OneHour);
 Logger.Info($"Total 1H bars for BTC-USDT: {totalBars}");
 ```
 
-## BarsCalculated
+---
 
+## BarsCalculated
 Counts the number of bars calculated for a specific indicator.
 
 **Syntax**
 
 ```csharp
-int BarsCalculated(string indicatorId);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -52,6 +56,10 @@ int BarsCalculated(string indicatorId);
 
 Returns the number of bars calculated as an `int`.
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
@@ -59,6 +67,8 @@ var rsi = Market.CreateIndicatorRSI(period: 14);
 int calculated = Market.BarsCalculated(rsi.Id);
 Logger.Info($"RSI has calculated {calculated} bars.");
 ```
+
+---
 
 ## Candle Access
 
@@ -99,15 +109,12 @@ DateTime currentOpenTime = Market.GetTime(Timeframe.OneMinute, 0);
 ```
 
 ## CopyBuffer
-
 Copies indicator buffer values by index or time range.
 
 **Syntax**
 
 ```csharp
-int CopyBuffer(string indicatorHandle, int bufferNumber, int startIndex, int count, out IEnumerable<IndicatorValue> buffers);
-int CopyBuffer(string indicatorHandle, int bufferNumber, DateTime startTime, int count, out IEnumerable<IndicatorValue> buffers);
-int CopyBuffer(string indicatorHandle, int bufferNumber, DateTime startTime, DateTime endTime, out IEnumerable<IndicatorValue> buffers);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -126,28 +133,30 @@ int CopyBuffer(string indicatorHandle, int bufferNumber, DateTime startTime, Dat
 
 Returns the number of values successfully copied as an `int`.
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
 var rsi = Market.CreateIndicatorRSI(period: 14);
 int copied = Market.CopyBuffer(rsi.Id, 0, 1, 3, out var rsiValues);
-
 foreach (var val in rsiValues)
 {
     Logger.Info($"RSI Value: {val.Value} at {val.Time}");
 }
 ```
 
-## CopyCloses
+---
 
+## CopyCloses
 Copies close prices of candles.
 
 **Syntax**
 
 ```csharp
-Task<decimal[]> CopyCloses(string? symbol, Timeframe? tf, int startPos, int count);
-Task<decimal[]> CopyCloses(string? symbol, Timeframe? tf, DateTime startTime, int count);
-Task<decimal[]> CopyCloses(string? symbol, Timeframe? tf, DateTime startTime, DateTime endTime);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -163,6 +172,10 @@ Task<decimal[]> CopyCloses(string? symbol, Timeframe? tf, DateTime startTime, Da
 
 Returns an array of close prices (`decimal[]`).
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
@@ -171,16 +184,15 @@ decimal[] closes = await Market.CopyCloses(null, null, 1, 5);
 decimal averageClose = closes.Average();
 ```
 
-## CopyHighs
+---
 
+## CopyHighs
 Copies high prices of candles.
 
 **Syntax**
 
 ```csharp
-Task<decimal[]> CopyHighs(string? symbol, Timeframe? tf, int startPos, int count);
-Task<decimal[]> CopyHighs(string? symbol, Timeframe? tf, DateTime startTime, int count);
-Task<decimal[]> CopyHighs(string? symbol, Timeframe? tf, DateTime startTime, DateTime endTime);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -196,6 +208,10 @@ Task<decimal[]> CopyHighs(string? symbol, Timeframe? tf, DateTime startTime, Dat
 
 Returns an array of high prices (`decimal[]`).
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
@@ -204,16 +220,15 @@ decimal[] highs = await Market.CopyHighs(null, null, 1, 10);
 decimal highest = highs.Max();
 ```
 
-## CopyLows
+---
 
+## CopyLows
 Copies low prices of candles.
 
 **Syntax**
 
 ```csharp
-Task<decimal[]> CopyLows(string? symbol, Timeframe? tf, int startPos, int count);
-Task<decimal[]> CopyLows(string? symbol, Timeframe? tf, DateTime startTime, int count);
-Task<decimal[]> CopyLows(string? symbol, Timeframe? tf, DateTime startTime, DateTime endTime);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -229,6 +244,10 @@ Task<decimal[]> CopyLows(string? symbol, Timeframe? tf, DateTime startTime, Date
 
 Returns an array of low prices (`decimal[]`).
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
@@ -237,16 +256,15 @@ decimal[] lows = await Market.CopyLows(null, null, 1, 10);
 decimal lowest = lows.Min();
 ```
 
-## CopyOpens
+---
 
+## CopyOpens
 Copies open prices of candles.
 
 **Syntax**
 
 ```csharp
-Task<decimal[]> CopyOpens(string? symbol, Timeframe? tf, int startPos, int count);
-Task<decimal[]> CopyOpens(string? symbol, Timeframe? tf, DateTime startTime, int count);
-Task<decimal[]> CopyOpens(string? symbol, Timeframe? tf, DateTime startTime, DateTime endTime);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -262,24 +280,25 @@ Task<decimal[]> CopyOpens(string? symbol, Timeframe? tf, DateTime startTime, Dat
 
 Returns an array of open prices (`decimal[]`).
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
 decimal[] opens = await Market.CopyOpens(null, null, 1, 3);
 ```
 
-## CopyPrices
+---
 
+## CopyPrices
 Copies prices by `AppliedPrice` type.
 
 **Syntax**
 
 ```csharp
-Task<IEnumerable<(DateTime, decimal)>> CopyPrices(AppliedPrice appliedPrice, string? symbol, Timeframe? timeframe, DateTime start, DateTime endTime);
-Task<IEnumerable<(DateTime, decimal)>> CopyPrices(AppliedPrice appliedPrice, string? symbol, Timeframe? timeframe, DateTime start, int count);
-Task<IEnumerable<(DateTime, decimal)>> CopyPrices(AppliedPrice appliedPrice, string? symbol, Timeframe? timeframe, int startPos, int count);
-IEnumerable<decimal> CopyPrices(AppliedPrice appliedPrice, IEnumerable<CandleData> ohclvs);
-decimal CopyPrice(AppliedPrice appliedPrice, CandleData ohclv);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -297,6 +316,10 @@ decimal CopyPrice(AppliedPrice appliedPrice, CandleData ohclv);
 
 Returns tuples of `(DateTime, decimal)` or raw `decimal` prices based on the overload.
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
@@ -308,16 +331,15 @@ foreach(var p in typicalPrices)
 }
 ```
 
-## CopySeries
+---
 
+## CopySeries
 Copies an array of OHLCV candle data.
 
 **Syntax**
 
 ```csharp
-Task<CandleData[]> CopySeries(string? symbol, Timeframe? timeframe, DateTime startTime, DateTime endTime);
-Task<CandleData[]> CopySeries(string? symbol, Timeframe? timeframe, int startPos, int count);
-Task<CandleData[]> CopySeries(string? symbol, Timeframe? timeframe, DateTime startTime, int count);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -333,6 +355,10 @@ Task<CandleData[]> CopySeries(string? symbol, Timeframe? timeframe, DateTime sta
 
 Returns an array of `CandleData` objects.
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
@@ -344,16 +370,15 @@ foreach(var candle in candles)
 }
 ```
 
-## CopyTimes
+---
 
+## CopyTimes
 Copies open timestamps of candles.
 
 **Syntax**
 
 ```csharp
-Task<DateTime[]> CopyTimes(string? symbol, Timeframe? tf, int startPos, int count);
-Task<DateTime[]> CopyTimes(string? symbol, Timeframe? tf, DateTime startTime, int count);
-Task<DateTime[]> CopyTimes(string? symbol, Timeframe? tf, DateTime startTime, DateTime endTime);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -369,22 +394,25 @@ Task<DateTime[]> CopyTimes(string? symbol, Timeframe? tf, DateTime startTime, Da
 
 Returns an array of `DateTime` objects.
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
 DateTime[] times = await Market.CopyTimes(null, null, 1, 5);
 ```
 
-## CopyVolumes
+---
 
+## CopyVolumes
 Copies volume values of candles.
 
 **Syntax**
 
 ```csharp
-Task<decimal[]> CopyVolumes(string? symbol, Timeframe? tf, int startPos, int count);
-Task<decimal[]> CopyVolumes(string? symbol, Timeframe? tf, DateTime startTime, int count);
-Task<decimal[]> CopyVolumes(string? symbol, Timeframe? tf, DateTime startTime, DateTime endTime);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -400,11 +428,17 @@ Task<decimal[]> CopyVolumes(string? symbol, Timeframe? tf, DateTime startTime, D
 
 Returns an array of volume values (`decimal[]`).
 
+**Remarks**
+
+No special remarks.
+
 **Example**
 
 ```csharp
 decimal[] volumes = await Market.CopyVolumes(null, null, 1, 5);
 ```
+
+---
 
 ## Creating Indicators
 

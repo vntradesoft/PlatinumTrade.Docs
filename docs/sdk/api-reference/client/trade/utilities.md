@@ -8,6 +8,8 @@ sidebar_label: Utilities
 ## `SetMagicNumber`
 Sets the Magic Number to identify the order source.
 
+**Syntax**
+
 ```csharp
 (bool Success, string ErrorMsg) SetMagicNumber(string magicNumber);
 ```

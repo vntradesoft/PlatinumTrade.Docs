@@ -8,6 +8,8 @@ sidebar_label: Live Queries
 ## `GetOrderAsync`
 Gets detailed information for a single order.
 
+**Syntax**
+
 ```csharp
 Task<ApiResult<Order>> GetOrderAsync(string symbol, long? orderId = null, string? origClientOrderId = null, CancellationToken ct = default);
 ```
@@ -37,6 +39,8 @@ var orderInfo = await Context.Trade.GetOrderAsync("BTC-USDT", orderId: 12345);
 
 ## `GetPositionsAsync`
 Gets a list of all open positions.
+
+**Syntax**
 
 ```csharp
 Task<ApiResult<Position[]>> GetPositionsAsync(string? symbol = null, string? positionId = null, CancellationToken ct = default);

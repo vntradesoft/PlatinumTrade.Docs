@@ -8,6 +8,8 @@ sidebar_label: Fees & Margin
 ## `GetFeeTaker`
 Gets the taker trading fee for the specified symbol.
 
+**Syntax**
+
 ```csharp
 decimal GetFeeTaker(string symbol);
 ```
@@ -37,6 +39,8 @@ decimal totalFee = orderValue * feeRate;
 
 ## `GetMaintMarginRateAsync`
 Gets the maintenance margin rate for a specific position size.
+
+**Syntax**
 
 ```csharp
 Task<decimal> GetMaintMarginRateAsync(string symbol, decimal positionNotional, CancellationToken ct = default);
@@ -68,6 +72,8 @@ decimal mmr = await Context.Instrument.GetMaintMarginRateAsync("BTC-USDT-SWAP", 
 
 ## `ContractSize`
 Gets the contract size for the specified symbol (Futures/Swap).
+
+**Syntax**
 
 ```csharp
 decimal ContractSize(string symbol);

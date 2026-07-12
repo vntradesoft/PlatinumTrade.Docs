@@ -12,13 +12,12 @@ visibility: public
 The **Storage API** provides a centralized system for resolving logical paths to physical directories for various types of runtime and persistent data, such as histories, logs, state, and caches. By abstracting the file paths into logical scopes, the Storage API ensures that your strategy and application read and write files in the correct environments.
 
 ## GetPath
-
 Gets a storage path by its logical scope.
 
 **Syntax**
 
 ```csharp
-string GetPath(StoragePathScope scope = StoragePathScope.RuntimeDataRoot);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -26,6 +25,10 @@ string GetPath(StoragePathScope scope = StoragePathScope.RuntimeDataRoot);
 | Parameter | Type | Description |
 |---|---|---|
 | `scope` | [`StoragePathScope`](../enums.md#storagepathscope) | Target logical scope. If omitted, returns the highest runtime data root. |
+
+**Return Value**
+
+void
 
 **Remarks**
 
@@ -38,19 +41,24 @@ string cacheFolder = Storage.GetPath(StoragePathScope.Cache);
 string tempFile = Path.Combine(cacheFolder, "temp.json");
 ```
 
-## GetRuntimeDataRoot
+---
 
+## GetRuntimeDataRoot
 Gets the root directory used for all runtime data.
 
 **Syntax**
 
 ```csharp
-string GetRuntimeDataRoot();
+// TODO: Add syntax
 ```
 
 **Parameters**
 
 *(None)*
+
+**Return Value**
+
+void
 
 **Remarks**
 
@@ -63,19 +71,24 @@ string root = Storage.GetRuntimeDataRoot();
 // e.g. "C:\Users\admin\AppData\Local\PlatinumTrade"
 ```
 
-## GetHistoryRoot
+---
 
+## GetHistoryRoot
 Gets the history storage root directory.
 
 **Syntax**
 
 ```csharp
-string GetHistoryRoot();
+// TODO: Add syntax
 ```
 
 **Parameters**
 
 *(None)*
+
+**Return Value**
+
+void
 
 **Remarks**
 
@@ -88,77 +101,127 @@ string historyFolder = Storage.GetHistoryRoot();
 string btcData = Path.Combine(historyFolder, "BTC_USDT_1h.csv");
 ```
 
-## GetLogsRoot
+---
 
+## GetLogsRoot
 Gets the runtime application logs storage root.
 
 **Syntax**
 
 ```csharp
-string GetLogsRoot();
+// TODO: Add syntax
 ```
 
 **Parameters**
 
 *(None)*
+
+**Return Value**
+
+void
 
 **Remarks**
 
 This path is intended for core application logs (such as Serilog diagnostic files). It is not meant for strategy-specific or mode-specific (backtest/live) trade logs.
 
-## GetStateRoot
+**Example**
 
+```csharp
+var path = Context.Storage.GetLogsRoot();
+Context.Logger.LogInformation("Storage", $"Path: {path}");
+```
+
+---
+
+## GetStateRoot
 Gets the state storage root directory.
 
 **Syntax**
 
 ```csharp
-string GetStateRoot();
+// TODO: Add syntax
 ```
 
 **Parameters**
 
 *(None)*
+
+**Return Value**
+
+void
 
 **Remarks**
 
 Ideal for persisting internal strategy state, custom indicators state, or tracking variables across restarts.
 
-## GetCacheRoot
+**Example**
 
+```csharp
+var path = Context.Storage.GetStateRoot();
+Context.Logger.LogInformation("Storage", $"Path: {path}");
+```
+
+---
+
+## GetCacheRoot
 Gets the cache storage root directory.
 
 **Syntax**
 
 ```csharp
-string GetCacheRoot();
+// TODO: Add syntax
 ```
 
 **Parameters**
 
 *(None)*
+
+**Return Value**
+
+void
 
 **Remarks**
 
 Use this directory for temporary, non-critical data that can be safely deleted or rebuilt if lost.
 
-## GetExportsRoot
+**Example**
 
+```csharp
+var path = Context.Storage.GetCacheRoot();
+Context.Logger.LogInformation("Storage", $"Path: {path}");
+```
+
+---
+
+## GetExportsRoot
 Gets the export artifacts storage root directory.
 
 **Syntax**
 
 ```csharp
-string GetExportsRoot();
+// TODO: Add syntax
 ```
 
 **Parameters**
 
 *(None)*
 
+**Return Value**
+
+void
+
 **Remarks**
 
 Use this for saving user-facing outputs, such as CSV trade reports, generated charts, or Excel files.
+
+**Example**
+
+```csharp
+var path = Context.Storage.GetExportsRoot();
+Context.Logger.LogInformation("Storage", $"Path: {path}");
+```
+
+---
 
 ## Customizing the Storage Layout
 

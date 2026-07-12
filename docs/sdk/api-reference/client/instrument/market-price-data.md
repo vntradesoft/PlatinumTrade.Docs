@@ -8,6 +8,8 @@ sidebar_label: Market Price Data
 ## `GetLastPriceAsync`
 Gets the last traded price for the specified symbol.
 
+**Syntax**
+
 ```csharp
 Task<ApiResult<decimal>> GetLastPriceAsync(string symbol, CancellationToken ct = default);
 ```
@@ -42,6 +44,8 @@ if (priceRes.Success)
 ## `GetBidAskSpreadAsync`
 Gets the bid, ask, and spread for the specified symbol in a single call.
 
+**Syntax**
+
 ```csharp
 Task<ApiResult<(decimal Bid, decimal Ask, decimal Spread)>> GetBidAskSpreadAsync(string symbol, CancellationToken ct = default);
 ```
@@ -75,6 +79,8 @@ if (data.Success)
 
 ## `GetLimitPriceAsync`
 Gets the maximum/minimum limit prices allowed for the specified symbol.
+
+**Syntax**
 
 ```csharp
 Task<ApiResult<LimitPrice>> GetLimitPriceAsync(string symbol, CancellationToken ct = default);

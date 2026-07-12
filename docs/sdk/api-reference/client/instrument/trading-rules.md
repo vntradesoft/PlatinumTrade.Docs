@@ -8,6 +8,8 @@ sidebar_label: Trading Rules
 ## `NormalizePrice`
 Normalizes a price according to exchange tick sizes and precision rules.
 
+**Syntax**
+
 ```csharp
 decimal NormalizePrice(string symbol, decimal price, bool roundUp = false);
 ```
@@ -41,6 +43,8 @@ decimal validPrice = Context.Instrument.NormalizePrice("BTC-USDT", rawTarget);
 ## `NormalizeLot`
 Normalizes a lot size (quantity) according to exchange rules.
 
+**Syntax**
+
 ```csharp
 decimal NormalizeLot(string symbol, decimal lot, bool isMarket, bool roundUp = false);
 ```
@@ -66,13 +70,14 @@ Market and Limit orders sometimes have different precision constraints.
 
 ```csharp
 decimal validQty = Context.Instrument.NormalizeLot("BTC-USDT", 1.123456m, false);
-
 ```
 
 ---
 
 ## `GetTickPrice`
 Gets the tick size (minimum price increment) for the specified symbol.
+
+**Syntax**
 
 ```csharp
 decimal GetTickPrice(string symbol);

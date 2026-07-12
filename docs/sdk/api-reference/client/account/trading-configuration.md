@@ -8,6 +8,8 @@ sidebar_label: Trading Configuration
 ## `SetInitialLeverageAsync`
 Sets the initial leverage for a specific contract.
 
+**Syntax**
+
 ```csharp
 Task<bool> SetInitialLeverageAsync(string symbol, int leverage, CancellationToken ct = default);
 ```
@@ -43,6 +45,8 @@ if (success)
 ## `GetLeverage`
 Gets the current leverage for a specific contract.
 
+**Syntax**
+
 ```csharp
 decimal GetLeverage(string symbol);
 ```
@@ -75,6 +79,8 @@ if (currentLeverage > 20)
 
 ## `SetHedgeModeAsync`
 Sets the position mode to Hedge Mode or Netting Mode.
+
+**Syntax**
 
 ```csharp
 Task<(bool Success, string? Error)> SetHedgeModeAsync(bool hedge, CancellationToken ct = default);
@@ -110,6 +116,8 @@ if (!success)
 ## `IsHedgeMode`
 Checks if the account is currently in Hedge Mode.
 
+**Syntax**
+
 ```csharp
 bool IsHedgeMode();
 ```
@@ -139,6 +147,8 @@ if (Context.Account.IsHedgeMode())
 
 ## `GetFeeLevelAsync`
 Gets information about the account's trading fee VIP level.
+
+**Syntax**
 
 ```csharp
 Task<ApiResult<FeeVipLevel>> GetFeeLevelAsync();

@@ -8,6 +8,8 @@ sidebar_label: Position Management
 ## `ClosePositionAsync`
 Closes an open position fully at market price.
 
+**Syntax**
+
 ```csharp
 Task<ApiResult<ClosePositionResponse>> ClosePositionAsync(string symbol, PositionSide? positionSide = null, string? asset = null, bool? autoCancel = null, string? clientOrderId = null, CancellationToken ct = default);
 ```

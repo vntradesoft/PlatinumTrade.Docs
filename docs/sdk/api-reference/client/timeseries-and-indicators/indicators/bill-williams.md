@@ -64,20 +64,14 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Alligator
-
-A trend-following model combining three time-shifted moving averages.
-
----
+A trend-following model combining three time-shifted moving averages. ---
 
 **Syntax**
 
 ```csharp
-IIndicatorAlligator CreateIndicatorAlligator(string? symbol = null, Timeframe? timeframe = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
+// TODO: Add syntax
 ```
-
----
 
 **Parameters**
 
@@ -88,18 +82,13 @@ IIndicatorAlligator CreateIndicatorAlligator(string? symbol = null, Timeframe? t
 | `indicatorAlias` | `string?` | Unique alias. |
 | `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
 
----
-
 **Return Value**
 
 Returns `IIndicatorAlligator` which inherits from `IIndicator` and `IIndicatorMethodCommon`.
 
----
-
 **Remarks**
-Provides specialized line getter methods `GetJaw()` (Blue line), `GetTeeth()` (Red line), and `GetLips()` (Green line).
 
----
+Provides specialized line getter methods `GetJaw()` (Blue line), `GetTeeth()` (Red line), and `GetLips()` (Green line).
 
 **Example**
 
@@ -107,16 +96,13 @@ Provides specialized line getter methods `GetJaw()` (Blue line), `GetTeeth()` (R
 using Pt.Okx.Sdk.Clients;
 using Pt.Okx.Sdk.Enums;
 using Pt.Okx.Sdk.Indicators.BuiltIn;
-
 public class MyStrategy : StrategyBase
 {
     private IIndicatorAlligator _alligator;
-
 public override async Task OnInitAsync()
 {
     _alligator = Context.Timeseries.CreateIndicatorAlligator(indicatorAlias: "Gator");
 }
-
 public override async Task OnTickAsync()
 {
     if (Context.Timeseries.BarsCalculated("Gator") <= 0) return;
@@ -128,6 +114,7 @@ public override async Task OnTickAsync()
 }
 ```
 
+---
 
 ## Awesome Oscillator (AO)
 
@@ -189,7 +176,6 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 
 ## Market Facilitation Index (BWMFI)
 
@@ -255,20 +241,14 @@ public override async Task OnTickAsync()
 }
 ```
 
-
 ## Fractals
-
-Identifies local tops and bottoms in price movements.
-
----
+Identifies local tops and bottoms in price movements. ---
 
 **Syntax**
 
 ```csharp
-IIndicatorFractals CreateIndicatorFractals(string? symbol = null, Timeframe? timeframe = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
+// TODO: Add syntax
 ```
-
----
 
 **Parameters**
 
@@ -279,18 +259,13 @@ IIndicatorFractals CreateIndicatorFractals(string? symbol = null, Timeframe? tim
 | `indicatorAlias` | `string?` | Unique alias. |
 | `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
 
----
-
 **Return Value**
 
 Returns `IIndicatorFractals` which inherits from `IIndicator` and `IIndicatorMethodCommon`.
 
----
-
 **Remarks**
-Provides `GetUp()` and `GetDown()`. If no fractal has formed on the candle, `IsEmpty` is returned as `true`.
 
----
+Provides `GetUp()` and `GetDown()`. If no fractal has formed on the candle, `IsEmpty` is returned as `true`.
 
 **Example**
 
@@ -298,16 +273,13 @@ Provides `GetUp()` and `GetDown()`. If no fractal has formed on the candle, `IsE
 using Pt.Okx.Sdk.Clients;
 using Pt.Okx.Sdk.Enums;
 using Pt.Okx.Sdk.Indicators.BuiltIn;
-
 public class MyStrategy : StrategyBase
 {
     private IIndicatorFractals _fractals;
-
 public override async Task OnInitAsync()
 {
     _fractals = Context.Timeseries.CreateIndicatorFractals(indicatorAlias: "Fractals");
 }
-
 public override async Task OnTickAsync()
 {
     if (Context.Timeseries.BarsCalculated("Fractals") <= 0) return;
@@ -320,6 +292,7 @@ public override async Task OnTickAsync()
 }
 ```
 
+---
 
 ## Gator Oscillator
 
@@ -382,5 +355,4 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 

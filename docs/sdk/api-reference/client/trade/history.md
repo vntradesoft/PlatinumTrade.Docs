@@ -8,6 +8,8 @@ sidebar_label: History Data
 ## `GetHistoryOrdersAsync`
 Gets the history of closed or canceled orders (last 7 days).
 
+**Syntax**
+
 ```csharp
 Task<ApiResult<Order[]>> GetHistoryOrdersAsync(string? symbol = null, string? underlying = null, OrderType? orderType = null, OrderStatus? state = null, DateTime? startTime = null, DateTime? endTime = null, CancellationToken ct = default);
 ```

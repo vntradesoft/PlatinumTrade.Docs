@@ -12,13 +12,12 @@ visibility: public
 The Drawing API allows your strategies to draw visual objects on the chart, such as trend lines, text, fibonacci retracements, and rectangles. You can access these methods via the `Drawing` property on your strategy or client context.
 
 ## Add
-
 Adds a raw drawing object to the chart.
 
 **Syntax**
 
 ```csharp
-string Add(DrawingObject obj);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -31,14 +30,25 @@ string Add(DrawingObject obj);
 
 Returns the unique string identifier (`id`) of the added drawing object.
 
-## Remove
+**Remarks**
 
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.Add();
+```
+
+---
+
+## Remove
 Removes a drawing object by its unique identifier.
 
 **Syntax**
 
 ```csharp
-void Remove(string id);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -47,14 +57,29 @@ void Remove(string id);
 |---|---|---|
 | `id` | `string` | The unique identifier of the drawing object. |
 
-## Update
+**Return Value**
 
+void
+
+**Remarks**
+
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.Remove();
+```
+
+---
+
+## Update
 Updates an existing drawing object by applying a mutation action.
 
 **Syntax**
 
 ```csharp
-void Update(string id, Action<DrawingObject> mutate);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -64,14 +89,29 @@ void Update(string id, Action<DrawingObject> mutate);
 | `id` | `string` | The unique identifier of the drawing object to update. |
 | `mutate` | `Action&lt;`[`DrawingObject`](../models.md#drawingobject)`&gt;` | A callback action that modifies the drawing object properties. |
 
-## Clear
+**Return Value**
 
+void
+
+**Remarks**
+
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.Update();
+```
+
+---
+
+## Clear
 Clears all drawing objects, optionally filtered by symbol.
 
 **Syntax**
 
 ```csharp
-void Clear(string? symbol = null);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -80,14 +120,29 @@ void Clear(string? symbol = null);
 |---|---|---|
 | `symbol` | `string?` | Optional trading symbol to filter objects for clearing. If null, all objects across all symbols are cleared. |
 
-## GetAll
+**Return Value**
 
+void
+
+**Remarks**
+
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.Drawing.Clear(...);
+```
+
+---
+
+## GetAll
 Retrieves all drawing objects for a specific symbol and timeframe.
 
 **Syntax**
 
 ```csharp
-IReadOnlyList<DrawingObject> GetAll(string symbol, Timeframe tf);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -101,14 +156,25 @@ IReadOnlyList<DrawingObject> GetAll(string symbol, Timeframe tf);
 
 Returns a read-only list of [`DrawingObject`](../models.md#drawingobject).
 
-## GetById
+**Remarks**
 
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.GetAll();
+```
+
+---
+
+## GetById
 Retrieves a specific drawing object by its unique identifier.
 
 **Syntax**
 
 ```csharp
-DrawingObject? GetById(string id);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -121,14 +187,25 @@ DrawingObject? GetById(string id);
 
 Returns the [`DrawingObject`](../models.md#drawingobject) if found; otherwise, `null`.
 
-## AddHorizontalLine
+**Remarks**
 
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.GetById();
+```
+
+---
+
+## AddHorizontalLine
 Creates and adds a horizontal line drawing object.
 
 **Syntax**
 
 ```csharp
-string AddHorizontalLine(string symbol, Timeframe tf, decimal price, DrawingStyle? style = null, DrawingSource source = DrawingSource.Strategy, string? indicatorId = null);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -146,14 +223,25 @@ string AddHorizontalLine(string symbol, Timeframe tf, decimal price, DrawingStyl
 
 Returns the unique string identifier (`id`) of the added drawing object.
 
-## AddTrendLine
+**Remarks**
 
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.AddHorizontalLine();
+```
+
+---
+
+## AddTrendLine
 Creates and adds a trend line drawing object between two points.
 
 **Syntax**
 
 ```csharp
-string AddTrendLine(string symbol, Timeframe tf, DrawingAnchor startAnchor, DrawingAnchor endAnchor, DrawingStyle? style = null, string? indicatorId = null);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -171,14 +259,25 @@ string AddTrendLine(string symbol, Timeframe tf, DrawingAnchor startAnchor, Draw
 
 Returns the unique string identifier (`id`) of the added drawing object.
 
-## AddRectangle
+**Remarks**
 
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.AddTrendLine();
+```
+
+---
+
+## AddRectangle
 Creates and adds a rectangle drawing object.
 
 **Syntax**
 
 ```csharp
-string AddRectangle(string symbol, Timeframe tf, DrawingAnchor topLeft, DrawingAnchor bottomRight, DrawingStyle? style = null, string? indicatorId = null);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -196,14 +295,25 @@ string AddRectangle(string symbol, Timeframe tf, DrawingAnchor topLeft, DrawingA
 
 Returns the unique string identifier (`id`) of the added drawing object.
 
-## AddText
+**Remarks**
 
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.AddRectangle();
+```
+
+---
+
+## AddText
 Creates and adds a text label drawing object.
 
 **Syntax**
 
 ```csharp
-string AddText(string symbol, Timeframe tf, DrawingAnchor anchor, string text, DrawingStyle? style = null, string? indicatorId = null);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -221,14 +331,25 @@ string AddText(string symbol, Timeframe tf, DrawingAnchor anchor, string text, D
 
 Returns the unique string identifier (`id`) of the added drawing object.
 
-## AddEmoji
+**Remarks**
 
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.AddText();
+```
+
+---
+
+## AddEmoji
 Creates and adds an emoji icon drawing object.
 
 **Syntax**
 
 ```csharp
-string AddEmoji(string symbol, Timeframe tf, DrawingAnchor anchor, string emoji, DrawingStyle? style = null, string? indicatorId = null);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -246,14 +367,25 @@ string AddEmoji(string symbol, Timeframe tf, DrawingAnchor anchor, string emoji,
 
 Returns the unique string identifier (`id`) of the added drawing object.
 
-## AddMeasurement
+**Remarks**
 
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.AddEmoji();
+```
+
+---
+
+## AddMeasurement
 Creates and adds a measurement tool (ruler) drawing object.
 
 **Syntax**
 
 ```csharp
-string AddMeasurement(string symbol, Timeframe tf, DrawingAnchor startAnchor, DrawingAnchor endAnchor, string? indicatorId = null);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -269,3 +401,15 @@ string AddMeasurement(string symbol, Timeframe tf, DrawingAnchor startAnchor, Dr
 **Return Value**
 
 Returns the unique string identifier (`id`) of the added drawing object.
+
+**Remarks**
+
+No special remarks.
+
+**Example**
+
+```csharp
+// Context.AddMeasurement();
+```
+
+---

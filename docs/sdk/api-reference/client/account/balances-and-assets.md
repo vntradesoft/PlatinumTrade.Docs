@@ -15,6 +15,8 @@ sidebar_label: Balances & Assets
 ## `GetBalances`
 Gets detailed information about the trading account balance.
 
+**Syntax**
+
 ```csharp
 AccountBalance? GetBalances();
 ```
@@ -45,6 +47,8 @@ if (balance != null)
 
 ## `AccountSelect`
 Retrieves detailed information for a specific asset.
+
+**Syntax**
 
 ```csharp
 AccountBalanceDetail? AccountSelect(string currency = "USDT");
@@ -78,6 +82,8 @@ if (usdtBalance != null)
 
 ## `LoadBalanceAsync`
 Asynchronously refreshes the account balance from the exchange.
+
+**Syntax**
 
 ```csharp
 Task<ApiResult<AccountBalance>> LoadBalanceAsync(CancellationToken ct = default);

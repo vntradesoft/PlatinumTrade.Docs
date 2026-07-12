@@ -57,7 +57,6 @@ public override async Task OnInitAsync()
 }
 ```
 
-
 ## Chaikin Oscillator
 
 Applies the MACD principle to the Accumulation/Distribution (A/D) line.
@@ -114,7 +113,6 @@ public override async Task OnInitAsync()
 }
 ```
 
-
 ## Force Index
 
 Links price change with volume to measure the power driving a trend.
@@ -170,7 +168,6 @@ public override async Task OnInitAsync()
 }
 ```
 
-
 ## On-Balance Volume (OBV)
 
 Tracks cumulative volume flow to predict future price changes.
@@ -224,7 +221,6 @@ public override async Task OnInitAsync()
 }
 }
 ```
-
 
 ## Volume Spike
 
@@ -290,7 +286,6 @@ public override async Task OnTickAsync()
 }
 }
 ```
-
 
 ## Volume Weighted Average Price (VWAP)
 

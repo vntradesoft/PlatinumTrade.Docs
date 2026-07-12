@@ -8,6 +8,8 @@ sidebar_label: Performance Analytics
 ## `GetCurrentEquity`
 Gets the current equity value of the account.
 
+**Syntax**
+
 ```csharp
 decimal GetCurrentEquity();
 ```
@@ -34,6 +36,8 @@ decimal equity = Context.Account.GetCurrentEquity();
 
 ## `GetEquityChangePercentage`
 Calculates the percentage change in equity compared to the initial balance.
+
+**Syntax**
 
 ```csharp
 decimal GetEquityChangePercentage();
@@ -66,6 +70,8 @@ if (change > 0.1m)
 ## `GetMarginRatio`
 Calculates the current margin ratio of the account.
 
+**Syntax**
+
 ```csharp
 decimal GetMarginRatio();
 ```
@@ -96,6 +102,8 @@ if (ratio > 0.8m)
 
 ## `GetCurrentDrawdown`
 Calculates the current account drawdown compared to the equity peak.
+
+**Syntax**
 
 ```csharp
 decimal GetCurrentDrawdown();

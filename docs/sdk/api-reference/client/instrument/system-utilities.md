@@ -8,6 +8,8 @@ sidebar_label: System Utilities
 ## `GetCurrentTime`
 Gets the current system time from the client's perspective.
 
+**Syntax**
+
 ```csharp
 DateTime GetCurrentTime();
 ```

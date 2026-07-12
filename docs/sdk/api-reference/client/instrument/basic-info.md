@@ -8,6 +8,8 @@ sidebar_label: Basic Info
 ## `InstrumentType`
 Gets the type of trading instrument handled by this client.
 
+**Syntax**
+
 ```csharp
 InstrumentType InstrumentType { get; }
 ```
@@ -37,6 +39,8 @@ if (Context.Instrument.InstrumentType == InstrumentType.Spot)
 
 ## `IsSymbol`
 Checks if the specified symbol is a valid and tracked trading symbol.
+
+**Syntax**
 
 ```csharp
 bool IsSymbol(string symbol);
@@ -70,6 +74,8 @@ if (Context.Instrument.IsSymbol("BTC-USDT-SWAP"))
 ## `TotalSymbols`
 Gets the total number of trading symbols currently tracked by the bot.
 
+**Syntax**
+
 ```csharp
 int TotalSymbols();
 ```
@@ -97,6 +103,8 @@ Context.Logger.LogInformation("Symbols", $"Tracking {count} pairs");
 
 ## `QuoteAsset`
 Gets the quote asset for the specified symbol.
+
+**Syntax**
 
 ```csharp
 string QuoteAsset(string symbol);
@@ -127,6 +135,8 @@ string quote = Context.Instrument.QuoteAsset("BTC-USDT");
 ## `BaseAsset`
 Gets the base asset for the specified symbol.
 
+**Syntax**
+
 ```csharp
 string BaseAsset(string symbol);
 ```
@@ -155,6 +165,8 @@ string baseAsset = Context.Instrument.BaseAsset("BTC-USDT");
 
 ## `Underlying`
 Gets the underlying asset index for the specified derivatives symbol.
+
+**Syntax**
 
 ```csharp
 string Underlying(string symbol);

@@ -8,6 +8,8 @@ sidebar_label: Order Placement
 ## `PlaceOrderAsync`
 Places a new standard trading order (Limit, Market, etc.).
 
+**Syntax**
+
 ```csharp
 Task<ApiResult<OrderPlaceResponse>> PlaceOrderAsync(string symbol, OrderSide side, OrderType type, decimal quantity, decimal? price = null, AttachedAlgoOrder? attachedAlgoOrder = null, bool? reduceOnly = null, string? tag = null, CancellationToken ct = default);
 ```
@@ -49,6 +51,8 @@ if (res.Success)
 ## `PlaceAlgoOrderAsync`
 Places an Algo order (Take Profit, Stop Loss, Trailing Stop, etc.).
 
+**Syntax**
+
 ```csharp
 Task<ApiResult<AlgoOrderResponse>> PlaceAlgoOrderAsync(string symbol, OrderSide orderSide, AlgoOrderType algoOrderType, decimal? quantity = null, bool? reduceOnly = null, PositionSide? positionSide = null, AlgoPriceType? tpTriggerPxType = null, decimal? tpTriggerPrice = null, decimal? tpOrderPrice = null, AlgoPriceType? slTriggerPxType = null, decimal? slTriggerPrice = null, decimal? slOrderPrice = null, decimal? closeFraction = null, bool? cancelOnClose = null, string? tag = null, CancellationToken ct = default);
 ```
@@ -83,6 +87,8 @@ var res = await Context.Trade.PlaceAlgoOrderAsync("BTC-USDT", OrderSide.Sell, Al
 
 ## `OrderCheckAsync`
 Checks a potential order (pre-trade check) without actually placing it.
+
+**Syntax**
 
 ```csharp
 Task<ApiResult<CheckOrderResponse>> OrderCheckAsync(string symbol, OrderSide side, OrderType type, decimal quantity, decimal? price = null, ...);

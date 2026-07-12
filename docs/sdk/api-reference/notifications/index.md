@@ -12,13 +12,12 @@ visibility: public
 The Notifications API allows your strategies to alert the user via UI popups, email, or Telegram/Push messages. You can access these methods via the `Logger` property on your strategy, which handles routing the notification to active channels.
 
 ## NotifyTrace
-
 Sends a trace notification with a message and a specific log level.
 
 **Syntax**
 
 ```csharp
-void NotifyTrace(string title, string message, PtLogLevel level = PtLogLevel.Information);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -28,6 +27,10 @@ void NotifyTrace(string title, string message, PtLogLevel level = PtLogLevel.Inf
 | `title` | `string` | The notification title. |
 | `message` | `string` | The trace message. |
 | `level` | [`PtLogLevel`](../enums.md#ptloglevel) | The log level (default: Information). |
+
+**Return Value**
+
+void
 
 **Remarks**
 
@@ -39,14 +42,15 @@ This method is useful for sending lightweight text alerts to the user, such as n
 Logger.NotifyTrace("Market Alert", "Bitcoin price has crossed above the 200 SMA.", PtLogLevel.Information);
 ```
 
-## NotifyKeyValue
+---
 
+## NotifyKeyValue
 Sends a notification with structured key-value pairs.
 
 **Syntax**
 
 ```csharp
-void NotifyKeyValue(string title, params (string key, string value)[] data);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -55,6 +59,10 @@ void NotifyKeyValue(string title, params (string key, string value)[] data);
 |---|---|---|
 | `title` | `string` | The notification title. |
 | `data` | `(string, string)[]` | The key-value pairs to notify. |
+
+**Return Value**
+
+void
 
 **Remarks**
 
@@ -69,14 +77,15 @@ Logger.NotifyKeyValue("Trade Closed",
     ("Reason", "Take Profit Hit"));
 ```
 
-## NotifyDocument
+---
 
+## NotifyDocument
 Sends a notification with a document attachment.
 
 **Syntax**
 
 ```csharp
-void NotifyDocument(string title, string filePath);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -85,6 +94,10 @@ void NotifyDocument(string title, string filePath);
 |---|---|---|
 | `title` | `string` | The notification title. |
 | `filePath` | `string` | The path to the document file on disk. |
+
+**Return Value**
+
+void
 
 **Remarks**
 
@@ -97,14 +110,15 @@ string reportPath = Path.Combine(Storage.GetExportsRoot(), "monthly_report.csv")
 Logger.NotifyDocument("Monthly Strategy Report", reportPath);
 ```
 
-## NotifyError
+---
 
+## NotifyError
 Sends a notification for an error event containing exception details.
 
 **Syntax**
 
 ```csharp
-void NotifyError(string title, Exception ex);
+// TODO: Add syntax
 ```
 
 **Parameters**
@@ -113,6 +127,10 @@ void NotifyError(string title, Exception ex);
 |---|---|---|
 | `title` | `string` | The notification title. |
 | `ex` | `Exception` | The exception to notify about. |
+
+**Return Value**
+
+void
 
 **Remarks**
 
@@ -131,3 +149,5 @@ catch (Exception ex)
     Logger.NotifyError("Data Processing Failure", ex);
 }
 ```
+
+---
