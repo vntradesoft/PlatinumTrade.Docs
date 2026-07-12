@@ -52,7 +52,7 @@ Represents an algorithmic order in the OKX trading system.
 
 | Property | Type | Description |
 |---|---|---|
-| `InstrumentType` | <code><a href="enums.md#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
+| `InstrumentType` | <code><a href="./enums#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
 | `Symbol` | `string` | The trading symbol (e.g., BTC-USDT). |
 | `Asset` | `string` | The asset or currency base for the order. |
 | `OrderId` | `long?` | The unique identifier for the order, if available. |
@@ -61,24 +61,24 @@ Represents an algorithmic order in the OKX trading system.
 | `ClientOrderId` | `string?` | The client-defined unique identifier for the order. |
 | `Quantity` | `decimal?` | The quantity of the asset to be traded. |
 | `CloseFraction` | `decimal?` | The fraction of the position to be closed. |
-| `OrderType` | <code><a href="enums.md#algoordertype">AlgoOrderType</a></code> | The type of the algorithmic order. |
-| `OrderSide` | <code><a href="enums.md#orderside">OrderSide</a></code> | The side of the order (Buy/Sell). |
-| `PositionSide` | <code><a href="enums.md#positionside">PositionSide</a>?</code> | The position side (e.g., Long/Short). |
-| `TradeMode` | <code><a href="enums.md#trademode">TradeMode</a></code> | The trade mode (e.g., Cash/Margin). |
-| `State` | <code><a href="enums.md#algoorderstate">AlgoOrderState</a></code> | The current state of the algorithmic order. |
+| `OrderType` | <code><a href="./enums#algoordertype">AlgoOrderType</a></code> | The type of the algorithmic order. |
+| `OrderSide` | <code><a href="./enums#orderside">OrderSide</a></code> | The side of the order (Buy/Sell). |
+| `PositionSide` | <code><a href="./enums#positionside">PositionSide</a>?</code> | The position side (e.g., Long/Short). |
+| `TradeMode` | <code><a href="./enums#trademode">TradeMode</a></code> | The trade mode (e.g., Cash/Margin). |
+| `State` | <code><a href="./enums#algoorderstate">AlgoOrderState</a></code> | The current state of the algorithmic order. |
 | `Leverage` | `decimal?` | The leverage to be applied to the order. |
 | `TakeProfitTriggerPrice` | `decimal?` | The take-profit trigger price. |
-| `TakeProfitTriggerPriceType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a>?</code> | The type of take-profit trigger price. |
+| `TakeProfitTriggerPriceType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a>?</code> | The type of take-profit trigger price. |
 | `TakeProfitOrderPrice` | `decimal?` | The price of the take-profit order. |
 | `StopLossTriggerPrice` | `decimal?` | The stop-loss trigger price. |
-| `StopLossTriggerPriceType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a>?</code> | The type of stop-loss trigger price. |
+| `StopLossTriggerPriceType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a>?</code> | The type of stop-loss trigger price. |
 | `StopLossOrderPrice` | `decimal?` | The price of the stop-loss order. |
 | `TriggerPrice` | `decimal?` | The trigger price for the order. |
-| `TriggerPriceType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a>?</code> | The type of trigger price. |
+| `TriggerPriceType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a>?</code> | The type of trigger price. |
 | `ActualOrderQuantity` | `decimal?` | The actual quantity executed for the order. |
 | `ActualOrderPrice` | `decimal?` | The actual price executed for the order. |
 | `Tag` | `string?` | A custom tag for the order. |
-| `ActualSide` | <code><a href="enums.md#algoactualside">AlgoActualSide</a>?</code> | The actual side of the order execution. |
+| `ActualSide` | <code><a href="./enums#algoactualside">AlgoActualSide</a>?</code> | The actual side of the order execution. |
 | `TriggerTime` | `DateTime?` | The time when the order was triggered. |
 | `ReduceOnly` | `bool` | Whether the order is for reducing the position only. |
 | `LastPrice` | `decimal?` | The last market price of the asset. |
@@ -109,7 +109,7 @@ Represents the response received after attempting to close a position in the OKX
 | Property | Type | Description |
 |---|---|---|
 | `Symbol` | `string` | The trading symbol (e.g., BTC-USDT). |
-| `PositionSide` | <code><a href="enums.md#positionside">PositionSide</a></code> | The side of the position to close (e.g., Long/Short). |
+| `PositionSide` | <code><a href="./enums#positionside">PositionSide</a></code> | The side of the position to close (e.g., Long/Short). |
 | `ClientOrderId` | `string?` | The client-defined unique identifier for the order. |
 | `Tag` | `string?` | A custom tag associated with the close position request. |
 
@@ -119,10 +119,10 @@ Represents a closed position in the OKX trading system.
 
 | Property | Type | Description |
 |---|---|---|
-| `InstrumentType` | <code><a href="enums.md#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
+| `InstrumentType` | <code><a href="./enums#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
 | `Symbol` | `string` | The trading symbol (e.g., BTC-USDT). |
-| `MarginMode` | <code><a href="enums.md#marginmode">MarginMode</a></code> | The margin mode of the position. |
-| `Type` | <code><a href="enums.md#closingpositiontype">ClosingPositionType</a></code> | The type of closing position. |
+| `MarginMode` | <code><a href="./enums#marginmode">MarginMode</a></code> | The margin mode of the position. |
+| `Type` | <code><a href="./enums#closingpositiontype">ClosingPositionType</a></code> | The type of closing position. |
 | `CreateTime` | `DateTime` | The time when the position was created. |
 | `UpdateTime` | `DateTime` | The time when the position was last updated. |
 | `OpenAveragePrice` | `decimal?` | The average opening price of the position. |
@@ -136,9 +136,9 @@ Represents a closed position in the OKX trading system.
 | `FundingFee` | `decimal?` | The funding fee incurred. |
 | `LiquidationPenalty` | `decimal?` | The liquidation penalty incurred. |
 | `ProfitAndLoss` | `decimal?` | The overall profit and loss of the position. |
-| `PositionSide` | <code><a href="enums.md#positionside">PositionSide</a></code> | The position side. |
+| `PositionSide` | <code><a href="./enums#positionside">PositionSide</a></code> | The position side. |
 | `Leverage` | `decimal?` | The leverage applied to the position. |
-| `Direction` | <code><a href="enums.md#positionside">PositionSide</a></code> | The direction of the position. |
+| `Direction` | <code><a href="./enums#positionside">PositionSide</a></code> | The direction of the position. |
 | `TriggerMarkPrice` | `decimal?` | The trigger mark price for the position. |
 | `Underlying` | `string` | The underlying asset of the position. |
 | `Asset` | `string?` | The asset used for the position. |
@@ -149,7 +149,7 @@ Represents an order in the OKX trading system.
 
 | Property | Type | Description |
 |---|---|---|
-| `InstrumentType` | <code><a href="enums.md#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
+| `InstrumentType` | <code><a href="./enums#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
 | `Symbol` | `string` | The trading symbol (e.g., BTC-USDT). |
 | `Asset` | `string` | The asset or currency base for the order. |
 | `OrderId` | `long?` | The unique identifier for the order. |
@@ -158,25 +158,25 @@ Represents an order in the OKX trading system.
 | `Price` | `decimal?` | The price of the order. |
 | `Quantity` | `decimal?` | The quantity of the asset to be traded. |
 | `ProfitAndLoss` | `decimal?` | The profit and loss of the order. |
-| `OrderType` | <code><a href="enums.md#ordertype">OrderType</a></code> | The type of the order. |
-| `OrderSide` | <code><a href="enums.md#orderside">OrderSide</a></code> | The side of the order (Buy/Sell). |
-| `PositionSide` | <code><a href="enums.md#positionside">PositionSide</a>?</code> | The position side (e.g., Long/Short). |
-| `TradeMode` | <code><a href="enums.md#trademode">TradeMode</a></code> | The trade mode (e.g., Cash/Margin). |
+| `OrderType` | <code><a href="./enums#ordertype">OrderType</a></code> | The type of the order. |
+| `OrderSide` | <code><a href="./enums#orderside">OrderSide</a></code> | The side of the order (Buy/Sell). |
+| `PositionSide` | <code><a href="./enums#positionside">PositionSide</a>?</code> | The position side (e.g., Long/Short). |
+| `TradeMode` | <code><a href="./enums#trademode">TradeMode</a></code> | The trade mode (e.g., Cash/Margin). |
 | `AccumulatedFillQuantity` | `decimal?` | The accumulated filled quantity for the order. |
 | `FillPrice` | `decimal?` | The price at which the order was filled. |
 | `TradeId` | `long?` | The unique identifier of the trade. |
 | `QuantityFilled` | `decimal?` | The quantity filled for the order. |
 | `FillTime` | `DateTime?` | The time when the order was filled. |
 | `AveragePrice` | `decimal?` | The average price of the filled order. |
-| `OrderState` | <code><a href="enums.md#orderstatus">OrderStatus</a></code> | The status of the order. |
-| `SelfTradePreventionMode` | <code><a href="enums.md#selftradepreventionmode">SelfTradePreventionMode</a>?</code> | The self-trade prevention mode. |
+| `OrderState` | <code><a href="./enums#orderstatus">OrderStatus</a></code> | The status of the order. |
+| `SelfTradePreventionMode` | <code><a href="./enums#selftradepreventionmode">SelfTradePreventionMode</a>?</code> | The self-trade prevention mode. |
 | `Leverage` | `decimal?` | The leverage applied to the order. |
 | `AttachAlgoCllientOrderId` | `string?` | The client-defined unique identifier of the attached algorithmic order. |
 | `TakeProfitTriggerPrice` | `decimal?` | The take-profit trigger price. |
 | `TakeProfitOrderPrice` | `decimal?` | The price of the take-profit order. |
-| `TakeProfitTriggerPriceType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a>?</code> | The type of take-profit trigger price. |
+| `TakeProfitTriggerPriceType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a>?</code> | The type of take-profit trigger price. |
 | `StopLossTriggerPrice` | `decimal?` | The stop-loss trigger price. |
-| `StopLossTriggerPriceType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a>?</code> | The type of stop-loss trigger price. |
+| `StopLossTriggerPriceType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a>?</code> | The type of stop-loss trigger price. |
 | `StopLossOrderPrice` | `decimal?` | The price of the stop-loss order. |
 | `Source` | `string` | The source of the order. |
 | `ReduceOnly` | `bool` | Whether the order is for reducing the position only. |
@@ -240,7 +240,7 @@ Check order info
 | `MaintenanceMarginRequirementChange` | `decimal` | ["mmrChg"] After placing order, changed quantity of maintenance margin requirement in USD |
 | `PositionBalance` | `string?` | ["posBal"] Current positive asset, only applicable to margin isolated position |
 | `PositionBalanceChange` | `string?` | ["posBalChg"] After placing order, positive asset of margin isolated, only applicable to margin isolated position |
-| `Type` | <code><a href="enums.md#checkunittype">CheckUnitType</a>?</code> | ["type"] Unit type |
+| `Type` | <code><a href="./enums#checkunittype">CheckUnitType</a>?</code> | ["type"] Unit type |
 
 ### OrderAmendResponse
 
@@ -307,21 +307,21 @@ Order place request
 | Property | Type | Description |
 |---|---|---|
 | `SymbolCode` | `long` | ["instIdCode"] Symbol code |
-| `TradeMode` | <code><a href="enums.md#trademode">TradeMode</a></code> | ["tdMode"] Trade mode |
-| `OrderSide` | <code><a href="enums.md#orderside">OrderSide</a></code> | ["side"] Order side |
-| `PositionSide` | <code><a href="enums.md#positionside">PositionSide</a>?</code> | ["posSide"] Position side |
-| `OrderType` | <code><a href="enums.md#ordertype">OrderType</a></code> | ["ordType"] Order type |
+| `TradeMode` | <code><a href="./enums#trademode">TradeMode</a></code> | ["tdMode"] Trade mode |
+| `OrderSide` | <code><a href="./enums#orderside">OrderSide</a></code> | ["side"] Order side |
+| `PositionSide` | <code><a href="./enums#positionside">PositionSide</a>?</code> | ["posSide"] Position side |
+| `OrderType` | <code><a href="./enums#ordertype">OrderType</a></code> | ["ordType"] Order type |
 | `Quantity` | `decimal?` | ["sz"] Quantity |
 | `Price` | `decimal?` | ["px"] Price |
 | `Asset` | `string` | ["ccy"] Asset |
 | `ClientOrderId` | `string?` | ["clOrdId"] Client order id |
 | `Tag` | `string?` | ["tag"] Tag |
 | `ReduceOnly` | `bool?` | ["reduceOnly"] Reduce only |
-| `QuantityType` | <code><a href="enums.md#quantityasset">QuantityAsset</a>?</code> | ["tgtCcy"] Quantity type |
+| `QuantityType` | <code><a href="./enums#quantityasset">QuantityAsset</a>?</code> | ["tgtCcy"] Quantity type |
 | `PriceUsd` | `decimal?` | ["pxUsd"] Place options orders in USD, only applicable to options |
 | `PriceVol` | `decimal?` | ["pxVol"] Place options orders based on implied volatility, where 1 represents 100%. Only applicable to OPTIONS |
 | `BanAmend` | `bool?` | ["banAmend"] Whether to disallow the system from amending the size of the SPOT Market Order. If true, system will not amend and reject the market order if user does not have sufficient funds. |
-| `StpMode` | <code><a href="enums.md#selftradepreventionmode">SelfTradePreventionMode</a>?</code> | ["stpMode"] Self trade prevention mode |
+| `StpMode` | <code><a href="./enums#selftradepreventionmode">SelfTradePreventionMode</a>?</code> | ["stpMode"] Self trade prevention mode |
 | `TradeQuoteAsset` | `string?` | ["tradeQuoteCcy"] The quote currency used for trading. Only applicable to SPOT. The default value is the quote currency of the symbol, for example: for BTC-USD, the default is USD. |
 | `AttachedAlgoOrders` | `AttachedAlgoOrder[]?` | ["attachAlgoOrds"] Attached take profit / stop loss orders |
 
@@ -334,12 +334,12 @@ Algo order attached to an order
 | `ClientOrderId` | `string?` | ["attachAlgoClOrdId"] Client order id |
 | `TakeProfitTriggerPrice` | `decimal?` | ["tpTriggerPx"] Take profit trigger price |
 | `TakeProfitOrderPrice` | `decimal?` | ["tpOrdPx"] Take profit order price |
-| `TakeProfitOrderKind` | <code><a href="enums.md#triggerorderkind">TriggerOrderKind</a>?</code> | ["tpOrdKind"] Take profit order kind |
-| `TakeProfitPriceType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a>?</code> | ["tpTriggerPxType"] Take profit price type |
+| `TakeProfitOrderKind` | <code><a href="./enums#triggerorderkind">TriggerOrderKind</a>?</code> | ["tpOrdKind"] Take profit order kind |
+| `TakeProfitPriceType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a>?</code> | ["tpTriggerPxType"] Take profit price type |
 | `TakeProfitQuantity` | `decimal?` | ["sz"] Take profit quantity |
 | `StopLossTriggerPrice` | `decimal?` | ["slTriggerPx"] Stop loss trigger price |
 | `StopLossOrderPrice` | `decimal?` | ["slOrdPx"] Stop loss order price |
-| `StopLossPriceType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a>?</code> | ["slTriggerPxType"] Stop loss price type |
+| `StopLossPriceType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a>?</code> | ["slTriggerPxType"] Stop loss price type |
 | `AmendPriceOnTriggerType` | `string?` | ["amendPxOnTriggerType"] Whether to enable Cost-price SL. Only applicable to SL order of split TPs. Whether slTriggerPx will move to avgPx when the first TP order is triggered, 0: disable, the default value, 1: Enable |
 | `CallbackRatio` | `decimal?` | ["callbackRatio"] Callback ratio, e.g. 0.05 represents 5%. |
 | `CallbackSpread` | `decimal?` | ["callbackSpread"] Callback spread (price distance). |
@@ -372,10 +372,10 @@ Represents a position in the OKX trading system.
 
 | Property | Type | Description |
 |---|---|---|
-| `InstrumentType` | <code><a href="enums.md#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
-| `MarginMode` | <code><a href="enums.md#marginmode">MarginMode</a></code> | The margin mode of the position. |
+| `InstrumentType` | <code><a href="./enums#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
+| `MarginMode` | <code><a href="./enums#marginmode">MarginMode</a></code> | The margin mode of the position. |
 | `PositionId` | `long?` | The unique identifier of the position. |
-| `PositionSide` | <code><a href="enums.md#positionside">PositionSide</a></code> | The position side. |
+| `PositionSide` | <code><a href="./enums#positionside">PositionSide</a></code> | The position side. |
 | `PositionsQuantity` | `decimal?` | The quantity of the positions. |
 | `AveragePrice` | `decimal?` | The average price of the positions. |
 | `MarkPrice` | `decimal?` | The mark price of the positions. |
@@ -415,9 +415,9 @@ Represents an algorithmic order to close a position.
 |---|---|---|
 | `AlgoId` | `string` | The algorithmic order identifier. |
 | `StopLossTriggerPrice` | `decimal` | The stop-loss trigger price. |
-| `StopLossTriggerType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a></code> | The type of stop-loss trigger. |
+| `StopLossTriggerType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a></code> | The type of stop-loss trigger. |
 | `TakeProfitTriggerPrice` | `decimal` | The take-profit trigger price. |
-| `TakeProfitTriggerType` | <code><a href="enums.md#triggerpricetype">TriggerPriceType</a></code> | The type of take-profit trigger. |
+| `TakeProfitTriggerType` | <code><a href="./enums#triggerpricetype">TriggerPriceType</a></code> | The type of take-profit trigger. |
 | `CloseFraction` | `decimal?` | The fraction of the position to close. |
 
 ### Transaction
@@ -426,23 +426,23 @@ Represents a transaction in the OKX trading system.
 
 | Property | Type | Description |
 |---|---|---|
-| `InstrumentType` | <code><a href="enums.md#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
+| `InstrumentType` | <code><a href="./enums#instrumenttype">InstrumentType</a></code> | The type of the instrument. |
 | `Symbol` | `string` | The trading symbol (e.g., BTC-USDT). |
 | `TradeId` | `long?` | The unique identifier for the trade. |
 | `OrderId` | `long?` | The unique identifier for the order. |
 | `ClientOrderId` | `string?` | The client-defined unique identifier for the order. |
 | `BillId` | `long?` | The unique identifier for the bill. |
 | `TransactionType` | `string` | The type of the transaction. |
-| `SubType` | <code><a href="enums.md#transactiontype">TransactionType</a></code> | The sub-type of the transaction. |
+| `SubType` | <code><a href="./enums#transactiontype">TransactionType</a></code> | The sub-type of the transaction. |
 | `Tag` | `string` | A custom tag for the transaction. |
 | `FillPrice` | `decimal?` | The price of the fill. |
 | `QuantityFilled` | `decimal?` | The quantity filled for the transaction. |
 | `FillIndexPrice` | `decimal?` | The index price at the time of fill. |
 | `FillProfitAndLoss` | `decimal?` | The profit and loss from the fill. |
 | `FillMarkPrice` | `decimal?` | The mark price at the time of fill. |
-| `OrderSide` | <code><a href="enums.md#orderside">OrderSide</a></code> | The side of the order (Buy/Sell). |
-| `PositionSide` | <code><a href="enums.md#positionside">PositionSide</a></code> | The position side (e.g., Long/Short). |
-| `OrderFlowType` | <code><a href="enums.md#orderflowtype">OrderFlowType</a></code> | The flow type of the order. |
+| `OrderSide` | <code><a href="./enums#orderside">OrderSide</a></code> | The side of the order (Buy/Sell). |
+| `PositionSide` | <code><a href="./enums#positionside">PositionSide</a></code> | The position side (e.g., Long/Short). |
+| `OrderFlowType` | <code><a href="./enums#orderflowtype">OrderFlowType</a></code> | The flow type of the order. |
 | `FeeAsset` | `string` | The asset used for the fee. |
 | `Fee` | `decimal?` | The fee incurred for the transaction. |
 | `Time` | `DateTime` | The time of the transaction. |
@@ -461,7 +461,7 @@ Configuration for synthetic tick generation during backtests. This does not affe
 | `UseNoise` | `bool` | Gets or sets whether random noise is applied to intermediate prices. Enabled is more realistic; disabled is deterministic and better for tests. |
 | `NoiseAmplitude` | `double` | Gets or sets the maximum noise amplitude as a fraction of the candle spread. For example, 0.1 means up to 10% of High - Low. |
 | `RandomSeed` | `int?` | Gets or sets the random seed used for reproducible backtests. Null means a new random sequence for each run. |
-| `OhlcPattern` | <code><a href="enums.md#ohlcpattern">OhlcPattern</a></code> | Gets or sets the generated tick path pattern inside each OHLC candle. |
+| `OhlcPattern` | <code><a href="./enums#ohlcpattern">OhlcPattern</a></code> | Gets or sets the generated tick path pattern inside each OHLC candle. |
 
 ## Drawing
 
@@ -473,7 +473,7 @@ Defines the styling properties for a drawing object.
 |---|---|---|
 | `Color` | `string` | Gets or sets the stroke color in hex format (e.g., "#FFFFFF"). |
 | `Width` | `double` | Gets or sets the stroke width. |
-| `LineStyle` | <code><a href="enums.md#drawinglinestyle">DrawingLineStyle</a></code> | Gets or sets the line style. |
+| `LineStyle` | <code><a href="./enums#drawinglinestyle">DrawingLineStyle</a></code> | Gets or sets the line style. |
 | `Opacity` | `double` | Gets or sets the opacity (0.0 to 1.0). |
 | `Fill` | `bool` | Gets or sets a value indicating whether to fill the shape. |
 | `FillColor` | `string` | Gets or sets the fill color in hex format (e.g., "#44FFFFFF"). |
@@ -487,7 +487,7 @@ Represents the limit price information for a specific trading instrument.
 | Property | Type | Description |
 |---|---|---|
 | `Symbol` | `string` | ["instId"] Symbol |
-| `InstrumentType` | <code><a href="enums.md#instrumenttype">InstrumentType</a></code> | ["instType"] Instrument type |
+| `InstrumentType` | <code><a href="./enums#instrumenttype">InstrumentType</a></code> | ["instType"] Instrument type |
 | `BuyLimit` | `decimal` | ["buyLmt"] Buy limit |
 | `SellLimit` | `decimal` | ["sellLmt"] Sell limit |
 | `Time` | `DateTime` | ["ts"] Timestamp |
@@ -502,7 +502,7 @@ Represents an error returned by the OKX API.
 | `Message` | `string` | Human-readable error message. |
 | `Code` | `string?` | OKX API error code, if available (e.g. "50001", "51000"). |
 | `HttpStatusCode` | `HttpStatusCode?` | HTTP status code of the response, if applicable. |
-| `ErrorType` | <code><a href="enums.md#apierrortype">ApiErrorType</a></code> | The category of error. |
+| `ErrorType` | <code><a href="./enums#apierrortype">ApiErrorType</a></code> | The category of error. |
 
 ### ApiResult
 
@@ -538,7 +538,7 @@ Represents a command sent to a trading strategy.
 
 | Property | Type | Description |
 |---|---|---|
-| `Action` | <code><a href="enums.md#tradeaction">TradeAction</a></code> | Gets or sets the command action. |
+| `Action` | <code><a href="./enums#tradeaction">TradeAction</a></code> | Gets or sets the command action. |
 | `SourceChatId` | `long` | Gets or sets the Telegram Chat ID from which this command originated. |
 | `Symbol` | `string` | Gets or sets the target symbol. |
 | `Amount` | `decimal` | Gets or sets the command amount. |
@@ -554,9 +554,9 @@ Describes one data source used by an indicator instance. The source can be eithe
 | Property | Type | Description |
 |---|---|---|
 | `IndicatorId` | `string?` | Gets or sets the parent indicator ID. When null, the source is interpreted as candle price data. |
-| `TimeFrame` | <code><a href="enums.md#timeframe">Timeframe</a>?</code> | Gets or sets the parent indicator timeframe when it differs from the current indicator timeframe. |
+| `TimeFrame` | <code><a href="./enums#timeframe">Timeframe</a>?</code> | Gets or sets the parent indicator timeframe when it differs from the current indicator timeframe. |
 | `BufferIndex` | `int` | Gets or sets the parent indicator buffer index to read from. |
-| `AppliedPrice` | <code><a href="enums.md#appliedprice">AppliedPrice</a></code> | Gets or sets the candle price field used when no parent indicator is configured. |
+| `AppliedPrice` | <code><a href="./enums#appliedprice">AppliedPrice</a></code> | Gets or sets the candle price field used when no parent indicator is configured. |
 
 ### IndicatorConfig
 
@@ -565,8 +565,8 @@ Represents the runtime configuration used to create and identify an indicator in
 | Property | Type | Description |
 |---|---|---|
 | `Symbol` | `string` | Gets the trading symbol this indicator is associated with. |
-| `TimeFrame` | <code><a href="enums.md#timeframe">Timeframe</a></code> | Gets the timeframe in which the indicator is calculated. |
-| `IndicatorType` | <code><a href="enums.md#indicatortype">IndicatorType</a></code> | Gets the indicator type. For custom indicators, this is typically , and is used to distinguish the implementation. |
+| `TimeFrame` | <code><a href="./enums#timeframe">Timeframe</a></code> | Gets the timeframe in which the indicator is calculated. |
+| `IndicatorType` | <code><a href="./enums#indicatortype">IndicatorType</a></code> | Gets the indicator type. For custom indicators, this is typically , and is used to distinguish the implementation. |
 | `Parameters` | `IndicatorParameters` | Gets or sets the parameter collection used by the indicator. |
 | `CustomName` | `string?` | Gets or sets the custom indicator name. null indicates a built-in indicator. |
 
@@ -577,8 +577,8 @@ Represents the logical identity of an indicator instance. Combines symbol, timef
 | Property | Type | Description |
 |---|---|---|
 | `Symbol` | `string` | Gets or sets the trading symbol for the indicator instance. |
-| `TimeFrame` | <code><a href="enums.md#timeframe">Timeframe</a></code> | Gets or sets the timeframe where the indicator is calculated. |
-| `IndicatorType` | <code><a href="enums.md#indicatortype">IndicatorType</a></code> | Gets or sets the indicator type. |
+| `TimeFrame` | <code><a href="./enums#timeframe">Timeframe</a></code> | Gets or sets the timeframe where the indicator is calculated. |
+| `IndicatorType` | <code><a href="./enums#indicatortype">IndicatorType</a></code> | Gets or sets the indicator type. |
 | `Parameters` | `IndicatorParameters` | Gets or sets the parameter bag used by this identity. |
 
 ### IndicatorItem
@@ -611,10 +611,10 @@ Defines a shaded region drawn between two indicator buffers (e.g. Ichimoku Kumo 
 | `Visible` | `bool` | Gets or sets whether the fill is shown in the indicator settings dialog. |
 | `UpperBufferIndex` | `int` | Gets or sets the buffer index whose values define the top boundary of the fill. |
 | `LowerBufferIndex` | `int` | Gets or sets the buffer index whose values define the bottom boundary of the fill. |
-| `ColorMode` | <code><a href="enums.md#indicatorfillcolormode">IndicatorFillColorMode</a></code> | Gets or sets how the fill color is selected. Use for a constant color, or to switch between and based on the relative positions of the upper and lower buffers. |
-| `FillColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color used when is . |
-| `BullishColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color used when upper ≥ lower and is . |
-| `BearishColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color used when upper &lt; lower and is . |
+| `ColorMode` | <code><a href="./enums#indicatorfillcolormode">IndicatorFillColorMode</a></code> | Gets or sets how the fill color is selected. Use for a constant color, or to switch between and based on the relative positions of the upper and lower buffers. |
+| `FillColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color used when is . |
+| `BullishColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color used when upper ≥ lower and is . |
+| `BearishColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color used when upper &lt; lower and is . |
 | `Opacity` | `byte` | Gets or sets the fill transparency (0 = fully transparent, 255 = fully opaque). Default is 72. |
 
 ### IndicatorSpecialFeatures
@@ -635,19 +635,19 @@ Optional display features for specific indicator families. These settings add ex
 | `LowerBoundWidth` | `double` | Gets or sets the stroke width of the lower-bound line. Default is 1.0. |
 | `CenterLineValue` | `double` | Gets or sets the Y value of the center line. Default is 50. |
 | `CenterLineWidth` | `double` | Gets or sets the stroke width of the center line. Default is 1.0. |
-| `UpperBoundColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color of the upper-bound line. Default is . |
-| `LowerBoundColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color of the lower-bound line. Default is . |
-| `CenterLineColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color of the center line. Default is . |
-| `BoundLineStyle` | <code><a href="enums.md#indicatorstyle">IndicatorStyle</a></code> | Gets or sets the dash style shared by all bound lines. Default is . |
+| `UpperBoundColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color of the upper-bound line. Default is . |
+| `LowerBoundColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color of the lower-bound line. Default is . |
+| `CenterLineColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color of the center line. Default is . |
+| `BoundLineStyle` | <code><a href="./enums#indicatorstyle">IndicatorStyle</a></code> | Gets or sets the dash style shared by all bound lines. Default is . |
 | `ShowBoundFill` | `bool` | Gets or sets whether to fill the area between the upper-bound line and the lower-bound line. Only rendered when both and are true. |
-| `BoundFillColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the fill color used between the upper and lower bound lines. Default is . |
+| `BoundFillColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the fill color used between the upper and lower bound lines. Default is . |
 | `BoundFillOpacity` | `byte` | Gets or sets the fill transparency for the bound area (0 = fully transparent, 255 = fully opaque). Default is 30. |
 | `ShowHistogram` | `bool` | Gets or sets whether to render the primary buffer as a histogram. |
-| `HistogramPositiveColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color for histogram bars with positive values. Default is . |
-| `HistogramNegativeColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color for histogram bars with negative values. Default is . |
+| `HistogramPositiveColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color for histogram bars with positive values. Default is . |
+| `HistogramNegativeColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color for histogram bars with negative values. Default is . |
 | `ShowZeroLine` | `bool` | Gets or sets whether to draw a horizontal zero line across the panel. |
 | `ZeroLineWidth` | `double` | Gets or sets the stroke width of the zero line. Default is 1.0. |
-| `ZeroLineColor` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color of the zero line. Default is . |
+| `ZeroLineColor` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the color of the zero line. Default is . |
 
 ### IndicatorLabel
 
@@ -656,9 +656,9 @@ Rendering metadata for a single indicator plot (line, histogram, dots, …). Eac
 | Property | Type | Description |
 |---|---|---|
 | `Label` | `string` | Gets or sets the human-readable name shown in the crosshair tooltip and legend. |
-| `Type` | <code><a href="enums.md#indicatordrawtype">IndicatorDrawType</a></code> | Gets or sets the draw primitive used to render this plot. Default is . |
-| `Color` | <code><a href="enums.md#indicatorcolor">IndicatorColor</a></code> | Gets or sets the fallback color for this plot. Used when is not set or yields no valid palette entry. Default is . |
-| `Style` | <code><a href="enums.md#indicatorstyle">IndicatorStyle</a></code> | Gets or sets the dash style for line-type plots. Default is . |
+| `Type` | <code><a href="./enums#indicatordrawtype">IndicatorDrawType</a></code> | Gets or sets the draw primitive used to render this plot. Default is . |
+| `Color` | <code><a href="./enums#indicatorcolor">IndicatorColor</a></code> | Gets or sets the fallback color for this plot. Used when is not set or yields no valid palette entry. Default is . |
+| `Style` | <code><a href="./enums#indicatorstyle">IndicatorStyle</a></code> | Gets or sets the dash style for line-type plots. Default is . |
 | `Width` | `double` | Gets or sets the stroke width. Default is 1.0. |
 | `Visible` | `bool` | Gets or sets whether this plot is currently visible on the chart. |
 | `Digit` | `int?` | Gets or sets the optional number of decimal places shown for this plot in crosshair and tooltip overlays. When null, the indicator-level default precision is used. |
@@ -673,10 +673,10 @@ Display and buffer metadata for an indicator. Passed to the chart engine to cont
 | `Name` | `string` | Gets or sets the display name shown on the chart legend and in dialogs (e.g. "RSI(14)", "SuperTrend(10,3)"). |
 | `IsVisible` | `bool` | Gets or sets whether the indicator is rendered on the chart. Default is true. |
 | `IsInternal` | `bool` | Gets or sets whether this indicator is hidden from the indicator selection menus. Set to true for internally chained indicators that should not be added manually. |
-| `Window` | <code><a href="enums.md#indicatorwindow">IndicatorWindow</a></code> | Gets the chart panel where the indicator is drawn. renders over the price bars; renders in its own panel below the chart. |
+| `Window` | <code><a href="./enums#indicatorwindow">IndicatorWindow</a></code> | Gets the chart panel where the indicator is drawn. renders over the price bars; renders in its own panel below the chart. |
 | `Buffers` | `int` | Gets the total number of buffers allocated for this indicator, including , , and buffers. Must match the number of SetBuffer calls in OnInit. |
 | `Plots` | `int` | Gets the number of visible plots (i.e. entries in ). Used for informational purposes; the renderer drives visibility from directly. |
-| `VisibleTimeframes` | <code><a href="enums.md#timeframeoptions">TimeFrameOptions</a></code> | Gets or sets the set of timeframes on which this indicator is displayed. Default is . |
+| `VisibleTimeframes` | <code><a href="./enums#timeframeoptions">TimeFrameOptions</a></code> | Gets or sets the set of timeframes on which this indicator is displayed. Default is . |
 | `SpecialFeatures` | `IndicatorSpecialFeatures` | Gets or sets additional rendering features such as bound lines, zero line, histogram colors, and fill regions between buffers. |
 
 ### struct
