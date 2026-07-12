@@ -1,36 +1,84 @@
 ---
 id: index
-title: Notifications & Commands
+title: Notifications
 sidebar_position: 1
-description: Notifications API allows you to send alerts, push notifications, and handle Telegram commands.
+description: Notifications API allows you to send alerts, push notifications, and emails.
 status: stable
 visibility: public
 ---
 
-# Notifications & Commands
+# Notifications API
 
-The **Notifications API** enables your strategies to push alerts to the user through various channels (UI popups, Emails, Telegram, Push notifications) and listen to custom Telegram commands.
+The Notifications API allows your strategies to alert the user via UI popups, email, or Telegram/Push messages. You can access these methods via the `Logger` property on your strategy, which handles routing the notification to active channels.
 
-Unlike other systems, the SDK does not require you to inject a separate `INotificationsClient`. Instead, the unified `IStrategyLogger` handles both logging and alert routing.
+## NotifyTrace
 
-## Sending Notifications
+Sends a trace notification with a message and a specific log level.
 
-You can trigger notifications directly from your strategy using the `Logger` property (which implements `IStrategyLogger`). The host engine handles routing the message to the active notification channels (e.g., Telegram, Webhook, UI).
-
-### Notification Methods
-
-- **`NotifyTrace(string title, string message, PtLogLevel level)`**: Sends a general text notification.
-- **`NotifyKeyValue(string title, params (string, string)[] data)`**: Sends a structured notification containing key-value pairs.
-- **`NotifyDocument(string title, string filePath)`**: Sends a document or file attachment to the user (e.g., via Telegram).
-- **`NotifyError(string title, Exception ex)`**: Sends a high-priority alert containing exception details.
+**Syntax**
 
 ```csharp
-// Example: Sending a key-value notification on a trade exit
-Logger.NotifyKeyValue("Trade Closed",
-    ("Symbol", "BTC-USDT"),
-    ("PnL", "$150.00"),
-    ("Reason", "Take Profit Hit"));
+void NotifyTrace(string title, string message, PtLogLevel level = PtLogLevel.Information);
 ```
+
+**Parameters**
+
+| Parameter | Type | Description |
+|---|---|---|
+| `title` | `string` | The notification title. |
+| `message` | `string` | The trace message. |
+| `level` | [`PtLogLevel`](../enums.md#ptloglevel) | The log level (default: Information). |
+
+## NotifyKeyValue
+
+Sends a notification with structured key-value pairs.
+
+**Syntax**
+
+```csharp
+void NotifyKeyValue(string title, params (string key, string value)[] data);
+```
+
+**Parameters**
+
+| Parameter | Type | Description |
+|---|---|---|
+| `title` | `string` | The notification title. |
+| `data` | `(string, string)[]` | The key-value pairs to notify. |
+
+## NotifyDocument
+
+Sends a notification with a document attachment.
+
+**Syntax**
+
+```csharp
+void NotifyDocument(string title, string filePath);
+```
+
+**Parameters**
+
+| Parameter | Type | Description |
+|---|---|---|
+| `title` | `string` | The notification title. |
+| `filePath` | `string` | The path to the document file. |
+
+## NotifyError
+
+Sends a notification for an error event containing exception details.
+
+**Syntax**
+
+```csharp
+void NotifyError(string title, Exception ex);
+```
+
+**Parameters**
+
+| Parameter | Type | Description |
+|---|---|---|
+| `title` | `string` | The notification title. |
+| `ex` | `Exception` | The exception to notify about. |
 
 ## Telegram Commands
 
