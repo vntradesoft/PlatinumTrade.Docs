@@ -5,7 +5,6 @@ sidebar_position: 1
 description: Overview of built-in technical indicators, common access methods, and indicator buffers.
 status: stable
 visibility: public
-slug: /sdk/api-reference/client/timeseries-and-indicators/indicators/
 ---
 
 # Technical Indicators Overview
@@ -124,4 +123,5 @@ public interface IIndicatorBuffer
 | [On Balance Volume (OBV)](./volumes.md#on-balance-volume-obv) | Tracks cumulative volume flow to predict future price changes. |
 | [Volume Spike](./volumes.md#volume-spike) | Identifies sudden spikes in trading volume compared to its average. |
 | [Volume Weighted Average Price (VWAP)](./volumes.md#volume-weighted-average-price-vwap) | The average price of an asset traded over a session based on both volume and price. |
+
 
