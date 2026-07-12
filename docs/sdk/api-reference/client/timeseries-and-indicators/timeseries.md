@@ -6,7 +6,6 @@ title: Timeseries
 
 ## Bars
 
-# Bars
 
 Returns the number of bars for a specified symbol and timeframe.
 
@@ -28,7 +27,6 @@ Returns `value`.
 
 ## BarsCalculated
 
-# BarsCalculated
 
 Returns the number of calculated bars for a specified indicator.
 
@@ -50,7 +48,6 @@ Returns `value`.
 
 ## Candle Access
 
-# Candle Access
 
 Directly queries specific candles (current, closed, open, etc.).
 
@@ -62,7 +59,6 @@ Directly queries specific candles (current, closed, open, etc.).
 
 ## CopyBuffer
 
-# CopyBuffer
 
 Copies indicator buffer values by index or time range.
 
@@ -84,7 +80,6 @@ Returns `value`.
 
 ## CopyCloses
 
-# CopyCloses
 
 Copies close prices of candles.
 
@@ -106,7 +101,6 @@ Returns `value`.
 
 ## CopyHighs
 
-# CopyHighs
 
 Copies high prices of candles.
 
@@ -128,7 +122,6 @@ Returns `value`.
 
 ## CopyLows
 
-# CopyLows
 
 Copy low prices of candles.
 
@@ -150,7 +143,6 @@ Returns `value`.
 
 ## CopyOpens
 
-# CopyOpens
 
 Copies open prices of candles.
 
@@ -172,7 +164,6 @@ Returns `value`.
 
 ## CopyPrices
 
-# CopyPrices
 
 Copies prices by AppliedPrice type.
 
@@ -194,7 +185,6 @@ Returns `value`.
 
 ## CopySeries
 
-# CopySeries
 
 Copies an array of OHLCV candle data.
 
@@ -216,7 +206,6 @@ Returns `value`.
 
 ## CopyTimes
 
-# CopyTimes
 
 Copies open timestamps of candles.
 
@@ -238,7 +227,6 @@ Returns `value`.
 
 ## CopyVolumes
 
-# CopyVolumes
 
 Copies volume values of candles.
 
@@ -260,7 +248,6 @@ Returns `value`.
 
 ## Creating Indicators
 
-# Creating Indicators
 
 Factory methods to create built-in indicators (MA, RSI, Stochastic, etc.).
 
