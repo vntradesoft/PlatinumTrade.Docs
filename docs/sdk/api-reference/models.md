@@ -26,7 +26,7 @@ Represents the total trading account balance information.
 | `MarginRatio` | `decimal?` | Gets or sets the margin ratio. |
 | `NotionalUsd` | `decimal?` | Gets or sets the total notional value in USD. |
 | `UnrealizedPnl` | `decimal?` | Gets or sets the unrealized profit and loss (PnL) in USD at the account level. |
-| `Details` | `IReadOnlyList&lt;AccountBalanceDetail&gt;` | Gets or sets the list of detailed asset balances. |
+| `Details` | IReadOnlyList&lt;[`AccountBalanceDetail`](./models.md#accountbalancedetail)&gt; | Gets or sets the list of detailed asset balances. |
 
 ### AccountBalanceDetail
 
@@ -323,7 +323,7 @@ Order place request
 | `BanAmend` | `bool?` | ["banAmend"] Whether to disallow the system from amending the size of the SPOT Market Order. If true, system will not amend and reject the market order if user does not have sufficient funds. |
 | `StpMode` | [`SelfTradePreventionMode`](./enums.md#selftradepreventionmode)? | ["stpMode"] Self trade prevention mode |
 | `TradeQuoteAsset` | `string?` | ["tradeQuoteCcy"] The quote currency used for trading. Only applicable to SPOT. The default value is the quote currency of the symbol, for example: for BTC-USD, the default is USD. |
-| `AttachedAlgoOrders` | `AttachedAlgoOrder[]?` | ["attachAlgoOrds"] Attached take profit / stop loss orders |
+| `AttachedAlgoOrders` | [`AttachedAlgoOrder`](./models.md#attachedalgoorder)[]? | ["attachAlgoOrds"] Attached take profit / stop loss orders |
 
 ### AttachedAlgoOrder
 
@@ -405,7 +405,7 @@ Represents a position in the OKX trading system.
 | `LiquidationPenalty` | `decimal?` | The liquidation penalty incurred for the position. |
 | `CreateTime` | `DateTime` | The time when the position was created. |
 | `UpdateTime` | `DateTime` | The time when the position was last updated. |
-| `CloseOrderAlgo` | `PositionCloseOrder[]` | The algorithmic orders used to close the position. |
+| `CloseOrderAlgo` | [`PositionCloseOrder`](./models.md#positioncloseorder)[] | The algorithmic orders used to close the position. |
 
 ### PositionCloseOrder
 
@@ -511,7 +511,7 @@ Represents the result of an API operation.
 | Property | Type | Description |
 |---|---|---|
 | `Success` | `bool` | Gets a value indicating whether the operation completed successfully. |
-| `Error` | `ApiError?` | Gets the error details if the operation failed; otherwise null. |
+| `Error` | [`ApiError`](./models.md#apierror)? | Gets the error details if the operation failed; otherwise null. |
 
 ### ApiResult
 
@@ -567,7 +567,7 @@ Represents the runtime configuration used to create and identify an indicator in
 | `Symbol` | `string` | Gets the trading symbol this indicator is associated with. |
 | `TimeFrame` | [`Timeframe`](./enums.md#timeframe) | Gets the timeframe in which the indicator is calculated. |
 | `IndicatorType` | [`IndicatorType`](./enums.md#indicatortype) | Gets the indicator type. For custom indicators, this is typically , and is used to distinguish the implementation. |
-| `Parameters` | `IndicatorParameters` | Gets or sets the parameter collection used by the indicator. |
+| `Parameters` | [`IndicatorParameters`](./models.md#indicatorparameters) | Gets or sets the parameter collection used by the indicator. |
 | `CustomName` | `string?` | Gets or sets the custom indicator name. null indicates a built-in indicator. |
 
 ### IndicatorIdentity
@@ -579,7 +579,7 @@ Represents the logical identity of an indicator instance. Combines symbol, timef
 | `Symbol` | `string` | Gets or sets the trading symbol for the indicator instance. |
 | `TimeFrame` | [`Timeframe`](./enums.md#timeframe) | Gets or sets the timeframe where the indicator is calculated. |
 | `IndicatorType` | [`IndicatorType`](./enums.md#indicatortype) | Gets or sets the indicator type. |
-| `Parameters` | `IndicatorParameters` | Gets or sets the parameter bag used by this identity. |
+| `Parameters` | [`IndicatorParameters`](./models.md#indicatorparameters) | Gets or sets the parameter bag used by this identity. |
 
 ### IndicatorItem
 
@@ -588,8 +588,8 @@ Snapshot container for indicator values at a specific timestamp. Holds identity,
 | Property | Type | Description |
 |---|---|---|
 | `IndicatorId` | `string` | Gets or sets the runtime indicator instance ID. |
-| `Property` | `IndicatorProperty` | Gets or sets rendering metadata for this indicator instance. |
-| `Identity` | `IndicatorIdentity` | Gets or sets identity metadata for this indicator instance. |
+| `Property` | [`IndicatorProperty`](./models.md#indicatorproperty) | Gets or sets rendering metadata for this indicator instance. |
+| `Identity` | [`IndicatorIdentity`](./models.md#indicatoridentity) | Gets or sets identity metadata for this indicator instance. |
 | `Timestamp` | `DateTime` | Gets or sets the timestamp associated with this value snapshot. |
 
 ### IndicatorParameters
@@ -677,7 +677,7 @@ Display and buffer metadata for an indicator. Passed to the chart engine to cont
 | `Buffers` | `int` | Gets the total number of buffers allocated for this indicator, including , , and buffers. Must match the number of SetBuffer calls in OnInit. |
 | `Plots` | `int` | Gets the number of visible plots (i.e. entries in ). Used for informational purposes; the renderer drives visibility from directly. |
 | `VisibleTimeframes` | [`TimeFrameOptions`](./enums.md#timeframeoptions) | Gets or sets the set of timeframes on which this indicator is displayed. Default is . |
-| `SpecialFeatures` | `IndicatorSpecialFeatures` | Gets or sets additional rendering features such as bound lines, zero line, histogram colors, and fill regions between buffers. |
+| `SpecialFeatures` | [`IndicatorSpecialFeatures`](./models.md#indicatorspecialfeatures) | Gets or sets additional rendering features such as bound lines, zero line, histogram colors, and fill regions between buffers. |
 
 ### struct
 
