@@ -34,8 +34,7 @@ Returns `IIndicatorAC` which inherits from `IIndicator` and `IIndicatorMethodCom
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides `GetUp()` and `GetDown()` to read the colored histogram values.
 
 ---
@@ -97,8 +96,7 @@ Returns `IIndicatorAlligator` which inherits from `IIndicator` and `IIndicatorMe
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides specialized line getter methods `GetJaw()` (Blue line), `GetTeeth()` (Red line), and `GetLips()` (Green line).
 
 ---
@@ -162,8 +160,7 @@ Returns `IIndicatorAO` which inherits from `IIndicator` and `IIndicatorMethodCom
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides `GetUp()` and `GetDown()` to read the colored histogram values.
 
 ---
@@ -226,8 +223,7 @@ Returns `IIndicatorBWMFI` which inherits from `IIndicator` and `IIndicatorMethod
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides methods to check Williams' bar types: `GetGreen()`, `GetBrown()`, `GetBlue()`, and `GetPink()`.
 
 ---
@@ -291,8 +287,7 @@ Returns `IIndicatorFractals` which inherits from `IIndicator` and `IIndicatorMet
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides `GetUp()` and `GetDown()`. If no fractal has formed on the candle, `IsEmpty` is returned as `true`.
 
 ---
@@ -357,8 +352,7 @@ Returns `IIndicatorGator` which inherits from `IIndicator` and `IIndicatorMethod
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides `GetUp()` (absolute distance between Jaw and Teeth) and `GetDown()` (negative distance between Teeth and Lips).
 
 ---

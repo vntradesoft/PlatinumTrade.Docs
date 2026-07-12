@@ -36,8 +36,7 @@ Returns `IIndicatorATR` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 ATR measures market volatility without considering direction.
 
 ---
@@ -101,8 +100,7 @@ Returns `IIndicatorBollingerBandWidth` which inherits from `IIndicator` and `IIn
 
 ---
 
-## Remarks
-
+**Remarks**
 Includes volatility methods: `GetWidth()`, `IsSqueeze()`, and `IsExpansion()`.
 
 ---
@@ -168,8 +166,7 @@ Returns `IIndicatorBollingerPercentB` which inherits from `IIndicator` and `IInd
 
 ---
 
-## Remarks
-
+**Remarks**
 Includes helper methods: `GetPercentB()`, `IsOverbought()`, and `IsOversold()`.
 
 ---
@@ -234,8 +231,7 @@ Returns `IIndicatorCCI` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 Includes helper methods: `IsOverbought(double threshold = 100, int index = 0)` and `IsOversold(double threshold = -100, int index = 0)`.
 
 ---
@@ -300,8 +296,7 @@ Returns `IIndicatorDeMarker` which inherits from `IIndicator` and `IIndicatorMet
 
 ---
 
-## Remarks
-
+**Remarks**
 Specialized helper methods: `IsOverbought(double threshold = 0.7, int index = 0)` and `IsOversold(double threshold = 0.3, int index = 0)`.
 
 ---
@@ -368,8 +363,7 @@ Returns `IIndicatorMACD` which inherits from `IIndicator` and `IIndicatorMethodC
 
 ---
 
-## Remarks
-
+**Remarks**
 Specialized helper methods: `GetMacd()`, `GetSignal()`, and `GetHistogram()`.
 
 ---
@@ -433,8 +427,7 @@ Returns `IIndicatorMFI` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 Includes helper methods: `IsOverbought(double threshold = 80, int index = 0)` and `IsOversold(double threshold = 20, int index = 0)`.
 
 ---
@@ -499,8 +492,7 @@ Returns `IIndicatorMomentum` which inherits from `IIndicator` and `IIndicatorMet
 
 ---
 
-## Remarks
-
+**Remarks**
 Includes a specialized helper method `FindMomentum(int index = 0)` to retrieve momentum values.
 
 ---
@@ -562,8 +554,7 @@ Returns `IIndicatorOsMA` which inherits from `IIndicator` and `IIndicatorMethodC
 
 ---
 
-## Remarks
-
+**Remarks**
 Calculates the difference between the main line and the signal line of a source indicator (like MACD).
 
 ---
@@ -620,8 +611,7 @@ Returns `IIndicatorRSI` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 Specialized helper methods: `IsOverbought(double threshold = 70, int index = 0)` and `IsOversold(double threshold = 30, int index = 0)`.
 
 ---
@@ -686,8 +676,7 @@ Returns `IIndicatorRVI` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 RVI is based on the idea that prices tend to close higher than they open in uptrends, and lower in downtrends.
 
 ---
@@ -743,8 +732,7 @@ Returns `IIndicatorStdDev` which inherits from `IIndicator` and `IIndicatorMetho
 
 ---
 
-## Remarks
-
+**Remarks**
 StdDev measures market volatility. High values suggest high volatility and potential trend changes.
 
 ---
@@ -802,8 +790,7 @@ Returns `IIndicatorStochastic` which inherits from `IIndicator` and `IIndicatorM
 
 ---
 
-## Remarks
-
+**Remarks**
 Specialized helper methods: `GetK()`, `GetD()`, `IsOverbought()`, and `IsOversold()`.
 
 ---
@@ -869,8 +856,7 @@ Returns `IIndicatorTRIX` which inherits from `IIndicator` and `IIndicatorMethodC
 
 ---
 
-## Remarks
-
+**Remarks**
 TRIX shows the rate of change of a triple-exponentially smoothed moving average.
 
 ---
@@ -926,8 +912,7 @@ Returns `IIndicatorWPR` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 Specialized helper methods: `IsOverbought(double threshold = -20, int index = 0)` and `IsOversold(double threshold = -80, int index = 0)`.
 
 ---

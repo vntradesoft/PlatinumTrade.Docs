@@ -34,8 +34,7 @@ Returns `IIndicatorAD` which inherits from `IIndicator` and `IIndicatorMethodCom
 
 ---
 
-## Remarks
-
+**Remarks**
 Accumulates volume-weighted price movements based on closing price location within range.
 
 ---
@@ -92,8 +91,7 @@ Returns `IIndicatorChaikin` which inherits from `IIndicator` and `IIndicatorMeth
 
 ---
 
-## Remarks
-
+**Remarks**
 Applies MACD logic to the Accumulation/Distribution line to identify momentum shifts.
 
 ---
@@ -149,8 +147,7 @@ Returns `IIndicatorForce` which inherits from `IIndicator` and `IIndicatorMethod
 
 ---
 
-## Remarks
-
+**Remarks**
 Combines price change direction and volume size to illustrate buying or selling force.
 
 ---
@@ -205,8 +202,7 @@ Returns `IIndicatorOBV` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 OBV adds volume on up days and subtracts volume on down days to measure cumulative volume flow.
 
 ---
@@ -263,8 +259,7 @@ Returns `IIndicatorVolumeSpike` which inherits from `IIndicator` and `IIndicator
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides methods to query volume and spike conditions: `FindVolume()`, `FindAvgVolume()`, `FindVolumeRatio()`, and `IsSpike()`.
 
 ---
@@ -329,8 +324,7 @@ Returns `IIndicatorVWAP` which inherits from `IIndicator` and `IIndicatorMethodC
 
 ---
 
-## Remarks
-
+**Remarks**
 Includes helper methods: `FindVWAP()`, `FindCumulativeVolume()`, `IsPriceAboveVWAP()`, `IsPriceBelowVWAP()`, and `GetDistanceFromVWAP()`.
 
 ---

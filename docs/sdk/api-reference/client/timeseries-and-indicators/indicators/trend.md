@@ -35,8 +35,7 @@ Returns `IIndicatorADX` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 Includes helper methods: `GetAdx()`, `GetPlusDI()`, `GetMinusDI()`, and `IsTrending()`.
 
 ---
@@ -101,8 +100,7 @@ Returns `IIndicatorADXW` which inherits from `IIndicator` and `IIndicatorMethodC
 
 ---
 
-## Remarks
-
+**Remarks**
 Includes crossover and direction helper methods: `IsBullish()`, `IsBearish()`, `IsBullishCrossover()`, and `IsBearishCrossover()`.
 
 ---
@@ -169,8 +167,7 @@ Returns `IIndicatorAMA` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 AMA automatically speeds up in volatile markets and slows down in rangebound markets.
 
 ---
@@ -234,8 +231,7 @@ Returns `IIndicatorBollingerBands` which inherits from `IIndicator` and `IIndica
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides band access methods `GetUpper()`, `GetLower()`, `GetMiddle()`, `GetWidth()` and squeeze/expansion detection: `IsSqueeze()` and `IsExpansion()`.
 
 ---
@@ -300,8 +296,7 @@ Returns `IIndicatorDEMA` which inherits from `IIndicator` and `IIndicatorMethodC
 
 ---
 
-## Remarks
-
+**Remarks**
 DEMA offers less lag than traditional EMAs by combining a single and double EMA.
 
 ---
@@ -367,8 +362,7 @@ Returns `IIndicatorEnvelopes` which inherits from `IIndicator` and `IIndicatorMe
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides `GetUpper()`, `GetLower()`, `IsPriceAboveUpper()`, and `IsPriceBelowLower()` to detect breakout signals.
 
 ---
@@ -436,8 +430,7 @@ Returns `IIndicatorIchimoku` which inherits from `IIndicator`.
 
 ---
 
-## Remarks
-
+**Remarks**
 Specialized method: `(IndicatorValue Tenkan, IndicatorValue Kijun, IndicatorValue SenkouA, IndicatorValue SenkouB, IndicatorValue Chikou) GetIchimoku(int index = 0)` returns all five line values.
 
 ---
@@ -502,8 +495,7 @@ Returns `IIndicatorMA` which inherits from `IIndicator` and `IIndicatorMethodCom
 
 ---
 
-## Remarks
-
+**Remarks**
 Contains specialized helper methods `GetTrend` for trend direction detection and `DetectCrossover` for fast/slow crossovers.
 
 ---
@@ -573,8 +565,7 @@ Returns `IIndicatorSAR` which inherits from `IIndicator` and `IIndicatorMethodCo
 
 ---
 
-## Remarks
-
+**Remarks**
 Provides specialized helper methods `IsBullish()` and `IsBearish()` to easily detect the trend state.
 
 ---
@@ -640,8 +631,7 @@ Returns `IIndicatorSuperTrend` which inherits from `IIndicator` and `IIndicatorM
 
 ---
 
-## Remarks
-
+**Remarks**
 Contains specialized methods such as `IsBullish()`, `IsBearish()`, `HasBullishReversal()`, `HasBearishReversal()`, and `GetDistanceFromSuperTrend()`.
 
 ---
@@ -706,8 +696,7 @@ Returns `IIndicatorTEMA` which inherits from `IIndicator` and `IIndicatorMethodC
 
 ---
 
-## Remarks
-
+**Remarks**
 TEMA uses three EMAs to further reduce lag compared to DEMA and standard EMA.
 
 ---
