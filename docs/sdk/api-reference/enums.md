@@ -340,9 +340,9 @@ OKX transaction types used by fills and account history mappers.
 | `LiqBuy` | Liquidation buy transaction. |
 | `LiqSell` | Liquidation sell transaction. |
 | `LiqTransferIn` | Liquidation transfer in. |
-| `LiqTranferIn` | Deprecated misspelling of <see cref="LiqTransferIn"/>. |
+| `LiqTranferIn` | Deprecated misspelling of . |
 | `LiqTransferOut` | Liquidation transfer out. |
-| `LiqTranferOut` | Deprecated misspelling of <see cref="LiqTransferOut"/>. |
+| `LiqTranferOut` | Deprecated misspelling of . |
 | `DeliveryLong` | Delivery transaction for a long position. |
 | `DeliveryShort` | Delivery transaction for a short position. |
 | `AdlCloseLong` | Auto-deleveraging close of a long position. |
@@ -528,12 +528,12 @@ Drawing primitives supported by indicator outputs.
 
 ### IndicatorFillColorMode
 
-Specifies how the fill color of an <see cref="IndicatorFillRegion"/> is determined.
+Specifies how the fill color of an is determined.
 
 | Value | Description |
 |---|---|
 | `Fixed` | Always uses a single fixed color, regardless of buffer values. |
-| `BullishBearish` | Selects the color based on the relationship between buffer values. Uses <see cref="IndicatorFillRegion.BullishColor"/> when the upper buffer value is greater than or equal to the lower buffer value; otherwise uses <see cref="IndicatorFillRegion.BearishColor"/>. |
+| `BullishBearish` | Selects the color based on the relationship between buffer values. Uses when the upper buffer value is greater than or equal to the lower buffer value; otherwise uses . |
 
 ### IndicatorGroup
 
@@ -546,7 +546,7 @@ Indicator category used for grouping in UI and registration metadata.
 | `Oscillator` | Oscillator indicator. |
 | `Volume` | Volume indicator. |
 | `BillWilliams` | Bill Williams indicator. |
-| `BillWilliam` | Deprecated misspelling of <see cref="BillWilliams"/>. |
+| `BillWilliam` | Deprecated misspelling of . |
 | `Custom` | Custom indicator group. |
 | `Unknown` | Unknown indicator group. |
 
@@ -702,14 +702,14 @@ Event types used internally by engines for dispatch.
 | `Balance` | Balance update event. |
 | `Position` | Position update event. |
 | `AlgoOrder` | Algorithmic order update event. |
-| `Kline` | Kline or candle close event. Mapped to <see cref="TickPhase.BarClose"/> when invoking <c>OnTickAsync</c>. |
+| `Kline` | Kline or candle close event. Mapped to when invoking OnTickAsync. |
 | `Transaction` | Transaction update event. |
 | `TradeCommand` | Trade command event from Telegram or another external source. |
-| `Tick` | Intra-bar tick event. Mapped to <see cref="TickPhase.Tick"/> when invoking <c>OnTickAsync</c>. |
+| `Tick` | Intra-bar tick event. Mapped to when invoking OnTickAsync. |
 
 ### TickPhase
 
-Indicates whether <c>OnTickAsync</c> was triggered by an intra-bar tick or a closed bar.
+Indicates whether OnTickAsync was triggered by an intra-bar tick or a closed bar.
 
 | Value | Description |
 |---|---|
