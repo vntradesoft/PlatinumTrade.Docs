@@ -9,20 +9,17 @@ title: Timeseries
 
 Returns the number of bars for a specified symbol and timeframe.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## BarsCalculated
@@ -30,20 +27,17 @@ Returns `value`.
 
 Returns the number of calculated bars for a specified indicator.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## Candle Access
@@ -51,8 +45,7 @@ Returns `value`.
 
 Directly queries specific candles (current, closed, open, etc.).
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
@@ -62,20 +55,17 @@ Directly queries specific candles (current, closed, open, etc.).
 
 Copies indicator buffer values by index or time range.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## CopyCloses
@@ -83,20 +73,17 @@ Returns `value`.
 
 Copies close prices of candles.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## CopyHighs
@@ -104,20 +91,17 @@ Returns `value`.
 
 Copies high prices of candles.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## CopyLows
@@ -125,20 +109,17 @@ Returns `value`.
 
 Copy low prices of candles.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## CopyOpens
@@ -146,20 +127,17 @@ Returns `value`.
 
 Copies open prices of candles.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## CopyPrices
@@ -167,20 +145,17 @@ Returns `value`.
 
 Copies prices by AppliedPrice type.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## CopySeries
@@ -188,20 +163,17 @@ Returns `value`.
 
 Copies an array of OHLCV candle data.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## CopyTimes
@@ -209,20 +181,17 @@ Returns `value`.
 
 Copies open timestamps of candles.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## CopyVolumes
@@ -230,20 +199,17 @@ Returns `value`.
 
 Copies volume values of candles.
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
 
-## Parameters
-
+**Parameters**
 | Parameter | Type | Description |
 |---|---|---|
 | `param1` | `type` | Description |
 
-## Return Value
-
+**Return Value**
 Returns `value`.
 
 ## Creating Indicators
@@ -251,9 +217,9 @@ Returns `value`.
 
 Factory methods to create built-in indicators (MA, RSI, Stochastic, etc.).
 
-## Syntax
-
+**Syntax**
 ```csharp
 // TODO: Add method signature
 ```
+
 
