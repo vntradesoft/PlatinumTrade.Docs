@@ -17,7 +17,7 @@ Sends a trace notification with a message and a specific log level.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void NotifyTrace(string title, string message, PtLogLevel level);
 ```
 
 **Parameters**
@@ -50,7 +50,7 @@ Sends a notification with structured key-value pairs.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void NotifyKeyValue(string title, (string, string)[] data);
 ```
 
 **Parameters**
@@ -85,7 +85,7 @@ Sends a notification with a document attachment.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void NotifyDocument(string title, string filePath);
 ```
 
 **Parameters**
@@ -118,7 +118,7 @@ Sends a notification for an error event containing exception details.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void NotifyError(string title, Exception ex);
 ```
 
 **Parameters**

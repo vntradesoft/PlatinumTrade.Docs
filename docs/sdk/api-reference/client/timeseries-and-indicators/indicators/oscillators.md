@@ -459,7 +459,7 @@ Measures the rate of change of an asset's price. ---
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+IIndicatorMomentum Momentum(string? symbol, Timeframe? timeframe, int? period, string? indicatorAlias, Action<IndicatorProperty>? propertyOptions);
 ```
 
 **Parameters**

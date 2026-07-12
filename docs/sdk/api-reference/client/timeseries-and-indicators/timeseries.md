@@ -10,7 +10,7 @@ Returns the total number of bars available for a trading pair and timeframe.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+int Bars(string? symbol, Timeframe? timeframe);
 ```
 
 **Parameters**
@@ -43,7 +43,7 @@ Counts the number of bars calculated for a specific indicator.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+int BarsCalculated(string indicatorId);
 ```
 
 **Parameters**
@@ -114,7 +114,7 @@ Copies indicator buffer values by index or time range.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+int CopyBuffer(string indicatorHandle, int bufferNumber, int startIndex, int count, DateTime startTime, DateTime endTime, out IEnumerable<IndicatorValue> buffers);
 ```
 
 **Parameters**
@@ -156,7 +156,7 @@ Copies close prices of candles.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+decimal[] CopyCloses(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
 ```
 
 **Parameters**
@@ -192,7 +192,7 @@ Copies high prices of candles.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+decimal[] CopyHighs(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
 ```
 
 **Parameters**
@@ -228,7 +228,7 @@ Copies low prices of candles.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+decimal[] CopyLows(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
 ```
 
 **Parameters**
@@ -264,7 +264,7 @@ Copies open prices of candles.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+decimal[] CopyOpens(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
 ```
 
 **Parameters**
@@ -298,7 +298,7 @@ Copies prices by `AppliedPrice` type.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+(DateTime, decimal) CopyPrices(AppliedPrice appliedPrice, string? symbol, Timeframe? timeframe, int / DateTime startPos / start, int / DateTime count / endTime, IEnumerable<CandleData> / CandleData ohclvs / ohclv);
 ```
 
 **Parameters**
@@ -339,7 +339,7 @@ Copies an array of OHLCV candle data.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+CandleData CopySeries(string? symbol, Timeframe? timeframe, int / DateTime startPos / startTime, int / DateTime count / endTime);
 ```
 
 **Parameters**
@@ -378,7 +378,7 @@ Copies open timestamps of candles.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+DateTime CopyTimes(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
 ```
 
 **Parameters**
@@ -412,7 +412,7 @@ Copies volume values of candles.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+decimal[] CopyVolumes(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
 ```
 
 **Parameters**

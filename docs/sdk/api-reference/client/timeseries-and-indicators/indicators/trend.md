@@ -328,7 +328,7 @@ Upper and lower bands that shift at a percentage deviation from a moving average
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+IIndicatorEnvelopes Envelopes(string? symbol, Timeframe? timeframe, int? period, double? deviation, MaMethod? method, AppliedPrice? appliedPrice, string? indicatorAlias, Action<IndicatorProperty>? propertyOptions);
 ```
 
 **Parameters**
@@ -584,7 +584,7 @@ A trend-following indicator based on Average True Range (ATR) volatility and med
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+IIndicatorSuperTrend SuperTrend(string? symbol, Timeframe? timeframe, int? period, double? multiplier, string? indicatorAlias, Action<IndicatorProperty>? propertyOptions);
 ```
 
 **Parameters**

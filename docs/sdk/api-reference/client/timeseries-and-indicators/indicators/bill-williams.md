@@ -70,7 +70,7 @@ A trend-following model combining three time-shifted moving averages. ---
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+IIndicatorAlligator Alligator(string? symbol, Timeframe? timeframe, string? indicatorAlias, Action<IndicatorProperty>? propertyOptions);
 ```
 
 **Parameters**
@@ -247,7 +247,7 @@ Identifies local tops and bottoms in price movements. ---
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+IIndicatorFractals Fractals(string? symbol, Timeframe? timeframe, string? indicatorAlias, Action<IndicatorProperty>? propertyOptions);
 ```
 
 **Parameters**

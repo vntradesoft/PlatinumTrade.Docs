@@ -17,7 +17,7 @@ Gets a storage path by its logical scope.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void GetPath(StoragePathScope scope);
 ```
 
 **Parameters**
@@ -49,7 +49,7 @@ Gets the root directory used for all runtime data.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void GetRuntimeDataRoot();
 ```
 
 **Parameters**
@@ -79,7 +79,7 @@ Gets the history storage root directory.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void GetHistoryRoot();
 ```
 
 **Parameters**
@@ -109,7 +109,7 @@ Gets the runtime application logs storage root.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void GetLogsRoot();
 ```
 
 **Parameters**
@@ -139,7 +139,7 @@ Gets the state storage root directory.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void GetStateRoot();
 ```
 
 **Parameters**
@@ -169,7 +169,7 @@ Gets the cache storage root directory.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void GetCacheRoot();
 ```
 
 **Parameters**
@@ -199,7 +199,7 @@ Gets the export artifacts storage root directory.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void GetExportsRoot();
 ```
 
 **Parameters**

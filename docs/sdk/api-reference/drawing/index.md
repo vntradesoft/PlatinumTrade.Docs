@@ -17,7 +17,7 @@ Adds a raw drawing object to the chart.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+id Add(DrawingObject obj);
 ```
 
 **Parameters**
@@ -48,7 +48,7 @@ Removes a drawing object by its unique identifier.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void Remove(string id);
 ```
 
 **Parameters**
@@ -79,7 +79,7 @@ Updates an existing drawing object by applying a mutation action.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void Update(string id, DrawingObject mutate);
 ```
 
 **Parameters**
@@ -111,7 +111,7 @@ Clears all drawing objects, optionally filtered by symbol.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+void Clear(string? symbol);
 ```
 
 **Parameters**
@@ -142,7 +142,7 @@ Retrieves all drawing objects for a specific symbol and timeframe.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+DrawingObject GetAll(string symbol, Timeframe tf);
 ```
 
 **Parameters**
@@ -174,7 +174,7 @@ Retrieves a specific drawing object by its unique identifier.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+DrawingObject GetById(string id);
 ```
 
 **Parameters**
@@ -205,7 +205,7 @@ Creates and adds a horizontal line drawing object.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+id AddHorizontalLine(string symbol, Timeframe tf, decimal price, DrawingStyle style, DrawingSource source, string? indicatorId);
 ```
 
 **Parameters**
@@ -241,7 +241,7 @@ Creates and adds a trend line drawing object between two points.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+id AddTrendLine(string symbol, Timeframe tf, DrawingAnchor startAnchor, DrawingAnchor endAnchor, DrawingStyle style, string? indicatorId);
 ```
 
 **Parameters**
@@ -277,7 +277,7 @@ Creates and adds a rectangle drawing object.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+id AddRectangle(string symbol, Timeframe tf, DrawingAnchor topLeft, DrawingAnchor bottomRight, DrawingStyle style, string? indicatorId);
 ```
 
 **Parameters**
@@ -313,7 +313,7 @@ Creates and adds a text label drawing object.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+id AddText(string symbol, Timeframe tf, DrawingAnchor anchor, string text, DrawingStyle style, string? indicatorId);
 ```
 
 **Parameters**
@@ -349,7 +349,7 @@ Creates and adds an emoji icon drawing object.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+id AddEmoji(string symbol, Timeframe tf, DrawingAnchor anchor, string emoji, DrawingStyle style, string? indicatorId);
 ```
 
 **Parameters**
@@ -385,7 +385,7 @@ Creates and adds a measurement tool (ruler) drawing object.
 **Syntax**
 
 ```csharp
-// TODO: Add syntax
+id AddMeasurement(string symbol, Timeframe tf, DrawingAnchor startAnchor, DrawingAnchor endAnchor, string? indicatorId);
 ```
 
 **Parameters**
