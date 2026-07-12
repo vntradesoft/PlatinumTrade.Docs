@@ -47,14 +47,14 @@ Task<ApiResult<OrderAmendResponse>> AmendOrderAsync(string symbol, long? orderId
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Trading symbol. |
-| `orderId` | [`long?`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Order ID. |
-| `newQuantity` | [`decimal?`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | New quantity. |
-| `newPrice` | [`decimal?`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | New price. |
+| `symbol` | `string` | Trading symbol. |
+| `orderId` | `long?` | Order ID. |
+| `newQuantity` | `decimal?` | New quantity. |
+| `newPrice` | `decimal?` | New price. |
 
 **Return Value**
 
-`ApiResult<OrderAmendResponse>`.
+[`ApiResult`](../models.md#apiresult)&lt;[`OrderAmendResponse`](../models.md#orderamendresponse)&gt;.
 
 **Remarks**
 
@@ -79,19 +79,19 @@ Task<ApiResult<OrderPlaceResponse>> PlaceOrderAsync(string symbol, OrderSide sid
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Trading symbol. |
+| `symbol` | `string` | Trading symbol. |
 | `side` | [`OrderSide`](#orderside) | Buy or Sell. |
 | `type` | [`OrderType`](#ordertype) | Limit or Market. |
-| `quantity` | [`decimal`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Trade amount. |
-| `price` | [`decimal?`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Target price (required for Limit). |
+| `quantity` | `decimal` | Trade amount. |
+| `price` | `decimal?` | Target price (required for Limit). |
 | `attachedAlgoOrder` | `AttachedAlgoOrder?` | Optional TP/SL. |
-| `reduceOnly` | [`bool?`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | True to reduce position only. |
-| `tag` | [`string?`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Custom order tag. |
+| `reduceOnly` | `bool?` | True to reduce position only. |
+| `tag` | `string?` | Custom order tag. |
 | `ct` | `CancellationToken` | Cancellation token. |
 
 **Return Value**
 
-`ApiResult<OrderPlaceResponse>` containing order ID.
+[`ApiResult`](../models.md#apiresult)&lt;[`OrderPlaceResponse`](../models.md#orderplaceresponse)&gt; containing order ID.
 
 **Remarks**
 
@@ -148,13 +148,13 @@ Task<ApiResult<ClosePositionResponse>> ClosePositionAsync(string symbol, Positio
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Trading symbol. |
+| `symbol` | `string` | Trading symbol. |
 | `positionSide` | [`PositionSide?`](#positionside) | Long or Short (required if in Hedge mode). |
 | `ct` | `CancellationToken` | Cancellation token. |
 
 **Return Value**
 
-`ApiResult<ClosePositionResponse>`.
+[`ApiResult`](../models.md#apiresult)&lt;[`ClosePositionResponse`](../models.md#closepositionresponse)&gt;.
 
 **Remarks**
 
@@ -183,12 +183,12 @@ Task<ApiResult<Order>> GetOrderAsync(string symbol, long? orderId = null, string
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Trading symbol. |
-| `orderId` | [`long?`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Order ID. |
+| `symbol` | `string` | Trading symbol. |
+| `orderId` | `long?` | Order ID. |
 
 **Return Value**
 
-`ApiResult<Order>`.
+[`ApiResult`](../models.md#apiresult)&lt;[`Order`](../models.md#order)&gt;.
 
 **Remarks**
 
@@ -215,7 +215,7 @@ Sets the Magic Number to identify the order source.
 
 | Parameter | Type | Description |
 |---|---|---|
-| `magicNumber` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | Custom identifier. |
+| `magicNumber` | `string` | Custom identifier. |
 
 **Return Value**
 

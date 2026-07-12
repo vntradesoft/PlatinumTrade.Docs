@@ -62,7 +62,7 @@ Task<ApiResult<AccountBalance>> LoadBalanceAsync(CancellationToken ct = default)
 
 **Return Value**
 
-An `ApiResult` wrapping the latest [`AccountBalance`](#accountbalance).
+An [`ApiResult`](../models.md#apiresult) wrapping the latest [`AccountBalance`](#accountbalance).
 
 **Remarks**
 
@@ -149,8 +149,8 @@ Task<bool> SetInitialLeverageAsync(string symbol, int leverage, CancellationToke
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The trading symbol. |
-| `leverage` | [`int`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The leverage multiplier (e.g., 10, 20). |
+| `symbol` | `string` | The trading symbol. |
+| `leverage` | `int` | The leverage multiplier (e.g., 10, 20). |
 | `ct` | `CancellationToken` | Cancellation token. |
 
 **Return Value**
@@ -184,7 +184,7 @@ Task<(bool Success, string? Error)> SetHedgeModeAsync(bool hedge, CancellationTo
 
 | Parameter | Type | Description |
 |---|---|---|
-| `hedge` | [`bool`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | `true` for Hedge Mode; `false` for Netting Mode. |
+| `hedge` | `bool` | `true` for Hedge Mode; `false` for Netting Mode. |
 | `ct` | `CancellationToken` | Cancellation token. |
 
 **Return Value**
@@ -220,7 +220,7 @@ None.
 
 **Return Value**
 
-An `ApiResult` wrapping the `FeeVipLevel` info.
+An [`ApiResult`](../models.md#apiresult) wrapping the [`FeeVipLevel`](../models.md#feeviplevel) info.
 
 **Remarks**
 

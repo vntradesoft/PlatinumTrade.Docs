@@ -95,7 +95,7 @@ CandleData GetLastClosedCandle(string? symbol = null, Timeframe? timeframe = nul
 
 **Return Value**
 
-Returns a `CandleData` object or a `DateTime` representing the candle's open time.
+Returns a [`CandleData`](../../models.md#candledata) object or a `DateTime` representing the candle's open time.
 
 **Example**
 
@@ -310,7 +310,7 @@ Copies prices by `AppliedPrice` type.
 | `timeframe` | `Timeframe?` | The timeframe (optional). |
 | `startPos` / `start` | `int` / `DateTime` | The starting position index or the start time. |
 | `count` / `endTime` | `int` / `DateTime` | The number of prices to copy, or the end time. |
-| `ohclvs` / `ohclv` | `IEnumerable<CandleData>` / `CandleData` | Existing candle data to extract prices from. |
+| `ohclvs` / `ohclv` | `IEnumerable`&lt;[`CandleData`](../../models.md#candledata)&gt; / [`CandleData`](../../models.md#candledata) | Existing candle data to extract prices from. |
 
 **Return Value**
 
@@ -353,7 +353,7 @@ CandleData CopySeries(string? symbol, Timeframe? timeframe, int / DateTime start
 
 **Return Value**
 
-Returns an array of `CandleData` objects.
+Returns an array of [`CandleData`](../../models.md#candledata) objects.
 
 **Remarks**
 

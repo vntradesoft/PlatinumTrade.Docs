@@ -78,7 +78,7 @@ string BaseAsset(string symbol);
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The trading symbol. |
+| `symbol` | `string` | The trading symbol. |
 
 **Return Value**
 
@@ -107,7 +107,7 @@ decimal GetFeeTaker(string symbol);
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The trading symbol. |
+| `symbol` | `string` | The trading symbol. |
 
 **Return Value**
 
@@ -137,7 +137,7 @@ decimal ContractSize(string symbol);
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The trading symbol. |
+| `symbol` | `string` | The trading symbol. |
 
 **Return Value**
 
@@ -168,12 +168,12 @@ Task<ApiResult<decimal>> GetLastPriceAsync(string symbol, CancellationToken ct =
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The trading symbol. |
+| `symbol` | `string` | The trading symbol. |
 | `ct` | `CancellationToken` | Cancellation token. |
 
 **Return Value**
 
-An `ApiResult` wrapping the last price.
+An [`ApiResult`](../models.md#apiresult) wrapping the last price.
 
 **Remarks**
 
@@ -202,12 +202,12 @@ Task<ApiResult<LimitPrice>> GetLimitPriceAsync(string symbol, CancellationToken 
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The trading symbol. |
+| `symbol` | `string` | The trading symbol. |
 | `ct` | `CancellationToken` | Cancellation token. |
 
 **Return Value**
 
-An `ApiResult` wrapping the `LimitPrice` data.
+An [`ApiResult`](../models.md#apiresult) wrapping the `LimitPrice` data.
 
 **Remarks**
 
@@ -264,9 +264,9 @@ decimal NormalizePrice(string symbol, decimal price, bool roundUp = false);
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The trading symbol. |
-| `price` | [`decimal`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The raw price. |
-| `roundUp` | [`bool`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | True to round up to nearest tick; false to round down. |
+| `symbol` | `string` | The trading symbol. |
+| `price` | `decimal` | The raw price. |
+| `roundUp` | `bool` | True to round up to nearest tick; false to round down. |
 
 **Return Value**
 
@@ -297,7 +297,7 @@ decimal GetTickPrice(string symbol);
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | [`string`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) | The trading symbol. |
+| `symbol` | `string` | The trading symbol. |
 
 **Return Value**
 
