@@ -22,17 +22,17 @@ IIndicatorATR CreateIndicatorATR(string? symbol = null, Timeframe? timeframe = n
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | ATR calculation period. |
-| `method` | [`MaMethod?`](../../enums.md#mamethod) | Smoothing moving average method (usually SMA/EMA). |
+| `method` | [`MaMethod?`](../../../enums.md#mamethod) | Smoothing moving average method (usually SMA/EMA). |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorATR`](../../interfaces.md#iindicatoratr) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorATR`](../../../interfaces.md#iindicatoratr) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -85,17 +85,17 @@ IIndicatorBollingerBandWidth CreateIndicatorBollingerBandWidth(string? symbol = 
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | MA period. |
 | `multiplier` | `double?` | Standard deviation multiplier. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorBollingerBandWidth`](../../interfaces.md#iindicatorbollingerbandwidth) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorBollingerBandWidth`](../../../interfaces.md#iindicatorbollingerbandwidth) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -150,17 +150,17 @@ IIndicatorBollingerPercentB CreateIndicatorBollingerPercentB(string? symbol = nu
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | MA period. |
 | `multiplier` | `double?` | Standard deviation multiplier. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorBollingerPercentB`](../../interfaces.md#iindicatorbollingerpercentb) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorBollingerPercentB`](../../../interfaces.md#iindicatorbollingerpercentb) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -215,16 +215,16 @@ IIndicatorCCI CreateIndicatorCCI(string? symbol = null, Timeframe? timeframe = n
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Calculation period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorCCI`](../../interfaces.md#iindicatorcci) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorCCI`](../../../interfaces.md#iindicatorcci) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -279,16 +279,16 @@ IIndicatorDeMarker CreateIndicatorDeMarker(string? symbol = null, Timeframe? tim
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | DeMarker calculation period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorDeMarker`](../../interfaces.md#iindicatordemarker) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorDeMarker`](../../../interfaces.md#iindicatordemarker) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -343,18 +343,18 @@ IIndicatorMACD CreateIndicatorMACD(string? symbol = null, Timeframe? timeframe =
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `fastPeriod` | `int?` | Fast EMA period. |
 | `slowPeriod` | `int?` | Slow EMA period. |
 | `signalPeriod` | `int?` | Signal line smoothing period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorMACD`](../../interfaces.md#iindicatormacd) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorMACD`](../../../interfaces.md#iindicatormacd) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -408,16 +408,16 @@ IIndicatorMFI CreateIndicatorMFI(string? symbol = null, Timeframe? timeframe = n
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Lookback period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorMFI`](../../interfaces.md#iindicatormfi) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorMFI`](../../../interfaces.md#iindicatormfi) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -467,14 +467,14 @@ IIndicatorMomentum Momentum(string? symbol, Timeframe? timeframe, int? period, s
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Momentum period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 **Return Value**
 
-Returns [`IIndicatorMomentum`](../../interfaces.md#iindicatormomentum) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorMomentum`](../../../interfaces.md#iindicatormomentum) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 **Remarks**
 
@@ -525,13 +525,13 @@ IIndicatorOsMA CreateIndicatorOsMA(string sourceId1, string sourceId2, string? i
 | `sourceId1` | `string` | The ID of the first source indicator (usually MACD line). |
 | `sourceId2` | `string` | The ID of the second source indicator (usually MACD Signal line). |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorOsMA`](../../interfaces.md#iindicatorosma) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorOsMA`](../../../interfaces.md#iindicatorosma) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -578,16 +578,16 @@ IIndicatorRSI CreateIndicatorRSI(string? symbol = null, Timeframe? timeframe = n
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | RSI calculation period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorRSI`](../../interfaces.md#iindicatorrsi) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorRSI`](../../../interfaces.md#iindicatorrsi) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -642,16 +642,16 @@ IIndicatorRVI CreateIndicatorRVI(string? symbol = null, Timeframe? timeframe = n
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | RVI period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorRVI`](../../interfaces.md#iindicatorrvi) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorRVI`](../../../interfaces.md#iindicatorrvi) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -697,16 +697,16 @@ IIndicatorStdDev CreateIndicatorStdDev(string? symbol = null, Timeframe? timefra
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Deviation period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorStdDev`](../../interfaces.md#iindicatorstddev) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorStdDev`](../../../interfaces.md#iindicatorstddev) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -752,18 +752,18 @@ IIndicatorStochastic CreateIndicatorStochastic(string? symbol = null, Timeframe?
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `kPeriod` | `int?` | %K line lookback period. |
 | `dPeriod` | `int?` | %D line smoothing period. |
 | `kSlow` | `int?` | Slowing factor for %K line. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorStochastic`](../../interfaces.md#iindicatorstochastic) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorStochastic`](../../../interfaces.md#iindicatorstochastic) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -822,13 +822,13 @@ IIndicatorTRIX CreateIndicatorTRIX(string sourceId, int? period = null, string? 
 | `sourceId` | `string` | The ID of the source indicator (usually a moving average). |
 | `period` | `int?` | TRIX period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorTRIX`](../../interfaces.md#iindicatortrix) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorTRIX`](../../../interfaces.md#iindicatortrix) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
@@ -874,16 +874,16 @@ IIndicatorWPR CreateIndicatorWPR(string? symbol = null, Timeframe? timeframe = n
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
-| `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
+| `timeframe` | [`Timeframe?`](../../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | WPR period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
 **Return Value**
 
-Returns [`IIndicatorWPR`](../../interfaces.md#iindicatorwpr) which inherits from [`IIndicator`](../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../interfaces.md#iindicatormethodcommon).
+Returns [`IIndicatorWPR`](../../../interfaces.md#iindicatorwpr) which inherits from [`IIndicator`](../../../interfaces.md#iindicator) and [`IIndicatorMethodCommon`](../../../interfaces.md#iindicatormethodcommon).
 
 ---
 
