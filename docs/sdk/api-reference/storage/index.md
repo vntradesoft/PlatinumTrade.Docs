@@ -1,7 +1,7 @@
 ﻿---
 id: index
-title: Storage API
-sidebar_position: 1
+title: Storage
+sidebar_position: 3
 description: Storage API allows your strategies to save and load configuration or state locally.
 status: stable
 visibility: public
