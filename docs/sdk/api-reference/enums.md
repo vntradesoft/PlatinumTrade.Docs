@@ -6,203 +6,7 @@ sidebar_position: 10
 
 # Enums
 
-## System & API
-
-### ApiErrorType
-
-SDK error classification used by API result wrappers.
-
-| Value | Description |
-|---|---|
-| `Unknown` | Unknown or unclassified error. |
-| `Network` | Network or connection error, such as timeout or DNS failure. |
-| `InternalError` | Internal error within the SDK or application. |
-| `ServerError` | The server returned a non-success HTTP status code. |
-| `Authentication` | Authentication failed, such as invalid API key or signature mismatch. |
-| `RateLimit` | The request was rate-limited by OKX. |
-| `Deserialization` | The response could not be parsed because of an unexpected format. |
-| `BusinessLogic` | Business logic error returned by OKX, such as insufficient funds. |
-
-### ApiName
-
-OKX API operation names used for logging and error context.
-
-| Value | Description |
-|---|---|
-| `PlaceOrder` | Place an order. |
-| `CancelOrder` | Cancel an order. |
-| `CancelMultipleOrder` | Cancel multiple orders. |
-| `ModifyOrder` | Modify an order. |
-| `PlaceAlgoOrder` | Place an algorithmic order. |
-| `CancelAlgoOrder` | Cancel an algorithmic order. |
-| `ClosePosition` | Close a position. |
-| `GetOrders` | Get open orders. |
-| `GetPositions` | Get positions. |
-| `GetAlgoOrder` | Get one algorithmic order. |
-| `GetHistoryOrders` | Get historical orders. |
-| `GetHistoryAlgoOrders` | Get historical algorithmic orders. |
-| `GetHistoryPositions` | Get historical positions. |
-| `GetUserTrade` | Get user trades. |
-| `GetOrder` | Get one order. |
-| `AmendAlgoOrder` | Amend an algorithmic order. |
-| `AmendOrder` | Amend an order. |
-| `GetAlgoOrders` | Get algorithmic orders. |
-| `OrderCheck` | Check an order before placement. |
-| `GetUserTradesArchive` | Get archived user trades. |
-| `GetOrdersArchive` | Get archived orders. |
-
-### PtLogLevel
-
-Log severity used by OKX strategy and SDK components.
-
-| Value | Description |
-|---|---|
-| `Critical` | Critical failure. |
-| `Error` | Error. |
-| `Warning` | Warning. |
-| `Success` | Successful operation. |
-| `Core` | Core system message. |
-| `Information` | Informational message. |
-| `Debug` | Debug message. |
-| `Trace` | Trace message. |
-| `None` | Logging is disabled. |
-
-## Market Data
-
-### InstrumentType
-
-OKX instrument types.
-
-| Value | Description |
-|---|---|
-| `Any` | Any supported instrument type. |
-| `Spot` | Spot instrument. |
-| `Margin` | Margin instrument. |
-| `Swap` | Perpetual swap instrument. |
-| `Futures` | Futures instrument. |
-| `Option` | Option instrument. |
-| `Contract` | Generic contract instrument. |
-
-### Timeframe
-
-Represents supported candlestick timeframes in seconds. The underlying integer value corresponds to the duration in seconds.
-
-| Value | Description |
-|---|---|
-| `Unknown` | Unknown or unspecified timeframe. |
-| `OneSecond` | One second (1 second). |
-| `OneMinute` | One minute (60 seconds). |
-| `ThreeMinutes` | Three minutes (180 seconds). |
-| `FiveMinutes` | Five minutes (300 seconds). |
-| `FifteenMinutes` | Fifteen minutes (900 seconds). |
-| `ThirtyMinutes` | Thirty minutes (1800 seconds). |
-| `OneHour` | One hour (3600 seconds). |
-| `TwoHours` | Two hours (7200 seconds). |
-| `FourHours` | Four hours (14400 seconds). |
-| `SixHours` | Six hours (21600 seconds). |
-| `TwelveHours` | Twelve hours (43200 seconds). |
-| `OneDay` | One day (86400 seconds). |
-| `OneWeek` | One week (604800 seconds). |
-| `OneMonth` | One month (approximated as 30 days = 2592000 seconds). |
-| `ThreeMonths` | Three months (approximated as 90 days). |
-| `SixMonths` | Six months (approximated as 180 days). |
-| `OneYear` | One year (approximated as 365 days). |
-
-## Trading
-
-### OrderSide
-
-Order direction.
-
-| Value | Description |
-|---|---|
-| `Buy` | Buy order. |
-| `Sell` | Sell order. |
-
-### OrderType
-
-OKX order types used by trading requests.
-
-| Value | Description |
-|---|---|
-| `Market` | Market order. |
-| `Limit` | Limit order. |
-| `PostOnly` | Post-only order. |
-| `FillOrKill` | Fill-or-kill order. |
-| `ImmediateOrCancel` | Immediate-or-cancel order. |
-| `OptimalLimitOrder` | Optimal limit order. |
-| `MarketMakerProtection` | Market maker protection order. |
-| `MarketMakerProtectionPostOnly` | Post-only market maker protection order. |
-| `Elp` | Easy liquidity provider order. |
-
-### PositionSide
-
-Position side in long/short or net position mode.
-
-| Value | Description |
-|---|---|
-| `Long` | Long position side. |
-| `Short` | Short position side. |
-| `Net` | Net position side. |
-
-### TradeMode
-
-OKX trade modes.
-
-| Value | Description |
-|---|---|
-| `Cross` | Cross margin mode. |
-| `Isolated` | Isolated margin mode. |
-| `Cash` | Cash mode. |
-| `Spot` | Spot mode. |
-
-## Other
-
-### FeeVipLevel
-
-OKX fee VIP level.
-
-| Value | Description |
-|---|---|
-| `Lv1` | Regular level 1 user. |
-| `Lv2` | Regular level 2 user. |
-| `Lv3` | Regular level 3 user. |
-| `Lv4` | Regular level 4 user. |
-| `Lv5` | Regular level 5 user. |
-| `Lv6` | Regular level 6 user. |
-| `Lv7` | Regular level 7 user. |
-| `Lv8` | Regular level 8 user. |
-| `Lv9` | Regular level 9 user. |
-| `Lv10` | Regular level 10 user. |
-| `VIP1` | VIP level 1 user. |
-| `VIP2` | VIP level 2 user. |
-| `VIP3` | VIP level 3 user. |
-| `VIP4` | VIP level 4 user. |
-| `VIP5` | VIP level 5 user. |
-
-### OhlcPattern
-
-Intrabar OHLC path used when replaying candle data as ticks.
-
-| Value | Description |
-|---|---|
-| `Auto` | Choose the path automatically from the candle direction. |
-| `HighFirst` | Replay as Open, High, Low, Close. |
-| `LowFirst` | Replay as Open, Low, High, Close. |
-| `Random` | Choose a random path for each candle. |
-
-### TickType
-
--
-
-| Value | Description |
-|---|---|
-| `Open` | The opening tick of a candle (Open price). |
-| `High` | The tick representing the highest price within the candle. |
-| `Low` | The tick representing the lowest price within the candle. |
-| `Close` | The closing tick of a candle (Close price). |
-| `Mid` | An interpolated tick within the candle, not directly from market data. Used for simulation or smoothing between OHLC points. |
-| `Realtime` | A tick received directly from a real-time market data stream. |
+## Clients
 
 ### AlgoActualSide
 
@@ -273,6 +77,28 @@ Reasons or styles for closing a position.
 | `PartialLiquidation` | Partial liquidation close. |
 | `ADL` | Auto-deleveraging close. |
 
+### FeeVipLevel
+
+OKX fee VIP level.
+
+| Value | Description |
+|---|---|
+| `Lv1` | Regular level 1 user. |
+| `Lv2` | Regular level 2 user. |
+| `Lv3` | Regular level 3 user. |
+| `Lv4` | Regular level 4 user. |
+| `Lv5` | Regular level 5 user. |
+| `Lv6` | Regular level 6 user. |
+| `Lv7` | Regular level 7 user. |
+| `Lv8` | Regular level 8 user. |
+| `Lv9` | Regular level 9 user. |
+| `Lv10` | Regular level 10 user. |
+| `VIP1` | VIP level 1 user. |
+| `VIP2` | VIP level 2 user. |
+| `VIP3` | VIP level 3 user. |
+| `VIP4` | VIP level 4 user. |
+| `VIP5` | VIP level 5 user. |
+
 ### MarginMode
 
 Margin modes.
@@ -282,6 +108,17 @@ Margin modes.
 | `Cross` | Cross margin mode. |
 | `Isolated` | Isolated margin mode. |
 | `Cash` | Cash mode. |
+
+### OhlcPattern
+
+Intrabar OHLC path used when replaying candle data as ticks.
+
+| Value | Description |
+|---|---|
+| `Auto` | Choose the path automatically from the candle direction. |
+| `HighFirst` | Replay as Open, High, Low, Close. |
+| `LowFirst` | Replay as Open, Low, High, Close. |
+| `Random` | Choose a random path for each candle. |
 
 ### OrderFlowType
 
@@ -330,6 +167,29 @@ Quick margin behavior for margin orders.
 | `Manual` | Manual borrow and repayment. |
 | `AutoBorrow` | Automatically borrow when needed. |
 | `AutoRepay` | Automatically repay when possible. |
+
+### SelfTradePreventionMode
+
+Self-trade prevention modes supported by OKX.
+
+| Value | Description |
+|---|---|
+| `CancelMaker` | Cancel the maker order. |
+| `CancelTaker` | Cancel the taker order. |
+| `CancelBoth` | Cancel both maker and taker orders. |
+
+### TickType
+
+-
+
+| Value | Description |
+|---|---|
+| `Open` | The opening tick of a candle (Open price). |
+| `High` | The tick representing the highest price within the candle. |
+| `Low` | The tick representing the lowest price within the candle. |
+| `Close` | The closing tick of a candle (Close price). |
+| `Mid` | An interpolated tick within the candle, not directly from market data. Used for simulation or smoothing between OHLC points. |
+| `Realtime` | A tick received directly from a real-time market data stream. |
 
 ### TransactionType
 
@@ -382,15 +242,153 @@ Trigger price source for conditional orders.
 | `Index` | Index price. |
 | `Mark` | Mark price. |
 
-### SelfTradePreventionMode
+## Common
 
-Self-trade prevention modes supported by OKX.
+### ApiErrorType
+
+SDK error classification used by API result wrappers.
 
 | Value | Description |
 |---|---|
-| `CancelMaker` | Cancel the maker order. |
-| `CancelTaker` | Cancel the taker order. |
-| `CancelBoth` | Cancel both maker and taker orders. |
+| `Unknown` | Unknown or unclassified error. |
+| `Network` | Network or connection error, such as timeout or DNS failure. |
+| `InternalError` | Internal error within the SDK or application. |
+| `ServerError` | The server returned a non-success HTTP status code. |
+| `Authentication` | Authentication failed, such as invalid API key or signature mismatch. |
+| `RateLimit` | The request was rate-limited by OKX. |
+| `Deserialization` | The response could not be parsed because of an unexpected format. |
+| `BusinessLogic` | Business logic error returned by OKX, such as insufficient funds. |
+
+### ApiName
+
+OKX API operation names used for logging and error context.
+
+| Value | Description |
+|---|---|
+| `PlaceOrder` | Place an order. |
+| `CancelOrder` | Cancel an order. |
+| `CancelMultipleOrder` | Cancel multiple orders. |
+| `ModifyOrder` | Modify an order. |
+| `PlaceAlgoOrder` | Place an algorithmic order. |
+| `CancelAlgoOrder` | Cancel an algorithmic order. |
+| `ClosePosition` | Close a position. |
+| `GetOrders` | Get open orders. |
+| `GetPositions` | Get positions. |
+| `GetAlgoOrder` | Get one algorithmic order. |
+| `GetHistoryOrders` | Get historical orders. |
+| `GetHistoryAlgoOrders` | Get historical algorithmic orders. |
+| `GetHistoryPositions` | Get historical positions. |
+| `GetUserTrade` | Get user trades. |
+| `GetOrder` | Get one order. |
+| `AmendAlgoOrder` | Amend an algorithmic order. |
+| `AmendOrder` | Amend an order. |
+| `GetAlgoOrders` | Get algorithmic orders. |
+| `OrderCheck` | Check an order before placement. |
+| `GetUserTradesArchive` | Get archived user trades. |
+| `GetOrdersArchive` | Get archived orders. |
+
+### InstrumentType
+
+OKX instrument types.
+
+| Value | Description |
+|---|---|
+| `Any` | Any supported instrument type. |
+| `Spot` | Spot instrument. |
+| `Margin` | Margin instrument. |
+| `Swap` | Perpetual swap instrument. |
+| `Futures` | Futures instrument. |
+| `Option` | Option instrument. |
+| `Contract` | Generic contract instrument. |
+
+### OrderSide
+
+Order direction.
+
+| Value | Description |
+|---|---|
+| `Buy` | Buy order. |
+| `Sell` | Sell order. |
+
+### OrderType
+
+OKX order types used by trading requests.
+
+| Value | Description |
+|---|---|
+| `Market` | Market order. |
+| `Limit` | Limit order. |
+| `PostOnly` | Post-only order. |
+| `FillOrKill` | Fill-or-kill order. |
+| `ImmediateOrCancel` | Immediate-or-cancel order. |
+| `OptimalLimitOrder` | Optimal limit order. |
+| `MarketMakerProtection` | Market maker protection order. |
+| `MarketMakerProtectionPostOnly` | Post-only market maker protection order. |
+| `Elp` | Easy liquidity provider order. |
+
+### PositionSide
+
+Position side in long/short or net position mode.
+
+| Value | Description |
+|---|---|
+| `Long` | Long position side. |
+| `Short` | Short position side. |
+| `Net` | Net position side. |
+
+### PtLogLevel
+
+Log severity used by OKX strategy and SDK components.
+
+| Value | Description |
+|---|---|
+| `Critical` | Critical failure. |
+| `Error` | Error. |
+| `Warning` | Warning. |
+| `Success` | Successful operation. |
+| `Core` | Core system message. |
+| `Information` | Informational message. |
+| `Debug` | Debug message. |
+| `Trace` | Trace message. |
+| `None` | Logging is disabled. |
+
+### Timeframe
+
+Represents supported candlestick timeframes in seconds. The underlying integer value corresponds to the duration in seconds.
+
+| Value | Description |
+|---|---|
+| `Unknown` | Unknown or unspecified timeframe. |
+| `OneSecond` | One second (1 second). |
+| `OneMinute` | One minute (60 seconds). |
+| `ThreeMinutes` | Three minutes (180 seconds). |
+| `FiveMinutes` | Five minutes (300 seconds). |
+| `FifteenMinutes` | Fifteen minutes (900 seconds). |
+| `ThirtyMinutes` | Thirty minutes (1800 seconds). |
+| `OneHour` | One hour (3600 seconds). |
+| `TwoHours` | Two hours (7200 seconds). |
+| `FourHours` | Four hours (14400 seconds). |
+| `SixHours` | Six hours (21600 seconds). |
+| `TwelveHours` | Twelve hours (43200 seconds). |
+| `OneDay` | One day (86400 seconds). |
+| `OneWeek` | One week (604800 seconds). |
+| `OneMonth` | One month (approximated as 30 days = 2592000 seconds). |
+| `ThreeMonths` | Three months (approximated as 90 days). |
+| `SixMonths` | Six months (approximated as 180 days). |
+| `OneYear` | One year (approximated as 365 days). |
+
+### TradeMode
+
+OKX trade modes.
+
+| Value | Description |
+|---|---|
+| `Cross` | Cross margin mode. |
+| `Isolated` | Isolated margin mode. |
+| `Cash` | Cash mode. |
+| `Spot` | Spot mode. |
+
+## Drawing
 
 ### DrawingChangeType
 
@@ -439,6 +437,8 @@ Specifies the origin source of a drawing object.
 |---|---|
 | `User` | The drawing was created manually by the user. |
 | `Strategy` | The drawing was generated automatically by a trading strategy or system. |
+
+## Indicators
 
 ### AppliedPrice
 
@@ -706,6 +706,8 @@ Bit flags for the timeframes where an indicator is available.
 | `ThreeMinutes` | Three-minute period. |
 | `OneMinute` | One-minute period. |
 
+## Notifier
+
 ### TradeAction
 
 Commands that can be sent to a strategy.
@@ -725,6 +727,8 @@ Commands that can be sent to a strategy.
 | `UploadLogs` | Upload logs. |
 | `Custom` | Custom action handled by a plugin or strategy-specific command handler. |
 
+## Storage
+
 ### StoragePathScope
 
 Defines logical storage path categories used by the system to organize different types of runtime and persistent data.
@@ -743,6 +747,39 @@ Defines logical storage path categories used by the system to organize different
 | `Exports` | Exported data such as reports, CSV files, or user outputs. |
 | `IndicatorPlugins` | Folder containing custom technical indicators plugins. |
 | `StrategyPlugins` | Folder containing custom trading strategies plugins. |
+
+## Strategy
+
+### DateOption
+
+Preset date ranges used by backtests and data queries.
+
+| Value | Description |
+|---|---|
+| `Entry` | Use the configured entry date. |
+| `LastYear` | Use the last year. |
+| `ThreeMonth` | Use the last three months. |
+| `SixMonth` | Use the last six months. |
+| `LastMonth` | Use the last month. |
+| `Custom` | Use a custom date range. |
+
+### InputParamDataType
+
+Specifies a specialized data type for parameters when property type alone is insufficient.
+
+| Value | Description |
+|---|---|
+| `Auto` | Infer from property type. |
+| `FilePath` | Treat a string property as a file path. |
+
+### PriceDataOption
+
+Price data granularity used by simulation and replay.
+
+| Value | Description |
+|---|---|
+| `EveryTick` | Use every tick. |
+| `OneMinuteOHLC` | Use one-minute OHLC candles. |
 
 ### StrategyEventType
 
@@ -767,35 +804,4 @@ Indicates whether OnTickAsync was triggered by an intra-bar tick or a closed bar
 |---|---|
 | `Tick` | Intra-bar tick update. |
 | `BarClose` | Closed bar/candle update. |
-
-### InputParamDataType
-
-Specifies a specialized data type for parameters when property type alone is insufficient.
-
-| Value | Description |
-|---|---|
-| `Auto` | Infer from property type. |
-| `FilePath` | Treat a string property as a file path. |
-
-### DateOption
-
-Preset date ranges used by backtests and data queries.
-
-| Value | Description |
-|---|---|
-| `Entry` | Use the configured entry date. |
-| `LastYear` | Use the last year. |
-| `ThreeMonth` | Use the last three months. |
-| `SixMonth` | Use the last six months. |
-| `LastMonth` | Use the last month. |
-| `Custom` | Use a custom date range. |
-
-### PriceDataOption
-
-Price data granularity used by simulation and replay.
-
-| Value | Description |
-|---|---|
-| `EveryTick` | Use every tick. |
-| `OneMinuteOHLC` | Use one-minute OHLC candles. |
 
