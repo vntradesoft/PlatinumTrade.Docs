@@ -38,7 +38,7 @@ var history = await Context.Trade.GetHistoryOrdersAsync(symbol: "BTC-USDT");
 
 | | |
 |---|---|
-| **Jk.Okx.Net** | `UnifiedApi.Trading.GetOrderHistoryAsync` |
+| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Trading.GetOrderHistoryAsync` |
 | **Endpoint** | `GET /api/v5/trade/orders-history` |
 | **Docs** | [Get Order History (7 Days)](https://www.okx.com/docs-v5/en/#order-book-trading-trade-get-order-history-last-7-days) |
 
@@ -79,7 +79,7 @@ var res = await Context.Trade.AmendOrderAsync("BTC-USDT", orderId: 12345, newPri
 
 | | |
 |---|---|
-| **Jk.Okx.Net** | `UnifiedApi.Trading.AmendOrderAsync` |
+| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Trading.AmendOrderAsync` |
 | **Endpoint** | `POST /api/v5/trade/amend-order` |
 | **Docs** | [Amend Order](https://www.okx.com/docs-v5/en/#order-book-trading-trade-amend-order) |
 
@@ -129,7 +129,7 @@ if (res.Success)
 
 | | |
 |---|---|
-| **Jk.Okx.Net** | `UnifiedApi.Trading.PlaceOrderAsync` |
+| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Trading.PlaceOrderAsync` |
 | **Endpoint** | `POST /api/v5/trade/order` |
 | **Docs** | [Place Order](https://www.okx.com/docs-v5/en/#order-book-trading-trade-place-order) |
 
@@ -166,7 +166,7 @@ if (check.Success) { /* Safe to place order */ }
 
 | | |
 |---|---|
-| **Jk.Okx.Net** | `UnifiedApi.Trading.CheckOrderAsync` |
+| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Trading.CheckOrderAsync` |
 | **Endpoint** | `POST /api/v5/trade/check-order` |
 | **Docs** | [Check Order](https://www.okx.com/docs-v5/en/#order-book-trading-trade-check-order) |
 
@@ -210,7 +210,7 @@ if (res.Success)
 
 | | |
 |---|---|
-| **Jk.Okx.Net** | `UnifiedApi.Trading.ClosePositionAsync` |
+| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Trading.ClosePositionAsync` |
 | **Endpoint** | `POST /api/v5/trade/close-position` |
 | **Docs** | [Close Position](https://www.okx.com/docs-v5/en/#order-book-trading-trade-close-positions) |
 
@@ -251,7 +251,7 @@ The `ITradeClient` interface handles placing, amending, and canceling orders, as
 
 | | |
 |---|---|
-| **Jk.Okx.Net** | `UnifiedApi.Trading.GetOrderDetailsAsync` |
+| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Trading.GetOrderDetailsAsync` |
 | **Endpoint** | `GET /api/v5/trade/order` |
 | **Docs** | [Get Order Details](https://www.okx.com/docs-v5/en/#order-book-trading-trade-get-order-details) |
 
