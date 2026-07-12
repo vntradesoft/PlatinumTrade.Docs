@@ -5,7 +5,7 @@ title: Trend
 # Trend
 ## Average Directional Index (ADX)
 
-Äo lÆ°á»ng sá»©c máº¡nh cá»§a xu hÆ°á»›ng thá»‹ trÆ°á»ng hiá»‡n táº¡i.
+Measures the strength of the current market trend.
 
 ---
 
@@ -69,7 +69,7 @@ public override async Task OnTickAsync()
 
 
 ## Average Directional Index Wilder (ADXW)
-
+Wilder's smoothing version of the Average Directional Index (ADXW).
 Average Directional Index Wilder (ADXW)
 
 ---
@@ -135,7 +135,7 @@ public override async Task OnTickAsync()
 
 ## Adaptive Moving Average (AMA)
 
-ÄÆ°á»ng trung bĂ¬nh Ä‘á»™ng tá»± Ä‘á»™ng Ä‘iá»u chá»‰nh Ä‘á»™ nháº¡y dá»±a trĂªn má»©c Ä‘á»™ biáº¿n Ä‘á»™ng cá»§a thá»‹ trÆ°á»ng.
+An adaptive moving average that dynamically adjusts its sensitivity based on market volatility.
 
 ---
 
@@ -200,7 +200,7 @@ public override async Task OnTickAsync()
 
 ## Bollinger Bands
 
-Dáº£i bÄƒng biáº¿n Ä‘á»™ng xung quanh má»™t Ä‘Æ°á»ng trung bĂ¬nh Ä‘á»™ng.
+Volatility bands placed above and below a moving average.
 
 ---
 
@@ -266,7 +266,7 @@ public override async Task OnTickAsync()
 
 ## Double Exponential Moving Average (DEMA)
 
-Cung cáº¥p pháº£n á»©ng nhanh hÆ¡n vá»›i Ä‘á»™ trá»… tháº¥p hÆ¡n so vá»›i EMA thĂ´ng thÆ°á»ng.
+Provides a faster response with less lag than a standard EMA.
 
 ---
 
@@ -329,7 +329,7 @@ public override async Task OnTickAsync()
 
 ## Envelopes
 
-ÄÆ°á»ng bao bao gá»“m dáº£i biĂªn trĂªn vĂ  biĂªn dÆ°á»›i dá»‹ch chuyá»ƒn theo tá»‰ lá»‡ lá»‡ch so vá»›i Ä‘Æ°á»ng trung bĂ¬nh.
+Upper and lower bands that shift at a percentage deviation from a moving average.
 
 ---
 
@@ -398,7 +398,7 @@ public override async Task OnTickAsync()
 
 ## Ichimoku Kinko Hyo
 
-Há»‡ thá»‘ng chá»‰ bĂ¡o xu hÆ°á»›ng toĂ n diá»‡n cung cáº¥p khĂ¡ng cá»±/há»— trá»£ vĂ  Ä‘iá»ƒm Ä‘áº£o chiá»u.
+A comprehensive trend indicator system that provides support/resistance and reversal points.
 
 ---
 
@@ -467,7 +467,7 @@ Moving Average (MA)
 
 ---
 
-**Syntax**
+A standard moving average indicator to identify trend direction.
 
 ```csharp
 IIndicatorMA CreateIndicatorMA(string? symbol = null, Timeframe? timeframe = null, int? period = null, MaMethod? method = null, AppliedPrice? appliedPrice = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
@@ -534,7 +534,7 @@ public override async Task OnTickAsync()
 
 ## Parabolic SAR
 
-XĂ¡c Ä‘á»‹nh Ä‘iá»ƒm Ä‘áº£o chiá»u xu hÆ°á»›ng vĂ  thiáº¿t láº­p trailing stop.
+Identifies trend reversal points and provides trailing stops.
 
 ---
 
@@ -600,7 +600,7 @@ public override async Task OnTickAsync()
 
 ## SuperTrend
 
-Chá»‰ bĂ¡o theo xu hÆ°á»›ng dá»±a trĂªn Ä‘á»™ biáº¿n Ä‘á»™ng ATR vĂ  giĂ¡ trung vá»‹.
+A trend-following indicator based on Average True Range (ATR) volatility and median price.
 
 ---
 
@@ -666,7 +666,7 @@ public override async Task OnTickAsync()
 
 ## Triple Exponential Moving Average (TEMA)
 
-ÄÆ°á»ng trung bĂ¬nh Ä‘á»™ng bĂ¡m xu hÆ°á»›ng vá»›i Ä‘á»™ trá»… tháº¥p hÆ¡n cáº£ DEMA.
+A trend-following moving average with even less lag than DEMA.
 
 ---
 

@@ -5,7 +5,7 @@ title: Oscillators
 # Oscillators
 ## Average True Range (ATR)
 
-Äo lÆ°á»ng má»©c Ä‘á»™ biáº¿n Ä‘á»™ng tuyá»‡t Ä‘á»‘i cá»§a thá»‹ trÆ°á»ng.
+Measures the absolute volatility of the market.
 
 ---
 
@@ -69,7 +69,7 @@ public override async Task OnTickAsync()
 
 ## Bollinger Band Width (BBW)
 
-Äo lÆ°á»ng Ä‘á»™ rá»™ng pháº§n trÄƒm giá»¯a dáº£i Bollinger trĂªn vĂ  dÆ°á»›i Ä‘á»ƒ Ä‘Ă¡nh giĂ¡ Ä‘á»™ng nÄƒng biáº¿n Ä‘á»™ng.
+Measures the percentage width between upper and lower Bollinger Bands to evaluate volatility.
 
 ---
 
@@ -135,7 +135,7 @@ public override async Task OnTickAsync()
 
 ## Bollinger Bands %B (%B)
 
-Äá»‹nh lÆ°á»£ng vá»‹ trĂ­ tÆ°Æ¡ng quan cá»§a giĂ¡ so vá»›i hai dáº£i biĂªn Bollinger.
+Quantifies a security's price relative to the upper and lower Bollinger Bands.
 
 ---
 
@@ -201,7 +201,7 @@ public override async Task OnTickAsync()
 
 ## Commodity Channel Index (CCI)
 
-Äo lÆ°á»ng má»©c Ä‘á»™ sai lá»‡ch cá»§a giĂ¡ so vá»›i giĂ¡ trung bĂ¬nh thá»‘ng kĂª Ä‘á»ƒ phĂ¡t hiá»‡n vĂ¹ng cá»±c Ä‘oan.
+Measures the deviation of the asset price from its statistical average.
 
 ---
 
@@ -266,7 +266,7 @@ public override async Task OnTickAsync()
 
 ## DeMarker (DeM)
 
-So sĂ¡nh Ä‘á»‰nh/Ä‘Ă¡y cá»§a chu ká»³ hiá»‡n táº¡i vá»›i chu ká»³ trÆ°á»›c Ä‘á»ƒ Ä‘Ă¡nh giĂ¡ nhu cáº§u thá»‹ trÆ°á»ng.
+Compares the most recent maximum and minimum prices to the previous period's equivalent prices to measure demand.
 
 ---
 
@@ -331,7 +331,7 @@ public override async Task OnTickAsync()
 
 ## Moving Average Convergence Divergence (MACD)
 
-Chá»‰ bĂ¡o Ä‘á»™ng lÆ°á»£ng theo xu hÆ°á»›ng thá»ƒ hiá»‡n má»‘i liĂªn há»‡ giá»¯a hai Ä‘Æ°á»ng trung bĂ¬nh Ä‘á»™ng.
+A trend-following momentum indicator that shows the relationship between two moving averages of a security's price.
 
 ---
 
@@ -397,7 +397,7 @@ public override async Task OnTickAsync()
 
 ## Money Flow Index (MFI)
 
-Äo lÆ°á»ng dĂ²ng tiá»n thĂ´ng qua tĂ­ch há»£p cáº£ dá»¯ liá»‡u giĂ¡ vĂ  khá»‘i lÆ°á»£ng.
+Measures the buying and selling pressure through integrating price and volume data.
 
 ---
 
@@ -462,7 +462,7 @@ public override async Task OnTickAsync()
 
 ## Momentum
 
-Äo lÆ°á»ng tá»· lá»‡ tá»‘c Ä‘á»™ biáº¿n Ä‘á»™ng giĂ¡ cá»§a má»™t tĂ i sáº£n giao dá»‹ch.
+Measures the rate of change of an asset's price.
 
 ---
 
@@ -525,7 +525,7 @@ public override async Task OnTickAsync()
 
 ## Oscillator of Moving Average (OsMA)
 
-Äo lÆ°á»ng khoáº£ng cĂ¡ch sai lá»‡ch giá»¯a Ä‘Æ°á»ng MACD vĂ  Ä‘Æ°á»ng tĂ­n hiá»‡u MACD.
+Measures the difference between the MACD line and its signal line.
 
 ---
 
@@ -581,7 +581,7 @@ public override async Task OnInitAsync()
 
 ## Relative Strength Index (RSI)
 
-Chá»‰ bĂ¡o dao Ä‘á»™ng Ä‘á»™ng lÆ°á»£ng Ä‘o lÆ°á»ng tá»‘c Ä‘á»™ vĂ  thay Ä‘á»•i cá»§a biáº¿n Ä‘á»™ng giĂ¡.
+A momentum oscillator that measures the speed and change of price movements.
 
 ---
 
@@ -646,7 +646,7 @@ public override async Task OnTickAsync()
 
 ## Relative Vigor Index (RVI)
 
-Äo lÆ°á»ng nÄƒng lÆ°á»£ng tÆ°Æ¡ng Ä‘á»‘i cá»§a xu hÆ°á»›ng giĂ¡ hiá»‡n hĂ nh.
+Measures the relative energy of the current price trend.
 
 ---
 
@@ -702,7 +702,7 @@ public override async Task OnInitAsync()
 
 ## Standard Deviation (StdDev)
 
-Äo lÆ°á»ng má»©c Ä‘á»™ biáº¿n Ä‘á»™ng cá»§a thá»‹ trÆ°á»ng thĂ´ng qua Ä‘á»™ lá»‡ch chuáº©n thá»‘ng kĂª.
+Measures market volatility using statistical standard deviation.
 
 ---
 
@@ -758,7 +758,7 @@ public override async Task OnInitAsync()
 
 ## Stochastic Oscillator
 
-So sĂ¡nh giĂ¡ Ä‘Ă³ng cá»­a vá»›i má»™t pháº¡m vi giĂ¡ trong má»™t khoáº£ng thá»i gian.
+Compares a particular closing price of a security to a range of its prices over a certain period of time.
 
 ---
 
@@ -827,7 +827,7 @@ public override async Task OnTickAsync()
 
 ## Triple Exponential Average (TRIX)
 
-Chá»‰ bĂ¡o dao Ä‘á»™ng Ä‘o lÆ°á»ng tá»· lá»‡ thay Ä‘á»•i cá»§a trung bĂ¬nh Ä‘á»™ng lÅ©y thá»«a Ä‘Æ°á»£c lĂ m mÆ°á»£t ba láº§n.
+A momentum oscillator that measures the rate of change of a triple exponentially smoothed moving average.
 
 ---
 
@@ -882,7 +882,7 @@ public override async Task OnInitAsync()
 
 ## Williams' Percent Range (WPR)
 
-Chá»‰ bĂ¡o Ä‘á»™ng lÆ°á»£ng Ä‘o lÆ°á»ng vĂ¹ng quĂ¡ mua/quĂ¡ bĂ¡n, thÆ°á»ng dao Ä‘á»™ng tá»« 0 Ä‘áº¿n -100.
+A momentum indicator that measures overbought and oversold levels, typically fluctuating between 0 and -100.
 
 ---
 

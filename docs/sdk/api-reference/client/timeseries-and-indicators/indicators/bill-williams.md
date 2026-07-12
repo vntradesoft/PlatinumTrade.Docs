@@ -5,7 +5,7 @@ title: Bill Williams
 # Bill Williams
 ## Accelerator Oscillator (AC)
 
-Äo lÆ°á»ng sá»± gia tá»‘c hoáº·c giáº£m tá»‘c cá»§a lá»±c lĂ¡i thá»‹ trÆ°á»ng hiá»‡n hĂ nh.
+Measures the acceleration and deceleration of the current driving force.
 
 ---
 
@@ -67,7 +67,7 @@ public override async Task OnTickAsync()
 
 ## Alligator
 
-MĂ´ hĂ¬nh bĂ¡m sĂ¡t xu hÆ°á»›ng káº¿t há»£p ba Ä‘Æ°á»ng trung bĂ¬nh Ä‘á»™ng dá»‹ch chuyá»ƒn thá»i gian.
+A trend-following model combining three time-shifted moving averages.
 
 ---
 
@@ -131,7 +131,7 @@ public override async Task OnTickAsync()
 
 ## Awesome Oscillator (AO)
 
-Äo lÆ°á»ng lá»±c lĂ¡i thá»‹ trÆ°á»ng (momentum) cá»§a 5 náº¿n gáº§n nháº¥t so vá»›i 34 náº¿n trÆ°á»›c Ä‘Ă³.
+Measures the market momentum of the last 5 periods compared to the previous 34 periods.
 
 ---
 
@@ -193,7 +193,7 @@ public override async Task OnTickAsync()
 
 ## Market Facilitation Index (BWMFI)
 
-ÄĂ¡nh giĂ¡ má»©c Ä‘á»™ thay Ä‘á»•i giĂ¡ cá»§a má»™t tĂ i sáº£n trĂªn má»™t Ä‘Æ¡n vá»‹ khá»‘i lÆ°á»£ng giao dá»‹ch.
+Evaluates the price change of an asset per unit of trading volume.
 
 ---
 
@@ -258,7 +258,7 @@ public override async Task OnTickAsync()
 
 ## Fractals
 
-XĂ¡c Ä‘á»‹nh Ä‘á»‰nh vĂ  Ä‘Ă¡y cá»¥c bá»™ cá»§a biáº¿n Ä‘á»™ng giĂ¡.
+Identifies local tops and bottoms in price movements.
 
 ---
 
@@ -323,7 +323,7 @@ public override async Task OnTickAsync()
 
 ## Gator Oscillator
 
-Thá»ƒ hiá»‡n má»©c Ä‘á»™ há»™i tá»¥/phĂ¢n ká»³ cá»§a dáº£i Alligator Ä‘á»ƒ xĂ¡c Ä‘á»‹nh Ä‘á»™ má»Ÿ miá»‡ng.
+Represents the convergence and divergence of the Alligator bands.
 
 ---
 

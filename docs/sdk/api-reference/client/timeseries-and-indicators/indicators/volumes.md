@@ -5,7 +5,7 @@ title: Volumes
 # Volumes
 ## Accumulation/Distribution (AD)
 
-Äo lÆ°á»ng lÆ°á»£ng cung vĂ  cáº§u báº±ng cĂ¡ch so sĂ¡nh giĂ¡ Ä‘Ă³ng cá»­a vá»›i pháº¡m vi giĂ¡ trong chu ká»³.
+Measures the accumulation and distribution of volume by comparing the closing price to the trading range.
 
 ---
 
@@ -60,7 +60,7 @@ public override async Task OnInitAsync()
 
 ## Chaikin Oscillator
 
-Ăp dá»¥ng nguyĂªn lĂ½ MACD cho Ä‘Æ°á»ng tĂ­ch lÅ©y phĂ¢n phá»‘i (A/D).
+Applies the MACD principle to the Accumulation/Distribution (A/D) line.
 
 ---
 
@@ -117,7 +117,7 @@ public override async Task OnInitAsync()
 
 ## Force Index
 
-LiĂªn káº¿t thay Ä‘á»•i giĂ¡ vá»›i khá»‘i lÆ°á»£ng Ä‘á»ƒ Ä‘o lÆ°á»ng Ä‘á»™ng nÄƒng Ä‘áº©y Ä‘áº±ng sau xu hÆ°á»›ng.
+Links price change with volume to measure the power driving a trend.
 
 ---
 
@@ -173,7 +173,7 @@ public override async Task OnInitAsync()
 
 ## On-Balance Volume (OBV)
 
-Theo dĂµi dĂ²ng khá»‘i lÆ°á»£ng tĂ­ch lÅ©y Ä‘á»ƒ dá»± Ä‘oĂ¡n xu hÆ°á»›ng giĂ¡ dá»‹ch chuyá»ƒn tÆ°Æ¡ng lai.
+Tracks cumulative volume flow to predict future price changes.
 
 ---
 
@@ -228,7 +228,7 @@ public override async Task OnInitAsync()
 
 ## Volume Spike
 
-XĂ¡c Ä‘á»‹nh hiá»‡n tÆ°á»£ng gia tÄƒng khá»‘i lÆ°á»£ng giao dá»‹ch Ä‘á»™t ngá»™t so vá»›i chu ká»³ trung bĂ¬nh.
+Identifies sudden spikes in trading volume compared to its average.
 
 ---
 
@@ -294,7 +294,7 @@ public override async Task OnTickAsync()
 
 ## Volume Weighted Average Price (VWAP)
 
-Má»©c giĂ¡ trung bĂ¬nh cá»§a tĂ i sáº£n Ä‘Æ°á»£c giao dá»‹ch trong phiĂªn giao dá»‹ch dá»±a trĂªn cáº£ giĂ¡ vĂ  lÆ°á»£ng.
+The average price of an asset traded over a session based on both volume and price.
 
 ---
 
