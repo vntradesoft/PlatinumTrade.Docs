@@ -8,11 +8,14 @@ sidebar_position: 2
 The Account API (`Context.Account`) provides methods for retrieving balances, analytics, and configuring trading modes.
 
 ## Properties
-- `WalletBalance` (`decimal`): Total actual wallet balance excluding unrealized PnL.
-- `AvailableBalance` (`decimal`): Balance available for opening new positions.
-- `Equity` (`decimal`): Wallet balance + Unrealized PnL.
-- `UnrealizedPnL` (`decimal`): Total unrealized profit/loss.
-- `InitialMargin` (`decimal`): Total initial margin in use.
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `WalletBalance` | `decimal` | Total actual wallet balance excluding unrealized PnL. |
+| `AvailableBalance` | `decimal` | Balance available for opening new positions. |
+| `Equity` | `decimal` | Wallet balance + Unrealized PnL. |
+| `UnrealizedPnL` | `decimal` | Total unrealized profit/loss. |
+| `InitialMargin` | `decimal` | Total initial margin in use. |
 
 ## `GetBalances`
 Gets detailed information about the trading account balance.
