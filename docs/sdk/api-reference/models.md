@@ -478,6 +478,25 @@ Defines the styling properties for a drawing object.
 | `Fill` | `bool` | Gets or sets a value indicating whether to fill the shape. |
 | `FillColor` | `string` | Gets or sets the fill color in hex format (e.g., "#44FFFFFF"). |
 
+### DrawingObject
+
+Abstract base class for all drawing objects (lines, shapes, text, etc.) on a chart.
+
+| Property | Type | Description |
+|---|---|---|
+| `Id` | `string` | Gets the unique identifier of the drawing object. |
+| `Name` | `string` | Gets or sets the display name of the drawing object. |
+| `Description` | `string` | Gets or sets a description for the drawing object. |
+| `Symbol` | `string` | Gets or sets the symbol associated with the drawing object. |
+| `Timeframe` | [`Timeframe`](./enums.md#timeframe) | Gets or sets the timeframe for which the drawing object is visible. |
+| `Style` | [`DrawingStyle`](./models.md#drawingstyle) | Gets or sets the visual style of the drawing object. |
+| `IsVisible` | `bool` | Gets or sets a value indicating whether the drawing object is visible. |
+| `IsLocked` | `bool` | Gets or sets a value indicating whether the drawing object is locked from editing. |
+| `TargetIndicatorId` | `string?` | Gets or sets the ID of the indicator this drawing is associated with, if any. |
+| `Source` | [`DrawingSource`](./enums.md#drawingsource) | Gets or sets the source of the drawing (e.g., User or Strategy). |
+| `VisibleTimeframes` | [`TimeFrameOptions`](./enums.md#timeframeoptions) | Gets or sets the timeframes during which this object is visible. |
+| `Type` | [`DrawingObjectType`](./enums.md#drawingobjecttype) | Gets the type of the drawing object. |
+
 ## Common
 
 ### LimitPrice
@@ -546,6 +565,17 @@ Represents a command sent to a trading strategy.
 | `CommandTag` | `string` | Gets or sets the plugin-specific command identifier used when is . Examples: "setlevel", "forcetpchase", or "resetrisk". |
 
 ## Indicators
+
+### CalcIndBase
+
+Base class for indicator calculators. It manages indicator identity, configuration, and buffers.
+
+| Property | Type | Description |
+|---|---|---|
+| `IsInitialized` | `bool` | - |
+| `Config` | [`IndicatorConfig`](./models.md#indicatorconfig) | - |
+| `Identity` | [`IndicatorIdentity`](./models.md#indicatoridentity) | Manager that provides buffers and registers indicator identities. |
+| `Property` | [`IndicatorProperty`](./models.md#indicatorproperty) | - |
 
 ### IndicatorSource
 
