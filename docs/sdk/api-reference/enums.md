@@ -85,7 +85,7 @@ OKX instrument types.
 
 ### Timeframe
 
--
+Represents supported candlestick timeframes in seconds. The underlying integer value corresponds to the duration in seconds.
 
 | Value | Description |
 |---|---|
@@ -190,6 +190,19 @@ Intrabar OHLC path used when replaying candle data as ticks.
 | `HighFirst` | Replay as Open, High, Low, Close. |
 | `LowFirst` | Replay as Open, Low, High, Close. |
 | `Random` | Choose a random path for each candle. |
+
+### TickType
+
+-
+
+| Value | Description |
+|---|---|
+| `Open` | The opening tick of a candle (Open price). |
+| `High` | The tick representing the highest price within the candle. |
+| `Low` | The tick representing the lowest price within the candle. |
+| `Close` | The closing tick of a candle (Close price). |
+| `Mid` | An interpolated tick within the candle, not directly from market data. Used for simulation or smoothing between OHLC points. |
+| `Realtime` | A tick received directly from a real-time market data stream. |
 
 ### AlgoActualSide
 
@@ -653,6 +666,45 @@ Direction classification returned by moving-average helper methods.
 | `Upward` | The moving average is trending upward. |
 | `Downward` | The moving average is trending downward. |
 | `Sideways` | The moving average is moving sideways. |
+
+### TimeFrameOptions
+
+Bit flags for the timeframes where an indicator is available.
+
+| Value | Description |
+|---|---|
+| `AllPeriods` | All supported periods. |
+| `SixMonths` | - |
+| `ThreeMonths` | - |
+| `OneMonth` | - |
+| `OneWeek` | - |
+| `OneDay` | - |
+| `TwelveHours` | - |
+| `SixHours` | - |
+| `FourHours` | - |
+| `TwoHours` | - |
+| `OneHour` | - |
+| `ThirtyMinutes` | - |
+| `FifteenMinutes` | - |
+| `FiveMinutes` | - |
+| `ThreeMinutes` | - |
+| `OneMinute` | - |
+| `None` | No periods are enabled. |
+| `SixMonths` | Six-month period. |
+| `ThreeMonths` | Three-month period. |
+| `OneMonth` | One-month period. |
+| `OneWeek` | One-week period. |
+| `OneDay` | One-day period. |
+| `TwelveHours` | Twelve-hour period. |
+| `SixHours` | Six-hour period. |
+| `FourHours` | Four-hour period. |
+| `TwoHours` | Two-hour period. |
+| `OneHour` | One-hour period. |
+| `ThirtyMinutes` | Thirty-minute period. |
+| `FifteenMinutes` | Fifteen-minute period. |
+| `FiveMinutes` | Five-minute period. |
+| `ThreeMinutes` | Three-minute period. |
+| `OneMinute` | One-minute period. |
 
 ### TradeAction
 
