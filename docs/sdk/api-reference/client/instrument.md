@@ -191,9 +191,9 @@ if (priceRes.Success)
 
 **Exchange API Mapping**
 
-- **OKX.Net Call**: `UnifiedApi.ExchangeData.GetTickerAsync`
-- **Endpoint**: `GET /api/v5/market/ticker`
-- **Docs**: [Get Ticker](https://www.okx.com/docs-v5/en/#order-book-trading-market-data-get-ticker)
+| OKX.Net Call | Endpoint | Docs |
+|---|---|---|
+| `UnifiedApi.ExchangeData.GetTickerAsync` | `GET /api/v5/market/ticker` | [Get Ticker](https://www.okx.com/docs-v5/en/#order-book-trading-market-data-get-ticker) |
 
 
 ## `GetLimitPriceAsync`
@@ -232,9 +232,9 @@ if (limits.Success)
 
 **Exchange API Mapping**
 
-- **OKX.Net Call**: `UnifiedApi.ExchangeData.GetPriceLimitsAsync`
-- **Endpoint**: `GET /api/v5/public/price-limit`
-- **Docs**: [Get Price Limits](https://www.okx.com/docs-v5/en/#public-data-api-get-price-limits)
+| OKX.Net Call | Endpoint | Docs |
+|---|---|---|
+| `UnifiedApi.ExchangeData.GetPriceLimitsAsync` | `GET /api/v5/public/price-limit` | [Get Price Limits](https://www.okx.com/docs-v5/en/#public-data-api-get-price-limits) |
 
 
 ## `GetCurrentTime`

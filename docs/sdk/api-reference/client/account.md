@@ -80,9 +80,9 @@ if (result.Success)
 
 **Exchange API Mapping**
 
-- **OKX.Net Call**: `UnifiedApi.Account.GetAccountBalanceAsync`
-- **Endpoint**: `GET /api/v5/account/balance`
-- **Docs**: [Get Balance](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance)
+| OKX.Net Call | Endpoint | Docs |
+|---|---|---|
+| `UnifiedApi.Account.GetAccountBalanceAsync` | `GET /api/v5/account/balance` | [Get Balance](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance) |
 
 
 ## `GetCurrentEquity`
@@ -180,9 +180,9 @@ if (success)
 
 **Exchange API Mapping**
 
-- **OKX.Net Call**: `UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync`
-- **Endpoint**: `GET /leverage-info` & `POST /set-leverage`
-- **Docs**: [Get](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [Set Leverage](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage)
+| OKX.Net Call | Endpoint | Docs |
+|---|---|---|
+| `UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync` | `GET /leverage-info` & `POST /set-leverage` | [Get](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [Set Leverage](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage) |
 
 
 ## `SetHedgeModeAsync`
@@ -221,9 +221,9 @@ if (!success)
 
 **Exchange API Mapping**
 
-- **OKX.Net Call**: `UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync`
-- **Endpoint**: `GET /config` & `POST /set-position-mode`
-- **Docs**: [Get Config](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [Set Position Mode](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode)
+| OKX.Net Call | Endpoint | Docs |
+|---|---|---|
+| `UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync` | `GET /config` & `POST /set-position-mode` | [Get Config](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [Set Position Mode](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode) |
 
 
 ## `GetFeeLevelAsync`
@@ -259,7 +259,7 @@ if (feeRes.Success)
 
 **Exchange API Mapping**
 
-- **OKX.Net Call**: `UnifiedApi.Account.GetAccountConfigurationAsync`
-- **Endpoint**: `GET /api/v5/account/config`
-- **Docs**: [Get Account Configuration](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration)
+| OKX.Net Call | Endpoint | Docs |
+|---|---|---|
+| `UnifiedApi.Account.GetAccountConfigurationAsync` | `GET /api/v5/account/config` | [Get Account Configuration](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) |
 
