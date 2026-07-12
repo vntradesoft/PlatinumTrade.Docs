@@ -1,10 +1,8 @@
 ﻿---
-title: 
+title: Trend
 ---
 
-# 
-
-
+# Trend
 ## Average Directional Index (ADX)
 
 Äo lÆ°á»ng sá»©c máº¡nh cá»§a xu hÆ°á»›ng thá»‹ trÆ°á»ng hiá»‡n táº¡i.
@@ -738,4 +736,5 @@ public override async Task OnTickAsync()
 }
 }
 ```
+
 

@@ -1,10 +1,8 @@
 ﻿---
-title: 
+title: Bill Williams
 ---
 
-# 
-
-
+# Bill Williams
 ## Accelerator Oscillator (AC)
 
 Äo lÆ°á»ng sá»± gia tá»‘c hoáº·c giáº£m tá»‘c cá»§a lá»±c lĂ¡i thá»‹ trÆ°á»ng hiá»‡n hĂ nh.
@@ -390,4 +388,5 @@ public override async Task OnTickAsync()
 }
 }
 ```
+
 

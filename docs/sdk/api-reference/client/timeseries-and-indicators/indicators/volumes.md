@@ -1,10 +1,8 @@
 ﻿---
-title: 
+title: Volumes
 ---
 
-# 
-
-
+# Volumes
 ## Accumulation/Distribution (AD)
 
 Äo lÆ°á»ng lÆ°á»£ng cung vĂ  cáº§u báº±ng cĂ¡ch so sĂ¡nh giĂ¡ Ä‘Ă³ng cá»­a vá»›i pháº¡m vi giĂ¡ trong chu ká»³.
@@ -361,4 +359,5 @@ public override async Task OnTickAsync()
 }
 }
 ```
+
 

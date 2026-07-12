@@ -1,10 +1,8 @@
 ﻿---
-title: 
+title: Oscillators
 ---
 
-# 
-
-
+# Oscillators
 ## Average True Range (ATR)
 
 Äo lÆ°á»ng má»©c Ä‘á»™ biáº¿n Ä‘á»™ng tuyá»‡t Ä‘á»‘i cá»§a thá»‹ trÆ°á»ng.
@@ -960,4 +958,5 @@ public override async Task OnTickAsync()
 }
 }
 ```
+
 

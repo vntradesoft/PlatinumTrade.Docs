@@ -1,4 +1,4 @@
-﻿---
+---
 id: index
 title: Timeseries & Indicators Access
 sidebar_position: 1
@@ -57,7 +57,7 @@ Select a group below to view the available built-in technical indicators, their 
 
 | Indicator Group | Description | Link |
 |---|---|---|
-| **Trend Indicators** | Standard trend-following lines such as Moving Averages, Parabolic SAR, and Bollinger Bands. | [View Trend Indicators](./trend/index.md) |
-| **Oscillators and Volatility** | Indicators measuring momentum and market volatility, e.g., RSI, Stochastic, MACD, and ATR. | [View Oscillators](./oscillators/index.md) |
-| **Bill Williams Indicators** | The complete suite of Bill Williams indicators (Alligator, Fractals, AO, AC, Gator). | [View Bill Williams](./bill-williams/index.md) |
-| **Volume Indicators** | Volume-based technical indicators (OBV, A/D, VWAP, Chaikin, Volume Spike). | [View Volume Indicators](./volumes/index.md) |
+| **Trend Indicators** | Standard trend-following lines such as Moving Averages, Parabolic SAR, and Bollinger Bands. | [View Trend Indicators](./indicators/trend.md) |
+| **Oscillators and Volatility** | Indicators measuring momentum and market volatility, e.g., RSI, Stochastic, MACD, and ATR. | [View Oscillators](./indicators/oscillators.md) |
+| **Bill Williams Indicators** | The complete suite of Bill Williams indicators (Alligator, Fractals, AO, AC, Gator). | [View Bill Williams](./indicators/bill-williams.md) |
+| **Volume Indicators** | Volume-based technical indicators (OBV, A/D, VWAP, Chaikin, Volume Spike). | [View Volume Indicators](./indicators/volumes.md) |
