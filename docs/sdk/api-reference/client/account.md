@@ -78,6 +78,13 @@ if (result.Success)
 }
 ```
 
+**Exchange API Mapping**
+
+- **OKX.Net Call**: `UnifiedApi.Account.GetAccountBalanceAsync`
+- **Endpoint**: `GET /api/v5/account/balance`
+- **Docs**: [Get Balance](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance)
+
+
 ## `GetCurrentEquity`
 Gets the current equity value of the account.
 
@@ -171,6 +178,13 @@ if (success)
 }
 ```
 
+**Exchange API Mapping**
+
+- **OKX.Net Call**: `UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync`
+- **Endpoint**: `GET /leverage-info` & `POST /set-leverage`
+- **Docs**: [Get](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [Set Leverage](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage)
+
+
 ## `SetHedgeModeAsync`
 Sets the position mode to Hedge Mode or Netting Mode.
 
@@ -205,6 +219,13 @@ if (!success)
 }
 ```
 
+**Exchange API Mapping**
+
+- **OKX.Net Call**: `UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync`
+- **Endpoint**: `GET /config` & `POST /set-position-mode`
+- **Docs**: [Get Config](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [Set Position Mode](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode)
+
+
 ## `GetFeeLevelAsync`
 Gets information about the account's trading fee VIP level.
 
@@ -235,11 +256,10 @@ if (feeRes.Success)
     var level = feeRes.Data.Level;
 }
 ```
-## API Mappings
 
-| SDK Method | OKX.Net Call | OKX API Endpoint | OKX API Documentation |
-|---|---|---|---|
-| `LoadBalanceAsync` | `UnifiedApi.Account.GetAccountBalanceAsync` | `GET /api/v5/account/balance` | [Get Balance](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance) |
-| `SetInitialLeverageAsync` | `UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync` | `GET /leverage-info` & `POST /set-leverage` | [Get](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [Set Leverage](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage) |
-| `SetHedgeModeAsync` | `UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync` | `GET /config` & `POST /set-position-mode` | [Get Config](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [Set Position Mode](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode) |
-| `GetFeeLevelAsync` | `UnifiedApi.Account.GetAccountConfigurationAsync` | `GET /api/v5/account/config` | [Get Account Configuration](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) |
+**Exchange API Mapping**
+
+- **OKX.Net Call**: `UnifiedApi.Account.GetAccountConfigurationAsync`
+- **Endpoint**: `GET /api/v5/account/config`
+- **Docs**: [Get Account Configuration](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration)
+
