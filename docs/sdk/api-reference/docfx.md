@@ -1,8 +1,8 @@
-﻿---
+---
 id: sdk-docfx
 title: Auto-generated API (DocFX)
 sidebar_label: DocFX
-sidebar_position: 6
+sidebar_position: 99
 description: Full namespace-level API documentation auto-generated from source code by DocFX.
 ---
 
