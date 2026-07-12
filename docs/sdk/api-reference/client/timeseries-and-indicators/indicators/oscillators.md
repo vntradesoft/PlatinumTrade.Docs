@@ -26,7 +26,7 @@ IIndicatorATR CreateIndicatorATR(string? symbol = null, Timeframe? timeframe = n
 | `period` | `int?` | ATR calculation period. |
 | `method` | [`MaMethod?`](../../enums.md#mamethod) | Smoothing moving average method (usually SMA/EMA). |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -89,7 +89,7 @@ IIndicatorBollingerBandWidth CreateIndicatorBollingerBandWidth(string? symbol = 
 | `period` | `int?` | MA period. |
 | `multiplier` | `double?` | Standard deviation multiplier. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -154,7 +154,7 @@ IIndicatorBollingerPercentB CreateIndicatorBollingerPercentB(string? symbol = nu
 | `period` | `int?` | MA period. |
 | `multiplier` | `double?` | Standard deviation multiplier. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -218,7 +218,7 @@ IIndicatorCCI CreateIndicatorCCI(string? symbol = null, Timeframe? timeframe = n
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Calculation period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -282,7 +282,7 @@ IIndicatorDeMarker CreateIndicatorDeMarker(string? symbol = null, Timeframe? tim
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | DeMarker calculation period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -348,7 +348,7 @@ IIndicatorMACD CreateIndicatorMACD(string? symbol = null, Timeframe? timeframe =
 | `slowPeriod` | `int?` | Slow EMA period. |
 | `signalPeriod` | `int?` | Signal line smoothing period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -411,7 +411,7 @@ IIndicatorMFI CreateIndicatorMFI(string? symbol = null, Timeframe? timeframe = n
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Lookback period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -470,7 +470,7 @@ IIndicatorMomentum Momentum(string? symbol, Timeframe? timeframe, int? period, s
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Momentum period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 **Return Value**
 
@@ -525,7 +525,7 @@ IIndicatorOsMA CreateIndicatorOsMA(string sourceId1, string sourceId2, string? i
 | `sourceId1` | `string` | The ID of the first source indicator (usually MACD line). |
 | `sourceId2` | `string` | The ID of the second source indicator (usually MACD Signal line). |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -581,7 +581,7 @@ IIndicatorRSI CreateIndicatorRSI(string? symbol = null, Timeframe? timeframe = n
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | RSI calculation period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -645,7 +645,7 @@ IIndicatorRVI CreateIndicatorRVI(string? symbol = null, Timeframe? timeframe = n
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | RVI period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -700,7 +700,7 @@ IIndicatorStdDev CreateIndicatorStdDev(string? symbol = null, Timeframe? timefra
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Deviation period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -757,7 +757,7 @@ IIndicatorStochastic CreateIndicatorStochastic(string? symbol = null, Timeframe?
 | `dPeriod` | `int?` | %D line smoothing period. |
 | `kSlow` | `int?` | Slowing factor for %K line. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -822,7 +822,7 @@ IIndicatorTRIX CreateIndicatorTRIX(string sourceId, int? period = null, string? 
 | `sourceId` | `string` | The ID of the source indicator (usually a moving average). |
 | `period` | `int?` | TRIX period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -877,7 +877,7 @@ IIndicatorWPR CreateIndicatorWPR(string? symbol = null, Timeframe? timeframe = n
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | WPR period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 

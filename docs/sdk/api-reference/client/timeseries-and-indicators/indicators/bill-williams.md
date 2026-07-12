@@ -24,7 +24,7 @@ IIndicatorAC CreateIndicatorAC(string? symbol = null, Timeframe? timeframe = nul
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -80,7 +80,7 @@ IIndicatorAlligator Alligator(string? symbol, Timeframe? timeframe, string? indi
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 **Return Value**
 
@@ -137,7 +137,7 @@ IIndicatorAO CreateIndicatorAO(string? symbol = null, Timeframe? timeframe = nul
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -199,7 +199,7 @@ IIndicatorBWMFI CreateIndicatorBWMFI(string? symbol = null, Timeframe? timeframe
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `multiplier` | `double?` | Index multiplier scale factor. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -257,7 +257,7 @@ IIndicatorFractals Fractals(string? symbol, Timeframe? timeframe, string? indica
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 **Return Value**
 
@@ -315,7 +315,7 @@ IIndicatorGator CreateIndicatorGator(string? symbol = null, Timeframe? timeframe
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 

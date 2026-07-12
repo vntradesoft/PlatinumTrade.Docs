@@ -24,7 +24,7 @@ IIndicatorAD CreateIndicatorAD(string? symbol = null, Timeframe? timeframe = nul
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -80,7 +80,7 @@ IIndicatorChaikin CreateIndicatorChaikin(string? symbol = null, Timeframe? timef
 | `fast` | `int?` | Fast MA period (default 3). |
 | `slow` | `int?` | Slow MA period (default 10). |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -135,7 +135,7 @@ IIndicatorForce CreateIndicatorForce(string? symbol = null, Timeframe? timeframe
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `period` | `int?` | Force Index smoothing period. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -189,7 +189,7 @@ IIndicatorOBV CreateIndicatorOBV(string? symbol = null, Timeframe? timeframe = n
 | `symbol` | `string?` | The trading pair symbol. Defaults to strategy primary symbol. |
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -245,7 +245,7 @@ IIndicatorVolumeSpike CreateIndicatorVolumeSpike(string? symbol = null, Timefram
 | `period` | `int?` | Average volume lookback period. |
 | `spikeThreshold` | `double?` | Volume ratio spike multiplier threshold (e.g. 2.0). |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
@@ -309,7 +309,7 @@ IIndicatorVWAP CreateIndicatorVWAP(string? symbol = null, Timeframe? timeframe =
 | `timeframe` | [`Timeframe?`](../../enums.md#timeframe) | K-line timeframe. Defaults to strategy primary timeframe. |
 | `resetDaily` | `bool?` | Reset the cumulative volume/price products daily at 00:00 UTC. |
 | `indicatorAlias` | `string?` | Unique alias. |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Visual styles config delegate. |
+| `propertyOptions` | `Action<`[IndicatorProperty](../../models.md#indicatorproperty)`>?` | Visual styles config delegate. |
 
 ---
 
