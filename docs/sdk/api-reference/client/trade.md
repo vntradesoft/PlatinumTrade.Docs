@@ -7,20 +7,6 @@ sidebar_position: 3
 # Trade API
 The Trade API (`Context.Trade`) manages placing, amending, cancelling orders, closing positions, and querying live or historical trading data.
 
-## Methods Overview
-| Method | Description |
-|---|---|
-| [PlaceOrderAsync](#placeorderasync) | Places a new standard trading order (Limit, Market, etc.). |
-| [PlaceAlgoOrderAsync](#placealgoorderasync) | Places an Algo order (Take Profit, Stop Loss, Trailing Stop, etc.). |
-| [OrderCheckAsync](#ordercheckasync) | Checks a potential order (pre-trade check) without actually placing it. |
-| [AmendOrderAsync](#amendorderasync) | Amends an open limit order (changes quantity or price). |
-| [CancelOrderAsync](#cancelorderasync) | Cancels a specific open order. |
-| [ClosePositionAsync](#closepositionasync) | Closes an open position fully at market price. |
-| [GetOrderAsync](#getorderasync) | Gets detailed information for a single order. |
-| [GetPositionsAsync](#getpositionsasync) | Gets a list of all open positions. |
-| [GetHistoryOrdersAsync](#gethistoryordersasync) | Gets the history of closed or canceled orders (last 7 days). |
-| [SetMagicNumber](#setmagicnumber) | Sets the Magic Number to identify the order source. |
-
 ## `GetHistoryOrdersAsync`
 Gets the history of closed or canceled orders (last 7 days).
 

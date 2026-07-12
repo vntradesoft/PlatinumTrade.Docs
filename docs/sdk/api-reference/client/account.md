@@ -7,24 +7,6 @@ sidebar_position: 2
 # Account API
 The Account API (`Context.Account`) provides methods for retrieving balances, analytics, and configuring trading modes.
 
-## Methods Overview
-| Method | Description |
-|---|---|
-| [GetBalances](#getbalances) | Gets detailed information about the trading account balance. |
-| [AccountSelect](#accountselect) | Retrieves detailed information for a specific asset. |
-| [LoadBalanceAsync](#loadbalanceasync) | Asynchronously refreshes the account balance from the exchange. |
-| [SetInitialLeverageAsync](#setinitialleverageasync) | Sets the initial leverage for a specific contract. |
-| [GetLeverage](#getleverage) | Gets the current leverage for a specific contract. |
-| [SetHedgeModeAsync](#sethedgemodeasync) | Sets the position mode to Hedge Mode or Netting Mode. |
-| [IsHedgeMode](#ishedgemode) | Checks if the account is currently in Hedge Mode. |
-| [GetFeeLevelAsync](#getfeelevelasync) | Gets information about the account's trading fee VIP level. |
-| [GetCurrentEquity](#getcurrentequity) | Gets the current equity value of the account. |
-| [GetEquityChangePercentage](#getequitychangepercentage) | Calculates the percentage change in equity compared to the initial balance. |
-| [GetMarginRatio](#getmarginratio) | Calculates the current margin ratio of the account. |
-| [GetCurrentDrawdown](#getcurrentdrawdown) | Calculates the current account drawdown compared to the equity peak. |
-
-The `IAccountClient` interface manages account settings, balances, and configurations.
-
 ## API Mappings
 
 | SDK Method | OKX.Net Call | OKX API Endpoint | OKX API Documentation |
