@@ -29,6 +29,16 @@ void NotifyTrace(string title, string message, PtLogLevel level = PtLogLevel.Inf
 | `message` | `string` | The trace message. |
 | `level` | [`PtLogLevel`](../enums.md#ptloglevel) | The log level (default: Information). |
 
+**Remarks**
+
+This method is useful for sending lightweight text alerts to the user, such as notifying them about a specific market condition being met, or a strategy milestone.
+
+**Example**
+
+```csharp
+Logger.NotifyTrace("Market Alert", "Bitcoin price has crossed above the 200 SMA.", PtLogLevel.Information);
+```
+
 ## NotifyKeyValue
 
 Sends a notification with structured key-value pairs.
@@ -46,6 +56,19 @@ void NotifyKeyValue(string title, params (string key, string value)[] data);
 | `title` | `string` | The notification title. |
 | `data` | `(string, string)[]` | The key-value pairs to notify. |
 
+**Remarks**
+
+The key-value format provides a clean, tabular presentation in Telegram and UI notifications, making it ideal for trade execution summaries or metrics reporting.
+
+**Example**
+
+```csharp
+Logger.NotifyKeyValue("Trade Closed",
+    ("Symbol", "BTC-USDT"),
+    ("PnL", "$150.00"),
+    ("Reason", "Take Profit Hit"));
+```
+
 ## NotifyDocument
 
 Sends a notification with a document attachment.
@@ -61,7 +84,18 @@ void NotifyDocument(string title, string filePath);
 | Parameter | Type | Description |
 |---|---|---|
 | `title` | `string` | The notification title. |
-| `filePath` | `string` | The path to the document file. |
+| `filePath` | `string` | The path to the document file on disk. |
+
+**Remarks**
+
+This is primarily used to send generated reports, CSV exports, or chart screenshots directly to the user's Telegram or email. Ensure the file path is accessible by the host process.
+
+**Example**
+
+```csharp
+string reportPath = Path.Combine(Storage.GetExportsRoot(), "monthly_report.csv");
+Logger.NotifyDocument("Monthly Strategy Report", reportPath);
+```
 
 ## NotifyError
 
@@ -80,3 +114,20 @@ void NotifyError(string title, Exception ex);
 | `title` | `string` | The notification title. |
 | `ex` | `Exception` | The exception to notify about. |
 
+**Remarks**
+
+Use this method when a critical failure occurs in your strategy (e.g., API disconnection, data corruption) and the user needs to be notified immediately. The alert is typically routed as a high-priority message.
+
+**Example**
+
+```csharp
+try
+{
+    // Custom logic that might fail
+    ProcessExternalData();
+}
+catch (Exception ex)
+{
+    Logger.NotifyError("Data Processing Failure", ex);
+}
+```
