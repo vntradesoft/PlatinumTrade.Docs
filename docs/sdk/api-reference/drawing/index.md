@@ -25,7 +25,7 @@ string Add(DrawingObject obj);
 
 | Parameter | Type | Description |
 |---|---|---|
-| `obj` | [`DrawingObject`](../../models.md#drawingobject) | The drawing object to add to the chart. |
+| `obj` | [`DrawingObject`](../models.md#drawingobject) | The drawing object to add to the chart. |
 
 **Return Value**
 
@@ -62,7 +62,7 @@ void Update(string id, Action<DrawingObject> mutate);
 | Parameter | Type | Description |
 |---|---|---|
 | `id` | `string` | The unique identifier of the drawing object to update. |
-| `mutate` | `Action&lt;`[`DrawingObject`](../../models.md#drawingobject)`&gt;` | A callback action that modifies the drawing object properties. |
+| `mutate` | `Action&lt;`[`DrawingObject`](../models.md#drawingobject)`&gt;` | A callback action that modifies the drawing object properties. |
 
 ## Clear
 
@@ -95,11 +95,11 @@ IReadOnlyList<DrawingObject> GetAll(string symbol, Timeframe tf);
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string` | The trading symbol. |
-| `tf` | [`Timeframe`](../../enums.md#timeframe) | The chart timeframe. |
+| `tf` | [`Timeframe`](../enums.md#timeframe) | The chart timeframe. |
 
 **Return Value**
 
-Returns a read-only list of [`DrawingObject`](../../models.md#drawingobject).
+Returns a read-only list of [`DrawingObject`](../models.md#drawingobject).
 
 ## GetById
 
@@ -119,7 +119,7 @@ DrawingObject? GetById(string id);
 
 **Return Value**
 
-Returns the [`DrawingObject`](../../models.md#drawingobject) if found; otherwise, `null`.
+Returns the [`DrawingObject`](../models.md#drawingobject) if found; otherwise, `null`.
 
 ## AddHorizontalLine
 
@@ -136,10 +136,10 @@ string AddHorizontalLine(string symbol, Timeframe tf, decimal price, DrawingStyl
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string` | The trading symbol. |
-| `tf` | [`Timeframe`](../../enums.md#timeframe) | The chart timeframe. |
+| `tf` | [`Timeframe`](../enums.md#timeframe) | The chart timeframe. |
 | `price` | `decimal` | The price level for the horizontal line. |
-| `style` | [`DrawingStyle`](../../models.md#drawingstyle)? | Optional visual style. |
-| `source` | [`DrawingSource`](../../enums.md#drawingsource) | Origin source (e.g., Strategy, Indicator). Default is Strategy. |
+| `style` | [`DrawingStyle`](../models.md#drawingstyle)? | Optional visual style. |
+| `source` | [`DrawingSource`](../enums.md#drawingsource) | Origin source (e.g., Strategy, Indicator). Default is Strategy. |
 | `indicatorId` | `string?` | The optional ID of the indicator that created the drawing. |
 
 **Return Value**
@@ -161,10 +161,10 @@ string AddTrendLine(string symbol, Timeframe tf, DrawingAnchor startAnchor, Draw
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string` | The trading symbol. |
-| `tf` | [`Timeframe`](../../enums.md#timeframe) | The chart timeframe. |
-| `startAnchor` | [`DrawingAnchor`](../../models.md#drawinganchor) | The starting coordinate (time and price). |
-| `endAnchor` | [`DrawingAnchor`](../../models.md#drawinganchor) | The ending coordinate (time and price). |
-| `style` | [`DrawingStyle`](../../models.md#drawingstyle)? | Optional visual style. |
+| `tf` | [`Timeframe`](../enums.md#timeframe) | The chart timeframe. |
+| `startAnchor` | [`DrawingAnchor`](../models.md#drawinganchor) | The starting coordinate (time and price). |
+| `endAnchor` | [`DrawingAnchor`](../models.md#drawinganchor) | The ending coordinate (time and price). |
+| `style` | [`DrawingStyle`](../models.md#drawingstyle)? | Optional visual style. |
 | `indicatorId` | `string?` | The optional ID of the indicator. |
 
 **Return Value**
@@ -186,10 +186,10 @@ string AddRectangle(string symbol, Timeframe tf, DrawingAnchor topLeft, DrawingA
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string` | The trading symbol. |
-| `tf` | [`Timeframe`](../../enums.md#timeframe) | The chart timeframe. |
-| `topLeft` | [`DrawingAnchor`](../../models.md#drawinganchor) | The top-left corner coordinate. |
-| `bottomRight` | [`DrawingAnchor`](../../models.md#drawinganchor) | The bottom-right corner coordinate. |
-| `style` | [`DrawingStyle`](../../models.md#drawingstyle)? | Optional visual style. |
+| `tf` | [`Timeframe`](../enums.md#timeframe) | The chart timeframe. |
+| `topLeft` | [`DrawingAnchor`](../models.md#drawinganchor) | The top-left corner coordinate. |
+| `bottomRight` | [`DrawingAnchor`](../models.md#drawinganchor) | The bottom-right corner coordinate. |
+| `style` | [`DrawingStyle`](../models.md#drawingstyle)? | Optional visual style. |
 | `indicatorId` | `string?` | The optional ID of the indicator. |
 
 **Return Value**
@@ -211,10 +211,10 @@ string AddText(string symbol, Timeframe tf, DrawingAnchor anchor, string text, D
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string` | The trading symbol. |
-| `tf` | [`Timeframe`](../../enums.md#timeframe) | The chart timeframe. |
-| `anchor` | [`DrawingAnchor`](../../models.md#drawinganchor) | The coordinate where the text will be placed. |
+| `tf` | [`Timeframe`](../enums.md#timeframe) | The chart timeframe. |
+| `anchor` | [`DrawingAnchor`](../models.md#drawinganchor) | The coordinate where the text will be placed. |
 | `text` | `string` | The text content to display. |
-| `style` | [`DrawingStyle`](../../models.md#drawingstyle)? | Optional visual style. |
+| `style` | [`DrawingStyle`](../models.md#drawingstyle)? | Optional visual style. |
 | `indicatorId` | `string?` | The optional ID of the indicator. |
 
 **Return Value**
@@ -236,10 +236,10 @@ string AddEmoji(string symbol, Timeframe tf, DrawingAnchor anchor, string emoji,
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string` | The trading symbol. |
-| `tf` | [`Timeframe`](../../enums.md#timeframe) | The chart timeframe. |
-| `anchor` | [`DrawingAnchor`](../../models.md#drawinganchor) | The coordinate where the emoji will be placed. |
+| `tf` | [`Timeframe`](../enums.md#timeframe) | The chart timeframe. |
+| `anchor` | [`DrawingAnchor`](../models.md#drawinganchor) | The coordinate where the emoji will be placed. |
 | `emoji` | `string` | The unicode emoji character (e.g., "🚀"). |
-| `style` | [`DrawingStyle`](../../models.md#drawingstyle)? | Optional visual style. |
+| `style` | [`DrawingStyle`](../models.md#drawingstyle)? | Optional visual style. |
 | `indicatorId` | `string?` | The optional ID of the indicator. |
 
 **Return Value**
@@ -261,9 +261,9 @@ string AddMeasurement(string symbol, Timeframe tf, DrawingAnchor startAnchor, Dr
 | Parameter | Type | Description |
 |---|---|---|
 | `symbol` | `string` | The trading symbol. |
-| `tf` | [`Timeframe`](../../enums.md#timeframe) | The chart timeframe. |
-| `startAnchor` | [`DrawingAnchor`](../../models.md#drawinganchor) | The starting coordinate. |
-| `endAnchor` | [`DrawingAnchor`](../../models.md#drawinganchor) | The ending coordinate. |
+| `tf` | [`Timeframe`](../enums.md#timeframe) | The chart timeframe. |
+| `startAnchor` | [`DrawingAnchor`](../models.md#drawinganchor) | The starting coordinate. |
+| `endAnchor` | [`DrawingAnchor`](../models.md#drawinganchor) | The ending coordinate. |
 | `indicatorId` | `string?` | The optional ID of the indicator. |
 
 **Return Value**
