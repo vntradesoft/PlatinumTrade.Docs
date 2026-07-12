@@ -7,15 +7,6 @@ sidebar_position: 2
 # Account API
 The Account API (`Context.Account`) provides methods for retrieving balances, analytics, and configuring trading modes.
 
-## API Mappings
-
-| SDK Method | OKX.Net Call | OKX API Endpoint | OKX API Documentation |
-|---|---|---|---|
-| `LoadBalanceAsync` | `UnifiedApi.Account.GetAccountBalanceAsync` | `GET /api/v5/account/balance` | [Get Balance](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance) |
-| `SetInitialLeverageAsync` | `UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync` | `GET /leverage-info` & `POST /set-leverage` | [Get](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [Set Leverage](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage) |
-| `SetHedgeModeAsync` | `UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync` | `GET /config` & `POST /set-position-mode` | [Get Config](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [Set Position Mode](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode) |
-| `GetFeeLevelAsync` | `UnifiedApi.Account.GetAccountConfigurationAsync` | `GET /api/v5/account/config` | [Get Account Configuration](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) |
-
 ## Properties
 - `WalletBalance` (`decimal`): Total actual wallet balance excluding unrealized PnL.
 - `AvailableBalance` (`decimal`): Balance available for opening new positions.
@@ -244,4 +235,11 @@ if (feeRes.Success)
     var level = feeRes.Data.Level;
 }
 ```
+## API Mappings
 
+| SDK Method | OKX.Net Call | OKX API Endpoint | OKX API Documentation |
+|---|---|---|---|
+| `LoadBalanceAsync` | `UnifiedApi.Account.GetAccountBalanceAsync` | `GET /api/v5/account/balance` | [Get Balance](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance) |
+| `SetInitialLeverageAsync` | `UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync` | `GET /leverage-info` & `POST /set-leverage` | [Get](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [Set Leverage](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage) |
+| `SetHedgeModeAsync` | `UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync` | `GET /config` & `POST /set-position-mode` | [Get Config](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [Set Position Mode](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode) |
+| `GetFeeLevelAsync` | `UnifiedApi.Account.GetAccountConfigurationAsync` | `GET /api/v5/account/config` | [Get Account Configuration](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) |
