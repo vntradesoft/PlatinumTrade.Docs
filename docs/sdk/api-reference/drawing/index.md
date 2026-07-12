@@ -18,7 +18,7 @@ Adds a raw drawing object to the chart.
 **Syntax**
 
 `csharp
-string Add([DrawingObject](../../models.md#drawingobject) obj);
+string Add(DrawingObject obj);
 `
 
 **Parameters**
@@ -54,7 +54,7 @@ Updates an existing drawing object by applying a mutation action.
 **Syntax**
 
 `csharp
-void Update(string id, Action<[DrawingObject](../../models.md#drawingobject)> mutate);
+void Update(string id, Action<DrawingObject> mutate);
 `
 
 **Parameters**
@@ -62,7 +62,7 @@ void Update(string id, Action<[DrawingObject](../../models.md#drawingobject)> mu
 | Parameter | Type | Description |
 |---|---|---|
 | id | string | The unique identifier of the drawing object to update. |
-| mutate | Action<[DrawingObject](../../models.md#drawingobject)> | A callback action that modifies the drawing object properties. |
+| mutate | Action&lt;[DrawingObject](../../models.md#drawingobject)&gt; | A callback action that modifies the drawing object properties. |
 
 ## Clear
 
@@ -87,7 +87,7 @@ Retrieves all drawing objects for a specific symbol and timeframe.
 **Syntax**
 
 `csharp
-IReadOnlyList<[DrawingObject](../../models.md#drawingobject)> GetAll(string symbol, [Timeframe](../../enums.md#timeframe) tf);
+IReadOnlyList<DrawingObject> GetAll(string symbol, Timeframe tf);
 `
 
 **Parameters**
@@ -108,7 +108,7 @@ Retrieves a specific drawing object by its unique identifier.
 **Syntax**
 
 `csharp
-[DrawingObject](../../models.md#drawingobject)? GetById(string id);
+DrawingObject? GetById(string id);
 `
 
 **Parameters**
@@ -129,7 +129,7 @@ Creates and adds a horizontal line drawing object.
 **Syntax**
 
 `csharp
-string AddHorizontalLine(string symbol, [Timeframe](../../enums.md#timeframe) tf, decimal price, [DrawingStyle](../../models.md#drawingstyle)? style = null, [DrawingSource](../../enums.md#drawingsource) source = DrawingSource.Strategy, string? indicatorId = null);
+string AddHorizontalLine(string symbol, Timeframe tf, decimal price, DrawingStyle? style = null, DrawingSource source = DrawingSource.Strategy, string? indicatorId = null);
 `
 
 **Parameters**
@@ -150,7 +150,7 @@ Creates and adds a trend line drawing object between two points.
 **Syntax**
 
 `csharp
-string AddTrendLine(string symbol, [Timeframe](../../enums.md#timeframe) tf, [DrawingAnchor](../../models.md#drawinganchor) startAnchor, [DrawingAnchor](../../models.md#drawinganchor) endAnchor, [DrawingStyle](../../models.md#drawingstyle)? style = null, string? indicatorId = null);
+string AddTrendLine(string symbol, Timeframe tf, DrawingAnchor startAnchor, DrawingAnchor endAnchor, DrawingStyle? style = null, string? indicatorId = null);
 `
 
 **Parameters**
@@ -171,7 +171,7 @@ Creates and adds a rectangle drawing object.
 **Syntax**
 
 `csharp
-string AddRectangle(string symbol, [Timeframe](../../enums.md#timeframe) tf, [DrawingAnchor](../../models.md#drawinganchor) topLeft, [DrawingAnchor](../../models.md#drawinganchor) bottomRight, [DrawingStyle](../../models.md#drawingstyle)? style = null, string? indicatorId = null);
+string AddRectangle(string symbol, Timeframe tf, DrawingAnchor topLeft, DrawingAnchor bottomRight, DrawingStyle? style = null, string? indicatorId = null);
 `
 
 **Parameters**
@@ -192,7 +192,7 @@ Creates and adds a text label drawing object.
 **Syntax**
 
 `csharp
-string AddText(string symbol, [Timeframe](../../enums.md#timeframe) tf, [DrawingAnchor](../../models.md#drawinganchor) anchor, string text, [DrawingStyle](../../models.md#drawingstyle)? style = null, string? indicatorId = null);
+string AddText(string symbol, Timeframe tf, DrawingAnchor anchor, string text, DrawingStyle? style = null, string? indicatorId = null);
 `
 
 **Parameters**
@@ -213,7 +213,7 @@ Creates and adds an emoji icon drawing object.
 **Syntax**
 
 `csharp
-string AddEmoji(string symbol, [Timeframe](../../enums.md#timeframe) tf, [DrawingAnchor](../../models.md#drawinganchor) anchor, string emoji, [DrawingStyle](../../models.md#drawingstyle)? style = null, string? indicatorId = null);
+string AddEmoji(string symbol, Timeframe tf, DrawingAnchor anchor, string emoji, DrawingStyle? style = null, string? indicatorId = null);
 `
 
 **Parameters**
@@ -234,7 +234,7 @@ Creates and adds a measurement tool (ruler) drawing object.
 **Syntax**
 
 `csharp
-string AddMeasurement(string symbol, [Timeframe](../../enums.md#timeframe) tf, [DrawingAnchor](../../models.md#drawinganchor) startAnchor, [DrawingAnchor](../../models.md#drawinganchor) endAnchor, string? indicatorId = null);
+string AddMeasurement(string symbol, Timeframe tf, DrawingAnchor startAnchor, DrawingAnchor endAnchor, string? indicatorId = null);
 `
 
 **Parameters**
