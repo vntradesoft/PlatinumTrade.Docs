@@ -1,7 +1,6 @@
----
+﻿---
 id: index
 title: Logging API
-sidebar_label: Overview
 sidebar_position: 1
 description: Logging API allows you to log messages to the platform's Experts tab.
 status: stable

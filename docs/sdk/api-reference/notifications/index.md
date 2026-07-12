@@ -1,7 +1,6 @@
----
+﻿---
 id: index
 title: Notifications API
-sidebar_label: Overview
 sidebar_position: 1
 description: Notifications API allows you to send alerts, push notifications, and emails.
 status: stable

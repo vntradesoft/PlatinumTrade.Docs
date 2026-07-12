@@ -1,7 +1,6 @@
----
+﻿---
 id: index
 title: Timeseries & Indicators Access
-sidebar_label: Overview
 sidebar_position: 1
 description: Introduction to ITimeSeriesClient and accessing market data series.
 status: stable
@@ -10,7 +9,7 @@ visibility: public
 
 # Access to Timeseries and Indicator Data
 
-These are functions for working with timeseries and indicators. A timeseries differs from a regular data array by its reverse ordering — elements of timeseries are indexed from the end of the array to its beginning (from the most recent data to the oldest ones). 
+These are functions for working with timeseries and indicators. A timeseries differs from a regular data array by its reverse ordering â€” elements of timeseries are indexed from the end of the array to its beginning (from the most recent data to the oldest ones). 
 
 In the Platinum Trade SDK, the `ITimeSeriesClient` interface provides local technical indicators and in-memory caching for strategies and charts.
 

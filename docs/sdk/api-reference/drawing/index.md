@@ -1,7 +1,6 @@
----
+﻿---
 id: index
 title: Drawing API
-sidebar_label: Overview
 sidebar_position: 1
 description: Drawing API allows you to create, modify, and delete drawing objects on charts programmatically.
 status: stable

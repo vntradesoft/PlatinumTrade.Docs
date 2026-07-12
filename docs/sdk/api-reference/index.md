@@ -1,6 +1,6 @@
----
+﻿---
 id: sdk-api-reference
-title: API Reference Overview
+title: API Reference
 description: Overview of the Platinum Trade SDK Client sub-interfaces and mapping structure.
 status: stable
 visibility: public
