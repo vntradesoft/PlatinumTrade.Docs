@@ -11,7 +11,7 @@ function HeroSection() {
     <section className={styles.heroSection}>
       <div className={clsx(styles.container, styles.heroContainer)}>
         <div className={styles.heroLeft}>
-          <span className={styles.heroBadge}>Public Beta • v0.9.3-beta.3                                                                                                                               </span>
+          <span className={styles.heroBadge}>Public Beta • v0.9.3-beta.3                                                                                                                                </span>
           <h1 className={styles.heroTitle}>
             Build Professional Trading Plugins with .NET
           </h1>

@@ -80,10 +80,9 @@ if (result.Success)
 
 **Exchange API Mapping**
 
-| **Endpoint** | `GET /api/v5/account/balance` |
-|---|---|
+| **Endpoint** | [`GET /api/v5/account/balance`](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Account.GetAccountBalanceAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Get Balance](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance) |
 
 
 ## `GetCurrentEquity`
@@ -181,10 +180,9 @@ if (success)
 
 **Exchange API Mapping**
 
-| **Endpoint** | `GET /leverage-info` & `POST /set-leverage` |
-|---|---|
+| **Endpoint** | [`GET /leverage-info`](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [`POST /set-leverage`](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Get](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [Set Leverage](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage) |
 
 
 ## `SetHedgeModeAsync`
@@ -223,10 +221,9 @@ if (!success)
 
 **Exchange API Mapping**
 
-| **Endpoint** | `GET /config` & `POST /set-position-mode` |
-|---|---|
+| **Endpoint** | [`GET /config`](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [`POST /set-position-mode`](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Get Config](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [Set Position Mode](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode) |
 
 
 ## `GetFeeLevelAsync`
@@ -262,8 +259,7 @@ if (feeRes.Success)
 
 **Exchange API Mapping**
 
-| **Endpoint** | `GET /api/v5/account/config` |
-|---|---|
+| **Endpoint** | [`GET /api/v5/account/config`](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Account.GetAccountConfigurationAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Get Account Configuration](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) |
 

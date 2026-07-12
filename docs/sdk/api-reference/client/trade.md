@@ -36,10 +36,9 @@ var history = await Context.Trade.GetHistoryOrdersAsync(symbol: "BTC-USDT");
 
 **Exchange API Mapping**
 
-| **Endpoint** | `GET /api/v5/trade/orders-history` |
-|---|---|
+| **Endpoint** | [`GET /api/v5/trade/orders-history`](https://www.okx.com/docs-v5/en/#order-book-trading-trade-get-order-history-last-7-days) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Trading.GetOrderHistoryAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Get Order History (7 Days)](https://www.okx.com/docs-v5/en/#order-book-trading-trade-get-order-history-last-7-days) |
 
 
 ## `AmendOrderAsync`
@@ -76,10 +75,9 @@ var res = await Context.Trade.AmendOrderAsync("BTC-USDT", orderId: 12345, newPri
 
 **Exchange API Mapping**
 
-| **Endpoint** | `POST /api/v5/trade/amend-order` |
-|---|---|
+| **Endpoint** | [`POST /api/v5/trade/amend-order`](https://www.okx.com/docs-v5/en/#order-book-trading-trade-amend-order) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Trading.AmendOrderAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Amend Order](https://www.okx.com/docs-v5/en/#order-book-trading-trade-amend-order) |
 
 
 ## `PlaceOrderAsync`
@@ -125,10 +123,9 @@ if (res.Success)
 
 **Exchange API Mapping**
 
-| **Endpoint** | `POST /api/v5/trade/order` |
-|---|---|
+| **Endpoint** | [`POST /api/v5/trade/order`](https://www.okx.com/docs-v5/en/#order-book-trading-trade-place-order) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Trading.PlaceOrderAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Place Order](https://www.okx.com/docs-v5/en/#order-book-trading-trade-place-order) |
 
 
 ## `OrderCheckAsync`
@@ -161,10 +158,9 @@ if (check.Success) { /* Safe to place order */ }
 
 **Exchange API Mapping**
 
-| **Endpoint** | `POST /api/v5/trade/check-order` |
-|---|---|
+| **Endpoint** | [`POST /api/v5/trade/check-order`](https://www.okx.com/docs-v5/en/#order-book-trading-trade-check-order) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Trading.CheckOrderAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Check Order](https://www.okx.com/docs-v5/en/#order-book-trading-trade-check-order) |
 
 
 ## `ClosePositionAsync`
@@ -204,10 +200,9 @@ if (res.Success)
 
 **Exchange API Mapping**
 
-| **Endpoint** | `POST /api/v5/trade/close-position` |
-|---|---|
+| **Endpoint** | [`POST /api/v5/trade/close-position`](https://www.okx.com/docs-v5/en/#order-book-trading-trade-close-positions) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Trading.ClosePositionAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Close Position](https://www.okx.com/docs-v5/en/#order-book-trading-trade-close-positions) |
 
 
 ## `GetOrderAsync`
@@ -244,10 +239,9 @@ The `ITradeClient` interface handles placing, amending, and canceling orders, as
 
 **Exchange API Mapping**
 
-| **Endpoint** | `GET /api/v5/trade/order` |
-|---|---|
+| **Endpoint** | [`GET /api/v5/trade/order`](https://www.okx.com/docs-v5/en/#order-book-trading-trade-get-order-details) |
+| :--- | :--- |
 | **OKX.Net** | [`UnifiedApi.Trading.GetOrderDetailsAsync`](https://github.com/JKorf/OKX.Net) |
-| **Docs** | [Get Order Details](https://www.okx.com/docs-v5/en/#order-book-trading-trade-get-order-details) |
 
 
 ## `SetMagicNumber`
