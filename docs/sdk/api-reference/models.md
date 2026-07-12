@@ -493,7 +493,8 @@ Represents an anchor point for a drawing object, defined by time and price coord
 
 | Property | Type | Description |
 |---|---|---|
-| - | - | - |
+| `Time` | `DateTime` | The time coordinate of the anchor point. |
+| `Price` | `decimal` | The price coordinate of the anchor point. |
 
 ### DrawingStyle
 
@@ -613,7 +614,11 @@ Represents statistics of a buffer, including capacity, usage, memory footprint, 
 
 | Property | Type | Description |
 |---|---|---|
-| - | - | - |
+| `TotalSize` | `int` | The total capacity of the buffer (number of slots). |
+| `UsedSlots` | `int` | The number of currently used slots. |
+| `MemoryUsageKB` | `int` | The estimated memory usage in kilobytes. |
+| `FirstDateTime` | `DateTime` | The earliest timestamp in the buffer. |
+| `LastDateTime` | `DateTime` | The latest timestamp in the buffer. |
 
 ### IndicatorSource
 
@@ -762,7 +767,12 @@ Describes a parameter exposed by a custom indicator plugin. The GUI can use this
 
 | Property | Type | Description |
 |---|---|---|
-| - | - | - |
+| `Key` | `string` | The parameter key used in configuration. |
+| `DisplayName` | `string` | The user-friendly name for the parameter. |
+| `ValueType` | `Type` | The of the parameter value. |
+| `DefaultValue` | `object` | The default value of the parameter. |
+| `null` | `object? MinValue =` | - |
+| `null` | `object? MaxValue =` | - |
 
 ### IndicatorLoadedPlugin
 
@@ -770,5 +780,11 @@ Represents a loaded plugin in the OKX trading system.
 
 | Property | Type | Description |
 |---|---|---|
-| - | - | - |
+| `FilePath` | `string` | The file path to the plugin assembly. |
+| `Name` | `string` | The name of the plugin. |
+| `Version` | `string` | The plugin version. |
+| `Description` | `string` | A description of the plugin. |
+| `Author` | `string` | The author of the plugin. |
+| `IndicatorNames` | `IReadOnlyList&lt;string&gt;` | The names of the indicators provided by the plugin. |
+| `LoadContext` | `AssemblyLoadContext` | The assembly load context used to isolate the plugin. |
 
