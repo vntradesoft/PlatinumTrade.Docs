@@ -37,7 +37,7 @@ An open-source SDK (`Pt.Okx.Sdk`) allowing developers to extend Platinum Trade b
 ---
 
 ## Reference & Support
-- **API Reference**: [Developer API Specifications](./reference/api-reference.md)
-- **Error Codes**: [Error Code Directory](./reference/errors.md)
+- **API Reference**: [Developer API Specifications](./sdk/api-reference/index.md)
+- **Error Codes**: [Error Code Directory](./sdk/api-reference/errors.md)
 - **Legal & Policies**: [Terms of Use](./legal/terms-of-use.md)
 - **Help**: [Frequently Asked Questions](./support/faq.md)

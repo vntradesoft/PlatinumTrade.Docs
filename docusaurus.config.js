@@ -113,7 +113,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            to: '/api-reference',
+            to: '/docs/sdk/api-reference',
             label: 'API Reference',
             position: 'left',
           },
@@ -146,7 +146,7 @@ const config = {
               },
               {
                 label: 'API Reference',
-                to: '/api-reference',
+                to: '/docs/sdk/api-reference',
               },
             ],
           },
