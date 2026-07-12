@@ -451,6 +451,28 @@ Represents a transaction in the OKX trading system.
 
 ## Market
 
+### CandleData
+
+Represents OHLCV data for a specific trading candle. This record struct is designed for memory efficiency and cache locality in high-frequency scenarios.
+
+| Property | Type | Description |
+|---|---|---|
+| `Timestamp` | `DateTime` | Gets the timestamp of the candle. |
+| `Open` | `decimal` | Gets the opening price. |
+| `High` | `decimal` | Gets the highest price during the period. |
+| `Low` | `decimal` | Gets the lowest price during the period. |
+| `Close` | `decimal` | Gets the closing price. |
+| `Volume` | `decimal` | Gets the trading volume during the period. |
+| `IsCompleted` | `bool` | Gets a value indicating whether the candle represents a completed time period. |
+
+### TickData
+
+Represents the smallest data unit in the simulation system. In backtest, this is generated synthetically from 1m OHLCV data. In real-time trading, this is sourced directly from the exchange's WebSocket tickers channel.
+
+| Property | Type | Description |
+|---|---|---|
+| - | - | - |
+
 ### TickSourceConfig
 
 Configuration for synthetic tick generation during backtests. This does not affect real-time tick sources.
@@ -464,6 +486,14 @@ Configuration for synthetic tick generation during backtests. This does not affe
 | `OhlcPattern` | [`OhlcPattern`](./enums.md#ohlcpattern) | Gets or sets the generated tick path pattern inside each OHLC candle. |
 
 ## Drawing
+
+### DrawingAnchor
+
+Represents an anchor point for a drawing object, defined by time and price coordinates.
+
+| Property | Type | Description |
+|---|---|---|
+| - | - | - |
 
 ### DrawingStyle
 
@@ -576,6 +606,14 @@ Base class for indicator calculators. It manages indicator identity, configurati
 | `Config` | [`IndicatorConfig`](./models.md#indicatorconfig) | - |
 | `Identity` | [`IndicatorIdentity`](./models.md#indicatoridentity) | Manager that provides buffers and registers indicator identities. |
 | `Property` | [`IndicatorProperty`](./models.md#indicatorproperty) | - |
+
+### BufferStats
+
+Represents statistics of a buffer, including capacity, usage, memory footprint, and the time range of stored data.
+
+| Property | Type | Description |
+|---|---|---|
+| - | - | - |
 
 ### IndicatorSource
 
@@ -709,7 +747,7 @@ Display and buffer metadata for an indicator. Passed to the chart engine to cont
 | `VisibleTimeframes` | [`TimeFrameOptions`](./enums.md#timeframeoptions) | Gets or sets the set of timeframes on which this indicator is displayed. Default is . |
 | `SpecialFeatures` | [`IndicatorSpecialFeatures`](./models.md#indicatorspecialfeatures) | Gets or sets additional rendering features such as bound lines, zero line, histogram colors, and fill regions between buffers. |
 
-### struct
+### IndicatorValue
 
 Represents a single indicator value with its associated timestamp, including support for empty-value semantics.
 
