@@ -82,7 +82,7 @@ if (result.Success)
 
 | | |
 |---|---|
-| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Account.GetAccountBalanceAsync` |
+| **OKX.Net** | [`UnifiedApi.Account.GetAccountBalanceAsync`](https://github.com/JKorf/OKX.Net) |
 | **Endpoint** | `GET /api/v5/account/balance` |
 | **Docs** | [Get Balance](https://www.okx.com/docs-v5/en/#trading-account-api-get-balance) |
 
@@ -184,7 +184,7 @@ if (success)
 
 | | |
 |---|---|
-| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync` |
+| **OKX.Net** | [`UnifiedApi.Account.GetLeverageAsync` & `SetLeverageAsync`](https://github.com/JKorf/OKX.Net) |
 | **Endpoint** | `GET /leverage-info` & `POST /set-leverage` |
 | **Docs** | [Get](https://www.okx.com/docs-v5/en/#trading-account-api-get-leverage) & [Set Leverage](https://www.okx.com/docs-v5/en/#trading-account-api-set-leverage) |
 
@@ -227,7 +227,7 @@ if (!success)
 
 | | |
 |---|---|
-| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync` |
+| **OKX.Net** | [`UnifiedApi.Account.GetAccountConfigurationAsync` & `SetPositionModeAsync`](https://github.com/JKorf/OKX.Net) |
 | **Endpoint** | `GET /config` & `POST /set-position-mode` |
 | **Docs** | [Get Config](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) & [Set Position Mode](https://www.okx.com/docs-v5/en/#trading-account-api-set-position-mode) |
 
@@ -267,7 +267,7 @@ if (feeRes.Success)
 
 | | |
 |---|---|
-| [**Jk.Okx.Net**](https://github.com/JKorf/OKX.Net) | `UnifiedApi.Account.GetAccountConfigurationAsync` |
+| **OKX.Net** | [`UnifiedApi.Account.GetAccountConfigurationAsync`](https://github.com/JKorf/OKX.Net) |
 | **Endpoint** | `GET /api/v5/account/config` |
 | **Docs** | [Get Account Configuration](https://www.okx.com/docs-v5/en/#trading-account-api-get-account-configuration) |
 
