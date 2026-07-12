@@ -1,61 +1,125 @@
-﻿---
+---
 id: index
-title: Timeseries & Indicators Access
+title: Built-in Technical Indicators
 sidebar_position: 1
-description: Introduction to ITimeSeriesClient and accessing market data series.
+description: Overview of built-in technical indicators, common access methods, and indicator buffers.
 status: stable
 visibility: public
 ---
 
-# Access to Timeseries and Indicator Data
+# Technical Indicators Overview
 
-These are functions for working with timeseries and indicators. A timeseries differs from a regular data array by its reverse ordering â€” elements of timeseries are indexed from the end of the array to its beginning (from the most recent data to the oldest ones). 
-
-In the Platinum Trade SDK, the `ITimeSeriesClient` interface provides local technical indicators and in-memory caching for strategies and charts.
+The Platinum Trade SDK provides a comprehensive suite of built-in technical indicators for quantitative analysis and algorithmic trading. These indicators are organized into logical groups based on their analytical characteristics.
 
 ---
 
-## Indexing Direction (Shift)
+## Common Access Methods (`IIndicatorMethodCommon`)
 
-The indexing direction of a timeseries always goes from the newest data to the oldest data. The index `0` denotes the current bar, i.e., the bar that corresponds to the unfinished time interval in this timeframe.
+All indicator instances in the SDK implement the `IIndicatorMethodCommon` interface, which provides a standard way to retrieve calculated values without needing to access specific properties of each indicator type.
 
-```text
-  Oldest Candle                                        Current/Forming Candle
-  [ Index N ]  ...  [ Index 3 ]  [ Index 2 ]  [ Index 1 ]  [ Index 0 ]
-  <------------------------------------------------------------ (Shift direction)
+```csharp
+public interface IIndicatorMethodCommon
+{
+    // Gets the indicator value at the specified index from the default buffer.
+    IndicatorValue GetAt(int index = 0);
+    
+    // Gets the indicator value at the specified index from a specific buffer.
+    IndicatorValue GetAt(int index, int bufferIndex);
+    
+    // Gets a sequence of indicator values from the default buffer.
+    IEnumerable<IndicatorValue> GetRange(int count = 1);
+    
+    // Gets a sequence of indicator values from a specific buffer.
+    IEnumerable<IndicatorValue> GetRange(int count, int bufferIndex);
+}
 ```
 
-- **Index `0`**: The current forming candle (unfinished).
-- **Index `1`**: The last fully closed candle.
-- **Index `2`**: The second-to-last closed candle, and so on.
+---
+
+## Indicator Buffer (`IIndicatorBuffer`)
+
+Internally, indicator data is stored in time-indexed structures managed by `IIndicatorBuffer`. An indicator can have one or multiple buffers (e.g., MACD has a main line and a signal line).
+
+```csharp
+public interface IIndicatorBuffer
+{
+    // Returns the total number of items in the buffer.
+    int Count { get; }
+    
+    // Gets the value at the specified time-shift index (0 = current bar).
+    IndicatorValue At(int index);
+    
+    // Returns the value at the exact specified time.
+    IndicatorValue Find(DateTime dateTime);
+    
+    // Returns the indicator value at or before the specified time.
+    IndicatorValue FindAtOrBefore(DateTime dateTime);
+    
+    // Retrieves the latest values in the buffer as a fast, zero-allocation Span.
+    Span<IndicatorValue> GetLatest(int count);
+}
+```
 
 ---
 
-## General Functions Reference
+## Indicator Categories
 
-| Function | Description |
+### Bill Williams
+
+| Indicator | Description |
 |---|---|
-| [Bars](../timeseries.md#bars) | Returns the number of bars for a specified symbol and timeframe. |
-| [BarsCalculated](../timeseries.md#barscalculated) | Returns the number of calculated bars for a specified indicator. |
-| [CopyBuffer](../timeseries.md#copybuffer) | Copies indicator buffer values by index or time range. |
-| [CopySeries](../timeseries.md#copyseries) | Copies an array of OHLCV candle data. |
-| [CopyTimes](../timeseries.md#copytimes) | Copies open timestamps of candles. |
-| [CopyOpens](../timeseries.md#copyopens) | Copies open prices of candles. |
-| [CopyHighs](../timeseries.md#copyhighs) | Copies high prices of candles. |
-| [CopyLows](../timeseries.md#copylows) | Copies low prices of candles. |
-| [CopyCloses](../timeseries.md#copycloses) | Copies close prices of candles. |
-| [CopyVolumes](../timeseries.md#copyvolumes) | Copies volume values of candles. |
-| [CopyPrices](../timeseries.md#copyprices) | Copies prices by AppliedPrice type. |
-| [Candle Access](../timeseries.md#candle-access) | Directly queries specific candles (current, closed, open, etc.). |
-| [Creating Indicators](../timeseries.md#creating-indicators) | Factory methods to create built-in indicators (MA, RSI, Stochastic, etc.). |
-| [Indicators Overview](../timeseries.md#indicators-overview) | Base interfaces (`IIndicator`, `IIndicatorMethodCommon`) and common value retrieval methods. |
+| [Accelerator Oscillator (AC)](./bill-williams.md#accelerator-oscillator-ac) | Measures the acceleration and deceleration of the current driving force. |
+| [Alligator](./bill-williams.md#alligator) | A trend-following model combining three time-shifted moving averages. |
+| [Awesome Oscillator (AO)](./bill-williams.md#awesome-oscillator-ao) | Measures the market momentum of the last 5 periods compared to the previous 34 periods. |
+| [Gator Oscillator](./bill-williams.md#gator-oscillator) | Represents the convergence and divergence of the Alligator bands. |
+| [Fractals](./bill-williams.md#fractals) | Identifies local tops and bottoms in price movements. |
+| [Market Facilitation Index (BWMFI)](./bill-williams.md#market-facilitation-index-bwmfi) | Evaluates the price change of an asset per unit of trading volume. |
 
----
+### Oscillators
 
-## Built-in Technical Indicators
+| Indicator | Description |
+|---|---|
+| [Average True Range (ATR)](./oscillators.md#average-true-range-atr) | Measures the absolute volatility of the market. |
+| [Bears Power](./oscillators.md#bears-power) | Estimates the balance of power of sellers relative to buyers. |
+| [Bollinger Band Width (BBW)](./oscillators.md#bollinger-band-width-bbw) | Measures the percentage width between upper and lower Bollinger Bands to evaluate volatility. |
+| [Bollinger Bands %B](./oscillators.md#bollinger-bands-b) | Quantifies a security's price relative to the upper and lower Bollinger Bands. |
+| [Bulls Power](./oscillators.md#bulls-power) | Estimates the balance of power of buyers relative to sellers. |
+| [Commodity Channel Index (CCI)](./oscillators.md#commodity-channel-index-cci) | Measures the deviation of the asset price from its statistical average. |
+| [DeMarker (DeM)](./oscillators.md#demarker-dem) | Compares the most recent maximum and minimum prices to the previous period's equivalent prices to measure demand. |
+| [MACD](./oscillators.md#macd) | A trend-following momentum indicator that shows the relationship between two moving averages of a security's price. |
+| [Money Flow Index (MFI)](./oscillators.md#money-flow-index-mfi) | Measures the buying and selling pressure through integrating price and volume data. |
+| [Momentum](./oscillators.md#momentum) | Measures the rate of change of an asset's price. |
+| [OsMA](./oscillators.md#osma) | Measures the difference between the MACD line and its signal line. |
+| [Relative Strength Index (RSI)](./oscillators.md#relative-strength-index-rsi) | A momentum oscillator that measures the speed and change of price movements. |
+| [Relative Vigor Index (RVI)](./oscillators.md#relative-vigor-index-rvi) | Measures the relative energy of the current price trend. |
+| [Standard Deviation (StdDev)](./oscillators.md#standard-deviation-stddev) | Measures market volatility using statistical standard deviation. |
+| [Stochastic Oscillator](./oscillators.md#stochastic-oscillator) | Compares a particular closing price of a security to a range of its prices over a certain period of time. |
+| [TRIX](./oscillators.md#trix) | A momentum oscillator that measures the rate of change of a triple exponentially smoothed moving average. |
+| [Williams %R (WPR)](./oscillators.md#williams-r-wpr) | A momentum indicator that measures overbought and oversold levels, typically fluctuating between 0 and -100. |
 
-Use the links in the tables below to view the dedicated API guides, interface parameters, and examples for each built-in indicator.
+### Trend
 
-### Trend Indicators\n\n| Indicator | Creation Method | Interface |\n|---|---|---|\n\n| [Moving Average (MA)](./trend.md#moving-average-ma) | `CreateIndicatorMA` | [`IIndicatorMA`] |\n\n| [Double Exponential Moving Average (DEMA)](./trend.md#double-exponential-moving-average-dema) | `CreateIndicatorDEMA` | [`IIndicatorDEMA`] |\n\n| [Triple Exponential Moving Average (TEMA)](./trend.md#triple-exponential-moving-average-tema) | `CreateIndicatorTEMA` | [`IIndicatorTEMA`] |\n\n| [Adaptive Moving Average (AMA)](./trend.md#adaptive-moving-average-ama) | `CreateIndicatorAMA` | [`IIndicatorAMA`] |\n\n| [Parabolic SAR](./trend.md#parabolic-sar) | `CreateIndicatorSAR` | [`IIndicatorSAR`] |\n\n| [Envelopes](./trend.md#envelopes) | `CreateIndicatorEnvelopes` | [`IIndicatorEnvelopes`] |\n\n| [SuperTrend](./trend.md#supertrend) | `CreateIndicatorSuperTrend` | [`IIndicatorSuperTrend`] |\n\n| [Ichimoku Kinko Hyo](./trend.md#ichimoku-kinko-hyo) | `CreateIndicatorIchimoku` | [`IIndicatorIchimoku`] |\n\n| [Bollinger Bands](./trend.md#bollinger-bands) | `CreateIndicatorBollingerBands` | [`IIndicatorBollingerBands`] |\n\n| [Average Directional Index (ADX)](./trend.md#average-directional-index-adx) | `CreateIndicatorADX` | [`IIndicatorADX`] |\n\n| [Average Directional Index Wilder (ADXW)](./trend.md#average-directional-index-wilder-adxw) | `CreateIndicatorADXW` | [`IIndicatorADXW`] |\n\n### Oscillators Indicators\n\n| Indicator | Creation Method | Interface |\n|---|---|---|\n\n| [Relative Strength Index (RSI)](./oscillators.md#relative-strength-index-rsi) | `CreateIndicatorRSI` | [`IIndicatorRSI`] |\n\n| [Stochastic Oscillator](./oscillators.md#stochastic-oscillator) | `CreateIndicatorStochastic` | [`IIndicatorStochastic`] |\n\n| [Moving Average Convergence Divergence (MACD)](./oscillators.md#moving-average-convergence-divergence-macd) | `CreateIndicatorMACD` | [`IIndicatorMACD`] |\n\n| [Oscillator of Moving Average (OsMA)](./oscillators.md#oscillator-of-moving-average-osma) | `CreateIndicatorOsMA` | [`IIndicatorOsMA`] |\n\n| [Commodity Channel Index (CCI)](./oscillators.md#commodity-channel-index-cci) | `CreateIndicatorCCI` | [`IIndicatorCCI`] |\n\n| [Momentum](./oscillators.md#momentum) | `CreateIndicatorMomentum` | [`IIndicatorMomentum`] |\n\n| [Money Flow Index (MFI)](./oscillators.md#money-flow-index-mfi) | `CreateIndicatorMFI` | [`IIndicatorMFI`] |\n\n| [Relative Vigor Index (RVI)](./oscillators.md#relative-vigor-index-rvi) | `CreateIndicatorRVI` | [`IIndicatorRVI`] |\n\n| [Williams' Percent Range (WPR)](./oscillators.md#williams-percent-range-wpr) | `CreateIndicatorWPR` | [`IIndicatorWPR`] |\n\n| [DeMarker (DeM)](./oscillators.md#demarker-dem) | `CreateIndicatorDeMarker` | [`IIndicatorDeMarker`] |\n\n| [Triple Exponential Average (TRIX)](./oscillators.md#triple-exponential-average-trix) | `CreateIndicatorTRIX` | [`IIndicatorTRIX`] |\n\n| [Standard Deviation (StdDev)](./oscillators.md#standard-deviation-stddev) | `CreateIndicatorStdDev` | [`IIndicatorStdDev`] |\n\n| [Average True Range (ATR)](./oscillators.md#average-true-range-atr) | `CreateIndicatorATR` | [`IIndicatorATR`] |\n\n| [Bollinger Bands %B (%B)](./oscillators.md#bollinger-bands-b-b) | `CreateIndicatorBollingerPercentB` | [`IIndicatorBollingerPercentB`] |\n\n| [Bollinger Band Width (BBW)](./oscillators.md#bollinger-band-width-bbw) | `CreateIndicatorBollingerBandWidth` | [`IIndicatorBollingerBandWidth`] |\n\n### Bill williams Indicators\n\n| Indicator | Creation Method | Interface |\n|---|---|---|\n\n| [Accelerator Oscillator (AC)](./bill-williams.md#accelerator-oscillator-ac) | `CreateIndicatorAC` | [`IIndicatorAC`] |\n\n| [Awesome Oscillator (AO)](./bill-williams.md#awesome-oscillator-ao) | `CreateIndicatorAO` | [`IIndicatorAO`] |\n\n| [Alligator](./bill-williams.md#alligator) | `CreateIndicatorAlligator` | [`IIndicatorAlligator`] |\n\n| [Gator Oscillator](./bill-williams.md#gator-oscillator) | `CreateIndicatorGator` | [`IIndicatorGator`] |\n\n| [Fractals](./bill-williams.md#fractals) | `CreateIndicatorFractals` | [`IIndicatorFractals`] |\n\n| [Market Facilitation Index (BWMFI)](./bill-williams.md#market-facilitation-index-bwmfi) | `CreateIndicatorBWMFI` | [`IIndicatorBWMFI`] |\n\n### Volumes Indicators\n\n| Indicator | Creation Method | Interface |\n|---|---|---|\n\n| [Accumulation/Distribution (AD)](./volumes.md#accumulationdistribution-ad) | `CreateIndicatorAD` | [`IIndicatorAD`] |\n\n| [On-Balance Volume (OBV)](./volumes.md#on-balance-volume-obv) | `CreateIndicatorOBV` | [`IIndicatorOBV`] |\n\n| [Volume Spike](./volumes.md#volume-spike) | `CreateIndicatorVolumeSpike` | [`IIndicatorVolumeSpike`] |\n\n| [Force Index](./volumes.md#force-index) | `CreateIndicatorForce` | [`IIndicatorForce`] |\n\n| [Volume Weighted Average Price (VWAP)](./volumes.md#volume-weighted-average-price-vwap) | `CreateIndicatorVWAP` | [`IIndicatorVWAP`] |\n\n| [Chaikin Oscillator](./volumes.md#chaikin-oscillator) | `CreateIndicatorChaikin` | [`IIndicatorChaikin`] |
+| Indicator | Description |
+|---|---|
+| [Average Directional Index (ADX)](./trend.md#average-directional-index-adx) | Measures the strength of the current market trend. |
+| [ADX Wilder (ADXW)](./trend.md#adx-wilder-adxw) | Wilder's smoothing version of the Average Directional Index (ADXW). |
+| [Adaptive Moving Average (AMA)](./trend.md#adaptive-moving-average-ama) | An adaptive moving average that dynamically adjusts its sensitivity based on market volatility. |
+| [Bollinger Bands](./trend.md#bollinger-bands) | Volatility bands placed above and below a moving average. |
+| [Double Exponential Moving Average (DEMA)](./trend.md#double-exponential-moving-average-dema) | Provides a faster response with less lag than a standard EMA. |
+| [Envelopes](./trend.md#envelopes) | Upper and lower bands that shift at a percentage deviation from a moving average. |
+| [Ichimoku Kinko Hyo](./trend.md#ichimoku-kinko-hyo) | A comprehensive trend indicator system that provides support/resistance and reversal points. |
+| [Moving Average (MA)](./trend.md#moving-average-ma) | A standard moving average indicator to identify trend direction. |
+| [Parabolic SAR](./trend.md#parabolic-sar) | Identifies trend reversal points and provides trailing stops. |
+| [SuperTrend](./trend.md#supertrend) | A trend-following indicator based on Average True Range (ATR) volatility and median price. |
+| [Triple Exponential Moving Average (TEMA)](./trend.md#triple-exponential-moving-average-tema) | A trend-following moving average with even less lag than DEMA. |
 
+### Volumes
 
+| Indicator | Description |
+|---|---|
+| [Accumulation/Distribution (A/D)](./volumes.md#accumulationdistribution-ad) | Measures the accumulation and distribution of volume by comparing the closing price to the trading range. |
+| [Chaikin Oscillator](./volumes.md#chaikin-oscillator) | Applies the MACD principle to the Accumulation/Distribution (A/D) line. |
+| [Force Index](./volumes.md#force-index) | Links price change with volume to measure the power driving a trend. |
+| [On Balance Volume (OBV)](./volumes.md#on-balance-volume-obv) | Tracks cumulative volume flow to predict future price changes. |
+| [Volume Spike](./volumes.md#volume-spike) | Identifies sudden spikes in trading volume compared to its average. |
+| [Volume Weighted Average Price (VWAP)](./volumes.md#volume-weighted-average-price-vwap) | The average price of an asset traded over a session based on both volume and price. |
