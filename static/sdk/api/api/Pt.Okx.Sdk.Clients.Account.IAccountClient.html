@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Interface IAccountClient | PlatinumTrade SDK API Reference ">
     
-    <meta name="description" content="Interface for account clients, providing methods to query trading account information.">
+    <meta name="description" content="Provides access to account information, balances, trading configuration, and account performance metrics.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="Pt_Okx_Sdk_Clients_Account_IAccountClient" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient" class="text-break">Interface IAccountClient</h1>
-  <div class="markdown level0 summary"><p>Interface for account clients, providing methods to query trading account information.</p>
+  <div class="markdown level0 summary"><p>Provides access to account information, balances, trading configuration,
+and account performance metrics.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Account.html">Account</a></h6>
@@ -90,6 +91,10 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IAccountClient</code></pre>
   </div>
+  <h5 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Currently supports OKX USDT-margined perpetual swap accounts only.
+Spot, Futures, Options, and other instrument types are not supported.</p>
+</div>
   <h3 id="properties">Properties
 </h3>
   <span class="small pull-right mobile-hide">
@@ -97,11 +102,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_AvailableBalance.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.AvailableBalance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L43">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L34">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_AvailableBalance_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.AvailableBalance*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_AvailableBalance" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.AvailableBalance">AvailableBalance</h4>
-  <div class="markdown level1 summary"><p>Gets the available balance that can be used to open new positions.</p>
+  <div class="markdown level1 summary"><p>Gets the available balance for opening new positions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -119,8 +124,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The available balance value.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -129,11 +133,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_Equity.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.Equity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L49">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L39">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_Equity_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.Equity*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_Equity" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.Equity">Equity</h4>
-  <div class="markdown level1 summary"><p>Gets the account equity (Wallet Balance + Unrealized PnL).</p>
+  <div class="markdown level1 summary"><p>Gets the current account equity, including unrealized profit and loss.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -151,8 +155,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The equity value.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -161,7 +164,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_InitialMargin.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.InitialMargin%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L61">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L49">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_InitialMargin_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.InitialMargin*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_InitialMargin" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.InitialMargin">InitialMargin</h4>
@@ -183,8 +186,72 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The initial margin value.</p>
-</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_IsHedgeMode.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L62">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_IsHedgeMode_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_IsHedgeMode" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode">IsHedgeMode</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the account is currently operating in Hedge Mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsHedgeMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_MarginRatio.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L57">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_MarginRatio_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_MarginRatio" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio">MarginRatio</h4>
+  <div class="markdown level1 summary"><p>Gets the current margin ratio of the account.</p>
+<p>
+Positions may be liquidated when this value reaches the exchange liquidation threshold.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">decimal MarginRatio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -193,11 +260,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_UnrealizedPnL.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.UnrealizedPnL%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L55">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L44">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_UnrealizedPnL_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.UnrealizedPnL*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_UnrealizedPnL" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.UnrealizedPnL">UnrealizedPnL</h4>
-  <div class="markdown level1 summary"><p>Gets the total unrealized profit and loss (PnL) from open positions.</p>
+  <div class="markdown level1 summary"><p>Gets the total unrealized profit and loss across all open positions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -215,8 +282,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The unrealized PnL value.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -225,11 +291,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_WalletBalance.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.WalletBalance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L37">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L29">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_WalletBalance_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.WalletBalance*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_WalletBalance" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.WalletBalance">WalletBalance</h4>
-  <div class="markdown level1 summary"><p>Gets the total actual wallet balance (excluding unrealized PnL).</p>
+  <div class="markdown level1 summary"><p>Gets the total wallet balance, excluding unrealized profit and loss.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -247,8 +313,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The wallet balance value.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -256,19 +321,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_AccountSelect_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalanceUsdtAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync(System.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L25">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L24">View Source</a>
   </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_AccountSelect_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_AccountSelect_System_String_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect(System.String)">AccountSelect(string)</h4>
-  <div class="markdown level1 summary"><p>Selects and retrieves detailed information for a specific asset (e.g., &quot;USDT&quot;).</p>
+  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalanceUsdtAsync_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalanceUsdtAsync_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync(System.Threading.CancellationToken)">GetBalanceUsdtAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the latest USDT account balance information from the exchange.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">AccountBalanceDetail? AccountSelect(string currency = &quot;USDT&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;AccountBalance&gt;&gt; GetBalanceUsdtAsync(CancellationToken ct = default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -281,9 +346,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">currency</span></td>
-        <td><p>The asset currency (default is &quot;USDT&quot;).</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>A cancellation token.</p>
 </td>
       </tr>
     </tbody>
@@ -298,136 +363,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Account.Model.AccountBalanceDetail.html">AccountBalanceDetail</a></td>
-        <td><p>The balance information for the specified asset, or null if not found.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalances.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L18">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalances_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalances" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances">GetBalances()</h4>
-  <div class="markdown level1 summary"><p>Gets detailed information about the trading account balance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">AccountBalance? GetBalances()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html">AccountBalance</a></td>
-        <td><p>The current account balance, or null if unavailable.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentDrawdown.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L129">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentDrawdown_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentDrawdown" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown">GetCurrentDrawdown()</h4>
-  <div class="markdown level1 summary"><p>Calculates the current account drawdown compared to the equity peak.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">decimal GetCurrentDrawdown()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The current drawdown value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentEquity.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L111">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentEquity_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentEquity" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity">GetCurrentEquity()</h4>
-  <div class="markdown level1 summary"><p>Gets the current equity value of the account.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">decimal GetCurrentEquity()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The current equity value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_GetEquityChangePercentage.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L117">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetEquityChangePercentage_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetEquityChangePercentage" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage">GetEquityChangePercentage()</h4>
-  <div class="markdown level1 summary"><p>Calculates the percentage change in equity compared to a reference point.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">decimal GetEquityChangePercentage()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The equity change percentage.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html">AccountBalance</a>&gt;&gt;</td>
+        <td><p>The latest USDT account balance wrapped in an ApiResult.</p>
 </td>
       </tr>
     </tbody>
@@ -437,11 +374,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_GetFeeLevelAsync.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.GetFeeLevelAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L101">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L100">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetFeeLevelAsync_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetFeeLevelAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetFeeLevelAsync" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetFeeLevelAsync">GetFeeLevelAsync()</h4>
-  <div class="markdown level1 summary"><p>Gets information about the account's trading fee VIP level.</p>
+  <div class="markdown level1 summary"><p>Retrieves the account's current fee VIP level.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -459,7 +396,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Account.Enums.FeeVipLevel.html">FeeVipLevel</a>&gt;&gt;</td>
-        <td><p>The fee VIP level wrapped in a WebCallResult.</p>
+        <td><p>The current fee VIP level wrapped in an ApiResult.</p>
 </td>
       </tr>
     </tbody>
@@ -469,11 +406,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_GetLeverage_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.GetLeverage(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L81">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L82">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetLeverage_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetLeverage*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetLeverage_System_String_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetLeverage(System.String)">GetLeverage(string)</h4>
-  <div class="markdown level1 summary"><p>Gets the current leverage for a specific contract.</p>
+  <div class="markdown level1 summary"><p>Gets the configured leverage for the specified trading symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -516,127 +453,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_GetMarginRatio.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L123">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetMarginRatio_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_GetMarginRatio" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio">GetMarginRatio()</h4>
-  <div class="markdown level1 summary"><p>Calculates the margin ratio. Positions may be liquidated if this reaches 100%.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">decimal GetMarginRatio()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td><p>The margin ratio value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_IsHedgeMode.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L95">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_IsHedgeMode_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_IsHedgeMode" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode">IsHedgeMode()</h4>
-  <div class="markdown level1 summary"><p>Checks if the account is currently in Hedge Mode.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsHedgeMode()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True if in Hedge Mode; otherwise, false.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_LoadBalanceAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync(System.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L31">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_LoadBalanceAsync_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_LoadBalanceAsync_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync(System.Threading.CancellationToken)">LoadBalanceAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Asynchronously refreshes the account balance information from the exchange.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;AccountBalance&gt;&gt; LoadBalanceAsync(CancellationToken ct = default)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">ct</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html">AccountBalance</a>&gt;&gt;</td>
-        <td><p>The refreshed account balance wrapped in a WebCallResult.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_SetHedgeModeAsync_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.SetHedgeModeAsync(System.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L89">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L94">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_SetHedgeModeAsync_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.SetHedgeModeAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_SetHedgeModeAsync_System_Boolean_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.SetHedgeModeAsync(System.Boolean,System.Threading.CancellationToken)">SetHedgeModeAsync(bool, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Sets the position mode (Hedge Mode or Netting Mode).</p>
+  <div class="markdown level1 summary"><p>Sets the account position mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -683,16 +507,20 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_SetHedgeModeAsync_System_Boolean_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Hedge Mode allows independent long and short positions.
+Netting Mode combines positions into a single net position.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient_SetInitialLeverageAsync_System_String_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient.SetInitialLeverageAsync(System.String%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L74">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L75">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_IAccountClient_SetInitialLeverageAsync_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.SetInitialLeverageAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_IAccountClient_SetInitialLeverageAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Account.IAccountClient.SetInitialLeverageAsync(System.String,System.Int32,System.Threading.CancellationToken)">SetInitialLeverageAsync(string, int, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Sets the initial leverage for a specific contract.</p>
+  <div class="markdown level1 summary"><p>Sets the leverage for the specified trading symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -757,7 +585,7 @@
                     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_IAccountClient.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.IAccountClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/IAccountClient.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

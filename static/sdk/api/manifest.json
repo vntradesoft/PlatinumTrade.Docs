@@ -42,7 +42,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Pt.Okx.Sdk.Clients.Account.IAccountClient",
-      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Account.IAccountClient.yml\" sourcestartlinenumber=\"1\">Interface for account clients, providing methods to query trading account information.</p>\n"
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Account.IAccountClient.yml\" sourcestartlinenumber=\"1\">Provides access to account information, balances, trading configuration,\nand account performance metrics.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -56,7 +56,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Pt.Okx.Sdk.Clients.Account.Model.AccountBalance",
-      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.yml\" sourcestartlinenumber=\"1\">Represents the total trading account balance information.</p>\n"
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.yml\" sourcestartlinenumber=\"1\">Represents detailed information for a specific asset within the trading account.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -126,7 +126,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient",
-      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.yml\" sourcestartlinenumber=\"1\">Interface for instrument clients, providing methods to query trading instrument information.</p>\n"
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.yml\" sourcestartlinenumber=\"1\">Provides access to perpetual swap instrument information,\nmarket data, trading rules, margin requirements,\nand symbol metadata.</p>\n<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.yml\" sourcestartlinenumber=\"5\">Currently, only OKX perpetual swap instruments are supported.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -532,7 +532,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Pt.Okx.Sdk.Clients.Trading.ITradeClient",
-      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.yml\" sourcestartlinenumber=\"1\">Interface for trading operations, including order placement, management, position handling, and trade history retrieval.\nProvides methods for interacting with trading endpoints, managing orders, positions, and retrieving trade-related data.</p>\n"
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.yml\" sourcestartlinenumber=\"1\">Provides trading operations including order placement,\norder management, position management, and trade history retrieval.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2800,7 +2800,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Pt.Okx.Sdk.Strategy.Events.BalanceEvent",
-      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.BalanceEvent.yml\" sourcestartlinenumber=\"1\">Represents a balance update event.</p>\n"
+      "Summary": "<p sourcefile=\"api/Pt.Okx.Sdk.Strategy.Events.BalanceEvent.yml\" sourcestartlinenumber=\"1\">Represents a balance update event for asset USDT.</p>\n"
     },
     {
       "type": "ManagedReference",

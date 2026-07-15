@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AccountBalance | PlatinumTrade SDK API Reference ">
     
-    <meta name="description" content="Represents the total trading account balance information.">
+    <meta name="description" content="Represents detailed information for a specific asset within the trading account.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,7 @@
 
 
   <h1 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance" class="text-break">Class AccountBalance</h1>
-  <div class="markdown level0 summary"><p>Represents the total trading account balance information.</p>
+  <div class="markdown level0 summary"><p>Represents detailed information for a specific asset within the trading account.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -127,19 +127,50 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AdjustedEquity.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Asset.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L23">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L10">View Source</a>
   </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AdjustedEquity_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AdjustedEquity" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity">AdjustedEquity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the adjusted equity.</p>
+  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Asset_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Asset" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset">Asset</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the asset ticker (e.g., &quot;BTC&quot;).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public decimal? AdjustedEquity { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Asset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Available.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L12">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Available_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Available" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available">Available</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the available balance for this asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal? Available { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -158,19 +189,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AvailableEquity.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_CashBalance.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L17">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L22">View Source</a>
   </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AvailableEquity_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AvailableEquity" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity">AvailableEquity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the available equity.</p>
+  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_CashBalance_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_CashBalance" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance">CashBalance</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the cash balance for this asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public decimal? AvailableEquity { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public decimal? CashBalance { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -189,19 +220,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_BorrowFrozen.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Equity.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L26">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L16">View Source</a>
   </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_BorrowFrozen_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_BorrowFrozen" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen">BorrowFrozen</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the frozen borrow quantity.</p>
+  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Equity_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Equity" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity">Equity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the equity value of this asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public decimal? BorrowFrozen { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public decimal? Equity { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -220,81 +251,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Details.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMargin.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L47">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L14">View Source</a>
   </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Details_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Details" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details">Details</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the list of detailed asset balances.</p>
+  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMargin_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMargin" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin">InitialMargin</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the initial margin for this asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;AccountBalanceDetail&gt; Details { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Account.Model.AccountBalanceDetail.html">AccountBalanceDetail</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMarginRequirement.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L32">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMarginRequirement_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMarginRequirement" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement">InitialMarginRequirement</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the initial margin requirement.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public decimal? InitialMarginRequirement { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_IsolatedMarginEquity.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L20">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_IsolatedMarginEquity_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_IsolatedMarginEquity" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity">IsolatedMarginEquity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the isolated margin equity.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public decimal? IsolatedMarginEquity { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public decimal? InitialMargin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -316,11 +285,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_MaintenanceMarginRequirement.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.MaintenanceMarginRequirement%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L35">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L24">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_MaintenanceMarginRequirement_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.MaintenanceMarginRequirement*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_MaintenanceMarginRequirement" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.MaintenanceMarginRequirement">MaintenanceMarginRequirement</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the maintenance margin requirement.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the maintenance margin requirement for this asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -347,11 +316,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_MarginRatio.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.MarginRatio%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L38">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L26">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_MarginRatio_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.MarginRatio*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_MarginRatio" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.MarginRatio">MarginRatio</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the margin ratio.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the margin ratio for this asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -375,107 +344,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_NotionalUsd.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L41">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_NotionalUsd_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_NotionalUsd" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd">NotionalUsd</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the total notional value in USD.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public decimal? NotionalUsd { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_OrderFrozen.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L29">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_OrderFrozen_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_OrderFrozen" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen">OrderFrozen</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the order frozen amount.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public decimal? OrderFrozen { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>?</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_TotalEquity.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L14">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_TotalEquity_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_TotalEquity" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity">TotalEquity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the total equity of the account.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public decimal TotalEquity { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_UnrealizedPnl.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.UnrealizedPnl%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L44">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L18">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_UnrealizedPnl_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.UnrealizedPnl*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_UnrealizedPnl" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.UnrealizedPnl">UnrealizedPnl</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the unrealized profit and loss (PnL) in USD at the account level.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the unrealized PnL for this asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -502,11 +378,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_UpdateTime.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.UpdateTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L11">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L20">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_UpdateTime_" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.UpdateTime*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_UpdateTime" data-uid="Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.UpdateTime">UpdateTime</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the update time of the balance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the update time for this asset balance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -544,7 +420,7 @@
                     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Account_Model_AccountBalance.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Account.Model.AccountBalance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Account/Models/AccountBalance.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

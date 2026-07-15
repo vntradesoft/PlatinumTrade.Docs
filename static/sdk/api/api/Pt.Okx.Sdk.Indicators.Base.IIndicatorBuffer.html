@@ -485,7 +485,7 @@ Requires data to be added in ascending chronological order.</p>
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Clear.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L209">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L215">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Clear_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Clear*"></a>
   <h4 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Clear" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Clear">Clear()</h4>
@@ -1147,7 +1147,7 @@ Complexity: O(log n + k), where n is the number of elements and k is the number 
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindRangeUpToCurrent_System_DateTime_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindRangeUpToCurrent(System.DateTime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L199">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L205">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindRangeUpToCurrent_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindRangeUpToCurrent*"></a>
   <h4 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_FindRangeUpToCurrent_System_DateTime_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FindRangeUpToCurrent(System.DateTime)">FindRangeUpToCurrent(DateTime)</h4>
@@ -1289,10 +1289,42 @@ Used for multi-buffer indicators (SAR, etc.) when 2 buffers track the same index
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCalculatedBarCount.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L194">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCalculatedBarCount_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount*"></a>
+  <h4 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCalculatedBarCount" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount">GetCalculatedBarCount()</h4>
+  <div class="markdown level1 summary"><p>Returns the number of bars that have been calculated up to CurrentTime.
+This counts processed bar slots (including slots marked empty) for indicator progress tracking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetCalculatedBarCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCurrentEndIndexDebug.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCurrentEndIndexDebug%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L219">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L225">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCurrentEndIndexDebug_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCurrentEndIndexDebug*"></a>
   <h4 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCurrentEndIndexDebug" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCurrentEndIndexDebug">GetCurrentEndIndexDebug()</h4>
@@ -1426,7 +1458,7 @@ This function is very fast because it only creates a view on the original array,
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetStats.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetStats%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L214">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L220">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetStats_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetStats*"></a>
   <h4 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetStats" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetStats">GetStats()</h4>
@@ -1488,7 +1520,7 @@ This function is very fast because it only creates a view on the original array,
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_HasDataAtCurrent.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.HasDataAtCurrent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L194">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L200">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_HasDataAtCurrent_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.HasDataAtCurrent*"></a>
   <h4 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_HasDataAtCurrent" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.HasDataAtCurrent">HasDataAtCurrent()</h4>
@@ -1559,7 +1591,7 @@ Does not increase Count, only updates FullCount so At()/TryAt() knows the index 
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Resize_System_Int32_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Resize(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L204">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Indicators/Base/IIndicatorBuffer.cs/#L210">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Resize_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Resize*"></a>
   <h4 id="Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_Resize_System_Int32_" data-uid="Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.Resize(System.Int32)">Resize(int)</h4>

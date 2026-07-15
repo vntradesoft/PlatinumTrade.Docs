@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Interface IInstrumentClient | PlatinumTrade SDK API Reference ">
     
-    <meta name="description" content="Interface for instrument clients, providing methods to query trading instrument information.">
+    <meta name="description" content="Provides access to perpetual swap instrument information, market data, trading rules, margin requirements, and symbol metadata. Currently, only OKX perpetual swap instruments are supported.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,10 @@
 
 
   <h1 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient" class="text-break">Interface IInstrumentClient</h1>
-  <div class="markdown level0 summary"><p>Interface for instrument clients, providing methods to query trading instrument information.</p>
+  <div class="markdown level0 summary"><p>Provides access to perpetual swap instrument information,
+market data, trading rules, margin requirements,
+and symbol metadata.</p>
+<p>Currently, only OKX perpetual swap instruments are supported.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Instruments.html">Instruments</a></h6>
@@ -97,11 +100,12 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_InstrumentType.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.InstrumentType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L17">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L24">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_InstrumentType_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.InstrumentType*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_InstrumentType" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.InstrumentType">InstrumentType</h4>
-  <div class="markdown level1 summary"><p>Gets the type of trading instrument handled by this client (e.g., Futures, Spot).</p>
+  <div class="markdown level1 summary"><p>Gets the instrument type handled by this client.
+Currently returns <a class="xref" href="Pt.Okx.Sdk.Enums.InstrumentType.html#Pt_Okx_Sdk_Enums_InstrumentType_Swap">Swap</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -130,7 +134,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_BaseAsset_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.BaseAsset(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L44">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L55">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_BaseAsset_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.BaseAsset*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_BaseAsset_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.BaseAsset(System.String)">BaseAsset(string)</h4>
@@ -180,11 +184,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractMultiplier_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractMultiplier(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L228">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L239">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractMultiplier_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractMultiplier*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractMultiplier_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractMultiplier(System.String)">ContractMultiplier(string)</h4>
-  <div class="markdown level1 summary"><p>Gets the contract multiplier for the specified symbol (for Options).</p>
+  <div class="markdown level1 summary"><p>Gets the contract multiplier for the specified perpetual swap symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -230,11 +234,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractSize_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractSize(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L221">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L232">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractSize_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractSize*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_ContractSize_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.ContractSize(System.String)">ContractSize(string)</h4>
-  <div class="markdown level1 summary"><p>Gets the contract size for the specified symbol (for Futures/Swap).</p>
+  <div class="markdown level1 summary"><p>Gets the contract size for the specified perpetual swap symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -280,7 +284,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetAskAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetAskAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L87">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L98">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetAskAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetAskAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetAskAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetAskAsync(System.String,System.Threading.CancellationToken)">GetAskAsync(string, CancellationToken)</h4>
@@ -326,7 +330,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
-        <td><p>The ask price wrapped in a WebCallResult.</p>
+        <td><p>The ask price wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -336,7 +340,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAskSpreadAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAskSpreadAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L103">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L114">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAskSpreadAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAskSpreadAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAskSpreadAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAskSpreadAsync(System.String,System.Threading.CancellationToken)">GetBidAskSpreadAsync(string, CancellationToken)</h4>
@@ -382,7 +386,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.bid">Bid</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.ask">Ask</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.decimal,system.decimal,system.decimal-.spread">Spread</a>)&gt;&gt;</td>
-        <td><p>A tuple containing bid, ask, and spread values wrapped in a WebCallResult.</p>
+        <td><p>A tuple containing bid, ask, and spread values wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -392,7 +396,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L79">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L90">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetBidAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetBidAsync(System.String,System.Threading.CancellationToken)">GetBidAsync(string, CancellationToken)</h4>
@@ -438,7 +442,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
-        <td><p>The bid price wrapped in a WebCallResult.</p>
+        <td><p>The bid price wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -448,7 +452,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetCurrentTime.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetCurrentTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L238">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L249">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetCurrentTime_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetCurrentTime*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetCurrentTime" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetCurrentTime">GetCurrentTime()</h4>
@@ -480,7 +484,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeMaker_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeMaker(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L205">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L216">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeMaker_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeMaker*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeMaker_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeMaker(System.String)">GetFeeMaker(string)</h4>
@@ -530,7 +534,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeTaker_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeTaker(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L198">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L209">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeTaker_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeTaker*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetFeeTaker_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetFeeTaker(System.String)">GetFeeTaker(string)</h4>
@@ -580,7 +584,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetHighPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetHighPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L111">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L122">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetHighPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetHighPriceAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetHighPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetHighPriceAsync(System.String,System.Threading.CancellationToken)">GetHighPriceAsync(string, CancellationToken)</h4>
@@ -626,7 +630,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
-        <td><p>The high price wrapped in a WebCallResult.</p>
+        <td><p>The high price wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -636,7 +640,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLastPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLastPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L63">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L74">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLastPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLastPriceAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLastPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLastPriceAsync(System.String,System.Threading.CancellationToken)">GetLastPriceAsync(string, CancellationToken)</h4>
@@ -682,7 +686,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
-        <td><p>The last price wrapped in a WebCallResult.</p>
+        <td><p>The last price wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -692,7 +696,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitLotSize_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitLotSize(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L160">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L171">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitLotSize_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitLotSize*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitLotSize_System_String_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitLotSize(System.String,System.Boolean)">GetLimitLotSize(string, bool)</h4>
@@ -748,7 +752,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitMaxCost_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitMaxCost(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L168">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L179">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitMaxCost_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitMaxCost*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitMaxCost_System_String_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitMaxCost(System.String,System.Boolean)">GetLimitMaxCost(string, bool)</h4>
@@ -804,7 +808,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L127">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L138">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitPriceAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLimitPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLimitPriceAsync(System.String,System.Threading.CancellationToken)">GetLimitPriceAsync(string, CancellationToken)</h4>
@@ -850,7 +854,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Instruments.Models.LimitPrice.html">LimitPrice</a>&gt;&gt;</td>
-        <td><p>The limit price wrapped in a WebCallResult.</p>
+        <td><p>The limit price wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -860,7 +864,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLowPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLowPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L119">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L130">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLowPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLowPriceAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetLowPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetLowPriceAsync(System.String,System.Threading.CancellationToken)">GetLowPriceAsync(string, CancellationToken)</h4>
@@ -906,7 +910,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
-        <td><p>The low price wrapped in a WebCallResult.</p>
+        <td><p>The low price wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -916,7 +920,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMaintMarginRateAsync_System_String_System_Decimal_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMaintMarginRateAsync(System.String%2CSystem.Decimal%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L214">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L225">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMaintMarginRateAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMaintMarginRateAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMaintMarginRateAsync_System_String_System_Decimal_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMaintMarginRateAsync(System.String,System.Decimal,System.Threading.CancellationToken)">GetMaintMarginRateAsync(string, decimal, CancellationToken)</h4>
@@ -978,11 +982,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMarkPriceAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMarkPriceAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L71">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L82">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMarkPriceAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMarkPriceAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetMarkPriceAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetMarkPriceAsync(System.String,System.Threading.CancellationToken)">GetMarkPriceAsync(string, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Gets the mark price for the specified symbol (important for Futures/Swap).</p>
+  <div class="markdown level1 summary"><p>Gets the mark price for the specified perpetual swap symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1024,7 +1028,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
-        <td><p>The mark price wrapped in a WebCallResult.</p>
+        <td><p>The mark price wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -1034,7 +1038,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionLot_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionLot(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L145">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L156">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionLot_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionLot*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionLot_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionLot(System.String)">GetPrecisionLot(string)</h4>
@@ -1084,7 +1088,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionPrice_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionPrice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L138">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L149">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionPrice_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionPrice*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetPrecisionPrice_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetPrecisionPrice(System.String)">GetPrecisionPrice(string)</h4>
@@ -1134,7 +1138,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetSpreadAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetSpreadAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L95">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L106">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetSpreadAsync_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetSpreadAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetSpreadAsync_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetSpreadAsync(System.String,System.Threading.CancellationToken)">GetSpreadAsync(string, CancellationToken)</h4>
@@ -1180,7 +1184,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a>&gt;&gt;</td>
-        <td><p>The spread value wrapped in a WebCallResult.</p>
+        <td><p>The spread value wrapped in a HttpResult.</p>
 </td>
       </tr>
     </tbody>
@@ -1190,7 +1194,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetTickPrice_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetTickPrice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L152">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L163">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetTickPrice_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetTickPrice*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_GetTickPrice_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.GetTickPrice(System.String)">GetTickPrice(string)</h4>
@@ -1240,11 +1244,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_IsSymbol_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.IsSymbol(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L24">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L33">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_IsSymbol_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.IsSymbol*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_IsSymbol_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.IsSymbol(System.String)">IsSymbol(string)</h4>
-  <div class="markdown level1 summary"><p>Checks if the specified symbol is a valid and tracked trading symbol.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified symbol is supported.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1264,7 +1268,7 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">symbol</span></td>
-        <td><p>The trading symbol to check.</p>
+        <td><p>The trading symbol.</p>
 </td>
       </tr>
     </tbody>
@@ -1280,7 +1284,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True if the symbol is valid and tracked; otherwise, false.</p>
+        <td><p>True if the symbol is supported; otherwise, false.</p>
 </td>
       </tr>
     </tbody>
@@ -1290,7 +1294,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizeLot_System_String_System_Decimal_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizeLot(System.String%2CSystem.Decimal%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L178">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L189">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizeLot_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizeLot*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizeLot_System_String_System_Decimal_System_Boolean_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizeLot(System.String,System.Decimal,System.Boolean,System.Boolean)">NormalizeLot(string, decimal, bool, bool)</h4>
@@ -1358,7 +1362,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizePrice_System_String_System_Decimal_System_Boolean_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizePrice(System.String%2CSystem.Decimal%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L187">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L198">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizePrice_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizePrice*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_NormalizePrice_System_String_System_Decimal_System_Boolean_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.NormalizePrice(System.String,System.Decimal,System.Boolean)">NormalizePrice(string, decimal, bool)</h4>
@@ -1420,11 +1424,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_QuoteAsset_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.QuoteAsset(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L37">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L48">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_QuoteAsset_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.QuoteAsset*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_QuoteAsset_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.QuoteAsset(System.String)">QuoteAsset(string)</h4>
-  <div class="markdown level1 summary"><p>Gets the quote asset for the specified symbol (e.g., &quot;USDT&quot;).</p>
+  <div class="markdown level1 summary"><p>Gets the quote asset for the specified perpetual swap symbol (e.g., &quot;USDT&quot;).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1470,7 +1474,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Symbol_System_Int64_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Symbol(System.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L252">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L263">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Symbol_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Symbol*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Symbol_System_Int64_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Symbol(System.Int64)">Symbol(long)</h4>
@@ -1520,7 +1524,7 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_SymbolCode_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.SymbolCode(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L245">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L256">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_SymbolCode_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.SymbolCode*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_SymbolCode_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.SymbolCode(System.String)">SymbolCode(string)</h4>
@@ -1568,11 +1572,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_TotalSymbols.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.TotalSymbols%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L30">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L41">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_TotalSymbols_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.TotalSymbols*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_TotalSymbols" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.TotalSymbols">TotalSymbols()</h4>
-  <div class="markdown level1 summary"><p>Gets the total number of trading symbols currently tracked.</p>
+  <div class="markdown level1 summary"><p>Gets the total number of perpetual swap symbols supported by the current trading environment.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1590,7 +1594,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><p>The total count of tracked symbols.</p>
+        <td><p>The total count of available perpetual swap symbols.</p>
 </td>
       </tr>
     </tbody>
@@ -1600,11 +1604,11 @@
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Underlying_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Underlying(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L51">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L62">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Underlying_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Underlying*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient_Underlying_System_String_" data-uid="Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient.Underlying(System.String)">Underlying(string)</h4>
-  <div class="markdown level1 summary"><p>Gets the underlying asset for the specified symbol (for derivatives).</p>
+  <div class="markdown level1 summary"><p>Gets the underlying asset for the specified perpetual swap symbol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1657,7 +1661,7 @@
                     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Instruments_IInstrumentClient.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Instruments.IInstrumentClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Instruments/IInstrumentClient.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

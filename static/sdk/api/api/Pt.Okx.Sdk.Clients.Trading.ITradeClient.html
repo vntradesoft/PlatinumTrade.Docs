@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Interface ITradeClient | PlatinumTrade SDK API Reference ">
     
-    <meta name="description" content="Interface for trading operations, including order placement, management, position handling, and trade history retrieval. Provides methods for interacting with trading endpoints, managing orders, positions, and retrieving trade-related data.">
+    <meta name="description" content="Provides trading operations including order placement, order management, position management, and trade history retrieval.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,8 +81,8 @@
 
 
   <h1 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient" class="text-break">Interface ITradeClient</h1>
-  <div class="markdown level0 summary"><p>Interface for trading operations, including order placement, management, position handling, and trade history retrieval.
-Provides methods for interacting with trading endpoints, managing orders, positions, and retrieving trade-related data.</p>
+  <div class="markdown level0 summary"><p>Provides trading operations including order placement,
+order management, position management, and trade history retrieval.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.html">Trading</a></h6>
@@ -91,6 +91,10 @@ Provides methods for interacting with trading endpoints, managing orders, positi
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ITradeClient</code></pre>
   </div>
+  <h5 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Currently supports OKX USDT-margined perpetual swap instruments only.
+Spot, Futures, Options, and other instrument types are not supported.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -98,7 +102,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendAlgoOrderAsync_System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendAlgoOrderAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L166">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L171">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendAlgoOrderAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendAlgoOrderAsync_System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendAlgoOrderAsync(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Threading.CancellationToken)">AmendAlgoOrderAsync(string, string?, string?, string?, bool?, decimal?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, CancellationToken)</h4>
@@ -220,7 +224,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendOrderAsync(System.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L147">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L152">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendOrderAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_AmendOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_String_System_Nullable_System_Boolean__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.AmendOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Threading.CancellationToken)">AmendOrderAsync(string, long?, string?, string?, bool?, decimal?, decimal?, decimal?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, CancellationToken)</h4>
@@ -354,7 +358,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelAlgoOrderAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_AlgoOrderRequest__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelAlgoOrderAsync(System.Collections.Generic.IEnumerable%7BPt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L192">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L197">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelAlgoOrderAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelAlgoOrderAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_AlgoOrderRequest__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelAlgoOrderAsync(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Clients.Trading.Models.AlgoOrderRequest},System.Threading.CancellationToken)">CancelAlgoOrderAsync(IEnumerable&lt;AlgoOrderRequest&gt;, CancellationToken)</h4>
@@ -410,7 +414,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelMultipleOrdersAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_OrderCancelRequest__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelMultipleOrdersAsync(System.Collections.Generic.IEnumerable%7BPt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L184">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L189">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelMultipleOrdersAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelMultipleOrdersAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelMultipleOrdersAsync_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Clients_Trading_Models_OrderCancelRequest__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelMultipleOrdersAsync(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Clients.Trading.Models.OrderCancelRequest},System.Threading.CancellationToken)">CancelMultipleOrdersAsync(IEnumerable&lt;OrderCancelRequest&gt;, CancellationToken)</h4>
@@ -466,7 +470,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelOrderAsync(System.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L176">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L181">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelOrderAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_CancelOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.CancelOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.Threading.CancellationToken)">CancelOrderAsync(string, long?, string?, CancellationToken)</h4>
@@ -534,7 +538,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_ClosePositionAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.ClosePositionAsync(System.String%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.PositionSide%7D%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L61">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L66">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_ClosePositionAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.ClosePositionAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_ClosePositionAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.ClosePositionAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.String,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">ClosePositionAsync(string, PositionSide?, string?, bool?, string?, CancellationToken)</h4>
@@ -614,7 +618,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_DisableLogApiEndPoint_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Enums_ApiName__.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.DisableLogApiEndPoint(System.Collections.Generic.IEnumerable%7BPt.Okx.Sdk.Enums.ApiName%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L280">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L290">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_DisableLogApiEndPoint_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.DisableLogApiEndPoint*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_DisableLogApiEndPoint_System_Collections_Generic_IEnumerable_Pt_Okx_Sdk_Enums_ApiName__" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.DisableLogApiEndPoint(System.Collections.Generic.IEnumerable{Pt.Okx.Sdk.Enums.ApiName})">DisableLogApiEndPoint(IEnumerable&lt;ApiName&gt;)</h4>
@@ -648,7 +652,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrderAsync_System_String_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrderAsync(System.String%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L201">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L206">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrderAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrderAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrderAsync(System.String,System.String,System.Threading.CancellationToken)">GetAlgoOrderAsync(string?, string?, CancellationToken)</h4>
@@ -710,7 +714,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrdersAsync_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrdersAsync(Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L117">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L122">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrdersAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrdersAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetAlgoOrdersAsync_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_String_System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetAlgoOrdersAsync(Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetAlgoOrdersAsync(AlgoOrderType, string?, string?, DateTime?, DateTime?, CancellationToken)</h4>
@@ -790,7 +794,7 @@ Provides methods for interacting with trading endpoints, managing orders, positi
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetClosePositionsAsync_System_String_System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_MarginMode__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_ClosingPositionType__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetClosePositionsAsync(System.String%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.MarginMode%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType%7D%2CSystem.String%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L243">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L248">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetClosePositionsAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetClosePositionsAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetClosePositionsAsync_System_String_System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_MarginMode__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_ClosingPositionType__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetClosePositionsAsync(System.String,System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.MarginMode},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.ClosingPositionType},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetClosePositionsAsync(string?, MarginMode?, ClosingPositionType?, string?, DateTime?, DateTime?, CancellationToken)</h4>
@@ -877,7 +881,7 @@ Retrieves up to 3 months of data. For longer history, use the GetPositionArchive
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetHistoryOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetHistoryOrdersAsync(System.String%2CSystem.String%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.OrderType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.OrderStatus%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L216">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L221">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetHistoryOrdersAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetHistoryOrdersAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetHistoryOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetHistoryOrdersAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetHistoryOrdersAsync(string?, string?, OrderType?, OrderStatus?, DateTime?, DateTime?, CancellationToken)</h4>
@@ -964,7 +968,7 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrderAsync(System.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L93">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L98">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrderAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrderAsync_System_String_System_Nullable_System_Int64__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrderAsync(System.String,System.Nullable{System.Int64},System.String,System.Threading.CancellationToken)">GetOrderAsync(string, long?, string?, CancellationToken)</h4>
@@ -1032,7 +1036,7 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersArchiveAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersArchiveAsync(System.String%2CSystem.String%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.OrderType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.OrderStatus%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L229">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L234">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersArchiveAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersArchiveAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersArchiveAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersArchiveAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetOrdersArchiveAsync(string?, string?, OrderType?, OrderStatus?, DateTime?, DateTime?, CancellationToken)</h4>
@@ -1118,7 +1122,7 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersAsync(System.String%2CSystem.String%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.OrderType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.OrderStatus%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L105">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L110">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetOrdersAsync_System_String_System_String_System_Nullable_Pt_Okx_Sdk_Enums_OrderType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_OrderStatus__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetOrdersAsync(System.String,System.String,System.Nullable{Pt.Okx.Sdk.Enums.OrderType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.OrderStatus},System.String,System.Threading.CancellationToken)">GetOrdersAsync(string?, string?, OrderType?, OrderStatus?, string?, CancellationToken)</h4>
@@ -1198,7 +1202,7 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetPositionsAsync_System_String_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetPositionsAsync(System.String%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L126">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L131">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetPositionsAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetPositionsAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetPositionsAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetPositionsAsync(System.String,System.String,System.Threading.CancellationToken)">GetPositionsAsync(string?, string?, CancellationToken)</h4>
@@ -1257,90 +1261,10 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L255">View Source</a>
-  </span>
-  <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetUserTradeAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Gets the history of matched trades (fills).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Transaction[]&gt;&gt; GetUserTradeAsync(string? symbol = null, string? underlying = null, long? orderId = null, DateTime? startTime = null, DateTime? endTime = null, CancellationToken ct = default)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">symbol</span></td>
-        <td><p>The trading symbol (optional).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">underlying</span></td>
-        <td><p>The underlying asset (optional).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
-        <td><span class="parametername">orderId</span></td>
-        <td><p>The order ID (optional).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">startTime</span></td>
-        <td><p>The start time for the query (optional).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
-        <td><span class="parametername">endTime</span></td>
-        <td><p>The end time for the query (optional).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">ct</span></td>
-        <td><p>Cancellation token (optional).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Transaction.html">Transaction</a>[]&gt;&gt;</td>
-        <td><p>The list of matched trades (fills).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesArchiveAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L267">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L272">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesArchiveAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesArchiveAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetUserTradesArchiveAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)</h4>
@@ -1417,10 +1341,90 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Nullable%7BSystem.DateTime%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L260">View Source</a>
+  </span>
+  <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)">GetUserTradesAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the history of matched trades (fills).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResult&lt;Transaction[]&gt;&gt; GetUserTradesAsync(string? symbol = null, string? underlying = null, long? orderId = null, DateTime? startTime = null, DateTime? endTime = null, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The trading symbol (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">underlying</span></td>
+        <td><p>The underlying asset (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">orderId</span></td>
+        <td><p>The order ID (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">startTime</span></td>
+        <td><p>The start time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td><span class="parametername">endTime</span></td>
+        <td><p>The end time for the query (optional).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token (optional).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Common.ApiResult-1.html">ApiResult</a>&lt;<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Models.Transaction.html">Transaction</a>[]&gt;&gt;</td>
+        <td><p>The list of matched trades (fills).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_OrderCheckAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Enums_TradeMode__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_QuantityAsset__System_Nullable_System_Boolean__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.OrderCheckAsync(System.String%2CPt.Okx.Sdk.Enums.OrderSide%2CPt.Okx.Sdk.Enums.OrderType%2CSystem.Decimal%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.PositionSide%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.TradeMode%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L83">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L88">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_OrderCheckAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.OrderCheckAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_OrderCheckAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Enums_TradeMode__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_QuantityAsset__System_Nullable_System_Boolean__System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.OrderCheckAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Enums.OrderType,System.Decimal,System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.Nullable{Pt.Okx.Sdk.Enums.TradeMode},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset},System.Nullable{System.Boolean},System.Threading.CancellationToken)">OrderCheckAsync(string, OrderSide, OrderType, decimal, decimal?, PositionSide?, TradeMode?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, QuantityAsset?, bool?, CancellationToken)</h4>
@@ -1560,7 +1564,7 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceAlgoOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceAlgoOrderAsync(System.String%2CPt.Okx.Sdk.Enums.OrderSide%2CPt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Enums.PositionSide%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BPt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Decimal%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L49">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L54">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceAlgoOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceAlgoOrderAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceAlgoOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoOrderType_System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_AlgoPriceType__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceAlgoOrderAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Clients.Trading.Enums.AlgoOrderType,System.Nullable{System.Decimal},System.Nullable{System.Boolean},System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.AlgoPriceType},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">PlaceAlgoOrderAsync(string, OrderSide, AlgoOrderType, decimal?, bool?, PositionSide?, AlgoPriceType?, decimal?, decimal?, AlgoPriceType?, decimal?, decimal?, decimal?, bool?, string?, CancellationToken)</h4>
@@ -1700,7 +1704,7 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__Pt_Okx_Sdk_Clients_Trading_Models_AttachedAlgoOrder_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceOrderAsync(System.String%2CPt.Okx.Sdk.Enums.OrderSide%2CPt.Okx.Sdk.Enums.OrderType%2CSystem.Decimal%2CSystem.Nullable%7BSystem.Decimal%7D%2CPt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L27">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L32">View Source</a>
   </span>
   <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceOrderAsync_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceOrderAsync*"></a>
   <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_PlaceOrderAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__Pt_Okx_Sdk_Clients_Trading_Models_AttachedAlgoOrder_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceOrderAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Enums.OrderType,System.Decimal,System.Nullable{System.Decimal},Pt.Okx.Sdk.Clients.Trading.Models.AttachedAlgoOrder,System.Nullable{System.Boolean},System.String,System.Threading.CancellationToken)">PlaceOrderAsync(string, OrderSide, OrderType, decimal, decimal?, AttachedAlgoOrder?, bool?, string?, CancellationToken)</h4>
@@ -1795,19 +1799,19 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetOrderSourceIdPrefix_System_String_.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L274">View Source</a>
+    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L284">View Source</a>
   </span>
-  <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber*"></a>
-  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_System_String_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(System.String)">SetMagicNumber(string)</h4>
-  <div class="markdown level1 summary"><p>Sets the Magic Number to identify the order source (e.g., from Bot A, Bot B).</p>
+  <a id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetOrderSourceIdPrefix_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix*"></a>
+  <h4 id="Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetOrderSourceIdPrefix_System_String_" data-uid="Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix(System.String)">SetOrderSourceIdPrefix(string)</h4>
+  <div class="markdown level1 summary"><p>Sets the default source identifier prefix used when generating client order IDs (clOrdId).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">(bool Success, string ErrorMsg) SetMagicNumber(string magicNumber)</code></pre>
+    <pre><code class="lang-csharp hljs">(bool Success, string ErrorMsg) SetOrderSourceIdPrefix(string sourceIdPrefix)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1821,8 +1825,9 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">magicNumber</span></td>
-        <td><p>The magic number string.</p>
+        <td><span class="parametername">sourceIdPrefix</span></td>
+        <td><p>A unique prefix used to distinguish orders generated by different bots,
+strategies, or trading systems.</p>
 </td>
       </tr>
     </tbody>
@@ -1838,7 +1843,7 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
     <tbody>
       <tr>
         <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.success">Success</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.string-.errormsg">ErrorMsg</a>)</td>
-        <td><p>A tuple indicating success and an error message if any.</p>
+        <td><p>A tuple indicating whether the operation succeeded and an optional error message.</p>
 </td>
       </tr>
     </tbody>
@@ -1855,7 +1860,7 @@ Retrieves up to 7 days of data. For longer history, use the GetHistoryOrdersArch
                     <a href="https://github.com/phanthanh157/PlatinumTrade/new/master/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_ITradeClient.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.ITradeClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/master/Pt.Okx.Sdk/Clients/Trading/ITradeClient.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

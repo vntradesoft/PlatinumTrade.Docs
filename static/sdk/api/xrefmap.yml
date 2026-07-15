@@ -121,22 +121,6 @@ references:
   commentId: T:Pt.Okx.Sdk.Clients.Account.IAccountClient
   fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient
   nameWithType: IAccountClient
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect(System.String)
-  name: AccountSelect(string)
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_AccountSelect_System_String_
-  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect(System.String)
-  name.vb: AccountSelect(String)
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect(string)
-  fullName.vb: Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect(String)
-  nameWithType: IAccountClient.AccountSelect(string)
-  nameWithType.vb: IAccountClient.AccountSelect(String)
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect*
-  name: AccountSelect
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_AccountSelect_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.AccountSelect
-  nameWithType: IAccountClient.AccountSelect
 - uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.AvailableBalance
   name: AvailableBalance
   href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_AvailableBalance
@@ -163,58 +147,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.Equity
   nameWithType: IAccountClient.Equity
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances
-  name: GetBalances()
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalances
-  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances()
-  nameWithType: IAccountClient.GetBalances()
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances*
-  name: GetBalances
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalances_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances
+- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync(System.Threading.CancellationToken)
+  name: GetBalanceUsdtAsync(CancellationToken)
+  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalanceUsdtAsync_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync(System.Threading.CancellationToken)
+  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync(System.Threading.CancellationToken)
+  nameWithType: IAccountClient.GetBalanceUsdtAsync(CancellationToken)
+- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync*
+  name: GetBalanceUsdtAsync
+  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetBalanceUsdtAsync_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalances
-  nameWithType: IAccountClient.GetBalances
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown
-  name: GetCurrentDrawdown()
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentDrawdown
-  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown()
-  nameWithType: IAccountClient.GetCurrentDrawdown()
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown*
-  name: GetCurrentDrawdown
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentDrawdown_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentDrawdown
-  nameWithType: IAccountClient.GetCurrentDrawdown
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity
-  name: GetCurrentEquity()
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentEquity
-  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity()
-  nameWithType: IAccountClient.GetCurrentEquity()
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity*
-  name: GetCurrentEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetCurrentEquity_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetCurrentEquity
-  nameWithType: IAccountClient.GetCurrentEquity
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage
-  name: GetEquityChangePercentage()
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetEquityChangePercentage
-  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage()
-  nameWithType: IAccountClient.GetEquityChangePercentage()
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage*
-  name: GetEquityChangePercentage
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetEquityChangePercentage_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetEquityChangePercentage
-  nameWithType: IAccountClient.GetEquityChangePercentage
+  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetBalanceUsdtAsync
+  nameWithType: IAccountClient.GetBalanceUsdtAsync
 - uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetFeeLevelAsync
   name: GetFeeLevelAsync()
   href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetFeeLevelAsync
@@ -244,19 +189,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetLeverage
   nameWithType: IAccountClient.GetLeverage
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio
-  name: GetMarginRatio()
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetMarginRatio
-  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio()
-  nameWithType: IAccountClient.GetMarginRatio()
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio*
-  name: GetMarginRatio
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_GetMarginRatio_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.GetMarginRatio
-  nameWithType: IAccountClient.GetMarginRatio
 - uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.InitialMargin
   name: InitialMargin
   href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_InitialMargin
@@ -271,11 +203,11 @@ references:
   fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.InitialMargin
   nameWithType: IAccountClient.InitialMargin
 - uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode
-  name: IsHedgeMode()
+  name: IsHedgeMode
   href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_IsHedgeMode
-  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode()
-  nameWithType: IAccountClient.IsHedgeMode()
+  commentId: P:Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode
+  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode
+  nameWithType: IAccountClient.IsHedgeMode
 - uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode*
   name: IsHedgeMode
   href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_IsHedgeMode_
@@ -283,19 +215,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.IsHedgeMode
   nameWithType: IAccountClient.IsHedgeMode
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync(System.Threading.CancellationToken)
-  name: LoadBalanceAsync(CancellationToken)
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_LoadBalanceAsync_System_Threading_CancellationToken_
-  commentId: M:Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync(System.Threading.CancellationToken)
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync(System.Threading.CancellationToken)
-  nameWithType: IAccountClient.LoadBalanceAsync(CancellationToken)
-- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync*
-  name: LoadBalanceAsync
-  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_LoadBalanceAsync_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync
+- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio
+  name: MarginRatio
+  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_MarginRatio
+  commentId: P:Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio
+  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio
+  nameWithType: IAccountClient.MarginRatio
+- uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio*
+  name: MarginRatio
+  href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_MarginRatio_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.LoadBalanceAsync
-  nameWithType: IAccountClient.LoadBalanceAsync
+  fullName: Pt.Okx.Sdk.Clients.Account.IAccountClient.MarginRatio
+  nameWithType: IAccountClient.MarginRatio
 - uid: Pt.Okx.Sdk.Clients.Account.IAccountClient.SetHedgeModeAsync(System.Boolean,System.Threading.CancellationToken)
   name: SetHedgeModeAsync(bool, CancellationToken)
   href: api/Pt.Okx.Sdk.Clients.Account.IAccountClient.html#Pt_Okx_Sdk_Clients_Account_IAccountClient_SetHedgeModeAsync_System_Boolean_System_Threading_CancellationToken_
@@ -366,84 +298,71 @@ references:
   commentId: T:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance
   fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance
   nameWithType: AccountBalance
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity
-  name: AdjustedEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AdjustedEquity
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity
-  nameWithType: AccountBalance.AdjustedEquity
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity*
-  name: AdjustedEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AdjustedEquity_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset
+  name: Asset
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Asset
+  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset
+  nameWithType: AccountBalance.Asset
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset*
+  name: Asset
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Asset_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AdjustedEquity
-  nameWithType: AccountBalance.AdjustedEquity
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity
-  name: AvailableEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AvailableEquity
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity
-  nameWithType: AccountBalance.AvailableEquity
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity*
-  name: AvailableEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_AvailableEquity_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Asset
+  nameWithType: AccountBalance.Asset
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available
+  name: Available
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Available
+  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available
+  nameWithType: AccountBalance.Available
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available*
+  name: Available
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Available_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.AvailableEquity
-  nameWithType: AccountBalance.AvailableEquity
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen
-  name: BorrowFrozen
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_BorrowFrozen
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen
-  nameWithType: AccountBalance.BorrowFrozen
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen*
-  name: BorrowFrozen
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_BorrowFrozen_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Available
+  nameWithType: AccountBalance.Available
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance
+  name: CashBalance
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_CashBalance
+  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance
+  nameWithType: AccountBalance.CashBalance
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance*
+  name: CashBalance
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_CashBalance_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.BorrowFrozen
-  nameWithType: AccountBalance.BorrowFrozen
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details
-  name: Details
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Details
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details
-  nameWithType: AccountBalance.Details
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details*
-  name: Details
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Details_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.CashBalance
+  nameWithType: AccountBalance.CashBalance
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity
+  name: Equity
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Equity
+  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity
+  nameWithType: AccountBalance.Equity
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity*
+  name: Equity
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_Equity_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Details
-  nameWithType: AccountBalance.Details
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement
-  name: InitialMarginRequirement
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMarginRequirement
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement
-  nameWithType: AccountBalance.InitialMarginRequirement
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement*
-  name: InitialMarginRequirement
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMarginRequirement_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.Equity
+  nameWithType: AccountBalance.Equity
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin
+  name: InitialMargin
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMargin
+  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin
+  nameWithType: AccountBalance.InitialMargin
+- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin*
+  name: InitialMargin
+  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_InitialMargin_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMarginRequirement
-  nameWithType: AccountBalance.InitialMarginRequirement
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity
-  name: IsolatedMarginEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_IsolatedMarginEquity
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity
-  nameWithType: AccountBalance.IsolatedMarginEquity
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity*
-  name: IsolatedMarginEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_IsolatedMarginEquity_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.IsolatedMarginEquity
-  nameWithType: AccountBalance.IsolatedMarginEquity
+  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.InitialMargin
+  nameWithType: AccountBalance.InitialMargin
 - uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.MaintenanceMarginRequirement
   name: MaintenanceMarginRequirement
   href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_MaintenanceMarginRequirement
@@ -470,45 +389,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.MarginRatio
   nameWithType: AccountBalance.MarginRatio
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd
-  name: NotionalUsd
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_NotionalUsd
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd
-  nameWithType: AccountBalance.NotionalUsd
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd*
-  name: NotionalUsd
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_NotionalUsd_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.NotionalUsd
-  nameWithType: AccountBalance.NotionalUsd
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen
-  name: OrderFrozen
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_OrderFrozen
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen
-  nameWithType: AccountBalance.OrderFrozen
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen*
-  name: OrderFrozen
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_OrderFrozen_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.OrderFrozen
-  nameWithType: AccountBalance.OrderFrozen
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity
-  name: TotalEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_TotalEquity
-  commentId: P:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity
-  nameWithType: AccountBalance.TotalEquity
-- uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity*
-  name: TotalEquity
-  href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_TotalEquity_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.TotalEquity
-  nameWithType: AccountBalance.TotalEquity
 - uid: Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.UnrealizedPnl
   name: UnrealizedPnl
   href: api/Pt.Okx.Sdk.Clients.Account.Model.AccountBalance.html#Pt_Okx_Sdk_Clients_Account_Model_AccountBalance_UnrealizedPnl
@@ -2511,22 +2391,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.EndTime
   nameWithType: ITimeSeriesClient.EndTime
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Threading.CancellationToken)
-  name: GetCurrentCandleAsync(string?, Timeframe?, CancellationToken)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetCurrentCandleAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Threading_CancellationToken_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Threading.CancellationToken)
-  name.vb: GetCurrentCandleAsync(String, Timeframe?, CancellationToken)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleAsync(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.Threading.CancellationToken)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleAsync(String, Pt.Okx.Sdk.Enums.Timeframe?, System.Threading.CancellationToken)
-  nameWithType: ITimeSeriesClient.GetCurrentCandleAsync(string?, Timeframe?, CancellationToken)
-  nameWithType.vb: ITimeSeriesClient.GetCurrentCandleAsync(String, Timeframe?, CancellationToken)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleAsync*
-  name: GetCurrentCandleAsync
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetCurrentCandleAsync_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleAsync
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleAsync
-  nameWithType: ITimeSeriesClient.GetCurrentCandleAsync
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime
   name: GetCurrentTime()
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetCurrentTime
@@ -2546,6 +2410,22 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime
   nameWithType: ITimeSeriesClient.GetCurrentTime
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Threading.CancellationToken)
+  name: GetLastCloseCandleAsync(string?, Timeframe?, CancellationToken)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetLastCloseCandleAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Threading.CancellationToken)
+  name.vb: GetLastCloseCandleAsync(String, Timeframe?, CancellationToken)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync(String, Pt.Okx.Sdk.Enums.Timeframe?, System.Threading.CancellationToken)
+  nameWithType: ITimeSeriesClient.GetLastCloseCandleAsync(string?, Timeframe?, CancellationToken)
+  nameWithType.vb: ITimeSeriesClient.GetLastCloseCandleAsync(String, Timeframe?, CancellationToken)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync*
+  name: GetLastCloseCandleAsync
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetLastCloseCandleAsync_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync
+  nameWithType: ITimeSeriesClient.GetLastCloseCandleAsync
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandle(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe})
   name: GetLastClosedCandle(string?, Timeframe?)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetLastClosedCandle_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__
@@ -2562,22 +2442,22 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandle
   nameWithType: ITimeSeriesClient.GetLastClosedCandle
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHCLVAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Threading.CancellationToken)
-  name: GetOHCLVAsync(string?, Timeframe?, int, CancellationToken)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetOHCLVAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Threading_CancellationToken_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHCLVAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Threading.CancellationToken)
-  name.vb: GetOHCLVAsync(String, Timeframe?, Integer, CancellationToken)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHCLVAsync(string?, Pt.Okx.Sdk.Enums.Timeframe?, int, System.Threading.CancellationToken)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHCLVAsync(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, System.Threading.CancellationToken)
-  nameWithType: ITimeSeriesClient.GetOHCLVAsync(string?, Timeframe?, int, CancellationToken)
-  nameWithType.vb: ITimeSeriesClient.GetOHCLVAsync(String, Timeframe?, Integer, CancellationToken)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHCLVAsync*
-  name: GetOHCLVAsync
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetOHCLVAsync_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHCLVAsync
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHLCVAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Threading.CancellationToken)
+  name: GetOHLCVAsync(string?, Timeframe?, int, CancellationToken)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetOHLCVAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHLCVAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Threading.CancellationToken)
+  name.vb: GetOHLCVAsync(String, Timeframe?, Integer, CancellationToken)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHLCVAsync(string?, Pt.Okx.Sdk.Enums.Timeframe?, int, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHLCVAsync(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, System.Threading.CancellationToken)
+  nameWithType: ITimeSeriesClient.GetOHLCVAsync(string?, Timeframe?, int, CancellationToken)
+  nameWithType.vb: ITimeSeriesClient.GetOHLCVAsync(String, Timeframe?, Integer, CancellationToken)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHLCVAsync*
+  name: GetOHLCVAsync
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetOHLCVAsync_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHLCVAsync
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHCLVAsync
-  nameWithType: ITimeSeriesClient.GetOHCLVAsync
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHLCVAsync
+  nameWithType: ITimeSeriesClient.GetOHLCVAsync
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOpenCandle(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe})
   name: GetOpenCandle(string?, Timeframe?)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetOpenCandle_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__
@@ -3942,22 +3822,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetPositionsAsync
   nameWithType: ITradeClient.GetPositionsAsync
-- uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)
-  name: GetUserTradeAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)
-  href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_
-  commentId: M:Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)
-  name.vb: GetUserTradeAsync(String, String, Long?, Date?, Date?, CancellationToken)
-  fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(string?, string?, long?, System.DateTime?, System.DateTime?, System.Threading.CancellationToken)
-  fullName.vb: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync(String, String, Long?, Date?, Date?, System.Threading.CancellationToken)
-  nameWithType: ITradeClient.GetUserTradeAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)
-  nameWithType.vb: ITradeClient.GetUserTradeAsync(String, String, Long?, Date?, Date?, CancellationToken)
-- uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync*
-  name: GetUserTradeAsync
-  href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradeAsync_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradeAsync
-  nameWithType: ITradeClient.GetUserTradeAsync
 - uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)
   name: GetUserTradesArchiveAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)
   href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesArchiveAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_
@@ -3974,6 +3838,22 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesArchiveAsync
   nameWithType: ITradeClient.GetUserTradesArchiveAsync
+- uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  name: GetUserTradesAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)
+  href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesAsync_System_String_System_String_System_Nullable_System_Int64__System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync(System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  name.vb: GetUserTradesAsync(String, String, Long?, Date?, Date?, CancellationToken)
+  fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync(string?, string?, long?, System.DateTime?, System.DateTime?, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync(String, String, Long?, Date?, Date?, System.Threading.CancellationToken)
+  nameWithType: ITradeClient.GetUserTradesAsync(string?, string?, long?, DateTime?, DateTime?, CancellationToken)
+  nameWithType.vb: ITradeClient.GetUserTradesAsync(String, String, Long?, Date?, Date?, CancellationToken)
+- uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync*
+  name: GetUserTradesAsync
+  href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_GetUserTradesAsync_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.GetUserTradesAsync
+  nameWithType: ITradeClient.GetUserTradesAsync
 - uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.OrderCheckAsync(System.String,Pt.Okx.Sdk.Enums.OrderSide,Pt.Okx.Sdk.Enums.OrderType,System.Decimal,System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Enums.PositionSide},System.Nullable{Pt.Okx.Sdk.Enums.TradeMode},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.TriggerPriceType},System.Nullable{Pt.Okx.Sdk.Clients.Trading.Enums.QuantityAsset},System.Nullable{System.Boolean},System.Threading.CancellationToken)
   name: OrderCheckAsync(string, OrderSide, OrderType, decimal, decimal?, PositionSide?, TradeMode?, decimal?, decimal?, decimal?, decimal?, TriggerPriceType?, TriggerPriceType?, QuantityAsset?, bool?, CancellationToken)
   href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_OrderCheckAsync_System_String_Pt_Okx_Sdk_Enums_OrderSide_Pt_Okx_Sdk_Enums_OrderType_System_Decimal_System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Enums_PositionSide__System_Nullable_Pt_Okx_Sdk_Enums_TradeMode__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_System_Decimal__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_TriggerPriceType__System_Nullable_Pt_Okx_Sdk_Clients_Trading_Enums_QuantityAsset__System_Nullable_System_Boolean__System_Threading_CancellationToken_
@@ -4022,22 +3902,22 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.PlaceOrderAsync
   nameWithType: ITradeClient.PlaceOrderAsync
-- uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(System.String)
-  name: SetMagicNumber(string)
-  href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_System_String_
-  commentId: M:Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(System.String)
-  name.vb: SetMagicNumber(String)
-  fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(string)
-  fullName.vb: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber(String)
-  nameWithType: ITradeClient.SetMagicNumber(string)
-  nameWithType.vb: ITradeClient.SetMagicNumber(String)
-- uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber*
-  name: SetMagicNumber
-  href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetMagicNumber_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber
+- uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix(System.String)
+  name: SetOrderSourceIdPrefix(string)
+  href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetOrderSourceIdPrefix_System_String_
+  commentId: M:Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix(System.String)
+  name.vb: SetOrderSourceIdPrefix(String)
+  fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix(string)
+  fullName.vb: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix(String)
+  nameWithType: ITradeClient.SetOrderSourceIdPrefix(string)
+  nameWithType.vb: ITradeClient.SetOrderSourceIdPrefix(String)
+- uid: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix*
+  name: SetOrderSourceIdPrefix
+  href: api/Pt.Okx.Sdk.Clients.Trading.ITradeClient.html#Pt_Okx_Sdk_Clients_Trading_ITradeClient_SetOrderSourceIdPrefix_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetMagicNumber
-  nameWithType: ITradeClient.SetMagicNumber
+  fullName: Pt.Okx.Sdk.Clients.Trading.ITradeClient.SetOrderSourceIdPrefix
+  nameWithType: ITradeClient.SetOrderSourceIdPrefix
 - uid: Pt.Okx.Sdk.Clients.Trading.Models
   name: Pt.Okx.Sdk.Clients.Trading.Models
   href: api/Pt.Okx.Sdk.Clients.Trading.Models.html
@@ -11466,6 +11346,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.FullCount
   nameWithType: IIndicatorBuffer.FullCount
+- uid: Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount
+  name: GetCalculatedBarCount()
+  href: api/Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html#Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCalculatedBarCount
+  commentId: M:Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount
+  fullName: Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount()
+  nameWithType: IIndicatorBuffer.GetCalculatedBarCount()
+- uid: Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount*
+  name: GetCalculatedBarCount
+  href: api/Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html#Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCalculatedBarCount_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCalculatedBarCount
+  nameWithType: IIndicatorBuffer.GetCalculatedBarCount
 - uid: Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.GetCurrentEndIndexDebug
   name: GetCurrentEndIndexDebug()
   href: api/Pt.Okx.Sdk.Indicators.Base.IIndicatorBuffer.html#Pt_Okx_Sdk_Indicators_Base_IIndicatorBuffer_GetCurrentEndIndexDebug
@@ -18116,13 +18009,13 @@ references:
   fullName: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogConsole
   nameWithType: IStrategyLogger.LogConsole
 - uid: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical(System.Exception,System.String,System.String,System.Object[])
-  name: LogCritical(Exception, string, string?, params object?[])
+  name: LogCritical(Exception?, string, string?, params object?[])
   href: api/Pt.Okx.Sdk.Strategy.IStrategyLogger.html#Pt_Okx_Sdk_Strategy_IStrategyLogger_LogCritical_System_Exception_System_String_System_String_System_Object___
   commentId: M:Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical(System.Exception,System.String,System.String,System.Object[])
   name.vb: LogCritical(Exception, String, String, ParamArray Object())
-  fullName: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical(System.Exception, string, string?, params object?[])
+  fullName: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical(System.Exception?, string, string?, params object?[])
   fullName.vb: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical(System.Exception, String, String, ParamArray Object())
-  nameWithType: IStrategyLogger.LogCritical(Exception, string, string?, params object?[])
+  nameWithType: IStrategyLogger.LogCritical(Exception?, string, string?, params object?[])
   nameWithType.vb: IStrategyLogger.LogCritical(Exception, String, String, ParamArray Object())
 - uid: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogCritical(System.String,System.String,System.Object[])
   name: LogCritical(string, string?, params object?[])
@@ -18173,13 +18066,13 @@ references:
   fullName: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogEntry
   nameWithType: IStrategyLogger.LogEntry
 - uid: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogError(System.Exception,System.String,System.String,System.Object[])
-  name: LogError(Exception, string, string?, params object?[])
+  name: LogError(Exception?, string, string?, params object?[])
   href: api/Pt.Okx.Sdk.Strategy.IStrategyLogger.html#Pt_Okx_Sdk_Strategy_IStrategyLogger_LogError_System_Exception_System_String_System_String_System_Object___
   commentId: M:Pt.Okx.Sdk.Strategy.IStrategyLogger.LogError(System.Exception,System.String,System.String,System.Object[])
   name.vb: LogError(Exception, String, String, ParamArray Object())
-  fullName: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogError(System.Exception, string, string?, params object?[])
+  fullName: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogError(System.Exception?, string, string?, params object?[])
   fullName.vb: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogError(System.Exception, String, String, ParamArray Object())
-  nameWithType: IStrategyLogger.LogError(Exception, string, string?, params object?[])
+  nameWithType: IStrategyLogger.LogError(Exception?, string, string?, params object?[])
   nameWithType.vb: IStrategyLogger.LogError(Exception, String, String, ParamArray Object())
 - uid: Pt.Okx.Sdk.Strategy.IStrategyLogger.LogError*
   name: LogError
