@@ -82,6 +82,7 @@ Task<CandleData> GetCurrentCandleAsync(string? symbol = null, Timeframe? timefra
 DateTime GetTime(Timeframe timeframe, int shift);
 CandleData GetOpenCandle(string? symbol = null, Timeframe? timeframe = null);
 CandleData GetLastClosedCandle(string? symbol = null, Timeframe? timeframe = null);
+void UpdateOpenCandleIndicators(string? symbol = null, Timeframe? timeframe = null);
 ```
 
 **Parameters**
@@ -106,6 +107,35 @@ Logger.Info($"Last closed candle close price: {lastClosed.Close}");
 
 // Get the open time of the current forming candle
 DateTime currentOpenTime = Market.GetTime(Timeframe.OneMinute, 0);
+```
+
+### UpdateOpenCandleIndicators
+
+Manually forces an on-demand recalculation of indicators using the current open candle data (forming candle).
+
+By default, to save CPU in real-time execution (and backtest), indicator calculations are skipped on intermediate ticks. The system automatically calculates the indicator exactly *once* at the first tick of a new bar to seed the indicator buffer and maintain synchronization with the pricing array lengths. Therefore, if a strategy does NOT call `UpdateOpenCandleIndicators`, the latest element of the indicator's buffer (at index 0) will remain as the value calculated at the **open tick** of the forming candle.
+
+If your strategy logic explicitly requires the most up-to-date indicator value matching the current open candle tick, call this method *before* copying buffer data. Note that if no timeframe is specified (or is null), the method will automatically update indicators for **all active timeframes** used by indicators in the strategy.
+
+```csharp
+void UpdateOpenCandleIndicators(string? symbol = null, Timeframe? timeframe = null);
+```
+
+**Parameters**
+
+| Parameter | Type | Description |
+|---|---|---|
+| `symbol` | `string?` | The target symbol. Defaults to the strategy's primary symbol. |
+| `timeframe` | `Timeframe?` | The target timeframe. If left null, all indicator timeframes for the symbol are updated. |
+
+**Example**
+
+```csharp
+// Force indicator buffers to update with the current tick price
+Market.UpdateOpenCandleIndicators();
+
+// Now CopyBuffer or accessing indicator.GetValue(0) will reflect the open candle's value
+var currentRsi = rsi[0];
 ```
 
 ## CopyBuffer

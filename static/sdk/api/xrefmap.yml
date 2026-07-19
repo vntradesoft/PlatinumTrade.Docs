@@ -1338,24 +1338,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyBuffer
   nameWithType: ITimeSeriesClient.CopyBuffer
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name: CopyCloses(string?, Timeframe?, DateTime, DateTime)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyCloses_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_DateTime_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name.vb: CopyCloses(String, Timeframe?, Date, Date)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, System.DateTime)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Date)
-  nameWithType: ITimeSeriesClient.CopyCloses(string?, Timeframe?, DateTime, DateTime)
-  nameWithType.vb: ITimeSeriesClient.CopyCloses(String, Timeframe?, Date, Date)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name: CopyCloses(string?, Timeframe?, DateTime, int)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyCloses_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_Int32_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name.vb: CopyCloses(String, Timeframe?, Date, Integer)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, int)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Integer)
-  nameWithType: ITimeSeriesClient.CopyCloses(string?, Timeframe?, DateTime, int)
-  nameWithType.vb: ITimeSeriesClient.CopyCloses(String, Timeframe?, Date, Integer)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Int32)
   name: CopyCloses(string?, Timeframe?, int, int)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyCloses_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Int32_
@@ -1365,6 +1347,24 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, Integer)
   nameWithType: ITimeSeriesClient.CopyCloses(string?, Timeframe?, int, int)
   nameWithType.vb: ITimeSeriesClient.CopyCloses(String, Timeframe?, Integer, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name: CopyCloses(string?, Timeframe?, DateTime?, int)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyCloses_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Int32_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name.vb: CopyCloses(String, Timeframe?, Date?, Integer)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, int)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Integer)
+  nameWithType: ITimeSeriesClient.CopyCloses(string?, Timeframe?, DateTime?, int)
+  nameWithType.vb: ITimeSeriesClient.CopyCloses(String, Timeframe?, Date?, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name: CopyCloses(string?, Timeframe?, DateTime?, DateTime?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyCloses_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Nullable_System_DateTime__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name.vb: CopyCloses(String, Timeframe?, Date?, Date?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, System.DateTime?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Date?)
+  nameWithType: ITimeSeriesClient.CopyCloses(string?, Timeframe?, DateTime?, DateTime?)
+  nameWithType.vb: ITimeSeriesClient.CopyCloses(String, Timeframe?, Date?, Date?)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses*
   name: CopyCloses
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyCloses_
@@ -1372,24 +1372,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyCloses
   nameWithType: ITimeSeriesClient.CopyCloses
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name: CopyHighs(string?, Timeframe?, DateTime, DateTime)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyHighs_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_DateTime_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name.vb: CopyHighs(String, Timeframe?, Date, Date)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, System.DateTime)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Date)
-  nameWithType: ITimeSeriesClient.CopyHighs(string?, Timeframe?, DateTime, DateTime)
-  nameWithType.vb: ITimeSeriesClient.CopyHighs(String, Timeframe?, Date, Date)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name: CopyHighs(string?, Timeframe?, DateTime, int)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyHighs_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_Int32_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name.vb: CopyHighs(String, Timeframe?, Date, Integer)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, int)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Integer)
-  nameWithType: ITimeSeriesClient.CopyHighs(string?, Timeframe?, DateTime, int)
-  nameWithType.vb: ITimeSeriesClient.CopyHighs(String, Timeframe?, Date, Integer)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Int32)
   name: CopyHighs(string?, Timeframe?, int, int)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyHighs_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Int32_
@@ -1399,6 +1381,24 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, Integer)
   nameWithType: ITimeSeriesClient.CopyHighs(string?, Timeframe?, int, int)
   nameWithType.vb: ITimeSeriesClient.CopyHighs(String, Timeframe?, Integer, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name: CopyHighs(string?, Timeframe?, DateTime?, int)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyHighs_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Int32_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name.vb: CopyHighs(String, Timeframe?, Date?, Integer)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, int)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Integer)
+  nameWithType: ITimeSeriesClient.CopyHighs(string?, Timeframe?, DateTime?, int)
+  nameWithType.vb: ITimeSeriesClient.CopyHighs(String, Timeframe?, Date?, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name: CopyHighs(string?, Timeframe?, DateTime?, DateTime?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyHighs_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Nullable_System_DateTime__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name.vb: CopyHighs(String, Timeframe?, Date?, Date?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, System.DateTime?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Date?)
+  nameWithType: ITimeSeriesClient.CopyHighs(string?, Timeframe?, DateTime?, DateTime?)
+  nameWithType.vb: ITimeSeriesClient.CopyHighs(String, Timeframe?, Date?, Date?)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs*
   name: CopyHighs
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyHighs_
@@ -1406,24 +1406,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyHighs
   nameWithType: ITimeSeriesClient.CopyHighs
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name: CopyLows(string?, Timeframe?, DateTime, DateTime)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyLows_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_DateTime_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name.vb: CopyLows(String, Timeframe?, Date, Date)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, System.DateTime)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Date)
-  nameWithType: ITimeSeriesClient.CopyLows(string?, Timeframe?, DateTime, DateTime)
-  nameWithType.vb: ITimeSeriesClient.CopyLows(String, Timeframe?, Date, Date)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name: CopyLows(string?, Timeframe?, DateTime, int)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyLows_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_Int32_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name.vb: CopyLows(String, Timeframe?, Date, Integer)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, int)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Integer)
-  nameWithType: ITimeSeriesClient.CopyLows(string?, Timeframe?, DateTime, int)
-  nameWithType.vb: ITimeSeriesClient.CopyLows(String, Timeframe?, Date, Integer)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Int32)
   name: CopyLows(string?, Timeframe?, int, int)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyLows_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Int32_
@@ -1433,6 +1415,24 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, Integer)
   nameWithType: ITimeSeriesClient.CopyLows(string?, Timeframe?, int, int)
   nameWithType.vb: ITimeSeriesClient.CopyLows(String, Timeframe?, Integer, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name: CopyLows(string?, Timeframe?, DateTime?, int)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyLows_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Int32_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name.vb: CopyLows(String, Timeframe?, Date?, Integer)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, int)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Integer)
+  nameWithType: ITimeSeriesClient.CopyLows(string?, Timeframe?, DateTime?, int)
+  nameWithType.vb: ITimeSeriesClient.CopyLows(String, Timeframe?, Date?, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name: CopyLows(string?, Timeframe?, DateTime?, DateTime?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyLows_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Nullable_System_DateTime__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name.vb: CopyLows(String, Timeframe?, Date?, Date?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, System.DateTime?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Date?)
+  nameWithType: ITimeSeriesClient.CopyLows(string?, Timeframe?, DateTime?, DateTime?)
+  nameWithType.vb: ITimeSeriesClient.CopyLows(String, Timeframe?, Date?, Date?)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows*
   name: CopyLows
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyLows_
@@ -1440,24 +1440,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyLows
   nameWithType: ITimeSeriesClient.CopyLows
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name: CopyOpens(string?, Timeframe?, DateTime, DateTime)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyOpens_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_DateTime_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name.vb: CopyOpens(String, Timeframe?, Date, Date)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, System.DateTime)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Date)
-  nameWithType: ITimeSeriesClient.CopyOpens(string?, Timeframe?, DateTime, DateTime)
-  nameWithType.vb: ITimeSeriesClient.CopyOpens(String, Timeframe?, Date, Date)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name: CopyOpens(string?, Timeframe?, DateTime, int)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyOpens_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_Int32_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name.vb: CopyOpens(String, Timeframe?, Date, Integer)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, int)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Integer)
-  nameWithType: ITimeSeriesClient.CopyOpens(string?, Timeframe?, DateTime, int)
-  nameWithType.vb: ITimeSeriesClient.CopyOpens(String, Timeframe?, Date, Integer)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Int32)
   name: CopyOpens(string?, Timeframe?, int, int)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyOpens_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Int32_
@@ -1467,6 +1449,24 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, Integer)
   nameWithType: ITimeSeriesClient.CopyOpens(string?, Timeframe?, int, int)
   nameWithType.vb: ITimeSeriesClient.CopyOpens(String, Timeframe?, Integer, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name: CopyOpens(string?, Timeframe?, DateTime?, int)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyOpens_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Int32_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name.vb: CopyOpens(String, Timeframe?, Date?, Integer)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, int)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Integer)
+  nameWithType: ITimeSeriesClient.CopyOpens(string?, Timeframe?, DateTime?, int)
+  nameWithType.vb: ITimeSeriesClient.CopyOpens(String, Timeframe?, Date?, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name: CopyOpens(string?, Timeframe?, DateTime?, DateTime?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyOpens_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Nullable_System_DateTime__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name.vb: CopyOpens(String, Timeframe?, Date?, Date?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, System.DateTime?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Date?)
+  nameWithType: ITimeSeriesClient.CopyOpens(string?, Timeframe?, DateTime?, DateTime?)
+  nameWithType.vb: ITimeSeriesClient.CopyOpens(String, Timeframe?, Date?, Date?)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyOpens*
   name: CopyOpens
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyOpens_
@@ -1496,24 +1496,6 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, System.Collections.Generic.IEnumerable(Of Pt.Okx.Sdk.Clients.Market.Models.CandleData))
   nameWithType: ITimeSeriesClient.CopyPrices(AppliedPrice, IEnumerable<CandleData>)
   nameWithType.vb: ITimeSeriesClient.CopyPrices(AppliedPrice, IEnumerable(Of CandleData))
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name: CopyPrices(AppliedPrice, string?, Timeframe?, DateTime, DateTime)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyPrices_Pt_Okx_Sdk_Indicators_Enums_AppliedPrice_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_DateTime_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name.vb: CopyPrices(AppliedPrice, String, Timeframe?, Date, Date)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, System.DateTime)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Date)
-  nameWithType: ITimeSeriesClient.CopyPrices(AppliedPrice, string?, Timeframe?, DateTime, DateTime)
-  nameWithType.vb: ITimeSeriesClient.CopyPrices(AppliedPrice, String, Timeframe?, Date, Date)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name: CopyPrices(AppliedPrice, string?, Timeframe?, DateTime, int)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyPrices_Pt_Okx_Sdk_Indicators_Enums_AppliedPrice_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_Int32_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name.vb: CopyPrices(AppliedPrice, String, Timeframe?, Date, Integer)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, int)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Integer)
-  nameWithType: ITimeSeriesClient.CopyPrices(AppliedPrice, string?, Timeframe?, DateTime, int)
-  nameWithType.vb: ITimeSeriesClient.CopyPrices(AppliedPrice, String, Timeframe?, Date, Integer)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Int32)
   name: CopyPrices(AppliedPrice, string?, Timeframe?, int, int)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyPrices_Pt_Okx_Sdk_Indicators_Enums_AppliedPrice_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Int32_
@@ -1523,6 +1505,24 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, Integer)
   nameWithType: ITimeSeriesClient.CopyPrices(AppliedPrice, string?, Timeframe?, int, int)
   nameWithType.vb: ITimeSeriesClient.CopyPrices(AppliedPrice, String, Timeframe?, Integer, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name: CopyPrices(AppliedPrice, string?, Timeframe?, DateTime?, int)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyPrices_Pt_Okx_Sdk_Indicators_Enums_AppliedPrice_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Int32_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name.vb: CopyPrices(AppliedPrice, String, Timeframe?, Date?, Integer)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, int)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Integer)
+  nameWithType: ITimeSeriesClient.CopyPrices(AppliedPrice, string?, Timeframe?, DateTime?, int)
+  nameWithType.vb: ITimeSeriesClient.CopyPrices(AppliedPrice, String, Timeframe?, Date?, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name: CopyPrices(AppliedPrice, string?, Timeframe?, DateTime?, DateTime?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyPrices_Pt_Okx_Sdk_Indicators_Enums_AppliedPrice_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Nullable_System_DateTime__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice,System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name.vb: CopyPrices(AppliedPrice, String, Timeframe?, Date?, Date?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, System.DateTime?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice, String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Date?)
+  nameWithType: ITimeSeriesClient.CopyPrices(AppliedPrice, string?, Timeframe?, DateTime?, DateTime?)
+  nameWithType.vb: ITimeSeriesClient.CopyPrices(AppliedPrice, String, Timeframe?, Date?, Date?)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices*
   name: CopyPrices
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyPrices_
@@ -1530,24 +1530,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyPrices
   nameWithType: ITimeSeriesClient.CopyPrices
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name: CopySeries(string?, Timeframe?, DateTime, DateTime)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopySeries_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_DateTime_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name.vb: CopySeries(String, Timeframe?, Date, Date)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, System.DateTime)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Date)
-  nameWithType: ITimeSeriesClient.CopySeries(string?, Timeframe?, DateTime, DateTime)
-  nameWithType.vb: ITimeSeriesClient.CopySeries(String, Timeframe?, Date, Date)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name: CopySeries(string?, Timeframe?, DateTime, int)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopySeries_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_Int32_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name.vb: CopySeries(String, Timeframe?, Date, Integer)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, int)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Integer)
-  nameWithType: ITimeSeriesClient.CopySeries(string?, Timeframe?, DateTime, int)
-  nameWithType.vb: ITimeSeriesClient.CopySeries(String, Timeframe?, Date, Integer)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Int32)
   name: CopySeries(string?, Timeframe?, int, int)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopySeries_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Int32_
@@ -1557,6 +1539,24 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, Integer)
   nameWithType: ITimeSeriesClient.CopySeries(string?, Timeframe?, int, int)
   nameWithType.vb: ITimeSeriesClient.CopySeries(String, Timeframe?, Integer, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name: CopySeries(string?, Timeframe?, DateTime?, int)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopySeries_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Int32_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name.vb: CopySeries(String, Timeframe?, Date?, Integer)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, int)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Integer)
+  nameWithType: ITimeSeriesClient.CopySeries(string?, Timeframe?, DateTime?, int)
+  nameWithType.vb: ITimeSeriesClient.CopySeries(String, Timeframe?, Date?, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name: CopySeries(string?, Timeframe?, DateTime?, DateTime?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopySeries_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Nullable_System_DateTime__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name.vb: CopySeries(String, Timeframe?, Date?, Date?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, System.DateTime?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Date?)
+  nameWithType: ITimeSeriesClient.CopySeries(string?, Timeframe?, DateTime?, DateTime?)
+  nameWithType.vb: ITimeSeriesClient.CopySeries(String, Timeframe?, Date?, Date?)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries*
   name: CopySeries
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopySeries_
@@ -1564,24 +1564,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopySeries
   nameWithType: ITimeSeriesClient.CopySeries
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name: CopyTimes(string?, Timeframe?, DateTime, DateTime)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyTimes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_DateTime_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name.vb: CopyTimes(String, Timeframe?, Date, Date)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, System.DateTime)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Date)
-  nameWithType: ITimeSeriesClient.CopyTimes(string?, Timeframe?, DateTime, DateTime)
-  nameWithType.vb: ITimeSeriesClient.CopyTimes(String, Timeframe?, Date, Date)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name: CopyTimes(string?, Timeframe?, DateTime, int)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyTimes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_Int32_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name.vb: CopyTimes(String, Timeframe?, Date, Integer)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, int)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Integer)
-  nameWithType: ITimeSeriesClient.CopyTimes(string?, Timeframe?, DateTime, int)
-  nameWithType.vb: ITimeSeriesClient.CopyTimes(String, Timeframe?, Date, Integer)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Int32)
   name: CopyTimes(string?, Timeframe?, int, int)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyTimes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Int32_
@@ -1591,6 +1573,24 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, Integer)
   nameWithType: ITimeSeriesClient.CopyTimes(string?, Timeframe?, int, int)
   nameWithType.vb: ITimeSeriesClient.CopyTimes(String, Timeframe?, Integer, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name: CopyTimes(string?, Timeframe?, DateTime?, int)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyTimes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Int32_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name.vb: CopyTimes(String, Timeframe?, Date?, Integer)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, int)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Integer)
+  nameWithType: ITimeSeriesClient.CopyTimes(string?, Timeframe?, DateTime?, int)
+  nameWithType.vb: ITimeSeriesClient.CopyTimes(String, Timeframe?, Date?, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name: CopyTimes(string?, Timeframe?, DateTime?, DateTime?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyTimes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Nullable_System_DateTime__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name.vb: CopyTimes(String, Timeframe?, Date?, Date?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, System.DateTime?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Date?)
+  nameWithType: ITimeSeriesClient.CopyTimes(string?, Timeframe?, DateTime?, DateTime?)
+  nameWithType.vb: ITimeSeriesClient.CopyTimes(String, Timeframe?, Date?, Date?)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes*
   name: CopyTimes
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyTimes_
@@ -1598,24 +1598,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyTimes
   nameWithType: ITimeSeriesClient.CopyTimes
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name: CopyVolumes(string?, Timeframe?, DateTime, DateTime)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyVolumes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_DateTime_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.DateTime)
-  name.vb: CopyVolumes(String, Timeframe?, Date, Date)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, System.DateTime)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Date)
-  nameWithType: ITimeSeriesClient.CopyVolumes(string?, Timeframe?, DateTime, DateTime)
-  nameWithType.vb: ITimeSeriesClient.CopyVolumes(String, Timeframe?, Date, Date)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name: CopyVolumes(string?, Timeframe?, DateTime, int)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyVolumes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_DateTime_System_Int32_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.DateTime,System.Int32)
-  name.vb: CopyVolumes(String, Timeframe?, Date, Integer)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime, int)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(String, Pt.Okx.Sdk.Enums.Timeframe?, Date, Integer)
-  nameWithType: ITimeSeriesClient.CopyVolumes(string?, Timeframe?, DateTime, int)
-  nameWithType.vb: ITimeSeriesClient.CopyVolumes(String, Timeframe?, Date, Integer)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Int32)
   name: CopyVolumes(string?, Timeframe?, int, int)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyVolumes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Int32_
@@ -1625,6 +1607,24 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(String, Pt.Okx.Sdk.Enums.Timeframe?, Integer, Integer)
   nameWithType: ITimeSeriesClient.CopyVolumes(string?, Timeframe?, int, int)
   nameWithType.vb: ITimeSeriesClient.CopyVolumes(String, Timeframe?, Integer, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name: CopyVolumes(string?, Timeframe?, DateTime?, int)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyVolumes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Int32_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Int32)
+  name.vb: CopyVolumes(String, Timeframe?, Date?, Integer)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, int)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Integer)
+  nameWithType: ITimeSeriesClient.CopyVolumes(string?, Timeframe?, DateTime?, int)
+  nameWithType.vb: ITimeSeriesClient.CopyVolumes(String, Timeframe?, Date?, Integer)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name: CopyVolumes(string?, Timeframe?, DateTime?, DateTime?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyVolumes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_DateTime__System_Nullable_System_DateTime__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.DateTime},System.Nullable{System.DateTime})
+  name.vb: CopyVolumes(String, Timeframe?, Date?, Date?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.DateTime?, System.DateTime?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes(String, Pt.Okx.Sdk.Enums.Timeframe?, Date?, Date?)
+  nameWithType: ITimeSeriesClient.CopyVolumes(string?, Timeframe?, DateTime?, DateTime?)
+  nameWithType.vb: ITimeSeriesClient.CopyVolumes(String, Timeframe?, Date?, Date?)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CopyVolumes*
   name: CopyVolumes
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CopyVolumes_
@@ -2391,18 +2391,25 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.EndTime
   nameWithType: ITimeSeriesClient.EndTime
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleTime(Pt.Okx.Sdk.Enums.Timeframe)
+  name: GetCurrentCandleTime(Timeframe)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetCurrentCandleTime_Pt_Okx_Sdk_Enums_Timeframe_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleTime(Pt.Okx.Sdk.Enums.Timeframe)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleTime(Pt.Okx.Sdk.Enums.Timeframe)
+  nameWithType: ITimeSeriesClient.GetCurrentCandleTime(Timeframe)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleTime*
+  name: GetCurrentCandleTime
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetCurrentCandleTime_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleTime
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentCandleTime
+  nameWithType: ITimeSeriesClient.GetCurrentCandleTime
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime
   name: GetCurrentTime()
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetCurrentTime
   commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime()
   nameWithType: ITimeSeriesClient.GetCurrentTime()
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime(Pt.Okx.Sdk.Enums.Timeframe)
-  name: GetCurrentTime(Timeframe)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetCurrentTime_Pt_Okx_Sdk_Enums_Timeframe_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime(Pt.Okx.Sdk.Enums.Timeframe)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime(Pt.Okx.Sdk.Enums.Timeframe)
-  nameWithType: ITimeSeriesClient.GetCurrentTime(Timeframe)
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime*
   name: GetCurrentTime
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetCurrentTime_
@@ -2410,22 +2417,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetCurrentTime
   nameWithType: ITimeSeriesClient.GetCurrentTime
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Threading.CancellationToken)
-  name: GetLastCloseCandleAsync(string?, Timeframe?, CancellationToken)
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetLastCloseCandleAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Threading_CancellationToken_
-  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Threading.CancellationToken)
-  name.vb: GetLastCloseCandleAsync(String, Timeframe?, CancellationToken)
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.Threading.CancellationToken)
-  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync(String, Pt.Okx.Sdk.Enums.Timeframe?, System.Threading.CancellationToken)
-  nameWithType: ITimeSeriesClient.GetLastCloseCandleAsync(string?, Timeframe?, CancellationToken)
-  nameWithType.vb: ITimeSeriesClient.GetLastCloseCandleAsync(String, Timeframe?, CancellationToken)
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync*
-  name: GetLastCloseCandleAsync
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetLastCloseCandleAsync_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastCloseCandleAsync
-  nameWithType: ITimeSeriesClient.GetLastCloseCandleAsync
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandle(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe})
   name: GetLastClosedCandle(string?, Timeframe?)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetLastClosedCandle_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__
@@ -2442,6 +2433,22 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandle
   nameWithType: ITimeSeriesClient.GetLastClosedCandle
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandleAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Threading.CancellationToken)
+  name: GetLastClosedCandleAsync(string?, Timeframe?, CancellationToken)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetLastClosedCandleAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Threading_CancellationToken_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandleAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Threading.CancellationToken)
+  name.vb: GetLastClosedCandleAsync(String, Timeframe?, CancellationToken)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandleAsync(string?, Pt.Okx.Sdk.Enums.Timeframe?, System.Threading.CancellationToken)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandleAsync(String, Pt.Okx.Sdk.Enums.Timeframe?, System.Threading.CancellationToken)
+  nameWithType: ITimeSeriesClient.GetLastClosedCandleAsync(string?, Timeframe?, CancellationToken)
+  nameWithType.vb: ITimeSeriesClient.GetLastClosedCandleAsync(String, Timeframe?, CancellationToken)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandleAsync*
+  name: GetLastClosedCandleAsync
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetLastClosedCandleAsync_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandleAsync
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetLastClosedCandleAsync
+  nameWithType: ITimeSeriesClient.GetLastClosedCandleAsync
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.GetOHLCVAsync(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Int32,System.Threading.CancellationToken)
   name: GetOHLCVAsync(string?, Timeframe?, int, CancellationToken)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_GetOHLCVAsync_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Int32_System_Threading_CancellationToken_
@@ -2542,19 +2549,35 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.StartTime
   nameWithType: ITimeSeriesClient.StartTime
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimes
-  name: SymbolsTimes
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_SymbolsTimes
-  commentId: P:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimes
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimes
-  nameWithType: ITimeSeriesClient.SymbolsTimes
-- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimes*
-  name: SymbolsTimes
-  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_SymbolsTimes_
-  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimes
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimeframes
+  name: SymbolsTimeframes
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_SymbolsTimeframes
+  commentId: P:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimeframes
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimeframes
+  nameWithType: ITimeSeriesClient.SymbolsTimeframes
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimeframes*
+  name: SymbolsTimeframes
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_SymbolsTimeframes_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimeframes
   isSpec: "True"
-  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimes
-  nameWithType: ITimeSeriesClient.SymbolsTimes
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.SymbolsTimeframes
+  nameWithType: ITimeSeriesClient.SymbolsTimeframes
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.UpdateOpenCandleIndicators(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe})
+  name: UpdateOpenCandleIndicators(string?, Timeframe?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_UpdateOpenCandleIndicators_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.UpdateOpenCandleIndicators(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe})
+  name.vb: UpdateOpenCandleIndicators(String, Timeframe?)
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.UpdateOpenCandleIndicators(string?, Pt.Okx.Sdk.Enums.Timeframe?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.UpdateOpenCandleIndicators(String, Pt.Okx.Sdk.Enums.Timeframe?)
+  nameWithType: ITimeSeriesClient.UpdateOpenCandleIndicators(string?, Timeframe?)
+  nameWithType.vb: ITimeSeriesClient.UpdateOpenCandleIndicators(String, Timeframe?)
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.UpdateOpenCandleIndicators*
+  name: UpdateOpenCandleIndicators
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_UpdateOpenCandleIndicators_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.UpdateOpenCandleIndicators
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.UpdateOpenCandleIndicators
+  nameWithType: ITimeSeriesClient.UpdateOpenCandleIndicators
 - uid: Pt.Okx.Sdk.Clients.Market.Models
   name: Pt.Okx.Sdk.Clients.Market.Models
   href: api/Pt.Okx.Sdk.Clients.Market.Models.html
@@ -2805,6 +2828,83 @@ references:
   fullName.vb: Pt.Okx.Sdk.Clients.Market.Models.CandleData.<=
   nameWithType: CandleData.operator <=
   nameWithType.vb: CandleData.<=
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue
+  name: PriceValue
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html
+  commentId: T:Pt.Okx.Sdk.Clients.Market.Models.PriceValue
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue
+  nameWithType: PriceValue
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.#ctor(System.DateTime,System.Decimal)
+  name: PriceValue(DateTime, decimal)
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue__ctor_System_DateTime_System_Decimal_
+  commentId: M:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.#ctor(System.DateTime,System.Decimal)
+  name.vb: New(Date, Decimal)
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.PriceValue(System.DateTime, decimal)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.New(Date, Decimal)
+  nameWithType: PriceValue.PriceValue(DateTime, decimal)
+  nameWithType.vb: PriceValue.New(Date, Decimal)
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.#ctor*
+  name: PriceValue
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue__ctor_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.PriceValue
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.New
+  nameWithType: PriceValue.PriceValue
+  nameWithType.vb: PriceValue.New
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.IsEmpty
+  name: IsEmpty
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue_IsEmpty
+  commentId: P:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.IsEmpty
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.IsEmpty
+  nameWithType: PriceValue.IsEmpty
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.IsEmpty*
+  name: IsEmpty
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue_IsEmpty_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.IsEmpty
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.IsEmpty
+  nameWithType: PriceValue.IsEmpty
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Time
+  name: Time
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue_Time
+  commentId: P:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Time
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Time
+  nameWithType: PriceValue.Time
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Time*
+  name: Time
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue_Time_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Time
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Time
+  nameWithType: PriceValue.Time
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.ToString
+  name: ToString()
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue_ToString
+  commentId: M:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.ToString
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.ToString()
+  nameWithType: PriceValue.ToString()
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.ToString*
+  name: ToString
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue_ToString_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.ToString
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.ToString
+  nameWithType: PriceValue.ToString
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Value
+  name: Value
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue_Value
+  commentId: P:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Value
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Value
+  nameWithType: PriceValue.Value
+- uid: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Value*
+  name: Value
+  href: api/Pt.Okx.Sdk.Clients.Market.Models.PriceValue.html#Pt_Okx_Sdk_Clients_Market_Models_PriceValue_Value_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Value
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.Models.PriceValue.Value
+  nameWithType: PriceValue.Value
 - uid: Pt.Okx.Sdk.Clients.Market.Models.TickData
   name: TickData
   href: api/Pt.Okx.Sdk.Clients.Market.Models.TickData.html
@@ -16614,6 +16714,19 @@ references:
   commentId: T:Pt.Okx.Sdk.Indicators.Services.IIndicatorManager
   fullName: Pt.Okx.Sdk.Indicators.Services.IIndicatorManager
   nameWithType: IIndicatorManager
+- uid: Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.ClearAllIndicators
+  name: ClearAllIndicators()
+  href: api/Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.html#Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_ClearAllIndicators
+  commentId: M:Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.ClearAllIndicators
+  fullName: Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.ClearAllIndicators()
+  nameWithType: IIndicatorManager.ClearAllIndicators()
+- uid: Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.ClearAllIndicators*
+  name: ClearAllIndicators
+  href: api/Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.html#Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_ClearAllIndicators_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.ClearAllIndicators
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.ClearAllIndicators
+  nameWithType: IIndicatorManager.ClearAllIndicators
 - uid: Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.GetIndicator(System.String)
   name: GetIndicator(string)
   href: api/Pt.Okx.Sdk.Indicators.Services.IIndicatorManager.html#Pt_Okx_Sdk_Indicators_Services_IIndicatorManager_GetIndicator_System_String_
