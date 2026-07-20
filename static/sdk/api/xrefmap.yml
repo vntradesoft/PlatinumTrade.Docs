@@ -2336,6 +2336,22 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorVolumeSpike
   nameWithType: ITimeSeriesClient.CreateIndicatorVolumeSpike
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.String,System.Action{Pt.Okx.Sdk.Indicators.Models.IndicatorProperty})
+  name: CreateIndicatorVolumes(string?, Timeframe?, string?, Action<IndicatorProperty>?)
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CreateIndicatorVolumes_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_String_System_Action_Pt_Okx_Sdk_Indicators_Models_IndicatorProperty__
+  commentId: M:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorVolumes(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.String,System.Action{Pt.Okx.Sdk.Indicators.Models.IndicatorProperty})
+  name.vb: CreateIndicatorVolumes(String, Timeframe?, String, Action(Of IndicatorProperty))
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorVolumes(string?, Pt.Okx.Sdk.Enums.Timeframe?, string?, System.Action<Pt.Okx.Sdk.Indicators.Models.IndicatorProperty>?)
+  fullName.vb: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorVolumes(String, Pt.Okx.Sdk.Enums.Timeframe?, String, System.Action(Of Pt.Okx.Sdk.Indicators.Models.IndicatorProperty))
+  nameWithType: ITimeSeriesClient.CreateIndicatorVolumes(string?, Timeframe?, string?, Action<IndicatorProperty>?)
+  nameWithType.vb: ITimeSeriesClient.CreateIndicatorVolumes(String, Timeframe?, String, Action(Of IndicatorProperty))
+- uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorVolumes*
+  name: CreateIndicatorVolumes
+  href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CreateIndicatorVolumes_
+  commentId: Overload:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorVolumes
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorVolumes
+  nameWithType: ITimeSeriesClient.CreateIndicatorVolumes
 - uid: Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.CreateIndicatorWPR(System.String,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe},System.Nullable{System.Int32},System.String,System.Action{Pt.Okx.Sdk.Indicators.Models.IndicatorProperty})
   name: CreateIndicatorWPR(string?, Timeframe?, int?, string?, Action<IndicatorProperty>?)
   href: api/Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient.html#Pt_Okx_Sdk_Clients_Market_ITimeSeriesClient_CreateIndicatorWPR_System_String_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__System_Nullable_System_Int32__System_String_System_Action_Pt_Okx_Sdk_Indicators_Models_IndicatorProperty__
@@ -13469,6 +13485,28 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumeSpike.IsSpike
   nameWithType: IIndicatorVolumeSpike.IsSpike
+- uid: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes
+  name: IIndicatorVolumes
+  href: api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.html
+  commentId: T:Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes
+  fullName: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes
+  nameWithType: IIndicatorVolumes
+- uid: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.FindVolume(System.Int32)
+  name: FindVolume(int)
+  href: api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.html#Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorVolumes_FindVolume_System_Int32_
+  commentId: M:Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.FindVolume(System.Int32)
+  name.vb: FindVolume(Integer)
+  fullName: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.FindVolume(int)
+  fullName.vb: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.FindVolume(Integer)
+  nameWithType: IIndicatorVolumes.FindVolume(int)
+  nameWithType.vb: IIndicatorVolumes.FindVolume(Integer)
+- uid: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.FindVolume*
+  name: FindVolume
+  href: api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.html#Pt_Okx_Sdk_Indicators_BuiltIn_IIndicatorVolumes_FindVolume_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.FindVolume
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorVolumes.FindVolume
+  nameWithType: IIndicatorVolumes.FindVolume
 - uid: Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorWPR
   name: IIndicatorWPR
   href: api/Pt.Okx.Sdk.Indicators.BuiltIn.IIndicatorWPR.html
