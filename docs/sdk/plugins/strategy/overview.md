@@ -16,6 +16,19 @@ This guide explains the foundation of creating a trading strategy plugin for the
 
 A custom strategy is compiled as a standalone `.dll` file using a standard .NET 10 Class Library.
 
+### Option A — dotnet template (Recommended)
+
+Install the template once (from the repo root or NuGet) and scaffold the project:
+
+```bash
+dotnet new install ./templates/StrategyTemplate   # one-time setup
+dotnet new pt-strategy -n MyStrategy
+```
+
+This creates a complete project with all required files and `Properties/launchSettings.json` pre-configured (see [Running your Strategy](#running-your-strategy) below).
+
+### Option B — Manual setup
+
 1. Open your terminal and create a new class library:
    ```bash
    dotnet new classlib -n MyStrategy -f net10.0
@@ -108,7 +121,6 @@ public class MyStrategyPlugin : IStrategyPlugin, IStrategyPluginMetadata
     // --- Metadata ---
     public string Name => "MyStrategy";
     public string PluginVersion => "1.0.0";
-    public string RequiredSdkVersion => "1.0";
     public string Author => "Your Name";
     public string Description => "A description of the strategy.";
 

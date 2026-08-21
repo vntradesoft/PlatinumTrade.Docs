@@ -393,7 +393,6 @@ Metadata exposed by an indicator plugin assembly.
 |---|---|---|---|
 | `Name` | `string` | Property | Plugin display name, for example "My Custom Indicators". |
 | `PluginVersion` | `string` | Property | Plugin version, for example "1.0.0". |
-| `RequiredSdkVersion` | `string` | Property | Required SDK version for compatibility, for example "1.0.0". |
 | `Description` | `string` | Property | Short plugin description. |
 | `Author` | `string` | Property | The author or publisher of the plugin. |
 
@@ -565,9 +564,10 @@ Provides metadata information for a strategy plugin.
 |---|---|---|---|
 | `Name` | `string` | Property | Gets the display name of the plugin. |
 | `PluginVersion` | `string` | Property | Gets the version of the plugin. |
-| `RequiredSdkVersion` | `string` | Property | Gets the minimum required SDK version for compatibility. |
 | `Author` | `string` | Property | Gets the author of the plugin. Return null if not specified. |
 | `Description` | `string` | Property | Gets the description of the plugin. Return null if not specified. |
+
+Compatibility note: plugin SDK compatibility is resolved by the host from the `Pt.Okx.Sdk` version referenced by the plugin assembly.
 
 ### IStrategyStateStore
 

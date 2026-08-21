@@ -23,7 +23,20 @@ The indicator plugin system relies on three main components:
 
 ## Step 1: Create the Project
 
-Use the `.NET CLI` to generate a class library project for your indicators.
+### Option A — dotnet template (Recommended)
+
+Install the template once (from the repo root or NuGet) and scaffold the project:
+
+```bash
+dotnet new install ./templates/IndicatorTemplate   # one-time setup
+dotnet new pt-indicator -n MyIndicators
+```
+
+This creates a complete project with the correct `.csproj`, a stub `IIndicatorPlugin` entry point, and a sample `CalcIndBase` implementation ready to customize.
+
+### Option B — Manual setup
+
+Use the `.NET CLI` to generate a class library project for your indicators:
 
 ```bash
 dotnet new classlib -n MyIndicators -f net10.0
@@ -57,7 +70,6 @@ public class MyIndicatorPlugin : IIndicatorPlugin
     // Metadata properties
     public string Name => "My Custom Indicators";
     public string PluginVersion => "1.0.0";
-    public string RequiredSdkVersion => "1.0.0";
     public string Description => "Contains custom Simple Moving Average (SMA) and Momentum indicators.";
     public string Author => "John Doe";
 
@@ -68,6 +80,8 @@ public class MyIndicatorPlugin : IIndicatorPlugin
     }
 }
 ```
+
+SDK compatibility is inferred from the `Pt.Okx.Sdk` reference in the plugin assembly.
 
 ## Loading the Plugin
 

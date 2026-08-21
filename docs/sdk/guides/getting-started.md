@@ -20,14 +20,34 @@ This guide walks you through setting up a project and writing your first code wi
 
 ## Create a Strategy Plugin Project
 
-### 1. Create a Class Library
+### 1. Install the dotnet templates (Recommended)
+
+The quickest way to scaffold a new plugin project is via the official dotnet templates. Install once from the NuGet package, or directly from source if you cloned the repository:
 
 ```bash
-dotnet new classlib -n MyStrategy -f net10.0
-cd MyStrategy
+# From the cloned repository root:
+dotnet new install ./templates/StrategyTemplate
+dotnet new install ./templates/IndicatorTemplate
 ```
 
-### 2. Reference Pt.Okx.Sdk
+Then scaffold a new project in seconds:
+
+```bash
+# Strategy plugin
+dotnet new pt-strategy -n MyTradingStrategy
+
+# Indicator plugin
+dotnet new pt-indicator -n MyCustomIndicators
+```
+
+The generated project already includes:
+- Correct `.csproj` referencing `Pt.Okx.Sdk`
+- Stub implementations of `IStrategyPlugin`, `IStrategyImpl`, and `IStrategyInput` (or `IIndicatorPlugin` / `CalcIndBase`)
+- `Properties/launchSettings.json` with ready-to-use **live** and **backtest** launch profiles pointing to the installed `PlatinumTrade.exe`
+
+Open the project in Visual Studio, select the **live** or **backtest** profile from the run dropdown, and press **F5** to launch PlatinumTrade in the corresponding mode.
+
+### 2. Reference Pt.Okx.Sdk (manual alternative)
 
 Add a project reference to `Pt.Okx.Sdk`:
 
@@ -105,7 +125,6 @@ public class MyStrategyPlugin : IStrategyPlugin, IStrategyPluginMetadata
 {
     public string Name => "MyStrategy";
     public string PluginVersion => "1.0";
-    public string RequiredSdkVersion => "1.0";
     public string Author => "Your Name";
     public string Description => "My custom strategy implementation.";
 
@@ -120,6 +139,8 @@ public class MyStrategyPlugin : IStrategyPlugin, IStrategyPluginMetadata
     }
 }
 ```
+
+Compatibility is auto-detected by the host from the referenced `Pt.Okx.Sdk` version in your plugin assembly.
 
 > [!NOTE]
 > Live trading uses `AddSingleton` (a single instance throughout the lifetime). Backtesting uses `AddTransient` (a fresh instance for every run).

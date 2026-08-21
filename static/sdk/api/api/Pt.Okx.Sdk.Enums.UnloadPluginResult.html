@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Enum PositionMode | PlatinumTrade SDK API Reference </title>
+      <title>Enum UnloadPluginResult | PlatinumTrade SDK API Reference </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Enum PositionMode | PlatinumTrade SDK API Reference ">
+      <meta name="title" content="Enum UnloadPluginResult | PlatinumTrade SDK API Reference ">
     
-    <meta name="description" content="Account position mode.">
+    <meta name="description" content="Kết quả của thao t&#225;c unload plugin.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -76,20 +76,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Clients.Trading.Enums.PositionMode">
+            <article class="content wrap" id="_content" data-uid="Pt.Okx.Sdk.Enums.UnloadPluginResult">
 
 
 
 
-  <h1 id="Pt_Okx_Sdk_Clients_Trading_Enums_PositionMode" data-uid="Pt.Okx.Sdk.Clients.Trading.Enums.PositionMode" class="text-break">Enum PositionMode</h1>
-  <div class="markdown level0 summary"><p>Account position mode.</p>
+  <h1 id="Pt_Okx_Sdk_Enums_UnloadPluginResult" data-uid="Pt.Okx.Sdk.Enums.UnloadPluginResult" class="text-break">Enum UnloadPluginResult</h1>
+  <div class="markdown level0 summary"><p>Kết quả của thao tác unload plugin.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.html">Clients</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.html">Trading</a>.<a class="xref" href="Pt.Okx.Sdk.Clients.Trading.Enums.html">Enums</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pt.html">Pt</a>.<a class="xref" href="Pt.Okx.html">Okx</a>.<a class="xref" href="Pt.Okx.Sdk.html">Sdk</a>.<a class="xref" href="Pt.Okx.Sdk.Enums.html">Enums</a></h6>
   <h6><strong>Assembly</strong>: Pt.Okx.Sdk.dll</h6>
-  <h5 id="Pt_Okx_Sdk_Clients_Trading_Enums_PositionMode_syntax">Syntax</h5>
+  <h5 id="Pt_Okx_Sdk_Enums_UnloadPluginResult_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum PositionMode</code></pre>
+    <pre><code class="lang-csharp hljs">public enum UnloadPluginResult</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -102,20 +102,25 @@
     <thead>
     </thead></thead><tbody>
       <tr>
-        <td id="Pt_Okx_Sdk_Clients_Trading_Enums_PositionMode_LongShortMode">LongShortMode</td>
-        <td><p>Long and short positions are tracked separately.</p>
+        <td id="Pt_Okx_Sdk_Enums_UnloadPluginResult_NotFound">NotFound</td>
+        <td><p>Không tìm thấy plugin đang load với đường dẫn này.</p>
 </td>
       </tr>
       <tr>
-        <td id="Pt_Okx_Sdk_Clients_Trading_Enums_PositionMode_NetMode">NetMode</td>
-        <td><p>Positions are tracked as a single net position.</p>
+        <td id="Pt_Okx_Sdk_Enums_UnloadPluginResult_PendingRestart">PendingRestart</td>
+        <td><p>Đã gỡ đăng ký nhưng file còn khoá — sẽ xoá khi khởi động lại.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Pt_Okx_Sdk_Enums_UnloadPluginResult_Unloaded">Unloaded</td>
+        <td><p>Gỡ khỏi bộ nhớ và xoá file thành công.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Pt.Okx.Sdk.Drawing.Extensions.DrawingEnumExtensions.html#Pt_Okx_Sdk_Drawing_Extensions_DrawingEnumExtensions_GetDescription__1___0_">DrawingEnumExtensions.GetDescription&lt;PositionMode&gt;(PositionMode)</a>
+      <a class="xref" href="Pt.Okx.Sdk.Drawing.Extensions.DrawingEnumExtensions.html#Pt_Okx_Sdk_Drawing_Extensions_DrawingEnumExtensions_GetDescription__1___0_">DrawingEnumExtensions.GetDescription&lt;UnloadPluginResult&gt;(UnloadPluginResult)</a>
   </div>
 </article>
           </div>
@@ -125,10 +130,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/indicator_order/apiSpec/new?filename=Pt_Okx_Sdk_Clients_Trading_Enums_PositionMode.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Clients.Trading.Enums.PositionMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/new/indicator_order/apiSpec/new?filename=Pt_Okx_Sdk_Enums_UnloadPluginResult.md&amp;value=---%0Auid%3A%20Pt.Okx.Sdk.Enums.UnloadPluginResult%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/indicator_order/Pt.Okx.Sdk/Clients/Trading/Enums/PositionMode.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/phanthanh157/PlatinumTrade/blob/indicator_order/Pt.Okx.Sdk/Enums/UnloadPluginResult.cs/#L4" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

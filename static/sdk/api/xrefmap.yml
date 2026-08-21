@@ -10176,12 +10176,6 @@ references:
   commentId: T:Pt.Okx.Sdk.Enums.OrderType
   fullName: Pt.Okx.Sdk.Enums.OrderType
   nameWithType: OrderType
-- uid: Pt.Okx.Sdk.Enums.OrderType.Elp
-  name: Elp
-  href: api/Pt.Okx.Sdk.Enums.OrderType.html#Pt_Okx_Sdk_Enums_OrderType_Elp
-  commentId: F:Pt.Okx.Sdk.Enums.OrderType.Elp
-  fullName: Pt.Okx.Sdk.Enums.OrderType.Elp
-  nameWithType: OrderType.Elp
 - uid: Pt.Okx.Sdk.Enums.OrderType.FillOrKill
   name: FillOrKill
   href: api/Pt.Okx.Sdk.Enums.OrderType.html#Pt_Okx_Sdk_Enums_OrderType_FillOrKill
@@ -10230,6 +10224,12 @@ references:
   commentId: F:Pt.Okx.Sdk.Enums.OrderType.PostOnly
   fullName: Pt.Okx.Sdk.Enums.OrderType.PostOnly
   nameWithType: OrderType.PostOnly
+- uid: Pt.Okx.Sdk.Enums.OrderType.Rpi
+  name: Rpi
+  href: api/Pt.Okx.Sdk.Enums.OrderType.html#Pt_Okx_Sdk_Enums_OrderType_Rpi
+  commentId: F:Pt.Okx.Sdk.Enums.OrderType.Rpi
+  fullName: Pt.Okx.Sdk.Enums.OrderType.Rpi
+  nameWithType: OrderType.Rpi
 - uid: Pt.Okx.Sdk.Enums.PositionSide
   name: PositionSide
   href: api/Pt.Okx.Sdk.Enums.PositionSide.html
@@ -10458,6 +10458,30 @@ references:
   commentId: F:Pt.Okx.Sdk.Enums.TradeMode.Spot
   fullName: Pt.Okx.Sdk.Enums.TradeMode.Spot
   nameWithType: TradeMode.Spot
+- uid: Pt.Okx.Sdk.Enums.UnloadPluginResult
+  name: UnloadPluginResult
+  href: api/Pt.Okx.Sdk.Enums.UnloadPluginResult.html
+  commentId: T:Pt.Okx.Sdk.Enums.UnloadPluginResult
+  fullName: Pt.Okx.Sdk.Enums.UnloadPluginResult
+  nameWithType: UnloadPluginResult
+- uid: Pt.Okx.Sdk.Enums.UnloadPluginResult.NotFound
+  name: NotFound
+  href: api/Pt.Okx.Sdk.Enums.UnloadPluginResult.html#Pt_Okx_Sdk_Enums_UnloadPluginResult_NotFound
+  commentId: F:Pt.Okx.Sdk.Enums.UnloadPluginResult.NotFound
+  fullName: Pt.Okx.Sdk.Enums.UnloadPluginResult.NotFound
+  nameWithType: UnloadPluginResult.NotFound
+- uid: Pt.Okx.Sdk.Enums.UnloadPluginResult.PendingRestart
+  name: PendingRestart
+  href: api/Pt.Okx.Sdk.Enums.UnloadPluginResult.html#Pt_Okx_Sdk_Enums_UnloadPluginResult_PendingRestart
+  commentId: F:Pt.Okx.Sdk.Enums.UnloadPluginResult.PendingRestart
+  fullName: Pt.Okx.Sdk.Enums.UnloadPluginResult.PendingRestart
+  nameWithType: UnloadPluginResult.PendingRestart
+- uid: Pt.Okx.Sdk.Enums.UnloadPluginResult.Unloaded
+  name: Unloaded
+  href: api/Pt.Okx.Sdk.Enums.UnloadPluginResult.html#Pt_Okx_Sdk_Enums_UnloadPluginResult_Unloaded
+  commentId: F:Pt.Okx.Sdk.Enums.UnloadPluginResult.Unloaded
+  fullName: Pt.Okx.Sdk.Enums.UnloadPluginResult.Unloaded
+  nameWithType: UnloadPluginResult.Unloaded
 - uid: Pt.Okx.Sdk.Indicators.Base
   name: Pt.Okx.Sdk.Indicators.Base
   href: api/Pt.Okx.Sdk.Indicators.Base.html
@@ -13623,6 +13647,30 @@ references:
   commentId: F:Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType.Data
   fullName: Pt.Okx.Sdk.Indicators.Enums.IndicatorBufferType.Data
   nameWithType: IndicatorBufferType.Data
+- uid: Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode
+  name: IndicatorCalculationMode
+  href: api/Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.html
+  commentId: T:Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode
+  fullName: Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode
+  nameWithType: IndicatorCalculationMode
+- uid: Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Cumulative
+  name: Cumulative
+  href: api/Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorCalculationMode_Cumulative
+  commentId: F:Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Cumulative
+  fullName: Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Cumulative
+  nameWithType: IndicatorCalculationMode.Cumulative
+- uid: Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Stateful
+  name: Stateful
+  href: api/Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorCalculationMode_Stateful
+  commentId: F:Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Stateful
+  fullName: Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Stateful
+  nameWithType: IndicatorCalculationMode.Stateful
+- uid: Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Stateless
+  name: Stateless
+  href: api/Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.html#Pt_Okx_Sdk_Indicators_Enums_IndicatorCalculationMode_Stateless
+  commentId: F:Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Stateless
+  fullName: Pt.Okx.Sdk.Indicators.Enums.IndicatorCalculationMode.Stateless
+  nameWithType: IndicatorCalculationMode.Stateless
 - uid: Pt.Okx.Sdk.Indicators.Enums.IndicatorColor
   name: IndicatorColor
   href: api/Pt.Okx.Sdk.Indicators.Enums.IndicatorColor.html
@@ -14626,6 +14674,12 @@ references:
   commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice)
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(Pt.Okx.Sdk.Indicators.Enums.AppliedPrice)
   nameWithType: IndicatorConfig.AddSource(AppliedPrice)
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(Pt.Okx.Sdk.Indicators.Models.IndicatorSource)
+  name: AddSource(IndicatorSource)
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html#Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_Pt_Okx_Sdk_Indicators_Models_IndicatorSource_
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(Pt.Okx.Sdk.Indicators.Models.IndicatorSource)
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(Pt.Okx.Sdk.Indicators.Models.IndicatorSource)
+  nameWithType: IndicatorConfig.AddSource(IndicatorSource)
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.AddSource(System.String,System.Int32,System.Nullable{Pt.Okx.Sdk.Enums.Timeframe})
   name: AddSource(string, int, Timeframe?)
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html#Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_AddSource_System_String_System_Int32_System_Nullable_Pt_Okx_Sdk_Enums_Timeframe__
@@ -14655,6 +14709,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.CustomName
   nameWithType: IndicatorConfig.CustomName
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.DeepCopy
+  name: DeepCopy()
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html#Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_DeepCopy
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.DeepCopy
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.DeepCopy()
+  nameWithType: IndicatorConfig.DeepCopy()
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.DeepCopy*
+  name: DeepCopy
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html#Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_DeepCopy_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.DeepCopy
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.DeepCopy
+  nameWithType: IndicatorConfig.DeepCopy
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.GetFingerprint
   name: GetFingerprint()
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorConfig.html#Pt_Okx_Sdk_Indicators_Models_IndicatorConfig_GetFingerprint
@@ -14807,6 +14874,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.ColorMode
   nameWithType: IndicatorFillRegion.ColorMode
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.DeepCopy
+  name: DeepCopy()
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.html#Pt_Okx_Sdk_Indicators_Models_IndicatorFillRegion_DeepCopy
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.DeepCopy
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.DeepCopy()
+  nameWithType: IndicatorFillRegion.DeepCopy()
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.DeepCopy*
+  name: DeepCopy
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.html#Pt_Okx_Sdk_Indicators_Models_IndicatorFillRegion_DeepCopy_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.DeepCopy
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.DeepCopy
+  nameWithType: IndicatorFillRegion.DeepCopy
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.Enabled
   name: Enabled
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorFillRegion.html#Pt_Okx_Sdk_Indicators_Models_IndicatorFillRegion_Enabled
@@ -14904,6 +14984,19 @@ references:
   commentId: T:Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity
   nameWithType: IndicatorIdentity
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.DeepCopy
+  name: DeepCopy()
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.html#Pt_Okx_Sdk_Indicators_Models_IndicatorIdentity_DeepCopy
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.DeepCopy
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.DeepCopy()
+  nameWithType: IndicatorIdentity.DeepCopy()
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.DeepCopy*
+  name: DeepCopy
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.html#Pt_Okx_Sdk_Indicators_Models_IndicatorIdentity_DeepCopy_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.DeepCopy
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.DeepCopy
+  nameWithType: IndicatorIdentity.DeepCopy
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.GenerateUniqueId
   name: GenerateUniqueId()
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorIdentity.html#Pt_Okx_Sdk_Indicators_Models_IndicatorIdentity_GenerateUniqueId
@@ -15168,6 +15261,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.ColorPalette
   nameWithType: IndicatorLabel.ColorPalette
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.DeepCopy
+  name: DeepCopy()
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.html#Pt_Okx_Sdk_Indicators_Models_IndicatorLabel_DeepCopy
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.DeepCopy
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.DeepCopy()
+  nameWithType: IndicatorLabel.DeepCopy()
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.DeepCopy*
+  name: DeepCopy
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.html#Pt_Okx_Sdk_Indicators_Models_IndicatorLabel_DeepCopy_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.DeepCopy
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.DeepCopy
+  nameWithType: IndicatorLabel.DeepCopy
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.Digit
   name: Digit
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorLabel.html#Pt_Okx_Sdk_Indicators_Models_IndicatorLabel_Digit
@@ -15281,6 +15387,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.Contains
   nameWithType: IndicatorParameters.Contains
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.DeepCopy
+  name: DeepCopy()
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.html#Pt_Okx_Sdk_Indicators_Models_IndicatorParameters_DeepCopy
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.DeepCopy
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.DeepCopy()
+  nameWithType: IndicatorParameters.DeepCopy()
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.DeepCopy*
+  name: DeepCopy
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.html#Pt_Okx_Sdk_Indicators_Models_IndicatorParameters_DeepCopy_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.DeepCopy
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.DeepCopy
+  nameWithType: IndicatorParameters.DeepCopy
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.Get*
   name: Get
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorParameters.html#Pt_Okx_Sdk_Indicators_Models_IndicatorParameters_Get_
@@ -15364,6 +15483,32 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.Buffers
   nameWithType: IndicatorProperty.Buffers
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.CalculationMode
+  name: CalculationMode
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html#Pt_Okx_Sdk_Indicators_Models_IndicatorProperty_CalculationMode
+  commentId: P:Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.CalculationMode
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.CalculationMode
+  nameWithType: IndicatorProperty.CalculationMode
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.CalculationMode*
+  name: CalculationMode
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html#Pt_Okx_Sdk_Indicators_Models_IndicatorProperty_CalculationMode_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.CalculationMode
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.CalculationMode
+  nameWithType: IndicatorProperty.CalculationMode
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.DeepCopy
+  name: DeepCopy()
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html#Pt_Okx_Sdk_Indicators_Models_IndicatorProperty_DeepCopy
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.DeepCopy
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.DeepCopy()
+  nameWithType: IndicatorProperty.DeepCopy()
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.DeepCopy*
+  name: DeepCopy
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html#Pt_Okx_Sdk_Indicators_Models_IndicatorProperty_DeepCopy_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.DeepCopy
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.DeepCopy
+  nameWithType: IndicatorProperty.DeepCopy
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.IsInternal
   name: IsInternal
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html#Pt_Okx_Sdk_Indicators_Models_IndicatorProperty_IsInternal
@@ -15455,6 +15600,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.VisibleTimeframes
   nameWithType: IndicatorProperty.VisibleTimeframes
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.WarmupBars
+  name: WarmupBars
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html#Pt_Okx_Sdk_Indicators_Models_IndicatorProperty_WarmupBars
+  commentId: P:Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.WarmupBars
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.WarmupBars
+  nameWithType: IndicatorProperty.WarmupBars
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.WarmupBars*
+  name: WarmupBars
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html#Pt_Okx_Sdk_Indicators_Models_IndicatorProperty_WarmupBars_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.WarmupBars
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.WarmupBars
+  nameWithType: IndicatorProperty.WarmupBars
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.Window
   name: Window
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorProperty.html#Pt_Okx_Sdk_Indicators_Models_IndicatorProperty_Window
@@ -15500,6 +15658,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorSource.BufferIndex
   nameWithType: IndicatorSource.BufferIndex
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorSource.DeepCopy
+  name: DeepCopy()
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorSource.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSource_DeepCopy
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorSource.DeepCopy
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorSource.DeepCopy()
+  nameWithType: IndicatorSource.DeepCopy()
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorSource.DeepCopy*
+  name: DeepCopy
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorSource.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSource_DeepCopy_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorSource.DeepCopy
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorSource.DeepCopy
+  nameWithType: IndicatorSource.DeepCopy
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorSource.IndicatorId
   name: IndicatorId
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorSource.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSource_IndicatorId
@@ -15623,6 +15794,19 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.CenterLineWidth
   nameWithType: IndicatorSpecialFeatures.CenterLineWidth
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.DeepCopy
+  name: DeepCopy()
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_DeepCopy
+  commentId: M:Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.DeepCopy
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.DeepCopy()
+  nameWithType: IndicatorSpecialFeatures.DeepCopy()
+- uid: Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.DeepCopy*
+  name: DeepCopy
+  href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_DeepCopy_
+  commentId: Overload:Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.DeepCopy
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.DeepCopy
+  nameWithType: IndicatorSpecialFeatures.DeepCopy
 - uid: Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.FillRegions
   name: FillRegions
   href: api/Pt.Okx.Sdk.Indicators.Models.IndicatorSpecialFeatures.html#Pt_Okx_Sdk_Indicators_Models_IndicatorSpecialFeatures_FillRegions
@@ -16327,19 +16511,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.PluginVersion
   nameWithType: IIndicatorPluginMetadata.PluginVersion
-- uid: Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.RequiredSdkVersion
-  name: RequiredSdkVersion
-  href: api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.html#Pt_Okx_Sdk_Indicators_Plugin_IIndicatorPluginMetadata_RequiredSdkVersion
-  commentId: P:Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.RequiredSdkVersion
-  fullName: Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.RequiredSdkVersion
-  nameWithType: IIndicatorPluginMetadata.RequiredSdkVersion
-- uid: Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.RequiredSdkVersion*
-  name: RequiredSdkVersion
-  href: api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.html#Pt_Okx_Sdk_Indicators_Plugin_IIndicatorPluginMetadata_RequiredSdkVersion_
-  commentId: Overload:Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.RequiredSdkVersion
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Indicators.Plugin.IIndicatorPluginMetadata.RequiredSdkVersion
-  nameWithType: IIndicatorPluginMetadata.RequiredSdkVersion
 - uid: Pt.Okx.Sdk.Indicators.Plugin.IIndicatorRegistrationContext
   name: IIndicatorRegistrationContext
   href: api/Pt.Okx.Sdk.Indicators.Plugin.IIndicatorRegistrationContext.html
@@ -19291,6 +19462,19 @@ references:
   commentId: T:Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager
   fullName: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager
   nameWithType: IInputParamManager
+- uid: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ExportToJson
+  name: ExportToJson()
+  href: api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.html#Pt_Okx_Sdk_Strategy_Parameters_IInputParamManager_ExportToJson
+  commentId: M:Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ExportToJson
+  fullName: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ExportToJson()
+  nameWithType: IInputParamManager.ExportToJson()
+- uid: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ExportToJson*
+  name: ExportToJson
+  href: api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.html#Pt_Okx_Sdk_Strategy_Parameters_IInputParamManager_ExportToJson_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ExportToJson
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ExportToJson
+  nameWithType: IInputParamManager.ExportToJson
 - uid: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.GetParameter(System.String)
   name: GetParameter(string)
   href: api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.html#Pt_Okx_Sdk_Strategy_Parameters_IInputParamManager_GetParameter_System_String_
@@ -19355,6 +19539,22 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.HasParameter
   nameWithType: IInputParamManager.HasParameter
+- uid: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ImportFromJson(System.String)
+  name: ImportFromJson(string)
+  href: api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.html#Pt_Okx_Sdk_Strategy_Parameters_IInputParamManager_ImportFromJson_System_String_
+  commentId: M:Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ImportFromJson(System.String)
+  name.vb: ImportFromJson(String)
+  fullName: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ImportFromJson(string)
+  fullName.vb: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ImportFromJson(String)
+  nameWithType: IInputParamManager.ImportFromJson(string)
+  nameWithType.vb: IInputParamManager.ImportFromJson(String)
+- uid: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ImportFromJson*
+  name: ImportFromJson
+  href: api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.html#Pt_Okx_Sdk_Strategy_Parameters_IInputParamManager_ImportFromJson_
+  commentId: Overload:Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ImportFromJson
+  isSpec: "True"
+  fullName: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.ImportFromJson
+  nameWithType: IInputParamManager.ImportFromJson
 - uid: Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.Keys
   name: Keys
   href: api/Pt.Okx.Sdk.Strategy.Parameters.IInputParamManager.html#Pt_Okx_Sdk_Strategy_Parameters_IInputParamManager_Keys
@@ -20628,19 +20828,6 @@ references:
   isSpec: "True"
   fullName: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.PluginVersion
   nameWithType: IStrategyPluginMetadata.PluginVersion
-- uid: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.RequiredSdkVersion
-  name: RequiredSdkVersion
-  href: api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.html#Pt_Okx_Sdk_Strategy_Plugin_IStrategyPluginMetadata_RequiredSdkVersion
-  commentId: P:Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.RequiredSdkVersion
-  fullName: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.RequiredSdkVersion
-  nameWithType: IStrategyPluginMetadata.RequiredSdkVersion
-- uid: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.RequiredSdkVersion*
-  name: RequiredSdkVersion
-  href: api/Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.html#Pt_Okx_Sdk_Strategy_Plugin_IStrategyPluginMetadata_RequiredSdkVersion_
-  commentId: Overload:Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.RequiredSdkVersion
-  isSpec: "True"
-  fullName: Pt.Okx.Sdk.Strategy.Plugin.IStrategyPluginMetadata.RequiredSdkVersion
-  nameWithType: IStrategyPluginMetadata.RequiredSdkVersion
 - uid: Pt.Okx.Sdk.Strategy.Settings
   name: Pt.Okx.Sdk.Strategy.Settings
   href: api/Pt.Okx.Sdk.Strategy.Settings.html
