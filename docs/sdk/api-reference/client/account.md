@@ -1,4 +1,4 @@
-﻿---
+---
 id: sdk-account-client
 title: Account API
 sidebar_label: Account
@@ -218,7 +218,7 @@ Retrieves the latest USDT account balance information from the exchange.
 **Syntax**
 
 ```csharp
-Task<ApiResult<AccountBalanceDetail>> GetBalanceUsdtAsync(CancellationToken ct = default);
+Task<ApiResult<AccountBalance>> GetBalanceUsdtAsync(CancellationToken ct = default);
 ```
 
 **Parameters**
@@ -229,7 +229,7 @@ Task<ApiResult<AccountBalanceDetail>> GetBalanceUsdtAsync(CancellationToken ct =
 
 **Return Value**
 
-An [`ApiResult`](../models.md#apiresult) wrapping the [`AccountBalanceDetail`](../models.md#accountbalancedetail).
+An [`ApiResult`](../models.md#apiresult) wrapping the [`AccountBalance`](../models.md#accountbalance).
 
 **Remarks**
 
@@ -242,7 +242,7 @@ var balanceRes = await Context.Account.GetBalanceUsdtAsync();
 if (balanceRes.Success)
 {
     var balance = balanceRes.Data;
-    Context.Logger.LogInformation("Balance", $"Updated Balance: {balance.TotalEq}");
+    Context.Logger.LogInformation("Balance", $"Available: {balance.Available}, Equity: {balance.Equity}");
 }
 ```
 
@@ -417,7 +417,7 @@ else
 ---
 
 ### `GetFeeLevelAsync`
-Retrieves the account''s current fee VIP level.
+Retrieves the account's current fee VIP level.
 
 **Syntax**
 
@@ -431,7 +431,7 @@ None.
 
 **Return Value**
 
-An [`ApiResult`](../models.md#apiresult) wrapping the [`FeeVipLevel`](../models.md#feeviplevel) data.
+An [`ApiResult`](../models.md#apiresult) wrapping the [`FeeVipLevel`](../enums.md#feeviplevel) enum value.
 
 **Remarks**
 
@@ -443,7 +443,7 @@ The VIP level determines your trading fees. Higher VIP levels have lower fees. F
 var feeRes = await Context.Account.GetFeeLevelAsync();
 if (feeRes.Success)
 {
-    var vipLevel = feeRes.Data.Level;
+    FeeVipLevel vipLevel = feeRes.Data;
     Context.Logger.LogInformation("Fee", $"Current VIP Level: {vipLevel}");
 }
 ```

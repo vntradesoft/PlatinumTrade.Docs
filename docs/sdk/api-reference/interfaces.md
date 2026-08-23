@@ -10,23 +10,22 @@ sidebar_position: 12
 
 ### IAccountClient
 
-Interface for account clients, providing methods to query trading account information.
+Interface for account clients, providing methods to query trading account information, balances, and trading configuration.
 
 | Member | Type | Kind | Description |
 |---|---|---|---|
-| `GetBalances` | [`AccountBalance`](./models.md#accountbalance)? | Method | Gets detailed information about the trading account balance. |
+| `GetBalanceUsdtAsync` | Task&lt;[`ApiResult`](./models.md#apiresult)&lt;[`AccountBalance`](./models.md#accountbalance)&gt;&gt; | Method | Retrieves the latest USDT account balance from the exchange. |
 | `WalletBalance` | `decimal` | Property | Gets the total actual wallet balance (excluding unrealized PnL). |
 | `AvailableBalance` | `decimal` | Property | Gets the available balance that can be used to open new positions. |
 | `Equity` | `decimal` | Property | Gets the account equity (Wallet Balance + Unrealized PnL). |
 | `UnrealizedPnL` | `decimal` | Property | Gets the total unrealized profit and loss (PnL) from open positions. |
 | `InitialMargin` | `decimal` | Property | Gets the total initial margin currently in use. |
-| `GetLeverage` | `decimal` | Method | Gets the current leverage for a specific contract. |
-| `IsHedgeMode` | `bool` | Method | Checks if the account is currently in Hedge Mode. |
-| `GetFeeLevelAsync` | Task&lt;[`ApiResult`](./models.md#apiresult)&lt;[`FeeVipLevel`](./enums.md#feeviplevel)&gt;&gt; | Method | Gets information about the account's trading fee VIP level. |
-| `GetCurrentEquity` | `decimal` | Method | Gets the current equity value of the account. |
-| `GetEquityChangePercentage` | `decimal` | Method | Calculates the percentage change in equity compared to a reference point. |
-| `GetMarginRatio` | `decimal` | Method | Calculates the margin ratio. Positions may be liquidated if this reaches 100%. |
-| `GetCurrentDrawdown` | `decimal` | Method | Calculates the current account drawdown compared to the equity peak. |
+| `MarginRatio` | `decimal` | Property | Gets the current margin ratio of the account. |
+| `IsHedgeMode` | `bool` | Property | Gets a value indicating whether the account is currently operating in Hedge Mode. |
+| `SetInitialLeverageAsync` | Task&lt;`bool`&gt; | Method | Sets the leverage for the specified trading symbol. |
+| `GetLeverage` | `decimal` | Method | Gets the configured leverage for a specific symbol. |
+| `SetHedgeModeAsync` | Task&lt;(`bool` Success, `string`? Error)&gt; | Method | Sets the account position mode (Hedge vs Netting). |
+| `GetFeeLevelAsync` | Task&lt;[`ApiResult`](./models.md#apiresult)&lt;[`FeeVipLevel`](./enums.md#feeviplevel)&gt;&gt; | Method | Retrieves the account's current fee VIP level. |
 
 ### IInstrumentClient
 

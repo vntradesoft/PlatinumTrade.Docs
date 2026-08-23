@@ -1,43 +1,135 @@
 ---
-title: Timeseries
+id: sdk-timeseries-client
+title: Timeseries API
+sidebar_label: Timeseries
+sidebar_position: 1
 ---
 
-# Timeseries
+# Timeseries API
 
-## Bars
-Returns the total number of bars available for a trading pair and timeframe.
+The Timeseries API (`Context.Timeseries`) provides methods and properties for querying historical and real-time market data (OHLCV candles, ticks) and managing technical indicators.
+
+---
+
+## Properties & Status
+
+### `PeriodCurrent`
+Gets the current timeframe (Kline interval) in use by the strategy.
+
+```csharp
+Timeframe PeriodCurrent { get; }
+```
+
+---
+
+### `BeginTime`
+Gets the timestamp at which the warmup data period begins.
+
+```csharp
+DateTime BeginTime { get; }
+```
+
+**Remarks**
+
+This time is earlier than `StartTime` and is used to load enough historical candles for indicator calculations before live or simulated trading processing starts.
+
+---
+
+### `StartTime`
+Gets the effective timestamp at which the strategy starts processing trading logic after warmup completes.
+
+```csharp
+DateTime? StartTime { get; }
+```
+
+---
+
+### `EndTime`
+Gets the timestamp when the session ends (returns `null` in real-time trading).
+
+```csharp
+DateTime? EndTime { get; }
+```
+
+---
+
+### `MaxBars`
+Gets the maximum number of bars (candles) stored in the cache.
+
+```csharp
+int MaxBars { get; }
+```
+
+---
+
+### `CurrentTickPrice`
+Gets the most recent tick price of the primary asset received from the market data feed.
+
+```csharp
+decimal CurrentTickPrice { get; }
+```
+
+---
+
+### `CurrentTick`
+Gets the full tick data structure for the most recent tick.
+
+```csharp
+TickData CurrentTick { get; }
+```
+
+---
+
+### `Indicator`
+Gets the manager interface (`IIndicatorManager`) for registered technical indicators.
+
+```csharp
+IIndicatorManager Indicator { get; }
+```
+
+---
+
+### `SymbolsTimeframes`
+Gets the distinct symbol and timeframe pairs scoped to this strategy instance.
+
+```csharp
+HashSet<(string Symbol, Timeframe Timeframe)> SymbolsTimeframes { get; }
+```
+
+---
+
+## Bar & Time Queries
+
+### `Bars`
+Returns the total number of available bars for a specified symbol and timeframe.
 
 **Syntax**
 
 ```csharp
-int Bars(string? symbol, Timeframe? timeframe);
+int Bars(string? symbol = null, Timeframe? timeframe = null);
 ```
 
 **Parameters**
 
 | Parameter | Type | Description |
 |---|---|---|
-| `symbol` | `string?` | The trading symbol (e.g., "BTC-USDT"). If null, uses the default symbol. |
-| `timeframe` | `Timeframe?` | The timeframe (e.g., `Timeframe.OneHour`). If null, uses the default timeframe. |
+| `symbol` | `string?` | The trading symbol (e.g., `"BTC-USDT-SWAP"`). When `null`, the primary symbol is used. |
+| `timeframe` | `Timeframe?` | The timeframe (e.g., `Timeframe.OneHour`). When `null`, the primary timeframe is used. |
 
 **Return Value**
 
 Returns the total number of available bars as an `int`.
 
-**Remarks**
-
-No special remarks.
-
 **Example**
 
 ```csharp
-int totalBars = Market.Bars("BTC-USDT", Timeframe.OneHour);
-Logger.Info($"Total 1H bars for BTC-USDT: {totalBars}");
+int totalBars = Context.Timeseries.Bars("BTC-USDT-SWAP", Timeframe.OneHour);
+Context.Logger.LogInformation("Bars", $"Total 1H bars: {totalBars}");
 ```
 
 ---
 
-## BarsCalculated
+### `BarsCalculated`
 Counts the number of bars calculated for a specific indicator.
 
 **Syntax**
@@ -56,460 +148,247 @@ int BarsCalculated(string indicatorId);
 
 Returns the number of bars calculated as an `int`.
 
-**Remarks**
-
-No special remarks.
-
 **Example**
 
 ```csharp
-var rsi = Market.CreateIndicatorRSI(period: 14);
-int calculated = Market.BarsCalculated(rsi.Id);
-Logger.Info($"RSI has calculated {calculated} bars.");
+var rsi = Context.Timeseries.CreateIndicatorRSI(period: 14);
+int calculated = Context.Timeseries.BarsCalculated(rsi.Id);
 ```
 
 ---
 
-## Candle Access
-
-Directly queries specific candles (current, closed, open, etc.).
+### `GetCurrentCandleTime`
+Gets the current candle open time for the specified timeframe.
 
 **Syntax**
 
 ```csharp
-Task<CandleData> GetOHCLVAsync(string? symbol = null, Timeframe? timeframe = null, int shift = 0, CancellationToken ct = default);
-Task<CandleData> GetCurrentCandleAsync(string? symbol = null, Timeframe? timeframe = null, CancellationToken ct = default);
-DateTime GetTime(Timeframe timeframe, int shift);
-CandleData GetOpenCandle(string? symbol = null, Timeframe? timeframe = null);
+DateTime GetCurrentCandleTime(Timeframe timeframe = Timeframe.OneMinute);
+```
+
+---
+
+### `GetCurrentTime`
+Gets the current system time (or simulated time during backtests).
+
+**Syntax**
+
+```csharp
+DateTime GetCurrentTime();
+```
+
+---
+
+## Candle Data Access
+
+### `GetOHLCVAsync`
+Gets the OHLCV candle data at a specific shift index (0 = current forming candle, 1 = previous closed candle, etc.).
+
+**Syntax**
+
+```csharp
+Task<CandleData> GetOHLCVAsync(string? symbol = null, Timeframe? timeframe = null, int shift = 0, CancellationToken ct = default);
+```
+
+**Parameters**
+
+| Parameter | Type | Description |
+|---|---|---|
+| `symbol` | `string?` | The trading symbol. When `null`, uses the primary symbol. |
+| `timeframe` | `Timeframe?` | The timeframe. When `null`, uses the primary timeframe. |
+| `shift` | `int` | The candle shift index (0 = forming candle, 1 = last closed candle). |
+| `ct` | `CancellationToken` | Cancellation token. |
+
+**Return Value**
+
+Returns a [`CandleData`](../../models.md#candledata) object.
+
+**Example**
+
+```csharp
+var candle = await Context.Timeseries.GetOHLCVAsync(shift: 1);
+Context.Logger.LogInformation("Candle", $"Previous Close: {candle.Close}");
+```
+
+---
+
+### `GetLastClosedCandle` / `GetLastClosedCandleAsync`
+Gets the most recent finalized (closed) candle.
+
+**Syntax**
+
+```csharp
+// Synchronous version
 CandleData GetLastClosedCandle(string? symbol = null, Timeframe? timeframe = null);
-void UpdateOpenCandleIndicators(string? symbol = null, Timeframe? timeframe = null);
+
+// Asynchronous version
+Task<CandleData> GetLastClosedCandleAsync(string? symbol = null, Timeframe? timeframe = null, CancellationToken ct = default);
 ```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol. |
-| `timeframe` | `Timeframe?` | The timeframe for the candle. |
-| `shift` | `int` | The shift index (0 = current forming candle, 1 = last closed candle, etc.). |
-| `ct` | `CancellationToken` | The cancellation token for async tasks. |
-
-**Return Value**
-
-Returns a [`CandleData`](../../models.md#candledata) object or a `DateTime` representing the candle's open time.
 
 **Example**
 
 ```csharp
-// Get the last closed candle
-CandleData lastClosed = Market.GetLastClosedCandle();
-Logger.Info($"Last closed candle close price: {lastClosed.Close}");
-
-// Get the open time of the current forming candle
-DateTime currentOpenTime = Market.GetTime(Timeframe.OneMinute, 0);
+CandleData lastClosed = Context.Timeseries.GetLastClosedCandle();
+Context.Logger.LogInformation("Candle", $"Closed price: {lastClosed.Close}");
 ```
 
-### UpdateOpenCandleIndicators
+---
 
-Manually forces an on-demand recalculation of indicators using the current open candle data (forming candle).
-
-By default, to save CPU in real-time execution (and backtest), indicator calculations are skipped on intermediate ticks. The system automatically calculates the indicator exactly *once* at the first tick of a new bar to seed the indicator buffer and maintain synchronization with the pricing array lengths. Therefore, if a strategy does NOT call `UpdateOpenCandleIndicators`, the latest element of the indicator's buffer (at index 0) will remain as the value calculated at the **open tick** of the forming candle.
-
-If your strategy logic explicitly requires the most up-to-date indicator value matching the current open candle tick, call this method *before* copying buffer data. Note that if no timeframe is specified (or is null), the method will automatically update indicators for **all active timeframes** used by indicators in the strategy.
-
-```csharp
-void UpdateOpenCandleIndicators(string? symbol = null, Timeframe? timeframe = null);
-```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The target symbol. Defaults to the strategy's primary symbol. |
-| `timeframe` | `Timeframe?` | The target timeframe. If left null, all indicator timeframes for the symbol are updated. |
-
-**Example**
-
-```csharp
-// Force indicator buffers to update with the current tick price
-Market.UpdateOpenCandleIndicators();
-
-// Now CopyBuffer or accessing indicator.GetValue(0) will reflect the open candle's value
-var currentRsi = rsi[0];
-```
-
-## CopyBuffer
-Copies indicator buffer values by index or time range.
+### `GetOpenCandle`
+Gets the currently forming (open) candle.
 
 **Syntax**
 
 ```csharp
-int CopyBuffer(string indicatorHandle, int bufferNumber, int startIndex, int count, DateTime startTime, DateTime endTime, out IEnumerable<IndicatorValue> buffers);
+CandleData GetOpenCandle(string? symbol = null, Timeframe? timeframe = null);
 ```
 
-**Parameters**
+---
 
-| Parameter | Type | Description |
-|---|---|---|
-| `indicatorHandle` | `string` | The unique handle of the indicator. |
-| `bufferNumber` | `int` | The buffer number to copy from (e.g., 0 for main line). |
-| `startIndex` | `int` | The starting index in the buffer (0 is the current candle, 1 is previous). |
-| `count` | `int` | The number of values to copy. |
-| `startTime` | `DateTime` | The start time for copying data. |
-| `endTime` | `DateTime` | The end time of the range. |
-| `buffers` | `out IEnumerable<IndicatorValue>` | The output enumerable of copied indicator values. |
+### `GetTime`
+Gets the timestamp of the candle at the specified shift for a given timeframe.
 
-**Return Value**
+**Syntax**
 
-Returns the number of values successfully copied as an `int`.
+```csharp
+DateTime GetTime(Timeframe timeframe, int shift);
+```
+
+---
+
+### `UpdateOpenCandleIndicators`
+Manually forces an on-demand recalculation of indicators using the current forming (open) candle tick data.
+
+**Syntax**
+
+```csharp
+void UpdateOpenCandleIndicators(string? symbol = null, Timeframe? timeframe = null);
+```
 
 **Remarks**
 
-No special remarks.
+By default, indicators are calculated once at bar open to conserve CPU. If your strategy requires the indicator value to reflect intermediate forming candle ticks, call `UpdateOpenCandleIndicators()` before reading indicator buffer index 0.
+
+---
+
+## Bulk Data Copy APIs (CopySeries & Components)
+
+### `CopySeries`
+Copies an array of full OHLCV candles by range, position, or start time.
+
+**Syntax**
+
+```csharp
+// 1. By time range
+Task<CandleData[]> CopySeries(string? symbol = null, Timeframe? timeframe = null, DateTime? startTime = null, DateTime? endTime = null);
+
+// 2. By start index and count
+Task<CandleData[]> CopySeries(string? symbol = null, Timeframe? timeframe = null, int startPos = 0, int count = 1);
+
+// 3. By start time and count
+Task<CandleData[]> CopySeries(string? symbol = null, Timeframe? timeframe = null, DateTime? startTime = null, int count = 1);
+```
 
 **Example**
 
 ```csharp
-var rsi = Market.CreateIndicatorRSI(period: 14);
-int copied = Market.CopyBuffer(rsi.Id, 0, 1, 3, out var rsiValues);
-foreach (var val in rsiValues)
+CandleData[] candles = await Context.Timeseries.CopySeries(startPos: 1, count: 5);
+foreach (var c in candles)
 {
-    Logger.Info($"RSI Value: {val.Value} at {val.Time}");
+    Context.Logger.LogInformation("Bar", $"O: {c.Open}, H: {c.High}, L: {c.Low}, C: {c.Close}");
 }
 ```
 
 ---
 
-## CopyCloses
-Copies close prices of candles.
+### Component Copy APIs (`CopyTimes`, `CopyOpens`, `CopyHighs`, `CopyLows`, `CopyCloses`, `CopyVolumes`)
 
-**Syntax**
+Extract specific price components directly into primitive arrays for high-performance vectorized operations.
+
+Each method provides 3 overloads matching the `CopySeries` pattern:
+1. `(string? symbol, Timeframe? timeframe, int startPos, int count)`
+2. `(string? symbol, Timeframe? timeframe, DateTime? startTime, int count)`
+3. `(string? symbol, Timeframe? timeframe, DateTime? startTime, DateTime? endTime)`
 
 ```csharp
-decimal[] CopyCloses(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
+Task<DateTime[]> CopyTimes(string? symbol = null, Timeframe? timeframe = null, int startPos = 0, int count = 1);
+Task<decimal[]>  CopyOpens(string? symbol = null, Timeframe? timeframe = null, int startPos = 0, int count = 1);
+Task<decimal[]>  CopyHighs(string? symbol = null, Timeframe? timeframe = null, int startPos = 0, int count = 1);
+Task<decimal[]>  CopyLows(string? symbol = null, Timeframe? timeframe = null, int startPos = 0, int count = 1);
+Task<decimal[]>  CopyCloses(string? symbol = null, Timeframe? timeframe = null, int startPos = 0, int count = 1);
+Task<decimal[]>  CopyVolumes(string? symbol = null, Timeframe? timeframe = null, int startPos = 0, int count = 1);
 ```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol (optional). |
-| `tf` | `Timeframe?` | The timeframe (optional). |
-| `startPos` / `startTime` | `int` / `DateTime` | The starting position index or the start time. |
-| `count` / `endTime` | `int` / `DateTime` | The number of prices to copy, or the end time. |
-
-**Return Value**
-
-Returns an array of close prices (`decimal[]`).
-
-**Remarks**
-
-No special remarks.
 
 **Example**
 
 ```csharp
-// Get the last 5 closed prices
-decimal[] closes = await Market.CopyCloses(null, null, 1, 5);
-decimal averageClose = closes.Average();
-```
+// Fast array calculation of 10-period High and Low
+decimal[] highs = await Context.Timeseries.CopyHighs(startPos: 1, count: 10);
+decimal[] lows  = await Context.Timeseries.CopyLows(startPos: 1, count: 10);
 
----
-
-## CopyHighs
-Copies high prices of candles.
-
-**Syntax**
-
-```csharp
-decimal[] CopyHighs(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
-```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol (optional). |
-| `tf` | `Timeframe?` | The timeframe (optional). |
-| `startPos` / `startTime` | `int` / `DateTime` | The starting position index or the start time. |
-| `count` / `endTime` | `int` / `DateTime` | The number of prices to copy, or the end time. |
-
-**Return Value**
-
-Returns an array of high prices (`decimal[]`).
-
-**Remarks**
-
-No special remarks.
-
-**Example**
-
-```csharp
-// Get the highest high in the last 10 candles
-decimal[] highs = await Market.CopyHighs(null, null, 1, 10);
 decimal highest = highs.Max();
+decimal lowest  = lows.Min();
 ```
 
 ---
 
-## CopyLows
-Copies low prices of candles.
+## Indicator Buffer Copy API (`CopyBuffer`)
+
+Copies calculated values from an indicator buffer.
 
 **Syntax**
 
 ```csharp
-decimal[] CopyLows(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
+// 1. By start position and count
+int CopyBuffer(string indicatorHandle, int bufferNumber, int startPos, int count, out IEnumerable<IndicatorValue> buffers);
+
+// 2. By start time and count
+int CopyBuffer(string indicatorHandle, int bufferNumber, DateTime startTime, int count, out IEnumerable<IndicatorValue> buffers);
+
+// 3. By time range
+int CopyBuffer(string indicatorHandle, int bufferNumber, DateTime startTime, DateTime endTime, out IEnumerable<IndicatorValue> buffers);
 ```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol (optional). |
-| `tf` | `Timeframe?` | The timeframe (optional). |
-| `startPos` / `startTime` | `int` / `DateTime` | The starting position index or the start time. |
-| `count` / `endTime` | `int` / `DateTime` | The number of prices to copy, or the end time. |
-
-**Return Value**
-
-Returns an array of low prices (`decimal[]`).
-
-**Remarks**
-
-No special remarks.
 
 **Example**
 
 ```csharp
-// Get the lowest low in the last 10 candles
-decimal[] lows = await Market.CopyLows(null, null, 1, 10);
-decimal lowest = lows.Min();
-```
+var rsi = Context.Timeseries.CreateIndicatorRSI(period: 14);
+int copied = Context.Timeseries.CopyBuffer(rsi.Id, 0, startPos: 1, count: 3, out var rsiValues);
 
----
-
-## CopyOpens
-Copies open prices of candles.
-
-**Syntax**
-
-```csharp
-decimal[] CopyOpens(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
-```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol (optional). |
-| `tf` | `Timeframe?` | The timeframe (optional). |
-| `startPos` / `startTime` | `int` / `DateTime` | The starting position index or the start time. |
-| `count` / `endTime` | `int` / `DateTime` | The number of prices to copy, or the end time. |
-
-**Return Value**
-
-Returns an array of open prices (`decimal[]`).
-
-**Remarks**
-
-No special remarks.
-
-**Example**
-
-```csharp
-decimal[] opens = await Market.CopyOpens(null, null, 1, 3);
-```
-
----
-
-## CopyPrices
-Copies prices by `AppliedPrice` type.
-
-**Syntax**
-
-```csharp
-(DateTime, decimal) CopyPrices(AppliedPrice appliedPrice, string? symbol, Timeframe? timeframe, int / DateTime startPos / start, int / DateTime count / endTime, IEnumerable<CandleData> / CandleData ohclvs / ohclv);
-```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `appliedPrice` | `AppliedPrice` | The type of price to extract (e.g., close, open, high, low, typical). |
-| `symbol` | `string?` | The trading symbol (optional). |
-| `timeframe` | `Timeframe?` | The timeframe (optional). |
-| `startPos` / `start` | `int` / `DateTime` | The starting position index or the start time. |
-| `count` / `endTime` | `int` / `DateTime` | The number of prices to copy, or the end time. |
-| `ohclvs` / `ohclv` | `IEnumerable`&lt;[`CandleData`](../../models.md#candledata)&gt; / [`CandleData`](../../models.md#candledata) | Existing candle data to extract prices from. |
-
-**Return Value**
-
-Returns tuples of `(DateTime, decimal)` or raw `decimal` prices based on the overload.
-
-**Remarks**
-
-No special remarks.
-
-**Example**
-
-```csharp
-// Get the Typical Price (H+L+C)/3 for the last 5 candles
-var typicalPrices = await Market.CopyPrices(AppliedPrice.Typical, null, null, 1, 5);
-foreach(var p in typicalPrices)
+foreach (var item in rsiValues)
 {
-    Logger.Info($"Time: {p.Item1}, Typical Price: {p.Item2}");
+    Context.Logger.LogInformation("RSI", $"Time: {item.Time}, Value: {item.Value}");
 }
 ```
 
 ---
 
-## CopySeries
-Copies an array of OHLCV candle data.
+## Creating Built-in Indicators
 
-**Syntax**
-
-```csharp
-CandleData CopySeries(string? symbol, Timeframe? timeframe, int / DateTime startPos / startTime, int / DateTime count / endTime);
-```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol (optional). |
-| `timeframe` | `Timeframe?` | The timeframe (optional). |
-| `startPos` / `startTime` | `int` / `DateTime` | The starting position index or the start time. |
-| `count` / `endTime` | `int` / `DateTime` | The number of candles to copy, or the end time. |
-
-**Return Value**
-
-Returns an array of [`CandleData`](../../models.md#candledata) objects.
-
-**Remarks**
-
-No special remarks.
-
-**Example**
+Factory methods to initialize standard technical indicators:
 
 ```csharp
-// Get full candle data for the last 3 candles
-CandleData[] candles = await Market.CopySeries(null, null, 1, 3);
-foreach(var candle in candles)
-{
-    Logger.Info($"O: {candle.Open} H: {candle.High} L: {candle.Low} C: {candle.Close}");
-}
-```
-
----
-
-## CopyTimes
-Copies open timestamps of candles.
-
-**Syntax**
-
-```csharp
-DateTime CopyTimes(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
-```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol (optional). |
-| `tf` | `Timeframe?` | The timeframe (optional). |
-| `startPos` / `startTime` | `int` / `DateTime` | The starting position index or the start time. |
-| `count` / `endTime` | `int` / `DateTime` | The number of times to copy, or the end time. |
-
-**Return Value**
-
-Returns an array of `DateTime` objects.
-
-**Remarks**
-
-No special remarks.
-
-**Example**
-
-```csharp
-DateTime[] times = await Market.CopyTimes(null, null, 1, 5);
-```
-
----
-
-## CopyVolumes
-Copies volume values of candles.
-
-**Syntax**
-
-```csharp
-decimal[] CopyVolumes(string? symbol, Timeframe? tf, int / DateTime startPos / startTime, int / DateTime count / endTime);
-```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol (optional). |
-| `tf` | `Timeframe?` | The timeframe (optional). |
-| `startPos` / `startTime` | `int` / `DateTime` | The starting position index or the start time. |
-| `count` / `endTime` | `int` / `DateTime` | The number of volumes to copy, or the end time. |
-
-**Return Value**
-
-Returns an array of volume values (`decimal[]`).
-
-**Remarks**
-
-No special remarks.
-
-**Example**
-
-```csharp
-decimal[] volumes = await Market.CopyVolumes(null, null, 1, 5);
-```
-
----
-
-## Creating Indicators
-
-Factory methods to create built-in indicators (MA, RSI, Stochastic, MACD, ATR, Bollinger Bands, etc.).
-
-**Syntax**
-
-```csharp
-IIndicatorMA CreateIndicatorMA(string? symbol = null, Timeframe? timeframe = null, int? period = null, MaMethod? method = null, AppliedPrice? appliedPrice = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
-IIndicatorRSI CreateIndicatorRSI(string? symbol = null, Timeframe? timeframe = null, int? period = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
+IIndicatorMA   CreateIndicatorMA(string? symbol = null, Timeframe? timeframe = null, int? period = null, MaMethod? method = null, AppliedPrice? appliedPrice = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
+IIndicatorRSI  CreateIndicatorRSI(string? symbol = null, Timeframe? timeframe = null, int? period = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
 IIndicatorMACD CreateIndicatorMACD(string? symbol = null, Timeframe? timeframe = null, int? fastPeriod = null, int? slowPeriod = null, int? signalPeriod = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
-// ... and many more (e.g. CreateIndicatorATR, CreateIndicatorStochastic)
+IIndicatorATR  CreateIndicatorATR(string? symbol = null, Timeframe? timeframe = null, int? period = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
+IIndicatorBollingerBands CreateIndicatorBollingerBands(string? symbol = null, Timeframe? timeframe = null, int? period = null, double? deviations = null, AppliedPrice? appliedPrice = null, string? indicatorAlias = null, Action<IndicatorProperty>? propertyOptions = null);
 ```
-
-**Parameters**
-
-| Parameter | Type | Description |
-|---|---|---|
-| `symbol` | `string?` | The trading symbol (optional). |
-| `timeframe` | `Timeframe?` | The timeframe for the indicator (optional). |
-| `period` / `fastPeriod` | `int?` | Specific periods used by the indicator formula. |
-| `indicatorAlias` | `string?` | An alias for the indicator instance (optional). |
-| `propertyOptions` | `Action<IndicatorProperty>?` | Optional action to configure indicator UI properties (colors, thickness). |
-
-**Return Value**
-
-Returns an instance of the specific indicator interface (e.g., `IIndicatorMA`, `IIndicatorRSI`) registered and managed by the system.
 
 **Example**
 
 ```csharp
-// Initialize a Simple Moving Average (SMA) of 20 periods
-var sma20 = Market.CreateIndicatorMA(period: 20, method: MaMethod.Sma, appliedPrice: AppliedPrice.Close);
+// 20-period Exponential Moving Average on Close price
+var ema20 = Context.Timeseries.CreateIndicatorMA(period: 20, method: MaMethod.Ema, appliedPrice: AppliedPrice.Close);
 
-// Initialize a MACD with custom colors
-var macd = Market.CreateIndicatorMACD(
-    fastPeriod: 12, 
-    slowPeriod: 26, 
-    signalPeriod: 9,
-    propertyOptions: props => {
-        props.LineColor = System.Drawing.Color.Blue;
-    }
-);
+// Access buffer value (index 1 is last closed candle value)
+double currentEma = ema20.GetValue(1);
+```
+
+---
+
+## Custom Indicators
+
+```csharp
+Task<T> GetCustomIndicatorAsync<T>(string indicatorName, string? symbol = null, Timeframe? timeframe = null, params object[] parameters) where T : class;
 ```
