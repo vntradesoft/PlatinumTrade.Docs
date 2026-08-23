@@ -1,0 +1,58 @@
+- name: Giới Thiệu
+  href: intro.md
+- name: Kiến Trúc Tổng Quan
+  href: architecture.md
+- name: Bắt Đầu Nhanh
+  href: guides/getting-started.md
+- name: Hướng Dẫn Debug
+  href: guides/debugging.md
+- name: Mẫu Thiết Kế ApiResult
+  href: guides/api-result.md
+- name: Sử Dụng Trading Client
+  href: guides/trading-client.md
+- name: Dữ Liệu Thị Trường & Chỉ Báo
+  href: guides/market-data.md
+- name: API Vẽ Biểu Đồ
+  href: guides/drawing-api.md
+- name: Đa Khung Thời Gian & Đa Cặp Tiền
+  href: guides/multi-timeframe.md
+- name: Backtest & Tối Ưu Hiệu Năng
+  href: guides/backtesting.md
+- name: Quản Lý Trạng Thái & Lưu Trữ
+  href: guides/state-persistence.md
+- name: Tích Hợp Telegram
+  href: guides/telegram-integration.md
+- name: Plugin Chỉ Báo
+  items:
+    - name: Tổng Quan & Cài Đặt
+      href: plugins/indicator/overview.md
+    - name: Đăng Ký & Tham Số
+      href: plugins/indicator/registration.md
+    - name: Thuộc Tính & Buffer
+      href: plugins/indicator/properties-buffers.md
+    - name: Luồng Tính Toán
+      href: plugins/indicator/calculation.md
+    - name: Sử Dụng Chỉ Báo
+      href: plugins/indicator/using-indicators.md
+- name: Plugin Chiến Lược
+  items:
+    - name: Tổng Quan & Cài Đặt
+      href: plugins/strategy/overview.md
+    - name: Tham Số Đầu Vào
+      href: plugins/strategy/input-parameters.md
+    - name: Cấu Hình Chiến Lược
+      href: plugins/strategy/settings.md
+    - name: Sử Dụng Chỉ Báo
+      href: plugins/strategy/indicators.md
+    - name: Các Hàm Xử Lý Sự Kiện
+      href: plugins/strategy/events.md
+    - name: Trading API
+      href: plugins/strategy/trading-api.md
+    - name: Quản Lý Trạng Thái
+      href: plugins/strategy/state-management.md
+    - name: Ghi Log & Thông Báo
+      href: plugins/strategy/logger-notify.md
+    - name: Lệnh Telegram
+      href: plugins/strategy/telegram-commands.md
+- name: Lịch Sử Tài Liệu
+  href: document-history.md

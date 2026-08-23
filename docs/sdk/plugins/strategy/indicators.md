@@ -7,7 +7,7 @@ description: Registering and consuming technical indicators in strategies
 
 # Using Indicators
 
-A robust strategy often relies on technical indicators. The `Pt.Okx.Sdk` provides a wide variety of built-in indicators and supports loading custom indicators developed via the [Indicator Plugin](../indicator-plugin.md) architecture.
+A robust strategy often relies on technical indicators. The `Pt.Okx.Sdk` provides a wide variety of built-in indicators and supports loading custom indicators developed via the [Indicator Plugin](../indicator/overview.md) architecture.
 
 ## 1. Using Built-in Indicators
 
@@ -83,7 +83,7 @@ public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct
 
 ## 2. Loading Custom Indicators from Plugins
 
-If you have developed custom indicators compiled into an external `.dll` (as explained in the [Custom Indicator Plugin](../indicator-plugin.md) documentation), you can dynamically load them into your strategy.
+If you have developed custom indicators compiled into an external `.dll` (as explained in the [Custom Indicator Plugin](../indicator/overview.md) documentation), you can dynamically load them into your strategy.
 
 ### Injecting Required Services
 

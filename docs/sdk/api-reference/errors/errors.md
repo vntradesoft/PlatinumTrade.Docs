@@ -27,5 +27,5 @@ visibility: public
 
 ## Related Docs
 
-- [SDK Overview](../intro.md)
-- [SDK Error Handling](../api-result.md)
+- [SDK Overview](../../intro.md)
+- [SDK Error Handling](../../guides/api-result.md)

@@ -1,0 +1,78 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category 'Getting Started' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Products": {
+    "message": "Products",
+    "description": "The label for category 'Products' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.CLI": {
+    "message": "CLI",
+    "description": "The label for category 'CLI' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.GUI": {
+    "message": "GUI",
+    "description": "The label for category 'GUI' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Settings": {
+    "message": "Settings",
+    "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.SDK": {
+    "message": "SDK",
+    "description": "The label for category 'SDK' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category 'Guides' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Plugins": {
+    "message": "Plugins",
+    "description": "The label for category 'Plugins' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Strategy Plugin": {
+    "message": "Strategy Plugin",
+    "description": "The label for category 'Strategy Plugin' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Strategy Plugin.link.generated-index.description": {
+    "message": "Developing custom strategy plugins",
+    "description": "The generated-index page description for category 'Strategy Plugin' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Indicator Plugin": {
+    "message": "Indicator Plugin",
+    "description": "The label for category 'Indicator Plugin' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Indicator Plugin.link.generated-index.description": {
+    "message": "Developing custom indicator plugins",
+    "description": "The generated-index page description for category 'Indicator Plugin' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category 'API Reference' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Client": {
+    "message": "Client",
+    "description": "The label for category 'Client' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Timeseries & Indicators": {
+    "message": "Timeseries & Indicators",
+    "description": "The label for category 'Timeseries & Indicators' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Built-in Technical Indicators": {
+    "message": "Built-in Technical Indicators",
+    "description": "The label for category 'Built-in Technical Indicators' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Legal": {
+    "message": "Legal",
+    "description": "The label for category 'Legal' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Support": {
+    "message": "Support",
+    "description": "The label for category 'Support' in sidebar 'tutorialSidebar'"
+  }
+}

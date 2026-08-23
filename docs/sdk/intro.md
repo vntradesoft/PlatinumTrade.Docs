@@ -33,8 +33,8 @@ description: Overview of Pt.Okx.Sdk components, indicators, and framework
 ## Where to start
 
 - New to the project → [Architecture](architecture.md)
-- Ready to write code → [Getting Started](getting-started.md)
-- Building a strategy → [Strategy Plugin](strategy/overview.md)
-- Building an indicator → [Custom Indicator Plugin](indicator-plugin.md)
-- Drawing on charts from code → [Drawing API](drawing-api.md)
+- Ready to write code → [Getting Started](guides/getting-started.md)
+- Building a strategy → [Strategy Plugin](plugins/strategy/overview.md)
+- Building an indicator → [Custom Indicator Plugin](plugins/indicator/overview.md)
+- Drawing on charts from code → [Drawing API](guides/drawing-api.md)
 - Looking up API signatures → [API Reference](pathname:///PlatinumTrade.Docs/sdk/api/index.html)

@@ -21,8 +21,8 @@ It integrates a desktop application (GUI), a CLI application for host-based trad
 ## Getting Started Roadmap
 
 - **End User**: See the [Quickstart](./quickstart.md) guide, then view the [GUI Overview](../products/gui/overview.md).
-- **CLI Operator**: See the [CLI Overview](../products/cli/overview.md).
-- **SDK Developer**: See the [SDK Overview](../sdk/overview.md).
+- **CLI Operator**: See the [Bot CLI Overview](../products/bot-cli/overview.md).
+- **SDK Developer**: See the [SDK Intro](../sdk/intro.md).
 
 ## Installation
 

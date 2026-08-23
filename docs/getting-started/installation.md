@@ -11,4 +11,4 @@ Platinum Trade App installation guide: [installation](../products/gui/installati
 
 Platinum Trade CLI installation guide: [installation](../products/bot-cli/installation.md)
 
-Platinum Trade SDK installation guide: [installation](../sdk/installation.md)
+Platinum Trade SDK installation guide: [installation](../sdk/guides/getting-started.md)

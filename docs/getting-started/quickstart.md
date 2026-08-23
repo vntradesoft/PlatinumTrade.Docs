@@ -73,4 +73,4 @@ Trading cryptocurrencies involves significant risk. This software is not financi
 
 - For detailed GUI configuration, see the [GUI Getting Started](../products/gui/getting-started.md).
 - To run automated trading via command-line, see [CLI Bot Getting Started](../products/bot-cli/getting-started.md).
-- Explore SDK capabilities in [SDK Overview](../sdk/overview.md).
+- Explore SDK capabilities in [SDK Intro](../sdk/intro.md).

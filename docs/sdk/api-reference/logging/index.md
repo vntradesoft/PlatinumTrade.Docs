@@ -1,4 +1,4 @@
-﻿---
+---
 id: index
 title: Logging
 sidebar_position: 4
@@ -13,5 +13,5 @@ The Logging API allows your strategies to output messages to the user interface,
 
 | Interface / Class | Description |
 |---|---|
-| [`ILoggerClient`](./logger-client.md) | Interface for logging messages. |
-| [`LogLevel`](../../enums.md#loglevel) | Enumeration defining the severity of the log. |
+| [`IStrategyLogger`](../interfaces.md#istrategylogger) | Interface for structured and trading-specific logging. |
+| [`PtLogLevel`](../enums.md#ptloglevel) | Enumeration defining the severity of the log. |

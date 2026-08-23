@@ -94,5 +94,5 @@ Pt.Okx.Sdk
 
 ## See also
 
-- [Getting Started](getting-started.md) — How to reference the SDK and write your first code
+- [Getting Started](guides/getting-started.md) — How to reference the SDK and write your first code
 - [API Reference](pathname:///PlatinumTrade.Docs/sdk/api/index.html) — Full API documentation

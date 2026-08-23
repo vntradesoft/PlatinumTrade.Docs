@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "PlatinumTrade Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "PlatinumTrade Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Tài Liệu",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.API Reference": {
+    "message": "Tham Chiếu API",
+    "description": "Navbar item with label API Reference"
+  },
+  "item.label.SDK Examples": {
+    "message": "Ví Dụ SDK",
+    "description": "Navbar item with label SDK Examples"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Discord": {
+    "message": "Discord",
+    "description": "Navbar item with label Discord"
+  }
+}

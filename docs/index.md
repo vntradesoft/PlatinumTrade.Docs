@@ -30,14 +30,14 @@ A lightweight command-line host designed for running automated trading strategie
 ## 3. Developer SDK & API
 An open-source SDK (`Pt.Okx.Sdk`) allowing developers to extend Platinum Trade by building custom technical indicators and automated trading strategies.
 - **SDK Overview**: [Integrating the SDK](./sdk/intro.md)
-- **Indicator API**: [Developing Custom Indicators](./sdk/indicator/overview.md)
-- **Strategy API**: [Writing Automated Strategies](./sdk/strategy/overview.md)
-- **Drawing API**: [Rendering Visual Shapes on Charts](./sdk/drawing-api.md)
+- **Indicator API**: [Developing Custom Indicators](./sdk/plugins/indicator/overview.md)
+- **Strategy API**: [Writing Automated Strategies](./sdk/plugins/strategy/overview.md)
+- **Drawing API**: [Rendering Visual Shapes on Charts](./sdk/guides/drawing-api.md)
 
 ---
 
 ## Reference & Support
 - **API Reference**: [Developer API Specifications](./sdk/api-reference/index.md)
-- **Error Codes**: [Error Code Directory](./sdk/api-reference/errors.md)
+- **Error Codes**: [Error Code Directory](./sdk/api-reference/errors/errors.md)
 - **Legal & Policies**: [Terms of Use](./legal/terms-of-use.md)
 - **Help**: [Frequently Asked Questions](./support/faq.md)

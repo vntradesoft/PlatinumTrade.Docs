@@ -225,4 +225,4 @@ public async Task RunAsync(StrategyEventType eventType, IStrategyStateStore stat
 ## See also
 
 - [IDrawingManager](xref:Pt.Okx.Sdk.Drawing.IDrawingManager) API Reference
-- [Strategy Plugin](strategy/overview.md) — Main strategy documentation
+- [Strategy Plugin](../plugins/strategy/overview.md) — Main strategy documentation

@@ -178,11 +178,11 @@ var result = await _client.Trade.PlaceOrderAsync(
 To run or backtest your compiled strategy, load its `.dll` file directly into the **Platinum Trade App** GUI:
 
 1. Build your strategy project to output the compiled DLL assembly.
-2. Refer to the [GUI Strategy Configuration Guide](../products/gui/strategy-config.md) for step-by-step instructions on loading the DLL, adjusting custom parameters, and running it in Live/Backtest mode.
+2. Refer to the [GUI Strategy Configuration Guide](../../products/gui/strategy-config.md) for step-by-step instructions on loading the DLL, adjusting custom parameters, and running it in Live/Backtest mode.
 
 ## Next steps
 
 - [Debugging Guide](debugging.md) — How to debug your strategy with live breakpoints
 - [ApiResult Pattern](api-result.md) — How to handle errors
 - [Using the Trading Client](trading-client.md) — Placing and cancelling orders
-- [Strategy Plugin](strategy/overview.md) — Full details on the strategy lifecycle
+- [Strategy Plugin](../plugins/strategy/overview.md) — Full details on the strategy lifecycle

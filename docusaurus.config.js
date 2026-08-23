@@ -30,7 +30,19 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'vi'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+      },
+      vi: {
+        label: 'Tiếng Việt',
+        direction: 'ltr',
+        htmlLang: 'vi-VN',
+      },
+    },
   },
 
   presets: [
@@ -135,6 +147,10 @@ const config = {
           {
             href: 'https://discord.gg/platinumtrade',
             label: 'Discord',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],

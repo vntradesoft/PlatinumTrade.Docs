@@ -273,6 +273,6 @@ public class TrendStrategy : StrategyBase
 ## See also
 
 - [ITimeSeriesClient](xref:Pt.Okx.Sdk.Clients.Market.ITimeSeriesClient) API Reference
-- [Custom Indicator Plugin](indicator-plugin.md) — Build your own indicator
+- [Custom Indicator Plugin](../plugins/indicator/overview.md) — Build your own indicator
 - [Drawing API](drawing-api.md) — Draw objects on the chart from code
-- [Strategy Plugin](strategy/overview.md) — Using indicators within a strategy
+- [Strategy Plugin](../plugins/strategy/overview.md) — Using indicators within a strategy
