@@ -4,6 +4,8 @@
   href: architecture.md
 - name: Getting Started
   href: getting-started.md
+- name: Debugging Strategies
+  href: debugging.md
 - name: ApiResult Pattern
   href: api-result.md
 - name: Using the Trading Client
@@ -12,8 +14,14 @@
   href: market-data.md
 - name: Drawing API
   href: drawing-api.md
-- name: Debugging Strategies
-  href: debugging.md
+- name: Multi-Timeframe & Multi-Symbol
+  href: multi-timeframe.md
+- name: Backtesting & Performance
+  href: backtesting.md
+- name: State Persistence & Recovery
+  href: state-persistence.md
+- name: Telegram Integration
+  href: telegram-integration.md
 - name: Indicator Plugin
   items:
     - name: Overview & Setup
