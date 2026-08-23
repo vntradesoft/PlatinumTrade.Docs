@@ -206,7 +206,7 @@ function DocumentationDirectory() {
     {
       title: 'Tutorials',
       desc: 'Step-by-step guides to write plugins and compile SDK solutions.',
-      to: '/docs/sdk/sdk-getting-started',
+      to: '/docs/sdk/guides/sdk-getting-started',
       icon: '📖',
       highlight: false,
     },
