@@ -12,6 +12,8 @@
   href: market-data.md
 - name: Drawing API
   href: drawing-api.md
+- name: Debugging Strategies
+  href: debugging.md
 - name: Indicator Plugin
   items:
     - name: Overview & Setup

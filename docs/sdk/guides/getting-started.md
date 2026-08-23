@@ -185,6 +185,7 @@ To run or backtest your compiled strategy, load its `.dll` file directly into th
 
 ## Next steps
 
+- [Debugging Guide](debugging.md) — How to debug your strategy with live breakpoints
 - [ApiResult Pattern](api-result.md) — How to handle errors
 - [Using the Trading Client](trading-client.md) — Placing and cancelling orders
 - [Strategy Plugin](strategy/overview.md) — Full details on the strategy lifecycle

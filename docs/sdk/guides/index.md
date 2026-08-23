@@ -16,3 +16,4 @@ Step-by-step guides for common SDK tasks and workflows.
 | [Using the Trading Client](trading-client.md) | Placing orders, managing positions and balances |
 | [Market Data & Indicators](market-data.md) | Retrieving historical and real-time market data |
 | [Drawing API](drawing-api.md) | Drawing indicators, lines, shapes, and texts on charts |
+| [Debugging Guide](debugging.md) | Live breakpoint debugging and launch profile setup |
