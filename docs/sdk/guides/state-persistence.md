@@ -3,14 +3,16 @@ id: sdk-guide-state-persistence
 title: State Management & Crash Recovery
 sidebar_label: State Persistence & Recovery
 sidebar_position: 8
-description: Learn how to persist internal strategy state, store custom files safely, and implement automated crash recovery in Platinum Trade SDK.
+description: Learn how the Platinum Trade SDK manages live runtime state via IStrategyStateStore and persists custom strategy data using IStoragePathProvider.
 ---
 
 # State Management & Crash Recovery
 
-In live algorithmic trading, strategies must be resilient against process restarts, operating system reboots, and network disconnections. Complex strategies such as **Grid Bots**, **DCA (Dollar Cost Averaging)**, or **Trailing Stop managers** maintain internal state (e.g., active grid levels, order IDs, high-water marks, and cumulative session PnL).
+In automated algorithmic trading, strategies must handle live market state tracking, bot restarts, and crash recovery seamlessly. 
 
-The Platinum Trade SDK provides built-in state persistence (`IStrategyStateStore`) and scoped storage path resolution (`IStoragePathProvider`) to enable zero-loss crash recovery.
+The Platinum Trade SDK separates state management into two distinct architectural components:
+1. **Live Runtime State (`IStrategyStateStore`)**: An in-memory container maintained by the host engine tracking active orders, positions, balances, and last received market data.
+2. **Persistent Disk Storage (`IStoragePathProvider`)**: A sandbox-isolated directory resolver used to save and load custom strategy state (e.g., custom grid levels, cumulative risk stats, trailing watermarks) to survive application restarts.
 
 ---
 
@@ -18,81 +20,140 @@ The Platinum Trade SDK provides built-in state persistence (`IStrategyStateStore
 
 ```mermaid
 flowchart TD
-    subgraph StrategyLifecycle["Strategy Startup Flow"]
-        Start["Strategy Starts (OnInitAsync)"] --> LoadState["Context.StateStore.LoadStateAsync<MyBotState>()"]
-        LoadState --> HasState{"Previous State Found?"}
-        
-        HasState -- Yes (Recovery) --> SyncExchange["Query Context.Trade.GetPositionsAsync()"]
-        SyncExchange --> Reconcile["Reconcile & Resume Bot State"]
-        
-        HasState -- No (Fresh Start) --> InitFresh["Initialize Clean State & Parameters"]
+    subgraph HostEngine["Platinum Trade Host Engine"]
+        LiveFeed["WebSocket / Engine Events"] --> StateStore["IStrategyStateStore\n(Live Positions, Orders, Balances)"]
+        StateStore --> Strategy["StrategyBase : IStrategy"]
     end
 
-    subgraph RuntimeExecution["Runtime Execution"]
-        Reconcile --> RuntimeLoop["OnTickAsync(TickPhase, ct)"]
-        InitFresh --> RuntimeLoop
-        RuntimeLoop --> StateChange["Trade Executed / Grid Shifted"]
-        StateChange --> SaveState["_stateStore.SaveStateAsync('BotState', state)"]
+    subgraph StrategyStateFlow["Custom Strategy Persistence"]
+        Strategy --> Init["OnInitAsync(IStrategyStateStore state, ...)"]
+        Init --> ReadDisk["Load custom JSON from IStoragePathProvider (State Scope)"]
+        ReadDisk --> CheckStateStore["Cross-reference with state.Positions & state.Orders"]
+        CheckStateStore --> LiveExec["OnTickAsync(TickPhase, ct)"]
+        LiveExec --> WriteDisk["Save updated custom state to disk (JSON)"]
     end
 ```
 
 ---
 
-## 1. Defining a Strategy State Model
+## 1. Inspecting Live Runtime State (`IStrategyStateStore`)
 
-Create a serializable data class representing the state variables you need to persist across restarts:
+When your strategy starts, the host engine injects an instance of `IStrategyStateStore` into `OnInitAsync()`. You can hold a reference to this store to inspect live trading conditions without making repeated asynchronous network calls:
 
 ```csharp
-public class GridBotState
+public interface IStrategyStateStore
 {
-    public DateTime LastUpdatedUtc { get; set; }
-    public decimal EntryPrice { get; set; }
-    public decimal HighestPriceSeen { get; set; }
-    public int ActiveLayerCount { get; set; }
-    public List<long> PendingOrderIds { get; set; } = new();
-    public decimal RealizedSessionPnl { get; set; }
+    IReadOnlyList<Order> Orders { get; }
+    IReadOnlyList<AlgoOrder> AlgoOrders { get; }
+    IReadOnlyList<Position> Positions { get; }
+    IReadOnlyList<AccountBalance> Balances { get; }
+    IReadOnlyList<Transaction> Transactions { get; }
+    
+    CandleData? LastKline { get; }
+    bool HasOpenPosition { get; }
+    bool HasOpenOrders { get; }
+    bool HasProtectiveAlgoOrders { get; }
+    int OpenOrderCount { get; }
+    int AlgoOrderCount { get; }
+}
+```
+
+### Example: Quick Position & Order Checks
+```csharp
+public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
+{
+    if (tickPhase != TickPhase.BarClose) return;
+
+    // Fast in-memory state inspection
+    if (_stateStore.HasOpenPosition)
+    {
+        var primaryPos = _stateStore.Positions.FirstOrDefault(p => p.Symbol == "BTC-USDT-SWAP");
+        if (primaryPos != null)
+        {
+            Context.Logger.LogInformation("State", $"Current Position Qty: {primaryPos.PositionQuantity}, PnL: {primaryPos.UnrealizedPnl}");
+        }
+        return;
+    }
+
+    if (!_stateStore.HasOpenOrders)
+    {
+        // Safe to place a new entry order
+    }
 }
 ```
 
 ---
 
-## 2. Saving and Loading State
+## 2. Persisting Custom Strategy Data with `IStoragePathProvider`
 
-Use `Context.StateStore` (or your injected state manager) to persist and retrieve state:
+For custom variables that must survive process shutdowns (like grid layer counts, high-water marks, or daily loss limits), use `IStoragePathProvider` to resolve the dedicated `StoragePathScope.State` directory:
 
 ```csharp
+using System.Text.Json;
+using Pt.Okx.Sdk.Enums;
+using Pt.Okx.Sdk.Storage;
+using Pt.Okx.Sdk.Storage.Enums;
 using Pt.Okx.Sdk.Strategy;
+using Pt.Okx.Sdk.Strategy.Events;
 
-public class ResilientGridStrategy : StrategyBase
+public class CustomBotState
 {
-    private const string StateKey = "GridBot_ActiveState";
+    public DateTime LastSavedUtc { get; set; }
+    public decimal HighWaterMarkPrice { get; set; }
+    public int CompletedCycleCount { get; set; }
+    public decimal CumulativeSessionPnl { get; set; }
+}
+
+public class ResilientStrategy : StrategyBase
+{
     private IStrategyStateStore _stateStore = null!;
-    private GridBotState _state = new();
+    private readonly IStoragePathProvider _storage;
+    private CustomBotState _customState = new();
+    private string _stateFilePath = string.Empty;
+
+    // Injected via DI container
+    public ResilientStrategy(IStoragePathProvider storage)
+    {
+        _storage = storage;
+    }
 
     public override async Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken cancellationToken)
     {
         _stateStore = state;
 
-        // 1. Attempt to load previous state
-        var savedState = await _stateStore.LoadStateAsync<GridBotState>(StateKey);
+        // 1. Resolve safe state directory on disk
+        string stateDir = _storage.GetPath(StoragePathScope.State);
+        _stateFilePath = Path.Combine(stateDir, "my_strategy_state.json");
 
-        if (savedState != null)
+        // 2. Load previous state if it exists
+        if (File.Exists(_stateFilePath))
         {
-            Context.Logger.LogInformation("Recovery", $"Found existing state from {savedState.LastUpdatedUtc:yyyy-MM-dd HH:mm:ss} UTC. Reconciling...");
-            _state = savedState;
-
-            // 2. Reconcile with live exchange positions
-            await ReconcileWithExchangeAsync(cancellationToken);
+            try
+            {
+                string json = await File.ReadAllTextAsync(_stateFilePath, cancellationToken);
+                _customState = JsonSerializer.Deserialize<CustomBotState>(json) ?? new();
+                Context.Logger.LogInformation("Recovery", $"State loaded. HighWaterMark={_customState.HighWaterMarkPrice}");
+            }
+            catch (Exception ex)
+            {
+                Context.Logger.LogError(ex, "Failed to deserialize state file, starting fresh.");
+                _customState = new CustomBotState();
+            }
         }
         else
         {
-            Context.Logger.LogInformation("Init", "No prior state found. Starting fresh session.");
-            _state = new GridBotState
+            _customState = new CustomBotState
             {
-                LastUpdatedUtc = Context.Timeseries.GetCurrentTime(),
-                HighestPriceSeen = Context.Timeseries.CurrentTickPrice
+                HighWaterMarkPrice = Context.Timeseries.CurrentTickPrice,
+                LastSavedUtc = Context.Timeseries.GetCurrentTime()
             };
-            await _stateStore.SaveStateAsync(StateKey, _state);
+            await SaveCustomStateAsync(cancellationToken);
+        }
+
+        // 3. Reconcile with live host engine state
+        if (_stateStore.HasOpenPosition)
+        {
+            Context.Logger.LogInformation("Reconcile", $"Strategy resumed with {_stateStore.Positions.Count} open position(s).");
         }
 
         return true;
@@ -100,92 +161,65 @@ public class ResilientGridStrategy : StrategyBase
 
     public override Task<bool> OnStopAsync(CancellationToken cancellationToken) => Task.FromResult(true);
 
-    private async Task ReconcileWithExchangeAsync(CancellationToken ct)
-    {
-        // Query open positions on OKX
-        var posRes = await Context.Trade.GetPositionsAsync(ct: ct);
-        if (posRes.Success && posRes.Data.Length > 0)
-        {
-            var primaryPos = posRes.Data.FirstOrDefault(p => p.Symbol == "BTC-USDT-SWAP");
-            if (primaryPos != null)
-            {
-                Context.Logger.LogInformation("Reconcile", $"Re-attached to active position: Qty={primaryPos.PositionQuantity}, PnL={primaryPos.UnrealizedPnl}");
-            }
-        }
-    }
-
     public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
     {
         if (tickPhase != TickPhase.BarClose) return;
 
         decimal currentPrice = Context.Timeseries.CurrentTickPrice;
-
-        // Update high water mark
-        if (currentPrice > _state.HighestPriceSeen)
+        if (currentPrice > _customState.HighWaterMarkPrice)
         {
-            _state.HighestPriceSeen = currentPrice;
-            _state.LastUpdatedUtc = Context.Timeseries.GetCurrentTime();
-
-            // Persist updated state to disk
-            await _stateStore.SaveStateAsync(StateKey, _state);
+            _customState.HighWaterMarkPrice = currentPrice;
+            _customState.LastSavedUtc = Context.Timeseries.GetCurrentTime();
+            await SaveCustomStateAsync(ct);
         }
+    }
+
+    private async Task SaveCustomStateAsync(CancellationToken ct)
+    {
+        string json = JsonSerializer.Serialize(_customState, new JsonSerializerOptions { WriteIndented = true });
+        await File.WriteAllTextAsync(_stateFilePath, json, ct);
     }
 }
 ```
 
 ---
 
-## 3. Custom File & Data Storage (`IStoragePathProvider`)
+## 3. Storage Scopes Overview
 
-If your strategy loads external machine learning models, custom CSV datasets, or writes daily audit reports, use `Context.Storage` to resolve safe file paths without hardcoding directory locations.
+`IStoragePathProvider.GetPath(StoragePathScope scope)` provides isolated directories for different runtime needs:
 
-```csharp
-// Resolve the dedicated directory for this strategy plugin
-string dataDir = Context.Storage.GetDataDirectory();
-string reportPath = Path.Combine(dataDir, $"trade_report_{DateTime.UtcNow:yyyyMMdd}.csv");
-
-// Write custom report safely
-await File.AppendAllTextAsync(reportPath, $"{DateTime.UtcNow},{candle.Close},{_state.RealizedSessionPnl}\n");
-```
-
-> [!TIP]
-> `IStoragePathProvider` automatically handles sandbox isolation across different operating systems and deployment packages (e.g., Velopack local app data).
+| Storage Scope | Method / Target Path | Use Case |
+| :--- | :--- | :--- |
+| `StoragePathScope.State` | `GetStateRoot()` | Persistent JSON/binary strategy state files surviving restarts. |
+| `StoragePathScope.LiveLogs` | `GetLiveLogsRoot()` | Trade session audit files, execution traces. |
+| `StoragePathScope.BacktestLogs` | `GetBacktestLogsRoot()` | Exported backtest CSV reports and performance summaries. |
+| `StoragePathScope.Cache` | `GetCacheRoot()` | Temporary calculation cache or pre-processed datasets. |
+| `StoragePathScope.Exports` | `GetExportsRoot()` | User-requested export artifacts and charts. |
 
 ---
 
-## 4. Resetting State upon Strategy Completion
+## 4. Best Practices for State & Backtesting
 
-When a grid or DCA cycle finishes and all positions are closed, clean up the stored state so subsequent runs start with a fresh slate:
+> [!WARNING]
+> **Disable File Writing in Backtests**:
+> During high-speed backtesting, writing state files to disk on every bar causes severe disk I/O bottlenecks. Detect backtests (`Context.Timeseries.EndTime.HasValue`) and avoid disk writes during simulations.
 
 ```csharp
-private async Task OnCycleCompletedAsync()
+private async Task SaveCustomStateAsync(CancellationToken ct)
 {
-    Context.Logger.LogInformation("Cycle", "Take profit target reached. Clearing state...");
-    
-    // Delete state record
-    await Context.StateStore.DeleteStateAsync(StateKey);
-    
-    // Reset memory reference
-    _state = new GridBotState();
+    // Skip disk writes in backtesting mode
+    if (Context.Timeseries.EndTime.HasValue) return;
+
+    string json = JsonSerializer.Serialize(_customState);
+    await File.WriteAllTextAsync(_stateFilePath, json, ct);
 }
 ```
 
 ---
 
-## Best Practices Checklist
-
-| Practice | Recommendation |
-| :--- | :--- |
-| **Atomic Updates** | Save state immediately after critical order executions or significant parameter shifts. |
-| **Exchange Verification** | Never trust local state blindly upon startup; cross-reference with `Context.Trade.GetPositionsAsync()` to detect manual closes or liquidation events while the bot was offline. |
-| **Versioned State Models** | If you update your strategy DLL with new properties, provide default values for legacy saved state fields to avoid deserialization errors. |
-| **Cleanup on Exit** | Implement `OnDeinitAsync()` or cycle-completion hooks to clear stale records. |
-
----
-
 ## Related Documentation
 
-- [Strategy Plugin Architecture](../plugins/strategy/state-management.md) — Core state management architecture.
-- [Storage API Reference](../api-reference/storage/index.md) — Detailed methods on `IStoragePathProvider`.
-- [Trade Client API Reference](../api-reference/client/trade.md) — Reconciling positions with `GetPositionsAsync`.
-- [Debugging Guide](./debugging.md) — Testing state recovery in Visual Studio.
+- [Strategy Plugin Architecture](../plugins/strategy/state-management.md) — Detailed architecture of state managers.
+- [Backtesting Guide](./backtesting.md) — Deterministic time and performance optimization.
+- [Storage API Reference](../api-reference/storage/index.md) — Method definitions for `IStoragePathProvider`.
+- [Trade Client API Reference](../api-reference/client/trade.md) — Managing orders and positions.
