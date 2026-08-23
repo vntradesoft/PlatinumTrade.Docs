@@ -25,7 +25,7 @@ timeline
               : Indicators calculate historical buffers
               : No trade orders allowed
     StartTime : Active Trading Starts
-              : OnKlineAsync / OnTickAsync execute signals
+              : OnTickAsync executes signals (TickPhase.Tick / TickPhase.BarClose)
               : Orders are matched by simulation engine
     EndTime   : Backtest Ends
               : Performance metrics computed (Sharpe, Drawdown, Profit Factor)
@@ -49,7 +49,7 @@ When configuring a backtest in Platinum Trade, you can choose among several simu
 
 | Mode | Precision | Speed | When to Use |
 | :--- | :--- | :--- | :--- |
-| **Bar Close Only** (`OpenCloseHighLow`) | Standard | ⚡⚡⚡ Maximum | Best for pure bar-close strategies (`OnKlineAsync`), parameter sweeps, and genetic optimization. |
+| **Bar Close Only** (`OpenCloseHighLow`) | Standard | ⚡⚡⚡ Maximum | Best for strategies executing on closed candles (`tickPhase == TickPhase.BarClose`), parameter sweeps, and genetic optimization. |
 | **1-Minute Interpolation** (`OneMinute`) | High | ⚡⚡ Fast | Simulates intra-bar price movement using historical 1-minute bars. Ideal for trailing stops and stop-loss verification. |
 | **Tick by Tick** (`Tick`) | Ultra | ⚡ Accurate | Uses actual historical tick records. Essential for scalp bots, high-frequency strategies, and order book simulations. |
 
@@ -112,16 +112,18 @@ decimal sum = closes.Sum();
 ### 2. Understand Indicator Evaluation (Lazy vs. Eager)
 By default, the SDK calculates indicators **once at the open of each new bar**. 
 
-- If your strategy trades on closed candles (`OnKlineAsync`), indicator buffers are already updated. **Do not** call `UpdateOpenCandleIndicators()`.
-- Only call [`Context.Timeseries.UpdateOpenCandleIndicators()`](../api-reference/client/timeseries-and-indicators/timeseries.md#updateopencandleindicators) inside `OnTickAsync` if your strategy logic explicitly requires indicator values based on unclosed, forming candle ticks.
+- If your strategy trades on closed bars (`tickPhase == TickPhase.BarClose`), indicator buffers are already updated. **Do not** call `UpdateOpenCandleIndicators()`.
+- Only call [`Context.Timeseries.UpdateOpenCandleIndicators()`](../api-reference/client/timeseries-and-indicators/timeseries.md#updateopencandleindicators) inside `OnTickAsync` during intra-bar ticks (`tickPhase == TickPhase.Tick`) if your strategy logic explicitly requires indicator values based on unclosed, forming candle ticks.
 
 ```csharp
-public override async Task OnTickAsync(TickData tick)
+public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
 {
-    // Call only if you need forming candle values on every tick
-    Context.Timeseries.UpdateOpenCandleIndicators();
-
-    double intraBarRsi = _rsi.GetValue(0); // Value reflecting current tick
+    if (tickPhase == TickPhase.Tick)
+    {
+        // Call only if you need forming candle values on intermediate ticks
+        Context.Timeseries.UpdateOpenCandleIndicators();
+        double intraBarRsi = _rsi.GetValue(0); // Value reflecting current forming candle tick
+    }
 }
 ```
 
@@ -129,13 +131,13 @@ public override async Task OnTickAsync(TickData tick)
 `OnTickAsync` can be invoked millions of times during a backtest. Avoid allocating strings, LINQ expressions, or temporary objects on every tick:
 
 ```csharp
-// ❌ SLOW: Allocates strings and objects on every tick
-Context.Logger.LogInformation("Tick", $"Price={tick.LastPrice} at {DateTime.Now}");
+// ❌ SLOW: Allocates strings and objects on every single tick
+Context.Logger.LogInformation("Tick", $"Price={Context.Timeseries.CurrentTickPrice} at {DateTime.Now}");
 
-// ✅ FAST: Log only on meaningful state transitions or bar closes
-if (signalTriggered)
+// ✅ FAST: Execute heavy logic and logging only on bar closes or state changes
+if (tickPhase == TickPhase.BarClose && signalTriggered)
 {
-    Context.Logger.LogInformation("Signal", $"Trade signal triggered at price: {tick.LastPrice}");
+    Context.Logger.LogInformation("Signal", $"Trade signal triggered at price: {Context.Timeseries.CurrentTickPrice}");
 }
 ```
 

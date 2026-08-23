@@ -26,16 +26,16 @@ sequenceDiagram
     participant Exchange as OKX Exchange
 
     Trader->>TG: Send "/status"
-    TG->>SDK: Trigger OnTelegramCommandAsync(e)
+    TG->>SDK: Trigger OnTradeCommandAsync(tradeCommand, ct)
     SDK->>Exchange: Query Context.Trade.GetPositionsAsync()
     Exchange-->>SDK: Active Position Info
-    SDK-->>TG: Send Formatted Markdown Report
-    TG-->>Trader: Display PnL, Winrate, Active Layers
+    SDK-->>TG: Context.Notify.SendTelegramMessageAsync(report)
+    TG-->>Trader: Display PnL, Winrate, Active Positions
 
-    Trader->>TG: Send "/close_all"
-    TG->>SDK: Trigger OnTelegramCommandAsync(e)
+    Trader->>TG: Send "/close"
+    TG->>SDK: Trigger OnTradeCommandAsync(tradeCommand, ct)
     SDK->>Exchange: Context.Trade.ClosePositionAsync()
-    SDK-->>TG: Reply "✅ All positions closed successfully."
+    SDK-->>TG: Context.Notify.SendTelegramMessageAsync("✅ Closed")
 ```
 
 ---
@@ -45,17 +45,19 @@ sequenceDiagram
 Use `Context.Notify` to send formatted messages directly to the configured Telegram chat:
 
 ```csharp
-public override async Task OnKlineAsync(CandleData candle)
+public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
 {
+    if (tickPhase != TickPhase.BarClose) return;
+
     if (signalBuy)
     {
-        var res = await Context.Trade.PlaceOrderAsync("BTC-USDT-SWAP", OrderSide.Buy, OrderType.Market, 1.0m);
+        var res = await Context.Trade.PlaceOrderAsync("BTC-USDT-SWAP", OrderSide.Buy, OrderType.Market, 1.0m, ct: ct);
         if (res.Success)
         {
             string message = 
                 $"🚀 <b>BUY Order Placed</b>\n" +
                 $"• <b>Symbol:</b> <code>BTC-USDT-SWAP</code>\n" +
-                $"• <b>Price:</b> <code>{candle.Close:F2}</code>\n" +
+                $"• <b>Price:</b> <code>{Context.Timeseries.CurrentTickPrice:F2}</code>\n" +
                 $"• <b>Time:</b> <code>{Context.Timeseries.GetCurrentTime():yyyy-MM-dd HH:mm:ss} UTC</code>";
 
             await Context.Notify.SendTelegramMessageAsync(message);
@@ -69,52 +71,65 @@ public override async Task OnKlineAsync(CandleData candle)
 
 ---
 
-## 2. Handling Two-Way Telegram Commands
+## 2. Handling Inbound Telegram Trade Commands
 
-Override `OnTelegramCommandAsync` in your `StrategyBase` class to process inbound commands sent from the Telegram chat:
+Override `OnTradeCommandAsync` in your `StrategyBase` class to process inbound commands (`TradeCommand`) sent from the Telegram chat:
 
 ```csharp
+using Pt.Okx.Sdk.Notifier.Enums;
+using Pt.Okx.Sdk.Notifier.Models;
 using Pt.Okx.Sdk.Strategy;
 using Pt.Okx.Sdk.Strategy.Events;
 
 public class TelegramInteractiveStrategy : StrategyBase
 {
     private bool _isPaused = false;
+    private decimal _riskPercentage = 1.0m;
 
-    public override async Task OnTelegramCommandAsync(TradeCommandTelegramEvent e)
+    public override Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken cancellationToken) => Task.FromResult(true);
+    public override Task<bool> OnStopAsync(CancellationToken cancellationToken) => Task.FromResult(true);
+
+    public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
     {
-        string command = e.Command.ToLowerInvariant().Trim();
-        string[] args = e.Arguments ?? Array.Empty<string>();
+        if (_isPaused || tickPhase != TickPhase.BarClose) return;
+        // Normal trading logic here
+    }
 
-        switch (command)
+    public override async Task OnTradeCommandAsync(TradeCommand tradeCommand, CancellationToken ct)
+    {
+        switch (tradeCommand.Action)
         {
-            case "/status":
-                await HandleStatusAsync(e);
+            case TradeAction.Status:
+                await HandleStatusAsync(ct);
                 break;
 
-            case "/pause":
+            case TradeAction.PauseTrading:
                 _isPaused = true;
-                await e.ReplyAsync("⏸️ <b>Strategy Paused</b>. New trade entries are disabled.");
+                await Context.Notify.SendTelegramMessageAsync("⏸️ <b>Strategy Paused</b>. New trade entries are disabled.");
                 break;
 
-            case "/resume":
+            case TradeAction.ResumeTrading:
                 _isPaused = false;
-                await e.ReplyAsync("▶️ <b>Strategy Resumed</b>. Scanning for market opportunities.");
+                await Context.Notify.SendTelegramMessageAsync("▶️ <b>Strategy Resumed</b>. Scanning for market opportunities.");
                 break;
 
-            case "/close_all":
-                await HandleCloseAllAsync(e);
+            case TradeAction.Close:
+                await HandleCloseAllAsync(ct);
+                break;
+
+            case TradeAction.Custom:
+                await HandleCustomCommandAsync(tradeCommand, ct);
                 break;
 
             default:
-                await e.ReplyAsync($"❓ <i>Unknown command: {command}</i>. Available: <code>/status</code>, <code>/pause</code>, <code>/resume</code>, <code>/close_all</code>");
+                await Context.Notify.SendTelegramMessageAsync($"ℹ️ Received action: <code>{tradeCommand.Action}</code>");
                 break;
         }
     }
 
-    private async Task HandleStatusAsync(TradeCommandTelegramEvent e)
+    private async Task HandleStatusAsync(CancellationToken ct)
     {
-        var posRes = await Context.Trade.GetPositionsAsync();
+        var posRes = await Context.Trade.GetPositionsAsync(ct: ct);
         decimal equity = Context.Account.Equity;
         decimal wallet = Context.Account.WalletBalance;
         decimal pnl = Context.Account.UnrealizedPnL;
@@ -128,23 +143,40 @@ public class TelegramInteractiveStrategy : StrategyBase
             $"• <b>Unrealized PnL:</b> <code>{(pnl >= 0 ? "+" : "")}{pnl:F2} USDT</code>\n" +
             $"• <b>Active Positions:</b> <code>{posRes.Data?.Length ?? 0}</code>";
 
-        await e.ReplyAsync(report);
+        await Context.Notify.SendTelegramMessageAsync(report);
     }
 
-    private async Task HandleCloseAllAsync(TradeCommandTelegramEvent e)
+    private async Task HandleCloseAllAsync(CancellationToken ct)
     {
-        var posRes = await Context.Trade.GetPositionsAsync();
+        var posRes = await Context.Trade.GetPositionsAsync(ct: ct);
         if (posRes.Success && posRes.Data.Length > 0)
         {
             foreach (var pos in posRes.Data)
             {
-                await Context.Trade.ClosePositionAsync(pos.Symbol, pos.PositionSide);
+                await Context.Trade.ClosePositionAsync(pos.Symbol, pos.PositionSide, ct: ct);
             }
-            await e.ReplyAsync("✅ <b>Emergency Action:</b> All open positions closed.");
+            await Context.Notify.SendTelegramMessageAsync("✅ <b>Emergency Action:</b> All open positions closed.");
         }
         else
         {
-            await e.ReplyAsync("ℹ️ No open positions to close.");
+            await Context.Notify.SendTelegramMessageAsync("ℹ️ No open positions to close.");
+        }
+    }
+
+    private async Task HandleCustomCommandAsync(TradeCommand cmd, CancellationToken ct)
+    {
+        if (cmd.CommandTag.Equals("setrisk", StringComparison.OrdinalIgnoreCase))
+        {
+            if (cmd.Params.TryGetValue("risk", out string? riskStr) && decimal.TryParse(riskStr, out decimal newRisk))
+            {
+                _riskPercentage = newRisk;
+                await Context.Notify.SendTelegramMessageAsync($"✅ Risk per trade updated to <code>{_riskPercentage}%</code>.");
+            }
+            else if (cmd.Amount > 0)
+            {
+                _riskPercentage = cmd.Amount;
+                await Context.Notify.SendTelegramMessageAsync($"✅ Risk per trade updated to <code>{_riskPercentage}%</code>.");
+            }
         }
     }
 }

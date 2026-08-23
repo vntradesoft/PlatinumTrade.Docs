@@ -13,21 +13,39 @@ Ready-to-run code samples and complete example projects for the Platinum Trade S
 ## Strategy Examples
 
 ```csharp
+using Pt.Okx.Sdk.Enums;
+using Pt.Okx.Sdk.Indicators.BuiltIn;
+using Pt.Okx.Sdk.Indicators.Enums;
+using Pt.Okx.Sdk.Strategy;
+using Pt.Okx.Sdk.Strategy.Events;
+
 public class MyStrategy : StrategyBase
 {
-    private IIndicatorMA _ma;
+    private IIndicatorMA _ma = null!;
 
-    public override async Task OnInitAsync()
+    public override Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken cancellationToken)
     {
-        _ma = Context.Timeseries.CreateIndicatorMA(period: 20, method: MaMethod.EMA);
+        _ma = Context.Timeseries.CreateIndicatorMA(period: 20, method: MaMethod.Ema, appliedPrice: AppliedPrice.Close);
+        return Task.FromResult(true);
     }
 
-    public override async Task OnKlineAsync(CandleData candle)
+    public override Task<bool> OnStopAsync(CancellationToken cancellationToken) => Task.FromResult(true);
+
+    public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
     {
-        var value = _ma.GetAt();
-        if (!value.IsEmpty && candle.Close > value.Value)
+        // Execute signals only on bar close
+        if (tickPhase != TickPhase.BarClose) return;
+
+        double maValue = _ma.GetValue(1);
+        decimal currentPrice = Context.Timeseries.CurrentTickPrice;
+
+        if (!double.IsNaN(maValue) && currentPrice > (decimal)maValue)
         {
-            await Context.Trade.PlaceOrderAsync("BTC-USDT-SWAP", OrderSide.Buy, OrderType.Market, 1);
+            var posRes = await Context.Trade.GetPositionsAsync(ct: ct);
+            if (posRes.Success && posRes.Data.Length == 0)
+            {
+                await Context.Trade.PlaceOrderAsync("BTC-USDT-SWAP", OrderSide.Buy, OrderType.Market, 1.0m, ct: ct);
+            }
         }
     }
 }

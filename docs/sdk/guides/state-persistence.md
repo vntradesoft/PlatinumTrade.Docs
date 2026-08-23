@@ -29,10 +29,10 @@ flowchart TD
     end
 
     subgraph RuntimeExecution["Runtime Execution"]
-        Reconcile --> RuntimeLoop["OnKlineAsync / OnTickAsync"]
+        Reconcile --> RuntimeLoop["OnTickAsync(TickPhase, ct)"]
         InitFresh --> RuntimeLoop
         RuntimeLoop --> StateChange["Trade Executed / Grid Shifted"]
-        StateChange --> SaveState["Context.StateStore.SaveStateAsync('BotState', state)"]
+        StateChange --> SaveState["_stateStore.SaveStateAsync('BotState', state)"]
     end
 ```
 
@@ -66,12 +66,15 @@ using Pt.Okx.Sdk.Strategy;
 public class ResilientGridStrategy : StrategyBase
 {
     private const string StateKey = "GridBot_ActiveState";
+    private IStrategyStateStore _stateStore = null!;
     private GridBotState _state = new();
 
-    public override async Task OnInitAsync()
+    public override async Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken cancellationToken)
     {
+        _stateStore = state;
+
         // 1. Attempt to load previous state
-        var savedState = await Context.StateStore.LoadStateAsync<GridBotState>(StateKey);
+        var savedState = await _stateStore.LoadStateAsync<GridBotState>(StateKey);
 
         if (savedState != null)
         {
@@ -79,7 +82,7 @@ public class ResilientGridStrategy : StrategyBase
             _state = savedState;
 
             // 2. Reconcile with live exchange positions
-            await ReconcileWithExchangeAsync();
+            await ReconcileWithExchangeAsync(cancellationToken);
         }
         else
         {
@@ -89,14 +92,18 @@ public class ResilientGridStrategy : StrategyBase
                 LastUpdatedUtc = Context.Timeseries.GetCurrentTime(),
                 HighestPriceSeen = Context.Timeseries.CurrentTickPrice
             };
-            await Context.StateStore.SaveStateAsync(StateKey, _state);
+            await _stateStore.SaveStateAsync(StateKey, _state);
         }
+
+        return true;
     }
 
-    private async Task ReconcileWithExchangeAsync()
+    public override Task<bool> OnStopAsync(CancellationToken cancellationToken) => Task.FromResult(true);
+
+    private async Task ReconcileWithExchangeAsync(CancellationToken ct)
     {
         // Query open positions on OKX
-        var posRes = await Context.Trade.GetPositionsAsync();
+        var posRes = await Context.Trade.GetPositionsAsync(ct: ct);
         if (posRes.Success && posRes.Data.Length > 0)
         {
             var primaryPos = posRes.Data.FirstOrDefault(p => p.Symbol == "BTC-USDT-SWAP");
@@ -107,16 +114,20 @@ public class ResilientGridStrategy : StrategyBase
         }
     }
 
-    public override async Task OnKlineAsync(CandleData candle)
+    public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
     {
+        if (tickPhase != TickPhase.BarClose) return;
+
+        decimal currentPrice = Context.Timeseries.CurrentTickPrice;
+
         // Update high water mark
-        if (candle.High > _state.HighestPriceSeen)
+        if (currentPrice > _state.HighestPriceSeen)
         {
-            _state.HighestPriceSeen = candle.High;
+            _state.HighestPriceSeen = currentPrice;
             _state.LastUpdatedUtc = Context.Timeseries.GetCurrentTime();
 
             // Persist updated state to disk
-            await Context.StateStore.SaveStateAsync(StateKey, _state);
+            await _stateStore.SaveStateAsync(StateKey, _state);
         }
     }
 }

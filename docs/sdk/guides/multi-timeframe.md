@@ -25,8 +25,8 @@ flowchart TD
     end
 
     subgraph StrategyExecution["MyMtfStrategy : StrategyBase"]
-        Handler --> OnKline["OnKlineAsync(15m Candle)"]
-        OnKline --> HTFCheck{"4H EMA(50) > EMA(200)?"}
+        Handler --> OnTick["OnTickAsync(TickPhase.BarClose, ct)"]
+        OnTick --> HTFCheck{"4H EMA(50) > EMA(200)?"}
         HTFCheck -- Yes (Bullish) --> LTFEntry{"15m RSI < 30 (Oversold)?"}
         LTFEntry -- Yes --> PlaceBuy["Context.Trade.PlaceOrderAsync(...)"]
         HTFCheck -- No (Bearish) --> Skip["Skip or Search Short"]
@@ -64,7 +64,7 @@ public class TrendFilterMtfStrategy : StrategyBase
     // Primary Timeframe (15-Minute) Indicator for Entry Timing
     private IIndicatorRSI _ltfRsi = null!;
 
-    public override async Task OnInitAsync()
+    public override Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken cancellationToken)
     {
         // 1. Initialize 4H Trend Filters (Explicit Timeframe.FourHours)
         _htfFastEma = Context.Timeseries.CreateIndicatorMA(
@@ -94,8 +94,10 @@ public class TrendFilterMtfStrategy : StrategyBase
         );
 
         Context.Logger.LogInformation("Init", "MTF Indicators registered successfully.");
-        await Task.CompletedTask;
+        return Task.FromResult(true);
     }
+
+    public override Task<bool> OnStopAsync(CancellationToken cancellationToken) => Task.FromResult(true);
 }
 ```
 
@@ -106,11 +108,14 @@ public class TrendFilterMtfStrategy : StrategyBase
 
 ## 2. Trading Logic with Proper Bar Indexing
 
-In `OnKlineAsync(CandleData candle)`, your code executes on every primary bar close (e.g., every 15 minutes). You can query the 4H trend indicators directly using buffer index `1` (last closed 4H candle):
+In `OnTickAsync(TickPhase tickPhase, CancellationToken ct)`, check `if (tickPhase != TickPhase.BarClose) return;` so your code executes on every primary bar close (e.g., every 15 minutes). You can query the 4H trend indicators directly using buffer index `1` (last closed 4H candle):
 
 ```csharp
-public override async Task OnKlineAsync(CandleData candle)
+public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
 {
+    // Execute trade logic only when a primary bar closes
+    if (tickPhase != TickPhase.BarClose) return;
+
     // 1. Read the last closed 4-Hour EMA values (Shift 1 = last closed 4H bar)
     double htfFast = _htfFastEma.GetValue(1);
     double htfSlow = _htfSlowEma.GetValue(1);
@@ -133,14 +138,15 @@ public override async Task OnKlineAsync(CandleData candle)
         Context.Logger.LogInformation("Signal", $"Bullish MTF Setup: 4H Trend is UP, 15m RSI={ltfRsi:F2} is oversold.");
 
         // Check if we already have an open position
-        var posRes = await Context.Trade.GetPositionsAsync();
+        var posRes = await Context.Trade.GetPositionsAsync(ct: ct);
         if (posRes.Success && posRes.Data.Length == 0)
         {
             await Context.Trade.PlaceOrderAsync(
-                symbol: candle.Symbol,
+                symbol: "BTC-USDT-SWAP",
                 side: OrderSide.Buy,
                 type: OrderType.Market,
-                quantity: 1.0m
+                quantity: 1.0m,
+                ct: ct
             );
         }
     }
@@ -167,7 +173,7 @@ public class PairsTradingStrategy : StrategyBase
     private IIndicatorMA _btcSma = null!;
     private IIndicatorMA _ethSma = null!;
 
-    public override async Task OnInitAsync()
+    public override Task<bool> OnInitAsync(IStrategyStateStore state, CancellationToken cancellationToken)
     {
         // Subscribe to BTC-USDT-SWAP 1-Hour SMA
         _btcSma = Context.Timeseries.CreateIndicatorMA(
@@ -183,14 +189,18 @@ public class PairsTradingStrategy : StrategyBase
             period: 20
         );
 
-        await Task.CompletedTask;
+        return Task.FromResult(true);
     }
 
-    public override async Task OnKlineAsync(CandleData candle)
+    public override Task<bool> OnStopAsync(CancellationToken cancellationToken) => Task.FromResult(true);
+
+    public override async Task OnTickAsync(TickPhase tickPhase, CancellationToken ct)
     {
+        if (tickPhase != TickPhase.BarClose) return;
+
         // Fetch the latest closed candles for both instruments
-        CandleData btcCandle = await Context.Timeseries.GetLastClosedCandleAsync(BtcSymbol, Timeframe.OneHour);
-        CandleData ethCandle = await Context.Timeseries.GetLastClosedCandleAsync(EthSymbol, Timeframe.OneHour);
+        CandleData btcCandle = await Context.Timeseries.GetLastClosedCandleAsync(BtcSymbol, Timeframe.OneHour, ct);
+        CandleData ethCandle = await Context.Timeseries.GetLastClosedCandleAsync(EthSymbol, Timeframe.OneHour, ct);
 
         decimal btcDev = (btcCandle.Close - (decimal)_btcSma.GetValue(1)) / (decimal)_btcSma.GetValue(1);
         decimal ethDev = (ethCandle.Close - (decimal)_ethSma.GetValue(1)) / (decimal)_ethSma.GetValue(1);
@@ -202,8 +212,8 @@ public class PairsTradingStrategy : StrategyBase
         // Place orders across multiple symbols
         if (spread > 0.03m) // BTC outperforming ETH significantly -> Mean Reversion
         {
-            await Context.Trade.PlaceOrderAsync(BtcSymbol, OrderSide.Sell, OrderType.Market, 0.1m);
-            await Context.Trade.PlaceOrderAsync(EthSymbol, OrderSide.Buy, OrderType.Market, 1.5m);
+            await Context.Trade.PlaceOrderAsync(BtcSymbol, OrderSide.Sell, OrderType.Market, 0.1m, ct: ct);
+            await Context.Trade.PlaceOrderAsync(EthSymbol, OrderSide.Buy, OrderType.Market, 1.5m, ct: ct);
         }
     }
 }
