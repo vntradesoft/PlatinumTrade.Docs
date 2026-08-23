@@ -1,10 +1,11 @@
 ---
 id: index
-title: Storage
+title: Storage API
 sidebar_position: 3
 description: Storage API cung cấp khả năng truy cập vào cấu trúc thư mục lưu trữ tại thời gian chạy, cho phép các chiến lược và thành phần hệ thống định vị và quản lý dữ liệu.
 status: stable
 visibility: public
+sidebar_label: Lưu Trữ (Storage)
 ---
 
 # Storage API

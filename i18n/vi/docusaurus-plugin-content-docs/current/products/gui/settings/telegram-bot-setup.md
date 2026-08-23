@@ -5,6 +5,7 @@ sidebar_position: 10
 description: Hướng dẫn tạo bot Telegram và lấy Chat ID để nhận thông báo
 status: published
 visibility: public
+sidebar_label: Telegram Bot
 ---
 
 # Hướng Dẫn Tạo Telegram Bot Và Lấy Chat ID

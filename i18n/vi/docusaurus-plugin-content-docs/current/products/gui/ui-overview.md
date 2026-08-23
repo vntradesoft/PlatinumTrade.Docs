@@ -1,8 +1,9 @@
 ---
 id: products-gui-ui-overview
-title: Tổng Quan Giao Diện
+title: Tổng Quan Không Gian Làm Việc
 sidebar_position: 4
 description: Bản đồ bố cục và điều hướng của ứng dụng Platinum Trade GUI
+sidebar_label: Không Gian Làm Việc
 ---
 
 # Tổng Quan Giao Diện

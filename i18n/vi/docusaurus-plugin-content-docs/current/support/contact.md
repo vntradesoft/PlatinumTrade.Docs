@@ -1,7 +1,8 @@
 ---
 id: support-contact
-title: Contact
+title: Liên Hệ Hỗ Trợ
 description: TBD
+sidebar_label: Liên Hệ
 ---
 
 # Contact

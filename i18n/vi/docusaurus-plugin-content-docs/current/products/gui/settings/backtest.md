@@ -1,8 +1,9 @@
 ---
 id: products-gui-settings-backtest
-title: Backtest
+title: Cài Đặt Backtest
 sidebar_position: 4
 description: Cấu hình các tham số mặc định cho công cụ kiểm thử lịch sử (backtesting)
+sidebar_label: Backtest
 ---
 
 # Backtest

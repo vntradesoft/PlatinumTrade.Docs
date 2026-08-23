@@ -1,8 +1,9 @@
 ---
 id: products-bot-cli-run-on-ubuntu
-title: Run On Ubuntu
+title: Chạy Trên Ubuntu / Linux
 description: Draft deployment guide for running CLI on Ubuntu host
 status: tbd
+sidebar_label: Chạy Trên Ubuntu
 ---
 
 # Run On Ubuntu

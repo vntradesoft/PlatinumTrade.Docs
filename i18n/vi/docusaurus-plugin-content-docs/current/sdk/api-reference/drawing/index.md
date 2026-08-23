@@ -1,10 +1,11 @@
 ---
 id: index
-title: Drawing
+title: Drawing API
 sidebar_position: 2
 description: Drawing API cho phép tạo, sửa đổi và xóa các đối tượng vẽ trực quan trên biểu đồ theo chương trình.
 status: stable
 visibility: public
+sidebar_label: Vẽ Biểu Đồ (Drawing)
 ---
 
 # Drawing API

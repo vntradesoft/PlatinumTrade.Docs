@@ -1,8 +1,9 @@
 ---
 id: products-gui-settings-api-credentials
-title: API Credentials
+title: Cấu Hình Khóa API
 sidebar_position: 2
 description: Đặc tả thiết lập API key trong App Platinum Trade và quy ước kiểm tra kết nối
+sidebar_label: Khóa API
 ---
 
 # Thiết Lập API Key

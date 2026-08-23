@@ -1,5 +1,6 @@
 ---
-title: Oscillators
+title: Chỉ Báo Dao Động (Oscillators)
+sidebar_label: Dao Động
 ---
 
 # Oscillators

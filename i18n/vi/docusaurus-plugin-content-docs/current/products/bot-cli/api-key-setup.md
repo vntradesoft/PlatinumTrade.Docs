@@ -1,7 +1,8 @@
 ---
 id: products-bot-cli-api-key-setup
-title: Api Key Setup
+title: Cài Đặt Khóa API
 description: Configure API and notifier secrets for CLI
+sidebar_label: Khóa API
 ---
 
 # Api Key Setup

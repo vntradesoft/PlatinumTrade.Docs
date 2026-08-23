@@ -1,7 +1,8 @@
 ---
 id: products-bot-cli-overview
-title: Overview
+title: Tổng Quan Về Bot CLI
 description: Command-line trading host for automation and strategy execution
+sidebar_label: Tổng Quan
 ---
 
 # Overview

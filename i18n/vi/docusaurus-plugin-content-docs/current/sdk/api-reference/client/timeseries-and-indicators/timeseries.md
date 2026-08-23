@@ -1,7 +1,7 @@
 ---
 id: sdk-timeseries-client
-title: Timeseries API
-sidebar_label: Timeseries
+title: Timeseries Client API
+sidebar_label: Chuỗi Thời Gian
 sidebar_position: 1
 ---
 

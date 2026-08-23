@@ -1,8 +1,9 @@
 ---
 id: products-gui-settings-chart
-title: Biểu đồ
+title: Cài Đặt Biểu Đồ
 sidebar_position: 6
 description: Giới hạn dữ liệu biểu đồ nến và cấu hình hiển thị
+sidebar_label: Biểu Đồ
 ---
 
 # Biểu đồ

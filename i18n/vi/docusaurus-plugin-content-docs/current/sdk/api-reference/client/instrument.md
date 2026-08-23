@@ -1,7 +1,7 @@
 ---
 id: sdk-instrument-client
-title: Instrument API
-sidebar_label: Instrument
+title: Instrument Client API
+sidebar_label: Sản Phẩm (Instrument)
 sidebar_position: 1
 ---
 # Instrument API

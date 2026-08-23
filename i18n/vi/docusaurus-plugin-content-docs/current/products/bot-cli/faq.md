@@ -1,7 +1,8 @@
 ---
 id: products-bot-cli-faq
-title: Faq
+title: Câu Hỏi Thường Gặp (FAQ)
 description: Frequently asked questions for CLI operators
+sidebar_label: FAQ
 ---
 
 # Faq

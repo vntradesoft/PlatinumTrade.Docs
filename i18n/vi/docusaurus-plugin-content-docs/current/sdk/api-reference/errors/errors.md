@@ -1,9 +1,10 @@
 ---
 id: errors
-title: Lỗi (Errors)
+title: Danh Mục Mã Lỗi
 description: Danh mục mã lỗi và hướng dẫn xử lý lỗi.
 status: stable
 visibility: public
+sidebar_label: Mã Lỗi (Errors)
 ---
 
 # Lỗi (Errors)

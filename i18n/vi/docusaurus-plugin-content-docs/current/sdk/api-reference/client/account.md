@@ -1,7 +1,7 @@
 ---
 id: sdk-account-client
-title: Account API
-sidebar_label: Account
+title: Account Client API
+sidebar_label: Tài Khoản (Account)
 sidebar_position: 2
 ---
 

@@ -1,8 +1,9 @@
 ---
 id: products-gui-settings-debug
-title: Gỡ lỗi
+title: Cài Đặt Gỡ Lỗi
 sidebar_position: 5
 description: Tùy chọn nhà phát triển và gỡ lỗi sự cố
+sidebar_label: Gỡ Lỗi
 ---
 
 # Gỡ lỗi

@@ -1,8 +1,9 @@
 ---
 id: products-gui-settings-license
-title: Bản quyền
+title: Quản Lý Giấy Phép
 sidebar_position: 8
 description: Xem và quản lý khóa bản quyền phần mềm
+sidebar_label: Giấy Phép
 ---
 
 # Bản quyền

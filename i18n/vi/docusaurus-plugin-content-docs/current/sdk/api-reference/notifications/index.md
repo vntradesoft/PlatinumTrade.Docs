@@ -1,10 +1,11 @@
 ---
 id: index
-title: Notifications
+title: Notifications API
 sidebar_position: 1
 description: Notifications API cho phép bạn gửi cảnh báo, thông báo đẩy (push notifications) và email.
 status: stable
 visibility: public
+sidebar_label: Thông Báo (Notifications)
 ---
 
 # Notifications API

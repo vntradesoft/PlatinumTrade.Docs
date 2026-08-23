@@ -1,7 +1,8 @@
 ---
 id: interfaces
-title: Interfaces
+title: Giao Diện (Interfaces)
 sidebar_position: 12
+sidebar_label: Interfaces
 ---
 
 # Interfaces (Giao diện)

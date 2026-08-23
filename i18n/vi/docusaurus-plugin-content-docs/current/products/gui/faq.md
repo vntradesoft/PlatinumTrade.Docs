@@ -1,42 +1,39 @@
 ---
 id: products-gui-faq
-title: C�u H?i Th�?ng G?p
-description: C�c c�u h?i th�?ng g?p cho App Platinum Trade
+title: Câu Hỏi Thường Gặp (FAQ)
+sidebar_position: 12
+description: Các câu hỏi thường gặp về ứng dụng Platinum Trade GUI
 ---
 
-# C�u H?i Th�?ng G?p
+# Câu Hỏi Thường Gặp (FAQ)
 
-## V? sao Test Connection th?t b?i?
+## Tại sao "Kiểm Tra Kết Nối" (Test Connection) thất bại?
 
-- Ki?m tra API key, secret, passphrase.
-- X�c nh?n �ang ki?m tra ��ng m�i tr�?ng (demo ho?c production).
-- N?u b?t proxy, ki?m tra l?i proxy URL v� c?ng.
+- Kiểm tra kỹ API Key, Secret Key và Passphrase của bạn.
+- Đảm bảo bạn đang kiểm tra đúng môi trường (Demo vs. Production).
+- Nếu sử dụng proxy, hãy xác minh URL proxy và cài đặt cổng kết nối.
 
-## C� th? ch?y ?ng d?ng m� kh�ng c� API key kh�ng?
+## Tôi có thể chạy ứng dụng mà không cần khóa API không?
 
-M?t s? lu?ng c�ng khai v?n c� th? kh?i �?ng, nh�ng thao t�c account ho?c trade y�u c?u th�ng tin x�c th?c h?p l?.
+Có. Một số tính năng công khai (như xem biểu đồ và theo dõi thị trường công khai) có thể truy cập mà không cần khóa API, nhưng bất kỳ thao tác nào liên quan đến tài khoản hoặc giao dịch đều yêu cầu thông tin xác thực API hợp lệ.
 
-## C�i �?t ��?c l�u ? ��u?
+## Cài đặt ứng dụng được lưu trữ ở đâu?
 
-C�i �?t ��?c qu?n l? qua configuration manager c?a ?ng d?ng v� c�c tr�?ng b?o v? ��?c m? h�a tr�?c khi l�u.
+Cấu hình ứng dụng được quản lý thông qua trình quản lý cấu hình và các trường thông tin nhạy cảm được mã hóa trước khi lưu trữ cục bộ.
 
-## L�m th? n�o �? th�m custom indicator?
+## Làm cách nào để thêm chỉ báo tùy chỉnh?
 
-S? d?ng lu?ng Insert -> Indicators -> Custom v� b?o �?m plugin t��ng th�ch v?i phi�n b?n host SDK.
+Điều hướng đến Chèn -> Chỉ Báo -> Tùy Chỉnh và đảm bảo plugin chỉ báo tùy chỉnh của bạn tương thích với phiên bản SDK của ứng dụng.
 
-## V? sao m?t s? t�nh n�ng b? kh�a?
+## Tại sao một số tính năng bị khóa/vô hiệu hóa?
 
-M?t s? t�nh n�ng b? gi?i h?n theo ch�nh s�ch license Pro.
+Một số tính năng nâng cao bị hạn chế tùy theo cấp độ giấy phép (ví dụ: yêu cầu giấy phép Pro).
 
-## Toast Notification xu?t hi?n ? ��u v� bi?n m?t khi n�o?
+## Thông báo Toast xuất hiện ở đâu và khi nào chúng biến mất?
 
-M?c �?nh toast hi?n th? ? g�c ph?i tr�n m�n h?nh. Th�ng b�o s? t? ��ng theo lo?i (Success 3s, Info 4s, Warning 5s). V?i Error, ?ng d?ng c� th? y�u c?u ��ng th? c�ng.
+Theo mặc định, thông báo toast xuất hiện ở góc trên bên phải màn hình. Chúng tự động đóng dựa trên loại: Thành công (3 giây), Thông tin (4 giây) và Cảnh báo (5 giây). Cảnh báo lỗi có thể yêu cầu đóng thủ công.
 
-## T�i Li?u Li�n Quan
+## Tài Liệu Liên Quan
 
-- [API Key Setup](./settings/api-credentials.md)
-- [N?n T?ng Giao D?ch](./trading-basics.md)
-
-## N?i Dung Ch? B? Sung
-
-- [ ] B? sung ma tr?n x? l? s? c? theo m? l?i v� th�ng �i?p.
+- [Cài Đặt Khóa API](./settings/api-credentials.md)
+- [Giao Dịch Cơ Bản](./trading-basics.md)

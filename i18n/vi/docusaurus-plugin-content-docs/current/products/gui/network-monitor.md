@@ -2,6 +2,7 @@
 id: products-gui-network-monitor
 title: Giám Sát Mạng
 description: Đặc tả kỹ thuật các trạng thái network monitor và quy ước hiển thị
+sidebar_label: Giám Sát Mạng
 ---
 
 # Giám Sát Mạng

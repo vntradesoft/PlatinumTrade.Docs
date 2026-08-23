@@ -1,7 +1,8 @@
 ---
 id: products-bot-cli-installation
-title: Installation
+title: Cài Đặt Bot CLI
 description: Build and run setup for CLI
+sidebar_label: Cài Đặt
 ---
 
 # Installation

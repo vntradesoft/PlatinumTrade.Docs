@@ -1,7 +1,8 @@
 ---
 id: models
-title: Models
+title: Mô Hình Dữ Liệu (Models)
 sidebar_position: 11
+sidebar_label: Models
 ---
 
 # Models

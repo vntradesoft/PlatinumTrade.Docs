@@ -1,5 +1,6 @@
 ---
-title: Trend
+title: Chỉ Báo Xu Hướng (Trend)
+sidebar_label: Xu Hướng
 ---
 
 # Trend

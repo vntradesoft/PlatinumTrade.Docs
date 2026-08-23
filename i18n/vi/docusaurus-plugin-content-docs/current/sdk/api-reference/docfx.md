@@ -1,7 +1,7 @@
 ---
 id: sdk-docfx
-title: Auto-generated API (DocFX)
-sidebar_label: DocFX
+title: Tài Liệu API Tự Động (DocFX)
+sidebar_label: DocFX API
 sidebar_position: 99
 description: Tài liệu API cấp namespace đầy đủ được tự động tạo từ mã nguồn bởi DocFX.
 ---

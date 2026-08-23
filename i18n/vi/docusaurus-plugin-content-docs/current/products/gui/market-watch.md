@@ -1,30 +1,27 @@
 ---
 id: products-gui-market-watch
-title: Theo D?i Th? Tr�?ng
-description: Lu?ng danh s�ch symbol v� �i?u h�?ng nhanh trong App Platinum Trade
+title: Theo Dõi Thị Trường (Market Watch)
+sidebar_position: 6
+description: Quy trình làm việc với danh sách mã giao dịch và điều hướng nhanh trong ứng dụng Platinum Trade GUI
 ---
 
-# Market Watch
+# Theo Dõi Thị Trường (Market Watch)
 
-Market Watch l� �i?m v�o ch�nh �? th�m symbol v� chuy?n �?i instrument �ang ho?t �?ng.
+Market Watch là điểm truy cập chính để quản lý các mã giao dịch và chuyển đổi công cụ giao dịch đang hoạt động.
 
-## Th�m Symbol
+## Thêm Mã Giao Dịch
 
-1. Ch?n n�t Add Symbol ho?c nh?n Ctrl+N.
-2. Ch?n symbol trong h?p tho?i danh s�ch.
-3. X�c nh?n �? th�m v�o watch list.
+1. Nhấp vào nút "Thêm Mã" hoặc nhấn phím tắt Ctrl+N.
+2. Chọn một mã từ hộp thoại danh sách bật lên.
+3. Xác nhận để thêm công cụ vào danh sách theo dõi của bạn.
 
-## C�ch D�ng Ph? Bi?n
+## Các Thao Tác Phổ Biến
 
-- Duy tr? watch list g?n theo phi�n l�m vi?c hi?n t?i.
-- Chuy?n symbol t? danh s�ch �? c?p nh?t ng? c?nh chart nhanh.
-- K?t h?p v?i thanh timeframe �? ki?m tra �a khung th?i gian.
+- Giữ cho danh sách theo dõi tập trung vào các mã liên quan đến phiên giao dịch hiện tại.
+- Nhấp vào một mã trong danh sách để cập nhật ngay lập tức ngữ cảnh biểu đồ đang hoạt động.
+- Sử dụng kết hợp với bộ chọn khung thời gian để phân tích đa khung thời gian.
 
-## T�i Li?u Li�n Quan
+## Tài Liệu Liên Quan
 
-- [T?ng Quan Giao Di?n](./ui-overview.md)
-- [N?n T?ng Giao D?ch](./trading-basics.md)
-
-## N?i Dung Ch? B? Sung
-
-- [ ] T�i li?u t�nh n�ng import/export watch list h�ng lo?t.
+- [Tổng Quan Giao Diện](./ui-overview.md)
+- [Giao Dịch Cơ Bản](./trading-basics.md)

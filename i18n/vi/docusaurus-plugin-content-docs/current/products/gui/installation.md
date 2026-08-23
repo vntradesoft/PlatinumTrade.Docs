@@ -1,8 +1,9 @@
 ---
 id: products-gui-installation
-title: Cài Đặt
+title: Cài Đặt Ứng Dụng GUI
 sidebar_position: 2
 description: Hướng dẫn cài đặt từng bước và các thao tác trong Setup Wizard cho lần đầu chạy App Platinum Trade GUI
+sidebar_label: Cài Đặt
 ---
 
 # Cài Đặt

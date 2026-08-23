@@ -1,7 +1,8 @@
 ---
 id: enums
-title: Enums
+title: Kiểu Liệt Kê (Enums)
 sidebar_position: 10
+sidebar_label: Enums
 ---
 
 # Enums

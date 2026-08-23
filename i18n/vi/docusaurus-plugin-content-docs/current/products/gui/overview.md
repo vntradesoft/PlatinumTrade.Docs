@@ -1,7 +1,8 @@
 ---
 id: products-gui-overview
-title: Tổng Quan
+title: Tổng Quan Giao Diện GUI
 description: Tổng quan App Platinum Trade cho người dùng sản phẩm
+sidebar_label: Tổng Quan
 ---
 
 # Tổng Quan

@@ -1,8 +1,9 @@
 ---
 id: products-gui-settings-appearance
-title: Giao diện
+title: Tùy Chỉnh Giao Diện
 sidebar_position: 1
 description: Cấu hình giao diện, màu sắc và các tùy chọn bố cục
+sidebar_label: Giao Diện
 ---
 
 # Giao diện

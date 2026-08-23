@@ -1,7 +1,7 @@
 ---
 id: sdk-plugins
-title: Plugins
-sidebar_label: Plugins
+title: Tổng Quan Kiến Trúc Plugin
+sidebar_label: Tổng Quan
 sidebar_position: 4
 description: Phát triển plugin Strategy và Indicator tùy chỉnh cho nền tảng Platinum Trade.
 ---

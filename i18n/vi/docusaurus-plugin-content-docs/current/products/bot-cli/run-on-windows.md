@@ -2,6 +2,7 @@
 id: products-bot-cli-run-on-windows
 title: Chạy Trên Windows
 description: Hướng dẫn triển khai chạy Bot CLI trên máy chủ Windows
+sidebar_label: Chạy Trên Windows
 ---
 
 # Chạy Trên Windows

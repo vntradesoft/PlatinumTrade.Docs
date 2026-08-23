@@ -3,6 +3,7 @@ id: products-gui-trading-basics
 title: Nguyên Tắc Giao Dịch Cơ Bản
 sidebar_position: 7
 description: Các luồng công việc cơ bản để giao dịch dựa trên biểu đồ trong Platinum Trade GUI App
+sidebar_label: Giao Dịch Cơ Bản
 ---
 
 # Nguyên Tắc Giao Dịch Cơ Bản

@@ -1,8 +1,9 @@
 ---
 id: products-gui-settings-network
-title: Mạng
+title: Cài Đặt Mạng & Proxy
 sidebar_position: 3
 description: Kết nối mạng và thiết lập proxy
+sidebar_label: Mạng & Proxy
 ---
 
 # Mạng

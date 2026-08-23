@@ -1,7 +1,8 @@
 ---
 id: support-system-status
-title: System Status
+title: Trạng Thái Hệ Thống
 description: TBD
+sidebar_label: Trạng Thái Hệ Thống
 ---
 
 # System Status

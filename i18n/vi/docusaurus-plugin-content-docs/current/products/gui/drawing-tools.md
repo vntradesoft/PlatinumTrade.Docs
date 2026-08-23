@@ -1,43 +1,36 @@
 ---
 id: products-gui-drawing-tools
-title: C�ng C? V?
-description: S? d?ng c�ng c? v? tr�n bi?u �? v� t�y bi?n thu?c t�nh indicator
+title: Công Cụ Vẽ Biểu Đồ
+sidebar_position: 8
+description: Sử dụng các công cụ vẽ trên biểu đồ và tùy chỉnh thuộc tính chỉ báo
 ---
 
-# C�ng C? V?
+# Công Cụ Vẽ Biểu Đồ
 
-C�ng c? v? h? tr? ch� th�ch bi?u �? v� th? hi?n setup m?t c�ch tr?c quan.
+Các công cụ vẽ giúp chú thích biểu đồ và trực quan hóa các thiết lập giao dịch.
 
-## C�ng C? C� S?n Tr�n Toolbar
+## Các Công Cụ Trên Thanh Công Cụ
 
-- Horizontal line
-- Vertical line
-- Trend line
-- Rectangle
-- Fibonacci retracement
-- Measurement
-- Text
-- Emoji marker
+- Đường nằm ngang (Horizontal line)
+- Đường thẳng đứng (Vertical line)
+- Đường xu hướng (Trend line)
+- Hình chữ nhật (Rectangle)
+- Fibonacci thoái lui (Fibonacci retracement)
+- Thước đo (Measurement)
+- Văn bản (Text)
+- Biểu tượng cảm xúc (Emoji marker)
 
-## Lu?ng S? D?ng C� B?n
+## Quy Trình Cơ Bản
 
-1. Ch?n ch? �? v? tr�n toolbar.
-2. Click ho?c k�o tr�n chart �? t?o �?i t�?ng.
-3. �i?u ch?nh v? tr� ho?c style qua c�c �i?m t��ng t�c c?a �?i t�?ng.
+1. Chọn một công cụ vẽ từ thanh công cụ.
+2. Nhấp hoặc kéo trên biểu đồ để đặt/tạo đối tượng vẽ.
+3. Tùy chỉnh vị trí hoặc kiểu dáng bằng cách sử dụng các điểm điều khiển tương tác của đối tượng.
 
-## T�y Bi?n Hi?n Th? Indicator
+## Tùy Chỉnh Hiển Thị Chỉ Báo
 
-�?i v?i t�y bi?n hi?n th? ? c?p indicator (line style, v�ng t�, gi?i h?n), s? d?ng h?p tho?i indicator properties.
+Để tùy chỉnh các thuộc tính hiển thị ở cấp độ chỉ báo (kiểu đường vẽ, vùng tô màu, giới hạn biên), sử dụng hộp thoại thuộc tính của chỉ báo.
 
-T�i li?u chi ti?t b?n legacy t?i:
+## Tài Liệu Liên Quan
 
-- `docs/temp/legacy-2026-06-18/indicator-dialog-customization.md`
-
-## T�i Li?u Li�n Quan
-
-- [T?ng Quan Giao Di?n](./ui-overview.md)
-- [C�u H?i Th�?ng G?p](./faq.md)
-
-## N?i Dung Ch? B? Sung
-
-- [ ] C� ch? chia s? preset style th?ng nh?t gi?a �?i t�?ng v? v� style indicator.
+- [Tổng Quan Giao Diện](./ui-overview.md)
+- [Câu Hỏi Thường Gặp](./faq.md)

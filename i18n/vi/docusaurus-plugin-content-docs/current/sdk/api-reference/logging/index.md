@@ -1,10 +1,11 @@
 ---
 id: index
-title: Logging
+title: Logging API
 sidebar_position: 4
 description: Logging API cho phép bạn ghi thông báo ra tab Experts của nền tảng.
 status: stable
 visibility: public
+sidebar_label: Ghi Nhật Ký (Logging)
 ---
 
 # Logging API

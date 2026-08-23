@@ -1,7 +1,8 @@
 ---
 id: products-bot-cli-getting-started
-title: Getting Started
+title: Bắt Đầu Nhanh Với Bot CLI
 description: Quick start for running the trading CLI host
+sidebar_label: Bắt Đầu Nhanh
 ---
 
 # Getting Started

@@ -1,8 +1,9 @@
 ---
 sidebar_position: 5
 id: sdk-trading-client
-title: Trading Client
+title: Sử Dụng Trading Client
 description: Đặt lệnh, quản lý vị thế và số dư tài khoản
+sidebar_label: Trading Client
 ---
 
 # Sử Dụng Trading Client

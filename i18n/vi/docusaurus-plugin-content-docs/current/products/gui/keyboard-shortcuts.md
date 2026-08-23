@@ -5,6 +5,7 @@ sidebar_position: 10
 description: Tổng hợp danh sách các phím tắt trong Platinum Trade GUI
 status: published
 visibility: public
+sidebar_label: Phím Tắt
 ---
 
 # Phím Tắt (Keyboard Shortcuts)

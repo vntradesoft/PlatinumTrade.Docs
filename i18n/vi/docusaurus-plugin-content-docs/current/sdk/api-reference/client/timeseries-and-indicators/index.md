@@ -1,7 +1,7 @@
 ---
 id: sdk-timeseries-indicators
-title: Timeseries & Indicators
-sidebar_label: Overview
+title: Dữ Liệu Chuỗi Thời Gian & Chỉ Báo
+sidebar_label: Tổng Quan
 sidebar_position: 1
 ---
 

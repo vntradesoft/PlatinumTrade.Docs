@@ -1,8 +1,9 @@
 ---
 id: products-gui-settings-notifications
-title: Thông báo
+title: Cài Đặt Thông Báo
 sidebar_position: 7
 description: Tùy chỉnh cảnh báo âm thanh và thông báo trên màn hình
+sidebar_label: Thông Báo
 ---
 
 # Thông báo

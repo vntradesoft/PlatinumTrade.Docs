@@ -1,5 +1,6 @@
 ---
-title: Volumes
+title: Chỉ Báo Khối Lượng (Volumes)
+sidebar_label: Khối Lượng
 ---
 
 # Volumes

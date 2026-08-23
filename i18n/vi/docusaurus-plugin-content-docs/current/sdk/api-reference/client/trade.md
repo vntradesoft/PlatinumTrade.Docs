@@ -1,7 +1,7 @@
 ---
 id: sdk-trade-client
-title: Trade API
-sidebar_label: Trade
+title: Trade Client API
+sidebar_label: Giao Dịch (Trade)
 sidebar_position: 3
 ---
 

@@ -1,8 +1,9 @@
 ---
 id: products-gui-strategy-config
-title: Cấu Hình Chiến Thuật
+title: Cấu Hình Chiến Lược
 sidebar_position: 8
 description: Tải và cấu hình các plugin chiến thuật tùy chỉnh trong GUI
+sidebar_label: Cấu Hình Chiến Lược
 ---
 
 # Cấu Hình Chiến Thuật

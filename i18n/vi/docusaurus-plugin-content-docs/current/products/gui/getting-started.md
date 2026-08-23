@@ -1,46 +1,43 @@
 ---
 id: products-gui-getting-started
-title: B?t �?u Nhanh
-description: C�c b�?c th?c t? �?u ti�n �? ch?y v� c?u h?nh App Platinum Trade
+title: Bắt Đầu Nhanh Với GUI
+sidebar_position: 3
+description: Các bước thực tế để khởi chạy và cấu hình ứng dụng Platinum Trade GUI
 ---
 
-# B?t �?u Nhanh
+# Bắt Đầu Nhanh Với GUI
 
-S? d?ng t�i li?u n�y �? kh?i ch?y ?ng d?ng desktop nhanh v� x�c nh?n tr?ng th�i k?t n?i.
+Sử dụng hướng dẫn này để nhanh chóng khởi chạy ứng dụng máy tính và kiểm tra trạng thái kết nối của bạn.
 
-## �i?u Ki?n Ti�n Quy?t
+## Điều Kiện Tiên Quyết
 
-- �? c�i �?t App Platinum Trade.
-- C� th�ng tin x�c th?c API OKX (khuy?n ngh? b?t �?u v?i demo).
+- Đã cài đặt ứng dụng Platinum Trade GUI.
+- Thông tin xác thực API OKX hợp lệ (khuyến nghị bắt đầu với môi trường Demo).
 
-## Kh?i Ch?y ?ng D?ng
+## Khởi Chạy Ứng Dụng
 
-M? App Platinum Trade t? bi?u t�?ng shortcut tr�n desktop ho?c Start Menu.
+Mở ứng dụng Platinum Trade bằng biểu tượng phím tắt trên màn hình hoặc từ Start Menu.
 
-Sau khi m?, giao di?n bao g?m menu, toolbar, panel market b�n tr�i v� c�c tab trading view.
+Khi khởi chạy, bạn sẽ thấy menu chính, thanh công cụ, bảng Market Watch ở bên trái và các tab không gian làm việc để xem biểu đồ/giao dịch.
 
-## Lu?ng Thi?t L?p Ban �?u
+## Quy Trình Cài Đặt Ban Đầu
 
-1. M? ph?n c�i �?t t? Tools -> Options.
-2. Ch?n m�i tr�?ng (demo ho?c production) trong [API settings](./settings/api-credentials.md).
-3. Nh?p API key, secret, passphrase.
-4. B?m Test Connection.
-5. L�u c?u h?nh.
+1. Mở cài đặt qua Công cụ -> Tùy chọn.
+2. Chọn môi trường đích (Demo hoặc Production) trong mục [Cài đặt API](./settings/api-credentials.md).
+3. Nhập API Key, Secret Key và Passphrase của bạn.
+4. Nhấp vào Kiểm Tra Kết Nối.
+5. Lưu cấu hình.
 
-## H�nh �?ng Khuy?n Ngh? Ban �?u
+## Các Thao Tác Ban Đầu Được Khuyến Nghị
 
-1. B?t �?u ? ch? �? demo.
-2. Th�m symbol v�o Market Watch.
-3. M? chart v� chuy?n �?i timeframe.
-4. Th�m indicator c� s?n.
-5. Ki?m tra drawing tools v� lu?ng c?nh b�o.
+1. Bắt đầu ở chế độ Demo.
+2. Thêm cặp giao dịch (ví dụ: BTC-USDT) vào bảng Market Watch.
+3. Mở biểu đồ và chuyển đổi khung thời gian.
+4. Áp dụng chỉ báo tích hợp sẵn.
+5. Thử nghiệm các công cụ vẽ và cảnh báo.
 
-## T�i Li?u Li�n Quan
+## Tài Liệu Liên Quan
 
-- [API Key Setup](./settings/api-credentials.md)
-- [T?ng Quan Giao Di?n](./ui-overview.md)
-- [N?n T?ng Giao D?ch](./trading-basics.md)
-
-## N?i Dung Ch? B? Sung
-
-- [ ] Tr?i nghi?m wizard chuy�n bi?t cho l?n ch?y �?u v?n �ang ch? ho�n thi?n.
+- [Cài Đặt Khóa API](./settings/api-credentials.md)
+- [Tổng Quan Giao Diện](./ui-overview.md)
+- [Giao Dịch Cơ Bản](./trading-basics.md)

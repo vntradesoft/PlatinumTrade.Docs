@@ -1,5 +1,6 @@
 ---
-title: Bill Williams
+title: Chỉ Báo Bill Williams
+sidebar_label: Bill Williams
 ---
 
 # Bill Williams
