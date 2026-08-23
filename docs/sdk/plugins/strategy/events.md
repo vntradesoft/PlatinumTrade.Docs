@@ -3,9 +3,6 @@ sidebar_position: 2
 id: sdk-strategy-events
 title: Strategy Events
 description: Handling order fills, ticks, and candle updates
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Event Handlers

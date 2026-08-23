@@ -3,9 +3,6 @@ id: getting-started-overview
 title: Overview
 sidebar_position: 1
 description: What this platform includes and where to start based on your goals
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Overview

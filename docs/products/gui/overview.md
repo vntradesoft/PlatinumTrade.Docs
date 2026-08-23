@@ -3,9 +3,6 @@ id: products-gui-overview
 title: Overview
 sidebar_position: 1
 description: Overview of the Platinum Trade GUI App for end-users
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Overview

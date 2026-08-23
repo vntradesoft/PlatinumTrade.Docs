@@ -3,9 +3,6 @@ sidebar_position: 9
 id: sdk-strategy-logger-notify
 title: Logger and Notifications
 description: Logging events and sending Telegram notifications
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Logging & Notifications

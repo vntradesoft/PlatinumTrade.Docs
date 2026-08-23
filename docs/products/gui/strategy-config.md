@@ -3,9 +3,6 @@ id: products-gui-strategy-config
 title: Strategy Configuration
 sidebar_position: 8
 description: Load and configure custom strategy plugins in the GUI
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Strategy Configuration

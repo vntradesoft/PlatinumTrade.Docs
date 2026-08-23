@@ -3,9 +3,6 @@ id: products-gui-settings-appearance
 title: Appearance
 sidebar_position: 1
 description: Configure themes, colors, and layout preferences
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Appearance

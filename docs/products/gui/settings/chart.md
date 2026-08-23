@@ -3,9 +3,6 @@ id: products-gui-settings-chart
 title: Chart
 sidebar_position: 6
 description: Candlestick chart limits and visual settings
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Chart

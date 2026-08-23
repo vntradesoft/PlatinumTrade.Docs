@@ -3,9 +3,6 @@ sidebar_position: 1
 id: sdk-intro
 title: Introduction
 description: Overview of Pt.Okx.Sdk components, indicators, and framework
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Welcome to Pt.Okx.Sdk

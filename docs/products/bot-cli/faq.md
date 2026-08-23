@@ -1,10 +1,7 @@
-﻿---
+---
 id: products-bot-cli-faq
 title: Faq
 description: Frequently asked questions for CLI operators
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Faq

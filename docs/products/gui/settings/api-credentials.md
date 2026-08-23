@@ -3,9 +3,6 @@ id: products-gui-settings-api-credentials
 title: API Credentials
 sidebar_position: 2
 description: Technical specification for setting up API keys in the Platinum Trade App and connection verification conventions
-status: draft
-visibility: internal
-publish: false
 ---
 
 # API Key Setup

@@ -2,9 +2,6 @@
 id: products-bot-cli-run-on-windows
 title: Run On Windows
 description: Deployment guide for running Bot CLI on Windows hosts
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Run On Windows

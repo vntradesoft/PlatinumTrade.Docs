@@ -3,9 +3,6 @@ sidebar_position: 6
 id: sdk-strategy-indicators
 title: Strategy Indicators
 description: Registering and consuming technical indicators in strategies
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Using Indicators

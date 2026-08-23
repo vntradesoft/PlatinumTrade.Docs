@@ -3,9 +3,6 @@ id: products-gui-ui-overview
 title: UI Overview
 sidebar_position: 4
 description: Layout architecture and navigation map of the Platinum Trade GUI App
-status: draft
-visibility: internal
-publish: false
 ---
 
 # UI Overview

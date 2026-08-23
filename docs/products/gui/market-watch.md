@@ -3,9 +3,6 @@ id: products-gui-market-watch
 title: Market Watch
 sidebar_position: 6
 description: Symbol list workflow and quick navigation in the Platinum Trade GUI App
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Market Watch

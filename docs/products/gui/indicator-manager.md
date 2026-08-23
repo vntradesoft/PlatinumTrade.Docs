@@ -3,9 +3,6 @@ id: products-gui-indicator-manager
 title: Indicator Plugin Manager
 sidebar_position: 10
 description: Load, unload, and manage custom technical indicator plugins locally
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Indicator Plugin Manager

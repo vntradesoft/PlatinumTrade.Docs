@@ -3,9 +3,6 @@ id: products-gui-drawing-tools
 title: Drawing Tools
 sidebar_position: 8
 description: Using chart drawing tools and customizing indicator properties
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Drawing Tools

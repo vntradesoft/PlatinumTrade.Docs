@@ -3,9 +3,6 @@ id: products-gui-settings-license
 title: License
 sidebar_position: 8
 description: View and manage software license keys
-status: draft
-visibility: internal
-publish: false
 ---
 
 # License

@@ -3,9 +3,6 @@ sidebar_position: 1
 id: sdk-strategy-overview
 title: Strategy Overview
 description: Lifecycle, interfaces, and architecture of trading strategies
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Strategy Plugin: Overview & Setup

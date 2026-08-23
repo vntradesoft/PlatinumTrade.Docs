@@ -3,9 +3,6 @@ id: products-gui-network-monitor
 title: Network Monitor
 sidebar_position: 10
 description: Technical specifications of network monitor states and display conventions
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Network Monitor

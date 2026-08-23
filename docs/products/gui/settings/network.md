@@ -3,9 +3,6 @@ id: products-gui-settings-network
 title: Network
 sidebar_position: 3
 description: Network connection and proxy settings
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Network

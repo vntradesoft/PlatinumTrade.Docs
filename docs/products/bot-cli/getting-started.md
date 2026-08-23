@@ -1,10 +1,7 @@
-﻿---
+---
 id: products-bot-cli-getting-started
 title: Getting Started
 description: Quick start for running the trading CLI host
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Getting Started

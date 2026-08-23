@@ -3,9 +3,6 @@ id: products-gui-settings-backtest
 title: Backtest
 sidebar_position: 4
 description: Configure default parameters for the backtesting engine
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Backtest

@@ -3,9 +3,6 @@ id: products-gui-history-manager
 title: History Manager
 sidebar_position: 9
 description: Manage, clean, and diagnose historical candlestick data locally
-status: draft
-visibility: internal
-publish: false
 ---
 
 # History Manager

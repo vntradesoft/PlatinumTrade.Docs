@@ -3,9 +3,6 @@ id: getting-started-installation
 title: Installation
 sidebar_position: 3
 description: Prerequisites and setup steps to install and run the desktop app and CLI Bot
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Installation

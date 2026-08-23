@@ -3,9 +3,6 @@ sidebar_position: 4
 id: sdk-market-data
 title: Market Data
 description: Retrieving historical and real-time market data
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Market Data & Indicators

@@ -3,9 +3,6 @@ id: products-gui-installation
 title: Installation
 sidebar_position: 2
 description: Step-by-step installation guide and first-run Setup Wizard walkthrough for the Platinum Trade GUI App
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Installation

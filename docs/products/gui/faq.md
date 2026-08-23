@@ -3,9 +3,6 @@ id: products-gui-faq
 title: FAQ
 sidebar_position: 12
 description: Frequently asked questions for the Platinum Trade GUI App
-status: draft
-visibility: internal
-publish: false
 ---
 
 # FAQ

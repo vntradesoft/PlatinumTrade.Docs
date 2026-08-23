@@ -3,8 +3,6 @@ id: products-bot-cli-run-on-ubuntu
 title: Run On Ubuntu
 description: Draft deployment guide for running CLI on Ubuntu host
 status: tbd
-visibility: internal
-publish: false
 ---
 Use this page when deploying the Bot CLI to an Ubuntu host with `dotnet` or a published binary.
 

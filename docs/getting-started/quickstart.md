@@ -3,9 +3,6 @@ id: getting-started-quickstart
 title: Quickstart
 sidebar_position: 2
 description: The fastest way to install the GUI application, configure API, and run Trading View, Backtest, and Live Trade
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Quickstart

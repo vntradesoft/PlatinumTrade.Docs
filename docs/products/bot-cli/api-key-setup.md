@@ -1,10 +1,7 @@
-﻿---
+---
 id: products-bot-cli-api-key-setup
 title: Api Key Setup
 description: Configure API and notifier secrets for CLI
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Api Key Setup

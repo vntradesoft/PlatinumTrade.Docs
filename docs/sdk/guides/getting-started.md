@@ -3,9 +3,6 @@ sidebar_position: 3
 id: sdk-getting-started
 title: Getting Started
 description: Guide on using the SDK to write indicators and strategies
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Getting Started

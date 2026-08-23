@@ -2,9 +2,6 @@
 id: products-bot-cli-installation
 title: Installation
 description: Build and run setup for CLI
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Installation

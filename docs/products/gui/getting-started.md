@@ -3,9 +3,6 @@ id: products-gui-getting-started
 title: Getting Started
 sidebar_position: 3
 description: Practical steps to launch and configure the Platinum Trade GUI App
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Getting Started

@@ -3,9 +3,6 @@ id: products-gui-settings-notifications
 title: Notifications
 sidebar_position: 7
 description: Customize sound alerts and desktop notifications
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Notifications

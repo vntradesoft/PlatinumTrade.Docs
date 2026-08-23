@@ -3,9 +3,6 @@ id: products-gui-settings-debug
 title: Debug
 sidebar_position: 5
 description: Developer and troubleshooting options
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Debug

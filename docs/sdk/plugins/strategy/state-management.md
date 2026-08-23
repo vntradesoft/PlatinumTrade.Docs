@@ -3,9 +3,6 @@ sidebar_position: 7
 id: sdk-strategy-state-management
 title: State Management
 description: Persisting state variables across runs
-status: draft
-visibility: internal
-publish: false
 ---
 
 # State Management and Persistence

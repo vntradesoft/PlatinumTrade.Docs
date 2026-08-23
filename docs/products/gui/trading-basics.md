@@ -3,9 +3,6 @@ id: products-gui-trading-basics
 title: Trading Basics
 sidebar_position: 7
 description: Fundamental workflows for chart-based trading in the Platinum Trade GUI App
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Trading Basics

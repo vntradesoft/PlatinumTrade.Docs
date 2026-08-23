@@ -3,9 +3,6 @@ sidebar_position: 10
 id: sdk-document-history
 title: Document History
 description: Version and modification history of SDK documentation
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Document History

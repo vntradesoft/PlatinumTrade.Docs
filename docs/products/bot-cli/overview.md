@@ -1,10 +1,7 @@
-﻿---
+---
 id: products-bot-cli-overview
 title: Overview
 description: Command-line trading host for automation and strategy execution
-status: draft
-visibility: internal
-publish: false
 ---
 
 # Overview
