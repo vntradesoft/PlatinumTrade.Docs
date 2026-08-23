@@ -3,56 +3,56 @@
 - name: Architecture
   href: architecture.md
 - name: Getting Started
-  href: getting-started.md
+  href: guides/getting-started.md
 - name: Debugging Strategies
-  href: debugging.md
+  href: guides/debugging.md
 - name: ApiResult Pattern
-  href: api-result.md
+  href: guides/api-result.md
 - name: Using the Trading Client
-  href: trading-client.md
+  href: guides/trading-client.md
 - name: Market Data & Indicators
-  href: market-data.md
+  href: guides/market-data.md
 - name: Drawing API
-  href: drawing-api.md
+  href: guides/drawing-api.md
 - name: Multi-Timeframe & Multi-Symbol
-  href: multi-timeframe.md
+  href: guides/multi-timeframe.md
 - name: Backtesting & Performance
-  href: backtesting.md
+  href: guides/backtesting.md
 - name: State Persistence & Recovery
-  href: state-persistence.md
+  href: guides/state-persistence.md
 - name: Telegram Integration
-  href: telegram-integration.md
+  href: guides/telegram-integration.md
 - name: Indicator Plugin
   items:
     - name: Overview & Setup
-      href: indicator/overview.md
+      href: plugins/indicator/overview.md
     - name: Registration & Parameters
-      href: indicator/registration.md
+      href: plugins/indicator/registration.md
     - name: Properties & Buffers
-      href: indicator/properties-buffers.md
+      href: plugins/indicator/properties-buffers.md
     - name: Calculation Flow
-      href: indicator/calculation.md
+      href: plugins/indicator/calculation.md
     - name: Using Indicators
-      href: indicator/using-indicators.md
+      href: plugins/indicator/using-indicators.md
 - name: Strategy Plugin
   items:
     - name: Overview & Setup
-      href: strategy/overview.md
+      href: plugins/strategy/overview.md
     - name: Input Parameters
-      href: strategy/input-parameters.md
+      href: plugins/strategy/input-parameters.md
     - name: Strategy Settings
-      href: strategy/settings.md
+      href: plugins/strategy/settings.md
     - name: Using Indicators
-      href: strategy/indicators.md
+      href: plugins/strategy/indicators.md
     - name: Event Handlers
-      href: strategy/events.md
+      href: plugins/strategy/events.md
     - name: Trading API
-      href: strategy/trading-api.md
+      href: plugins/strategy/trading-api.md
     - name: State Management
-      href: strategy/state-management.md
+      href: plugins/strategy/state-management.md
     - name: Logging & Notifications
-      href: strategy/logger-notify.md
+      href: plugins/strategy/logger-notify.md
     - name: Telegram Commands
-      href: strategy/telegram-commands.md
+      href: plugins/strategy/telegram-commands.md
 - name: Document History
   href: document-history.md
