@@ -3,27 +3,32 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-function HeroSection() {
+function HeroSection({ isVi }) {
   return (
     <section className={styles.heroSection}>
       <div className={clsx(styles.container, styles.heroContainer)}>
         <div className={styles.heroLeft}>
-          <span className={styles.heroBadge}>Public Beta • v0.12.0-beta.1                                                                                                                                          </span>
+          <span className={styles.heroBadge}>
+            {isVi ? 'Bản Thử Nghiệm • v0.12.0-beta.1' : 'Public Beta • v0.12.0-beta.1'}
+          </span>
           <h1 className={styles.heroTitle}>
-            Build Professional Trading Plugins with .NET
+            {isVi 
+              ? 'Xây Dựng Plugin Giao Dịch Chuyên Nghiệp Với .NET' 
+              : 'Build Professional Trading Plugins with .NET'}
           </h1>
           <p className={styles.heroSubtitle}>
-            Develop custom strategies, indicators and integrations for Platinum Trade using the official SDK.
+            {isVi
+              ? 'Phát triển chiến lược, chỉ báo kỹ thuật và kết nối tùy chỉnh cho Platinum Trade bằng bộ SDK chính thức.'
+              : 'Develop custom strategies, indicators and integrations for Platinum Trade using the official SDK.'}
           </p>
           <div className={styles.heroButtons}>
             <Link className={styles.btnPrimary} to="/docs/getting-started/getting-started-overview">
-              Get Started
+              {isVi ? 'Bắt Đầu Nhanh' : 'Get Started'}
             </Link>
             <Link className={styles.btnSecondary} to="/docs/getting-started/getting-started-quickstart">
-              Download App
+              {isVi ? 'Tải Ứng Dụng' : 'Download App'}
             </Link>
           </div>
         </div>
@@ -31,17 +36,17 @@ function HeroSection() {
         <div className={styles.heroRight}>
           <div className={styles.diagContainer}>
             <div className={styles.diagLabel} style={{ textAlign: 'center', marginBottom: '1.25rem' }}>
-              SDK Developer Flow
+              {isVi ? 'Quy Trình Phát Triển SDK' : 'SDK Developer Flow'}
             </div>
             <div className={clsx(styles.diagNode, styles.diagNodeHighlight)}>
-              Developer
+              {isVi ? 'Nhà Phát Triển' : 'Developer'}
             </div>
             <div className={styles.diagArrow}>│</div>
             <div className={styles.diagNode}>
               Platinum Trade SDK
             </div>
             <div className={styles.diagArrow}>
-              <span style={{ fontSize: '0.75rem', marginRight: '4px' }}>Build</span>
+              <span style={{ fontSize: '0.75rem', marginRight: '4px' }}>{isVi ? 'Biên dịch' : 'Build'}</span>
               ▼
             </div>
             <div className={clsx(styles.diagNode, styles.diagNodeHighlight)}>
@@ -49,7 +54,7 @@ function HeroSection() {
             </div>
             <div className={styles.diagArrow}>│</div>
             <div className={styles.diagNode}>
-              Platinum Trade App
+              {isVi ? 'Ứng Dụng Platinum Trade' : 'Platinum Trade App'}
             </div>
           </div>
         </div>
@@ -58,10 +63,10 @@ function HeroSection() {
   );
 }
 
-function QuickStartSection() {
+function QuickStartSection({ isVi }) {
   const [activeStep, setActiveStep] = useState(1);
   
-  const steps = [
+  const stepsEn = [
     {
       id: 1,
       title: '1. Install Platinum Trade',
@@ -94,13 +99,52 @@ function QuickStartSection() {
     },
   ];
 
+  const stepsVi = [
+    {
+      id: 1,
+      title: '1. Cài Đặt Platinum Trade',
+      desc: 'Tải ứng dụng và đảm bảo máy tính của bạn đã cài đặt môi trường .NET 10 Runtime.',
+      code: '# Tải gói cài đặt & kiểm tra runtime\ndotnet --version # Đảm bảo đã cài đặt .NET 10+',
+    },
+    {
+      id: 2,
+      title: '2. Tạo Dự Án Plugin',
+      desc: 'Khởi tạo dự án C# Class Library nhắm mục tiêu .NET 10.0 và thêm tham chiếu tới Pt.Okx.Sdk.',
+      code: 'dotnet new classlib -n MyStrategy -f net10.0\ndotnet add reference Pt.Okx.Sdk.csproj',
+    },
+    {
+      id: 3,
+      title: '3. Viết Mã & Biên Dịch',
+      desc: 'Viết mã chiến lược kế thừa từ StrategyBase, sau đó biên dịch dự án để tạo thư viện assembly DLL.',
+      code: 'dotnet build -c Release',
+    },
+    {
+      id: 4,
+      title: '4. Nạp Plugin',
+      desc: 'Nạp trực tiếp DLL qua nút "Nạp Plugin" trên giao diện GUI (từ bất kỳ thư mục nào), hoặc sao chép vào thư mục Plugins.',
+      code: 'copy bin\\Release\\net10.0\\MyStrategy.dll %LocalAppData%\\PlatinumTrade\\Plugins\\Strategies\\',
+    },
+    {
+      id: 5,
+      title: '5. Vận Hành',
+      desc: 'Khởi chạy Platinum Trade. Hệ thống tự động nhận diện và nạp plugin, sẵn sàng cho backtest hoặc live trade.',
+      code: '# Chạy Bot CLI hoặc Khởi chạy ứng dụng GUI desktop\ndotnet run --project Pt.Okx.Bot',
+    },
+  ];
+
+  const steps = isVi ? stepsVi : stepsEn;
+
   return (
     <section className={clsx(styles.section, styles.quickstartSection)}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>Quick Start</h2>
+          <h2 className={styles.sectionTitle}>
+            {isVi ? 'Bắt Đầu Nhanh' : 'Quick Start'}
+          </h2>
           <p className={styles.sectionSubtitle}>
-            Go from setup to executing custom strategies on Platinum Trade in five easy steps.
+            {isVi 
+              ? 'Khởi đầu từ thiết lập dự án đến thực thi chiến lược tùy chỉnh trên Platinum Trade chỉ với 5 bước đơn giản.'
+              : 'Go from setup to executing custom strategies on Platinum Trade in five easy steps.'}
           </p>
         </div>
 
@@ -113,7 +157,7 @@ function QuickStartSection() {
                 onClick={() => setActiveStep(s.id)}
                 style={{ cursor: 'pointer' }}
               >
-                Step {s.id}
+                {isVi ? `Bước ${s.id}` : `Step ${s.id}`}
               </div>
               {idx < steps.length - 1 && <span className={styles.flowArrow}>→</span>}
             </React.Fragment>
@@ -144,8 +188,8 @@ function QuickStartSection() {
   );
 }
 
-function BuildCapabilities() {
-  const cards = [
+function BuildCapabilities({ isVi }) {
+  const cardsEn = [
     {
       title: 'Strategy Plugins',
       desc: 'Build fully automated trading strategies using event-driven tick data, order execution, position tracking, and risk controls.',
@@ -163,13 +207,37 @@ function BuildCapabilities() {
     },
   ];
 
+  const cardsVi = [
+    {
+      title: 'Plugin Chiến Lược',
+      desc: 'Xây dựng các chiến lược giao dịch tự động hoàn chỉnh dựa trên dữ liệu tick, khớp lệnh, quản lý vị thế và kiểm soát rủi ro.',
+      icon: '📈',
+    },
+    {
+      title: 'Plugin Chỉ Báo',
+      desc: 'Tạo các chỉ báo kỹ thuật, mô hình toán học và bộ dao động tùy chỉnh hiển thị mượt mà trực tiếp trên biểu đồ theo thời gian thực.',
+      icon: '📊',
+    },
+    {
+      title: 'Tích Hợp Sàn Giao Dịch',
+      desc: 'Phát triển adapter kết nối các sàn tiền điện tử hoặc tài chính truyền thống mới nhờ tầng trừu tượng kết nối mở rộng.',
+      icon: '🔌',
+    },
+  ];
+
+  const cards = isVi ? cardsVi : cardsEn;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>What can you build?</h2>
+          <h2 className={styles.sectionTitle}>
+            {isVi ? 'Bạn có thể xây dựng những gì?' : 'What can you build?'}
+          </h2>
           <p className={styles.sectionSubtitle}>
-            Unlock the power of our SDK wrapper and modular app design to build high-performance systems.
+            {isVi 
+              ? 'Khai phóng sức mạnh của SDK và kiến trúc module để xây dựng các hệ thống giao dịch hiệu năng cao.'
+              : 'Unlock the power of our SDK wrapper and modular app design to build high-performance systems.'}
           </p>
         </div>
 
@@ -187,8 +255,8 @@ function BuildCapabilities() {
   );
 }
 
-function DocumentationDirectory() {
-  const links = [
+function DocumentationDirectory({ isVi }) {
+  const linksEn = [
     {
       title: 'Getting Started',
       desc: 'Learn application setup, keys configuration & basic concepts.',
@@ -226,13 +294,57 @@ function DocumentationDirectory() {
     },
   ];
 
+  const linksVi = [
+    {
+      title: 'Bắt Đầu Nhanh',
+      desc: 'Tìm hiểu cách cài đặt ứng dụng, cấu hình khóa API và các khái niệm cơ bản.',
+      to: '/docs/getting-started/getting-started-overview',
+      icon: '🚀',
+      highlight: false,
+    },
+    {
+      title: 'Kiến Trúc Tổng Quan',
+      desc: 'Hiểu rõ cấu trúc assembly, luồng dữ liệu và sơ đồ phụ thuộc hệ thống.',
+      to: '/docs/sdk/sdk-architecture',
+      icon: '🏗️',
+      highlight: false,
+    },
+    {
+      title: 'Hướng Dẫn Thực Hành',
+      desc: 'Hướng dẫn từng bước để viết plugin và biên dịch giải pháp SDK hoàn chỉnh.',
+      to: '/docs/sdk/guides/sdk-getting-started',
+      icon: '📖',
+      highlight: false,
+    },
+    {
+      title: 'Ví Dụ Mẫu',
+      desc: 'Mã nguồn tham khảo cho các chỉ báo kỹ thuật và chiến lược giao dịch mẫu.',
+      to: '/docs/sdk/sdk-intro',
+      icon: '💡',
+      highlight: false,
+    },
+    {
+      title: 'Tham Chiếu API',
+      desc: 'Tra cứu các kiểu dữ liệu, thuộc tính, namespace và khai báo phương thức.',
+      to: '/api-reference',
+      icon: '⚡',
+      highlight: true,
+    },
+  ];
+
+  const links = isVi ? linksVi : linksEn;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>Documentation</h2>
+          <h2 className={styles.sectionTitle}>
+            {isVi ? 'Tài Liệu Hướng Dẫn' : 'Documentation'}
+          </h2>
           <p className={styles.sectionSubtitle}>
-            Browse our carefully structured guides, manuals, and API lists to find details immediately.
+            {isVi 
+              ? 'Khám phá các tài liệu hướng dẫn, sổ tay thực hành và danh mục API được cấu trúc rõ ràng để tra cứu tức thì.'
+              : 'Browse our carefully structured guides, manuals, and API lists to find details immediately.'}
           </p>
         </div>
 
@@ -254,10 +366,10 @@ function DocumentationDirectory() {
   );
 }
 
-function CodeExampleSection() {
+function CodeExampleSection({ isVi }) {
   const codeString = `public class MyStrategy : StrategyBase
 {
-    public override Task OnTick(TickEventArgs e)
+    public override Task OnTickAsync(TickEventArgs e)
     {
         // Custom logic triggered on every market tick
         if (e.LastPrice > CurrentMovingAverage)
@@ -276,9 +388,13 @@ function CodeExampleSection() {
     <section className={clsx(styles.section, styles.codeSection)}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>Code Example</h2>
+          <h2 className={styles.sectionTitle}>
+            {isVi ? 'Ví Dụ Mã Nguồn' : 'Code Example'}
+          </h2>
           <p className={styles.sectionSubtitle}>
-            Developer friendly C# API contracts designed for speed, async efficiency, and type safety.
+            {isVi
+              ? 'Hệ thống API C# thân thiện với nhà phát triển, thiết kế cho tốc độ cao, xử lý bất đồng bộ (async) và an toàn kiểu dữ liệu.'
+              : 'Developer friendly C# API contracts designed for speed, async efficiency, and type safety.'}
           </p>
         </div>
 
@@ -299,12 +415,16 @@ function CodeExampleSection() {
 
           <div className={styles.pipelineContainer}>
             <div className={styles.diagLabel} style={{ textAlign: 'center', marginBottom: '1rem' }}>
-              Compile & Load Pipeline
+              {isVi ? 'Quy Trình Biên Dịch & Nạp' : 'Compile & Load Pipeline'}
             </div>
             
             <div className={styles.pipelineNode}>
-              <div className={styles.pipelineNodeTitle}>Build</div>
-              <div className={styles.pipelineNodeDesc}>Compile C# strategy project using dotnet CLI.</div>
+              <div className={styles.pipelineNodeTitle}>
+                {isVi ? 'Biên Dịch' : 'Build'}
+              </div>
+              <div className={styles.pipelineNodeDesc}>
+                {isVi ? 'Biên dịch dự án chiến lược C# bằng công cụ dotnet CLI.' : 'Compile C# strategy project using dotnet CLI.'}
+              </div>
             </div>
 
             <div className={styles.pipelineFlowArrow}>
@@ -314,7 +434,9 @@ function CodeExampleSection() {
 
             <div className={clsx(styles.pipelineNode, styles.pipelineNodeHighlight)}>
               <div className={styles.pipelineNodeTitle}>MyStrategy.dll</div>
-              <div className={styles.pipelineNodeDesc}>Resulting portable compiled library.</div>
+              <div className={styles.pipelineNodeDesc}>
+                {isVi ? 'Thư viện DLL kết quả sau khi biên dịch.' : 'Resulting portable compiled library.'}
+              </div>
             </div>
 
             <div className={styles.pipelineFlowArrow}>
@@ -323,8 +445,12 @@ function CodeExampleSection() {
             </div>
 
             <div className={styles.pipelineNode}>
-              <div className={styles.pipelineNodeTitle}>Load Plugin</div>
-              <div className={styles.pipelineNodeDesc}>Import DLL via GUI or place in Plugins folder to auto-mount.</div>
+              <div className={styles.pipelineNodeTitle}>
+                {isVi ? 'Nạp Plugin' : 'Load Plugin'}
+              </div>
+              <div className={styles.pipelineNodeDesc}>
+                {isVi ? 'Nạp DLL qua giao diện GUI hoặc đặt vào thư mục Plugins để tự động nhận diện.' : 'Import DLL via GUI or place in Plugins folder to auto-mount.'}
+              </div>
             </div>
           </div>
         </div>
@@ -333,8 +459,8 @@ function CodeExampleSection() {
   );
 }
 
-function SdkFeatures() {
-  const features = [
+function SdkFeatures({ isVi }) {
+  const featuresEn = [
     { title: 'Plugin-based architecture', desc: 'Plug & play modular setup. Auto discover plugins at runtime.' },
     { title: 'Event-driven design', desc: 'Handle order execution, order books, and price feeds instantly.' },
     { title: 'High performance', desc: 'Optimized loop with minimal memory allocations built on .NET 10.' },
@@ -345,13 +471,30 @@ function SdkFeatures() {
     { title: 'Type Safe Contracts', desc: 'Compile-time type checking over trade signals, orders, and clients.' },
   ];
 
+  const featuresVi = [
+    { title: 'Kiến trúc dạng Plugin', desc: 'Cơ chế Plug & Play linh hoạt. Tự động phát hiện và nạp plugin tại thời điểm chạy.' },
+    { title: 'Thiết kế Hướng sự kiện', desc: 'Xử lý lệnh khớp, cập nhật sổ lệnh và luồng dữ liệu giá thị trường tức thì.' },
+    { title: 'Hiệu năng Vượt trội', desc: 'Vòng lặp tối ưu hóa với việc cấp phát bộ nhớ cực thấp trên nền tảng .NET 10.' },
+    { title: 'API Bất đồng bộ (Async)', desc: 'Giao diện async/await giữ luồng luôn thông suốt và ứng dụng phản hồi mượt mà.' },
+    { title: 'Hỗ trợ Backtest toàn diện', desc: 'Mô phỏng chiến lược với dữ liệu nến lịch sử nhị phân chính xác đến từng mili-giây.' },
+    { title: 'Hỗ trợ Đa sàn giao dịch', desc: 'Kiến trúc trừu tượng hóa sẵn sàng cho OKX và các mạng lưới sàn giao dịch khác.' },
+    { title: 'Mã nguồn Mở & Minh bạch', desc: 'Bộ hợp đồng thư viện hoàn toàn mở và dễ mở rộng cho việc phát triển sạch.' },
+    { title: 'An toàn Kiểu dữ liệu', desc: 'Kiểm tra kiểu dữ liệu tại thời điểm biên dịch đối với tín hiệu, lệnh và client.' },
+  ];
+
+  const features = isVi ? featuresVi : featuresEn;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>SDK Features</h2>
+          <h2 className={styles.sectionTitle}>
+            {isVi ? 'Tính Năng Nổi Bật Của SDK' : 'SDK Features'}
+          </h2>
           <p className={styles.sectionSubtitle}>
-            Our core library provides high-performance hooks designed for professional trading solutions.
+            {isVi 
+              ? 'Thư viện cốt lõi cung cấp các hook hiệu năng cao được thiết kế chuyên biệt cho giải pháp giao dịch chuyên nghiệp.'
+              : 'Our core library provides high-performance hooks designed for professional trading solutions.'}
           </p>
         </div>
 
@@ -371,49 +514,73 @@ function SdkFeatures() {
   );
 }
 
-function EcosystemSection() {
+function EcosystemSection({ isVi }) {
   return (
     <section className={clsx(styles.section, styles.ecoSection)}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>Ecosystem</h2>
+          <h2 className={styles.sectionTitle}>
+            {isVi ? 'Hệ Sinh Thái' : 'Ecosystem'}
+          </h2>
           <p className={styles.sectionSubtitle}>
-            Discover how components connect to power automated trading from configuration to execution.
+            {isVi 
+              ? 'Khám phá cách các thành phần liên kết chặt chẽ để vận hành hệ thống giao dịch từ cấu hình đến thực thi.'
+              : 'Discover how components connect to power automated trading from configuration to execution.'}
           </p>
         </div>
 
         <div className={styles.ecoFlow}>
           <div className={styles.ecoNode}>
-            <div className={styles.ecoNodeTitle}>Platinum Trade App</div>
-            <div className={styles.ecoNodeDesc}>The core trading software engine and GUI dashboard.</div>
+            <div className={styles.ecoNodeTitle}>
+              {isVi ? 'Ứng Dụng Platinum Trade' : 'Platinum Trade App'}
+            </div>
+            <div className={styles.ecoNodeDesc}>
+              {isVi ? 'Lõi động cơ giao dịch chính và bảng điều khiển GUI.' : 'The core trading software engine and GUI dashboard.'}
+            </div>
           </div>
           
           <div className={styles.ecoArrow}>→</div>
 
           <div className={styles.ecoNode} style={{ borderColor: 'var(--ifm-color-primary)' }}>
-            <div className={styles.ecoNodeTitle} style={{ color: 'var(--ifm-color-primary)' }}>Official SDK</div>
-            <div className={styles.ecoNodeDesc}>Type contracts, API wrappers & interfaces.</div>
+            <div className={styles.ecoNodeTitle} style={{ color: 'var(--ifm-color-primary)' }}>
+              {isVi ? 'SDK Chính Thức' : 'Official SDK'}
+            </div>
+            <div className={styles.ecoNodeDesc}>
+              {isVi ? 'Hợp đồng kiểu, wrapper API & các giao diện interface.' : 'Type contracts, API wrappers & interfaces.'}
+            </div>
           </div>
 
           <div className={styles.ecoArrow}>→</div>
 
           <div className={styles.ecoNode}>
-            <div className={styles.ecoNodeTitle}>Custom Plugins</div>
-            <div className={styles.ecoNodeDesc}>Your strategy files, indicators, and integrations.</div>
+            <div className={styles.ecoNodeTitle}>
+              {isVi ? 'Plugin Tùy Chỉnh' : 'Custom Plugins'}
+            </div>
+            <div className={styles.ecoNodeDesc}>
+              {isVi ? 'Các tệp chiến lược, chỉ báo và tích hợp của bạn.' : 'Your strategy files, indicators, and integrations.'}
+            </div>
           </div>
 
           <div className={styles.ecoArrow}>→</div>
 
           <div className={styles.ecoNode}>
-            <div className={styles.ecoNodeTitle}>Documentation</div>
-            <div className={styles.ecoNodeDesc}>Reference guides, setups, and API descriptions.</div>
+            <div className={styles.ecoNodeTitle}>
+              {isVi ? 'Tài Liệu' : 'Documentation'}
+            </div>
+            <div className={styles.ecoNodeDesc}>
+              {isVi ? 'Tài liệu hướng dẫn, cài đặt và đặc tả API.' : 'Reference guides, setups, and API descriptions.'}
+            </div>
           </div>
 
           <div className={styles.ecoArrow}>→</div>
 
           <div className={styles.ecoNode}>
-            <div className={styles.ecoNodeTitle}>Community</div>
-            <div className={styles.ecoNodeDesc}>GitHub open discussions, tickets, and roadmap.</div>
+            <div className={styles.ecoNodeTitle}>
+              {isVi ? 'Cộng Đồng' : 'Community'}
+            </div>
+            <div className={styles.ecoNodeDesc}>
+              {isVi ? 'Thảo luận mở trên GitHub, đóng góp ý kiến và lộ trình.' : 'GitHub open discussions, tickets, and roadmap.'}
+            </div>
           </div>
         </div>
       </div>
@@ -421,8 +588,8 @@ function EcosystemSection() {
   );
 }
 
-function CommunitySection() {
-  const links = [
+function CommunitySection({ isVi }) {
+  const linksEn = [
     {
       title: 'GitHub Repository',
       desc: 'Browse full SDK source, open pull requests, and contribute to the platform.',
@@ -449,13 +616,46 @@ function CommunitySection() {
     },
   ];
 
+  const linksVi = [
+    {
+      title: 'Kho Mã Nguồn GitHub',
+      desc: 'Duyệt toàn bộ mã nguồn SDK, tạo Pull Request và đóng góp cho nền tảng.',
+      to: 'https://github.com/vntradesoft/PlatinumTrade.Sdk',
+      icon: '💻',
+    },
+    {
+      title: 'Máy Chủ Discord',
+      desc: 'Trò chuyện cùng các nhà phát triển SDK, nhận hỗ trợ và chia sẻ chỉ báo tùy chỉnh.',
+      to: 'https://discord.gg/platinumtrade',
+      icon: '💬',
+    },
+    {
+      title: 'Báo Cáo Sự Cố & Yêu Cầu',
+      desc: 'Báo lỗi nền tảng, đề xuất tính năng mới hoặc theo dõi tiến độ sửa lỗi.',
+      to: 'https://github.com/vntradesoft/PlatinumTrade.App/issues',
+      icon: '🛠️',
+    },
+    {
+      title: 'Lộ Trình Dự Án (Roadmap)',
+      desc: 'Theo dõi các cột mốc hiện tại, các bản phát hành và kế hoạch tích hợp sàn tiếp theo.',
+      to: 'https://github.com/vntradesoft/PlatinumTrade.App/projects',
+      icon: '🗺️',
+    },
+  ];
+
+  const links = isVi ? linksVi : linksEn;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionTitle}>Community Support</h2>
+          <h2 className={styles.sectionTitle}>
+            {isVi ? 'Cộng Đồng & Hỗ Trợ' : 'Community Support'}
+          </h2>
           <p className={styles.sectionSubtitle}>
-            Join our open developer network, share custom plugins, and shape the future of Platinum Trade.
+            {isVi 
+              ? 'Tham gia mạng lưới nhà phát triển mở, chia sẻ plugin tùy chỉnh và cùng xây dựng tương lai Platinum Trade.'
+              : 'Join our open developer network, share custom plugins, and shape the future of Platinum Trade.'}
           </p>
         </div>
 
@@ -474,21 +674,23 @@ function CommunitySection() {
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+  const { siteConfig, i18n } = useDocusaurusContext();
+  const isVi = i18n?.currentLocale === 'vi';
+
   return (
     <Layout
-      title={`Developer Portal | ${siteConfig.title}`}
-      description="Professional trading plugins builder with .NET 10 contracts SDK"
+      title={isVi ? `Cổng Thông Tin Nhà Phát Triển | ${siteConfig.title}` : `Developer Portal | ${siteConfig.title}`}
+      description={isVi ? "Xây dựng plugin giao dịch chuyên nghiệp với bộ hợp đồng SDK trên nền tảng .NET 10" : "Professional trading plugins builder with .NET 10 contracts SDK"}
     >
       <main>
-        <HeroSection />
-        <QuickStartSection />
-        <BuildCapabilities />
-        <DocumentationDirectory />
-        <CodeExampleSection />
-        <SdkFeatures />
-        <EcosystemSection />
-        <CommunitySection />
+        <HeroSection isVi={isVi} />
+        <QuickStartSection isVi={isVi} />
+        <BuildCapabilities isVi={isVi} />
+        <DocumentationDirectory isVi={isVi} />
+        <CodeExampleSection isVi={isVi} />
+        <SdkFeatures isVi={isVi} />
+        <EcosystemSection isVi={isVi} />
+        <CommunitySection isVi={isVi} />
       </main>
     </Layout>
   );
