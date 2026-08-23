@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 99
 id: sdk-document-history
 title: Document History
 description: Version and modification history of SDK documentation

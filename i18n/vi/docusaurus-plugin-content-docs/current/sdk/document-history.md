@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 99
 id: sdk-document-history
 title: Lịch Sử Tài Liệu
 description: Lịch sử các phiên bản và thay đổi của tài liệu SDK
