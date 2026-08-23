@@ -1,78 +1,78 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Hiện tại",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Getting Started": {
-    "message": "Getting Started",
+    "message": "Bắt Đầu Nhanh",
     "description": "The label for category 'Getting Started' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Products": {
-    "message": "Products",
+    "message": "Sản Phẩm",
     "description": "The label for category 'Products' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.CLI": {
-    "message": "CLI",
+    "message": "Bot CLI (Dòng Lệnh)",
     "description": "The label for category 'CLI' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.GUI": {
-    "message": "GUI",
+    "message": "Giao Diện Desktop (GUI)",
     "description": "The label for category 'GUI' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Settings": {
-    "message": "Settings",
+    "message": "Cài Đặt",
     "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.SDK": {
-    "message": "SDK",
+    "message": "Bộ Phát Triển SDK",
     "description": "The label for category 'SDK' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Guides": {
-    "message": "Guides",
+    "message": "Hướng Dẫn Phát Triển",
     "description": "The label for category 'Guides' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Plugins": {
-    "message": "Plugins",
+    "message": "Kiến Trúc Plugin",
     "description": "The label for category 'Plugins' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Strategy Plugin": {
-    "message": "Strategy Plugin",
+    "message": "Plugin Chiến Lược",
     "description": "The label for category 'Strategy Plugin' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Strategy Plugin.link.generated-index.description": {
-    "message": "Developing custom strategy plugins",
+    "message": "Phát triển plugin chiến lược tùy chỉnh",
     "description": "The generated-index page description for category 'Strategy Plugin' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Indicator Plugin": {
-    "message": "Indicator Plugin",
+    "message": "Plugin Chỉ Báo",
     "description": "The label for category 'Indicator Plugin' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Indicator Plugin.link.generated-index.description": {
-    "message": "Developing custom indicator plugins",
+    "message": "Phát triển plugin chỉ báo kỹ thuật tùy chỉnh",
     "description": "The generated-index page description for category 'Indicator Plugin' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.API Reference": {
-    "message": "API Reference",
+    "message": "Tham Chiếu API",
     "description": "The label for category 'API Reference' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Client": {
-    "message": "Client",
+    "message": "Client API",
     "description": "The label for category 'Client' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Timeseries & Indicators": {
-    "message": "Timeseries & Indicators",
+    "message": "Dữ Liệu Chuỗi Thời Gian & Chỉ Báo",
     "description": "The label for category 'Timeseries & Indicators' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Built-in Technical Indicators": {
-    "message": "Built-in Technical Indicators",
+    "message": "Chỉ Báo Kỹ Thuật Tích Hợp Sẵn",
     "description": "The label for category 'Built-in Technical Indicators' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Legal": {
-    "message": "Legal",
+    "message": "Pháp Lý",
     "description": "The label for category 'Legal' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Support": {
-    "message": "Support",
+    "message": "Hỗ Trợ",
     "description": "The label for category 'Support' in sidebar 'tutorialSidebar'"
   }
 }
