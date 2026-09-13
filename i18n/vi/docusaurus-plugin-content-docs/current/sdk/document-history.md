@@ -14,14 +14,11 @@ Trang này cung cấp nhật ký thay đổi chi tiết về các hợp đồng 
 ### [0.12.0-beta.2] - 2026-09-13
 
 #### Hợp Đồng Chiến Lược & Chỉ Báo
-- **Tín Hiệu Mô Phỏng & Kiểm Thử:**
-  - Bổ sung tham số tín hiệu mô phỏng (`SimulatedSignal`) trong chiến lược tham khảo `Stgy.UpTrend`, cho phép kích hoạt nhanh luồng đặt lệnh và quản lý vị thế mà không cần chờ đợi điều kiện thị trường thực tế.
-  - Chuẩn hóa định dạng hiển thị số chữ số thập phân cho các đường biên và giá trị ATR của chỉ báo `SuperTrend`.
-  - Tinh chỉnh cơ chế bám giá đuổi lệnh (`EntryChaseLimit`) nhằm hạn chế trượt giá khi dòng tick thị trường biến động mạnh.
 - **Khái Quát Hóa Chỉ Số Hiệu Năng & Lưu Trữ Trạng Thái:**
   - Chuẩn hóa việc đo lường hiệu năng bằng cách khái quát hóa `BacktestMetrics` thành `TradingMetrics`, cung cấp hợp đồng đánh giá thống kê nhất quán giữa các chế độ Backtest, Paper và Live.
   - Bổ sung hợp đồng chế độ theo dõi số dư (`BalanceTrackingMode`) hỗ trợ đánh giá PnL theo vốn khả dụng (equity) hoặc số dư tài khoản.
   - Làm rõ ranh giới kiến trúc giữa `IStrategyStateStore` (lưu trữ và phục hồi trạng thái key-value khi khởi động lại) và `IStoragePathProvider` (định tuyến đường dẫn tệp tin trên hệ thống).
+
 
 #### Mẫu Dự Án & Công Cụ (Templates)
 - **Template dotnet new:**

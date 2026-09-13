@@ -14,14 +14,11 @@ This page provides a detailed changelog of public API contracts, base classes, a
 ### [0.12.0-beta.2] - 2026-09-13
 
 #### Strategy Contracts & Indicators
-- **Simulation & Testing Signals:**
-  - Added simulated signal generation parameter to `Stgy.UpTrend` reference strategy, enabling rapid verification of order routing and position handling without waiting for live market events.
-  - Formatted decimal precision display for `SuperTrend` indicator upper/lower bands and ATR values.
-  - Refined `EntryChaseLimit` order chasing calculation to prevent slippage on fast-moving tick streams.
 - **Metric Generalization & State Persistence:**
   - Standardized performance measurement by generalizing `BacktestMetrics` into `TradingMetrics`, providing unified tracking contracts across Backtest, Paper, and Live modes.
   - Added balance tracking mode contracts to support equity vs balance PnL evaluation.
   - Clarified architectural distinction between `IStrategyStateStore` (key-value state persistence across restarts) and `IStoragePathProvider` (filesystem directory resolution).
+
 
 #### Project Templates & Tooling
 - **dotnet new Templates:**

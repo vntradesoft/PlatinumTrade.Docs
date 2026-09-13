@@ -23,7 +23,6 @@ sidebar_position: 99
 - **ui:** Add Live Paper Runtime Metrics and Updates configuration tabs to Settings dialog.
 - **chart:** Add live indicator pane reordering with Up/Down controls on active Live charts.
 - **chart:** Add Volume label formatting options (`Compact` vs `Full number`) and expand built-in candle color presets.
-- **strategy:** Add simulated signal execution testing parameter (`SimulatedSignal`) and format `SuperTrend` indicator display precision.
 
 #### Fixes & Improvements
 - **notifier:** Fix Telegram notification delivery issues and implement robust fallback mechanisms.
@@ -38,7 +37,8 @@ sidebar_position: 99
 
 #### Features
 - **strategy:** Implement Strategy Host Process Manager and multi-process lifecycle isolation.
-- **strategy:** Update UpTrend strategy, indicator examples, and project templates.
+- **template:** Update indicator examples and dotnet project templates.
+
 - **ui:** Redesign Backtest Metrics dashboard with Win/Loss ratio donut chart, radar chart, and dynamic PnL coloring.
 - **ui:** Add position history view and inline filters to order and position history tabs.
 - **ui:** Add search, real-time prices, and multi-language support to AddSymbolDialog.
