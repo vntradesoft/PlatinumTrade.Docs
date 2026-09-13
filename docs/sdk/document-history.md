@@ -11,6 +11,31 @@ This page provides a detailed changelog of public API contracts, base classes, a
 
 ---
 
+### [0.12.0-beta.2] - 2026-09-13
+
+#### Strategy Contracts & Indicators
+- **Simulation & Testing Signals:**
+  - Added simulated signal generation parameter to `Stgy.UpTrend` reference strategy, enabling rapid verification of order routing and position handling without waiting for live market events.
+  - Formatted decimal precision display for `SuperTrend` indicator upper/lower bands and ATR values.
+  - Refined `EntryChaseLimit` order chasing calculation to prevent slippage on fast-moving tick streams.
+- **Metric Generalization & State Persistence:**
+  - Standardized performance measurement by generalizing `BacktestMetrics` into `TradingMetrics`, providing unified tracking contracts across Backtest, Paper, and Live modes.
+  - Added balance tracking mode contracts to support equity vs balance PnL evaluation.
+  - Clarified architectural distinction between `IStrategyStateStore` (key-value state persistence across restarts) and `IStoragePathProvider` (filesystem directory resolution).
+
+#### Project Templates & Tooling
+- **dotnet new Templates:**
+  - Synchronized `Pt.Templates.Strategy` (`dotnet new pt-strategy`) and `Pt.Templates.Indicator` (`dotnet new pt-indicator`) to reference `Pt.Okx.Sdk` version `0.12.0-beta.2`.
+  - Updated template symbols in `template.json` with modern C# 13 and .NET 10.0 defaults.
+
+#### Documentation & Bilingual Guides
+- **Expanded SDK Guides:**
+  - Added dedicated architectural guides for Multi-Timeframe data consumption, Backtest engine customization, State Persistence, and 2-way Telegram bot integration.
+  - Aligned client API references (`IAccountClient`, `IInstrumentClient`, `ITradeClient`, `ITimeseriesClient`) with current SDK interfaces.
+  - Synchronized full English and Vietnamese documentation for all technical indicator references and plugin creation tutorials.
+
+---
+
 ### [0.12.0-beta.1] - 2026-08-21
 
 #### Public API Contracts & Types

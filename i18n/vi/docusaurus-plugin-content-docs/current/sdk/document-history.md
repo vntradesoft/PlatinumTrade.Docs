@@ -11,6 +11,31 @@ Trang này cung cấp nhật ký thay đổi chi tiết về các hợp đồng 
 
 ---
 
+### [0.12.0-beta.2] - 2026-09-13
+
+#### Hợp Đồng Chiến Lược & Chỉ Báo
+- **Tín Hiệu Mô Phỏng & Kiểm Thử:**
+  - Bổ sung tham số tín hiệu mô phỏng (`SimulatedSignal`) trong chiến lược tham khảo `Stgy.UpTrend`, cho phép kích hoạt nhanh luồng đặt lệnh và quản lý vị thế mà không cần chờ đợi điều kiện thị trường thực tế.
+  - Chuẩn hóa định dạng hiển thị số chữ số thập phân cho các đường biên và giá trị ATR của chỉ báo `SuperTrend`.
+  - Tinh chỉnh cơ chế bám giá đuổi lệnh (`EntryChaseLimit`) nhằm hạn chế trượt giá khi dòng tick thị trường biến động mạnh.
+- **Khái Quát Hóa Chỉ Số Hiệu Năng & Lưu Trữ Trạng Thái:**
+  - Chuẩn hóa việc đo lường hiệu năng bằng cách khái quát hóa `BacktestMetrics` thành `TradingMetrics`, cung cấp hợp đồng đánh giá thống kê nhất quán giữa các chế độ Backtest, Paper và Live.
+  - Bổ sung hợp đồng chế độ theo dõi số dư (`BalanceTrackingMode`) hỗ trợ đánh giá PnL theo vốn khả dụng (equity) hoặc số dư tài khoản.
+  - Làm rõ ranh giới kiến trúc giữa `IStrategyStateStore` (lưu trữ và phục hồi trạng thái key-value khi khởi động lại) và `IStoragePathProvider` (định tuyến đường dẫn tệp tin trên hệ thống).
+
+#### Mẫu Dự Án & Công Cụ (Templates)
+- **Template dotnet new:**
+  - Đồng bộ các gói template `Pt.Templates.Strategy` (`dotnet new pt-strategy`) và `Pt.Templates.Indicator` (`dotnet new pt-indicator`) để tham chiếu trực tiếp đến `Pt.Okx.Sdk` phiên bản `0.12.0-beta.2`.
+  - Cập nhật các ký hiệu cấu hình trong `template.json` theo chuẩn C# 13 và nền tảng .NET 10.0.
+
+#### Tài Liệu & Hướng Dẫn Song Ngữ
+- **Mở Rộng Hướng Dẫn SDK:**
+  - Bổ sung các bài viết kiến trúc chuyên sâu về xử lý dữ liệu Đa khung thời gian (Multi-Timeframe), tích hợp engine Backtest, Lưu trữ trạng thái chiến lược và tích hợp bot Telegram điều khiển 2 chiều.
+  - Cập nhật đồng bộ tài liệu tham chiếu Client API (`IAccountClient`, `IInstrumentClient`, `ITradeClient`, `ITimeseriesClient`) khớp chính xác với giao diện SDK hiện tại.
+  - Hoàn thiện bản dịch song ngữ Anh - Việt cho toàn bộ danh mục chỉ báo tích hợp và hướng dẫn phát triển plugin.
+
+---
+
 ### [0.12.0-beta.1] - 2026-08-21
 
 #### Hợp Đồng API & Kiểu Dữ Liệu Công Khai
