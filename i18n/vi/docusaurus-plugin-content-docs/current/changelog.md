@@ -9,6 +9,31 @@ sidebar_position: 99
 
 ## Changelog
 
+### [0.12.0-beta.2] - 2026-09-13
+
+#### Features
+- **runtime-monitor:** Add real-time operational monitoring for Live and Paper trading (heartbeat liveness, execution queue depth, P99 latency, kline drop rate, and memory health).
+- **security:** Add Windows DPAPI encryption and masked display for OKX API credentials with 45-second clipboard TTL protection.
+- **metrics:** Generalize `BacktestMetrics` into `TradingMetrics`, unifying statistical performance analysis across Backtest, Paper, and Live execution modes.
+- **core:** Add balance tracking mode (`BalanceTrackingMode`) and refine tick bar metric calculations.
+- **ui:** Upgrade Trade Log viewer to v2 high-performance virtualized surface (`TradeLogViewV2`).
+- **ui:** Add `NumericSpinner` reusable control and style templates.
+- **ui:** Add Strategy Metadata Reader and Info Parameter inspection view (`InfoParamView`).
+- **ui:** Introduce centralized vector icon path system (`Icon.*`) across toolbars and dialogs.
+- **ui:** Add Live Paper Runtime Metrics and Updates configuration tabs to Settings dialog.
+- **chart:** Add live indicator pane reordering with Up/Down controls on active Live charts.
+- **chart:** Add Volume label formatting options (`Compact` vs `Full number`) and expand built-in candle color presets.
+- **strategy:** Add simulated signal execution testing parameter (`SimulatedSignal`) and format `SuperTrend` indicator display precision.
+
+#### Fixes & Improvements
+- **notifier:** Fix Telegram notification delivery issues and implement robust fallback mechanisms.
+- **core:** Fix ring buffer index calculation in live runtime telemetry collector.
+- **core:** Handle uninitialized series timestamps gracefully in `GetLastClosedCandleTime`.
+- **installer:** Restrict production and release packaging strictly to `master` branch in `publish-gui.ps1`.
+- **docs:** Fully synchronize bilingual documentation (EN & VI) for GUI Settings, SDK guides, and Document History.
+
+---
+
 ### [0.12.0-beta.1] - 2026-08-21
 
 #### Features
