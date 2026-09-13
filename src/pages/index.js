@@ -11,7 +11,7 @@ function HeroSection({ isVi }) {
       <div className={clsx(styles.container, styles.heroContainer)}>
         <div className={styles.heroLeft}>
           <span className={styles.heroBadge}>
-            {isVi ? 'Bản Thử Nghiệm • v0.12.0-beta.1' : 'Public Beta • v0.12.0-beta.1'}
+            {isVi ? 'Bản Thử Nghiệm • v0.12.0-beta.2' : 'Public Beta • v0.12.0-beta.2'}
           </span>
           <h1 className={styles.heroTitle}>
             {isVi 

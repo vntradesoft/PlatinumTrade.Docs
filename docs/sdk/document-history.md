@@ -2,102 +2,145 @@
 sidebar_position: 99
 id: sdk-document-history
 title: Document History
-description: Version and modification history of the Platinum Trade SDK and Examples
+description: Comprehensive version and contract modification history of the Platinum Trade SDK, API abstractions, and Examples
 ---
 
 # Document History
 
-This page tracks significant changes, contract updates, and new features made strictly to the **Platinum Trade SDK** (`Pt.Okx.Sdk`), public API abstractions, and **Examples / Project Templates**.
+This page provides a detailed changelog of public API contracts, base classes, attributes, dependencies, and project templates for the **Platinum Trade SDK** (`Pt.Okx.Sdk`) and official **Examples / Templates**.
 
 ---
 
 ### [0.12.0-beta.1] - 2026-08-21
 
-#### Features & Contracts
-- **sdk:** Refine plugin metadata contracts (`IStrategyPluginMetadata`, `InputParamAttribute`), compatibility checks, and parameter serialization.
-- **sdk:** Add deep copy functionality to indicator models and property collections (`IndicatorProperty`).
+#### Public API Contracts & Types
+- **Plugin Metadata & Schema:**
+  - Enhanced `IStrategyPluginMetadata` and `IIndicatorPluginMetadata` with runtime version validation and author metadata contracts.
+  - Added `InputSchemaBuilder` and `InputSchemaMetadata` for declarative dynamic input parameter generation.
+  - Refined `InputParamAttribute` parameter binding with typed constraints (`IntParameter`, `DoubleParameter`, `DecimalParameter`, `BoolParameter`, `StringParameter`, `EnumParameter`, `TimeSpanParameter`, `FilePathParameter`, `ListParameter<T>`).
+- **Indicator Models & Properties:**
+  - Added deep copy (`Clone()`) support to `IndicatorProperty`, `IndicatorBuffer`, and plot style descriptors to ensure thread-safe decoupling between background calculation routines and UI render loops.
+  - Added `CalculationMode` enum (`OnBarClose`, `OnEveryTick`, `OnTimer`) allowing indicators to explicitly define recalculation frequency.
+- **Client & Market Data Abstractions:**
+  - Expanded `ITimeseriesClient` methods: `CopyBuffer`, `CopyTimes`, `CopyOpens`, `CopyHighs`, `CopyLows`, `CopyCloses`, `CopyVolumes`, and `CopyPrices`.
+  - Added multi-timeframe candle stream subscription and history range warmup synchronization.
 
 #### Examples & Templates
-- **examples:** Update UpTrend strategy sample (`Pt.Example.Stgy.UpTrend`) and indicator examples.
-- **templates:** Update `dotnet new` project templates (`Pt.Templates.Strategy`, `Pt.Templates.Indicator`) targeting .NET 10.0.
+- **Pt.Example.Stgy.UpTrend:** Updated reference trading strategy demonstrating:
+  - Multi-indicator binding (`SimpleMovingAverage`, `RelativeStrengthIndex`).
+  - Dynamic parameter configuration using `[InputParam]`.
+  - Order placement via `PlaceOrderAsync` and position state tracking in `OnTickAsync`.
+  - Automated state persistence via `IStrategyStateStore`.
+- **Pt.Examples.Indicator:** Added custom indicator samples demonstrating custom buffer allocation, drawing styles, and multi-buffer output.
+- **Project Templates:** Updated `dotnet new pt-strategy` and `dotnet new pt-indicator` templates targeting .NET 10.0 with modern C# 13 syntax.
 
 ---
 
 ### [0.11.0-beta.1] - 2026-07-20
 
-#### Contracts
-- **sdk:** Sync public SDK contracts and NuGet package metadata with platform release v0.11.0-beta.1.
+#### Contracts & Nuget Packages
+- **Package Metadata:** Synchronized `Pt.Okx.Sdk` NuGet package metadata, dependencies, and symbol packages (`.snupkg`) with platform release v0.11.0-beta.1.
+- **Licensing Abstractions:** Refined feature tier checking contracts and access validation pipelines for custom plugins.
 
 ---
 
 ### [0.10.0-beta.1] - 2026-07-19
 
-#### Contracts & Indicators
-- **sdk:** Add calculation mode support and optimize indicator buffer contracts for open candle updates.
+#### Indicators & TimeSeries Engine
+- **Open Candle Processing:**
+  - Added support for live open candle (shift `0`) updates within indicator buffer calculations.
+  - Synchronized `IndicatorBuffer` length contracts dynamically with underlying time series arrays.
+- **Calculation Triggers:**
+  - Added on-demand open candle indicator evaluation triggered directly by real-time market ticks.
+- **Candle Models:**
+  - Optimized `CompactCandle` struct and `PriceValue` representations for low-allocation tick aggregation.
 
 ---
 
 ### [0.9.3-beta.4] - 2026-07-15
 
-#### Features
-- **sdk:** Sync `Pt.Okx.Sdk` package references and update API mapping annotations for sub-clients (`IAccountClient`, `IInstrumentClient`, `ITradeClient`).
+#### Sub-Client Interfaces & Endpoint Mappings
+- **Client Abstractions:**
+  - Structured modular sub-client interfaces under `Pt.Okx.Sdk.Clients`:
+    - `IAccountClient`: Account balance, positions, leverage, and margin mode endpoints.
+    - `IInstrumentClient`: Symbol rules, tickers, contract sizes, tick sizes, and trading fee rates.
+    - `ITradeClient`: Order placement, batch orders, cancellations, order amendments, and trade history.
+    - `ITimeseriesClient`: Historical candlestick bars and real-time candle streaming.
+- **Documentation & Types:**
+  - Added complete OKX v5 REST API endpoint and WebSocket channel mapping attributes across all client methods.
+  - Standardized response wrappers using `ApiResult<T>`.
 
 ---
 
 ### [0.9.3-beta.3] - 2026-07-09
 
-#### Contracts
-- **sdk:** Sync SDK version with platform release v0.9.3-beta.3.
+#### Maintenance
+- **Package Version:** Synchronized `Pt.Okx.Sdk` version to `0.9.3-beta.3`.
+- **Contract Verification:** Validated binary backwards compatibility for existing compiled strategy assemblies.
 
 ---
 
 ### [0.9.3-beta.2] - 2026-07-08
 
 #### Dependencies
-- **sdk:** Upgrade underlying `JK.OKX.Net` to 5.0.2 in SDK client adapters.
+- **Exchange Adapter:** Upgraded `JK.OKX.Net` underlying dependency to `5.0.2` within SDK network adapters.
 
 ---
 
 ### [0.9.3-beta.1] - 2026-07-08
 
-#### Dependencies
-- **sdk:** Upgrade `Telegram.Bot` to 22.10.1.1 for strategy Telegram event notifications.
+#### Strategy Notifications
+- **Telegram Integration:** Upgraded `Telegram.Bot` dependency to `22.10.1.1` in `Pt.Okx.Sdk.Notifier` for strategy alert dispatching and interactive 2-way bot commands.
 
 ---
 
 ### [0.9.0-beta.5] - 2026-07-08
 
-#### Contracts & Lifecycle
-- **sdk:** Standardize strategy lifecycle method contracts (`OnInitAsync`, `OnStopAsync`).
-- **examples:** Rename example projects to `Pt.Examples.Indicator` and `Pt.Example.Stgy.UpTrend`.
+#### Strategy & Indicator Lifecycle Standards
+- **Strategy Lifecycle:**
+  - Standardized lifecycle contracts:
+    - `Task OnInitAsync()`: Asynchronous initialization, indicator registration, and parameter validation.
+    - `Task OnStopAsync()`: Graceful cleanup, cancellation of open orders, and resource disposal.
+    - `Task OnTickAsync(TickEventArgs e)`: Event-driven market tick handler.
+    - `Task OnOrderUpdateAsync(OrderEventArgs e)`: Execution and order fill notifications.
+- **Project Structure:**
+  - Renamed official sample projects to `Pt.Examples.Indicator` and `Pt.Example.Stgy.UpTrend`.
 
 ---
 
 ### [0.9.0-beta.4] - 2026-07-08
 
-#### Contracts
-- **sdk:** Sync SDK contracts with App version v0.9.0-beta.4.
+#### Maintenance
+- **Version Alignment:** Synchronized SDK contract version with application release v0.9.0-beta.4.
 
 ---
 
 ### [0.9.0-beta.3] - 2026-07-08
 
-#### Templates & Lifecycle
-- **templates:** Add `dotnet new` project templates for strategy and indicator plugins (`Pt.Templates.Strategy`, `Pt.Templates.Indicator`).
-- **strategy:** Refactor strategy lifecycle contracts from `InitializeAsync`/`StopAsync` to `OnInitAsync`/`OnStopAsync`.
+#### Project Templates & Architecture
+- **dotnet new Templates:**
+  - Published `Pt.Templates.Strategy` (`dotnet new pt-strategy`).
+  - Published `Pt.Templates.Indicator` (`dotnet new pt-indicator`).
+- **Lifecycle Modernization:**
+  - Migrated legacy `InitializeAsync` / `StopAsync` to async-first `OnInitAsync` / `OnStopAsync`.
 
 ---
 
 ### [0.9.0-beta.2] - 2026-07-06
 
-#### Contracts
-- **sdk:** Update abstractions for strategy interfaces, indicator plugins, and backtest contracts.
+#### Core Abstractions
+- **Plugin Architecture:** Introduced `IStrategyPlugin`, `IIndicatorPlugin`, and `IInputParamManager` interfaces.
+- **State Store:** Introduced `IStrategyStateStore` interface for automatic strategy key-value state persistence across restarts.
 
 ---
 
 ### [0.9.0-beta.1] - 2026-07-05
 
 #### Initial Beta Release
-- **sdk:** Initial Beta Release of `Pt.Okx.Sdk` NuGet package.
-- **contracts:** Public contract surface for developing custom trading strategies (`StrategyBase`) and technical indicators (`IndicatorBase`).
-- **examples:** Initial demonstration samples for strategy and indicator plugin development.
+- **Pt.Okx.Sdk NuGet Package:** Initial public beta release for .NET 10.0 developers.
+- **Core Strategy & Indicator Foundations:**
+  - `StrategyBase`: Base class for algorithmic trading strategies.
+  - `IndicatorBase`: Base class for custom mathematical and technical indicators.
+  - `IOkxClient` / `ITradingClient`: Unified exchange client interface.
+- **Built-in Indicators:** Pre-packaged catalog of technical indicators (Trend, Oscillators, Volumes, Bill Williams).
+- **Chart Drawing API:** Introduced `IDrawingClient` and primitive chart drawing objects (Lines, Rectangles, Text, Fibonacci Retracements).
